@@ -34,9 +34,17 @@ def rank_platform_props():
     })
     f["market"] = "pitcher_fantasy_score"
 
+    o = pd.read_csv("outputs/pitcher_outs_projections.csv")
+    o = o.rename(columns={
+        "pitcher_name": "player",
+        "projected_outs": "projection"
+    })
+    o["market"] = "pitcher_outs"
+
     projections = pd.concat([
         k[["player", "market", "projection"]],
-        f[["player", "market", "projection"]]
+        f[["player", "market", "projection"]],
+        o[["player", "market", "projection"]],
     ])
 
     merged = props.merge(
