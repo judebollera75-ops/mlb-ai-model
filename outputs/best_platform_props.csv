@@ -1,4 +1,5 @@
-platform,player,market,line,side,pitcher_name,team,games_started,strikeouts,season_k_per_start,avg_k,projected_ks,raw_projected_ks,calibrated_projected_ks,projection,edge,pick
-Kalshi,Gavin Williams,pitcher_strikeouts,6.5,YES,Gavin Williams,Cleveland Guardians,19.0,134.0,7.052631578947368,8.0,7.71578947368421,7.71578947368421,7.71578947368421,7.71578947368421,1.21578947368421,MORE/YES
-PrizePicks,Bryce Miller,pitcher_strikeouts,5.5,MORE,Bryce Miller,Seattle Mariners,8.0,62.0,7.75,5.8,6.385,6.385,6.385,6.385,0.8849999999999998,MORE/YES
-Sleeper,Jesus Luzardo,pitcher_strikeouts,6.5,MORE,,,,,,,,,,,,LESS/NO
+platform,player,market,line,side,projection,edge,pick
+Sleeper,Bryce Miller,pitcher_fantasy_score,34.5,MORE,17.345,-17.155,LESS/NO
+PrizePicks,Gavin Williams,pitcher_fantasy_score,36.5,MORE,20.00657894736842,-16.49342105263158,LESS/NO
+Kalshi,Gavin Williams,pitcher_strikeouts,6.5,YES,7.71578947368421,1.21578947368421,MORE/YES
+PrizePicks,Bryce Miller,pitcher_strikeouts,5.5,MORE,6.385,0.8849999999999998,MORE/YES

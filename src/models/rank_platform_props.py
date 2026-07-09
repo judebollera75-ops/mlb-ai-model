@@ -5,16 +5,32 @@ def rank_platform_props():
     os.makedirs("outputs", exist_ok=True)
 
     props = pd.read_csv("data/platform_props_template.csv")
-    projections = pd.read_csv("outputs/calibrated_strikeout_projections.csv")
+
+    k = pd.read_csv("outputs/calibrated_strikeout_projections.csv")
+    k = k.rename(columns={
+        "pitcher_name": "player",
+        "calibrated_projected_ks": "projection"
+    })
+    k["market"] = "pitcher_strikeouts"
+
+    f = pd.read_csv("outputs/pitcher_fantasy_projections.csv")
+    f = f.rename(columns={
+        "pitcher_name": "player",
+        "draftkings_pitcher_points": "projection"
+    })
+    f["market"] = "pitcher_fantasy_score"
+
+    projections = pd.concat([
+        k[["player", "market", "projection"]],
+        f[["player", "market", "projection"]]
+    ])
 
     merged = props.merge(
         projections,
-        left_on="player",
-        right_on="pitcher_name",
+        on=["player", "market"],
         how="left"
     )
 
-    merged["projection"] = merged["calibrated_projected_ks"]
     merged["edge"] = merged["projection"] - merged["line"]
 
     merged["pick"] = merged.apply(
@@ -22,11 +38,11 @@ def rank_platform_props():
         axis=1
     )
 
-    ranked = merged.sort_values("edge", key=lambda x: x.abs(), ascending=False)
+    merged = merged.sort_values("edge", key=lambda x: x.abs(), ascending=False)
 
-    ranked.to_csv("outputs/best_platform_props.csv", index=False)
+    merged.to_csv("outputs/best_platform_props.csv", index=False)
 
-    print(ranked[[
+    print(merged[[
         "platform",
         "player",
         "market",
