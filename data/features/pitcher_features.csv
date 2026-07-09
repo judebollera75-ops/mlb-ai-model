@@ -1,0 +1,27 @@
+pitcher_id,pitcher_name,team,avg_ip,avg_k,avg_bb,avg_hits,avg_er,avg_hr,avg_era
+518876,Merrill Kelly,Arizona Diamondbacks,5.06,4.0,3.6,6.4,4.4,1.2,7.892
+543135,Nathan Eovaldi,Texas Rangers,5.24,5.8,1.6,6.6,3.0,1.0,7.9
+608379,Michael Wacha,Kansas City Royals,6.42,5.6,2.0,4.0,1.8,0.6,0.9259999999999999
+621112,Paul Blackburn,New York Yankees,1.06,0.8,0.4,2.0,0.4,0.0,3.3600000000000003
+640455,Sean Manaea,New York Mets,3.06,2.4,1.4,3.2,1.6,0.4,2.31
+641743,Anthony Kay,Chicago White Sox,3.78,2.6,2.4,4.2,2.6,0.8,3.696
+641927,Bailey Ober,Minnesota Twins,5.0600000000000005,4.8,1.8,4.6,2.4,0.4,5.682
+656288,Griffin Canning,San Diego Padres,4.3,4.8,2.6,4.4,3.8,0.8,7.146000000000001
+656605,Mitch Keller,Pittsburgh Pirates,5.8,3.8,1.8,4.6,1.8,0.2,1.6300000000000001
+656849,David Peterson,Chicago Cubs,4.4799999999999995,4.4,2.0,5.8,2.8,0.2,4.522
+656876,Drew Rasmussen,Tampa Bay Rays,5.04,5.2,0.8,3.0,1.4,1.0,1.986
+660761,José Suarez,Athletics,2.08,2.4,1.0,3.4,1.6,0.0,8.222
+663372,Ryan Feltner,Colorado Rockies,3.8600000000000003,3.4,1.6,4.4,2.8,1.0,4.784000000000001
+663776,Patrick Sandoval,Boston Red Sox,4.1,5.0,1.0,5.0,1.0,0.0,2.08
+663903,Brady Singer,Cincinnati Reds,4.64,3.2,1.4,6.4,2.8,0.6,6.076
+664285,Framber Valdez,Detroit Tigers,6.0,4.0,1.8,5.4,2.2,0.2,2.812
+666200,Jesús Luzardo,Philadelphia Phillies,5.14,6.6,1.8,6.6,4.2,0.6,7.01
+668909,Gavin Williams,Cleveland Guardians,5.84,8.0,3.4,2.6,1.4,0.8,2.838
+669432,Trevor Rogers,Baltimore Orioles,5.64,5.0,1.6,6.0,2.6,0.6,2.0780000000000003
+669467,Andre Pallante,St. Louis Cardinals,5.0200000000000005,4.0,2.8,4.4,2.4,0.6,2.982
+672282,Reid Detmers,Los Angeles Angels,5.5,6.2,1.6,4.6,2.6,0.4,4.0840000000000005
+676083,Janson Junk,Miami Marlins,5.26,3.4,1.4,4.8,2.2,0.4,3.946
+682243,Bryce Miller,Seattle Mariners,5.26,5.8,1.0,3.2,0.8,0.4,2.062
+687931,Carson Whisenhunt,San Francisco Giants,5.0,2.0,2.0,6.0,2.0,0.0,3.6
+693821,Bryce Elder,Atlanta Braves,5.720000000000001,5.8,1.8,4.0,1.0,0.4,0.658
+701656,Logan Henderson,Milwaukee Brewers,4.6,6.0,1.2,3.6,1.4,0.4,4.7780000000000005
