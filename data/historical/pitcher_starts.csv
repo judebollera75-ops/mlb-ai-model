@@ -1,0 +1,236 @@
+date,game_id,team,opponent,side,pitcher_id,pitcher_name,status
+2026-07-01,824818,Chicago White Sox,Baltimore Orioles,away,702273,Noah Schultz,Final
+2026-07-01,824818,Baltimore Orioles,Chicago White Sox,home,665152,Dean Kremer,Final
+2026-07-01,824419,Texas Rangers,Cleveland Guardians,away,669022,MacKenzie Gore,Final
+2026-07-01,824419,Cleveland Guardians,Texas Rangers,home,676282,Joey Cantillo,Final
+2026-07-01,824740,Washington Nationals,Boston Red Sox,away,695418,Brad Lord,Final
+2026-07-01,824740,Boston Red Sox,Washington Nationals,home,801139,Payton Tolle,Final
+2026-07-01,823530,Detroit Tigers,New York Yankees,away,675512,Troy Melton,Final
+2026-07-01,823530,New York Yankees,Detroit Tigers,home,701542,Will Warren,Final
+2026-07-01,824660,San Diego Padres,Chicago Cubs,away,621111,Walker Buehler,Final
+2026-07-01,824660,Chicago Cubs,San Diego Padres,home,607067,Colin Rea,Final
+2026-07-01,822791,New York Mets,Toronto Blue Jays,away,642547,Freddy Peralta,Final
+2026-07-01,822791,Toronto Blue Jays,New York Mets,home,680755,Braydon Fisher,Final
+2026-07-01,823446,Pittsburgh Pirates,Philadelphia Phillies,away,694973,Paul Skenes,Final
+2026-07-01,823446,Philadelphia Phillies,Pittsburgh Pirates,home,554430,Zack Wheeler,Final
+2026-07-01,824905,St. Louis Cardinals,Atlanta Braves,away,700241,Michael McGreevy,Final
+2026-07-01,824905,Atlanta Braves,St. Louis Cardinals,home,625643,Reynaldo López,Final
+2026-07-01,824094,Tampa Bay Rays,Kansas City Royals,away,663556,Shane McClanahan,Final
+2026-07-01,824094,Kansas City Royals,Tampa Bay Rays,home,607625,Seth Lugo,Final
+2026-07-01,824174,Minnesota Twins,Houston Astros,away,671737,Taj Bradley,Final
+2026-07-01,824174,Houston Astros,Minnesota Twins,home,837227,Tatsuya Imai,Final
+2026-07-01,823767,Cincinnati Reds,Milwaukee Brewers,away,671096,Andrew Abbott,Final
+2026-07-01,823767,Milwaukee Brewers,Cincinnati Reds,home,675660,Shane Drohan,Final
+2026-07-01,824337,Miami Marlins,Colorado Rockies,away,676974,Max Meyer,Final
+2026-07-01,824337,Colorado Rockies,Miami Marlins,home,607536,Kyle Freeland,Final
+2026-07-01,824985,Athletics,Los Angeles Dodgers,home,669372,J.T. Ginn,Final
+2026-07-01,825064,San Francisco Giants,Arizona Diamondbacks,away,686790,Trevor McDonald,Final
+2026-07-01,825064,Arizona Diamondbacks,San Francisco Giants,home,668678,Zac Gallen,Final
+2026-07-02,823442,Pittsburgh Pirates,Philadelphia Phillies,away,683003,Jared Jones,Final
+2026-07-02,823442,Philadelphia Phillies,Pittsburgh Pirates,home,660604,Alan Rangel,Final
+2026-07-02,823765,Cincinnati Reds,Milwaukee Brewers,away,695505,Chase Burns,Final
+2026-07-02,823765,Milwaukee Brewers,Cincinnati Reds,home,694819,Jacob Misiorowski,Final
+2026-07-02,824335,Miami Marlins,Colorado Rockies,away,687473,Ryan Gusto,Final
+2026-07-02,824335,Colorado Rockies,Miami Marlins,home,547179,Michael Lorenzen,Final
+2026-07-02,824416,Chicago White Sox,Cleveland Guardians,away,663436,Davis Martin,Final
+2026-07-02,824416,Cleveland Guardians,Chicago White Sox,home,677944,Slade Cecconi,Final
+2026-07-02,824906,St. Louis Cardinals,Atlanta Braves,away,669160,Dustin May,Final
+2026-07-02,824906,Atlanta Braves,St. Louis Cardinals,home,694462,Hurston Waldrep,Final
+2026-07-02,824093,Tampa Bay Rays,Kansas City Royals,away,693855,Ian Seymour,Final
+2026-07-02,824093,Kansas City Royals,Tampa Bay Rays,home,663568,Stephen Kolek,Final
+2026-07-02,822884,Detroit Tigers,Texas Rangers,away,664285,Framber Valdez,Final
+2026-07-02,822884,Texas Rangers,Detroit Tigers,home,543135,Nathan Eovaldi,Final
+2026-07-02,823119,Los Angeles Angels,Seattle Mariners,away,700712,Walbert Ureña,Final
+2026-07-02,823119,Seattle Mariners,Los Angeles Angels,home,682243,Bryce Miller,Final
+2026-07-02,823935,San Diego Padres,Los Angeles Dodgers,away,681190,Randy Vásquez,Final
+2026-07-02,823935,Los Angeles Dodgers,San Diego Padres,home,808963,Roki Sasaki,Final
+2026-07-03,824659,St. Louis Cardinals,Chicago Cubs,away,669467,Andre Pallante,Final
+2026-07-03,824659,Chicago Cubs,St. Louis Cardinals,home,656849,David Peterson,Final
+2026-07-03,822714,Pittsburgh Pirates,Washington Nationals,away,656605,Mitch Keller,Final
+2026-07-03,822714,Washington Nationals,Pittsburgh Pirates,home,656492,Foster Griffin,Final
+2026-07-03,823527,Minnesota Twins,New York Yankees,away,702474,Mike Paredes,Final
+2026-07-03,823527,New York Yankees,Minnesota Twins,home,543037,Gerrit Cole,Final
+2026-07-03,824498,Baltimore Orioles,Cincinnati Reds,away,669432,Trevor Rogers,Final
+2026-07-03,824498,Cincinnati Reds,Baltimore Orioles,home,663903,Brady Singer,Final
+2026-07-03,824417,Chicago White Sox,Cleveland Guardians,away,641743,Anthony Kay,Final
+2026-07-03,824417,Cleveland Guardians,Chicago White Sox,home,668909,Gavin Williams,Final
+2026-07-03,824904,New York Mets,Atlanta Braves,away,681035,Christian Scott,Final
+2026-07-03,824904,Atlanta Braves,New York Mets,home,656550,Grant Holmes,Final
+2026-07-03,824336,San Francisco Giants,Colorado Rockies,away,657277,Logan Webb,Final
+2026-07-03,824336,Colorado Rockies,San Francisco Giants,home,663372,Ryan Feltner,Final
+2026-07-03,824173,Tampa Bay Rays,Houston Astros,away,607259,Nick Martinez,Final
+2026-07-03,824173,Houston Astros,Tampa Bay Rays,home,681293,Spencer Arrighetti,Final
+2026-07-03,824013,Boston Red Sox,Los Angeles Angels,away,687562,Jake Bennett,Final
+2026-07-03,824013,Los Angeles Angels,Boston Red Sox,home,672282,Reid Detmers,Final
+2026-07-03,824982,Miami Marlins,Athletics,away,663969,Tyler Phillips,Final
+2026-07-03,824982,Athletics,Miami Marlins,home,678022,Jack Perkins,Final
+2026-07-03,825062,Milwaukee Brewers,Arizona Diamondbacks,away,690986,Kyle Harrison,Final
+2026-07-03,825062,Arizona Diamondbacks,Milwaukee Brewers,home,703615,Jose Cabrera,Final
+2026-07-03,823933,San Diego Padres,Los Angeles Dodgers,away,650633,Michael King,Final
+2026-07-03,823933,Los Angeles Dodgers,San Diego Padres,home,660271,Shohei Ohtani,Final
+2026-07-03,823120,Toronto Blue Jays,Seattle Mariners,away,656302,Dylan Cease,Final
+2026-07-03,823120,Seattle Mariners,Toronto Blue Jays,home,622491,Luis Castillo,Final
+2026-07-04,822716,Pittsburgh Pirates,Washington Nationals,away,677952,Braxton Ashcraft,Final
+2026-07-04,822716,Washington Nationals,Pittsburgh Pirates,home,687223,Carson Palmquist,Final
+2026-07-04,823526,Minnesota Twins,New York Yankees,away,805673,Zebby Matthews,Final
+2026-07-04,823526,New York Yankees,Minnesota Twins,home,694341,Brendan Beck,Final
+2026-07-04,822882,Detroit Tigers,Texas Rangers,away,656427,Jack Flaherty,Final
+2026-07-04,822882,Texas Rangers,Detroit Tigers,home,615698,Cal Quantrill,Final
+2026-07-04,823118,Toronto Blue Jays,Seattle Mariners,away,669456,Shane Bieber,Final
+2026-07-04,823118,Seattle Mariners,Toronto Blue Jays,home,669302,Logan Gilbert,Final
+2026-07-04,824499,Baltimore Orioles,Cincinnati Reds,away,687064,Brandon Young,Final
+2026-07-04,824499,Cincinnati Reds,Baltimore Orioles,home,668881,Hunter Greene,Final
+2026-07-04,824171,Tampa Bay Rays,Houston Astros,away,656876,Drew Rasmussen,Final
+2026-07-04,824171,Houston Astros,Tampa Bay Rays,home,686613,Hunter Brown,Final
+2026-07-04,824415,Chicago White Sox,Cleveland Guardians,away,680732,Sean Burke,Final
+2026-07-04,824415,Cleveland Guardians,Chicago White Sox,home,800048,Parker Messick,Final
+2026-07-04,824658,St. Louis Cardinals,Chicago Cubs,away,681517,Kyle Leahy,Final
+2026-07-04,824658,Chicago Cubs,St. Louis Cardinals,home,684007,Shota Imanaga,Final
+2026-07-04,824903,New York Mets,Atlanta Braves,away,640455,Sean Manaea,Final
+2026-07-04,824903,Atlanta Braves,New York Mets,home,519242,Chris Sale,Final
+2026-07-04,824334,San Francisco Giants,Colorado Rockies,away,592662,Robbie Ray,Final
+2026-07-04,824334,Colorado Rockies,San Francisco Giants,home,807743,Sean Sullivan,Final
+2026-07-04,824092,Philadelphia Phillies,Kansas City Royals,away,666200,Jesús Luzardo,Final
+2026-07-04,824092,Kansas City Royals,Philadelphia Phillies,home,608379,Michael Wacha,Final
+2026-07-04,824012,Boston Red Sox,Los Angeles Angels,away,543243,Sonny Gray,Final
+2026-07-04,824012,Los Angeles Angels,Boston Red Sox,home,691951,Sam Aldegheri,Final
+2026-07-04,824983,Miami Marlins,Athletics,away,645261,Sandy Alcantara,Final
+2026-07-04,824983,Athletics,Miami Marlins,home,650644,Aaron Civale,Final
+2026-07-04,825063,Milwaukee Brewers,Arizona Diamondbacks,away,605540,Brandon Woodruff,Final
+2026-07-04,825063,Arizona Diamondbacks,Milwaukee Brewers,home,518876,Merrill Kelly,Final
+2026-07-04,823932,San Diego Padres,Los Angeles Dodgers,away,593974,Wandy Peralta,Final
+2026-07-04,823932,Los Angeles Dodgers,San Diego Padres,home,808967,Yoshinobu Yamamoto,Final
+2026-07-05,824902,New York Mets,Atlanta Braves,away,690997,Nolan McLean,Final
+2026-07-05,824902,Atlanta Braves,New York Mets,home,527048,Martín Pérez,Final
+2026-07-05,822715,Pittsburgh Pirates,Washington Nationals,away,696149,Bubba Chandler,Final
+2026-07-05,822715,Washington Nationals,Pittsburgh Pirates,home,676917,Cade Cavalli,Final
+2026-07-05,824497,Baltimore Orioles,Cincinnati Reds,away,680694,Kyle Bradish,Final
+2026-07-05,824497,Cincinnati Reds,Baltimore Orioles,home,666157,Nick Lodolo,Final
+2026-07-05,823525,Minnesota Twins,New York Yankees,away,657746,Joe Ryan,Final
+2026-07-05,823525,New York Yankees,Minnesota Twins,home,677960,Ryan Weathers,Final
+2026-07-05,824413,Chicago White Sox,Cleveland Guardians,away,669684,Chris Murphy,Final
+2026-07-05,824413,Cleveland Guardians,Chicago White Sox,home,676440,Tanner Bibee,Final
+2026-07-05,824656,St. Louis Cardinals,Chicago Cubs,away,669461,Matthew Liberatore,Final
+2026-07-05,824656,Chicago Cubs,St. Louis Cardinals,home,665871,Javier Assad,Final
+2026-07-05,824091,Philadelphia Phillies,Kansas City Royals,away,605400,Aaron Nola,Final
+2026-07-05,824091,Kansas City Royals,Philadelphia Phillies,home,679883,Luinder Avila,Final
+2026-07-05,824172,Tampa Bay Rays,Houston Astros,away,669438,Mason Englert,Final
+2026-07-05,824172,Houston Astros,Tampa Bay Rays,home,663567,Peter Lambert,Final
+2026-07-05,822879,Detroit Tigers,Texas Rangers,away,663554,Casey Mize,Final
+2026-07-05,822879,Texas Rangers,Detroit Tigers,home,677958,Kumar Rocker,Final
+2026-07-05,824333,San Francisco Giants,Colorado Rockies,away,641816,Tyler Mahle,Final
+2026-07-05,824333,Colorado Rockies,San Francisco Giants,home,685299,Tanner Gordon,Final
+2026-07-05,825061,Milwaukee Brewers,Arizona Diamondbacks,away,687075,Brandon Sproat,Final
+2026-07-05,825061,Arizona Diamondbacks,Milwaukee Brewers,home,593958,Eduardo Rodriguez,Final
+2026-07-05,824980,Miami Marlins,Athletics,away,691587,Eury Pérez,Final
+2026-07-05,824980,Athletics,Miami Marlins,home,695611,Gage Jump,Final
+2026-07-05,823117,Toronto Blue Jays,Seattle Mariners,away,702056,Trey Yesavage,Final
+2026-07-05,823117,Seattle Mariners,Toronto Blue Jays,home,676106,Emerson Hancock,Final
+2026-07-05,823931,San Diego Padres,Los Angeles Dodgers,away,676664,JP Sears,Final
+2026-07-05,823931,Los Angeles Dodgers,San Diego Padres,home,686218,Emmet Sheehan,Final
+2026-07-05,824010,Boston Red Sox,Los Angeles Angels,away,624133,Ranger Suarez,Final
+2026-07-05,824010,Los Angeles Angels,Boston Red Sox,home,696270,Ryan Johnson,Final
+2026-07-06,824089,Philadelphia Phillies,Kansas City Royals,away,650911,Cristopher Sánchez,Final
+2026-07-06,824089,Kansas City Royals,Philadelphia Phillies,home,702070,Noah Cameron,Final
+2026-07-06,822958,New York Yankees,Tampa Bay Rays,away,693645,Cam Schlittler,Final
+2026-07-06,822958,Tampa Bay Rays,New York Yankees,home,643377,Griffin Jax,Final
+2026-07-06,822712,Houston Astros,Washington Nationals,away,681347,Mike Burrows,Final
+2026-07-06,822712,Washington Nationals,Houston Astros,home,571945,Miles Mikolas,Final
+2026-07-06,824900,New York Mets,Atlanta Braves,away,642547,Freddy Peralta,Final
+2026-07-06,824900,Atlanta Braves,New York Mets,home,625643,Reynaldo López,Final
+2026-07-06,823036,Milwaukee Brewers,St. Louis Cardinals,away,675660,Shane Drohan,Final
+2026-07-06,823036,St. Louis Cardinals,Milwaukee Brewers,home,669160,Dustin May,Final
+2026-07-06,823282,Arizona Diamondbacks,San Diego Padres,away,694297,Brandon Pfaadt,Final
+2026-07-06,823282,San Diego Padres,Arizona Diamondbacks,home,621111,Walker Buehler,Final
+2026-07-06,823205,Toronto Blue Jays,San Francisco Giants,away,592332,Kevin Gausman,Final
+2026-07-06,823205,San Francisco Giants,Toronto Blue Jays,home,694738,Landen Roupp,Final
+2026-07-06,823930,Colorado Rockies,Los Angeles Dodgers,away,607536,Kyle Freeland,Final
+2026-07-06,823930,Los Angeles Dodgers,Colorado Rockies,home,641778,Eric Lauer,Final
+2026-07-07,823062,Milwaukee Brewers,St. Louis Cardinals,away,694819,Jacob Misiorowski,Final
+2026-07-07,823062,St. Louis Cardinals,Milwaukee Brewers,home,694335,Matt Svanson,Final
+2026-07-07,823035,Milwaukee Brewers,St. Louis Cardinals,away,688107,Robert Gasser,Final
+2026-07-07,823035,St. Louis Cardinals,Milwaukee Brewers,home,690928,Hunter Dobbins,Final
+2026-07-07,824820,Chicago Cubs,Baltimore Orioles,away,571510,Matthew Boyd,Final
+2026-07-07,824820,Baltimore Orioles,Chicago Cubs,home,669358,Shane Baz,Final
+2026-07-07,824254,Athletics,Detroit Tigers,away,669372,J.T. Ginn,Final
+2026-07-07,824254,Detroit Tigers,Athletics,home,669373,Tarik Skubal,Final
+2026-07-07,823361,Atlanta Braves,Pittsburgh Pirates,away,694462,Hurston Waldrep,Final
+2026-07-07,823361,Pittsburgh Pirates,Atlanta Braves,home,694973,Paul Skenes,Final
+2026-07-07,823847,Seattle Mariners,Miami Marlins,away,693433,Bryan Woo,Final
+2026-07-07,823847,Miami Marlins,Seattle Mariners,home,676974,Max Meyer,Final
+2026-07-07,822956,New York Yankees,Tampa Bay Rays,away,701542,Will Warren,Final
+2026-07-07,822956,Tampa Bay Rays,New York Yankees,home,693855,Ian Seymour,Final
+2026-07-07,822713,Houston Astros,Washington Nationals,away,837227,Tatsuya Imai,Final
+2026-07-07,822713,Washington Nationals,Houston Astros,home,674841,Andrew Alvarez,Final
+2026-07-07,823607,Kansas City Royals,New York Mets,away,607625,Seth Lugo,Final
+2026-07-07,823607,New York Mets,Kansas City Royals,home,672335,Cionel Pérez,Final
+2026-07-07,824495,Philadelphia Phillies,Cincinnati Reds,away,554430,Zack Wheeler,Final
+2026-07-07,824495,Cincinnati Reds,Philadelphia Phillies,home,671096,Andrew Abbott,Final
+2026-07-07,823687,Cleveland Guardians,Minnesota Twins,away,676282,Joey Cantillo,Final
+2026-07-07,823687,Minnesota Twins,Cleveland Guardians,home,671737,Taj Bradley,Final
+2026-07-07,824579,Boston Red Sox,Chicago White Sox,away,801139,Payton Tolle,Final
+2026-07-07,824579,Chicago White Sox,Boston Red Sox,home,702273,Noah Schultz,Final
+2026-07-07,822881,Los Angeles Angels,Texas Rangers,away,667755,José Soriano,Final
+2026-07-07,822881,Texas Rangers,Los Angeles Angels,home,594798,Jacob deGrom,Final
+2026-07-07,823280,Arizona Diamondbacks,San Diego Padres,away,668678,Zac Gallen,Final
+2026-07-07,823280,San Diego Padres,Arizona Diamondbacks,home,608566,Germán Márquez,Final
+2026-07-07,823203,Toronto Blue Jays,San Francisco Giants,away,693686,Spencer Miles,Final
+2026-07-07,823203,San Francisco Giants,Toronto Blue Jays,home,686790,Trevor McDonald,Final
+2026-07-07,823929,Colorado Rockies,Los Angeles Dodgers,away,547179,Michael Lorenzen,Final
+2026-07-07,823929,Los Angeles Dodgers,Colorado Rockies,home,680736,Justin Wrobleski,Final
+2026-07-08,823202,Toronto Blue Jays,San Francisco Giants,away,656302,Dylan Cease,Final
+2026-07-08,823202,San Francisco Giants,Toronto Blue Jays,home,657277,Logan Webb,Final
+2026-07-08,824815,Chicago Cubs,Baltimore Orioles,away,607067,Colin Rea,Final
+2026-07-08,824815,Baltimore Orioles,Chicago Cubs,home,665152,Dean Kremer,Final
+2026-07-08,824253,Athletics,Detroit Tigers,away,605488,Jeffrey Springs,Final
+2026-07-08,824253,Detroit Tigers,Athletics,home,675512,Troy Melton,Final
+2026-07-08,823360,Atlanta Braves,Pittsburgh Pirates,away,656550,Grant Holmes,Final
+2026-07-08,823360,Pittsburgh Pirates,Atlanta Braves,home,683003,Jared Jones,Final
+2026-07-08,823848,Seattle Mariners,Miami Marlins,away,669923,George Kirby,Final
+2026-07-08,823848,Miami Marlins,Seattle Mariners,home,663969,Tyler Phillips,Final
+2026-07-08,822957,New York Yankees,Tampa Bay Rays,away,543037,Gerrit Cole,Final
+2026-07-08,822957,Tampa Bay Rays,New York Yankees,home,663556,Shane McClanahan,Final
+2026-07-08,822710,Houston Astros,Washington Nationals,away,681293,Spencer Arrighetti,Final
+2026-07-08,822710,Washington Nationals,Houston Astros,home,656492,Foster Griffin,Final
+2026-07-08,823605,Kansas City Royals,New York Mets,away,674444,Steven Cruz,Final
+2026-07-08,823605,New York Mets,Kansas City Royals,home,681035,Christian Scott,Final
+2026-07-08,824496,Philadelphia Phillies,Cincinnati Reds,away,660604,Alan Rangel,Final
+2026-07-08,824496,Cincinnati Reds,Philadelphia Phillies,home,695505,Chase Burns,Final
+2026-07-08,823684,Cleveland Guardians,Minnesota Twins,away,677944,Slade Cecconi,Final
+2026-07-08,823684,Minnesota Twins,Cleveland Guardians,home,687570,Connor Prielipp,Final
+2026-07-08,824578,Boston Red Sox,Chicago White Sox,away,687562,Jake Bennett,Final
+2026-07-08,824578,Chicago White Sox,Boston Red Sox,home,663436,Davis Martin,Final
+2026-07-08,823032,Milwaukee Brewers,St. Louis Cardinals,away,690986,Kyle Harrison,Final
+2026-07-08,823032,St. Louis Cardinals,Milwaukee Brewers,home,700241,Michael McGreevy,Final
+2026-07-08,822880,Los Angeles Angels,Texas Rangers,away,700712,Walbert Ureña,Final
+2026-07-08,822880,Texas Rangers,Los Angeles Angels,home,669022,MacKenzie Gore,Final
+2026-07-08,823928,Colorado Rockies,Los Angeles Dodgers,away,687312,Gabriel Hughes,Final
+2026-07-08,823928,Los Angeles Dodgers,Colorado Rockies,home,808963,Roki Sasaki,Final
+2026-07-08,823279,Arizona Diamondbacks,San Diego Padres,away,703615,Jose Cabrera,Final
+2026-07-08,823279,San Diego Padres,Arizona Diamondbacks,home,650633,Michael King,Final
+2026-07-09,823359,Atlanta Braves,Pittsburgh Pirates,away,693821,Bryce Elder,Final
+2026-07-09,823359,Pittsburgh Pirates,Atlanta Braves,home,656605,Mitch Keller,Final
+2026-07-09,823606,Kansas City Royals,New York Mets,away,608379,Michael Wacha,Final
+2026-07-09,823606,New York Mets,Kansas City Royals,home,640455,Sean Manaea,Final
+2026-07-09,822954,New York Yankees,Tampa Bay Rays,away,621112,Paul Blackburn,Final
+2026-07-09,822954,Tampa Bay Rays,New York Yankees,home,656876,Drew Rasmussen,Final
+2026-07-09,824816,Chicago Cubs,Baltimore Orioles,away,656849,David Peterson,Final
+2026-07-09,824816,Baltimore Orioles,Chicago Cubs,home,669432,Trevor Rogers,Final
+2026-07-09,823683,Cleveland Guardians,Minnesota Twins,away,668909,Gavin Williams,Final
+2026-07-09,823683,Minnesota Twins,Cleveland Guardians,home,641927,Bailey Ober,Final
+2026-07-09,824577,Boston Red Sox,Chicago White Sox,away,663776,Patrick Sandoval,Final
+2026-07-09,824577,Chicago White Sox,Boston Red Sox,home,641743,Anthony Kay,Final
+2026-07-09,824251,Athletics,Detroit Tigers,away,660761,José Suarez,Pre-Game
+2026-07-09,824251,Detroit Tigers,Athletics,home,664285,Framber Valdez,Pre-Game
+2026-07-09,823846,Seattle Mariners,Miami Marlins,away,682243,Bryce Miller,Pre-Game
+2026-07-09,823846,Miami Marlins,Seattle Mariners,home,676083,Janson Junk,Pre-Game
+2026-07-09,824494,Philadelphia Phillies,Cincinnati Reds,away,666200,Jesús Luzardo,Pre-Game
+2026-07-09,824494,Cincinnati Reds,Philadelphia Phillies,home,663903,Brady Singer,Pre-Game
+2026-07-09,823034,Milwaukee Brewers,St. Louis Cardinals,away,701656,Logan Henderson,Pre-Game
+2026-07-09,823034,St. Louis Cardinals,Milwaukee Brewers,home,669467,Andre Pallante,Pre-Game
+2026-07-09,822877,Los Angeles Angels,Texas Rangers,away,672282,Reid Detmers,Pre-Game
+2026-07-09,822877,Texas Rangers,Los Angeles Angels,home,543135,Nathan Eovaldi,Pre-Game
+2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,518876,Merrill Kelly,Scheduled
+2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,656288,Griffin Canning,Scheduled
+2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,663372,Ryan Feltner,Pre-Game
+2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,687931,Carson Whisenhunt,Pre-Game
