@@ -1,12 +1,12 @@
 pitcher_name,team,games_started,strikeouts,season_k_per_start,avg_k,projected_ks
-José Suarez,Athletics,1,52,52.0,2.4,17.28
+José Suarez,Athletics,2,54,27.0,2.4,9.78
 Gavin Williams,Cleveland Guardians,19,134,7.052631578947368,8.0,7.71578947368421
-Jesús Luzardo,Philadelphia Phillies,18,125,6.944444444444445,6.6,6.703333333333333
-Bryce Miller,Seattle Mariners,8,62,7.75,5.8,6.385
+Jesús Luzardo,Philadelphia Phillies,19,130,6.842105263157895,6.6,6.672631578947367
 Reid Detmers,Los Angeles Angels,18,117,6.5,6.2,6.29
+Bryce Miller,Seattle Mariners,9,64,7.111111111111111,5.8,6.193333333333333
 Nathan Eovaldi,Texas Rangers,17,110,6.470588235294118,5.8,6.001176470588235
-Logan Henderson,Milwaukee Brewers,5,30,6.0,6.0,5.999999999999999
 Paul Blackburn,New York Yankees,2,35,17.5,0.8,5.81
+Logan Henderson,Milwaukee Brewers,6,31,5.166666666666667,6.0,5.749999999999999
 Bryce Elder,Atlanta Braves,18,86,4.777777777777778,5.8,5.493333333333333
 Michael Wacha,Kansas City Royals,19,96,5.052631578947368,5.6,5.43578947368421
 Sean Manaea,New York Mets,6,74,12.333333333333334,2.4,5.38
@@ -16,12 +16,12 @@ Patrick Sandoval,Boston Red Sox,1,5,5.0,5.0,5.0
 David Peterson,Chicago Cubs,11,70,6.363636363636363,4.4,4.989090909090909
 Trevor Rogers,Baltimore Orioles,17,69,4.0588235294117645,5.0,4.7176470588235295
 Bailey Ober,Minnesota Twins,13,51,3.923076923076923,4.8,4.536923076923077
-Framber Valdez,Detroit Tigers,18,78,4.333333333333333,4.0,4.1
-Andre Pallante,St. Louis Cardinals,17,70,4.117647058823529,4.0,4.035294117647059
+Framber Valdez,Detroit Tigers,19,84,4.421052631578948,4.0,4.126315789473685
+Andre Pallante,St. Louis Cardinals,18,70,3.888888888888889,4.0,3.9666666666666663
 Mitch Keller,Pittsburgh Pirates,19,77,4.052631578947368,3.8,3.8757894736842102
 Merrill Kelly,Arizona Diamondbacks,15,53,3.533333333333333,4.0,3.8599999999999994
-Janson Junk,Miami Marlins,11,43,3.909090909090909,3.4,3.5527272727272727
-Brady Singer,Cincinnati Reds,17,71,4.176470588235294,3.2,3.492941176470588
+Janson Junk,Miami Marlins,12,46,3.8333333333333335,3.4,3.53
 Ryan Feltner,Colorado Rockies,12,44,3.6666666666666665,3.4,3.4799999999999995
+Brady Singer,Cincinnati Reds,18,74,4.111111111111111,3.2,3.4733333333333327
 Anthony Kay,Chicago White Sox,17,71,4.176470588235294,2.6,3.072941176470588
 Carson Whisenhunt,San Francisco Giants,1,2,2.0,2.0,2.0
