@@ -89,30 +89,31 @@ def normalize_player_name(series):
 
 lines["player_key"] = normalize_player_name(lines["player"])
 projections["player_key"] = normalize_player_name(projections["player"])
-    merged = lines.merge(
-        projections,
-        left_on=["player_key", "market"],
-        right_on=["player_key", "market"],
-        how="left",
-        suffixes=("_line", "_projection"),
-    )
 
-    merged["projection"] = pd.to_numeric(
-        merged["projection"],
-        errors="coerce"
-    )
+merged = lines.merge(
+    projections,
+    left_on=["player_key", "market"],
+    right_on=["player_key", "market"],
+    how="left",
+    suffixes=("_line", "_projection"),
+)
 
-    merged["edge"] = merged["projection"] - merged["line"]
+merged["projection"] = pd.to_numeric(
+    merged["projection"],
+    errors="coerce",
+)
 
-    merged["pick"] = merged["edge"].apply(
-        lambda value: (
-            "MORE/YES"
-            if pd.notna(value) and value > 0
-            else "LESS/NO"
-            if pd.notna(value)
-            else "NO PROJECTION"
-        )
+merged["edge"] = merged["projection"] - merged["line"]
+
+merged["pick"] = merged["edge"].apply(
+    lambda value: (
+        "MORE/YES"
+        if pd.notna(value) and value > 0
+        else "LESS/NO"
+        if pd.notna(value)
+        else "NO PROJECTION"
     )
+)
 
     merged["grade"] = merged.apply(
         lambda row: (
