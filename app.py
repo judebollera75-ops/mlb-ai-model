@@ -334,11 +334,22 @@ else:
             ],
         )
 
-    filtered = props[
-        props["platform"].isin(selected_platforms)
-        & props["market_display"].isin(selected_markets)
-        & props["tier"].isin(selected_tiers)
-    ].copy()
+    filtered = props.copy()
+
+if selected_platforms:
+    filtered = filtered[
+        filtered["platform"].isin(selected_platforms)
+    ]
+
+if selected_markets:
+    filtered = filtered[
+        filtered["market_display"].isin(selected_markets)
+    ]
+
+if selected_tiers:
+    filtered = filtered[
+        filtered["tier"].isin(selected_tiers)
+    ]
 
     if sort_choice == "Largest Edge":
         filtered = filtered.sort_values(
