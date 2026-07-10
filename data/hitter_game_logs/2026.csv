@@ -84,6 +84,85 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,824089,521692,Salvador Perez,Kansas City Royals,Philadelphia Phillies,5,4,3,1,0,1,7,1,1,0,0,0,0,1
 2026-07-07,823607,521692,Salvador Perez,Kansas City Royals,New York Mets,6,5,2,1,0,0,3,1,2,1,2,0,0,0
 2026-07-08,823605,521692,Salvador Perez,Kansas City Royals,New York Mets,4,4,1,0,0,0,1,0,1,0,0,0,0,0
+2026-03-30,825108,545121,Ildemaro Vargas,Arizona Diamondbacks,Detroit Tigers,4,4,2,0,0,1,5,2,1,0,0,0,0,0
+2026-04-01,825106,545121,Ildemaro Vargas,Arizona Diamondbacks,Detroit Tigers,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-02,825105,545121,Ildemaro Vargas,Arizona Diamondbacks,Atlanta Braves,2,2,2,1,0,0,3,0,1,0,0,0,0,0
+2026-04-05,825102,545121,Ildemaro Vargas,Arizona Diamondbacks,Atlanta Braves,3,2,1,0,1,0,3,0,2,1,1,0,0,0
+2026-04-07,823648,545121,Ildemaro Vargas,Arizona Diamondbacks,New York Mets,5,5,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-08,823646,545121,Ildemaro Vargas,Arizona Diamondbacks,New York Mets,4,4,3,0,0,0,3,2,0,0,0,0,0,0
+2026-04-09,823645,545121,Ildemaro Vargas,Arizona Diamondbacks,New York Mets,5,4,1,1,0,0,2,1,0,1,1,0,0,0
+2026-04-10,823482,545121,Ildemaro Vargas,Arizona Diamondbacks,Philadelphia Phillies,4,4,1,0,0,0,1,1,1,0,2,0,0,0
+2026-04-12,823479,545121,Ildemaro Vargas,Arizona Diamondbacks,Philadelphia Phillies,5,5,1,1,0,0,2,1,0,0,1,0,0,0
+2026-04-13,824856,545121,Ildemaro Vargas,Arizona Diamondbacks,Baltimore Orioles,4,4,2,1,0,0,3,1,0,0,0,0,0,0
+2026-04-14,824853,545121,Ildemaro Vargas,Arizona Diamondbacks,Baltimore Orioles,5,5,1,0,0,1,4,1,3,0,2,0,0,0
+2026-04-15,824855,545121,Ildemaro Vargas,Arizona Diamondbacks,Baltimore Orioles,5,5,2,1,0,0,3,1,0,0,0,0,0,0
+2026-04-17,825101,545121,Ildemaro Vargas,Arizona Diamondbacks,Toronto Blue Jays,4,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-18,825098,545121,Ildemaro Vargas,Arizona Diamondbacks,Toronto Blue Jays,3,3,1,0,0,0,1,1,0,0,0,0,0,0
+2026-04-19,825100,545121,Ildemaro Vargas,Arizona Diamondbacks,Toronto Blue Jays,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-04-21,825099,545121,Ildemaro Vargas,Arizona Diamondbacks,Chicago White Sox,4,4,1,0,0,1,4,1,3,0,0,0,0,0
+2026-04-22,825097,545121,Ildemaro Vargas,Arizona Diamondbacks,Chicago White Sox,5,5,2,0,0,2,8,2,5,0,1,0,0,0
+2026-04-23,825096,545121,Ildemaro Vargas,Arizona Diamondbacks,Chicago White Sox,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-25,825093,545121,Ildemaro Vargas,Arizona Diamondbacks,San Diego Padres,4,4,1,0,0,0,1,1,0,0,0,0,0,0
+2026-04-26,825094,545121,Ildemaro Vargas,Arizona Diamondbacks,San Diego Padres,5,5,3,1,1,1,9,3,4,0,1,0,0,0
+2026-04-28,823798,545121,Ildemaro Vargas,Arizona Diamondbacks,Milwaukee Brewers,4,2,1,0,0,0,1,0,0,1,0,0,0,0
+2026-04-29,823796,545121,Ildemaro Vargas,Arizona Diamondbacks,Milwaukee Brewers,5,5,2,0,0,0,2,1,0,0,1,0,0,0
+2026-04-30,823795,545121,Ildemaro Vargas,Arizona Diamondbacks,Milwaukee Brewers,4,4,2,0,0,0,2,0,0,0,0,0,0,0
+2026-05-01,824686,545121,Ildemaro Vargas,Arizona Diamondbacks,Chicago Cubs,5,4,4,0,0,0,4,0,1,1,0,0,0,0
+2026-05-02,824685,545121,Ildemaro Vargas,Arizona Diamondbacks,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-03,824687,545121,Ildemaro Vargas,Arizona Diamondbacks,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-05,825092,545121,Ildemaro Vargas,Arizona Diamondbacks,Pittsburgh Pirates,5,5,1,1,0,0,2,0,1,0,0,0,0,0
+2026-05-06,825091,545121,Ildemaro Vargas,Arizona Diamondbacks,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-07,825090,545121,Ildemaro Vargas,Arizona Diamondbacks,Pittsburgh Pirates,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-08,825088,545121,Ildemaro Vargas,Arizona Diamondbacks,New York Mets,5,5,1,0,0,0,1,0,0,0,2,0,0,0
+2026-05-09,825089,545121,Ildemaro Vargas,Arizona Diamondbacks,New York Mets,4,4,1,0,0,0,1,0,2,0,0,0,0,0
+2026-05-10,825085,545121,Ildemaro Vargas,Arizona Diamondbacks,New York Mets,4,3,0,0,0,0,0,2,0,1,0,1,0,0
+2026-05-11,822901,545121,Ildemaro Vargas,Arizona Diamondbacks,Texas Rangers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-12,822903,545121,Ildemaro Vargas,Arizona Diamondbacks,Texas Rangers,4,4,2,0,0,1,5,1,2,0,0,0,0,0
+2026-05-13,822900,545121,Ildemaro Vargas,Arizona Diamondbacks,Texas Rangers,5,5,1,0,0,0,1,0,2,0,1,0,0,0
+2026-05-15,824360,545121,Ildemaro Vargas,Arizona Diamondbacks,Colorado Rockies,5,5,4,1,0,0,5,2,2,0,0,0,0,0
+2026-05-16,824359,545121,Ildemaro Vargas,Arizona Diamondbacks,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-17,824358,545121,Ildemaro Vargas,Arizona Diamondbacks,Colorado Rockies,5,5,1,0,0,0,1,1,1,0,0,0,0,0
+2026-05-18,825087,545121,Ildemaro Vargas,Arizona Diamondbacks,San Francisco Giants,5,5,2,0,0,0,2,2,0,0,0,0,0,0
+2026-05-19,825086,545121,Ildemaro Vargas,Arizona Diamondbacks,San Francisco Giants,4,4,2,0,0,0,2,1,0,0,0,0,0,0
+2026-05-20,825084,545121,Ildemaro Vargas,Arizona Diamondbacks,San Francisco Giants,4,4,0,0,0,0,0,0,1,0,0,0,0,0
+2026-05-21,825083,545121,Ildemaro Vargas,Arizona Diamondbacks,Colorado Rockies,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-22,825082,545121,Ildemaro Vargas,Arizona Diamondbacks,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-23,825080,545121,Ildemaro Vargas,Arizona Diamondbacks,Colorado Rockies,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-05-24,825081,545121,Ildemaro Vargas,Arizona Diamondbacks,Colorado Rockies,4,3,0,0,0,0,0,1,0,0,1,0,0,1
+2026-05-25,823219,545121,Ildemaro Vargas,Arizona Diamondbacks,San Francisco Giants,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-26,823216,545121,Ildemaro Vargas,Arizona Diamondbacks,San Francisco Giants,4,4,1,1,0,0,2,1,2,0,1,0,0,0
+2026-05-27,823217,545121,Ildemaro Vargas,Arizona Diamondbacks,San Francisco Giants,4,3,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-29,823135,545121,Ildemaro Vargas,Arizona Diamondbacks,Seattle Mariners,5,5,0,0,0,0,0,0,2,0,0,0,0,0
+2026-05-30,823132,545121,Ildemaro Vargas,Arizona Diamondbacks,Seattle Mariners,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-31,823133,545121,Ildemaro Vargas,Arizona Diamondbacks,Seattle Mariners,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-01,825078,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Dodgers,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-02,825079,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Dodgers,5,4,1,0,0,0,1,0,0,1,0,0,0,0
+2026-06-03,825077,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Dodgers,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-04,825076,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Dodgers,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-05,825073,545121,Ildemaro Vargas,Arizona Diamondbacks,Washington Nationals,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+2026-06-06,825075,545121,Ildemaro Vargas,Arizona Diamondbacks,Washington Nationals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-07,825074,545121,Ildemaro Vargas,Arizona Diamondbacks,Washington Nationals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-10,823856,545121,Ildemaro Vargas,Arizona Diamondbacks,Miami Marlins,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-12,824507,545121,Ildemaro Vargas,Arizona Diamondbacks,Cincinnati Reds,5,3,0,0,0,0,0,1,0,2,0,0,0,0
+2026-06-14,824506,545121,Ildemaro Vargas,Arizona Diamondbacks,Cincinnati Reds,4,4,0,0,0,0,0,1,0,0,1,0,0,0
+2026-06-15,825071,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-16,825070,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Angels,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-17,825072,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Angels,4,2,0,0,0,0,0,2,0,2,0,0,0,0
+2026-06-19,825069,545121,Ildemaro Vargas,Arizona Diamondbacks,Minnesota Twins,4,4,1,0,0,0,1,0,2,0,1,0,0,0
+2026-06-20,825068,545121,Ildemaro Vargas,Arizona Diamondbacks,Minnesota Twins,3,3,1,1,0,0,2,1,3,0,0,0,0,0
+2026-06-21,825067,545121,Ildemaro Vargas,Arizona Diamondbacks,Minnesota Twins,4,3,0,0,0,0,0,1,0,1,0,0,0,0
+2026-06-22,823040,545121,Ildemaro Vargas,Arizona Diamondbacks,St. Louis Cardinals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-23,823043,545121,Ildemaro Vargas,Arizona Diamondbacks,St. Louis Cardinals,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-06-24,823041,545121,Ildemaro Vargas,Arizona Diamondbacks,St. Louis Cardinals,5,4,1,1,0,0,2,1,2,1,0,0,0,0
+2026-06-26,822962,545121,Ildemaro Vargas,Arizona Diamondbacks,Tampa Bay Rays,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-28,822959,545121,Ildemaro Vargas,Arizona Diamondbacks,Tampa Bay Rays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-29,825065,545121,Ildemaro Vargas,Arizona Diamondbacks,San Francisco Giants,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-30,825066,545121,Ildemaro Vargas,Arizona Diamondbacks,San Francisco Giants,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-03,825062,545121,Ildemaro Vargas,Arizona Diamondbacks,Milwaukee Brewers,5,5,3,0,0,0,3,0,1,0,1,0,0,0
+2026-07-04,825063,545121,Ildemaro Vargas,Arizona Diamondbacks,Milwaukee Brewers,3,3,1,1,0,0,2,0,1,0,0,0,0,0
+2026-07-05,825061,545121,Ildemaro Vargas,Arizona Diamondbacks,Milwaukee Brewers,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-06,823282,545121,Ildemaro Vargas,Arizona Diamondbacks,San Diego Padres,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-08,823279,545121,Ildemaro Vargas,Arizona Diamondbacks,San Diego Padres,4,3,1,0,0,0,1,1,0,1,0,1,0,0
 2026-03-26,824218,545361,Mike Trout,Los Angeles Angels,Houston Astros,5,2,1,0,0,1,4,1,1,3,1,1,0,0
 2026-03-27,824216,545361,Mike Trout,Los Angeles Angels,Houston Astros,5,4,3,0,0,1,6,1,1,1,0,0,0,0
 2026-03-28,824213,545361,Mike Trout,Los Angeles Angels,Houston Astros,5,3,1,0,0,0,1,2,1,2,0,0,0,0
@@ -5894,49 +5973,82 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,824900,666182,Bo Bichette,New York Mets,Atlanta Braves,5,5,2,0,0,0,2,1,0,0,1,0,0,0
 2026-07-07,823607,666182,Bo Bichette,New York Mets,Kansas City Royals,5,5,1,0,0,0,1,1,0,0,0,0,0,0
 2026-07-08,823605,666182,Bo Bichette,New York Mets,Kansas City Royals,5,5,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-18,825098,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-19,825100,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Toronto Blue Jays,4,4,1,0,0,0,1,1,0,0,0,0,0,0
-2026-04-21,825099,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Chicago White Sox,4,3,0,0,0,0,0,0,1,1,0,0,0,0
-2026-04-22,825097,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Chicago White Sox,5,5,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-25,825093,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,San Diego Padres,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-26,825094,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,San Diego Padres,5,4,2,1,0,0,3,0,2,1,1,0,0,0
-2026-04-28,823798,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Milwaukee Brewers,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-29,823796,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Milwaukee Brewers,4,4,2,0,0,0,2,1,0,0,0,0,0,0
-2026-04-30,823795,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Milwaukee Brewers,4,4,2,0,0,0,2,0,1,0,2,0,0,0
-2026-05-02,824685,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Chicago Cubs,4,4,1,1,0,0,2,0,0,0,1,0,0,0
-2026-05-03,824687,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Chicago Cubs,4,3,2,0,0,0,2,1,0,1,1,0,0,0
-2026-05-05,825092,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Pittsburgh Pirates,4,1,1,0,0,0,1,1,0,3,0,0,0,0
-2026-05-06,825091,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Pittsburgh Pirates,3,3,1,0,0,0,1,0,0,0,1,0,0,0
-2026-05-08,825088,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,New York Mets,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-09,825089,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,New York Mets,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-05-11,822901,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Texas Rangers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-12,822903,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Texas Rangers,4,3,0,0,0,0,0,0,1,1,1,0,0,0
-2026-05-13,822900,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Texas Rangers,5,5,1,1,0,0,2,0,1,0,0,0,0,0
-2026-05-15,824360,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Colorado Rockies,5,3,1,0,0,0,1,1,1,1,0,0,0,0
-2026-05-16,824359,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Colorado Rockies,4,4,2,1,0,0,3,1,0,0,0,1,0,0
-2026-05-17,824358,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Colorado Rockies,5,5,2,0,0,1,5,1,2,0,2,0,0,0
-2026-05-19,825086,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,San Francisco Giants,4,4,2,0,0,0,2,0,0,0,1,0,0,0
-2026-05-20,825084,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-05-21,825083,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-22,825082,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Colorado Rockies,2,1,1,0,0,0,1,0,2,0,0,0,0,0
-2026-06-15,825071,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Los Angeles Angels,4,4,1,0,0,0,1,0,1,0,0,0,0,0
-2026-06-16,825070,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-19,825069,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Minnesota Twins,4,4,1,0,0,0,1,1,1,0,0,0,0,0
-2026-06-20,825068,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Minnesota Twins,5,5,0,0,0,0,0,0,0,0,3,0,0,0
-2026-06-22,823040,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,St. Louis Cardinals,4,3,0,0,0,0,0,0,0,0,0,0,0,1
-2026-06-23,823043,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,St. Louis Cardinals,4,4,2,1,0,0,3,0,2,0,1,0,0,0
-2026-06-24,823041,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,St. Louis Cardinals,5,5,2,1,0,0,3,0,1,0,0,0,0,0
-2026-06-26,822962,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Tampa Bay Rays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-28,822959,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Tampa Bay Rays,4,3,1,0,0,0,1,0,0,0,1,0,0,1
-2026-06-29,825065,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,San Francisco Giants,4,4,1,1,0,0,2,0,0,0,0,0,0,0
-2026-06-30,825066,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,San Francisco Giants,5,5,2,1,0,1,6,1,3,0,0,0,0,0
-2026-07-01,825064,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-07-03,825062,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Milwaukee Brewers,5,4,0,0,0,0,0,1,0,1,0,0,0,0
-2026-07-04,825063,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Milwaukee Brewers,1,1,1,0,0,0,1,0,0,0,0,0,0,0
-2026-07-05,825061,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Milwaukee Brewers,3,2,0,0,0,0,0,0,0,1,0,0,0,0
-2026-07-06,823282,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,San Diego Padres,4,4,1,0,0,0,1,1,1,0,1,0,0,0
-2026-07-07,823280,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,San Diego Padres,2,2,1,0,0,0,1,0,0,0,1,0,0,0
-2026-07-08,823279,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,San Diego Padres,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-03-27,823893,666397,Edouard Julien,Colorado Rockies,Miami Marlins,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-03-28,823892,666397,Edouard Julien,Colorado Rockies,Miami Marlins,3,3,1,1,0,0,2,0,0,0,1,0,0,0
+2026-03-30,822834,666397,Edouard Julien,Colorado Rockies,Toronto Blue Jays,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-03-31,822836,666397,Edouard Julien,Colorado Rockies,Toronto Blue Jays,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-01,822835,666397,Edouard Julien,Colorado Rockies,Toronto Blue Jays,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-03,824377,666397,Edouard Julien,Colorado Rockies,Philadelphia Phillies,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-04-05,824379,666397,Edouard Julien,Colorado Rockies,Philadelphia Phillies,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-06,824376,666397,Edouard Julien,Colorado Rockies,Houston Astros,5,5,2,0,0,0,2,1,2,0,1,0,0,0
+2026-04-07,824375,666397,Edouard Julien,Colorado Rockies,Houston Astros,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-08,824374,666397,Edouard Julien,Colorado Rockies,Houston Astros,5,4,2,0,0,0,2,2,2,1,0,1,1,0
+2026-04-09,823319,666397,Edouard Julien,Colorado Rockies,San Diego Padres,3,3,2,0,0,0,2,0,0,0,1,0,1,0
+2026-04-10,823318,666397,Edouard Julien,Colorado Rockies,San Diego Padres,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-11,823316,666397,Edouard Julien,Colorado Rockies,San Diego Padres,5,3,2,0,0,1,5,2,1,2,1,1,0,0
+2026-04-12,823317,666397,Edouard Julien,Colorado Rockies,San Diego Padres,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-14,824210,666397,Edouard Julien,Colorado Rockies,Houston Astros,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-15,824209,666397,Edouard Julien,Colorado Rockies,Houston Astros,5,4,0,0,0,0,0,0,0,1,2,0,0,0
+2026-04-16,824208,666397,Edouard Julien,Colorado Rockies,Houston Astros,5,4,0,0,0,0,0,0,0,1,2,0,0,0
+2026-04-17,824373,666397,Edouard Julien,Colorado Rockies,Los Angeles Dodgers,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-04-18,824372,666397,Edouard Julien,Colorado Rockies,Los Angeles Dodgers,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-04-19,824371,666397,Edouard Julien,Colorado Rockies,Los Angeles Dodgers,5,5,3,1,0,0,4,1,3,0,0,0,0,0
+2026-04-21,824369,666397,Edouard Julien,Colorado Rockies,San Diego Padres,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-04-22,824367,666397,Edouard Julien,Colorado Rockies,San Diego Padres,4,3,1,0,0,0,1,1,1,1,1,0,0,0
+2026-04-23,824368,666397,Edouard Julien,Colorado Rockies,San Diego Padres,5,5,2,0,1,0,4,2,1,0,2,0,0,0
+2026-04-26,823635,666397,Edouard Julien,Colorado Rockies,New York Mets,4,4,2,1,0,0,3,2,0,0,1,0,0,0
+2026-04-26,823637,666397,Edouard Julien,Colorado Rockies,New York Mets,5,4,1,0,0,0,1,1,0,1,0,0,0,0
+2026-04-28,824526,666397,Edouard Julien,Colorado Rockies,Cincinnati Reds,5,4,3,0,0,1,6,1,2,1,1,0,0,0
+2026-04-30,824524,666397,Edouard Julien,Colorado Rockies,Cincinnati Reds,2,1,0,0,0,0,0,0,0,0,0,0,0,1
+2026-05-01,824366,666397,Edouard Julien,Colorado Rockies,Atlanta Braves,5,4,0,0,0,0,0,1,0,1,3,0,0,0
+2026-05-03,824364,666397,Edouard Julien,Colorado Rockies,Atlanta Braves,5,4,0,0,0,0,0,1,0,1,4,1,0,0
+2026-05-04,824363,666397,Edouard Julien,Colorado Rockies,New York Mets,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-06,824361,666397,Edouard Julien,Colorado Rockies,New York Mets,5,5,2,0,0,0,2,0,0,0,1,0,0,0
+2026-05-07,824362,666397,Edouard Julien,Colorado Rockies,New York Mets,5,4,0,0,0,0,0,0,0,1,1,0,0,0
+2026-05-08,823466,666397,Edouard Julien,Colorado Rockies,Philadelphia Phillies,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-09,823468,666397,Edouard Julien,Colorado Rockies,Philadelphia Phillies,3,2,1,0,0,0,1,0,0,1,0,0,0,0
+2026-05-10,823463,666397,Edouard Julien,Colorado Rockies,Philadelphia Phillies,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-12,823385,666397,Edouard Julien,Colorado Rockies,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-13,823386,666397,Edouard Julien,Colorado Rockies,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-14,823383,666397,Edouard Julien,Colorado Rockies,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-15,824360,666397,Edouard Julien,Colorado Rockies,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-17,824358,666397,Edouard Julien,Colorado Rockies,Arizona Diamondbacks,5,5,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-18,824357,666397,Edouard Julien,Colorado Rockies,Texas Rangers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-19,824356,666397,Edouard Julien,Colorado Rockies,Texas Rangers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-20,824355,666397,Edouard Julien,Colorado Rockies,Texas Rangers,3,2,0,0,0,0,0,0,0,1,1,0,0,0
+2026-05-24,825081,666397,Edouard Julien,Colorado Rockies,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-25,823948,666397,Edouard Julien,Colorado Rockies,Los Angeles Dodgers,3,2,0,0,0,0,0,0,0,1,1,0,0,0
+2026-05-27,823947,666397,Edouard Julien,Colorado Rockies,Los Angeles Dodgers,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-29,824353,666397,Edouard Julien,Colorado Rockies,San Francisco Giants,4,4,1,0,0,0,1,0,0,0,0,1,0,0
+2026-05-30,824352,666397,Edouard Julien,Colorado Rockies,San Francisco Giants,3,2,1,0,0,0,1,2,0,1,1,0,0,0
+2026-05-31,824354,666397,Edouard Julien,Colorado Rockies,San Francisco Giants,2,1,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-01,824027,666397,Edouard Julien,Colorado Rockies,Los Angeles Angels,4,2,0,0,0,0,0,0,0,2,1,0,1,0
+2026-06-02,824026,666397,Edouard Julien,Colorado Rockies,Los Angeles Angels,2,2,2,0,0,0,2,1,1,0,0,0,0,0
+2026-06-03,824024,666397,Edouard Julien,Colorado Rockies,Los Angeles Angels,4,3,1,1,0,0,2,1,0,1,0,0,0,0
+2026-06-05,824350,666397,Edouard Julien,Colorado Rockies,Milwaukee Brewers,2,2,1,0,0,0,1,0,1,0,1,0,0,0
+2026-06-06,824351,666397,Edouard Julien,Colorado Rockies,Milwaukee Brewers,3,3,0,0,0,0,0,1,0,0,2,0,0,0
+2026-06-07,824349,666397,Edouard Julien,Colorado Rockies,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-09,824347,666397,Edouard Julien,Colorado Rockies,Chicago Cubs,4,4,2,1,0,0,3,1,3,0,1,0,0,0
+2026-06-10,824348,666397,Edouard Julien,Colorado Rockies,Chicago Cubs,1,1,1,0,0,0,1,1,0,0,0,0,0,0
+2026-06-11,824346,666397,Edouard Julien,Colorado Rockies,Chicago Cubs,5,5,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-12,824997,666397,Edouard Julien,Colorado Rockies,Athletics,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-13,824995,666397,Edouard Julien,Colorado Rockies,Athletics,4,3,1,0,0,0,1,1,0,1,0,0,0,0
+2026-06-14,824994,666397,Edouard Julien,Colorado Rockies,Athletics,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-15,824666,666397,Edouard Julien,Colorado Rockies,Chicago Cubs,2,1,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-16,824667,666397,Edouard Julien,Colorado Rockies,Chicago Cubs,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-17,824668,666397,Edouard Julien,Colorado Rockies,Chicago Cubs,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-20,824342,666397,Edouard Julien,Colorado Rockies,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-21,824343,666397,Edouard Julien,Colorado Rockies,Pittsburgh Pirates,4,3,1,0,0,0,1,0,0,1,0,0,0,0
+2026-06-22,824344,666397,Edouard Julien,Colorado Rockies,Boston Red Sox,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-23,824340,666397,Edouard Julien,Colorado Rockies,Boston Red Sox,4,3,0,0,0,0,0,0,0,1,3,0,0,0
+2026-06-26,823688,666397,Edouard Julien,Colorado Rockies,Minnesota Twins,5,4,1,1,0,0,2,2,1,1,1,0,0,0
+2026-06-29,824339,666397,Edouard Julien,Colorado Rockies,Miami Marlins,4,2,2,1,0,0,3,1,0,2,0,0,0,0
+2026-06-30,824338,666397,Edouard Julien,Colorado Rockies,Miami Marlins,4,2,0,0,0,0,0,1,0,2,1,0,0,0
+2026-07-02,824335,666397,Edouard Julien,Colorado Rockies,Miami Marlins,5,3,1,0,0,0,1,2,0,2,0,0,0,0
+2026-07-03,824336,666397,Edouard Julien,Colorado Rockies,San Francisco Giants,5,4,0,0,0,0,0,2,1,1,1,0,0,0
+2026-07-05,824333,666397,Edouard Julien,Colorado Rockies,San Francisco Giants,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-07-06,823930,666397,Edouard Julien,Colorado Rockies,Los Angeles Dodgers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-08,823928,666397,Edouard Julien,Colorado Rockies,Los Angeles Dodgers,2,2,1,0,0,1,4,1,1,0,1,0,0,0
 2026-03-26,823163,668227,Randy Arozarena,Seattle Mariners,Cleveland Guardians,4,4,1,1,0,0,2,0,0,0,1,0,0,0
 2026-03-27,823162,668227,Randy Arozarena,Seattle Mariners,Cleveland Guardians,4,1,0,0,0,0,0,2,0,3,0,1,0,0
 2026-03-28,823161,668227,Randy Arozarena,Seattle Mariners,Cleveland Guardians,5,4,1,0,0,0,1,2,0,1,0,0,0,0
@@ -9305,94 +9417,67 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,824413,678246,Miguel Vargas,Chicago White Sox,Cleveland Guardians,5,2,1,1,0,0,2,2,0,3,0,0,0,0
 2026-07-07,824579,678246,Miguel Vargas,Chicago White Sox,Boston Red Sox,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-07-08,824578,678246,Miguel Vargas,Chicago White Sox,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-03-27,823893,678662,Ezequiel Tovar,Colorado Rockies,Miami Marlins,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-03-28,823892,678662,Ezequiel Tovar,Colorado Rockies,Miami Marlins,4,4,1,0,0,1,4,1,2,0,1,0,0,0
-2026-03-29,823891,678662,Ezequiel Tovar,Colorado Rockies,Miami Marlins,4,4,1,0,0,0,1,0,0,0,2,0,0,0
-2026-03-30,822834,678662,Ezequiel Tovar,Colorado Rockies,Toronto Blue Jays,6,6,3,2,0,0,5,2,3,0,1,1,0,0
-2026-03-31,822836,678662,Ezequiel Tovar,Colorado Rockies,Toronto Blue Jays,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-01,822835,678662,Ezequiel Tovar,Colorado Rockies,Toronto Blue Jays,5,5,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-03,824377,678662,Ezequiel Tovar,Colorado Rockies,Philadelphia Phillies,3,3,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-04,824378,678662,Ezequiel Tovar,Colorado Rockies,Philadelphia Phillies,4,4,1,0,0,0,1,0,0,0,2,0,0,0
-2026-04-05,824379,678662,Ezequiel Tovar,Colorado Rockies,Philadelphia Phillies,4,3,0,0,0,0,0,0,0,1,1,0,0,0
-2026-04-06,824376,678662,Ezequiel Tovar,Colorado Rockies,Houston Astros,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-07,824375,678662,Ezequiel Tovar,Colorado Rockies,Houston Astros,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-08,824374,678662,Ezequiel Tovar,Colorado Rockies,Houston Astros,5,5,2,2,0,0,4,0,1,0,2,0,0,0
-2026-04-09,823319,678662,Ezequiel Tovar,Colorado Rockies,San Diego Padres,5,5,2,2,0,0,4,0,0,0,1,0,0,0
-2026-04-10,823318,678662,Ezequiel Tovar,Colorado Rockies,San Diego Padres,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-11,823316,678662,Ezequiel Tovar,Colorado Rockies,San Diego Padres,5,5,1,1,0,0,2,1,0,0,0,0,0,0
-2026-04-12,823317,678662,Ezequiel Tovar,Colorado Rockies,San Diego Padres,3,2,0,0,0,0,0,1,0,0,2,0,0,1
-2026-04-14,824210,678662,Ezequiel Tovar,Colorado Rockies,Houston Astros,5,4,1,0,0,0,1,1,0,1,2,0,0,0
-2026-04-15,824209,678662,Ezequiel Tovar,Colorado Rockies,Houston Astros,4,3,0,0,0,0,0,1,0,1,1,0,0,0
-2026-04-16,824208,678662,Ezequiel Tovar,Colorado Rockies,Houston Astros,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-17,824373,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Dodgers,3,3,1,1,0,0,2,0,0,0,1,0,0,0
-2026-04-18,824372,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Dodgers,4,4,1,0,0,0,1,1,0,0,1,0,0,0
-2026-04-19,824371,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Dodgers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-20,824370,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Dodgers,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-21,824369,678662,Ezequiel Tovar,Colorado Rockies,San Diego Padres,3,2,0,0,0,0,0,0,0,0,0,1,0,1
-2026-04-22,824367,678662,Ezequiel Tovar,Colorado Rockies,San Diego Padres,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-23,824368,678662,Ezequiel Tovar,Colorado Rockies,San Diego Padres,5,5,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-24,823638,678662,Ezequiel Tovar,Colorado Rockies,New York Mets,4,4,2,0,0,0,2,0,0,0,2,0,0,0
-2026-04-26,823635,678662,Ezequiel Tovar,Colorado Rockies,New York Mets,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-26,823637,678662,Ezequiel Tovar,Colorado Rockies,New York Mets,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-28,824526,678662,Ezequiel Tovar,Colorado Rockies,Cincinnati Reds,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-29,824525,678662,Ezequiel Tovar,Colorado Rockies,Cincinnati Reds,5,4,1,0,0,0,1,1,2,1,1,0,0,0
-2026-04-30,824524,678662,Ezequiel Tovar,Colorado Rockies,Cincinnati Reds,2,1,1,0,0,0,1,0,0,1,0,0,0,0
-2026-05-01,824366,678662,Ezequiel Tovar,Colorado Rockies,Atlanta Braves,4,3,0,0,0,0,0,0,0,1,1,0,0,0
-2026-05-02,824365,678662,Ezequiel Tovar,Colorado Rockies,Atlanta Braves,3,2,0,0,0,0,0,0,0,1,1,0,0,0
-2026-05-03,824364,678662,Ezequiel Tovar,Colorado Rockies,Atlanta Braves,4,3,1,0,0,0,1,0,1,0,0,0,0,0
-2026-05-04,824363,678662,Ezequiel Tovar,Colorado Rockies,New York Mets,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-06,824361,678662,Ezequiel Tovar,Colorado Rockies,New York Mets,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-07,824362,678662,Ezequiel Tovar,Colorado Rockies,New York Mets,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-2026-05-08,823466,678662,Ezequiel Tovar,Colorado Rockies,Philadelphia Phillies,5,5,1,0,0,0,1,0,1,0,3,1,0,0
-2026-05-10,823463,678662,Ezequiel Tovar,Colorado Rockies,Philadelphia Phillies,3,3,2,0,0,0,2,0,0,0,0,0,0,0
-2026-05-12,823385,678662,Ezequiel Tovar,Colorado Rockies,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-13,823386,678662,Ezequiel Tovar,Colorado Rockies,Pittsburgh Pirates,4,3,1,0,0,0,1,2,1,1,1,0,0,0
-2026-05-14,823383,678662,Ezequiel Tovar,Colorado Rockies,Pittsburgh Pirates,3,3,1,0,0,0,1,0,0,0,0,0,0,0
-2026-05-15,824360,678662,Ezequiel Tovar,Colorado Rockies,Arizona Diamondbacks,2,2,1,1,0,0,2,0,0,0,0,0,0,0
-2026-05-16,824359,678662,Ezequiel Tovar,Colorado Rockies,Arizona Diamondbacks,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-05-18,824357,678662,Ezequiel Tovar,Colorado Rockies,Texas Rangers,4,3,1,1,0,0,2,1,2,1,0,0,0,0
-2026-05-19,824356,678662,Ezequiel Tovar,Colorado Rockies,Texas Rangers,4,2,0,0,0,0,0,0,0,2,0,0,0,0
-2026-05-20,824355,678662,Ezequiel Tovar,Colorado Rockies,Texas Rangers,4,4,1,0,0,0,1,0,0,0,3,0,0,0
-2026-05-21,825083,678662,Ezequiel Tovar,Colorado Rockies,Arizona Diamondbacks,4,4,1,1,0,0,2,0,0,0,0,0,0,0
-2026-05-22,825082,678662,Ezequiel Tovar,Colorado Rockies,Arizona Diamondbacks,4,4,2,0,0,0,2,0,0,0,0,0,0,0
-2026-05-23,825080,678662,Ezequiel Tovar,Colorado Rockies,Arizona Diamondbacks,4,4,0,0,0,0,0,0,1,0,1,0,0,0
-2026-05-24,825081,678662,Ezequiel Tovar,Colorado Rockies,Arizona Diamondbacks,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-05-25,823948,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Dodgers,4,3,2,0,0,1,5,1,2,0,0,0,0,0
-2026-05-26,823949,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Dodgers,5,5,1,0,0,0,1,0,0,0,1,0,0,0
-2026-05-27,823947,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Dodgers,3,2,0,0,0,0,0,0,0,1,1,0,0,0
-2026-05-29,824353,678662,Ezequiel Tovar,Colorado Rockies,San Francisco Giants,5,4,2,0,0,2,8,3,4,1,1,1,0,0
-2026-05-30,824352,678662,Ezequiel Tovar,Colorado Rockies,San Francisco Giants,5,5,1,0,0,0,1,0,0,0,1,0,0,0
-2026-05-31,824354,678662,Ezequiel Tovar,Colorado Rockies,San Francisco Giants,3,3,1,0,0,0,1,0,0,0,1,0,0,0
-2026-06-01,824027,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Angels,5,5,0,0,0,0,0,0,0,0,5,0,0,0
-2026-06-02,824026,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Angels,5,4,0,0,0,0,0,0,1,0,1,0,0,0
-2026-06-05,824350,678662,Ezequiel Tovar,Colorado Rockies,Milwaukee Brewers,5,4,1,1,0,0,2,1,0,1,1,0,0,0
-2026-06-06,824351,678662,Ezequiel Tovar,Colorado Rockies,Milwaukee Brewers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-07,824349,678662,Ezequiel Tovar,Colorado Rockies,Milwaukee Brewers,4,4,1,1,0,0,2,1,1,0,1,0,0,0
-2026-06-09,824347,678662,Ezequiel Tovar,Colorado Rockies,Chicago Cubs,4,4,1,0,0,1,4,1,1,0,1,0,0,0
-2026-06-10,824348,678662,Ezequiel Tovar,Colorado Rockies,Chicago Cubs,4,4,2,0,0,0,2,0,0,0,2,0,0,0
-2026-06-11,824346,678662,Ezequiel Tovar,Colorado Rockies,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,3,0,0,0
-2026-06-14,824994,678662,Ezequiel Tovar,Colorado Rockies,Athletics,6,6,3,1,0,0,4,1,1,0,2,0,0,0
-2026-06-15,824666,678662,Ezequiel Tovar,Colorado Rockies,Chicago Cubs,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-16,824667,678662,Ezequiel Tovar,Colorado Rockies,Chicago Cubs,4,3,0,0,0,0,0,1,0,1,1,0,0,0
-2026-06-17,824668,678662,Ezequiel Tovar,Colorado Rockies,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-19,824345,678662,Ezequiel Tovar,Colorado Rockies,Pittsburgh Pirates,4,4,2,0,0,0,2,1,0,0,1,0,0,0
-2026-06-20,824342,678662,Ezequiel Tovar,Colorado Rockies,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,2,0,0,0
-2026-06-22,824344,678662,Ezequiel Tovar,Colorado Rockies,Boston Red Sox,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-23,824340,678662,Ezequiel Tovar,Colorado Rockies,Boston Red Sox,4,4,1,0,0,1,4,1,1,0,1,0,0,0
-2026-06-24,824341,678662,Ezequiel Tovar,Colorado Rockies,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-26,823688,678662,Ezequiel Tovar,Colorado Rockies,Minnesota Twins,5,5,1,1,0,0,2,1,0,0,1,0,0,0
-2026-06-27,823689,678662,Ezequiel Tovar,Colorado Rockies,Minnesota Twins,2,1,1,0,0,0,1,1,0,1,0,1,0,0
-2026-06-28,823686,678662,Ezequiel Tovar,Colorado Rockies,Minnesota Twins,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-29,824339,678662,Ezequiel Tovar,Colorado Rockies,Miami Marlins,4,3,0,0,0,0,0,0,1,0,0,0,0,0
-2026-06-30,824338,678662,Ezequiel Tovar,Colorado Rockies,Miami Marlins,4,4,1,1,0,0,2,0,1,0,1,0,0,0
-2026-07-01,824337,678662,Ezequiel Tovar,Colorado Rockies,Miami Marlins,3,3,0,0,0,0,0,1,0,0,0,0,0,0
-2026-07-02,824335,678662,Ezequiel Tovar,Colorado Rockies,Miami Marlins,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-03,824336,678662,Ezequiel Tovar,Colorado Rockies,San Francisco Giants,5,4,3,0,0,1,6,2,3,0,0,0,0,0
-2026-07-04,824334,678662,Ezequiel Tovar,Colorado Rockies,San Francisco Giants,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-05,824333,678662,Ezequiel Tovar,Colorado Rockies,San Francisco Giants,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-06,823930,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Dodgers,5,3,1,0,0,1,4,2,2,1,0,0,0,0
-2026-07-07,823929,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Dodgers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-08,823928,678662,Ezequiel Tovar,Colorado Rockies,Los Angeles Dodgers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-03-28,823973,678489,Jorge Barrosa,Arizona Diamondbacks,Los Angeles Dodgers,3,3,1,1,0,0,2,1,0,0,2,0,0,0
+2026-04-02,825105,678489,Jorge Barrosa,Arizona Diamondbacks,Atlanta Braves,3,3,1,1,0,0,2,0,0,0,0,0,0,0
+2026-04-04,825104,678489,Jorge Barrosa,Arizona Diamondbacks,Atlanta Braves,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-05,825102,678489,Jorge Barrosa,Arizona Diamondbacks,Atlanta Braves,4,4,1,1,0,0,2,2,0,0,1,0,0,0
+2026-04-07,823648,678489,Jorge Barrosa,Arizona Diamondbacks,New York Mets,4,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-08,823646,678489,Jorge Barrosa,Arizona Diamondbacks,New York Mets,4,3,1,1,0,0,2,1,2,1,0,0,0,0
+2026-04-09,823645,678489,Jorge Barrosa,Arizona Diamondbacks,New York Mets,4,4,1,0,1,0,3,0,1,0,1,0,0,0
+2026-04-10,823482,678489,Jorge Barrosa,Arizona Diamondbacks,Philadelphia Phillies,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-04-11,823480,678489,Jorge Barrosa,Arizona Diamondbacks,Philadelphia Phillies,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-04-12,823479,678489,Jorge Barrosa,Arizona Diamondbacks,Philadelphia Phillies,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-04-13,824856,678489,Jorge Barrosa,Arizona Diamondbacks,Baltimore Orioles,4,4,2,1,0,0,3,0,0,0,2,0,0,0
+2026-04-14,824853,678489,Jorge Barrosa,Arizona Diamondbacks,Baltimore Orioles,4,2,1,1,0,0,2,1,0,1,0,0,0,1
+2026-04-15,824855,678489,Jorge Barrosa,Arizona Diamondbacks,Baltimore Orioles,4,4,1,1,0,0,2,0,1,0,1,0,0,0
+2026-04-17,825101,678489,Jorge Barrosa,Arizona Diamondbacks,Toronto Blue Jays,4,3,0,0,0,0,0,1,0,0,1,0,0,0
+2026-04-18,825098,678489,Jorge Barrosa,Arizona Diamondbacks,Toronto Blue Jays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-19,825100,678489,Jorge Barrosa,Arizona Diamondbacks,Toronto Blue Jays,2,2,1,0,0,1,4,1,2,0,0,0,0,0
+2026-04-22,825097,678489,Jorge Barrosa,Arizona Diamondbacks,Chicago White Sox,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-04-23,825096,678489,Jorge Barrosa,Arizona Diamondbacks,Chicago White Sox,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-04-25,825093,678489,Jorge Barrosa,Arizona Diamondbacks,San Diego Padres,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-26,825094,678489,Jorge Barrosa,Arizona Diamondbacks,San Diego Padres,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-28,823798,678489,Jorge Barrosa,Arizona Diamondbacks,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-29,823796,678489,Jorge Barrosa,Arizona Diamondbacks,Milwaukee Brewers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-30,823795,678489,Jorge Barrosa,Arizona Diamondbacks,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-01,824686,678489,Jorge Barrosa,Arizona Diamondbacks,Chicago Cubs,4,4,2,2,0,0,4,2,1,0,0,0,0,0
+2026-05-02,824685,678489,Jorge Barrosa,Arizona Diamondbacks,Chicago Cubs,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-03,824687,678489,Jorge Barrosa,Arizona Diamondbacks,Chicago Cubs,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-07,825090,678489,Jorge Barrosa,Arizona Diamondbacks,Pittsburgh Pirates,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-05-08,825088,678489,Jorge Barrosa,Arizona Diamondbacks,New York Mets,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-05-09,825089,678489,Jorge Barrosa,Arizona Diamondbacks,New York Mets,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-10,825085,678489,Jorge Barrosa,Arizona Diamondbacks,New York Mets,4,3,1,0,0,0,1,1,0,1,1,0,0,0
+2026-05-11,822901,678489,Jorge Barrosa,Arizona Diamondbacks,Texas Rangers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-13,822900,678489,Jorge Barrosa,Arizona Diamondbacks,Texas Rangers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-16,824359,678489,Jorge Barrosa,Arizona Diamondbacks,Colorado Rockies,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-17,824358,678489,Jorge Barrosa,Arizona Diamondbacks,Colorado Rockies,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-18,825087,678489,Jorge Barrosa,Arizona Diamondbacks,San Francisco Giants,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-20,825084,678489,Jorge Barrosa,Arizona Diamondbacks,San Francisco Giants,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-22,825082,678489,Jorge Barrosa,Arizona Diamondbacks,Colorado Rockies,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-24,825081,678489,Jorge Barrosa,Arizona Diamondbacks,Colorado Rockies,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-25,823219,678489,Jorge Barrosa,Arizona Diamondbacks,San Francisco Giants,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-26,823216,678489,Jorge Barrosa,Arizona Diamondbacks,San Francisco Giants,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-27,823217,678489,Jorge Barrosa,Arizona Diamondbacks,San Francisco Giants,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-01,825078,678489,Jorge Barrosa,Arizona Diamondbacks,Los Angeles Dodgers,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-02,825079,678489,Jorge Barrosa,Arizona Diamondbacks,Los Angeles Dodgers,3,3,1,0,0,0,1,1,0,0,0,0,0,0
+2026-06-04,825076,678489,Jorge Barrosa,Arizona Diamondbacks,Los Angeles Dodgers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-05,825073,678489,Jorge Barrosa,Arizona Diamondbacks,Washington Nationals,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-07,825074,678489,Jorge Barrosa,Arizona Diamondbacks,Washington Nationals,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-11,823855,678489,Jorge Barrosa,Arizona Diamondbacks,Miami Marlins,3,3,1,0,0,0,1,0,0,0,2,0,0,0
+2026-06-12,824507,678489,Jorge Barrosa,Arizona Diamondbacks,Cincinnati Reds,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-14,824506,678489,Jorge Barrosa,Arizona Diamondbacks,Cincinnati Reds,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-15,825071,678489,Jorge Barrosa,Arizona Diamondbacks,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-17,825072,678489,Jorge Barrosa,Arizona Diamondbacks,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-19,825069,678489,Jorge Barrosa,Arizona Diamondbacks,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-20,825068,678489,Jorge Barrosa,Arizona Diamondbacks,Minnesota Twins,4,3,2,1,0,1,6,3,2,1,1,0,0,0
+2026-06-21,825067,678489,Jorge Barrosa,Arizona Diamondbacks,Minnesota Twins,3,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-23,823043,678489,Jorge Barrosa,Arizona Diamondbacks,St. Louis Cardinals,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-06-24,823041,678489,Jorge Barrosa,Arizona Diamondbacks,St. Louis Cardinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-26,822962,678489,Jorge Barrosa,Arizona Diamondbacks,Tampa Bay Rays,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-29,825065,678489,Jorge Barrosa,Arizona Diamondbacks,San Francisco Giants,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-30,825066,678489,Jorge Barrosa,Arizona Diamondbacks,San Francisco Giants,4,3,1,0,0,0,1,1,1,1,0,0,0,0
+2026-07-04,825063,678489,Jorge Barrosa,Arizona Diamondbacks,Milwaukee Brewers,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-07-06,823282,678489,Jorge Barrosa,Arizona Diamondbacks,San Diego Padres,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-26,824541,678882,Ceddanne Rafaela,Boston Red Sox,Cincinnati Reds,4,4,2,0,0,0,2,0,1,0,0,0,0,0
 2026-03-28,824540,678882,Ceddanne Rafaela,Boston Red Sox,Cincinnati Reds,5,5,1,0,0,0,1,1,0,0,1,0,0,0
 2026-03-29,824538,678882,Ceddanne Rafaela,Boston Red Sox,Cincinnati Reds,1,1,0,0,0,0,0,0,0,0,0,0,0,0
@@ -13020,41 +13105,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,825061,694371,Tommy Troy,Arizona Diamondbacks,Milwaukee Brewers,4,4,1,0,0,0,1,1,0,0,1,0,0,0
 2026-07-06,823282,694371,Tommy Troy,Arizona Diamondbacks,San Diego Padres,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-07-08,823279,694371,Tommy Troy,Arizona Diamondbacks,San Diego Padres,4,4,1,0,0,1,4,1,2,0,0,0,0,0
-2026-03-26,823974,694374,Tim Tawa,Arizona Diamondbacks,Los Angeles Dodgers,3,3,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-01,825106,694374,Tim Tawa,Arizona Diamondbacks,Detroit Tigers,3,3,1,1,0,0,2,0,0,0,0,0,0,0
-2026-04-02,825105,694374,Tim Tawa,Arizona Diamondbacks,Atlanta Braves,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-03,825103,694374,Tim Tawa,Arizona Diamondbacks,Atlanta Braves,3,2,0,0,0,0,0,0,0,1,0,0,0,0
-2026-04-05,825102,694374,Tim Tawa,Arizona Diamondbacks,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-07,823648,694374,Tim Tawa,Arizona Diamondbacks,New York Mets,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-08,823646,694374,Tim Tawa,Arizona Diamondbacks,New York Mets,4,2,0,0,0,0,0,0,0,1,0,0,0,0
-2026-04-09,823645,694374,Tim Tawa,Arizona Diamondbacks,New York Mets,4,3,1,0,0,0,1,0,1,0,1,0,0,0
-2026-04-10,823482,694374,Tim Tawa,Arizona Diamondbacks,Philadelphia Phillies,4,3,0,0,0,0,0,1,0,1,0,0,0,0
-2026-04-11,823480,694374,Tim Tawa,Arizona Diamondbacks,Philadelphia Phillies,4,3,0,0,0,0,0,0,0,1,1,0,1,0
-2026-04-12,823479,694374,Tim Tawa,Arizona Diamondbacks,Philadelphia Phillies,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-14,824853,694374,Tim Tawa,Arizona Diamondbacks,Baltimore Orioles,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-17,825101,694374,Tim Tawa,Arizona Diamondbacks,Toronto Blue Jays,4,3,1,1,0,0,2,0,1,1,0,0,0,0
-2026-04-19,825100,694374,Tim Tawa,Arizona Diamondbacks,Toronto Blue Jays,1,1,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-25,825093,694374,Tim Tawa,Arizona Diamondbacks,San Diego Padres,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-26,825094,694374,Tim Tawa,Arizona Diamondbacks,San Diego Padres,4,4,1,0,0,1,4,1,4,0,1,0,0,0
-2026-04-28,823798,694374,Tim Tawa,Arizona Diamondbacks,Milwaukee Brewers,2,2,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-30,823795,694374,Tim Tawa,Arizona Diamondbacks,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-01,824686,694374,Tim Tawa,Arizona Diamondbacks,Chicago Cubs,2,1,0,0,0,0,0,1,0,1,0,0,0,0
-2026-05-07,825090,694374,Tim Tawa,Arizona Diamondbacks,Pittsburgh Pirates,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-12,822903,694374,Tim Tawa,Arizona Diamondbacks,Texas Rangers,1,0,0,0,0,0,0,1,0,1,0,0,0,0
-2026-05-15,824360,694374,Tim Tawa,Arizona Diamondbacks,Colorado Rockies,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-18,825087,694374,Tim Tawa,Arizona Diamondbacks,San Francisco Giants,4,4,1,0,0,0,1,0,2,0,0,0,1,0
-2026-05-20,825084,694374,Tim Tawa,Arizona Diamondbacks,San Francisco Giants,3,3,1,0,0,0,1,1,0,0,2,0,0,0
-2026-05-23,825080,694374,Tim Tawa,Arizona Diamondbacks,Colorado Rockies,4,3,1,0,0,0,1,1,0,1,1,0,0,0
-2026-05-24,825081,694374,Tim Tawa,Arizona Diamondbacks,Colorado Rockies,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-26,823216,694374,Tim Tawa,Arizona Diamondbacks,San Francisco Giants,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-29,823135,694374,Tim Tawa,Arizona Diamondbacks,Seattle Mariners,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-31,823133,694374,Tim Tawa,Arizona Diamondbacks,Seattle Mariners,3,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-20,825068,694374,Tim Tawa,Arizona Diamondbacks,Minnesota Twins,3,2,0,0,0,0,0,0,0,1,1,0,0,0
-2026-06-21,825067,694374,Tim Tawa,Arizona Diamondbacks,Minnesota Twins,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-22,823040,694374,Tim Tawa,Arizona Diamondbacks,St. Louis Cardinals,3,3,1,1,0,0,2,0,0,0,1,0,0,0
-2026-06-24,823041,694374,Tim Tawa,Arizona Diamondbacks,St. Louis Cardinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-05,825061,694374,Tim Tawa,Arizona Diamondbacks,Milwaukee Brewers,4,2,0,0,0,0,0,0,0,1,0,1,0,0
-2026-07-07,823280,694374,Tim Tawa,Arizona Diamondbacks,San Diego Padres,3,3,0,0,0,0,0,0,0,0,2,0,0,0
 2026-05-31,824592,694378,Jacob Gonzalez,Chicago White Sox,Detroit Tigers,3,3,1,0,0,0,1,0,0,0,0,0,0,0
 2026-06-01,823702,694378,Jacob Gonzalez,Chicago White Sox,Minnesota Twins,4,4,0,0,0,0,0,0,0,0,4,0,0,0
 2026-06-02,823700,694378,Jacob Gonzalez,Chicago White Sox,Minnesota Twins,4,3,1,0,0,0,1,0,0,1,2,0,0,0

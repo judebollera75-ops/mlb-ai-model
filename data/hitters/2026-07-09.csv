@@ -197,39 +197,39 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-09,822877,Texas Rangers,Los Angeles Angels,home,553869,Elias Díaz,7,C,Final
 2026-07-09,822877,Texas Rangers,Los Angeles Angels,home,694497,Evan Carter,8,CF,Final
 2026-07-09,822877,Texas Rangers,Los Angeles Angels,home,696030,Alejandro Osuna,9,LF,Final
-2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,606466,Ketel Marte,1,2B,In Progress
-2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,672695,Geraldo Perdomo,2,SS,In Progress
-2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,682998,Corbin Carroll,3,RF,In Progress
-2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,672515,Gabriel Moreno,4,C,In Progress
-2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,596146,Max Kepler,5,DH,In Progress
-2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,666971,Lourdes Gurriel Jr.,6,LF,In Progress
-2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,571448,Nolan Arenado,7,3B,In Progress
-2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,694371,Tommy Troy,8,CF,In Progress
-2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,694374,Tim Tawa,9,1B,In Progress
-2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,665487,Fernando Tatis Jr.,1,RF,In Progress
-2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,701538,Jackson Merrill,2,CF,In Progress
-2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,593428,Xander Bogaerts,3,SS,In Progress
-2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,592518,Manny Machado,4,3B,In Progress
-2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,657757,Gavin Sheets,5,LF,In Progress
-2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,630105,Jake Cronenworth,6,1B,In Progress
-2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,669134,Luis Campusano,7,C,In Progress
-2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,609280,Miguel Andujar,8,DH,In Progress
-2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,823550,Sung-Mun Song,9,2B,In Progress
-2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,664983,Jake McCarthy,1,LF,In Progress
-2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,691720,Kyle Karros,2,3B,In Progress
-2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,694249,Cole Carrigg,3,CF,In Progress
-2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,696100,Hunter Goodman,4,DH,In Progress
-2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,681198,TJ Rumfield,5,1B,In Progress
-2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,671289,Tyler Freeman,6,RF,In Progress
-2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,650489,Willi Castro,7,2B,In Progress
-2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,678662,Ezequiel Tovar,8,SS,In Progress
-2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,690924,Braxton Fulford,9,C,In Progress
-2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,671218,Heliot Ramos,1,LF,In Progress
-2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,650333,Luis Arraez,2,2B,In Progress
-2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,669477,Casey Schmitt,3,3B,In Progress
-2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,646240,Rafael Devers,4,DH,In Progress
-2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,642715,Willy Adames,5,SS,In Progress
-2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,805811,Bryce Eldridge,6,1B,In Progress
-2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,808982,Jung Hoo Lee,7,RF,In Progress
-2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,687551,Drew Gilbert,8,CF,In Progress
-2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,701852,Drew Cavanaugh,9,C,In Progress
+2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,606466,Ketel Marte,1,2B,Final
+2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,672695,Geraldo Perdomo,2,SS,Final
+2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,682998,Corbin Carroll,3,RF,Final
+2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,672515,Gabriel Moreno,4,C,Final
+2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,596146,Max Kepler,5,DH,Final
+2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,678489,Jorge Barrosa,6,CF,Final
+2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,571448,Nolan Arenado,7,3B,Final
+2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,694371,Tommy Troy,8,LF,Final
+2026-07-09,823277,Arizona Diamondbacks,San Diego Padres,away,545121,Ildemaro Vargas,9,1B,Final
+2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,665487,Fernando Tatis Jr.,1,RF,Final
+2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,701538,Jackson Merrill,2,CF,Final
+2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,593428,Xander Bogaerts,3,SS,Final
+2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,592518,Manny Machado,4,3B,Final
+2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,657757,Gavin Sheets,5,LF,Final
+2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,630105,Jake Cronenworth,6,1B,Final
+2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,669134,Luis Campusano,7,C,Final
+2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,609280,Miguel Andujar,8,DH,Final
+2026-07-09,823277,San Diego Padres,Arizona Diamondbacks,home,823550,Sung-Mun Song,9,2B,Final
+2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,664983,Jake McCarthy,1,LF,Final
+2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,691720,Kyle Karros,2,3B,Final
+2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,694249,Cole Carrigg,3,CF,Final
+2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,696100,Hunter Goodman,4,DH,Final
+2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,681198,TJ Rumfield,5,1B,Final
+2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,671289,Tyler Freeman,6,RF,Final
+2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,650489,Willi Castro,7,2B,Final
+2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,666397,Edouard Julien,8,PH,Final
+2026-07-09,823201,Colorado Rockies,San Francisco Giants,away,690924,Braxton Fulford,9,C,Final
+2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,671218,Heliot Ramos,1,LF,Final
+2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,650333,Luis Arraez,2,2B,Final
+2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,669477,Casey Schmitt,3,3B,Final
+2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,646240,Rafael Devers,4,DH,Final
+2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,642715,Willy Adames,5,SS,Final
+2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,805811,Bryce Eldridge,6,1B,Final
+2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,808982,Jung Hoo Lee,7,RF,Final
+2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,687551,Drew Gilbert,8,CF,Final
+2026-07-09,823201,San Francisco Giants,Colorado Rockies,home,701852,Drew Cavanaugh,9,C,Final
