@@ -1,5 +1,5 @@
 grade,platform,player,market,line,projection,edge,pick,team,opponent
-A,Kalshi,Gavin Williams,pitcher_strikeouts,6.5,7.716,1.2160000000000002,MORE/YES,Cleveland Guardians,
-A,Sleeper,Matt Olson,hitter_total_bases,1.5,2.131,0.6309999999999998,MORE/YES,Atlanta Braves,Pittsburgh Pirates
 A+,PrizePicks,Bryce Miller,pitcher_outs,17.5,15.0,-2.5,LESS/NO,Seattle Mariners,Los Angeles Angels
-B,PrizePicks,Michael Harris II,hitter_hits,1.5,1.24,-0.26,LESS/NO,Atlanta Braves,Pittsburgh Pirates
+NO PROJECTION,PrizePicks,Michael Harris II,hitter_hits,1.5,,,NO PROJECTION,,
+NO PROJECTION,Sleeper,Matt Olson,hitter_total_bases,1.5,,,NO PROJECTION,,
+NO PROJECTION,Kalshi,Gavin Williams,pitcher_strikeouts,6.5,,,NO PROJECTION,,

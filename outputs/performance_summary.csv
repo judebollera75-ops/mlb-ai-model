@@ -1,0 +1,11 @@
+category,group,picks,wins,losses,pushes,hit_rate,profit_units,roi_percent
+grade,A,2.0,2.0,0.0,0.0,100.0,2.0,100.0
+grade,A+,1.0,1.0,0.0,0.0,100.0,1.0,100.0
+grade,B,1.0,1.0,0.0,0.0,100.0,1.0,100.0
+market,hitter_hits,1.0,1.0,0.0,0.0,100.0,1.0,100.0
+market,hitter_total_bases,1.0,1.0,0.0,0.0,100.0,1.0,100.0
+market,pitcher_outs,1.0,1.0,0.0,0.0,100.0,1.0,100.0
+market,pitcher_strikeouts,1.0,1.0,0.0,0.0,100.0,1.0,100.0
+platform,PrizePicks,2.0,2.0,0.0,0.0,100.0,2.0,100.0
+platform,Kalshi,1.0,1.0,0.0,0.0,100.0,1.0,100.0
+platform,Sleeper,1.0,1.0,0.0,0.0,100.0,1.0,100.0
