@@ -1,27 +1,31 @@
 pitcher_name,team,games_started,strikeouts,season_k_per_start,avg_k,projected_ks
-José Suarez,Athletics,2,54,27.0,2.4,9.78
-Gavin Williams,Cleveland Guardians,19,134,7.052631578947368,8.0,7.71578947368421
-Jesús Luzardo,Philadelphia Phillies,19,136,7.157894736842105,6.6,6.76736842105263
-Reid Detmers,Los Angeles Angels,19,123,6.473684210526316,6.2,6.282105263157895
-Bryce Miller,Seattle Mariners,9,65,7.222222222222222,5.8,6.226666666666667
-Nathan Eovaldi,Texas Rangers,18,120,6.666666666666667,5.8,6.06
-Logan Henderson,Milwaukee Brewers,6,34,5.666666666666667,6.0,5.8999999999999995
-Paul Blackburn,New York Yankees,2,35,17.5,0.8,5.81
-Bryce Elder,Atlanta Braves,18,86,4.777777777777778,5.8,5.493333333333333
-Michael Wacha,Kansas City Royals,19,96,5.052631578947368,5.6,5.43578947368421
-Sean Manaea,New York Mets,6,74,12.333333333333334,2.4,5.38
-Drew Rasmussen,Tampa Bay Rays,18,98,5.444444444444445,5.2,5.273333333333333
-Griffin Canning,San Diego Padres,10,55,5.5,4.8,5.01
-Patrick Sandoval,Boston Red Sox,1,5,5.0,5.0,5.0
-David Peterson,Chicago Cubs,11,70,6.363636363636363,4.4,4.989090909090909
-Trevor Rogers,Baltimore Orioles,17,69,4.0588235294117645,5.0,4.7176470588235295
-Bailey Ober,Minnesota Twins,13,51,3.923076923076923,4.8,4.536923076923077
-Framber Valdez,Detroit Tigers,19,87,4.578947368421052,4.0,4.173684210526315
-Andre Pallante,St. Louis Cardinals,18,72,4.0,4.0,4.0
-Merrill Kelly,Arizona Diamondbacks,16,59,3.6875,4.0,3.90625
-Mitch Keller,Pittsburgh Pirates,19,77,4.052631578947368,3.8,3.8757894736842102
-Janson Junk,Miami Marlins,12,48,4.0,3.4,3.58
-Brady Singer,Cincinnati Reds,18,76,4.222222222222222,3.2,3.5066666666666664
-Ryan Feltner,Colorado Rockies,13,47,3.6153846153846154,3.4,3.464615384615384
-Anthony Kay,Chicago White Sox,17,71,4.176470588235294,2.6,3.072941176470588
-Carson Whisenhunt,San Francisco Giants,2,6,3.0,3.0,2.9999999999999996
+Nolan McLean,New York Mets,18,118,6.555555555555555,7.6,7.286666666666666
+Hunter Greene,Cincinnati Reds,1,7,7.0,7.0,7.0
+Ryan Weathers,New York Yankees,17,104,6.117647058823529,7.2,6.875294117647059
+Shohei Ohtani,Los Angeles Dodgers,14,95,6.785714285714286,6.8,6.795714285714285
+Braxton Ashcraft,Pittsburgh Pirates,18,122,6.777777777777778,6.4,6.513333333333333
+Tanner Gordon,Colorado Rockies,4,46,11.5,4.0,6.25
+Hunter Brown,Houston Astros,6,35,5.833333333333333,6.4,6.2299999999999995
+Chris Sale,Atlanta Braves,16,112,7.0,5.8,6.16
+Shota Imanaga,Chicago Cubs,18,100,5.555555555555555,6.4,6.1466666666666665
+Parker Messick,Cleveland Guardians,18,109,6.055555555555555,5.8,5.876666666666666
+Robbie Ray,San Francisco Giants,17,86,5.0588235294117645,6.2,5.857647058823529
+Aaron Nola,Philadelphia Phillies,18,94,5.222222222222222,5.8,5.626666666666666
+Zebby Matthews,Minnesota Twins,10,51,5.1,5.2,5.17
+Sean Burke,Chicago White Sox,14,106,7.571428571428571,4.0,5.071428571428571
+Jack Flaherty,Detroit Tigers,17,92,5.411764705882353,4.8,4.983529411764706
+Luis Castillo,Seattle Mariners,14,77,5.5,4.6,4.869999999999999
+Sandy Alcantara,Miami Marlins,19,92,4.842105263157895,4.6,4.672631578947368
+JP Sears,San Diego Padres,3,14,4.666666666666667,4.666666666666667,4.666666666666667
+Brandon Sproat,Milwaukee Brewers,15,84,5.6,4.0,4.4799999999999995
+Grayson Rodriguez,Los Angeles Angels,6,24,4.0,4.6,4.42
+Cal Quantrill,Texas Rangers,3,27,9.0,2.2,4.24
+Brandon Young,Baltimore Orioles,14,62,4.428571428571429,3.8,3.9885714285714284
+Nick Martinez,Tampa Bay Rays,17,61,3.588235294117647,4.0,3.8764705882352937
+Eduardo Rodriguez,Arizona Diamondbacks,18,74,4.111111111111111,3.6,3.753333333333333
+Jacob Lopez,Athletics,10,42,4.2,3.4,3.6399999999999997
+Kyle Leahy,St. Louis Cardinals,17,73,4.294117647058823,3.0,3.3882352941176466
+Sonny Gray,Boston Red Sox,16,82,5.125,2.6,3.3575
+Luinder Avila,Kansas City Royals,8,47,5.875,2.2,3.3025
+Shane Bieber,Toronto Blue Jays,3,9,3.0,3.0,2.9999999999999996
+Carson Palmquist,Washington Nationals,2,7,3.5,1.75,2.275

@@ -3,7 +3,7 @@ import time
 import requests
 import pandas as pd
 
-TARGET_DATE = "2026-07-09"
+TARGET_DATE = "2026-07-10"
 SEASON = "2026"
 
 

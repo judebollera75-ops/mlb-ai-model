@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 
-def download_pitchers(target_date="2026-07-09"):
+def download_pitchers(target_date="2026-07-10"):
     url = "https://statsapi.mlb.com/api/v1/schedule"
     params = {
         "sportId": 1,

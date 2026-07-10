@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 
 
-TARGET_DATE = "2026-07-09"
+TARGET_DATE = "2026-07-10"
 
 HITTERS_PATH = f"data/hitters/{TARGET_DATE}.csv"
 LOGS_PATH = "data/hitter_game_logs/2026.csv"

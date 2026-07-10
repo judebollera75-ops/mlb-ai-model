@@ -7,7 +7,7 @@ def add_recent_form():
 
     master = pd.read_csv("data/final/master_dataset_with_opponent.csv")
 
-    logs = pd.read_csv("data/game_logs/2026-07-09.csv")
+    logs = pd.read_csv("data/game_logs/2026-07-10.csv")
 
     logs = logs.sort_values(["pitcher_id", "game_date"])
 

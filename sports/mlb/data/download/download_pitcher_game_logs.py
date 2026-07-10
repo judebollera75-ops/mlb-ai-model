@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 
 
-def download_game_logs(target_date="2026-07-09"):
+def download_game_logs(target_date="2026-07-10"):
 
     os.makedirs("data/game_logs", exist_ok=True)
 

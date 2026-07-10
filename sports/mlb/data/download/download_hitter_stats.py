@@ -3,7 +3,7 @@ import time
 import requests
 import pandas as pd
 
-TARGET_DATE = "2026-07-09"
+TARGET_DATE = "2026-07-10"
 SEASON = "2026"
 
 
@@ -17,6 +17,10 @@ def download_hitter_stats(target_date=TARGET_DATE, season=SEASON):
     os.makedirs("data/hitter_stats", exist_ok=True)
 
     hitters = pd.read_csv(f"data/hitters/{target_date}.csv")
+
+    if hitters.empty:
+        print("No hitters available yet. Skipping hitter stats.")
+        return pd.DataFrame()
     hitters = hitters.drop_duplicates(subset=["player_id"])
 
     rows = []

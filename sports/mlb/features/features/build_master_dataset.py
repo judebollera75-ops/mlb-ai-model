@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-def build_master_dataset(target_date="2026-07-09"):
+def build_master_dataset(target_date="2026-07-10"):
     os.makedirs("data/final", exist_ok=True)
 
     pitchers = pd.read_csv(f"data/pitchers/{target_date}.csv")

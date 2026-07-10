@@ -2,7 +2,7 @@ import os
 import requests
 import pandas as pd
 
-SLATE_DATE = "2026-07-09"
+SLATE_DATE = "2026-07-10"
 
 
 def download_actual_results(slate_date=SLATE_DATE):

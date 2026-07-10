@@ -1,27 +1,31 @@
 pitcher_id,pitcher_name,team,avg_ip,avg_k,avg_bb,avg_hits,avg_er,avg_hr,avg_era
-518876,Merrill Kelly,Arizona Diamondbacks,5.06,4.0,3.6,6.4,4.4,1.2,7.892
-543135,Nathan Eovaldi,Texas Rangers,5.24,5.8,1.6,6.6,3.0,1.0,7.9
-608379,Michael Wacha,Kansas City Royals,6.42,5.6,2.0,4.0,1.8,0.6,0.9259999999999999
-621112,Paul Blackburn,New York Yankees,1.06,0.8,0.4,2.0,0.4,0.0,3.3600000000000003
-640455,Sean Manaea,New York Mets,3.06,2.4,1.4,3.2,1.6,0.4,2.31
-641743,Anthony Kay,Chicago White Sox,3.78,2.6,2.4,4.2,2.6,0.8,3.696
-641927,Bailey Ober,Minnesota Twins,5.0600000000000005,4.8,1.8,4.6,2.4,0.4,5.682
-656288,Griffin Canning,San Diego Padres,4.3,4.8,2.6,4.4,3.8,0.8,7.146000000000001
-656605,Mitch Keller,Pittsburgh Pirates,5.8,3.8,1.8,4.6,1.8,0.2,1.6300000000000001
-656849,David Peterson,Chicago Cubs,4.4799999999999995,4.4,2.0,5.8,2.8,0.2,4.522
-656876,Drew Rasmussen,Tampa Bay Rays,5.04,5.2,0.8,3.0,1.4,1.0,1.986
-660761,José Suarez,Athletics,2.08,2.4,1.0,3.4,1.6,0.0,8.222
-663372,Ryan Feltner,Colorado Rockies,3.8600000000000003,3.4,1.6,4.4,2.8,1.0,4.784000000000001
-663776,Patrick Sandoval,Boston Red Sox,4.1,5.0,1.0,5.0,1.0,0.0,2.08
-663903,Brady Singer,Cincinnati Reds,4.64,3.2,1.4,6.4,2.8,0.6,6.076
-664285,Framber Valdez,Detroit Tigers,6.0,4.0,1.8,5.4,2.2,0.2,2.812
-666200,Jesús Luzardo,Philadelphia Phillies,5.14,6.6,1.8,6.6,4.2,0.6,7.01
-668909,Gavin Williams,Cleveland Guardians,5.84,8.0,3.4,2.6,1.4,0.8,2.838
-669432,Trevor Rogers,Baltimore Orioles,5.64,5.0,1.6,6.0,2.6,0.6,2.0780000000000003
-669467,Andre Pallante,St. Louis Cardinals,5.0200000000000005,4.0,2.8,4.4,2.4,0.6,2.982
-672282,Reid Detmers,Los Angeles Angels,5.5,6.2,1.6,4.6,2.6,0.4,4.0840000000000005
-676083,Janson Junk,Miami Marlins,5.26,3.4,1.4,4.8,2.2,0.4,3.946
-682243,Bryce Miller,Seattle Mariners,5.26,5.8,1.0,3.2,0.8,0.4,2.062
-687931,Carson Whisenhunt,San Francisco Giants,5.1,3.0,3.0,4.5,2.0,0.5,3.49
-693821,Bryce Elder,Atlanta Braves,5.720000000000001,5.8,1.8,4.0,1.0,0.4,0.658
-701656,Logan Henderson,Milwaukee Brewers,4.6,6.0,1.2,3.6,1.4,0.4,4.7780000000000005
+519242,Chris Sale,Atlanta Braves,5.8,5.8,1.4,4.4,1.8,1.0,2.15
+543243,Sonny Gray,Boston Red Sox,4.46,2.6,1.0,5.0,2.2,0.6,4.548
+592662,Robbie Ray,San Francisco Giants,5.4799999999999995,6.2,2.2,4.0,1.8,1.0,2.824
+593958,Eduardo Rodriguez,Arizona Diamondbacks,5.6,3.6,2.4,5.0,1.8,0.8,1.0699999999999998
+605400,Aaron Nola,Philadelphia Phillies,5.24,5.8,2.0,5.8,3.0,0.8,4.26
+607259,Nick Martinez,Tampa Bay Rays,5.86,4.0,1.6,5.0,1.4,0.6,2.3920000000000003
+615698,Cal Quantrill,Texas Rangers,2.62,2.2,1.2,2.4,1.2,0.2,4.346
+622491,Luis Castillo,Seattle Mariners,4.4799999999999995,4.6,1.8,6.2,2.6,0.4,4.024
+645261,Sandy Alcantara,Miami Marlins,7.0200000000000005,4.6,2.4,4.8,2.2,0.8,1.242
+656427,Jack Flaherty,Detroit Tigers,4.4799999999999995,4.8,4.0,3.4,1.8,0.2,4.8740000000000006
+660271,Shohei Ohtani,Los Angeles Dodgers,6.0,6.8,1.8,3.4,0.4,0.0,0.296
+668881,Hunter Greene,Cincinnati Reds,3.1,7.0,4.0,7.0,8.0,1.0,21.6
+669456,Shane Bieber,Toronto Blue Jays,4.1000000000000005,3.0,2.3333333333333335,6.666666666666667,4.333333333333333,2.0,8.273333333333333
+676664,JP Sears,San Diego Padres,4.8,4.666666666666667,2.3333333333333335,4.666666666666667,2.6666666666666665,1.3333333333333333,4.95
+677952,Braxton Ashcraft,Pittsburgh Pirates,5.84,6.4,1.8,4.2,1.6,0.2,2.436
+677960,Ryan Weathers,New York Yankees,5.4799999999999995,7.2,1.6,5.4,2.0,0.8,3.372
+679883,Luinder Avila,Kansas City Royals,2.2,2.2,1.2,3.6,1.8,0.2,9.472
+680570,Grayson Rodriguez,Los Angeles Angels,4.34,4.6,2.6,5.8,4.2,0.8,10.584
+680732,Sean Burke,Chicago White Sox,5.220000000000001,4.0,1.4,5.0,2.4,0.6,4.496
+681517,Kyle Leahy,St. Louis Cardinals,4.8,3.0,2.2,5.8,3.0,0.8,5.715999999999999
+682052,Jacob Lopez,Athletics,4.64,3.4,3.8,5.2,3.0,0.8,6.548
+684007,Shota Imanaga,Chicago Cubs,5.8,6.4,1.2,3.0,1.4,0.6,3.8259999999999996
+685299,Tanner Gordon,Colorado Rockies,3.4,4.0,0.8,4.0,2.4,1.0,5.378
+686613,Hunter Brown,Houston Astros,4.88,6.4,2.6,3.4,1.0,0.4,1.024
+687064,Brandon Young,Baltimore Orioles,5.0600000000000005,3.8,2.2,5.0,2.4,0.8,3.066
+687075,Brandon Sproat,Milwaukee Brewers,4.14,4.0,2.6,4.4,3.2,1.0,11.925999999999998
+687223,Carson Palmquist,Washington Nationals,1.525,1.75,0.5,2.0,1.25,0.0,5.0825000000000005
+690997,Nolan McLean,New York Mets,5.88,7.6,1.6,3.0,1.8,0.4,2.772
+800048,Parker Messick,Cleveland Guardians,6.04,5.8,1.6,3.8,1.2,0.2,0.828
+805673,Zebby Matthews,Minnesota Twins,6.0200000000000005,5.2,1.6,5.0,2.8,1.0,2.5060000000000002

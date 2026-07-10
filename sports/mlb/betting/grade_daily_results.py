@@ -3,7 +3,7 @@ import pandas as pd
 
 
 LOG_PATH = "data/model_results_log.csv"
-SLATE_DATE = "2026-07-09"
+SLATE_DATE = "2026-07-10"
 
 HITTER_RESULTS_PATH = f"data/results/{SLATE_DATE}_hitters.csv"
 PITCHER_RESULTS_PATH = f"data/results/{SLATE_DATE}_pitchers.csv"

@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-def build_pitcher_features(target_date="2026-07-09"):
+def build_pitcher_features(target_date="2026-07-10"):
     os.makedirs("data/features", exist_ok=True)
 
     logs = pd.read_csv(f"data/game_logs/{target_date}.csv")

@@ -33,4 +33,4 @@ def download_schedule(target_date=None):
     return df
 
 if __name__ == "__main__":
-    print(download_schedule("2026-07-09"))
+    print(download_schedule("2026-07-10"))

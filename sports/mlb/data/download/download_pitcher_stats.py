@@ -39,7 +39,7 @@ def safe_divide(numerator, denominator):
     return numerator / denominator
 
 
-def download_pitcher_stats(target_date="2026-07-09", season="2026"):
+def download_pitcher_stats(target_date="2026-07-10", season="2026"):
     os.makedirs("data/pitcher_stats", exist_ok=True)
 
     pitchers = pd.read_csv(f"data/pitchers/{target_date}.csv")
