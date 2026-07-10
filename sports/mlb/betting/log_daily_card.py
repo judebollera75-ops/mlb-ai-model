@@ -3,19 +3,23 @@ from datetime import date
 import pandas as pd
 
 
-CARD_PATH = "outputs/mlb_daily_card.csv"
+CARD_PATH = "outputs/top_mlb_props.csv"
 LOG_PATH = "data/model_results_log.csv"
 
 
 def log_daily_card():
     if not os.path.exists(CARD_PATH):
-        raise FileNotFoundError(f"Missing daily card: {CARD_PATH}")
+        raise FileNotFoundError(
+            f"Missing clean prop board: {CARD_PATH}"
+        )
 
     card = pd.read_csv(CARD_PATH)
 
-    today = date.today().isoformat()
+    if card.empty:
+        print("No actionable props to log.")
+        return
 
-    card["date"] = today
+    card["date"] = date.today().isoformat()
     card["actual_result"] = pd.NA
     card["win_loss"] = pd.NA
     card["profit_units"] = pd.NA
@@ -29,7 +33,7 @@ def log_daily_card():
         "projection",
         "edge",
         "pick",
-        "grade",
+        "tier",
         "actual_result",
         "win_loss",
         "profit_units",
@@ -64,9 +68,10 @@ def log_daily_card():
 
     combined.to_csv(LOG_PATH, index=False)
 
-    print(f"Logged {len(card)} picks to {LOG_PATH}")
-    print()
-    print(card.to_string(index=False))
+    print(
+        f"Logged {len(card)} actionable props "
+        f"to {LOG_PATH}"
+    )
 
 
 if __name__ == "__main__":
