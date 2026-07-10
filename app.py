@@ -358,12 +358,18 @@ else:
             ascending=[True, False],
         )
 
-    max_props = st.slider(
-        "Number of props to display",
-        min_value=1,
-        max_value=max(1, min(25, len(filtered))),
-        value=max(1, min(10, len(filtered))),
-    )
+    available_props = len(filtered)
+
+    if available_props <= 1:
+        max_props = available_props
+        st.caption(f"Showing {available_props} available prop.")
+    else:
+        max_props = st.slider(
+            "Number of props to display",
+            min_value=1,
+            max_value=min(25, available_props),
+            value=min(10, available_props),
+        )
 
     filtered = filtered.head(max_props)
 
