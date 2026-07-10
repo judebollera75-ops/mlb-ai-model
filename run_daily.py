@@ -15,11 +15,12 @@ scripts = [
     "src/models/project_pitcher_fantasy.py",
     "src/models/project_pitcher_outs.py",
     "src/models/rank_platform_props.py",
+    "shared/reports/daily_report.py",
 ]
 
 for script in scripts:
     print(f"\nRunning {script}...")
     subprocess.run(["python", script], check=True)
 
-print("\n✅ Daily MLB model run complete.")
-print("Check outputs/best_platform_props.csv")
+print("\n✅ Daily sports model run complete.")
+print("Check outputs/universal_daily_report.csv")
