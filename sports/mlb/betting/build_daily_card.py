@@ -147,14 +147,14 @@ output_columns = [
         column
         for column in output_columns
         if column in merged.columns
-    ]
+]
 
-    output = merged[output_columns].copy()
-    output.to_csv(OUTPUT_PATH, index=False)
+output = merged[output_columns].copy()
+output.to_csv(OUTPUT_PATH, index=False)
 
-    print(f"Saved {len(output)} rows to {OUTPUT_PATH}")
-    print()
-    print(output.to_string(index=False))
+print(f"Saved {len(output)} rows to {OUTPUT_PATH}")
+print()
+print(output.to_string(index=False))
 
     missing = output[
         output["projection"].isna()
