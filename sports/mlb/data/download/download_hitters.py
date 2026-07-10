@@ -81,7 +81,7 @@ for batting_position, player_id in enumerate(
                     "status": game.get("status"),
                 })
 
-        columns = [
+    columns = [
         "date",
         "game_id",
         "team",
