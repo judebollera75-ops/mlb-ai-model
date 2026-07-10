@@ -158,17 +158,17 @@ print(output.to_string(index=False))
 
 missing = output[
 output["projection"].isna()
-    ]
+]
 
-    if not missing.empty:
-        print("\nLines with no matching projection:")
-        print(
-            missing[
-                ["platform", "player", "market", "line"]
-            ].to_string(index=False)
-        )
+if not missing.empty:
+    print("\nLines with no matching projection:")
+    print(
+        missing[
+            ["platform", "player", "market", "line"]
+        ].to_string(index=False)
+  )
 
-    return output
+return output
 
 
 if __name__ == "__main__":
