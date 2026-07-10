@@ -37,7 +37,7 @@ jobs:
         run: |
           python run_daily.py
 
-           - name: Commit updated files
+      - name: Commit updated files
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
