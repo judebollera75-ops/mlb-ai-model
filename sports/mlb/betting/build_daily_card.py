@@ -77,10 +77,22 @@ def build_daily_card():
         lines["line"],
         errors="coerce"
     )
+def normalize_player_name(series):
+    return (
+        series.astype(str)
+        .str.lower()
+        .str.strip()
+        .str.replace(r"[^\w\s]", "", regex=True)
+        .str.replace(r"\s+", " ", regex=True)
+    )
 
+
+lines["player_key"] = normalize_player_name(lines["player"])
+projections["player_key"] = normalize_player_name(projections["player"])
     merged = lines.merge(
         projections,
-        on=["player", "market"],
+        left_on=["player_key", "market"],
+        right_on=["player_key", "market"],
         how="left",
         suffixes=("_line", "_projection"),
     )
