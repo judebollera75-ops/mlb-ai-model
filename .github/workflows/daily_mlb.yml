@@ -34,11 +34,12 @@ jobs:
           python sports/mlb/data/download/download_sportsbook_props.py
 
       - name: Run model
-  run: python run_mlb_daily.py
+        run: |
+          python run_mlb_daily.py
 
       - name: Commit updated files
         run: |
-          git config user.name "github-actions"
+         git config user.name "github-actions"
           git config user.email "actions@github.com"
 
           git add -A
