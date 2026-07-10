@@ -37,17 +37,17 @@ jobs:
         run: |
           python run_daily.py
 
-      - name: Commit updated files
+           - name: Commit updated files
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          git add outputs data || true
+          git add -A
 
           if git diff --cached --quiet; then
             echo "No changes."
           else
             git commit -m "Automatic daily update"
-            git pull --rebase origin main
+            git pull --rebase --autostash origin main
             git push origin main
           fi
