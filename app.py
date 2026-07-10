@@ -186,6 +186,11 @@ def build_summary(group: pd.DataFrame) -> pd.Series:
 # Load data
 # --------------------------------------------------
 props = load_csv(PROP_PATH)
+if not props.empty:
+    props = props.drop_duplicates(
+        subset=["platform", "player", "market", "line"],
+        keep="first"
+    ).reset_index(drop=True)
 results = load_csv(LOG_PATH)
 
 
@@ -368,7 +373,14 @@ if selected_tiers:
             ["tier_rank", "absolute_edge"],
             ascending=[True, False],
         )
-
+    filtered = (
+    filtered
+    .drop_duplicates(
+        subset=["player"],
+        keep="first"
+    )
+    .reset_index(drop=True)
+    )
     available_props = len(filtered)
 
     if available_props <= 1:
