@@ -156,8 +156,8 @@ print(f"Saved {len(output)} rows to {OUTPUT_PATH}")
 print()
 print(output.to_string(index=False))
 
-    missing = output[
-        output["projection"].isna()
+missing = output[
+output["projection"].isna()
     ]
 
     if not missing.empty:
