@@ -115,23 +115,22 @@ merged["pick"] = merged["edge"].apply(
     )
 )
 
-    merged["grade"] = merged.apply(
-        lambda row: (
-            grade_edge(row["market"], row["edge"])
-            if pd.notna(row["edge"])
-            else "NO PROJECTION"
-        ),
-        axis=1,
-    )
+merged["grade"] = merged.apply(
+    lambda row: (
+        grade_edge(row["market"], row["edge"])
+        if pd.notna(row["edge"])
+        else "NO PROJECTION"
+    ),
+    axis=1,
+)
 
-    merged["absolute_edge"] = merged["edge"].abs()
+merged["absolute_edge"] = merged["edge"].abs()
 
-    merged = merged.sort_values(
-        ["grade", "absolute_edge"],
-        ascending=[True, False],
-    )
-
-    output_columns = [
+merged = merged.sort_values(
+    ["grade", "absolute_edge"],
+    ascending=[True, False],
+)
+output_columns = [
         "grade",
         "platform",
         "player",
