@@ -1,1 +1,5 @@
-date,platform,player,market,line,projection,pick,actual_result,win_loss
+date,platform,player,market,line,projection,pick,actual_result,win_loss,edge,grade,profit_units
+2026-07-09,Kalshi,Gavin Williams,pitcher_strikeouts,6.5,7.716,MORE/YES,7.0,WIN,1.2160000000000002,A,1.0
+2026-07-09,Sleeper,Matt Olson,hitter_total_bases,1.5,2.131,MORE/YES,4.0,WIN,0.6309999999999998,A,1.0
+2026-07-09,PrizePicks,Bryce Miller,pitcher_outs,17.5,15.0,LESS/NO,15.0,WIN,-2.5,A+,1.0
+2026-07-09,PrizePicks,Michael Harris II,hitter_hits,1.5,1.24,LESS/NO,1.0,WIN,-0.26,B,1.0

@@ -19,10 +19,12 @@ scripts = [
     "sports/mlb/models/models/probability_engine.py",
     "sports/mlb/models/models/project_pitcher_fantasy.py",
     "sports/mlb/models/models/project_pitcher_outs.py",
+
     "sports/mlb/models/models/project_today_hitters.py",
     "sports/mlb/models/models/build_universal_mlb_projections.py",
 
     "sports/mlb/betting/build_daily_card.py",
+    "sports/mlb/betting/log_daily_card.py",
 ]
 
 for script in scripts:
