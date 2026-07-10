@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 
-PROP_PATH = Path("outputs/top_mlb_props.csv")
+PROP_PATH = Path("outputs/mlb_daily_card.csv")
 LOG_PATH = Path("data/model_results_log.csv")
 
 
