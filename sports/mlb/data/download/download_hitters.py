@@ -1,6 +1,8 @@
 import os
-import requests
+
 import pandas as pd
+import requests
+
 
 TARGET_DATE = "2026-07-10"
 
@@ -8,12 +10,13 @@ TARGET_DATE = "2026-07-10"
 def download_hitters(target_date=TARGET_DATE):
     os.makedirs("data/hitters", exist_ok=True)
 
-    schedule = pd.read_csv(f"data/schedules/{target_date}.csv")
+    schedule_path = f"data/schedules/{target_date}.csv"
+    schedule = pd.read_csv(schedule_path)
+
     rows = []
 
     for _, game in schedule.iterrows():
         game_id = int(game["game_id"])
-
         url = f"https://statsapi.mlb.com/api/v1/game/{game_id}/boxscore"
 
         try:
@@ -29,57 +32,38 @@ def download_hitters(target_date=TARGET_DATE):
         for side in ["away", "home"]:
             team_data = teams.get(side, {})
             batting_order = team_data.get("battingOrder", [])
-players = team_data.get("players", {})
+            players = team_data.get("players", {})
 
-# Use the confirmed lineup when available.
-# Before lineups are posted, temporarily use all non-pitchers
-# listed in the game's box score.
-if batting_order:
-    player_ids = batting_order
-else:
-    player_ids = []
-
-    for player_key, player_data in players.items():
-        position_abbreviation = (
-            player_data
-            .get("position", {})
-            .get("abbreviation", "")
-        )
-
-        player_name = (
-            player_data
-            .get("person", {})
-            .get("fullName")
-        )
-
-        if position_abbreviation != "P" and player_name:
-            player_id = int(player_key.replace("ID", ""))
-            player_ids.append(player_id)
-
-for batting_position, player_id in enumerate(
-    player_ids,
-    start=1
-):
+            for batting_position, player_id in enumerate(
+                batting_order,
+                start=1,
+            ):
                 player = players.get(f"ID{player_id}", {})
                 person = player.get("person", {})
                 position = player.get("position", {})
 
-                rows.append({
-                    "date": target_date,
-                    "game_id": game_id,
-                    "team": game.get(f"{side}_team"),
-                    "opponent": (
-                        game.get("home_team")
-                        if side == "away"
-                        else game.get("away_team")
-                    ),
-                    "side": side,
-                    "player_id": player_id,
-                    "player_name": person.get("fullName"),
-                    "batting_order": batting_position if batting_order else None,
-                    "position": position.get("abbreviation"),
-                    "status": game.get("status"),
-                })
+                team_name = game.get(f"{side}_team", "")
+
+                opponent = (
+                    game.get("home_team", "")
+                    if side == "away"
+                    else game.get("away_team", "")
+                )
+
+                rows.append(
+                    {
+                        "date": target_date,
+                        "game_id": game_id,
+                        "team": team_name,
+                        "opponent": opponent,
+                        "side": side,
+                        "player_id": player_id,
+                        "player_name": person.get("fullName"),
+                        "batting_order": batting_position,
+                        "position": position.get("abbreviation"),
+                        "status": game.get("status"),
+                    }
+                )
 
     columns = [
         "date",
