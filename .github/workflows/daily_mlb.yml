@@ -34,8 +34,7 @@ jobs:
           python sports/mlb/data/download/download_sportsbook_props.py
 
       - name: Run model
-        run: |
-          python run_daily.py
+  run: python run_mlb_daily.py
 
       - name: Commit updated files
         run: |
