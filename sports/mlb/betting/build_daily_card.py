@@ -143,7 +143,7 @@ output_columns = [
         "opponent",
     ]
 
-    output_columns = [
+output_columns = [
         column
         for column in output_columns
         if column in merged.columns
