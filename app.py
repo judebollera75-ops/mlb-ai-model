@@ -409,25 +409,12 @@ else:
             team_text += f" vs. {opponent}"
 
         st.markdown(
-            f"""
-            <div class="prop-card {css_class}">
-                <div class="tier-label">
-                    #{rank} · {tier}
-                </div>
-
-                <div class="player-name">
-                    {player}
-                </div>
-
-                <div class="prop-detail">
-                    {platform} · {market}
-                </div>
-
-                <div class="prop-detail">
-                    {team_text}
-                </div>
-            </div>
-            """,
+            f"""<div class="prop-card {css_class}">
+<div class="tier-label">#{rank} · {tier}</div>
+<div class="player-name">{player}</div>
+<div class="prop-detail">{platform} · {market}</div>
+<div class="prop-detail">{team_text}</div>
+</div>""",
             unsafe_allow_html=True,
         )
 
