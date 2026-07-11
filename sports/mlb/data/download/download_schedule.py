@@ -1,36 +1,120 @@
-import requests
-import pandas as pd
 from datetime import date
+from pathlib import Path
+
+import pandas as pd
+import requests
+
+
+OUTPUT_DIRECTORY = Path("data/schedules")
+
 
 def download_schedule(target_date=None):
     if target_date is None:
-        target_date = str(date.today())
+        target_date = date.today().isoformat()
+
+    OUTPUT_DIRECTORY.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
     url = "https://statsapi.mlb.com/api/v1/schedule"
+
     params = {
         "sportId": 1,
         "date": target_date,
-        "hydrate": "probablePitcher"
+        "hydrate": "probablePitcher",
     }
 
-    data = requests.get(url, params=params).json()
+    response = requests.get(
+        url,
+        params=params,
+        timeout=30,
+    )
+
+    response.raise_for_status()
+    data = response.json()
 
     games = []
-    for d in data.get("dates", []):
-        for g in d.get("games", []):
-            games.append({
-                "date": target_date,
-                "game_id": g["gamePk"],
-                "away_team": g["teams"]["away"]["team"]["name"],
-                "home_team": g["teams"]["home"]["team"]["name"],
-                "away_pitcher": g["teams"]["away"].get("probablePitcher", {}).get("fullName"),
-                "home_pitcher": g["teams"]["home"].get("probablePitcher", {}).get("fullName"),
-                "status": g["status"]["detailedState"]
-            })
 
-    df = pd.DataFrame(games)
-    df.to_csv(f"data/schedules/{target_date}.csv", index=False)
-    return df
+    for schedule_date in data.get("dates", []):
+        actual_date = schedule_date.get(
+            "date",
+            target_date,
+        )
+
+        for game in schedule_date.get("games", []):
+            games.append(
+                {
+                    "date": actual_date,
+                    "game_id": game.get("gamePk"),
+                    "away_team": (
+                        game.get("teams", {})
+                        .get("away", {})
+                        .get("team", {})
+                        .get("name")
+                    ),
+                    "home_team": (
+                        game.get("teams", {})
+                        .get("home", {})
+                        .get("team", {})
+                        .get("name")
+                    ),
+                    "away_pitcher": (
+                        game.get("teams", {})
+                        .get("away", {})
+                        .get("probablePitcher", {})
+                        .get("fullName")
+                    ),
+                    "home_pitcher": (
+                        game.get("teams", {})
+                        .get("home", {})
+                        .get("probablePitcher", {})
+                        .get("fullName")
+                    ),
+                    "status": (
+                        game.get("status", {})
+                        .get("detailedState")
+                    ),
+                }
+            )
+
+    schedule = pd.DataFrame(
+        games,
+        columns=[
+            "date",
+            "game_id",
+            "away_team",
+            "home_team",
+            "away_pitcher",
+            "home_pitcher",
+            "status",
+        ],
+    )
+
+    output_path = (
+        OUTPUT_DIRECTORY
+        / f"{target_date}.csv"
+    )
+
+    schedule.to_csv(
+        output_path,
+        index=False,
+    )
+
+    print(
+        f"Saved {len(schedule)} games "
+        f"to {output_path}"
+    )
+
+    if schedule.empty:
+        print(
+            f"No MLB games were found for {target_date}."
+        )
+    else:
+        print(schedule.to_string(index=False))
+
+    return schedule
+
 
 if __name__ == "__main__":
-    print(download_schedule("2026-07-10"))
+    download_schedule()
