@@ -1,520 +1,520 @@
 sport,player,market,projection,team,opponent,game_id,batting_order,position
-MLB,Ceddanne Rafaela,hitter_hits,1.173,Boston Red Sox,New York Mets,823604,2.0,CF
-MLB,Otto Lopez,hitter_hits,1.166,Miami Marlins,Cleveland Guardians,823845,1.0,SS
-MLB,Jose Altuve,hitter_hits,1.141,Houston Astros,Texas Rangers,822878,5.0,2B
-MLB,Chase DeLauter,hitter_hits,1.135,Cleveland Guardians,Miami Marlins,823845,3.0,RF
-MLB,Eugenio Suárez,hitter_hits,1.123,Cincinnati Reds,Chicago Cubs,824493,5.0,DH
-MLB,Liam Hicks,hitter_hits,1.122,Miami Marlins,Cleveland Guardians,823845,6.0,PH
-MLB,Miguel Vargas,hitter_hits,1.121,Chicago White Sox,Athletics,824575,3.0,1B
-MLB,Curtis Mead,hitter_hits,1.117,Washington Nationals,New York Yankees,822709,2.0,3B
-MLB,Bryce Harper,hitter_hits,1.11,Philadelphia Phillies,Detroit Tigers,824252,3.0,1B
-MLB,Gunnar Henderson,hitter_hits,1.107,Baltimore Orioles,Kansas City Royals,824817,1.0,SS
-MLB,Luis Arraez,hitter_hits,1.103,San Francisco Giants,Colorado Rockies,823200,2.0,2B
-MLB,Michael Busch,hitter_hits,1.102,Chicago Cubs,Cincinnati Reds,824493,3.0,1B
-MLB,CJ Abrams,hitter_hits,1.096,Washington Nationals,New York Yankees,822709,4.0,SS
-MLB,Gabriel Moreno,hitter_hits,1.093,Arizona Diamondbacks,Los Angeles Dodgers,823927,4.0,C
-MLB,Wilyer Abreu,hitter_hits,1.091,Boston Red Sox,New York Mets,823604,3.0,RF
-MLB,Joshua Kuroda-Grauer,hitter_hits,1.091,Athletics,Chicago White Sox,824575,7.0,3B
-MLB,Xavier Edwards,hitter_hits,1.088,Miami Marlins,Cleveland Guardians,823845,3.0,2B
-MLB,Kazuma Okamoto,hitter_hits,1.084,Toronto Blue Jays,San Diego Padres,823278,3.0,3B
-MLB,Brandon Marsh,hitter_hits,1.084,Philadelphia Phillies,Detroit Tigers,824252,4.0,LF
-MLB,Yordan Alvarez,hitter_hits,1.083,Houston Astros,Texas Rangers,822878,2.0,DH
-MLB,Corbin Carroll,hitter_hits,1.083,Arizona Diamondbacks,Los Angeles Dodgers,823927,3.0,RF
-MLB,Bobby Witt Jr.,hitter_hits,1.08,Kansas City Royals,Baltimore Orioles,824817,2.0,SS
-MLB,Geraldo Perdomo,hitter_hits,1.078,Arizona Diamondbacks,Los Angeles Dodgers,823927,2.0,SS
-MLB,Sam Antonacci,hitter_hits,1.072,Chicago White Sox,Athletics,824575,1.0,3B
-MLB,JJ Wetherholt,hitter_hits,1.068,St. Louis Cardinals,Atlanta Braves,823033,1.0,2B
-MLB,Travis Bazzana,hitter_hits,1.067,Cleveland Guardians,Miami Marlins,823845,1.0,2B
-MLB,Daylen Lile,hitter_hits,1.066,Washington Nationals,New York Yankees,822709,6.0,DH
-MLB,Dominic Canzone,hitter_hits,1.065,Seattle Mariners,Tampa Bay Rays,822955,3.0,DH
-MLB,Cody Bellinger,hitter_hits,1.064,New York Yankees,Washington Nationals,822709,5.0,LF
-MLB,J.P. Crawford,hitter_hits,1.061,Seattle Mariners,Tampa Bay Rays,822955,1.0,SS
-MLB,Ketel Marte,hitter_hits,1.054,Arizona Diamondbacks,Los Angeles Dodgers,823927,1.0,DH
-MLB,Casey Schmitt,hitter_hits,1.054,San Francisco Giants,Colorado Rockies,823200,3.0,3B
-MLB,Elly De La Cruz,hitter_hits,1.053,Cincinnati Reds,Chicago Cubs,824493,1.0,SS
-MLB,Shohei Ohtani,hitter_hits,1.052,Los Angeles Dodgers,Arizona Diamondbacks,823927,1.0,DH
-MLB,Alex Bregman,hitter_hits,1.052,Chicago Cubs,Cincinnati Reds,824493,2.0,3B
-MLB,Rafael Devers,hitter_hits,1.045,San Francisco Giants,Colorado Rockies,823200,4.0,DH
-MLB,Ernie Clement,hitter_hits,1.043,Toronto Blue Jays,San Diego Padres,823278,1.0,2B
-MLB,Christian Walker,hitter_hits,1.041,Houston Astros,Texas Rangers,822878,4.0,1B
-MLB,Manny Machado,hitter_hits,1.04,San Diego Padres,Toronto Blue Jays,823278,4.0,3B
-MLB,Yandy Díaz,hitter_hits,1.036,Tampa Bay Rays,Seattle Mariners,822955,1.0,DH
-MLB,Kevin McGonigle,hitter_hits,1.033,Detroit Tigers,Philadelphia Phillies,824252,1.0,SS
-MLB,Michael Harris II,hitter_hits,1.032,Atlanta Braves,St. Louis Cardinals,823033,1.0,CF
-MLB,Caleb Durbin,hitter_hits,1.028,Boston Red Sox,New York Mets,823604,6.0,3B
-MLB,Brooks Lee,hitter_hits,1.028,Minnesota Twins,Los Angeles Angels,823685,6.0,SS
-MLB,Kyle Schwarber,hitter_hits,1.027,Philadelphia Phillies,Detroit Tigers,824252,2.0,DH
-MLB,Isaac Paredes,hitter_hits,1.025,Houston Astros,Texas Rangers,822878,3.0,3B
-MLB,Drake Baldwin,hitter_hits,1.025,Atlanta Braves,St. Louis Cardinals,823033,4.0,C
-MLB,Zach McKinstry,hitter_hits,1.022,Detroit Tigers,Philadelphia Phillies,824252,7.0,2B
-MLB,Jac Caglianone,hitter_hits,1.021,Kansas City Royals,Baltimore Orioles,824817,3.0,RF
-MLB,Trevor Larnach,hitter_hits,1.018,Minnesota Twins,Los Angeles Angels,823685,1.0,LF
-MLB,Mauricio Dubón,hitter_hits,1.016,Atlanta Braves,St. Louis Cardinals,823033,5.0,LF
-MLB,Brett Baty,hitter_hits,1.012,New York Mets,Boston Red Sox,823604,8.0,3B
-MLB,Jo Adell,hitter_hits,1.011,Los Angeles Angels,Minnesota Twins,823685,6.0,RF
-MLB,Nolan Schanuel,hitter_hits,1.011,Los Angeles Angels,Minnesota Twins,823685,2.0,1B
-MLB,Jackson Merrill,hitter_hits,1.01,San Diego Padres,Toronto Blue Jays,823278,2.0,CF
-MLB,Seiya Suzuki,hitter_hits,1.009,Chicago Cubs,Cincinnati Reds,824493,4.0,RF
-MLB,A.J. Ewing,hitter_hits,1.008,New York Mets,Boston Red Sox,823604,1.0,2B
-MLB,Randy Arozarena,hitter_hits,1.006,Seattle Mariners,Tampa Bay Rays,822955,2.0,LF
-MLB,Nathan Lukes,hitter_hits,1.005,Toronto Blue Jays,San Diego Padres,823278,9.0,RF
-MLB,Alec Bohm,hitter_hits,1.002,Philadelphia Phillies,Detroit Tigers,824252,5.0,3B
-MLB,Josh Jung,hitter_hits,1.0,Texas Rangers,Houston Astros,822878,3.0,3B
-MLB,Pete Crow-Armstrong,hitter_hits,0.998,Chicago Cubs,Cincinnati Reds,824493,1.0,CF
-MLB,Victor Caratini,hitter_hits,0.995,Minnesota Twins,Los Angeles Angels,823685,8.0,1B
-MLB,Francisco Lindor,hitter_hits,0.995,New York Mets,Boston Red Sox,823604,3.0,SS
-MLB,Luis García Jr.,hitter_hits,0.993,Washington Nationals,New York Yankees,822709,8.0,1B
-MLB,Lane Thomas,hitter_hits,0.993,Kansas City Royals,Baltimore Orioles,824817,4.0,CF
-MLB,Bryson Stott,hitter_hits,0.991,Philadelphia Phillies,Detroit Tigers,824252,6.0,2B
-MLB,Salvador Perez,hitter_hits,0.988,Kansas City Royals,Baltimore Orioles,824817,6.0,1B
-MLB,Taylor Ward,hitter_hits,0.988,Baltimore Orioles,Kansas City Royals,824817,3.0,LF
-MLB,Sal Stewart,hitter_hits,0.984,Cincinnati Reds,Chicago Cubs,824493,2.0,1B
-MLB,Adley Rutschman,hitter_hits,0.981,Baltimore Orioles,Kansas City Royals,824817,2.0,C
-MLB,Royce Lewis,hitter_hits,0.98,Minnesota Twins,Los Angeles Angels,823685,5.0,3B
-MLB,Jung Hoo Lee,hitter_hits,0.98,San Francisco Giants,Colorado Rockies,823200,7.0,RF
-MLB,Junior Caminero,hitter_hits,0.978,Tampa Bay Rays,Seattle Mariners,822955,3.0,3B
-MLB,Jakob Marsee,hitter_hits,0.974,Miami Marlins,Cleveland Guardians,823845,8.0,CF
-MLB,Eduardo Valencia,hitter_hits,0.974,Detroit Tigers,Philadelphia Phillies,824252,6.0,DH
-MLB,Josh Naylor,hitter_hits,0.973,Seattle Mariners,Tampa Bay Rays,822955,5.0,1B
-MLB,George Springer,hitter_hits,0.97,Toronto Blue Jays,San Diego Padres,823278,4.0,DH
-MLB,Kyle Karros,hitter_hits,0.969,Colorado Rockies,San Francisco Giants,823200,2.0,3B
-MLB,Jorge Soler,hitter_hits,0.967,Los Angeles Angels,Minnesota Twins,823685,4.0,DH
-MLB,Vladimir Guerrero Jr.,hitter_hits,0.967,Toronto Blue Jays,San Diego Padres,823278,2.0,1B
-MLB,James Wood,hitter_hits,0.967,Washington Nationals,New York Yankees,822709,1.0,RF
-MLB,Andy Pages,hitter_hits,0.965,Los Angeles Dodgers,Arizona Diamondbacks,823927,2.0,CF
-MLB,Jonathan Aranda,hitter_hits,0.965,Tampa Bay Rays,Seattle Mariners,822955,2.0,1B
-MLB,Fernando Tatis Jr.,hitter_hits,0.963,San Diego Padres,Toronto Blue Jays,823278,1.0,RF
-MLB,Chase Meidroth,hitter_hits,0.963,Chicago White Sox,Athletics,824575,6.0,2B
-MLB,Javier Sanoja,hitter_hits,0.962,Miami Marlins,Cleveland Guardians,823845,4.0,3B
-MLB,Matt Olson,hitter_hits,0.961,Atlanta Braves,St. Louis Cardinals,823033,3.0,1B
-MLB,Trent Grisham,hitter_hits,0.959,New York Yankees,Washington Nationals,822709,3.0,CF
-MLB,Austin Riley,hitter_hits,0.958,Atlanta Braves,St. Louis Cardinals,823033,7.0,3B
-MLB,Ezequiel Duran,hitter_hits,0.958,Texas Rangers,Houston Astros,822878,6.0,SS
-MLB,Jake Burger,hitter_hits,0.952,Texas Rangers,Houston Astros,822878,5.0,1B
-MLB,Nolan Arenado,hitter_hits,0.947,Arizona Diamondbacks,Los Angeles Dodgers,823927,7.0,3B
-MLB,Pete Alonso,hitter_hits,0.947,Baltimore Orioles,Kansas City Royals,824817,4.0,1B
-MLB,Yainer Diaz,hitter_hits,0.945,Houston Astros,Texas Rangers,822878,8.0,C
-MLB,Kody Clemens,hitter_hits,0.943,Minnesota Twins,Los Angeles Angels,823685,3.0,2B
-MLB,Brandon Nimmo,hitter_hits,0.94,Texas Rangers,Houston Astros,822878,4.0,RF
-MLB,Tyler Stephenson,hitter_hits,0.938,Cincinnati Reds,Chicago Cubs,824493,6.0,C
-MLB,Francisco Alvarez,hitter_hits,0.934,New York Mets,Boston Red Sox,823604,7.0,C
-MLB,Jorge Polanco,hitter_hits,0.934,New York Mets,Boston Red Sox,823604,5.0,DH
-MLB,Carson Benge,hitter_hits,0.933,New York Mets,Boston Red Sox,823604,4.0,RF
-MLB,Nick Loftin,hitter_hits,0.933,Kansas City Royals,Baltimore Orioles,824817,8.0,DH
-MLB,Denzer Guzman,hitter_hits,0.93,Los Angeles Angels,Minnesota Twins,823685,3.0,3B
-MLB,Jake McCarthy,hitter_hits,0.93,Colorado Rockies,San Francisco Giants,823200,1.0,LF
-MLB,Ben Rice,hitter_hits,0.924,New York Yankees,Washington Nationals,822709,2.0,DH
-MLB,Luke Keaschall,hitter_hits,0.922,Minnesota Twins,Los Angeles Angels,823685,9.0,CF
-MLB,Blaze Alexander,hitter_hits,0.921,Baltimore Orioles,Kansas City Royals,824817,8.0,3B
-MLB,Paul Goldschmidt,hitter_hits,0.918,New York Yankees,Washington Nationals,822709,4.0,1B
-MLB,Chandler Simpson,hitter_hits,0.914,Tampa Bay Rays,Seattle Mariners,822955,5.0,LF
-MLB,Griffin Conine,hitter_hits,0.913,Miami Marlins,Cleveland Guardians,823845,7.0,PH
-MLB,Willy Adames,hitter_hits,0.912,San Francisco Giants,Colorado Rockies,823200,5.0,SS
-MLB,Spencer Steer,hitter_hits,0.912,Cincinnati Reds,Chicago Cubs,824493,3.0,RF
-MLB,Cam Smith,hitter_hits,0.911,Houston Astros,Texas Rangers,822878,7.0,RF
-MLB,Josh Bell,hitter_hits,0.91,Minnesota Twins,Los Angeles Angels,823685,4.0,DH
-MLB,Jasson Domínguez,hitter_hits,0.91,New York Yankees,Washington Nationals,822709,6.0,RF
-MLB,Matt Vierling,hitter_hits,0.91,Detroit Tigers,Philadelphia Phillies,824252,5.0,RF
-MLB,Kyle Stowers,hitter_hits,0.909,Miami Marlins,Cleveland Guardians,823845,5.0,1B
-MLB,Colson Montgomery,hitter_hits,0.909,Chicago White Sox,Athletics,824575,4.0,SS
-MLB,Trea Turner,hitter_hits,0.909,Philadelphia Phillies,Detroit Tigers,824252,1.0,SS
-MLB,JJ Bleday,hitter_hits,0.908,Cincinnati Reds,Chicago Cubs,824493,4.0,LF
-MLB,Brayan Rocchio,hitter_hits,0.895,Cleveland Guardians,Miami Marlins,823845,2.0,SS
-MLB,Keibert Ruiz,hitter_hits,0.894,Washington Nationals,New York Yankees,822709,9.0,C
-MLB,Ozzie Albies,hitter_hits,0.893,Atlanta Braves,St. Louis Cardinals,823033,2.0,2B
-MLB,Nico Hoerner,hitter_hits,0.892,Chicago Cubs,Cincinnati Reds,824493,6.0,2B
-MLB,Wyatt Langford,hitter_hits,0.891,Texas Rangers,Houston Astros,822878,2.0,LF
-MLB,Iván Herrera,hitter_hits,0.89,St. Louis Cardinals,Atlanta Braves,823033,2.0,DH
-MLB,Hunter Goodman,hitter_hits,0.889,Colorado Rockies,San Francisco Giants,823200,4.0,C
-MLB,Bryce Eldridge,hitter_hits,0.888,San Francisco Giants,Colorado Rockies,823200,6.0,1B
-MLB,Michael Conforto,hitter_hits,0.887,Chicago Cubs,Cincinnati Reds,824493,7.0,DH
-MLB,Masataka Yoshida,hitter_hits,0.88,Boston Red Sox,New York Mets,823604,5.0,DH
-MLB,Nathan Church,hitter_hits,0.879,St. Louis Cardinals,Atlanta Braves,823033,7.0,CF
-MLB,Cal Raleigh,hitter_hits,0.878,Seattle Mariners,Tampa Bay Rays,822955,4.0,C
-MLB,Jeremy Peña,hitter_hits,0.877,Houston Astros,Texas Rangers,822878,1.0,SS
-MLB,Gavin Sheets,hitter_hits,0.876,San Diego Padres,Toronto Blue Jays,823278,5.0,LF
-MLB,Ryan Jeffers,hitter_hits,0.876,Minnesota Twins,Los Angeles Angels,823685,2.0,C
-MLB,Taylor Walls,hitter_hits,0.874,Tampa Bay Rays,Seattle Mariners,822955,7.0,SS
-MLB,Ian Happ,hitter_hits,0.87,Chicago Cubs,Cincinnati Reds,824493,5.0,LF
-MLB,Cedric Mullins,hitter_hits,0.868,Tampa Bay Rays,Seattle Mariners,822955,4.0,CF
-MLB,Cole Young,hitter_hits,0.867,Seattle Mariners,Tampa Bay Rays,822955,7.0,2B
-MLB,Carter Jensen,hitter_hits,0.866,Kansas City Royals,Baltimore Orioles,824817,1.0,C
-MLB,Mickey Moniak,hitter_hits,0.865,Colorado Rockies,San Francisco Giants,823200,8.0,DH
-MLB,Victor Mesa Jr.,hitter_hits,0.864,Tampa Bay Rays,Seattle Mariners,822955,6.0,RF
-MLB,Spencer Torkelson,hitter_hits,0.863,Detroit Tigers,Philadelphia Phillies,824252,4.0,1B
-MLB,Heriberto Hernández,hitter_hits,0.863,Miami Marlins,Cleveland Guardians,823845,2.0,LF
-MLB,Henry Bolte,hitter_hits,0.863,Athletics,Chicago White Sox,824575,8.0,CF
-MLB,Dansby Swanson,hitter_hits,0.862,Chicago Cubs,Cincinnati Reds,824493,9.0,SS
-MLB,Alex Freeland,hitter_hits,0.862,Los Angeles Dodgers,Arizona Diamondbacks,823927,4.0,SS
-MLB,Masyn Winn,hitter_hits,0.861,St. Louis Cardinals,Atlanta Braves,823033,6.0,SS
-MLB,Braden Montgomery,hitter_hits,0.855,Chicago White Sox,Athletics,824575,5.0,RF
-MLB,Oswald Peraza,hitter_hits,0.854,Los Angeles Angels,Minnesota Twins,823685,7.0,2B
-MLB,Jarren Duran,hitter_hits,0.853,Boston Red Sox,New York Mets,823604,7.0,LF
-MLB,Jared Young,hitter_hits,0.852,New York Mets,Boston Red Sox,823604,6.0,1B
-MLB,Alec Burleson,hitter_hits,0.85,St. Louis Cardinals,Atlanta Braves,823033,5.0,1B
-MLB,Luke Raley,hitter_hits,0.848,Seattle Mariners,Tampa Bay Rays,822955,6.0,RF
-MLB,Willi Castro,hitter_hits,0.845,Colorado Rockies,San Francisco Giants,823200,7.0,SS
-MLB,Dylan Crews,hitter_hits,0.845,Washington Nationals,New York Yankees,822709,3.0,LF
-MLB,Anthony Seigler,hitter_hits,0.844,Boston Red Sox,New York Mets,823604,1.0,2B
-MLB,Jonah Heim,hitter_hits,0.842,Athletics,Chicago White Sox,824575,4.0,C
-MLB,Andrew Benintendi,hitter_hits,0.84,Chicago White Sox,Athletics,824575,7.0,DH
-MLB,Edwin Arroyo,hitter_hits,0.837,Cincinnati Reds,Chicago Cubs,824493,8.0,2B
-MLB,Zach Neto,hitter_hits,0.833,Los Angeles Angels,Minnesota Twins,823685,1.0,SS
-MLB,Alika Williams,hitter_hits,0.831,Athletics,Chicago White Sox,824575,5.0,SS
-MLB,José Caballero,hitter_hits,0.829,New York Yankees,Washington Nationals,822709,8.0,3B
-MLB,Jake Cronenworth,hitter_hits,0.828,San Diego Padres,Toronto Blue Jays,823278,7.0,PH
-MLB,Lourdes Gurriel Jr.,hitter_hits,0.828,Arizona Diamondbacks,Los Angeles Dodgers,823927,5.0,LF
-MLB,Ty France,hitter_hits,0.824,San Diego Padres,Toronto Blue Jays,823278,6.0,1B
-MLB,Xander Bogaerts,hitter_hits,0.823,San Diego Padres,Toronto Blue Jays,823278,3.0,SS
-MLB,Alejandro Kirk,hitter_hits,0.822,Toronto Blue Jays,San Diego Padres,823278,5.0,C
-MLB,Kyle Teel,hitter_hits,0.821,Chicago White Sox,Athletics,824575,8.0,C
-MLB,Carson Kelly,hitter_hits,0.819,Chicago Cubs,Cincinnati Reds,824493,8.0,C
-MLB,Grant McCray,hitter_hits,0.819,San Francisco Giants,Colorado Rockies,823200,1.0,LF
-MLB,Juan Soto,hitter_hits,0.818,New York Mets,Boston Red Sox,823604,2.0,LF
-MLB,Cole Carrigg,hitter_hits,0.815,Colorado Rockies,San Francisco Giants,823200,3.0,CF
-MLB,Tristan Peters,hitter_hits,0.813,Chicago White Sox,Athletics,824575,9.0,CF
-MLB,Lawrence Butler,hitter_hits,0.811,Athletics,Chicago White Sox,824575,1.0,RF
-MLB,Ke'Bryan Hayes,hitter_hits,0.809,Cincinnati Reds,Chicago Cubs,824493,9.0,3B
-MLB,Dominic Smith,hitter_hits,0.806,Atlanta Braves,St. Louis Cardinals,823033,8.0,DH
-MLB,Isaac Collins,hitter_hits,0.805,Kansas City Royals,Baltimore Orioles,824817,9.0,LF
-MLB,Kyle Manzardo,hitter_hits,0.803,Cleveland Guardians,Miami Marlins,823845,4.0,1B
-MLB,Lars Nootbaar,hitter_hits,0.802,St. Louis Cardinals,Atlanta Braves,823033,4.0,LF
-MLB,Brice Matthews,hitter_hits,0.799,Houston Astros,Texas Rangers,822878,9.0,CF
-MLB,Edouard Julien,hitter_hits,0.798,Colorado Rockies,San Francisco Giants,823200,5.0,2B
-MLB,Gabriel Rincones Jr.,hitter_hits,0.798,Philadelphia Phillies,Detroit Tigers,824252,7.0,RF
-MLB,Jeff McNeil,hitter_hits,0.798,Athletics,Chicago White Sox,824575,9.0,2B
-MLB,Samuel Basallo,hitter_hits,0.795,Baltimore Orioles,Kansas City Royals,824817,5.0,DH
-MLB,Blaze Jordan,hitter_hits,0.792,St. Louis Cardinals,Atlanta Braves,823033,8.0,3B
-MLB,Romy Gonzalez,hitter_hits,0.79,Boston Red Sox,New York Mets,823604,4.0,1B
-MLB,Dalton Rushing,hitter_hits,0.789,Los Angeles Dodgers,Arizona Diamondbacks,823927,9.0,1B
-MLB,Jorbit Vivas,hitter_hits,0.788,Washington Nationals,New York Yankees,822709,7.0,2B
-MLB,Colby Thomas,hitter_hits,0.787,Athletics,Chicago White Sox,824575,3.0,LF
-MLB,Jordan Walker,hitter_hits,0.786,St. Louis Cardinals,Atlanta Braves,823033,3.0,RF
-MLB,Elias Díaz,hitter_hits,0.785,Texas Rangers,Houston Astros,822878,1.0,DH
-MLB,Justin Foscue,hitter_hits,0.784,Texas Rangers,Houston Astros,822878,8.0,2B
-MLB,Carlos Cortes,hitter_hits,0.782,Athletics,Chicago White Sox,824575,2.0,P
-MLB,Teoscar Hernández,hitter_hits,0.778,Los Angeles Dodgers,Arizona Diamondbacks,823927,7.0,LF
-MLB,Josh Lowe,hitter_hits,0.775,Los Angeles Angels,Minnesota Twins,823685,5.0,LF
-MLB,Tsung-Che Cheng,hitter_hits,0.761,Boston Red Sox,New York Mets,823604,9.0,SS
-MLB,Luis Rengifo,hitter_hits,0.759,San Diego Padres,Toronto Blue Jays,823278,8.0,2B
-MLB,Daulton Varsho,hitter_hits,0.756,Toronto Blue Jays,San Diego Padres,823278,6.0,CF
-MLB,Steven Kwan,hitter_hits,0.749,Cleveland Guardians,Miami Marlins,823845,9.0,LF
-MLB,Richie Palacios,hitter_hits,0.742,Tampa Bay Rays,Seattle Mariners,822955,8.0,2B
-MLB,Colt Keith,hitter_hits,0.741,Detroit Tigers,Philadelphia Phillies,824252,2.0,3B
-MLB,Victor Robles,hitter_hits,0.74,Seattle Mariners,Tampa Bay Rays,822955,8.0,CF
-MLB,Austin Hedges,hitter_hits,0.738,Cleveland Guardians,Miami Marlins,823845,8.0,C
-MLB,Tyrone Taylor,hitter_hits,0.735,New York Mets,Boston Red Sox,823604,9.0,CF
-MLB,Tommy Edman,hitter_hits,0.733,Los Angeles Dodgers,Arizona Diamondbacks,823927,5.0,3B
-MLB,Ildemaro Vargas,hitter_hits,0.733,Arizona Diamondbacks,Los Angeles Dodgers,823927,6.0,2B
-MLB,Tyler Freeman,hitter_hits,0.73,Colorado Rockies,San Francisco Giants,823200,6.0,RF
-MLB,Michael Massey,hitter_hits,0.727,Kansas City Royals,Baltimore Orioles,824817,5.0,2B
-MLB,Jorge Barrosa,hitter_hits,0.727,Arizona Diamondbacks,Los Angeles Dodgers,823927,8.0,CF
-MLB,Jazz Chisholm Jr.,hitter_hits,0.727,New York Yankees,Washington Nationals,822709,7.0,2B
-MLB,James Outman,hitter_hits,0.725,Detroit Tigers,Philadelphia Phillies,824252,8.0,CF
-MLB,Kahlil Watson,hitter_hits,0.724,Cleveland Guardians,Miami Marlins,823845,6.0,CF
-MLB,Miguel Rojas,hitter_hits,0.722,Los Angeles Dodgers,Arizona Diamondbacks,823927,8.0,2B
-MLB,Daniel Schneemann,hitter_hits,0.718,Cleveland Guardians,Miami Marlins,823845,7.0,3B
-MLB,Jacob Young,hitter_hits,0.717,Washington Nationals,New York Yankees,822709,5.0,CF
-MLB,Tyler O'Neill,hitter_hits,0.713,Baltimore Orioles,Kansas City Royals,824817,6.0,RF
-MLB,Connor Wong,hitter_hits,0.71,Boston Red Sox,New York Mets,823604,8.0,C
-MLB,Evan Carter,hitter_hits,0.706,Texas Rangers,Houston Astros,822878,7.0,CF
+MLB,Miguel Vargas,hitter_hits,1.354,Chicago White Sox,Athletics,824575,3.0,1B
+MLB,Brandon Marsh,hitter_hits,1.336,Philadelphia Phillies,Detroit Tigers,824252,4.0,LF
+MLB,Michael Busch,hitter_hits,1.327,Chicago Cubs,Cincinnati Reds,824493,3.0,1B
+MLB,Otto Lopez,hitter_hits,1.319,Miami Marlins,Cleveland Guardians,823845,1.0,SS
+MLB,Gunnar Henderson,hitter_hits,1.295,Baltimore Orioles,Kansas City Royals,824817,1.0,SS
+MLB,Wilyer Abreu,hitter_hits,1.289,Boston Red Sox,New York Mets,823604,3.0,RF
+MLB,Bryce Harper,hitter_hits,1.28,Philadelphia Phillies,Detroit Tigers,824252,3.0,1B
+MLB,Xavier Edwards,hitter_hits,1.277,Miami Marlins,Cleveland Guardians,823845,3.0,2B
+MLB,Mauricio Dubón,hitter_hits,1.254,Atlanta Braves,St. Louis Cardinals,823033,5.0,LF
+MLB,Alex Bregman,hitter_hits,1.247,Chicago Cubs,Cincinnati Reds,824493,2.0,3B
+MLB,Manny Machado,hitter_hits,1.24,San Diego Padres,Toronto Blue Jays,823278,4.0,3B
+MLB,Taylor Ward,hitter_hits,1.232,Baltimore Orioles,Kansas City Royals,824817,3.0,LF
+MLB,Dominic Canzone,hitter_hits,1.225,Seattle Mariners,Tampa Bay Rays,822955,3.0,DH
+MLB,Caleb Durbin,hitter_hits,1.224,Boston Red Sox,New York Mets,823604,6.0,3B
+MLB,Chase Meidroth,hitter_hits,1.219,Chicago White Sox,Athletics,824575,6.0,2B
+MLB,Alec Bohm,hitter_hits,1.213,Philadelphia Phillies,Detroit Tigers,824252,5.0,3B
+MLB,Geraldo Perdomo,hitter_hits,1.205,Arizona Diamondbacks,Los Angeles Dodgers,823927,2.0,SS
+MLB,Josh Naylor,hitter_hits,1.202,Seattle Mariners,Tampa Bay Rays,822955,5.0,1B
+MLB,Ketel Marte,hitter_hits,1.189,Arizona Diamondbacks,Los Angeles Dodgers,823927,1.0,DH
+MLB,Jung Hoo Lee,hitter_hits,1.189,San Francisco Giants,Colorado Rockies,823200,7.0,RF
+MLB,Randy Arozarena,hitter_hits,1.185,Seattle Mariners,Tampa Bay Rays,822955,2.0,LF
+MLB,Andy Pages,hitter_hits,1.183,Los Angeles Dodgers,Arizona Diamondbacks,823927,2.0,CF
+MLB,Jakob Marsee,hitter_hits,1.18,Miami Marlins,Cleveland Guardians,823845,8.0,CF
+MLB,Ernie Clement,hitter_hits,1.171,Toronto Blue Jays,San Diego Padres,823278,1.0,2B
+MLB,Daylen Lile,hitter_hits,1.164,Washington Nationals,New York Yankees,822709,6.0,DH
+MLB,Kevin McGonigle,hitter_hits,1.162,Detroit Tigers,Philadelphia Phillies,824252,1.0,SS
+MLB,Jake McCarthy,hitter_hits,1.16,Colorado Rockies,San Francisco Giants,823200,1.0,LF
+MLB,Curtis Mead,hitter_hits,1.158,Washington Nationals,New York Yankees,822709,2.0,3B
+MLB,Christian Walker,hitter_hits,1.157,Houston Astros,Texas Rangers,822878,4.0,1B
+MLB,Corbin Carroll,hitter_hits,1.155,Arizona Diamondbacks,Los Angeles Dodgers,823927,3.0,RF
+MLB,Gabriel Moreno,hitter_hits,1.151,Arizona Diamondbacks,Los Angeles Dodgers,823927,4.0,C
+MLB,Jose Altuve,hitter_hits,1.15,Houston Astros,Texas Rangers,822878,5.0,2B
+MLB,Trevor Larnach,hitter_hits,1.144,Minnesota Twins,Los Angeles Angels,823685,1.0,LF
+MLB,Yandy Díaz,hitter_hits,1.144,Tampa Bay Rays,Seattle Mariners,822955,1.0,DH
+MLB,JJ Wetherholt,hitter_hits,1.144,St. Louis Cardinals,Atlanta Braves,823033,1.0,2B
+MLB,Spencer Torkelson,hitter_hits,1.143,Detroit Tigers,Philadelphia Phillies,824252,4.0,1B
+MLB,CJ Abrams,hitter_hits,1.141,Washington Nationals,New York Yankees,822709,4.0,SS
+MLB,Iván Herrera,hitter_hits,1.141,St. Louis Cardinals,Atlanta Braves,823033,2.0,DH
+MLB,Kyle Karros,hitter_hits,1.141,Colorado Rockies,San Francisco Giants,823200,2.0,3B
+MLB,Hunter Goodman,hitter_hits,1.138,Colorado Rockies,San Francisco Giants,823200,4.0,C
+MLB,Yordan Alvarez,hitter_hits,1.133,Houston Astros,Texas Rangers,822878,2.0,DH
+MLB,Bryson Stott,hitter_hits,1.131,Philadelphia Phillies,Detroit Tigers,824252,6.0,2B
+MLB,Cam Smith,hitter_hits,1.126,Houston Astros,Texas Rangers,822878,7.0,RF
+MLB,Bobby Witt Jr.,hitter_hits,1.109,Kansas City Royals,Baltimore Orioles,824817,2.0,SS
+MLB,Sam Antonacci,hitter_hits,1.107,Chicago White Sox,Athletics,824575,1.0,3B
+MLB,Brandon Nimmo,hitter_hits,1.103,Texas Rangers,Houston Astros,822878,4.0,RF
+MLB,Pete Alonso,hitter_hits,1.103,Baltimore Orioles,Kansas City Royals,824817,4.0,1B
+MLB,Willy Adames,hitter_hits,1.102,San Francisco Giants,Colorado Rockies,823200,5.0,SS
+MLB,Brett Baty,hitter_hits,1.095,New York Mets,Boston Red Sox,823604,8.0,3B
+MLB,Casey Schmitt,hitter_hits,1.094,San Francisco Giants,Colorado Rockies,823200,3.0,3B
+MLB,Travis Bazzana,hitter_hits,1.092,Cleveland Guardians,Miami Marlins,823845,1.0,2B
+MLB,Josh Jung,hitter_hits,1.091,Texas Rangers,Houston Astros,822878,3.0,3B
+MLB,Nolan Arenado,hitter_hits,1.088,Arizona Diamondbacks,Los Angeles Dodgers,823927,7.0,3B
+MLB,Luis Arraez,hitter_hits,1.088,San Francisco Giants,Colorado Rockies,823200,2.0,2B
+MLB,Cody Bellinger,hitter_hits,1.088,New York Yankees,Washington Nationals,822709,5.0,LF
+MLB,Nico Hoerner,hitter_hits,1.088,Chicago Cubs,Cincinnati Reds,824493,6.0,2B
+MLB,Jake Burger,hitter_hits,1.087,Texas Rangers,Houston Astros,822878,5.0,1B
+MLB,Kyle Schwarber,hitter_hits,1.086,Philadelphia Phillies,Detroit Tigers,824252,2.0,DH
+MLB,Gavin Sheets,hitter_hits,1.086,San Diego Padres,Toronto Blue Jays,823278,5.0,LF
+MLB,Josh Bell,hitter_hits,1.082,Minnesota Twins,Los Angeles Angels,823685,4.0,DH
+MLB,Cedric Mullins,hitter_hits,1.08,Tampa Bay Rays,Seattle Mariners,822955,4.0,CF
+MLB,Cole Young,hitter_hits,1.08,Seattle Mariners,Tampa Bay Rays,822955,7.0,2B
+MLB,J.P. Crawford,hitter_hits,1.075,Seattle Mariners,Tampa Bay Rays,822955,1.0,SS
+MLB,Shohei Ohtani,hitter_hits,1.074,Los Angeles Dodgers,Arizona Diamondbacks,823927,1.0,DH
+MLB,Vladimir Guerrero Jr.,hitter_hits,1.073,Toronto Blue Jays,San Diego Padres,823278,2.0,1B
+MLB,Austin Riley,hitter_hits,1.069,Atlanta Braves,St. Louis Cardinals,823033,7.0,3B
+MLB,Matt Olson,hitter_hits,1.069,Atlanta Braves,St. Louis Cardinals,823033,3.0,1B
+MLB,Lawrence Butler,hitter_hits,1.069,Athletics,Chicago White Sox,824575,1.0,RF
+MLB,Joshua Kuroda-Grauer,hitter_hits,1.068,Athletics,Chicago White Sox,824575,7.0,3B
+MLB,Carter Jensen,hitter_hits,1.062,Kansas City Royals,Baltimore Orioles,824817,1.0,C
+MLB,Jackson Merrill,hitter_hits,1.06,San Diego Padres,Toronto Blue Jays,823278,2.0,CF
+MLB,Masyn Winn,hitter_hits,1.06,St. Louis Cardinals,Atlanta Braves,823033,6.0,SS
+MLB,Carson Benge,hitter_hits,1.053,New York Mets,Boston Red Sox,823604,4.0,RF
+MLB,Jonathan Aranda,hitter_hits,1.053,Tampa Bay Rays,Seattle Mariners,822955,2.0,1B
+MLB,Luis García Jr.,hitter_hits,1.05,Washington Nationals,New York Yankees,822709,8.0,1B
+MLB,Blaze Alexander,hitter_hits,1.047,Baltimore Orioles,Kansas City Royals,824817,8.0,3B
+MLB,Jeff McNeil,hitter_hits,1.047,Athletics,Chicago White Sox,824575,9.0,2B
+MLB,Andrew Benintendi,hitter_hits,1.044,Chicago White Sox,Athletics,824575,7.0,DH
+MLB,Matt Vierling,hitter_hits,1.042,Detroit Tigers,Philadelphia Phillies,824252,5.0,RF
+MLB,Ceddanne Rafaela,hitter_hits,1.04,Boston Red Sox,New York Mets,823604,2.0,CF
+MLB,Xander Bogaerts,hitter_hits,1.04,San Diego Padres,Toronto Blue Jays,823278,3.0,SS
+MLB,Luke Keaschall,hitter_hits,1.039,Minnesota Twins,Los Angeles Angels,823685,9.0,CF
+MLB,Elly De La Cruz,hitter_hits,1.035,Cincinnati Reds,Chicago Cubs,824493,1.0,SS
+MLB,Jac Caglianone,hitter_hits,1.033,Kansas City Royals,Baltimore Orioles,824817,3.0,RF
+MLB,Brooks Lee,hitter_hits,1.032,Minnesota Twins,Los Angeles Angels,823685,6.0,SS
+MLB,Javier Sanoja,hitter_hits,1.031,Miami Marlins,Cleveland Guardians,823845,4.0,3B
+MLB,Liam Hicks,hitter_hits,1.03,Miami Marlins,Cleveland Guardians,823845,6.0,PH
+MLB,Rafael Devers,hitter_hits,1.029,San Francisco Giants,Colorado Rockies,823200,4.0,DH
+MLB,Ian Happ,hitter_hits,1.027,Chicago Cubs,Cincinnati Reds,824493,5.0,LF
+MLB,Nolan Schanuel,hitter_hits,1.017,Los Angeles Angels,Minnesota Twins,823685,2.0,1B
+MLB,Junior Caminero,hitter_hits,1.016,Tampa Bay Rays,Seattle Mariners,822955,3.0,3B
+MLB,Eugenio Suárez,hitter_hits,1.013,Cincinnati Reds,Chicago Cubs,824493,5.0,DH
+MLB,Brayan Rocchio,hitter_hits,1.01,Cleveland Guardians,Miami Marlins,823845,2.0,SS
+MLB,Francisco Lindor,hitter_hits,1.007,New York Mets,Boston Red Sox,823604,3.0,SS
+MLB,Luke Raley,hitter_hits,1.007,Seattle Mariners,Tampa Bay Rays,822955,6.0,RF
+MLB,Dansby Swanson,hitter_hits,1.006,Chicago Cubs,Cincinnati Reds,824493,9.0,SS
+MLB,Colson Montgomery,hitter_hits,1.005,Chicago White Sox,Athletics,824575,4.0,SS
+MLB,Kazuma Okamoto,hitter_hits,1.004,Toronto Blue Jays,San Diego Padres,823278,3.0,3B
+MLB,Victor Caratini,hitter_hits,1.002,Minnesota Twins,Los Angeles Angels,823685,8.0,1B
+MLB,Zach McKinstry,hitter_hits,1.002,Detroit Tigers,Philadelphia Phillies,824252,7.0,2B
+MLB,Adley Rutschman,hitter_hits,0.999,Baltimore Orioles,Kansas City Royals,824817,2.0,C
+MLB,Isaac Collins,hitter_hits,0.997,Kansas City Royals,Baltimore Orioles,824817,9.0,LF
+MLB,Spencer Steer,hitter_hits,0.996,Cincinnati Reds,Chicago Cubs,824493,3.0,RF
+MLB,José Caballero,hitter_hits,0.995,New York Yankees,Washington Nationals,822709,8.0,3B
+MLB,Michael Harris II,hitter_hits,0.994,Atlanta Braves,St. Louis Cardinals,823033,1.0,CF
+MLB,Willi Castro,hitter_hits,0.989,Colorado Rockies,San Francisco Giants,823200,7.0,SS
+MLB,Nathan Lukes,hitter_hits,0.987,Toronto Blue Jays,San Diego Padres,823278,9.0,RF
+MLB,George Springer,hitter_hits,0.986,Toronto Blue Jays,San Diego Padres,823278,4.0,DH
+MLB,Drake Baldwin,hitter_hits,0.986,Atlanta Braves,St. Louis Cardinals,823033,4.0,C
+MLB,Royce Lewis,hitter_hits,0.985,Minnesota Twins,Los Angeles Angels,823685,5.0,3B
+MLB,Tyler Stephenson,hitter_hits,0.985,Cincinnati Reds,Chicago Cubs,824493,6.0,C
+MLB,Jo Adell,hitter_hits,0.982,Los Angeles Angels,Minnesota Twins,823685,6.0,RF
+MLB,Ezequiel Duran,hitter_hits,0.98,Texas Rangers,Houston Astros,822878,6.0,SS
+MLB,Seiya Suzuki,hitter_hits,0.979,Chicago Cubs,Cincinnati Reds,824493,4.0,RF
+MLB,A.J. Ewing,hitter_hits,0.978,New York Mets,Boston Red Sox,823604,1.0,2B
+MLB,Chandler Simpson,hitter_hits,0.977,Tampa Bay Rays,Seattle Mariners,822955,5.0,LF
+MLB,Samuel Basallo,hitter_hits,0.976,Baltimore Orioles,Kansas City Royals,824817,5.0,DH
+MLB,Jarren Duran,hitter_hits,0.971,Boston Red Sox,New York Mets,823604,7.0,LF
+MLB,Jorge Soler,hitter_hits,0.968,Los Angeles Angels,Minnesota Twins,823685,4.0,DH
+MLB,Isaac Paredes,hitter_hits,0.963,Houston Astros,Texas Rangers,822878,3.0,3B
+MLB,Colt Keith,hitter_hits,0.962,Detroit Tigers,Philadelphia Phillies,824252,2.0,3B
+MLB,Ben Rice,hitter_hits,0.96,New York Yankees,Washington Nationals,822709,2.0,DH
+MLB,Sal Stewart,hitter_hits,0.957,Cincinnati Reds,Chicago Cubs,824493,2.0,1B
+MLB,Lane Thomas,hitter_hits,0.954,Kansas City Royals,Baltimore Orioles,824817,4.0,CF
+MLB,Chase DeLauter,hitter_hits,0.954,Cleveland Guardians,Miami Marlins,823845,3.0,RF
+MLB,Salvador Perez,hitter_hits,0.952,Kansas City Royals,Baltimore Orioles,824817,6.0,1B
+MLB,Ozzie Albies,hitter_hits,0.948,Atlanta Braves,St. Louis Cardinals,823033,2.0,2B
+MLB,Oswald Peraza,hitter_hits,0.942,Los Angeles Angels,Minnesota Twins,823685,7.0,2B
+MLB,Fernando Tatis Jr.,hitter_hits,0.94,San Diego Padres,Toronto Blue Jays,823278,1.0,RF
+MLB,Jorge Polanco,hitter_hits,0.94,New York Mets,Boston Red Sox,823604,5.0,DH
+MLB,Francisco Alvarez,hitter_hits,0.937,New York Mets,Boston Red Sox,823604,7.0,C
+MLB,Wyatt Langford,hitter_hits,0.93,Texas Rangers,Houston Astros,822878,2.0,LF
+MLB,Jordan Walker,hitter_hits,0.928,St. Louis Cardinals,Atlanta Braves,823033,3.0,RF
+MLB,Griffin Conine,hitter_hits,0.927,Miami Marlins,Cleveland Guardians,823845,7.0,PH
+MLB,Eduardo Valencia,hitter_hits,0.926,Detroit Tigers,Philadelphia Phillies,824252,6.0,DH
+MLB,Bryce Eldridge,hitter_hits,0.925,San Francisco Giants,Colorado Rockies,823200,6.0,1B
+MLB,Andrés Giménez,hitter_hits,0.924,Toronto Blue Jays,San Diego Padres,823278,7.0,SS
+MLB,Nathan Church,hitter_hits,0.924,St. Louis Cardinals,Atlanta Braves,823033,7.0,CF
+MLB,Trent Grisham,hitter_hits,0.924,New York Yankees,Washington Nationals,822709,3.0,CF
+MLB,Steven Kwan,hitter_hits,0.923,Cleveland Guardians,Miami Marlins,823845,9.0,LF
+MLB,James Wood,hitter_hits,0.918,Washington Nationals,New York Yankees,822709,1.0,RF
+MLB,Alec Burleson,hitter_hits,0.918,St. Louis Cardinals,Atlanta Braves,823033,5.0,1B
+MLB,Myles Straw,hitter_hits,0.915,Toronto Blue Jays,San Diego Padres,823278,8.0,LF
+MLB,Denzer Guzman,hitter_hits,0.915,Los Angeles Angels,Minnesota Twins,823685,3.0,3B
+MLB,Jasson Domínguez,hitter_hits,0.915,New York Yankees,Washington Nationals,822709,6.0,RF
+MLB,Daniel Schneemann,hitter_hits,0.912,Cleveland Guardians,Miami Marlins,823845,7.0,3B
+MLB,Troy Johnston,hitter_hits,0.911,Colorado Rockies,San Francisco Giants,823200,9.0,1B
+MLB,Kyle Manzardo,hitter_hits,0.911,Cleveland Guardians,Miami Marlins,823845,4.0,1B
+MLB,Yainer Diaz,hitter_hits,0.909,Houston Astros,Texas Rangers,822878,8.0,C
+MLB,Michael Conforto,hitter_hits,0.902,Chicago Cubs,Cincinnati Reds,824493,7.0,DH
+MLB,Mickey Moniak,hitter_hits,0.9,Colorado Rockies,San Francisco Giants,823200,8.0,DH
+MLB,Kyle Stowers,hitter_hits,0.895,Miami Marlins,Cleveland Guardians,823845,5.0,1B
+MLB,Jacob Young,hitter_hits,0.893,Washington Nationals,New York Yankees,822709,5.0,CF
+MLB,Nick Loftin,hitter_hits,0.891,Kansas City Royals,Baltimore Orioles,824817,8.0,DH
+MLB,Jeremy Peña,hitter_hits,0.888,Houston Astros,Texas Rangers,822878,1.0,SS
+MLB,Zach Neto,hitter_hits,0.884,Los Angeles Angels,Minnesota Twins,823685,1.0,SS
+MLB,JJ Bleday,hitter_hits,0.884,Cincinnati Reds,Chicago Cubs,824493,4.0,LF
+MLB,Ildemaro Vargas,hitter_hits,0.882,Arizona Diamondbacks,Los Angeles Dodgers,823927,6.0,2B
+MLB,Heriberto Hernández,hitter_hits,0.88,Miami Marlins,Cleveland Guardians,823845,2.0,LF
+MLB,Masataka Yoshida,hitter_hits,0.878,Boston Red Sox,New York Mets,823604,5.0,DH
+MLB,Ryan Jeffers,hitter_hits,0.875,Minnesota Twins,Los Angeles Angels,823685,2.0,C
+MLB,Braden Montgomery,hitter_hits,0.871,Chicago White Sox,Athletics,824575,5.0,RF
+MLB,Luis Rengifo,hitter_hits,0.871,San Diego Padres,Toronto Blue Jays,823278,8.0,2B
+MLB,Taylor Walls,hitter_hits,0.869,Tampa Bay Rays,Seattle Mariners,822955,7.0,SS
+MLB,Alex Freeland,hitter_hits,0.866,Los Angeles Dodgers,Arizona Diamondbacks,823927,4.0,SS
+MLB,Cal Raleigh,hitter_hits,0.865,Seattle Mariners,Tampa Bay Rays,822955,4.0,C
+MLB,Tristan Peters,hitter_hits,0.865,Chicago White Sox,Athletics,824575,9.0,CF
+MLB,Henry Bolte,hitter_hits,0.864,Athletics,Chicago White Sox,824575,8.0,CF
+MLB,Pete Crow-Armstrong,hitter_hits,0.863,Chicago Cubs,Cincinnati Reds,824493,1.0,CF
+MLB,Keibert Ruiz,hitter_hits,0.849,Washington Nationals,New York Yankees,822709,9.0,C
+MLB,Jazz Chisholm Jr.,hitter_hits,0.848,New York Yankees,Washington Nationals,822709,7.0,2B
+MLB,Ty France,hitter_hits,0.845,San Diego Padres,Toronto Blue Jays,823278,6.0,1B
+MLB,Daulton Varsho,hitter_hits,0.844,Toronto Blue Jays,San Diego Padres,823278,6.0,CF
+MLB,Victor Mesa Jr.,hitter_hits,0.842,Tampa Bay Rays,Seattle Mariners,822955,6.0,RF
+MLB,Edouard Julien,hitter_hits,0.84,Colorado Rockies,San Francisco Giants,823200,5.0,2B
+MLB,Dalton Rushing,hitter_hits,0.84,Los Angeles Dodgers,Arizona Diamondbacks,823927,9.0,1B
+MLB,Austin Martin,hitter_hits,0.838,Minnesota Twins,Los Angeles Angels,823685,7.0,RF
+MLB,Carson Kelly,hitter_hits,0.834,Chicago Cubs,Cincinnati Reds,824493,8.0,C
+MLB,Dylan Crews,hitter_hits,0.834,Washington Nationals,New York Yankees,822709,3.0,LF
+MLB,Kyle Teel,hitter_hits,0.832,Chicago White Sox,Athletics,824575,8.0,C
+MLB,Trea Turner,hitter_hits,0.827,Philadelphia Phillies,Detroit Tigers,824252,1.0,SS
+MLB,Anthony Seigler,hitter_hits,0.826,Boston Red Sox,New York Mets,823604,1.0,2B
+MLB,Jonah Heim,hitter_hits,0.822,Athletics,Chicago White Sox,824575,4.0,C
+MLB,Jorbit Vivas,hitter_hits,0.82,Washington Nationals,New York Yankees,822709,7.0,2B
+MLB,Jared Young,hitter_hits,0.82,New York Mets,Boston Red Sox,823604,6.0,1B
+MLB,Carlos Cortes,hitter_hits,0.817,Athletics,Chicago White Sox,824575,2.0,P
+MLB,Alejandro Kirk,hitter_hits,0.817,Toronto Blue Jays,San Diego Padres,823278,5.0,C
+MLB,Blaze Jordan,hitter_hits,0.815,St. Louis Cardinals,Atlanta Braves,823033,8.0,3B
+MLB,Kody Clemens,hitter_hits,0.81,Minnesota Twins,Los Angeles Angels,823685,3.0,2B
+MLB,Ke'Bryan Hayes,hitter_hits,0.81,Cincinnati Reds,Chicago Cubs,824493,9.0,3B
+MLB,Colton Cowser,hitter_hits,0.809,Baltimore Orioles,Kansas City Royals,824817,7.0,CF
+MLB,Edwin Arroyo,hitter_hits,0.808,Cincinnati Reds,Chicago Cubs,824493,8.0,2B
+MLB,Grant McCray,hitter_hits,0.805,San Francisco Giants,Colorado Rockies,823200,1.0,LF
+MLB,Alika Williams,hitter_hits,0.802,Athletics,Chicago White Sox,824575,5.0,SS
+MLB,Juan Soto,hitter_hits,0.799,New York Mets,Boston Red Sox,823604,2.0,LF
+MLB,Jake Cronenworth,hitter_hits,0.798,San Diego Padres,Toronto Blue Jays,823278,7.0,PH
+MLB,Romy Gonzalez,hitter_hits,0.796,Boston Red Sox,New York Mets,823604,4.0,1B
+MLB,Elias Díaz,hitter_hits,0.796,Texas Rangers,Houston Astros,822878,1.0,DH
+MLB,Lourdes Gurriel Jr.,hitter_hits,0.79,Arizona Diamondbacks,Los Angeles Dodgers,823927,5.0,LF
+MLB,Brice Matthews,hitter_hits,0.788,Houston Astros,Texas Rangers,822878,9.0,CF
+MLB,Gabriel Rincones Jr.,hitter_hits,0.779,Philadelphia Phillies,Detroit Tigers,824252,7.0,RF
+MLB,Kahlil Watson,hitter_hits,0.773,Cleveland Guardians,Miami Marlins,823845,6.0,CF
+MLB,Lars Nootbaar,hitter_hits,0.772,St. Louis Cardinals,Atlanta Braves,823033,4.0,LF
+MLB,Justin Foscue,hitter_hits,0.77,Texas Rangers,Houston Astros,822878,8.0,2B
+MLB,Cole Carrigg,hitter_hits,0.766,Colorado Rockies,San Francisco Giants,823200,3.0,CF
+MLB,Colby Thomas,hitter_hits,0.763,Athletics,Chicago White Sox,824575,3.0,LF
+MLB,Paul Goldschmidt,hitter_hits,0.749,New York Yankees,Washington Nationals,822709,4.0,1B
+MLB,Teoscar Hernández,hitter_hits,0.745,Los Angeles Dodgers,Arizona Diamondbacks,823927,7.0,LF
+MLB,Hunter Feduccia,hitter_hits,0.743,Tampa Bay Rays,Seattle Mariners,822955,9.0,C
+MLB,Josh Lowe,hitter_hits,0.742,Los Angeles Angels,Minnesota Twins,823685,5.0,LF
+MLB,Victor Robles,hitter_hits,0.742,Seattle Mariners,Tampa Bay Rays,822955,8.0,CF
+MLB,Dominic Smith,hitter_hits,0.74,Atlanta Braves,St. Louis Cardinals,823033,8.0,DH
+MLB,Tyler Freeman,hitter_hits,0.737,Colorado Rockies,San Francisco Giants,823200,6.0,RF
+MLB,Tyler O'Neill,hitter_hits,0.735,Baltimore Orioles,Kansas City Royals,824817,6.0,RF
+MLB,Richie Palacios,hitter_hits,0.73,Tampa Bay Rays,Seattle Mariners,822955,8.0,2B
+MLB,James Outman,hitter_hits,0.727,Detroit Tigers,Philadelphia Phillies,824252,8.0,CF
+MLB,Jackson Holliday,hitter_hits,0.711,Baltimore Orioles,Kansas City Royals,824817,9.0,2B
+MLB,Kyle Higashioka,hitter_hits,0.71,Texas Rangers,Houston Astros,822878,9.0,C
+MLB,Tsung-Che Cheng,hitter_hits,0.706,Boston Red Sox,New York Mets,823604,9.0,SS
+MLB,Tommy Edman,hitter_hits,0.705,Los Angeles Dodgers,Arizona Diamondbacks,823927,5.0,3B
 MLB,Joe Mack,hitter_hits,0.703,Miami Marlins,Cleveland Guardians,823845,9.0,C
-MLB,Andrés Giménez,hitter_hits,0.696,Toronto Blue Jays,San Diego Padres,823278,7.0,SS
-MLB,Austin Martin,hitter_hits,0.696,Minnesota Twins,Los Angeles Angels,823685,7.0,RF
-MLB,Hunter Feduccia,hitter_hits,0.684,Tampa Bay Rays,Seattle Mariners,822955,9.0,C
-MLB,Myles Straw,hitter_hits,0.683,Toronto Blue Jays,San Diego Padres,823278,8.0,LF
-MLB,Jackson Holliday,hitter_hits,0.68,Baltimore Orioles,Kansas City Royals,824817,9.0,2B
-MLB,Tyler Heineman,hitter_hits,0.675,Los Angeles Angels,Minnesota Twins,823685,9.0,C
-MLB,Anthony Volpe,hitter_hits,0.664,New York Yankees,Washington Nationals,822709,1.0,SS
-MLB,Kyle Higashioka,hitter_hits,0.661,Texas Rangers,Houston Astros,822878,9.0,C
-MLB,Colton Cowser,hitter_hits,0.66,Baltimore Orioles,Kansas City Royals,824817,7.0,CF
-MLB,TJ Friedl,hitter_hits,0.655,Cincinnati Reds,Chicago Cubs,824493,7.0,CF
-MLB,Luis Campusano,hitter_hits,0.653,San Diego Padres,Toronto Blue Jays,823278,9.0,C
-MLB,Troy Johnston,hitter_hits,0.651,Colorado Rockies,San Francisco Giants,823200,9.0,1B
-MLB,Ben Malgeri,hitter_hits,0.642,Detroit Tigers,Philadelphia Phillies,824252,3.0,LF
-MLB,Jake Rogers,hitter_hits,0.639,Detroit Tigers,Philadelphia Phillies,824252,9.0,C
-MLB,Austin Wells,hitter_hits,0.633,New York Yankees,Washington Nationals,822709,9.0,C
-MLB,Drew Gilbert,hitter_hits,0.624,San Francisco Giants,Colorado Rockies,823200,8.0,CF
-MLB,Junior Perez,hitter_hits,0.618,Chicago White Sox,Athletics,824575,2.0,LF
-MLB,Eliezer Alfonzo,hitter_hits,0.617,Los Angeles Dodgers,Arizona Diamondbacks,823927,6.0,C
-MLB,Rhys Hoskins,hitter_hits,0.608,Cleveland Guardians,Miami Marlins,823845,5.0,DH
-MLB,Jorge Mateo,hitter_hits,0.604,Atlanta Braves,St. Louis Cardinals,823033,9.0,SS
-MLB,Jose Siri,hitter_hits,0.574,Los Angeles Angels,Minnesota Twins,823685,8.0,CF
-MLB,Eli White,hitter_hits,0.561,Atlanta Braves,St. Louis Cardinals,823033,6.0,RF
-MLB,Tim Tawa,hitter_hits,0.56,Arizona Diamondbacks,Los Angeles Dodgers,823927,9.0,1B
-MLB,Derek Hill,hitter_hits,0.55,Philadelphia Phillies,Detroit Tigers,824252,8.0,CF
-MLB,Joey Meneses,hitter_hits,0.54,Athletics,Chicago White Sox,824575,6.0,1B
-MLB,Eric Haase,hitter_hits,0.537,San Francisco Giants,Colorado Rockies,823200,9.0,PR
-MLB,Josh Rojas,hitter_hits,0.536,Kansas City Royals,Baltimore Orioles,824817,7.0,3B
-MLB,Rafael Marchán,hitter_hits,0.527,Philadelphia Phillies,Detroit Tigers,824252,9.0,C
-MLB,Zach Dezenzo,hitter_hits,0.524,Houston Astros,Texas Rangers,822878,6.0,PH
-MLB,Alex Call,hitter_hits,0.516,Los Angeles Dodgers,Arizona Diamondbacks,823927,3.0,RF
-MLB,Jimmy Crooks,hitter_hits,0.442,St. Louis Cardinals,Atlanta Braves,823033,9.0,C
-MLB,Buddy Kennedy,hitter_hits,0.403,Seattle Mariners,Tampa Bay Rays,822955,9.0,3B
-MLB,Eugenio Suárez,hitter_total_bases,2.381,Cincinnati Reds,Chicago Cubs,824493,5.0,DH
-MLB,Yordan Alvarez,hitter_total_bases,2.217,Houston Astros,Texas Rangers,822878,2.0,DH
-MLB,Otto Lopez,hitter_total_bases,2.201,Miami Marlins,Cleveland Guardians,823845,1.0,SS
-MLB,Jose Altuve,hitter_total_bases,2.195,Houston Astros,Texas Rangers,822878,5.0,2B
-MLB,Kyle Stowers,hitter_total_bases,2.167,Miami Marlins,Cleveland Guardians,823845,5.0,1B
-MLB,Christian Walker,hitter_total_bases,2.132,Houston Astros,Texas Rangers,822878,4.0,1B
-MLB,Bryce Harper,hitter_total_bases,2.128,Philadelphia Phillies,Detroit Tigers,824252,3.0,1B
-MLB,Elly De La Cruz,hitter_total_bases,2.1,Cincinnati Reds,Chicago Cubs,824493,1.0,SS
-MLB,Paul Goldschmidt,hitter_total_bases,2.099,New York Yankees,Washington Nationals,822709,4.0,1B
-MLB,Miguel Vargas,hitter_total_bases,2.093,Chicago White Sox,Athletics,824575,3.0,1B
-MLB,Michael Busch,hitter_total_bases,2.077,Chicago Cubs,Cincinnati Reds,824493,3.0,1B
-MLB,Kazuma Okamoto,hitter_total_bases,2.068,Toronto Blue Jays,San Diego Padres,823278,3.0,3B
-MLB,Dominic Canzone,hitter_total_bases,2.063,Seattle Mariners,Tampa Bay Rays,822955,3.0,DH
-MLB,Junior Caminero,hitter_total_bases,2.054,Tampa Bay Rays,Seattle Mariners,822955,3.0,3B
-MLB,CJ Abrams,hitter_total_bases,2.034,Washington Nationals,New York Yankees,822709,4.0,SS
-MLB,Kyle Schwarber,hitter_total_bases,2.028,Philadelphia Phillies,Detroit Tigers,824252,2.0,DH
-MLB,Alec Bohm,hitter_total_bases,2.021,Philadelphia Phillies,Detroit Tigers,824252,5.0,3B
-MLB,Daylen Lile,hitter_total_bases,2.008,Washington Nationals,New York Yankees,822709,6.0,DH
-MLB,Manny Machado,hitter_total_bases,2.0,San Diego Padres,Toronto Blue Jays,823278,4.0,3B
-MLB,Curtis Mead,hitter_total_bases,1.983,Washington Nationals,New York Yankees,822709,2.0,3B
-MLB,Ceddanne Rafaela,hitter_total_bases,1.98,Boston Red Sox,New York Mets,823604,2.0,CF
-MLB,Isaac Paredes,hitter_total_bases,1.969,Houston Astros,Texas Rangers,822878,3.0,3B
-MLB,Willy Adames,hitter_total_bases,1.965,San Francisco Giants,Colorado Rockies,823200,5.0,SS
-MLB,Trevor Larnach,hitter_total_bases,1.953,Minnesota Twins,Los Angeles Angels,823685,1.0,LF
-MLB,Liam Hicks,hitter_total_bases,1.925,Miami Marlins,Cleveland Guardians,823845,6.0,PH
-MLB,Gunnar Henderson,hitter_total_bases,1.921,Baltimore Orioles,Kansas City Royals,824817,1.0,SS
-MLB,George Springer,hitter_total_bases,1.907,Toronto Blue Jays,San Diego Padres,823278,4.0,DH
-MLB,Wilyer Abreu,hitter_total_bases,1.902,Boston Red Sox,New York Mets,823604,3.0,RF
-MLB,Victor Caratini,hitter_total_bases,1.893,Minnesota Twins,Los Angeles Angels,823685,8.0,1B
-MLB,Fernando Tatis Jr.,hitter_total_bases,1.878,San Diego Padres,Toronto Blue Jays,823278,1.0,RF
-MLB,Josh Jung,hitter_total_bases,1.856,Texas Rangers,Houston Astros,822878,3.0,3B
-MLB,Bobby Witt Jr.,hitter_total_bases,1.848,Kansas City Royals,Baltimore Orioles,824817,2.0,SS
-MLB,Yandy Díaz,hitter_total_bases,1.845,Tampa Bay Rays,Seattle Mariners,822955,1.0,DH
-MLB,Geraldo Perdomo,hitter_total_bases,1.842,Arizona Diamondbacks,Los Angeles Dodgers,823927,2.0,SS
-MLB,Austin Riley,hitter_total_bases,1.841,Atlanta Braves,St. Louis Cardinals,823033,7.0,3B
-MLB,Javier Sanoja,hitter_total_bases,1.831,Miami Marlins,Cleveland Guardians,823845,4.0,3B
-MLB,Mauricio Dubón,hitter_total_bases,1.828,Atlanta Braves,St. Louis Cardinals,823033,5.0,LF
-MLB,Shohei Ohtani,hitter_total_bases,1.827,Los Angeles Dodgers,Arizona Diamondbacks,823927,1.0,DH
-MLB,Ketel Marte,hitter_total_bases,1.825,Arizona Diamondbacks,Los Angeles Dodgers,823927,1.0,DH
-MLB,Nolan Arenado,hitter_total_bases,1.821,Arizona Diamondbacks,Los Angeles Dodgers,823927,7.0,3B
-MLB,Xavier Edwards,hitter_total_bases,1.814,Miami Marlins,Cleveland Guardians,823845,3.0,2B
-MLB,Michael Harris II,hitter_total_bases,1.814,Atlanta Braves,St. Louis Cardinals,823033,1.0,CF
-MLB,Seiya Suzuki,hitter_total_bases,1.806,Chicago Cubs,Cincinnati Reds,824493,4.0,RF
-MLB,Kevin McGonigle,hitter_total_bases,1.805,Detroit Tigers,Philadelphia Phillies,824252,1.0,SS
-MLB,Caleb Durbin,hitter_total_bases,1.805,Boston Red Sox,New York Mets,823604,6.0,3B
-MLB,Chase Meidroth,hitter_total_bases,1.805,Chicago White Sox,Athletics,824575,6.0,2B
-MLB,Cam Smith,hitter_total_bases,1.803,Houston Astros,Texas Rangers,822878,7.0,RF
-MLB,Travis Bazzana,hitter_total_bases,1.8,Cleveland Guardians,Miami Marlins,823845,1.0,2B
-MLB,Royce Lewis,hitter_total_bases,1.799,Minnesota Twins,Los Angeles Angels,823685,5.0,3B
-MLB,Joshua Kuroda-Grauer,hitter_total_bases,1.795,Athletics,Chicago White Sox,824575,7.0,3B
-MLB,Matt Olson,hitter_total_bases,1.783,Atlanta Braves,St. Louis Cardinals,823033,3.0,1B
-MLB,Brandon Marsh,hitter_total_bases,1.782,Philadelphia Phillies,Detroit Tigers,824252,4.0,LF
-MLB,Blaze Alexander,hitter_total_bases,1.78,Baltimore Orioles,Kansas City Royals,824817,8.0,3B
-MLB,Kyle Karros,hitter_total_bases,1.765,Colorado Rockies,San Francisco Giants,823200,2.0,3B
-MLB,Jackson Merrill,hitter_total_bases,1.764,San Diego Padres,Toronto Blue Jays,823278,2.0,CF
-MLB,Chase DeLauter,hitter_total_bases,1.763,Cleveland Guardians,Miami Marlins,823845,3.0,RF
-MLB,Masataka Yoshida,hitter_total_bases,1.761,Boston Red Sox,New York Mets,823604,5.0,DH
-MLB,Carter Jensen,hitter_total_bases,1.761,Kansas City Royals,Baltimore Orioles,824817,1.0,C
-MLB,Sam Antonacci,hitter_total_bases,1.758,Chicago White Sox,Athletics,824575,1.0,3B
-MLB,Corbin Carroll,hitter_total_bases,1.75,Arizona Diamondbacks,Los Angeles Dodgers,823927,3.0,RF
-MLB,Adley Rutschman,hitter_total_bases,1.75,Baltimore Orioles,Kansas City Royals,824817,2.0,C
-MLB,Jung Hoo Lee,hitter_total_bases,1.747,San Francisco Giants,Colorado Rockies,823200,7.0,RF
-MLB,Andy Pages,hitter_total_bases,1.746,Los Angeles Dodgers,Arizona Diamondbacks,823927,2.0,CF
-MLB,Iván Herrera,hitter_total_bases,1.734,St. Louis Cardinals,Atlanta Braves,823033,2.0,DH
-MLB,Kody Clemens,hitter_total_bases,1.726,Minnesota Twins,Los Angeles Angels,823685,3.0,2B
-MLB,Ozzie Albies,hitter_total_bases,1.726,Atlanta Braves,St. Louis Cardinals,823033,2.0,2B
-MLB,Gabriel Moreno,hitter_total_bases,1.714,Arizona Diamondbacks,Los Angeles Dodgers,823927,4.0,C
-MLB,J.P. Crawford,hitter_total_bases,1.709,Seattle Mariners,Tampa Bay Rays,822955,1.0,SS
-MLB,Drake Baldwin,hitter_total_bases,1.708,Atlanta Braves,St. Louis Cardinals,823033,4.0,C
-MLB,Bryson Stott,hitter_total_bases,1.707,Philadelphia Phillies,Detroit Tigers,824252,6.0,2B
-MLB,Casey Schmitt,hitter_total_bases,1.705,San Francisco Giants,Colorado Rockies,823200,3.0,3B
-MLB,Sal Stewart,hitter_total_bases,1.701,Cincinnati Reds,Chicago Cubs,824493,2.0,1B
-MLB,Cole Young,hitter_total_bases,1.701,Seattle Mariners,Tampa Bay Rays,822955,7.0,2B
-MLB,Nathan Lukes,hitter_total_bases,1.696,Toronto Blue Jays,San Diego Padres,823278,9.0,RF
-MLB,Brayan Rocchio,hitter_total_bases,1.69,Cleveland Guardians,Miami Marlins,823845,2.0,SS
-MLB,JJ Wetherholt,hitter_total_bases,1.689,St. Louis Cardinals,Atlanta Braves,823033,1.0,2B
-MLB,Luis García Jr.,hitter_total_bases,1.688,Washington Nationals,New York Yankees,822709,8.0,1B
-MLB,Brett Baty,hitter_total_bases,1.687,New York Mets,Boston Red Sox,823604,8.0,3B
-MLB,Cal Raleigh,hitter_total_bases,1.68,Seattle Mariners,Tampa Bay Rays,822955,4.0,C
-MLB,Jac Caglianone,hitter_total_bases,1.677,Kansas City Royals,Baltimore Orioles,824817,3.0,RF
-MLB,Zach McKinstry,hitter_total_bases,1.676,Detroit Tigers,Philadelphia Phillies,824252,7.0,2B
-MLB,Randy Arozarena,hitter_total_bases,1.673,Seattle Mariners,Tampa Bay Rays,822955,2.0,LF
-MLB,Ty France,hitter_total_bases,1.672,San Diego Padres,Toronto Blue Jays,823278,6.0,1B
-MLB,Rafael Devers,hitter_total_bases,1.67,San Francisco Giants,Colorado Rockies,823200,4.0,DH
-MLB,Jakob Marsee,hitter_total_bases,1.669,Miami Marlins,Cleveland Guardians,823845,8.0,CF
-MLB,Spencer Torkelson,hitter_total_bases,1.669,Detroit Tigers,Philadelphia Phillies,824252,4.0,1B
-MLB,Josh Bell,hitter_total_bases,1.662,Minnesota Twins,Los Angeles Angels,823685,4.0,DH
-MLB,Francisco Lindor,hitter_total_bases,1.661,New York Mets,Boston Red Sox,823604,3.0,SS
-MLB,Jorge Soler,hitter_total_bases,1.657,Los Angeles Angels,Minnesota Twins,823685,4.0,DH
-MLB,Cedric Mullins,hitter_total_bases,1.655,Tampa Bay Rays,Seattle Mariners,822955,4.0,CF
-MLB,Lane Thomas,hitter_total_bases,1.647,Kansas City Royals,Baltimore Orioles,824817,4.0,CF
-MLB,Juan Soto,hitter_total_bases,1.639,New York Mets,Boston Red Sox,823604,2.0,LF
-MLB,Masyn Winn,hitter_total_bases,1.637,St. Louis Cardinals,Atlanta Braves,823033,6.0,SS
-MLB,Brooks Lee,hitter_total_bases,1.631,Minnesota Twins,Los Angeles Angels,823685,6.0,SS
-MLB,A.J. Ewing,hitter_total_bases,1.63,New York Mets,Boston Red Sox,823604,1.0,2B
-MLB,Hunter Goodman,hitter_total_bases,1.63,Colorado Rockies,San Francisco Giants,823200,4.0,C
-MLB,Colt Keith,hitter_total_bases,1.628,Detroit Tigers,Philadelphia Phillies,824252,2.0,3B
-MLB,Trent Grisham,hitter_total_bases,1.622,New York Yankees,Washington Nationals,822709,3.0,CF
-MLB,Brandon Nimmo,hitter_total_bases,1.618,Texas Rangers,Houston Astros,822878,4.0,RF
-MLB,Colson Montgomery,hitter_total_bases,1.612,Chicago White Sox,Athletics,824575,4.0,SS
-MLB,Dansby Swanson,hitter_total_bases,1.611,Chicago Cubs,Cincinnati Reds,824493,9.0,SS
-MLB,Michael Conforto,hitter_total_bases,1.609,Chicago Cubs,Cincinnati Reds,824493,7.0,DH
-MLB,Edouard Julien,hitter_total_bases,1.609,Colorado Rockies,San Francisco Giants,823200,5.0,2B
-MLB,Bryce Eldridge,hitter_total_bases,1.6,San Francisco Giants,Colorado Rockies,823200,6.0,1B
-MLB,Jo Adell,hitter_total_bases,1.597,Los Angeles Angels,Minnesota Twins,823685,6.0,RF
-MLB,Heriberto Hernández,hitter_total_bases,1.593,Miami Marlins,Cleveland Guardians,823845,2.0,LF
-MLB,Luis Arraez,hitter_total_bases,1.588,San Francisco Giants,Colorado Rockies,823200,2.0,2B
-MLB,Francisco Alvarez,hitter_total_bases,1.582,New York Mets,Boston Red Sox,823604,7.0,C
-MLB,Tyler Stephenson,hitter_total_bases,1.58,Cincinnati Reds,Chicago Cubs,824493,6.0,C
-MLB,Vladimir Guerrero Jr.,hitter_total_bases,1.578,Toronto Blue Jays,San Diego Padres,823278,2.0,1B
-MLB,Nathan Church,hitter_total_bases,1.578,St. Louis Cardinals,Atlanta Braves,823033,7.0,CF
-MLB,Jeremy Peña,hitter_total_bases,1.576,Houston Astros,Texas Rangers,822878,1.0,SS
-MLB,Pete Alonso,hitter_total_bases,1.562,Baltimore Orioles,Kansas City Royals,824817,4.0,1B
-MLB,Alex Freeland,hitter_total_bases,1.554,Los Angeles Dodgers,Arizona Diamondbacks,823927,4.0,SS
-MLB,Salvador Perez,hitter_total_bases,1.553,Kansas City Royals,Baltimore Orioles,824817,6.0,1B
-MLB,Luke Keaschall,hitter_total_bases,1.551,Minnesota Twins,Los Angeles Angels,823685,9.0,CF
-MLB,Eduardo Valencia,hitter_total_bases,1.55,Detroit Tigers,Philadelphia Phillies,824252,6.0,DH
-MLB,Josh Naylor,hitter_total_bases,1.544,Seattle Mariners,Tampa Bay Rays,822955,5.0,1B
-MLB,Denzer Guzman,hitter_total_bases,1.543,Los Angeles Angels,Minnesota Twins,823685,3.0,3B
-MLB,Jake McCarthy,hitter_total_bases,1.541,Colorado Rockies,San Francisco Giants,823200,1.0,LF
-MLB,Mickey Moniak,hitter_total_bases,1.539,Colorado Rockies,San Francisco Giants,823200,8.0,DH
-MLB,Jake Burger,hitter_total_bases,1.535,Texas Rangers,Houston Astros,822878,5.0,1B
-MLB,Yainer Diaz,hitter_total_bases,1.531,Houston Astros,Texas Rangers,822878,8.0,C
-MLB,Jonathan Aranda,hitter_total_bases,1.528,Tampa Bay Rays,Seattle Mariners,822955,2.0,1B
-MLB,Oswald Peraza,hitter_total_bases,1.528,Los Angeles Angels,Minnesota Twins,823685,7.0,2B
-MLB,Carson Kelly,hitter_total_bases,1.521,Chicago Cubs,Cincinnati Reds,824493,8.0,C
-MLB,Ezequiel Duran,hitter_total_bases,1.517,Texas Rangers,Houston Astros,822878,6.0,SS
-MLB,Alec Burleson,hitter_total_bases,1.514,St. Louis Cardinals,Atlanta Braves,823033,5.0,1B
-MLB,Carson Benge,hitter_total_bases,1.512,New York Mets,Boston Red Sox,823604,4.0,RF
-MLB,Taylor Walls,hitter_total_bases,1.509,Tampa Bay Rays,Seattle Mariners,822955,7.0,SS
-MLB,Pete Crow-Armstrong,hitter_total_bases,1.494,Chicago Cubs,Cincinnati Reds,824493,1.0,CF
-MLB,Alex Bregman,hitter_total_bases,1.488,Chicago Cubs,Cincinnati Reds,824493,2.0,3B
-MLB,Cody Bellinger,hitter_total_bases,1.487,New York Yankees,Washington Nationals,822709,5.0,LF
-MLB,Gavin Sheets,hitter_total_bases,1.479,San Diego Padres,Toronto Blue Jays,823278,5.0,LF
-MLB,JJ Bleday,hitter_total_bases,1.478,Cincinnati Reds,Chicago Cubs,824493,4.0,LF
-MLB,Jorge Polanco,hitter_total_bases,1.477,New York Mets,Boston Red Sox,823604,5.0,DH
-MLB,Willi Castro,hitter_total_bases,1.472,Colorado Rockies,San Francisco Giants,823200,7.0,SS
-MLB,Zach Neto,hitter_total_bases,1.47,Los Angeles Angels,Minnesota Twins,823685,1.0,SS
-MLB,Carlos Cortes,hitter_total_bases,1.462,Athletics,Chicago White Sox,824575,2.0,P
-MLB,Keibert Ruiz,hitter_total_bases,1.461,Washington Nationals,New York Yankees,822709,9.0,C
-MLB,Jorbit Vivas,hitter_total_bases,1.461,Washington Nationals,New York Yankees,822709,7.0,2B
-MLB,Trea Turner,hitter_total_bases,1.46,Philadelphia Phillies,Detroit Tigers,824252,1.0,SS
-MLB,Dalton Rushing,hitter_total_bases,1.446,Los Angeles Dodgers,Arizona Diamondbacks,823927,9.0,1B
-MLB,Griffin Conine,hitter_total_bases,1.439,Miami Marlins,Cleveland Guardians,823845,7.0,PH
-MLB,Andrew Benintendi,hitter_total_bases,1.438,Chicago White Sox,Athletics,824575,7.0,DH
-MLB,Nick Loftin,hitter_total_bases,1.431,Kansas City Royals,Baltimore Orioles,824817,8.0,DH
-MLB,Ryan Jeffers,hitter_total_bases,1.43,Minnesota Twins,Los Angeles Angels,823685,2.0,C
-MLB,Chandler Simpson,hitter_total_bases,1.429,Tampa Bay Rays,Seattle Mariners,822955,5.0,LF
-MLB,Evan Carter,hitter_total_bases,1.427,Texas Rangers,Houston Astros,822878,7.0,CF
-MLB,Nolan Schanuel,hitter_total_bases,1.424,Los Angeles Angels,Minnesota Twins,823685,2.0,1B
-MLB,Taylor Ward,hitter_total_bases,1.413,Baltimore Orioles,Kansas City Royals,824817,3.0,LF
-MLB,Henry Bolte,hitter_total_bases,1.411,Athletics,Chicago White Sox,824575,8.0,CF
-MLB,Alika Williams,hitter_total_bases,1.403,Athletics,Chicago White Sox,824575,5.0,SS
-MLB,Grant McCray,hitter_total_bases,1.401,San Francisco Giants,Colorado Rockies,823200,1.0,LF
-MLB,Victor Mesa Jr.,hitter_total_bases,1.399,Tampa Bay Rays,Seattle Mariners,822955,6.0,RF
-MLB,Ernie Clement,hitter_total_bases,1.393,Toronto Blue Jays,San Diego Padres,823278,1.0,2B
-MLB,Jonah Heim,hitter_total_bases,1.392,Athletics,Chicago White Sox,824575,4.0,C
-MLB,Jake Cronenworth,hitter_total_bases,1.39,San Diego Padres,Toronto Blue Jays,823278,7.0,PH
-MLB,Alejandro Kirk,hitter_total_bases,1.382,Toronto Blue Jays,San Diego Padres,823278,5.0,C
-MLB,Tristan Peters,hitter_total_bases,1.382,Chicago White Sox,Athletics,824575,9.0,CF
-MLB,Anthony Seigler,hitter_total_bases,1.378,Boston Red Sox,New York Mets,823604,1.0,2B
-MLB,Romy Gonzalez,hitter_total_bases,1.36,Boston Red Sox,New York Mets,823604,4.0,1B
-MLB,Josh Lowe,hitter_total_bases,1.36,Los Angeles Angels,Minnesota Twins,823685,5.0,LF
-MLB,Lourdes Gurriel Jr.,hitter_total_bases,1.358,Arizona Diamondbacks,Los Angeles Dodgers,823927,5.0,LF
-MLB,Dylan Crews,hitter_total_bases,1.357,Washington Nationals,New York Yankees,822709,3.0,LF
-MLB,Teoscar Hernández,hitter_total_bases,1.357,Los Angeles Dodgers,Arizona Diamondbacks,823927,7.0,LF
-MLB,Edwin Arroyo,hitter_total_bases,1.355,Cincinnati Reds,Chicago Cubs,824493,8.0,2B
-MLB,Wyatt Langford,hitter_total_bases,1.354,Texas Rangers,Houston Astros,822878,2.0,LF
-MLB,José Caballero,hitter_total_bases,1.354,New York Yankees,Washington Nationals,822709,8.0,3B
-MLB,Gabriel Rincones Jr.,hitter_total_bases,1.347,Philadelphia Phillies,Detroit Tigers,824252,7.0,RF
-MLB,Kyle Teel,hitter_total_bases,1.345,Chicago White Sox,Athletics,824575,8.0,C
-MLB,Dominic Smith,hitter_total_bases,1.322,Atlanta Braves,St. Louis Cardinals,823033,8.0,DH
-MLB,Isaac Collins,hitter_total_bases,1.322,Kansas City Royals,Baltimore Orioles,824817,9.0,LF
-MLB,Jasson Domínguez,hitter_total_bases,1.32,New York Yankees,Washington Nationals,822709,6.0,RF
-MLB,Matt Vierling,hitter_total_bases,1.318,Detroit Tigers,Philadelphia Phillies,824252,5.0,RF
-MLB,Ian Happ,hitter_total_bases,1.317,Chicago Cubs,Cincinnati Reds,824493,5.0,LF
-MLB,Ben Rice,hitter_total_bases,1.313,New York Yankees,Washington Nationals,822709,2.0,DH
-MLB,Samuel Basallo,hitter_total_bases,1.313,Baltimore Orioles,Kansas City Royals,824817,5.0,DH
-MLB,Michael Massey,hitter_total_bases,1.308,Kansas City Royals,Baltimore Orioles,824817,5.0,2B
-MLB,Jared Young,hitter_total_bases,1.307,New York Mets,Boston Red Sox,823604,6.0,1B
-MLB,James Wood,hitter_total_bases,1.305,Washington Nationals,New York Yankees,822709,1.0,RF
-MLB,Lars Nootbaar,hitter_total_bases,1.296,St. Louis Cardinals,Atlanta Braves,823033,4.0,LF
-MLB,Tyler O'Neill,hitter_total_bases,1.292,Baltimore Orioles,Kansas City Royals,824817,6.0,RF
-MLB,Miguel Rojas,hitter_total_bases,1.285,Los Angeles Dodgers,Arizona Diamondbacks,823927,8.0,2B
-MLB,Colby Thomas,hitter_total_bases,1.275,Athletics,Chicago White Sox,824575,3.0,LF
-MLB,Joe Mack,hitter_total_bases,1.273,Miami Marlins,Cleveland Guardians,823845,9.0,C
-MLB,Braden Montgomery,hitter_total_bases,1.265,Chicago White Sox,Athletics,824575,5.0,RF
-MLB,Xander Bogaerts,hitter_total_bases,1.263,San Diego Padres,Toronto Blue Jays,823278,3.0,SS
-MLB,Nico Hoerner,hitter_total_bases,1.259,Chicago Cubs,Cincinnati Reds,824493,6.0,2B
-MLB,Tyrone Taylor,hitter_total_bases,1.259,New York Mets,Boston Red Sox,823604,9.0,CF
-MLB,Spencer Steer,hitter_total_bases,1.24,Cincinnati Reds,Chicago Cubs,824493,3.0,RF
-MLB,Blaze Jordan,hitter_total_bases,1.24,St. Louis Cardinals,Atlanta Braves,823033,8.0,3B
-MLB,Elias Díaz,hitter_total_bases,1.235,Texas Rangers,Houston Astros,822878,1.0,DH
-MLB,Jeff McNeil,hitter_total_bases,1.217,Athletics,Chicago White Sox,824575,9.0,2B
-MLB,Kahlil Watson,hitter_total_bases,1.216,Cleveland Guardians,Miami Marlins,823845,6.0,CF
-MLB,James Outman,hitter_total_bases,1.211,Detroit Tigers,Philadelphia Phillies,824252,8.0,CF
-MLB,Hunter Feduccia,hitter_total_bases,1.21,Tampa Bay Rays,Seattle Mariners,822955,9.0,C
-MLB,Lawrence Butler,hitter_total_bases,1.204,Athletics,Chicago White Sox,824575,1.0,RF
-MLB,TJ Friedl,hitter_total_bases,1.194,Cincinnati Reds,Chicago Cubs,824493,7.0,CF
-MLB,Richie Palacios,hitter_total_bases,1.193,Tampa Bay Rays,Seattle Mariners,822955,8.0,2B
-MLB,Luis Campusano,hitter_total_bases,1.189,San Diego Padres,Toronto Blue Jays,823278,9.0,C
-MLB,Jordan Walker,hitter_total_bases,1.186,St. Louis Cardinals,Atlanta Braves,823033,3.0,RF
-MLB,Cole Carrigg,hitter_total_bases,1.185,Colorado Rockies,San Francisco Giants,823200,3.0,CF
-MLB,Justin Foscue,hitter_total_bases,1.177,Texas Rangers,Houston Astros,822878,8.0,2B
-MLB,Rhys Hoskins,hitter_total_bases,1.168,Cleveland Guardians,Miami Marlins,823845,5.0,DH
-MLB,Luis Rengifo,hitter_total_bases,1.166,San Diego Padres,Toronto Blue Jays,823278,8.0,2B
-MLB,Jacob Young,hitter_total_bases,1.162,Washington Nationals,New York Yankees,822709,5.0,CF
-MLB,Jake Rogers,hitter_total_bases,1.162,Detroit Tigers,Philadelphia Phillies,824252,9.0,C
-MLB,Tsung-Che Cheng,hitter_total_bases,1.157,Boston Red Sox,New York Mets,823604,9.0,SS
-MLB,Kyle Higashioka,hitter_total_bases,1.152,Texas Rangers,Houston Astros,822878,9.0,C
-MLB,Austin Hedges,hitter_total_bases,1.151,Cleveland Guardians,Miami Marlins,823845,8.0,C
-MLB,Daulton Varsho,hitter_total_bases,1.145,Toronto Blue Jays,San Diego Padres,823278,6.0,CF
-MLB,Steven Kwan,hitter_total_bases,1.136,Cleveland Guardians,Miami Marlins,823845,9.0,LF
-MLB,Luke Raley,hitter_total_bases,1.134,Seattle Mariners,Tampa Bay Rays,822955,6.0,RF
-MLB,Jackson Holliday,hitter_total_bases,1.128,Baltimore Orioles,Kansas City Royals,824817,9.0,2B
-MLB,Andrés Giménez,hitter_total_bases,1.115,Toronto Blue Jays,San Diego Padres,823278,7.0,SS
-MLB,Jarren Duran,hitter_total_bases,1.105,Boston Red Sox,New York Mets,823604,7.0,LF
-MLB,Connor Wong,hitter_total_bases,1.094,Boston Red Sox,New York Mets,823604,8.0,C
-MLB,Brice Matthews,hitter_total_bases,1.085,Houston Astros,Texas Rangers,822878,9.0,CF
-MLB,Troy Johnston,hitter_total_bases,1.067,Colorado Rockies,San Francisco Giants,823200,9.0,1B
-MLB,Kyle Manzardo,hitter_total_bases,1.063,Cleveland Guardians,Miami Marlins,823845,4.0,1B
-MLB,Austin Martin,hitter_total_bases,1.063,Minnesota Twins,Los Angeles Angels,823685,7.0,RF
-MLB,Tommy Edman,hitter_total_bases,1.05,Los Angeles Dodgers,Arizona Diamondbacks,823927,5.0,3B
-MLB,Ke'Bryan Hayes,hitter_total_bases,1.049,Cincinnati Reds,Chicago Cubs,824493,9.0,3B
-MLB,Drew Gilbert,hitter_total_bases,1.034,San Francisco Giants,Colorado Rockies,823200,8.0,CF
-MLB,Victor Robles,hitter_total_bases,1.031,Seattle Mariners,Tampa Bay Rays,822955,8.0,CF
-MLB,Tyler Freeman,hitter_total_bases,1.03,Colorado Rockies,San Francisco Giants,823200,6.0,RF
-MLB,Anthony Volpe,hitter_total_bases,1.021,New York Yankees,Washington Nationals,822709,1.0,SS
-MLB,Tyler Heineman,hitter_total_bases,1.018,Los Angeles Angels,Minnesota Twins,823685,9.0,C
-MLB,Myles Straw,hitter_total_bases,1.012,Toronto Blue Jays,San Diego Padres,823278,8.0,LF
-MLB,Ben Malgeri,hitter_total_bases,1.0,Detroit Tigers,Philadelphia Phillies,824252,3.0,LF
-MLB,Jorge Barrosa,hitter_total_bases,0.986,Arizona Diamondbacks,Los Angeles Dodgers,823927,8.0,CF
-MLB,Ildemaro Vargas,hitter_total_bases,0.979,Arizona Diamondbacks,Los Angeles Dodgers,823927,6.0,2B
-MLB,Daniel Schneemann,hitter_total_bases,0.971,Cleveland Guardians,Miami Marlins,823845,7.0,3B
-MLB,Jorge Mateo,hitter_total_bases,0.961,Atlanta Braves,St. Louis Cardinals,823033,9.0,SS
-MLB,Eric Haase,hitter_total_bases,0.95,San Francisco Giants,Colorado Rockies,823200,9.0,PR
-MLB,Joey Meneses,hitter_total_bases,0.949,Athletics,Chicago White Sox,824575,6.0,1B
-MLB,Junior Perez,hitter_total_bases,0.93,Chicago White Sox,Athletics,824575,2.0,LF
-MLB,Derek Hill,hitter_total_bases,0.928,Philadelphia Phillies,Detroit Tigers,824252,8.0,CF
-MLB,Eliezer Alfonzo,hitter_total_bases,0.91,Los Angeles Dodgers,Arizona Diamondbacks,823927,6.0,C
-MLB,Eli White,hitter_total_bases,0.906,Atlanta Braves,St. Louis Cardinals,823033,6.0,RF
-MLB,Colton Cowser,hitter_total_bases,0.898,Baltimore Orioles,Kansas City Royals,824817,7.0,CF
-MLB,Austin Wells,hitter_total_bases,0.887,New York Yankees,Washington Nationals,822709,9.0,C
-MLB,Alex Call,hitter_total_bases,0.879,Los Angeles Dodgers,Arizona Diamondbacks,823927,3.0,RF
-MLB,Tim Tawa,hitter_total_bases,0.857,Arizona Diamondbacks,Los Angeles Dodgers,823927,9.0,1B
-MLB,Rafael Marchán,hitter_total_bases,0.829,Philadelphia Phillies,Detroit Tigers,824252,9.0,C
-MLB,Buddy Kennedy,hitter_total_bases,0.82,Seattle Mariners,Tampa Bay Rays,822955,9.0,3B
-MLB,Jazz Chisholm Jr.,hitter_total_bases,0.818,New York Yankees,Washington Nationals,822709,7.0,2B
-MLB,Josh Rojas,hitter_total_bases,0.818,Kansas City Royals,Baltimore Orioles,824817,7.0,3B
-MLB,Jose Siri,hitter_total_bases,0.799,Los Angeles Angels,Minnesota Twins,823685,8.0,CF
-MLB,Jimmy Crooks,hitter_total_bases,0.772,St. Louis Cardinals,Atlanta Braves,823033,9.0,C
-MLB,Zach Dezenzo,hitter_total_bases,0.754,Houston Astros,Texas Rangers,822878,6.0,PH
+MLB,Michael Massey,hitter_hits,0.703,Kansas City Royals,Baltimore Orioles,824817,5.0,2B
+MLB,Tyler Heineman,hitter_hits,0.69,Los Angeles Angels,Minnesota Twins,823685,9.0,C
+MLB,Drew Gilbert,hitter_hits,0.69,San Francisco Giants,Colorado Rockies,823200,8.0,CF
+MLB,Austin Hedges,hitter_hits,0.687,Cleveland Guardians,Miami Marlins,823845,8.0,C
+MLB,Miguel Rojas,hitter_hits,0.685,Los Angeles Dodgers,Arizona Diamondbacks,823927,8.0,2B
+MLB,Evan Carter,hitter_hits,0.682,Texas Rangers,Houston Astros,822878,7.0,CF
+MLB,Jake Rogers,hitter_hits,0.679,Detroit Tigers,Philadelphia Phillies,824252,9.0,C
+MLB,Joey Meneses,hitter_hits,0.676,Athletics,Chicago White Sox,824575,6.0,1B
+MLB,Luis Campusano,hitter_hits,0.672,San Diego Padres,Toronto Blue Jays,823278,9.0,C
+MLB,TJ Friedl,hitter_hits,0.667,Cincinnati Reds,Chicago Cubs,824493,7.0,CF
+MLB,Ben Malgeri,hitter_hits,0.659,Detroit Tigers,Philadelphia Phillies,824252,3.0,LF
+MLB,Rhys Hoskins,hitter_hits,0.657,Cleveland Guardians,Miami Marlins,823845,5.0,DH
+MLB,Connor Wong,hitter_hits,0.656,Boston Red Sox,New York Mets,823604,8.0,C
+MLB,Anthony Volpe,hitter_hits,0.653,New York Yankees,Washington Nationals,822709,1.0,SS
+MLB,Tyrone Taylor,hitter_hits,0.633,New York Mets,Boston Red Sox,823604,9.0,CF
+MLB,Jorge Barrosa,hitter_hits,0.619,Arizona Diamondbacks,Los Angeles Dodgers,823927,8.0,CF
+MLB,Eli White,hitter_hits,0.616,Atlanta Braves,St. Louis Cardinals,823033,6.0,RF
+MLB,Austin Wells,hitter_hits,0.614,New York Yankees,Washington Nationals,822709,9.0,C
+MLB,Eliezer Alfonzo,hitter_hits,0.608,Los Angeles Dodgers,Arizona Diamondbacks,823927,6.0,C
+MLB,Junior Perez,hitter_hits,0.577,Chicago White Sox,Athletics,824575,2.0,LF
+MLB,Jorge Mateo,hitter_hits,0.56,Atlanta Braves,St. Louis Cardinals,823033,9.0,SS
+MLB,Derek Hill,hitter_hits,0.56,Philadelphia Phillies,Detroit Tigers,824252,8.0,CF
+MLB,Jose Siri,hitter_hits,0.544,Los Angeles Angels,Minnesota Twins,823685,8.0,CF
+MLB,Alex Call,hitter_hits,0.541,Los Angeles Dodgers,Arizona Diamondbacks,823927,3.0,RF
+MLB,Tim Tawa,hitter_hits,0.533,Arizona Diamondbacks,Los Angeles Dodgers,823927,9.0,1B
+MLB,Rafael Marchán,hitter_hits,0.524,Philadelphia Phillies,Detroit Tigers,824252,9.0,C
+MLB,Eric Haase,hitter_hits,0.513,San Francisco Giants,Colorado Rockies,823200,9.0,PR
+MLB,Josh Rojas,hitter_hits,0.512,Kansas City Royals,Baltimore Orioles,824817,7.0,3B
+MLB,Zach Dezenzo,hitter_hits,0.501,Houston Astros,Texas Rangers,822878,6.0,PH
+MLB,Jimmy Crooks,hitter_hits,0.429,St. Louis Cardinals,Atlanta Braves,823033,9.0,C
+MLB,Buddy Kennedy,hitter_hits,0.407,Seattle Mariners,Tampa Bay Rays,822955,9.0,3B
+MLB,Yordan Alvarez,hitter_total_bases,2.493,Houston Astros,Texas Rangers,822878,2.0,DH
+MLB,Otto Lopez,hitter_total_bases,2.425,Miami Marlins,Cleveland Guardians,823845,1.0,SS
+MLB,Jose Altuve,hitter_total_bases,2.34,Houston Astros,Texas Rangers,822878,5.0,2B
+MLB,Alec Bohm,hitter_total_bases,2.212,Philadelphia Phillies,Detroit Tigers,824252,5.0,3B
+MLB,Bryce Harper,hitter_total_bases,2.19,Philadelphia Phillies,Detroit Tigers,824252,3.0,1B
+MLB,CJ Abrams,hitter_total_bases,2.19,Washington Nationals,New York Yankees,822709,4.0,SS
+MLB,Miguel Vargas,hitter_total_bases,2.184,Chicago White Sox,Athletics,824575,3.0,1B
+MLB,Christian Walker,hitter_total_bases,2.182,Houston Astros,Texas Rangers,822878,4.0,1B
+MLB,Dominic Canzone,hitter_total_bases,2.162,Seattle Mariners,Tampa Bay Rays,822955,3.0,DH
+MLB,Wilyer Abreu,hitter_total_bases,2.16,Boston Red Sox,New York Mets,823604,3.0,RF
+MLB,Mauricio Dubón,hitter_total_bases,2.145,Atlanta Braves,St. Louis Cardinals,823033,5.0,LF
+MLB,Michael Busch,hitter_total_bases,2.129,Chicago Cubs,Cincinnati Reds,824493,3.0,1B
+MLB,Curtis Mead,hitter_total_bases,2.117,Washington Nationals,New York Yankees,822709,2.0,3B
+MLB,Isaac Paredes,hitter_total_bases,2.111,Houston Astros,Texas Rangers,822878,3.0,3B
+MLB,Willy Adames,hitter_total_bases,2.108,San Francisco Giants,Colorado Rockies,823200,5.0,SS
+MLB,Kyle Schwarber,hitter_total_bases,2.103,Philadelphia Phillies,Detroit Tigers,824252,2.0,DH
+MLB,Gunnar Henderson,hitter_total_bases,2.089,Baltimore Orioles,Kansas City Royals,824817,1.0,SS
+MLB,Ketel Marte,hitter_total_bases,2.088,Arizona Diamondbacks,Los Angeles Dodgers,823927,1.0,DH
+MLB,Fernando Tatis Jr.,hitter_total_bases,2.084,San Diego Padres,Toronto Blue Jays,823278,1.0,RF
+MLB,Eugenio Suárez,hitter_total_bases,2.071,Cincinnati Reds,Chicago Cubs,824493,5.0,DH
+MLB,Manny Machado,hitter_total_bases,2.07,San Diego Padres,Toronto Blue Jays,823278,4.0,3B
+MLB,Ozzie Albies,hitter_total_bases,2.067,Atlanta Braves,St. Louis Cardinals,823033,2.0,2B
+MLB,Caleb Durbin,hitter_total_bases,2.065,Boston Red Sox,New York Mets,823604,6.0,3B
+MLB,Trevor Larnach,hitter_total_bases,2.065,Minnesota Twins,Los Angeles Angels,823685,1.0,LF
+MLB,Kyle Stowers,hitter_total_bases,2.059,Miami Marlins,Cleveland Guardians,823845,5.0,1B
+MLB,Xavier Edwards,hitter_total_bases,2.054,Miami Marlins,Cleveland Guardians,823845,3.0,2B
+MLB,Geraldo Perdomo,hitter_total_bases,2.051,Arizona Diamondbacks,Los Angeles Dodgers,823927,2.0,SS
+MLB,Daylen Lile,hitter_total_bases,2.048,Washington Nationals,New York Yankees,822709,6.0,DH
+MLB,Kevin McGonigle,hitter_total_bases,2.036,Detroit Tigers,Philadelphia Phillies,824252,1.0,SS
+MLB,Iván Herrera,hitter_total_bases,2.036,St. Louis Cardinals,Atlanta Braves,823033,2.0,DH
+MLB,Elly De La Cruz,hitter_total_bases,2.012,Cincinnati Reds,Chicago Cubs,824493,1.0,SS
+MLB,Shohei Ohtani,hitter_total_bases,2.009,Los Angeles Dodgers,Arizona Diamondbacks,823927,1.0,DH
+MLB,Josh Jung,hitter_total_bases,2.007,Texas Rangers,Houston Astros,822878,3.0,3B
+MLB,Chase Meidroth,hitter_total_bases,1.999,Chicago White Sox,Athletics,824575,6.0,2B
+MLB,Bobby Witt Jr.,hitter_total_bases,1.992,Kansas City Royals,Baltimore Orioles,824817,2.0,SS
+MLB,Yandy Díaz,hitter_total_bases,1.968,Tampa Bay Rays,Seattle Mariners,822955,1.0,DH
+MLB,Junior Caminero,hitter_total_bases,1.968,Tampa Bay Rays,Seattle Mariners,822955,3.0,3B
+MLB,Cam Smith,hitter_total_bases,1.963,Houston Astros,Texas Rangers,822878,7.0,RF
+MLB,JJ Wetherholt,hitter_total_bases,1.961,St. Louis Cardinals,Atlanta Braves,823033,1.0,2B
+MLB,Luis García Jr.,hitter_total_bases,1.959,Washington Nationals,New York Yankees,822709,8.0,1B
+MLB,Spencer Torkelson,hitter_total_bases,1.937,Detroit Tigers,Philadelphia Phillies,824252,4.0,1B
+MLB,Victor Caratini,hitter_total_bases,1.897,Minnesota Twins,Los Angeles Angels,823685,8.0,1B
+MLB,Josh Bell,hitter_total_bases,1.881,Minnesota Twins,Los Angeles Angels,823685,4.0,DH
+MLB,Ceddanne Rafaela,hitter_total_bases,1.879,Boston Red Sox,New York Mets,823604,2.0,CF
+MLB,Kyle Karros,hitter_total_bases,1.878,Colorado Rockies,San Francisco Giants,823200,2.0,3B
+MLB,Josh Naylor,hitter_total_bases,1.872,Seattle Mariners,Tampa Bay Rays,822955,5.0,1B
+MLB,Kazuma Okamoto,hitter_total_bases,1.862,Toronto Blue Jays,San Diego Padres,823278,3.0,3B
+MLB,Randy Arozarena,hitter_total_bases,1.853,Seattle Mariners,Tampa Bay Rays,822955,2.0,LF
+MLB,Brandon Nimmo,hitter_total_bases,1.845,Texas Rangers,Houston Astros,822878,4.0,RF
+MLB,Kody Clemens,hitter_total_bases,1.845,Minnesota Twins,Los Angeles Angels,823685,3.0,2B
+MLB,Rafael Devers,hitter_total_bases,1.84,San Francisco Giants,Colorado Rockies,823200,4.0,DH
+MLB,Carter Jensen,hitter_total_bases,1.836,Kansas City Royals,Baltimore Orioles,824817,1.0,C
+MLB,Sal Stewart,hitter_total_bases,1.834,Cincinnati Reds,Chicago Cubs,824493,2.0,1B
+MLB,Corbin Carroll,hitter_total_bases,1.831,Arizona Diamondbacks,Los Angeles Dodgers,823927,3.0,RF
+MLB,Cedric Mullins,hitter_total_bases,1.831,Tampa Bay Rays,Seattle Mariners,822955,4.0,CF
+MLB,George Springer,hitter_total_bases,1.829,Toronto Blue Jays,San Diego Padres,823278,4.0,DH
+MLB,Austin Riley,hitter_total_bases,1.824,Atlanta Braves,St. Louis Cardinals,823033,7.0,3B
+MLB,Paul Goldschmidt,hitter_total_bases,1.824,New York Yankees,Washington Nationals,822709,4.0,1B
+MLB,Jakob Marsee,hitter_total_bases,1.821,Miami Marlins,Cleveland Guardians,823845,8.0,CF
+MLB,Jac Caglianone,hitter_total_bases,1.819,Kansas City Royals,Baltimore Orioles,824817,3.0,RF
+MLB,Royce Lewis,hitter_total_bases,1.807,Minnesota Twins,Los Angeles Angels,823685,5.0,3B
+MLB,Travis Bazzana,hitter_total_bases,1.806,Cleveland Guardians,Miami Marlins,823845,1.0,2B
+MLB,Nolan Arenado,hitter_total_bases,1.806,Arizona Diamondbacks,Los Angeles Dodgers,823927,7.0,3B
+MLB,Matt Olson,hitter_total_bases,1.806,Atlanta Braves,St. Louis Cardinals,823033,3.0,1B
+MLB,Joshua Kuroda-Grauer,hitter_total_bases,1.803,Athletics,Chicago White Sox,824575,7.0,3B
+MLB,Lane Thomas,hitter_total_bases,1.802,Kansas City Royals,Baltimore Orioles,824817,4.0,CF
+MLB,Pete Crow-Armstrong,hitter_total_bases,1.801,Chicago Cubs,Cincinnati Reds,824493,1.0,CF
+MLB,J.P. Crawford,hitter_total_bases,1.8,Seattle Mariners,Tampa Bay Rays,822955,1.0,SS
+MLB,Bryson Stott,hitter_total_bases,1.796,Philadelphia Phillies,Detroit Tigers,824252,6.0,2B
+MLB,Liam Hicks,hitter_total_bases,1.792,Miami Marlins,Cleveland Guardians,823845,6.0,PH
+MLB,Cole Young,hitter_total_bases,1.789,Seattle Mariners,Tampa Bay Rays,822955,7.0,2B
+MLB,Colt Keith,hitter_total_bases,1.788,Detroit Tigers,Philadelphia Phillies,824252,2.0,3B
+MLB,Michael Harris II,hitter_total_bases,1.787,Atlanta Braves,St. Louis Cardinals,823033,1.0,CF
+MLB,Brandon Marsh,hitter_total_bases,1.779,Philadelphia Phillies,Detroit Tigers,824252,4.0,LF
+MLB,Jung Hoo Lee,hitter_total_bases,1.768,San Francisco Giants,Colorado Rockies,823200,7.0,RF
+MLB,Gabriel Moreno,hitter_total_bases,1.768,Arizona Diamondbacks,Los Angeles Dodgers,823927,4.0,C
+MLB,Sam Antonacci,hitter_total_bases,1.765,Chicago White Sox,Athletics,824575,1.0,3B
+MLB,Ty France,hitter_total_bases,1.765,San Diego Padres,Toronto Blue Jays,823278,6.0,1B
+MLB,Chase DeLauter,hitter_total_bases,1.764,Cleveland Guardians,Miami Marlins,823845,3.0,RF
+MLB,Andy Pages,hitter_total_bases,1.754,Los Angeles Dodgers,Arizona Diamondbacks,823927,2.0,CF
+MLB,Jackson Merrill,hitter_total_bases,1.741,San Diego Padres,Toronto Blue Jays,823278,2.0,CF
+MLB,Drake Baldwin,hitter_total_bases,1.715,Atlanta Braves,St. Louis Cardinals,823033,4.0,C
+MLB,Zach McKinstry,hitter_total_bases,1.714,Detroit Tigers,Philadelphia Phillies,824252,7.0,2B
+MLB,Casey Schmitt,hitter_total_bases,1.713,San Francisco Giants,Colorado Rockies,823200,3.0,3B
+MLB,Mickey Moniak,hitter_total_bases,1.713,Colorado Rockies,San Francisco Giants,823200,8.0,DH
+MLB,Brooks Lee,hitter_total_bases,1.711,Minnesota Twins,Los Angeles Angels,823685,6.0,SS
+MLB,Adley Rutschman,hitter_total_bases,1.711,Baltimore Orioles,Kansas City Royals,824817,2.0,C
+MLB,Myles Straw,hitter_total_bases,1.709,Toronto Blue Jays,San Diego Padres,823278,8.0,LF
+MLB,Vladimir Guerrero Jr.,hitter_total_bases,1.708,Toronto Blue Jays,San Diego Padres,823278,2.0,1B
+MLB,Javier Sanoja,hitter_total_bases,1.708,Miami Marlins,Cleveland Guardians,823845,4.0,3B
+MLB,Dansby Swanson,hitter_total_bases,1.707,Chicago Cubs,Cincinnati Reds,824493,9.0,SS
+MLB,Carson Benge,hitter_total_bases,1.684,New York Mets,Boston Red Sox,823604,4.0,RF
+MLB,Luis Arraez,hitter_total_bases,1.683,San Francisco Giants,Colorado Rockies,823200,2.0,2B
+MLB,Juan Soto,hitter_total_bases,1.679,New York Mets,Boston Red Sox,823604,2.0,LF
+MLB,Bryce Eldridge,hitter_total_bases,1.673,San Francisco Giants,Colorado Rockies,823200,6.0,1B
+MLB,James Wood,hitter_total_bases,1.673,Washington Nationals,New York Yankees,822709,1.0,RF
+MLB,Jorge Soler,hitter_total_bases,1.67,Los Angeles Angels,Minnesota Twins,823685,4.0,DH
+MLB,Alex Bregman,hitter_total_bases,1.667,Chicago Cubs,Cincinnati Reds,824493,2.0,3B
+MLB,Francisco Lindor,hitter_total_bases,1.667,New York Mets,Boston Red Sox,823604,3.0,SS
+MLB,Luke Keaschall,hitter_total_bases,1.663,Minnesota Twins,Los Angeles Angels,823685,9.0,CF
+MLB,Cal Raleigh,hitter_total_bases,1.662,Seattle Mariners,Tampa Bay Rays,822955,4.0,C
+MLB,Jake McCarthy,hitter_total_bases,1.657,Colorado Rockies,San Francisco Giants,823200,1.0,LF
+MLB,Nathan Lukes,hitter_total_bases,1.657,Toronto Blue Jays,San Diego Padres,823278,9.0,RF
+MLB,Hunter Goodman,hitter_total_bases,1.65,Colorado Rockies,San Francisco Giants,823200,4.0,C
+MLB,Brayan Rocchio,hitter_total_bases,1.647,Cleveland Guardians,Miami Marlins,823845,2.0,SS
+MLB,Seiya Suzuki,hitter_total_bases,1.643,Chicago Cubs,Cincinnati Reds,824493,4.0,RF
+MLB,Zach Neto,hitter_total_bases,1.643,Los Angeles Angels,Minnesota Twins,823685,1.0,SS
+MLB,Blaze Alexander,hitter_total_bases,1.636,Baltimore Orioles,Kansas City Royals,824817,8.0,3B
+MLB,Cody Bellinger,hitter_total_bases,1.628,New York Yankees,Washington Nationals,822709,5.0,LF
+MLB,Brett Baty,hitter_total_bases,1.623,New York Mets,Boston Red Sox,823604,8.0,3B
+MLB,Xander Bogaerts,hitter_total_bases,1.615,San Diego Padres,Toronto Blue Jays,823278,3.0,SS
+MLB,Pete Alonso,hitter_total_bases,1.61,Baltimore Orioles,Kansas City Royals,824817,4.0,1B
+MLB,Masataka Yoshida,hitter_total_bases,1.605,Boston Red Sox,New York Mets,823604,5.0,DH
+MLB,Eduardo Valencia,hitter_total_bases,1.603,Detroit Tigers,Philadelphia Phillies,824252,6.0,DH
+MLB,Francisco Alvarez,hitter_total_bases,1.602,New York Mets,Boston Red Sox,823604,7.0,C
+MLB,Edouard Julien,hitter_total_bases,1.602,Colorado Rockies,San Francisco Giants,823200,5.0,2B
+MLB,Alec Burleson,hitter_total_bases,1.598,St. Louis Cardinals,Atlanta Braves,823033,5.0,1B
+MLB,A.J. Ewing,hitter_total_bases,1.595,New York Mets,Boston Red Sox,823604,1.0,2B
+MLB,Jonathan Aranda,hitter_total_bases,1.584,Tampa Bay Rays,Seattle Mariners,822955,2.0,1B
+MLB,Jeremy Peña,hitter_total_bases,1.583,Houston Astros,Texas Rangers,822878,1.0,SS
+MLB,Michael Conforto,hitter_total_bases,1.566,Chicago Cubs,Cincinnati Reds,824493,7.0,DH
+MLB,Taylor Ward,hitter_total_bases,1.563,Baltimore Orioles,Kansas City Royals,824817,3.0,LF
+MLB,Tristan Peters,hitter_total_bases,1.543,Chicago White Sox,Athletics,824575,9.0,CF
+MLB,Tyler Stephenson,hitter_total_bases,1.542,Cincinnati Reds,Chicago Cubs,824493,6.0,C
+MLB,Nolan Schanuel,hitter_total_bases,1.539,Los Angeles Angels,Minnesota Twins,823685,2.0,1B
+MLB,Taylor Walls,hitter_total_bases,1.538,Tampa Bay Rays,Seattle Mariners,822955,7.0,SS
+MLB,Ezequiel Duran,hitter_total_bases,1.537,Texas Rangers,Houston Astros,822878,6.0,SS
+MLB,Heriberto Hernández,hitter_total_bases,1.529,Miami Marlins,Cleveland Guardians,823845,2.0,LF
+MLB,Denzer Guzman,hitter_total_bases,1.525,Los Angeles Angels,Minnesota Twins,823685,3.0,3B
+MLB,Alex Freeland,hitter_total_bases,1.521,Los Angeles Dodgers,Arizona Diamondbacks,823927,4.0,SS
+MLB,Andrés Giménez,hitter_total_bases,1.518,Toronto Blue Jays,San Diego Padres,823278,7.0,SS
+MLB,Isaac Collins,hitter_total_bases,1.504,Kansas City Royals,Baltimore Orioles,824817,9.0,LF
+MLB,Jorbit Vivas,hitter_total_bases,1.503,Washington Nationals,New York Yankees,822709,7.0,2B
+MLB,Colson Montgomery,hitter_total_bases,1.502,Chicago White Sox,Athletics,824575,4.0,SS
+MLB,Gavin Sheets,hitter_total_bases,1.493,San Diego Padres,Toronto Blue Jays,823278,5.0,LF
+MLB,Nathan Church,hitter_total_bases,1.493,St. Louis Cardinals,Atlanta Braves,823033,7.0,CF
+MLB,Jorge Polanco,hitter_total_bases,1.486,New York Mets,Boston Red Sox,823604,5.0,DH
+MLB,Trent Grisham,hitter_total_bases,1.479,New York Yankees,Washington Nationals,822709,3.0,CF
+MLB,Chandler Simpson,hitter_total_bases,1.475,Tampa Bay Rays,Seattle Mariners,822955,5.0,LF
+MLB,Ernie Clement,hitter_total_bases,1.47,Toronto Blue Jays,San Diego Padres,823278,1.0,2B
+MLB,Ben Rice,hitter_total_bases,1.468,New York Yankees,Washington Nationals,822709,2.0,DH
+MLB,Jake Burger,hitter_total_bases,1.467,Texas Rangers,Houston Astros,822878,5.0,1B
+MLB,Willi Castro,hitter_total_bases,1.465,Colorado Rockies,San Francisco Giants,823200,7.0,SS
+MLB,JJ Bleday,hitter_total_bases,1.459,Cincinnati Reds,Chicago Cubs,824493,4.0,LF
+MLB,Griffin Conine,hitter_total_bases,1.452,Miami Marlins,Cleveland Guardians,823845,7.0,PH
+MLB,Carson Kelly,hitter_total_bases,1.452,Chicago Cubs,Cincinnati Reds,824493,8.0,C
+MLB,Kyle Teel,hitter_total_bases,1.443,Chicago White Sox,Athletics,824575,8.0,C
+MLB,Salvador Perez,hitter_total_bases,1.438,Kansas City Royals,Baltimore Orioles,824817,6.0,1B
+MLB,Nick Loftin,hitter_total_bases,1.437,Kansas City Royals,Baltimore Orioles,824817,8.0,DH
+MLB,Masyn Winn,hitter_total_bases,1.431,St. Louis Cardinals,Atlanta Braves,823033,6.0,SS
+MLB,Victor Mesa Jr.,hitter_total_bases,1.431,Tampa Bay Rays,Seattle Mariners,822955,6.0,RF
+MLB,Dalton Rushing,hitter_total_bases,1.427,Los Angeles Dodgers,Arizona Diamondbacks,823927,9.0,1B
+MLB,Samuel Basallo,hitter_total_bases,1.415,Baltimore Orioles,Kansas City Royals,824817,5.0,DH
+MLB,Henry Bolte,hitter_total_bases,1.406,Athletics,Chicago White Sox,824575,8.0,CF
+MLB,Yainer Diaz,hitter_total_bases,1.398,Houston Astros,Texas Rangers,822878,8.0,C
+MLB,Carlos Cortes,hitter_total_bases,1.397,Athletics,Chicago White Sox,824575,2.0,P
+MLB,Tyler O'Neill,hitter_total_bases,1.397,Baltimore Orioles,Kansas City Royals,824817,6.0,RF
+MLB,Ryan Jeffers,hitter_total_bases,1.395,Minnesota Twins,Los Angeles Angels,823685,2.0,C
+MLB,Anthony Seigler,hitter_total_bases,1.394,Boston Red Sox,New York Mets,823604,1.0,2B
+MLB,José Caballero,hitter_total_bases,1.391,New York Yankees,Washington Nationals,822709,8.0,3B
+MLB,Keibert Ruiz,hitter_total_bases,1.39,Washington Nationals,New York Yankees,822709,9.0,C
+MLB,Alika Williams,hitter_total_bases,1.385,Athletics,Chicago White Sox,824575,5.0,SS
+MLB,Trea Turner,hitter_total_bases,1.384,Philadelphia Phillies,Detroit Tigers,824252,1.0,SS
+MLB,Andrew Benintendi,hitter_total_bases,1.382,Chicago White Sox,Athletics,824575,7.0,DH
+MLB,Jo Adell,hitter_total_bases,1.382,Los Angeles Angels,Minnesota Twins,823685,6.0,RF
+MLB,Spencer Steer,hitter_total_bases,1.367,Cincinnati Reds,Chicago Cubs,824493,3.0,RF
+MLB,Grant McCray,hitter_total_bases,1.365,San Francisco Giants,Colorado Rockies,823200,1.0,LF
+MLB,Oswald Peraza,hitter_total_bases,1.36,Los Angeles Angels,Minnesota Twins,823685,7.0,2B
+MLB,Jake Cronenworth,hitter_total_bases,1.357,San Diego Padres,Toronto Blue Jays,823278,7.0,PH
+MLB,Matt Vierling,hitter_total_bases,1.353,Detroit Tigers,Philadelphia Phillies,824252,5.0,RF
+MLB,Romy Gonzalez,hitter_total_bases,1.352,Boston Red Sox,New York Mets,823604,4.0,1B
+MLB,Gabriel Rincones Jr.,hitter_total_bases,1.345,Philadelphia Phillies,Detroit Tigers,824252,7.0,RF
+MLB,Dylan Crews,hitter_total_bases,1.342,Washington Nationals,New York Yankees,822709,3.0,LF
+MLB,Nico Hoerner,hitter_total_bases,1.34,Chicago Cubs,Cincinnati Reds,824493,6.0,2B
+MLB,Lawrence Butler,hitter_total_bases,1.339,Athletics,Chicago White Sox,824575,1.0,RF
+MLB,Josh Lowe,hitter_total_bases,1.331,Los Angeles Angels,Minnesota Twins,823685,5.0,LF
+MLB,Dominic Smith,hitter_total_bases,1.33,Atlanta Braves,St. Louis Cardinals,823033,8.0,DH
+MLB,Jonah Heim,hitter_total_bases,1.328,Athletics,Chicago White Sox,824575,4.0,C
+MLB,Brice Matthews,hitter_total_bases,1.327,Houston Astros,Texas Rangers,822878,9.0,CF
+MLB,Joe Mack,hitter_total_bases,1.327,Miami Marlins,Cleveland Guardians,823845,9.0,C
+MLB,Lourdes Gurriel Jr.,hitter_total_bases,1.325,Arizona Diamondbacks,Los Angeles Dodgers,823927,5.0,LF
+MLB,Alejandro Kirk,hitter_total_bases,1.317,Toronto Blue Jays,San Diego Padres,823278,5.0,C
+MLB,Troy Johnston,hitter_total_bases,1.311,Colorado Rockies,San Francisco Giants,823200,9.0,1B
+MLB,Jasson Domínguez,hitter_total_bases,1.307,New York Yankees,Washington Nationals,822709,6.0,RF
+MLB,Teoscar Hernández,hitter_total_bases,1.291,Los Angeles Dodgers,Arizona Diamondbacks,823927,7.0,LF
+MLB,Luke Raley,hitter_total_bases,1.29,Seattle Mariners,Tampa Bay Rays,822955,6.0,RF
+MLB,Wyatt Langford,hitter_total_bases,1.289,Texas Rangers,Houston Astros,822878,2.0,LF
+MLB,Jared Young,hitter_total_bases,1.276,New York Mets,Boston Red Sox,823604,6.0,1B
+MLB,Ian Happ,hitter_total_bases,1.272,Chicago Cubs,Cincinnati Reds,824493,5.0,LF
+MLB,Edwin Arroyo,hitter_total_bases,1.267,Cincinnati Reds,Chicago Cubs,824493,8.0,2B
+MLB,Jacob Young,hitter_total_bases,1.266,Washington Nationals,New York Yankees,822709,5.0,CF
+MLB,Lars Nootbaar,hitter_total_bases,1.264,St. Louis Cardinals,Atlanta Braves,823033,4.0,LF
+MLB,Braden Montgomery,hitter_total_bases,1.263,Chicago White Sox,Athletics,824575,5.0,RF
+MLB,Elias Díaz,hitter_total_bases,1.256,Texas Rangers,Houston Astros,822878,1.0,DH
+MLB,Justin Foscue,hitter_total_bases,1.249,Texas Rangers,Houston Astros,822878,8.0,2B
+MLB,Jeff McNeil,hitter_total_bases,1.245,Athletics,Chicago White Sox,824575,9.0,2B
+MLB,Hunter Feduccia,hitter_total_bases,1.245,Tampa Bay Rays,Seattle Mariners,822955,9.0,C
+MLB,Blaze Jordan,hitter_total_bases,1.243,St. Louis Cardinals,Atlanta Braves,823033,8.0,3B
+MLB,Kyle Manzardo,hitter_total_bases,1.238,Cleveland Guardians,Miami Marlins,823845,4.0,1B
+MLB,Miguel Rojas,hitter_total_bases,1.235,Los Angeles Dodgers,Arizona Diamondbacks,823927,8.0,2B
+MLB,Evan Carter,hitter_total_bases,1.235,Texas Rangers,Houston Astros,822878,7.0,CF
+MLB,Colby Thomas,hitter_total_bases,1.228,Athletics,Chicago White Sox,824575,3.0,LF
+MLB,James Outman,hitter_total_bases,1.228,Detroit Tigers,Philadelphia Phillies,824252,8.0,CF
+MLB,Jarren Duran,hitter_total_bases,1.212,Boston Red Sox,New York Mets,823604,7.0,LF
+MLB,Michael Massey,hitter_total_bases,1.211,Kansas City Royals,Baltimore Orioles,824817,5.0,2B
+MLB,Cole Carrigg,hitter_total_bases,1.206,Colorado Rockies,San Francisco Giants,823200,3.0,CF
+MLB,TJ Friedl,hitter_total_bases,1.199,Cincinnati Reds,Chicago Cubs,824493,7.0,CF
+MLB,Rhys Hoskins,hitter_total_bases,1.197,Cleveland Guardians,Miami Marlins,823845,5.0,DH
+MLB,Jake Rogers,hitter_total_bases,1.185,Detroit Tigers,Philadelphia Phillies,824252,9.0,C
+MLB,Kahlil Watson,hitter_total_bases,1.18,Cleveland Guardians,Miami Marlins,823845,6.0,CF
+MLB,Luis Rengifo,hitter_total_bases,1.176,San Diego Padres,Toronto Blue Jays,823278,8.0,2B
+MLB,Kyle Higashioka,hitter_total_bases,1.166,Texas Rangers,Houston Astros,822878,9.0,C
+MLB,Luis Campusano,hitter_total_bases,1.164,San Diego Padres,Toronto Blue Jays,823278,9.0,C
+MLB,Austin Hedges,hitter_total_bases,1.154,Cleveland Guardians,Miami Marlins,823845,8.0,C
+MLB,Steven Kwan,hitter_total_bases,1.153,Cleveland Guardians,Miami Marlins,823845,9.0,LF
+MLB,Tyler Heineman,hitter_total_bases,1.147,Los Angeles Angels,Minnesota Twins,823685,9.0,C
+MLB,Richie Palacios,hitter_total_bases,1.127,Tampa Bay Rays,Seattle Mariners,822955,8.0,2B
+MLB,Tyler Freeman,hitter_total_bases,1.122,Colorado Rockies,San Francisco Giants,823200,6.0,RF
+MLB,Daniel Schneemann,hitter_total_bases,1.12,Cleveland Guardians,Miami Marlins,823845,7.0,3B
+MLB,Tsung-Che Cheng,hitter_total_bases,1.115,Boston Red Sox,New York Mets,823604,9.0,SS
+MLB,Tyrone Taylor,hitter_total_bases,1.102,New York Mets,Boston Red Sox,823604,9.0,CF
+MLB,Ke'Bryan Hayes,hitter_total_bases,1.087,Cincinnati Reds,Chicago Cubs,824493,9.0,3B
+MLB,Victor Robles,hitter_total_bases,1.072,Seattle Mariners,Tampa Bay Rays,822955,8.0,CF
+MLB,Connor Wong,hitter_total_bases,1.071,Boston Red Sox,New York Mets,823604,8.0,C
+MLB,Jordan Walker,hitter_total_bases,1.068,St. Louis Cardinals,Atlanta Braves,823033,3.0,RF
+MLB,Daulton Varsho,hitter_total_bases,1.062,Toronto Blue Jays,San Diego Padres,823278,6.0,CF
+MLB,Jackson Holliday,hitter_total_bases,1.062,Baltimore Orioles,Kansas City Royals,824817,9.0,2B
+MLB,Tommy Edman,hitter_total_bases,1.057,Los Angeles Dodgers,Arizona Diamondbacks,823927,5.0,3B
+MLB,Eric Haase,hitter_total_bases,1.049,San Francisco Giants,Colorado Rockies,823200,9.0,PR
+MLB,Eli White,hitter_total_bases,1.044,Atlanta Braves,St. Louis Cardinals,823033,6.0,RF
+MLB,Colton Cowser,hitter_total_bases,1.034,Baltimore Orioles,Kansas City Royals,824817,7.0,CF
+MLB,Austin Martin,hitter_total_bases,1.025,Minnesota Twins,Los Angeles Angels,823685,7.0,RF
+MLB,Ildemaro Vargas,hitter_total_bases,1.017,Arizona Diamondbacks,Los Angeles Dodgers,823927,6.0,2B
+MLB,Joey Meneses,hitter_total_bases,1.014,Athletics,Chicago White Sox,824575,6.0,1B
+MLB,Anthony Volpe,hitter_total_bases,1.009,New York Yankees,Washington Nationals,822709,1.0,SS
+MLB,Eliezer Alfonzo,hitter_total_bases,0.987,Los Angeles Dodgers,Arizona Diamondbacks,823927,6.0,C
+MLB,Ben Malgeri,hitter_total_bases,0.978,Detroit Tigers,Philadelphia Phillies,824252,3.0,LF
+MLB,Drew Gilbert,hitter_total_bases,0.968,San Francisco Giants,Colorado Rockies,823200,8.0,CF
+MLB,Austin Wells,hitter_total_bases,0.967,New York Yankees,Washington Nationals,822709,9.0,C
+MLB,Jorge Mateo,hitter_total_bases,0.942,Atlanta Braves,St. Louis Cardinals,823033,9.0,SS
+MLB,Junior Perez,hitter_total_bases,0.939,Chicago White Sox,Athletics,824575,2.0,LF
+MLB,Alex Call,hitter_total_bases,0.937,Los Angeles Dodgers,Arizona Diamondbacks,823927,3.0,RF
+MLB,Jorge Barrosa,hitter_total_bases,0.906,Arizona Diamondbacks,Los Angeles Dodgers,823927,8.0,CF
+MLB,Buddy Kennedy,hitter_total_bases,0.905,Seattle Mariners,Tampa Bay Rays,822955,9.0,3B
+MLB,Derek Hill,hitter_total_bases,0.891,Philadelphia Phillies,Detroit Tigers,824252,8.0,CF
+MLB,Jazz Chisholm Jr.,hitter_total_bases,0.864,New York Yankees,Washington Nationals,822709,7.0,2B
+MLB,Jose Siri,hitter_total_bases,0.854,Los Angeles Angels,Minnesota Twins,823685,8.0,CF
+MLB,Josh Rojas,hitter_total_bases,0.836,Kansas City Royals,Baltimore Orioles,824817,7.0,3B
+MLB,Rafael Marchán,hitter_total_bases,0.811,Philadelphia Phillies,Detroit Tigers,824252,9.0,C
+MLB,Tim Tawa,hitter_total_bases,0.802,Arizona Diamondbacks,Los Angeles Dodgers,823927,9.0,1B
+MLB,Jimmy Crooks,hitter_total_bases,0.756,St. Louis Cardinals,Atlanta Braves,823033,9.0,C
+MLB,Zach Dezenzo,hitter_total_bases,0.739,Houston Astros,Texas Rangers,822878,6.0,PH
 MLB,Cam Schlittler,pitcher_fantasy_score,20.471,New York Yankees,,822711,,
+MLB,Braxton Ashcraft,pitcher_fantasy_score,19.257,Pittsburgh Pirates,,823357,,
 MLB,Joe Ryan,pitcher_fantasy_score,19.067,Minnesota Twins,,823682,,
 MLB,Logan Gilbert,pitcher_fantasy_score,18.735,Seattle Mariners,,822953,,
-MLB,Braxton Ashcraft,pitcher_fantasy_score,17.699,Pittsburgh Pirates,,823357,,
 MLB,Kyle Bradish,pitcher_fantasy_score,17.181,Baltimore Orioles,,824813,,
 MLB,Yoshinobu Yamamoto,pitcher_fantasy_score,17.005,Los Angeles Dodgers,,823926,,
 MLB,Eury Pérez,pitcher_fantasy_score,16.815,Miami Marlins,,823844,,
 MLB,Griffin Jax,pitcher_fantasy_score,16.673,Tampa Bay Rays,,822953,,
+MLB,Brandon Sproat,pitcher_fantasy_score,16.237,Milwaukee Brewers,,823357,,
 MLB,Casey Mize,pitcher_fantasy_score,16.019,Detroit Tigers,,824249,,
 MLB,Shane Drohan,pitcher_fantasy_score,15.871,Milwaukee Brewers,,823356,,
 MLB,Cristopher Sánchez,pitcher_fantasy_score,15.621,Philadelphia Phillies,,824249,,
-MLB,Brandon Sproat,pitcher_fantasy_score,15.495,Milwaukee Brewers,,823357,,
 MLB,Gage Jump,pitcher_fantasy_score,15.491,Athletics,,824576,,
 MLB,Peter Lambert,pitcher_fantasy_score,15.307,Houston Astros,,822875,,
 MLB,Walker Buehler,pitcher_fantasy_score,14.801,San Diego Padres,,823276,,
@@ -542,6 +542,7 @@ MLB,Trey Yesavage,pitcher_outs,18.37,Toronto Blue Jays,,823276,,
 MLB,Casey Mize,pitcher_outs,18.07,Detroit Tigers,,824249,,
 MLB,Cam Schlittler,pitcher_outs,17.5,New York Yankees,,822711,,
 MLB,Tanner Bibee,pitcher_outs,17.3,Cleveland Guardians,,823844,,
+MLB,Braxton Ashcraft,pitcher_outs,16.93,Pittsburgh Pirates,,823357,,
 MLB,Joe Ryan,pitcher_outs,16.9,Minnesota Twins,,823682,,
 MLB,Peter Lambert,pitcher_outs,16.8,Houston Astros,,822875,,
 MLB,Kyle Freeland,pitcher_outs,16.7,Colorado Rockies,,823198,,
@@ -559,26 +560,25 @@ MLB,Matthew Liberatore,pitcher_outs,14.07,St. Louis Cardinals,,823030,,
 MLB,Freddy Peralta,pitcher_outs,13.77,New York Mets,,823603,,
 MLB,Gage Jump,pitcher_outs,13.73,Athletics,,824576,,
 MLB,Noah Cameron,pitcher_outs,13.73,Kansas City Royals,,824813,,
-MLB,Braxton Ashcraft,pitcher_outs,13.47,Pittsburgh Pirates,,823357,,
 MLB,Javier Assad,pitcher_outs,13.37,Chicago Cubs,,824492,,
+MLB,Brandon Sproat,pitcher_outs,12.77,Milwaukee Brewers,,823357,,
 MLB,Reynaldo López,pitcher_outs,11.9,Atlanta Braves,,823030,,
-MLB,Brandon Sproat,pitcher_outs,10.37,Milwaukee Brewers,,823357,,
 MLB,Brandon Pfaadt,pitcher_outs,10.07,Arizona Diamondbacks,,823926,,
 MLB,Eduardo Rivera,pitcher_outs,10.0,Boston Red Sox,,823603,,
 MLB,Bryan Hudson,pitcher_outs,6.0,Chicago White Sox,,824576,,
 MLB,PJ Poulin,pitcher_outs,6.0,Washington Nationals,,822711,,
 MLB,Cam Schlittler,pitcher_strikeouts,7.948,New York Yankees,,822711,,
+MLB,Braxton Ashcraft,pitcher_strikeouts,7.341,Pittsburgh Pirates,,823357,,
 MLB,Joe Ryan,pitcher_strikeouts,7.246,Minnesota Twins,,823682,,
 MLB,Logan Gilbert,pitcher_strikeouts,7.08,Seattle Mariners,,822953,,
-MLB,Braxton Ashcraft,pitcher_strikeouts,6.562,Pittsburgh Pirates,,823357,,
 MLB,Kyle Bradish,pitcher_strikeouts,6.303,Baltimore Orioles,,824813,,
 MLB,Yoshinobu Yamamoto,pitcher_strikeouts,6.215,Los Angeles Dodgers,,823926,,
 MLB,Eury Pérez,pitcher_strikeouts,6.12,Miami Marlins,,823844,,
 MLB,Griffin Jax,pitcher_strikeouts,6.049,Tampa Bay Rays,,822953,,
+MLB,Brandon Sproat,pitcher_strikeouts,5.831,Milwaukee Brewers,,823357,,
 MLB,Casey Mize,pitcher_strikeouts,5.722,Detroit Tigers,,824249,,
 MLB,Shane Drohan,pitcher_strikeouts,5.648,Milwaukee Brewers,,823356,,
 MLB,Cristopher Sánchez,pitcher_strikeouts,5.523,Philadelphia Phillies,,824249,,
-MLB,Brandon Sproat,pitcher_strikeouts,5.46,Milwaukee Brewers,,823357,,
 MLB,Gage Jump,pitcher_strikeouts,5.458,Athletics,,824576,,
 MLB,Peter Lambert,pitcher_strikeouts,5.366,Houston Astros,,822875,,
 MLB,Walker Buehler,pitcher_strikeouts,5.113,San Diego Padres,,823276,,

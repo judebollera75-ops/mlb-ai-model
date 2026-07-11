@@ -35,21 +35,111 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,702176,Alan Roden,7,RF,Pre-Game
 2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,656484,Tristan Gray,8,SS,Pre-Game
 2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,807712,Luke Keaschall,9,CF,Pre-Game
-2026-07-11,824576,Athletics,Chicago White Sox,away,805779,Jacob Wilson,1,SS,Pre-Game
-2026-07-11,824576,Athletics,Chicago White Sox,away,691016,Tyler Soderstrom,2,DH,Pre-Game
-2026-07-11,824576,Athletics,Chicago White Sox,away,669127,Shea Langeliers,3,C,Pre-Game
-2026-07-11,824576,Athletics,Chicago White Sox,away,641680,Jonah Heim,4,1B,Pre-Game
-2026-07-11,824576,Athletics,Chicago White Sox,away,811965,Joshua Kuroda-Grauer,5,3B,Pre-Game
-2026-07-11,824576,Athletics,Chicago White Sox,away,671732,Lawrence Butler,6,RF,Pre-Game
-2026-07-11,824576,Athletics,Chicago White Sox,away,666126,Carlos Cortes,7,LF,Pre-Game
-2026-07-11,824576,Athletics,Chicago White Sox,away,643446,Jeff McNeil,8,2B,Pre-Game
-2026-07-11,824576,Athletics,Chicago White Sox,away,703607,Henry Bolte,9,CF,Pre-Game
-2026-07-11,824576,Chicago White Sox,Athletics,home,545341,Randal Grichuk,1,LF,Pre-Game
-2026-07-11,824576,Chicago White Sox,Athletics,home,808959,Munetaka Murakami,2,DH,Pre-Game
-2026-07-11,824576,Chicago White Sox,Athletics,home,678246,Miguel Vargas,3,1B,Pre-Game
-2026-07-11,824576,Chicago White Sox,Athletics,home,695657,Colson Montgomery,4,3B,Pre-Game
-2026-07-11,824576,Chicago White Sox,Athletics,home,805367,Chase Meidroth,5,2B,Pre-Game
-2026-07-11,824576,Chicago White Sox,Athletics,home,695731,Braden Montgomery,6,RF,Pre-Game
-2026-07-11,824576,Chicago White Sox,Athletics,home,682668,Luisangel Acuña,7,SS,Pre-Game
-2026-07-11,824576,Chicago White Sox,Athletics,home,678577,Junior Perez,8,CF,Pre-Game
-2026-07-11,824576,Chicago White Sox,Athletics,home,691011,Drew Romo,9,C,Pre-Game
+2026-07-11,824576,Athletics,Chicago White Sox,away,805779,Jacob Wilson,1,SS,Warmup
+2026-07-11,824576,Athletics,Chicago White Sox,away,691016,Tyler Soderstrom,2,DH,Warmup
+2026-07-11,824576,Athletics,Chicago White Sox,away,669127,Shea Langeliers,3,C,Warmup
+2026-07-11,824576,Athletics,Chicago White Sox,away,641680,Jonah Heim,4,1B,Warmup
+2026-07-11,824576,Athletics,Chicago White Sox,away,811965,Joshua Kuroda-Grauer,5,3B,Warmup
+2026-07-11,824576,Athletics,Chicago White Sox,away,671732,Lawrence Butler,6,RF,Warmup
+2026-07-11,824576,Athletics,Chicago White Sox,away,666126,Carlos Cortes,7,LF,Warmup
+2026-07-11,824576,Athletics,Chicago White Sox,away,643446,Jeff McNeil,8,2B,Warmup
+2026-07-11,824576,Athletics,Chicago White Sox,away,703607,Henry Bolte,9,CF,Warmup
+2026-07-11,824576,Chicago White Sox,Athletics,home,545341,Randal Grichuk,1,LF,Warmup
+2026-07-11,824576,Chicago White Sox,Athletics,home,808959,Munetaka Murakami,2,DH,Warmup
+2026-07-11,824576,Chicago White Sox,Athletics,home,678246,Miguel Vargas,3,1B,Warmup
+2026-07-11,824576,Chicago White Sox,Athletics,home,695657,Colson Montgomery,4,3B,Warmup
+2026-07-11,824576,Chicago White Sox,Athletics,home,805367,Chase Meidroth,5,2B,Warmup
+2026-07-11,824576,Chicago White Sox,Athletics,home,695731,Braden Montgomery,6,RF,Warmup
+2026-07-11,824576,Chicago White Sox,Athletics,home,682668,Luisangel Acuña,7,SS,Warmup
+2026-07-11,824576,Chicago White Sox,Athletics,home,678577,Junior Perez,8,CF,Warmup
+2026-07-11,824576,Chicago White Sox,Athletics,home,691011,Drew Romo,9,C,Warmup
+2026-07-11,823198,Colorado Rockies,San Francisco Giants,away,664983,Jake McCarthy,1,CF,Pre-Game
+2026-07-11,823198,Colorado Rockies,San Francisco Giants,away,666160,Mickey Moniak,2,LF,Pre-Game
+2026-07-11,823198,Colorado Rockies,San Francisco Giants,away,696100,Hunter Goodman,3,DH,Pre-Game
+2026-07-11,823198,Colorado Rockies,San Francisco Giants,away,681198,TJ Rumfield,4,1B,Pre-Game
+2026-07-11,823198,Colorado Rockies,San Francisco Giants,away,691720,Kyle Karros,5,3B,Pre-Game
+2026-07-11,823198,Colorado Rockies,San Francisco Giants,away,687859,Troy Johnston,6,RF,Pre-Game
+2026-07-11,823198,Colorado Rockies,San Francisco Giants,away,666397,Edouard Julien,7,2B,Pre-Game
+2026-07-11,823198,Colorado Rockies,San Francisco Giants,away,678662,Ezequiel Tovar,8,SS,Pre-Game
+2026-07-11,823198,Colorado Rockies,San Francisco Giants,away,664954,Brett Sullivan,9,C,Pre-Game
+2026-07-11,823198,San Francisco Giants,Colorado Rockies,home,671218,Heliot Ramos,1,LF,Pre-Game
+2026-07-11,823198,San Francisco Giants,Colorado Rockies,home,650333,Luis Arraez,2,2B,Pre-Game
+2026-07-11,823198,San Francisco Giants,Colorado Rockies,home,669477,Casey Schmitt,3,3B,Pre-Game
+2026-07-11,823198,San Francisco Giants,Colorado Rockies,home,646240,Rafael Devers,4,1B,Pre-Game
+2026-07-11,823198,San Francisco Giants,Colorado Rockies,home,642715,Willy Adames,5,SS,Pre-Game
+2026-07-11,823198,San Francisco Giants,Colorado Rockies,home,805811,Bryce Eldridge,6,DH,Pre-Game
+2026-07-11,823198,San Francisco Giants,Colorado Rockies,home,808982,Jung Hoo Lee,7,RF,Pre-Game
+2026-07-11,823198,San Francisco Giants,Colorado Rockies,home,683679,Jesus Rodriguez,8,C,Pre-Game
+2026-07-11,823198,San Francisco Giants,Colorado Rockies,home,687551,Drew Gilbert,9,CF,Pre-Game
+2026-07-11,822711,New York Yankees,Washington Nationals,away,642708,Amed Rosario,1,3B,Pre-Game
+2026-07-11,822711,New York Yankees,Washington Nationals,away,700250,Ben Rice,2,DH,Pre-Game
+2026-07-11,822711,New York Yankees,Washington Nationals,away,663757,Trent Grisham,3,CF,Pre-Game
+2026-07-11,822711,New York Yankees,Washington Nationals,away,502671,Paul Goldschmidt,4,1B,Pre-Game
+2026-07-11,822711,New York Yankees,Washington Nationals,away,641355,Cody Bellinger,5,LF,Pre-Game
+2026-07-11,822711,New York Yankees,Washington Nationals,away,691176,Jasson Domínguez,6,RF,Pre-Game
+2026-07-11,822711,New York Yankees,Washington Nationals,away,665862,Jazz Chisholm Jr.,7,2B,Pre-Game
+2026-07-11,822711,New York Yankees,Washington Nationals,away,683011,Anthony Volpe,8,SS,Pre-Game
+2026-07-11,822711,New York Yankees,Washington Nationals,away,645305,Ali Sánchez,9,C,Pre-Game
+2026-07-11,822711,Washington Nationals,New York Yankees,home,695578,James Wood,1,RF,Pre-Game
+2026-07-11,822711,Washington Nationals,New York Yankees,home,671277,Luis García Jr.,2,DH,Pre-Game
+2026-07-11,822711,Washington Nationals,New York Yankees,home,678554,Curtis Mead,3,1B,Pre-Game
+2026-07-11,822711,Washington Nationals,New York Yankees,home,682928,CJ Abrams,4,SS,Pre-Game
+2026-07-11,822711,Washington Nationals,New York Yankees,home,695734,Daylen Lile,5,LF,Pre-Game
+2026-07-11,822711,Washington Nationals,New York Yankees,home,686611,Dylan Crews,6,CF,Pre-Game
+2026-07-11,822711,Washington Nationals,New York Yankees,home,678391,Jorbit Vivas,7,3B,Pre-Game
+2026-07-11,822711,Washington Nationals,New York Yankees,home,686452,Drew Millas,8,C,Pre-Game
+2026-07-11,822711,Washington Nationals,New York Yankees,home,683083,Nasim Nuñez,9,2B,Pre-Game
+2026-07-11,823603,Boston Red Sox,New York Mets,away,678011,Anthony Seigler,1,2B,Pre-Game
+2026-07-11,823603,Boston Red Sox,New York Mets,away,678882,Ceddanne Rafaela,2,CF,Pre-Game
+2026-07-11,823603,Boston Red Sox,New York Mets,away,677800,Wilyer Abreu,3,RF,Pre-Game
+2026-07-11,823603,Boston Red Sox,New York Mets,away,702332,Caleb Durbin,4,3B,Pre-Game
+2026-07-11,823603,Boston Red Sox,New York Mets,away,807799,Masataka Yoshida,5,DH,Pre-Game
+2026-07-11,823603,Boston Red Sox,New York Mets,away,655316,Andruw Monasterio,6,1B,Pre-Game
+2026-07-11,823603,Boston Red Sox,New York Mets,away,680776,Jarren Duran,7,LF,Pre-Game
+2026-07-11,823603,Boston Red Sox,New York Mets,away,665966,Carlos Narváez,8,C,Pre-Game
+2026-07-11,823603,Boston Red Sox,New York Mets,away,691907,Tsung-Che Cheng,9,SS,Pre-Game
+2026-07-11,823603,New York Mets,Boston Red Sox,home,805999,A.J. Ewing,1,CF,Pre-Game
+2026-07-11,823603,New York Mets,Boston Red Sox,home,665742,Juan Soto,2,LF,Pre-Game
+2026-07-11,823603,New York Mets,Boston Red Sox,home,596019,Francisco Lindor,3,SS,Pre-Game
+2026-07-11,823603,New York Mets,Boston Red Sox,home,701807,Carson Benge,4,RF,Pre-Game
+2026-07-11,823603,New York Mets,Boston Red Sox,home,593871,Jorge Polanco,5,DH,Pre-Game
+2026-07-11,823603,New York Mets,Boston Red Sox,home,676572,Eric Wagaman,6,1B,Pre-Game
+2026-07-11,823603,New York Mets,Boston Red Sox,home,682626,Francisco Alvarez,7,C,Pre-Game
+2026-07-11,823603,New York Mets,Boston Red Sox,home,683146,Brett Baty,8,3B,Pre-Game
+2026-07-11,823603,New York Mets,Boston Red Sox,home,670097,Zack Short,9,2B,Pre-Game
+2026-07-11,822953,Seattle Mariners,Tampa Bay Rays,away,641487,J.P. Crawford,1,3B,Pre-Game
+2026-07-11,822953,Seattle Mariners,Tampa Bay Rays,away,668227,Randy Arozarena,2,LF,Pre-Game
+2026-07-11,822953,Seattle Mariners,Tampa Bay Rays,away,686527,Dominic Canzone,3,DH,Pre-Game
+2026-07-11,822953,Seattle Mariners,Tampa Bay Rays,away,663728,Cal Raleigh,4,C,Pre-Game
+2026-07-11,822953,Seattle Mariners,Tampa Bay Rays,away,647304,Josh Naylor,5,1B,Pre-Game
+2026-07-11,822953,Seattle Mariners,Tampa Bay Rays,away,670042,Luke Raley,6,RF,Pre-Game
+2026-07-11,822953,Seattle Mariners,Tampa Bay Rays,away,702284,Cole Young,7,2B,Pre-Game
+2026-07-11,822953,Seattle Mariners,Tampa Bay Rays,away,645302,Victor Robles,8,CF,Pre-Game
+2026-07-11,822953,Seattle Mariners,Tampa Bay Rays,away,806068,Colt Emerson,9,SS,Pre-Game
+2026-07-11,822953,Tampa Bay Rays,Seattle Mariners,home,650490,Yandy Díaz,1,DH,Pre-Game
+2026-07-11,822953,Tampa Bay Rays,Seattle Mariners,home,666018,Jonathan Aranda,2,1B,Pre-Game
+2026-07-11,822953,Tampa Bay Rays,Seattle Mariners,home,691406,Junior Caminero,3,3B,Pre-Game
+2026-07-11,822953,Tampa Bay Rays,Seattle Mariners,home,656775,Cedric Mullins,4,CF,Pre-Game
+2026-07-11,822953,Tampa Bay Rays,Seattle Mariners,home,676356,Jonny DeLuca,5,RF,Pre-Game
+2026-07-11,822953,Tampa Bay Rays,Seattle Mariners,home,802415,Chandler Simpson,6,LF,Pre-Game
+2026-07-11,822953,Tampa Bay Rays,Seattle Mariners,home,810938,Ben Williamson,7,SS,Pre-Game
+2026-07-11,822953,Tampa Bay Rays,Seattle Mariners,home,680700,Richie Palacios,8,2B,Pre-Game
+2026-07-11,822953,Tampa Bay Rays,Seattle Mariners,home,663743,Nick Fortes,9,C,Pre-Game
+2026-07-11,823844,Cleveland Guardians,Miami Marlins,away,683953,Travis Bazzana,1,2B,Pre-Game
+2026-07-11,823844,Cleveland Guardians,Miami Marlins,away,677587,Brayan Rocchio,2,SS,Pre-Game
+2026-07-11,823844,Cleveland Guardians,Miami Marlins,away,800050,Chase DeLauter,3,DH,Pre-Game
+2026-07-11,823844,Cleveland Guardians,Miami Marlins,away,700932,Kyle Manzardo,4,1B,Pre-Game
+2026-07-11,823844,Cleveland Guardians,Miami Marlins,away,696135,Kahlil Watson,5,RF,Pre-Game
+2026-07-11,823844,Cleveland Guardians,Miami Marlins,away,672356,Gabriel Arias,6,3B,Pre-Game
+2026-07-11,823844,Cleveland Guardians,Miami Marlins,away,690984,Petey Halpin,7,CF,Pre-Game
+2026-07-11,823844,Cleveland Guardians,Miami Marlins,away,672275,Patrick Bailey,8,C,Pre-Game
+2026-07-11,823844,Cleveland Guardians,Miami Marlins,away,680757,Steven Kwan,9,LF,Pre-Game
+2026-07-11,823844,Miami Marlins,Cleveland Guardians,home,689414,Liam Hicks,1,DH,Pre-Game
+2026-07-11,823844,Miami Marlins,Cleveland Guardians,home,672640,Otto Lopez,2,SS,Pre-Game
+2026-07-11,823844,Miami Marlins,Cleveland Guardians,home,669065,Kyle Stowers,3,1B,Pre-Game
+2026-07-11,823844,Miami Marlins,Cleveland Guardians,home,669364,Xavier Edwards,4,2B,Pre-Game
+2026-07-11,823844,Miami Marlins,Cleveland Guardians,home,681715,Heriberto Hernández,5,LF,Pre-Game
+2026-07-11,823844,Miami Marlins,Cleveland Guardians,home,665052,Griffin Conine,6,RF,Pre-Game
+2026-07-11,823844,Miami Marlins,Cleveland Guardians,home,805300,Jakob Marsee,7,CF,Pre-Game
+2026-07-11,823844,Miami Marlins,Cleveland Guardians,home,691788,Joe Mack,8,C,Pre-Game
+2026-07-11,823844,Miami Marlins,Cleveland Guardians,home,691594,Javier Sanoja,9,3B,Pre-Game
