@@ -41,14 +41,14 @@ OUTPUT_COLUMNS = [
 def fetch_json(url: str, params: dict[str, Any]) -> dict | list:
     response = requests.get(url, params=params, timeout=30)
 
-    remaining_requests = response.headers.get("x-requests-remaining")
-    used_requests = response.headers.get("x-requests-used")
+    used = response.headers.get("x-requests-used")
+    remaining = response.headers.get("x-requests-remaining")
+    last_cost = response.headers.get("x-requests-last")
 
-    if remaining_requests is not None:
-        print(
-            f"API requests used: {used_requests}; "
-            f"remaining: {remaining_requests}"
-        )
+    print(
+        f"API usage — used: {used}, remaining: {remaining}, "
+        f"last request cost: {last_cost}"
+    )
 
     response.raise_for_status()
     return response.json()
@@ -74,10 +74,9 @@ def save_props(props: pd.DataFrame) -> None:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     props.to_csv(OUTPUT_PATH, index=False)
 
-    print(f"\nSaved {len(props)} sportsbook prop rows to {OUTPUT_PATH}")
+    print(f"Saved {len(props)} sportsbook prop rows to {OUTPUT_PATH}")
 
     if not props.empty:
-        print("\nFirst 30 sportsbook rows:")
         print(props.head(30).to_string(index=False))
 
 
@@ -104,21 +103,10 @@ def download_sportsbook_props() -> pd.DataFrame:
             f"Unexpected events response type: {type(events).__name__}"
         )
 
-    print(f"\nFound {len(events)} live or upcoming MLB events.")
-
-    if events:
-        print("\nFirst two events returned by the API:")
-        for event in events[:2]:
-            print(
-                {
-                    "id": event.get("id"),
-                    "commence_time": event.get("commence_time"),
-                    "away_team": event.get("away_team"),
-                    "home_team": event.get("home_team"),
-                }
-            )
+    print(f"Found {len(events)} live or upcoming MLB events.")
 
     rows: list[dict[str, Any]] = []
+    markets_parameter = ",".join(API_MARKETS)
 
     for event in events:
         event_id = event.get("id")
@@ -136,135 +124,106 @@ def download_sportsbook_props() -> pd.DataFrame:
             f"{SPORT}/events/{event_id}/odds"
         )
 
-        for api_market in API_MARKETS:
-            try:
-                odds_data = fetch_json(
-                    odds_url,
-                    {
-                        "apiKey": API_KEY,
-                        "regions": "us",
-                        "markets": api_market,
-                        "oddsFormat": "american",
-                        "dateFormat": "iso",
-                    },
-                )
-            except requests.HTTPError as exc:
-                status_code = (
-                    exc.response.status_code
-                    if exc.response is not None
-                    else "unknown"
-                )
+        try:
+            # One HTTP request per game for all four markets.
+            odds_data = fetch_json(
+                odds_url,
+                {
+                    "apiKey": API_KEY,
+                    "regions": "us",
+                    "markets": markets_parameter,
+                    "oddsFormat": "american",
+                    "dateFormat": "iso",
+                },
+            )
+        except requests.HTTPError as exc:
+            status_code = (
+                exc.response.status_code
+                if exc.response is not None
+                else "unknown"
+            )
 
-                response_text = (
-                    exc.response.text
-                    if exc.response is not None
-                    else "No response body"
-                )
-
-                print(
-                    f"Skipped {api_market} for event {event_id}. "
-                    f"HTTP status: {status_code}. "
-                    f"Response: {response_text}"
-                )
-                continue
-            except requests.RequestException as exc:
-                print(
-                    f"Skipped {api_market} for event {event_id}: {exc}"
-                )
-                continue
-
-            if not isinstance(odds_data, dict):
-                print(
-                    f"Unexpected response for {event_id}, "
-                    f"{api_market}: {type(odds_data).__name__}"
-                )
-                continue
-
-            bookmakers = odds_data.get("bookmakers", [])
+            response_text = (
+                exc.response.text
+                if exc.response is not None
+                else "No response body"
+            )
 
             print(
-                f"{api_market}: API returned "
-                f"{len(bookmakers)} bookmakers."
+                f"Skipped event {event_id}. "
+                f"HTTP status: {status_code}. "
+                f"Response: {response_text}"
             )
+            continue
+        except requests.RequestException as exc:
+            print(f"Skipped event {event_id}: {exc}")
+            continue
 
-            commence_time = odds_data.get(
-                "commence_time",
-                event.get("commence_time"),
+        if not isinstance(odds_data, dict):
+            print(
+                f"Unexpected response for event {event_id}: "
+                f"{type(odds_data).__name__}"
             )
-            home_team = odds_data.get(
-                "home_team",
-                event.get("home_team"),
-            )
-            away_team = odds_data.get(
-                "away_team",
-                event.get("away_team"),
-            )
+            continue
 
-            market_row_count = 0
+        commence_time = odds_data.get(
+            "commence_time",
+            event.get("commence_time"),
+        )
+        home_team = odds_data.get(
+            "home_team",
+            event.get("home_team"),
+        )
+        away_team = odds_data.get(
+            "away_team",
+            event.get("away_team"),
+        )
 
-            for bookmaker in bookmakers:
-                platform = bookmaker.get("title")
+        event_row_count = 0
+        bookmakers = odds_data.get("bookmakers", [])
 
-                bookmaker_markets = bookmaker.get("markets", [])
+        print(f"API returned {len(bookmakers)} bookmakers.")
 
-                print(
-                    f"  {platform}: returned "
-                    f"{len(bookmaker_markets)} market blocks."
-                )
+        for bookmaker in bookmakers:
+            platform = bookmaker.get("title")
 
-                for market in bookmaker_markets:
-                    market_key = market.get("key")
-                    normalized_market = MARKET_MAP.get(market_key)
+            for market in bookmaker.get("markets", []):
+                market_key = market.get("key")
+                normalized_market = MARKET_MAP.get(market_key)
 
-                    if not normalized_market:
-                        print(
-                            f"  Skipping unknown market key: {market_key}"
-                        )
+                if not normalized_market:
+                    continue
+
+                for outcome in market.get("outcomes", []):
+                    player = outcome.get("description")
+                    line = outcome.get("point")
+                    direction = outcome.get("name")
+
+                    if not player or line is None:
                         continue
 
-                    outcomes = market.get("outcomes", [])
-
-                    print(
-                        f"  {platform} - {market_key}: "
-                        f"{len(outcomes)} outcomes."
+                    rows.append(
+                        {
+                            "event_id": event_id,
+                            "commence_time": commence_time,
+                            "platform": platform,
+                            "player": player,
+                            "market": normalized_market,
+                            "direction": direction,
+                            "line": line,
+                            "sportsbook_odds": outcome.get("price"),
+                            "home_team": home_team,
+                            "away_team": away_team,
+                        }
                     )
 
-                    for outcome in outcomes:
-                        player = outcome.get("description")
-                        line = outcome.get("point")
-                        direction = outcome.get("name")
+                    event_row_count += 1
 
-                        if not player or line is None:
-                            continue
-
-                        rows.append(
-                            {
-                                "event_id": event_id,
-                                "commence_time": commence_time,
-                                "platform": platform,
-                                "player": player,
-                                "market": normalized_market,
-                                "direction": direction,
-                                "line": line,
-                                "sportsbook_odds": outcome.get("price"),
-                                "home_team": home_team,
-                                "away_team": away_team,
-                            }
-                        )
-
-                        market_row_count += 1
-
-            print(
-                f"{api_market}: collected "
-                f"{market_row_count} valid outcome rows."
-            )
+        print(f"Collected {event_row_count} rows for this event.")
 
     props = pd.DataFrame(rows, columns=OUTPUT_COLUMNS)
 
-    print(
-        f"\nTotal raw sportsbook rows collected before cleaning: "
-        f"{len(props)}"
-    )
+    print(f"\nCollected {len(props)} raw sportsbook rows total.")
 
     if not props.empty:
         props["player"] = props["player"].astype(str).str.strip()
@@ -305,14 +264,8 @@ def download_sportsbook_props() -> pd.DataFrame:
                 "player",
                 "market",
                 "direction",
-            ],
-            ascending=True,
+            ]
         ).reset_index(drop=True)
-
-        print(
-            f"Total sportsbook rows remaining after cleaning: "
-            f"{len(props)}"
-        )
 
         save_props(props)
         return props
@@ -322,8 +275,8 @@ def download_sportsbook_props() -> pd.DataFrame:
     if not existing_props.empty:
         print("\nWARNING: The API returned zero player props.")
         print(
-            "The existing non-empty platform_lines.csv "
-            "will be preserved instead of overwritten."
+            "Preserving the existing non-empty "
+            "data/platform_lines.csv file."
         )
         print(f"Preserved {len(existing_props)} existing rows.")
         return existing_props
