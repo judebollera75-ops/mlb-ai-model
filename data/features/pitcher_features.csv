@@ -2,32 +2,32 @@ pitcher_id,pitcher_name,team,recent_games,avg_ip,avg_k,avg_bb,avg_hits,avg_er,av
 694297,Brandon Pfaadt,Arizona Diamondbacks,5,2.933,2.4,0.6,3.0,1.0,0.6,5.47
 687075,Brandon Sproat,Milwaukee Brewers,5,4.4,6.0,1.8,2.8,1.8,0.6,5.388
 677952,Braxton Ashcraft,Pittsburgh Pirates,5,5.733,7.6,1.6,5.0,2.6,1.2,3.262
-663542,Bryan Hudson,Chicago White Sox,5,0.867,1.6,0.4,1.2,0.2,0.0,2.246
-696149,Bubba Chandler,Pittsburgh Pirates,5,5.467,3.4,2.4,5.4,2.8,0.4,4.648
-693645,Cam Schlittler,New York Yankees,5,6.0,8.4,1.4,5.2,1.6,1.2,1.848
+663542,Bryan Hudson,Chicago White Sox,5,0.8,1.0,0.2,1.2,0.2,0.0,2.248
+696149,Bubba Chandler,Pittsburgh Pirates,5,4.467,2.6,2.2,5.0,2.4,0.4,4.652
+693645,Cam Schlittler,New York Yankees,5,4.667,7.0,0.6,4.4,1.8,1.4,1.916
 663554,Casey Mize,Detroit Tigers,5,5.6,5.8,1.0,4.4,1.8,0.6,2.614
 650911,Cristopher Sánchez,Philadelphia Phillies,5,5.4,4.8,1.2,7.0,3.8,1.4,2.074
-700842,Eduardo Rivera,Boston Red Sox,1,3.333,3.0,0.0,1.0,0.0,0.0,0.0
-691587,Eury Pérez,Miami Marlins,5,5.467,6.2,0.8,2.0,0.6,0.6,4.394
-642547,Freddy Peralta,New York Mets,5,4.4,3.8,1.4,6.4,3.4,0.8,4.55
-695611,Gage Jump,Athletics,5,4.933,5.6,1.6,5.6,2.6,0.8,2.84
+700842,Eduardo Rivera,Boston Red Sox,2,2.167,1.5,0.0,0.5,0.0,0.0,0.0
+691587,Eury Pérez,Miami Marlins,5,4.4,5.4,1.0,2.0,0.4,0.4,4.17
+642547,Freddy Peralta,New York Mets,5,3.6,4.0,1.2,5.6,3.2,0.8,4.696
+695611,Gage Jump,Athletics,5,5.067,5.8,1.8,5.6,2.2,0.8,2.924
 643377,Griffin Jax,Tampa Bay Rays,5,5.2,6.4,0.8,4.0,1.6,1.0,3.546
 665871,Javier Assad,Chicago Cubs,5,4.8,2.8,1.4,4.0,1.8,1.2,4.12
-657746,Joe Ryan,Minnesota Twins,5,5.6,7.6,1.4,5.0,1.4,0.6,3.048
+657746,Joe Ryan,Minnesota Twins,5,5.6,7.2,1.8,5.0,1.2,0.4,2.984
 677958,Kumar Rocker,Texas Rangers,5,4.667,5.0,1.2,5.2,2.6,0.6,3.93
 680694,Kyle Bradish,Baltimore Orioles,5,6.267,6.6,2.4,4.8,2.4,0.8,3.892
-607536,Kyle Freeland,Colorado Rockies,5,5.8,5.0,0.4,8.0,4.4,0.8,7.51
+607536,Kyle Freeland,Colorado Rockies,5,4.867,4.4,0.4,6.0,3.2,0.6,7.388
 669302,Logan Gilbert,Seattle Mariners,5,6.733,7.4,1.0,3.2,1.4,0.2,3.39
 669461,Matthew Liberatore,St. Louis Cardinals,5,4.267,4.2,1.8,5.0,3.8,1.2,5.234
 666157,Nick Lodolo,Cincinnati Reds,5,5.0,4.2,2.0,5.0,2.0,0.0,5.33
 702070,Noah Cameron,Kansas City Royals,5,4.6,3.8,2.6,7.6,3.8,0.8,4.506
-676571,PJ Poulin,Washington Nationals,5,1.133,0.6,0.4,0.4,0.2,0.0,2.916
+676571,PJ Poulin,Washington Nationals,5,1.133,0.8,0.6,0.6,0.2,0.0,2.872
 663567,Peter Lambert,Houston Astros,5,5.867,5.4,1.4,4.2,1.8,1.4,3.35
 625643,Reynaldo López,Atlanta Braves,5,3.6,3.2,0.8,2.2,0.6,0.2,3.444
-696270,Ryan Johnson,Los Angeles Angels,5,4.4,3.8,0.8,4.6,2.6,1.4,10.236
+696270,Ryan Johnson,Los Angeles Angels,5,5.0,4.0,1.2,4.4,2.2,1.2,8.562
 675660,Shane Drohan,Milwaukee Brewers,5,5.2,4.8,1.8,5.6,1.6,0.6,3.24
-676440,Tanner Bibee,Cleveland Guardians,5,5.867,4.2,1.2,4.0,2.6,1.4,3.904
+676440,Tanner Bibee,Cleveland Guardians,5,4.467,2.6,1.0,3.6,2.2,1.0,3.924
 702056,Trey Yesavage,Toronto Blue Jays,5,6.133,4.8,2.6,3.2,2.4,1.0,3.55
-641816,Tyler Mahle,San Francisco Giants,5,4.867,4.2,1.6,5.0,3.2,0.6,5.8
+641816,Tyler Mahle,San Francisco Giants,5,4.267,3.4,1.8,3.6,2.0,0.4,5.69
 621111,Walker Buehler,San Diego Padres,5,4.933,5.4,1.8,5.6,3.8,1.4,4.318
 808967,Yoshinobu Yamamoto,Los Angeles Dodgers,5,7.067,6.2,1.2,3.4,1.4,0.4,2.602

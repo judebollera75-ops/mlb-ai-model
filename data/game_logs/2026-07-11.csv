@@ -14,57 +14,58 @@ pitcher_id,pitcher_name,team,game_date,innings,strikeouts,walks,hits,earned_runs
 675660,Shane Drohan,Milwaukee Brewers,2026-06-24,4.1,5,3,5,0,0,3.12
 675660,Shane Drohan,Milwaukee Brewers,2026-06-18,5.0,3,3,3,1,1,3.40
 675660,Shane Drohan,Milwaukee Brewers,2026-06-13,5.0,7,0,8,4,1,3.59
+696149,Bubba Chandler,Pittsburgh Pirates,2026-07-11,0.2,2,0,1,0,0,4.78
 696149,Bubba Chandler,Pittsburgh Pirates,2026-07-05,4.0,0,4,6,4,1,4.82
 696149,Bubba Chandler,Pittsburgh Pirates,2026-06-30,6.1,6,2,7,5,0,4.62
 696149,Bubba Chandler,Pittsburgh Pirates,2026-06-25,5.1,4,3,5,1,0,4.42
 696149,Bubba Chandler,Pittsburgh Pirates,2026-06-19,6.0,1,2,6,2,1,4.62
-696149,Bubba Chandler,Pittsburgh Pirates,2026-06-13,5.2,6,1,3,2,0,4.76
+696270,Ryan Johnson,Los Angeles Angels,2026-07-11,5.0,1,3,3,3,1,6.75
 696270,Ryan Johnson,Los Angeles Angels,2026-07-05,4.0,6,1,6,2,2,6.99
 696270,Ryan Johnson,Los Angeles Angels,2026-06-29,5.0,3,0,4,1,1,7.40
 696270,Ryan Johnson,Los Angeles Angels,2026-06-23,6.0,8,1,1,0,0,8.84
 696270,Ryan Johnson,Los Angeles Angels,2026-06-18,5.0,2,1,8,5,2,12.83
-696270,Ryan Johnson,Los Angeles Angels,2026-05-19,2.0,0,1,4,5,2,15.12
+657746,Joe Ryan,Minnesota Twins,2026-07-11,6.0,6,2,6,2,0,2.85
 657746,Joe Ryan,Minnesota Twins,2026-07-05,7.0,9,1,3,0,0,2.85
 657746,Joe Ryan,Minnesota Twins,2026-06-30,4.0,5,3,5,0,1,3.05
 657746,Joe Ryan,Minnesota Twins,2026-06-24,6.0,9,1,8,4,1,3.18
 657746,Joe Ryan,Minnesota Twins,2026-06-18,5.0,7,2,3,0,0,2.99
-657746,Joe Ryan,Minnesota Twins,2026-06-12,6.0,8,0,6,3,1,3.17
+695611,Gage Jump,Athletics,2026-07-11,5.2,7,2,5,1,0,3.51
 695611,Gage Jump,Athletics,2026-07-05,3.0,1,3,8,5,2,3.77
 695611,Gage Jump,Athletics,2026-06-29,4.2,5,0,11,5,2,2.93
 695611,Gage Jump,Athletics,2026-06-24,5.0,9,1,3,0,0,2.04
 695611,Gage Jump,Athletics,2026-06-18,7.0,7,3,1,0,0,2.37
-695611,Gage Jump,Athletics,2026-06-12,5.0,6,1,5,3,0,3.09
+663542,Bryan Hudson,Chicago White Sox,2026-07-11,1.0,0,0,0,0,0,2.20
 663542,Bryan Hudson,Chicago White Sox,2026-07-08,1.0,2,0,0,0,0,2.25
 663542,Bryan Hudson,Chicago White Sox,2026-07-03,0.2,2,0,2,0,0,2.31
 663542,Bryan Hudson,Chicago White Sox,2026-07-01,0.1,0,0,2,1,0,2.35
 663542,Bryan Hudson,Chicago White Sox,2026-06-28,1.0,1,1,2,0,0,2.13
-663542,Bryan Hudson,Chicago White Sox,2026-06-22,1.1,3,1,0,0,0,2.19
+607536,Kyle Freeland,Colorado Rockies,2026-07-11,1.0,1,0,0,0,0,7.37
 607536,Kyle Freeland,Colorado Rockies,2026-07-06,5.0,2,0,9,6,1,7.46
 607536,Kyle Freeland,Colorado Rockies,2026-07-01,5.0,7,1,6,2,0,7.25
 607536,Kyle Freeland,Colorado Rockies,2026-06-24,6.0,4,1,11,6,2,7.50
 607536,Kyle Freeland,Colorado Rockies,2026-06-19,7.1,8,0,4,2,0,7.36
-607536,Kyle Freeland,Colorado Rockies,2026-06-13,5.2,4,0,10,6,1,7.98
+641816,Tyler Mahle,San Francisco Giants,2026-07-11,2.0,2,1,1,0,0,5.55
 641816,Tyler Mahle,San Francisco Giants,2026-07-05,4.1,5,0,8,3,0,5.70
 641816,Tyler Mahle,San Francisco Giants,2026-06-29,4.1,3,3,4,4,1,5.67
 641816,Tyler Mahle,San Francisco Giants,2026-06-24,5.2,4,2,2,0,0,5.49
 641816,Tyler Mahle,San Francisco Giants,2026-05-26,5.0,3,3,3,3,1,6.04
-641816,Tyler Mahle,San Francisco Giants,2026-05-20,5.0,6,0,8,6,1,6.10
+693645,Cam Schlittler,New York Yankees,2026-07-11,0.1,0,0,2,2,2,2.16
 693645,Cam Schlittler,New York Yankees,2026-07-06,8.0,8,0,4,1,0,2.01
 693645,Cam Schlittler,New York Yankees,2026-06-30,4.0,5,1,7,6,4,2.08
 693645,Cam Schlittler,New York Yankees,2026-06-25,5.0,9,2,5,0,1,1.62
 693645,Cam Schlittler,New York Yankees,2026-06-19,6.0,13,0,4,0,0,1.71
-693645,Cam Schlittler,New York Yankees,2026-06-13,7.0,7,4,6,1,1,1.82
+676571,PJ Poulin,Washington Nationals,2026-07-11,1.0,2,1,1,0,0,2.75
 676571,PJ Poulin,Washington Nationals,2026-07-05,0.2,0,1,1,0,0,2.83
 676571,PJ Poulin,Washington Nationals,2026-06-28,2.0,0,1,0,0,0,2.88
 676571,PJ Poulin,Washington Nationals,2026-06-27,0.2,1,0,1,1,0,3.06
 676571,PJ Poulin,Washington Nationals,2026-06-24,1.1,1,0,0,0,0,2.84
-676571,PJ Poulin,Washington Nationals,2026-06-23,1.0,1,0,0,0,0,2.97
+700842,Eduardo Rivera,Boston Red Sox,2026-07-11,1.0,0,0,0,0,0,0.00
 700842,Eduardo Rivera,Boston Red Sox,2026-04-22,3.1,3,0,1,0,0,0.00
+642547,Freddy Peralta,New York Mets,2026-07-11,1.0,3,0,0,0,0,4.63
 642547,Freddy Peralta,New York Mets,2026-07-06,4.2,6,1,6,1,1,4.68
 642547,Freddy Peralta,New York Mets,2026-07-01,4.0,4,3,7,5,1,4.81
 642547,Freddy Peralta,New York Mets,2026-06-25,5.2,5,1,5,0,0,4.53
 642547,Freddy Peralta,New York Mets,2026-06-20,2.2,2,1,10,10,2,4.83
-642547,Freddy Peralta,New York Mets,2026-06-14,5.0,2,1,4,1,0,3.90
 669302,Logan Gilbert,Seattle Mariners,2026-07-04,7.1,7,0,1,0,0,3.19
 669302,Logan Gilbert,Seattle Mariners,2026-06-27,7.0,7,0,7,4,0,3.42
 669302,Logan Gilbert,Seattle Mariners,2026-06-21,6.1,8,2,3,1,1,3.29
@@ -75,16 +76,16 @@ pitcher_id,pitcher_name,team,game_date,innings,strikeouts,walks,hits,earned_runs
 643377,Griffin Jax,Tampa Bay Rays,2026-06-24,5.0,7,2,5,0,0,3.33
 643377,Griffin Jax,Tampa Bay Rays,2026-06-19,5.0,5,0,4,2,2,3.67
 643377,Griffin Jax,Tampa Bay Rays,2026-06-13,5.0,5,0,5,0,0,3.68
+676440,Tanner Bibee,Cleveland Guardians,2026-07-11,0.0,0,1,0,0,0,4.06
 676440,Tanner Bibee,Cleveland Guardians,2026-07-05,4.0,1,1,6,6,3,4.06
 676440,Tanner Bibee,Cleveland Guardians,2026-06-30,7.0,2,0,5,2,1,3.69
 676440,Tanner Bibee,Cleveland Guardians,2026-06-24,6.0,3,1,3,0,0,3.78
 676440,Tanner Bibee,Cleveland Guardians,2026-06-19,5.1,7,2,4,3,1,4.03
-676440,Tanner Bibee,Cleveland Guardians,2026-06-12,7.0,8,2,2,2,2,3.96
+691587,Eury Pérez,Miami Marlins,2026-07-11,1.0,1,1,2,0,0,3.79
 691587,Eury Pérez,Miami Marlins,2026-07-05,7.0,8,0,0,0,0,3.84
 691587,Eury Pérez,Miami Marlins,2026-06-30,5.1,8,4,2,1,1,4.21
 691587,Eury Pérez,Miami Marlins,2026-06-24,4.2,1,0,3,1,1,4.41
 691587,Eury Pérez,Miami Marlins,2026-05-27,4.0,9,0,3,0,0,4.60
-691587,Eury Pérez,Miami Marlins,2026-05-22,6.1,5,0,2,1,1,4.91
 650911,Cristopher Sánchez,Philadelphia Phillies,2026-07-06,3.1,1,1,12,9,3,2.62
 650911,Cristopher Sánchez,Philadelphia Phillies,2026-06-30,7.0,9,2,3,0,0,2.00
 650911,Cristopher Sánchez,Philadelphia Phillies,2026-06-25,5.0,6,1,7,5,1,2.13
