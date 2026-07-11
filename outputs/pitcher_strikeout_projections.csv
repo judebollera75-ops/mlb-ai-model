@@ -1,16 +1,16 @@
 pitcher_name,team,games_started,strikeouts,season_k_per_start,avg_k,projected_ks
-Kyle Hurt,Los Angeles Dodgers,0,37,inf,1.2,inf
+Kyle Hurt,Los Angeles Dodgers,1,37,37.0,1.2,11.94
 Hunter Greene,Cincinnati Reds,2,19,9.5,9.5,9.5
 Nolan McLean,New York Mets,19,125,6.578947368421052,7.6,7.293684210526315
-Ryan Weathers,New York Yankees,18,108,6.0,7.2,6.84
+Ryan Weathers,New York Yankees,18,110,6.111111111111111,7.2,6.873333333333333
 Braxton Ashcraft,Pittsburgh Pirates,18,122,6.777777777777778,6.4,6.513333333333333
-Tanner Gordon,Colorado Rockies,4,46,11.5,4.0,6.25
 Hunter Brown,Houston Astros,7,39,5.571428571428571,6.4,6.151428571428571
 Shota Imanaga,Chicago Cubs,19,105,5.526315789473684,6.4,6.137894736842105
 Chris Sale,Atlanta Braves,17,117,6.882352941176471,5.8,6.124705882352941
-Robbie Ray,San Francisco Giants,17,86,5.0588235294117645,6.2,5.857647058823529
+Robbie Ray,San Francisco Giants,18,88,4.888888888888889,6.2,5.806666666666667
 Parker Messick,Cleveland Guardians,19,110,5.7894736842105265,5.8,5.796842105263158
 Aaron Nola,Philadelphia Phillies,19,102,5.368421052631579,5.8,5.670526315789473
+Tanner Gordon,Colorado Rockies,5,47,9.4,4.0,5.619999999999999
 Zebby Matthews,Minnesota Twins,11,54,4.909090909090909,5.2,5.112727272727272
 Sean Burke,Chicago White Sox,15,115,7.666666666666667,4.0,5.1
 Jack Flaherty,Detroit Tigers,18,98,5.444444444444445,4.8,4.993333333333333
@@ -19,13 +19,13 @@ Sandy Alcantara,Miami Marlins,20,100,5.0,4.6,4.72
 Brandon Sproat,Milwaukee Brewers,15,84,5.6,4.0,4.4799999999999995
 Grayson Rodriguez,Los Angeles Angels,7,24,3.4285714285714284,4.6,4.248571428571428
 Brandon Young,Baltimore Orioles,15,67,4.466666666666667,3.8,4.0
+JP Sears,San Diego Padres,4,16,4.0,4.0,4.0
 Nick Martinez,Tampa Bay Rays,18,62,3.4444444444444446,4.0,3.833333333333333
-JP Sears,San Diego Padres,4,16,4.0,3.75,3.825
-Eduardo Rodriguez,Arizona Diamondbacks,18,74,4.111111111111111,3.6,3.753333333333333
+Eduardo Rodriguez,Arizona Diamondbacks,19,75,3.9473684210526314,3.6,3.7042105263157894
 Cal Quantrill,Texas Rangers,4,28,7.0,2.2,3.64
 Jacob Lopez,Athletics,11,43,3.909090909090909,3.4,3.5527272727272727
 Kyle Leahy,St. Louis Cardinals,18,75,4.166666666666667,3.0,3.3499999999999996
 Sonny Gray,Boston Red Sox,17,85,5.0,2.6,3.32
 Luinder Avila,Kansas City Royals,9,50,5.555555555555555,2.2,3.2066666666666666
+Shane Bieber,Toronto Blue Jays,4,11,2.75,2.75,2.75
 Carson Palmquist,Washington Nationals,3,11,3.6666666666666665,2.2,2.6399999999999997
-Shane Bieber,Toronto Blue Jays,4,10,2.5,2.5,2.5
