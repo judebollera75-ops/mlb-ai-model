@@ -1435,6 +1435,34 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,823280,606466,Ketel Marte,Arizona Diamondbacks,San Diego Padres,4,3,1,1,0,0,2,0,0,1,0,0,0,0
 2026-07-08,823279,606466,Ketel Marte,Arizona Diamondbacks,San Diego Padres,5,5,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-09,823277,606466,Ketel Marte,Arizona Diamondbacks,San Diego Padres,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-24,823232,606992,Eric Haase,San Francisco Giants,Miami Marlins,3,3,1,1,0,0,2,1,1,0,0,0,0,0
+2026-04-30,823471,606992,Eric Haase,San Francisco Giants,Philadelphia Phillies,3,3,1,0,0,0,1,1,0,0,1,0,0,0
+2026-05-01,822990,606992,Eric Haase,San Francisco Giants,Tampa Bay Rays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-03,822987,606992,Eric Haase,San Francisco Giants,Tampa Bay Rays,4,4,1,1,0,0,2,0,0,0,1,0,0,0
+2026-05-09,823224,606992,Eric Haase,San Francisco Giants,Pittsburgh Pirates,4,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-12,823951,606992,Eric Haase,San Francisco Giants,Los Angeles Dodgers,4,4,2,0,0,2,8,2,2,0,1,0,0,0
+2026-05-14,823950,606992,Eric Haase,San Francisco Giants,Los Angeles Dodgers,3,2,0,0,0,0,0,1,0,1,0,0,0,0
+2026-05-17,825006,606992,Eric Haase,San Francisco Giants,Athletics,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-18,825087,606992,Eric Haase,San Francisco Giants,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-26,823216,606992,Eric Haase,San Francisco Giants,Arizona Diamondbacks,3,3,2,0,0,1,5,1,1,0,0,0,0,0
+2026-05-27,823217,606992,Eric Haase,San Francisco Giants,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-30,824352,606992,Eric Haase,San Francisco Giants,Colorado Rockies,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-01,823781,606992,Eric Haase,San Francisco Giants,Milwaukee Brewers,4,3,1,1,0,0,2,0,0,1,2,0,0,0
+2026-06-04,823779,606992,Eric Haase,San Francisco Giants,Milwaukee Brewers,5,4,1,0,0,1,4,1,4,1,2,0,0,0
+2026-06-05,824673,606992,Eric Haase,San Francisco Giants,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-06,824669,606992,Eric Haase,San Francisco Giants,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-08,823218,606992,Eric Haase,San Francisco Giants,Washington Nationals,4,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-10,823215,606992,Eric Haase,San Francisco Giants,Washington Nationals,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-13,823213,606992,Eric Haase,San Francisco Giants,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-17,824913,606992,Eric Haase,San Francisco Giants,Atlanta Braves,4,2,1,0,0,0,1,1,0,1,0,0,0,0
+2026-06-20,823854,606992,Eric Haase,San Francisco Giants,Miami Marlins,3,3,0,0,0,0,0,0,0,0,3,0,0,0
+2026-06-24,823208,606992,Eric Haase,San Francisco Giants,Athletics,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-25,823209,606992,Eric Haase,San Francisco Giants,Athletics,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-28,823204,606992,Eric Haase,San Francisco Giants,Atlanta Braves,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-06-29,825065,606992,Eric Haase,San Francisco Giants,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-04,824334,606992,Eric Haase,San Francisco Giants,Colorado Rockies,5,3,0,0,0,0,0,0,0,1,2,0,0,1
+2026-07-06,823205,606992,Eric Haase,San Francisco Giants,Toronto Blue Jays,4,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-08,823202,606992,Eric Haase,San Francisco Giants,Toronto Blue Jays,2,2,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-26,823486,607043,Brandon Nimmo,Texas Rangers,Philadelphia Phillies,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-03-28,823488,607043,Brandon Nimmo,Texas Rangers,Philadelphia Phillies,5,5,2,0,0,0,2,2,0,0,1,1,0,0
 2026-03-29,823487,607043,Brandon Nimmo,Texas Rangers,Philadelphia Phillies,5,4,2,0,0,1,5,1,2,0,0,0,0,1
@@ -15901,16 +15929,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,823607,701807,Carson Benge,New York Mets,Kansas City Royals,5,3,2,0,0,0,2,2,1,2,1,1,0,0
 2026-07-08,823605,701807,Carson Benge,New York Mets,Kansas City Royals,4,3,2,0,0,0,2,1,0,1,0,0,0,0
 2026-07-09,823606,701807,Carson Benge,New York Mets,Kansas City Royals,4,3,2,0,0,0,2,2,1,1,0,1,0,0
-2026-06-26,823206,701852,Drew Cavanaugh,San Francisco Giants,Atlanta Braves,4,3,1,0,0,0,1,0,0,1,1,0,0,0
-2026-06-27,823207,701852,Drew Cavanaugh,San Francisco Giants,Atlanta Braves,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-29,825065,701852,Drew Cavanaugh,San Francisco Giants,Arizona Diamondbacks,1,1,1,0,0,0,1,0,1,0,0,0,0,0
-2026-06-30,825066,701852,Drew Cavanaugh,San Francisco Giants,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-01,825064,701852,Drew Cavanaugh,San Francisco Giants,Arizona Diamondbacks,4,4,2,0,0,0,2,0,1,0,1,0,0,0
-2026-07-03,824336,701852,Drew Cavanaugh,San Francisco Giants,Colorado Rockies,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-05,824333,701852,Drew Cavanaugh,San Francisco Giants,Colorado Rockies,4,3,0,0,0,0,0,0,0,0,2,0,0,0
-2026-07-07,823203,701852,Drew Cavanaugh,San Francisco Giants,Toronto Blue Jays,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-08,823202,701852,Drew Cavanaugh,San Francisco Giants,Toronto Blue Jays,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-09,823201,701852,Drew Cavanaugh,San Francisco Giants,Colorado Rockies,4,3,2,0,0,0,2,1,0,1,1,0,0,0
 2026-03-26,823163,702284,Cole Young,Seattle Mariners,Cleveland Guardians,3,3,0,0,0,0,0,0,0,0,3,0,0,0
 2026-03-27,823162,702284,Cole Young,Seattle Mariners,Cleveland Guardians,3,3,1,0,0,1,4,1,3,0,1,0,0,0
 2026-03-28,823161,702284,Cole Young,Seattle Mariners,Cleveland Guardians,5,5,1,1,0,0,2,1,0,0,3,0,0,0

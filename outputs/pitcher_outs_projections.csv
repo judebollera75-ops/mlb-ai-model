@@ -1,31 +1,31 @@
 date,game_id,pitcher_id,pitcher_name,team,side,history_games,last3_avg_outs,last5_avg_outs,season_avg_outs,projected_outs,projection_confidence
-2026-07-10,824252,605400,Aaron Nola,Philadelphia Phillies,away,0,,,,15.0,LOW
-2026-07-10,824252,656427,Jack Flaherty,Detroit Tigers,home,0,,,,15.0,LOW
-2026-07-10,822709,677960,Ryan Weathers,New York Yankees,away,0,,,,15.0,LOW
-2026-07-10,822709,687223,Carson Palmquist,Washington Nationals,home,0,,,,15.0,LOW
-2026-07-10,824817,679883,Luinder Avila,Kansas City Royals,away,0,,,,15.0,LOW
-2026-07-10,824817,687064,Brandon Young,Baltimore Orioles,home,0,,,,15.0,LOW
-2026-07-10,824493,684007,Shota Imanaga,Chicago Cubs,away,0,,,,15.0,LOW
-2026-07-10,824493,668881,Hunter Greene,Cincinnati Reds,home,0,,,,15.0,LOW
-2026-07-10,822955,622491,Luis Castillo,Seattle Mariners,away,0,,,,15.0,LOW
-2026-07-10,822955,607259,Nick Martinez,Tampa Bay Rays,home,0,,,,15.0,LOW
-2026-07-10,823845,800048,Parker Messick,Cleveland Guardians,away,0,,,,15.0,LOW
-2026-07-10,823845,645261,Sandy Alcantara,Miami Marlins,home,0,,,,15.0,LOW
-2026-07-10,823604,543243,Sonny Gray,Boston Red Sox,away,0,,,,15.0,LOW
-2026-07-10,823604,690997,Nolan McLean,New York Mets,home,0,,,,15.0,LOW
-2026-07-10,824575,682052,Jacob Lopez,Athletics,away,0,,,,15.0,LOW
-2026-07-10,824575,680732,Sean Burke,Chicago White Sox,home,0,,,,15.0,LOW
-2026-07-10,822878,686613,Hunter Brown,Houston Astros,away,0,,,,15.0,LOW
-2026-07-10,822878,615698,Cal Quantrill,Texas Rangers,home,0,,,,15.0,LOW
-2026-07-10,823685,680570,Grayson Rodriguez,Los Angeles Angels,away,0,,,,15.0,LOW
-2026-07-10,823685,805673,Zebby Matthews,Minnesota Twins,home,0,,,,15.0,LOW
-2026-07-10,823033,519242,Chris Sale,Atlanta Braves,away,0,,,,15.0,LOW
-2026-07-10,823033,681517,Kyle Leahy,St. Louis Cardinals,home,0,,,,15.0,LOW
-2026-07-10,823278,669456,Shane Bieber,Toronto Blue Jays,away,0,,,,15.0,LOW
-2026-07-10,823278,676664,JP Sears,San Diego Padres,home,0,,,,15.0,LOW
-2026-07-10,823927,593958,Eduardo Rodriguez,Arizona Diamondbacks,away,0,,,,15.0,LOW
-2026-07-10,823927,669165,Kyle Hurt,Los Angeles Dodgers,home,0,,,,15.0,LOW
-2026-07-10,823200,685299,Tanner Gordon,Colorado Rockies,away,0,,,,15.0,LOW
-2026-07-10,823200,592662,Robbie Ray,San Francisco Giants,home,0,,,,15.0,LOW
-2026-07-10,823357,687075,Brandon Sproat,Milwaukee Brewers,away,0,,,,15.0,LOW
-2026-07-10,823357,677952,Braxton Ashcraft,Pittsburgh Pirates,home,0,,,,15.0,LOW
+2026-07-10,824252,605400,Aaron Nola,Philadelphia Phillies,away,5,15.33,16.0,16.0,15.67,HIGH
+2026-07-10,824252,656427,Jack Flaherty,Detroit Tigers,home,5,15.0,14.0,14.0,14.5,HIGH
+2026-07-10,822709,677960,Ryan Weathers,New York Yankees,away,5,20.33,17.0,17.0,18.67,HIGH
+2026-07-10,822709,687223,Carson Palmquist,Washington Nationals,home,5,5.0,5.6,5.6,6.0,HIGH
+2026-07-10,824817,679883,Luinder Avila,Kansas City Royals,away,5,5.0,6.6,6.6,6.0,HIGH
+2026-07-10,824817,687064,Brandon Young,Baltimore Orioles,home,5,15.33,15.6,15.6,15.47,HIGH
+2026-07-10,824493,684007,Shota Imanaga,Chicago Cubs,away,5,19.0,17.4,17.4,18.2,HIGH
+2026-07-10,824493,668881,Hunter Greene,Cincinnati Reds,home,2,15.5,15.5,15.5,15.5,LOW
+2026-07-10,822955,622491,Luis Castillo,Seattle Mariners,away,5,13.67,14.0,14.0,13.83,HIGH
+2026-07-10,822955,607259,Nick Martinez,Tampa Bay Rays,home,5,18.0,18.0,18.0,18.0,HIGH
+2026-07-10,823845,800048,Parker Messick,Cleveland Guardians,away,5,19.67,18.4,18.4,19.03,HIGH
+2026-07-10,823845,645261,Sandy Alcantara,Miami Marlins,home,5,19.33,21.2,21.2,20.27,HIGH
+2026-07-10,823604,543243,Sonny Gray,Boston Red Sox,away,5,13.0,13.8,13.8,13.4,HIGH
+2026-07-10,823604,690997,Nolan McLean,New York Mets,home,5,20.0,18.2,18.2,19.1,HIGH
+2026-07-10,824575,682052,Jacob Lopez,Athletics,away,5,15.33,14.2,14.2,14.77,HIGH
+2026-07-10,824575,680732,Sean Burke,Chicago White Sox,home,5,16.33,15.8,15.8,16.07,HIGH
+2026-07-10,822878,686613,Hunter Brown,Houston Astros,away,5,14.67,15.2,15.2,14.93,HIGH
+2026-07-10,822878,615698,Cal Quantrill,Texas Rangers,home,5,9.33,8.0,8.0,8.67,HIGH
+2026-07-10,823685,680570,Grayson Rodriguez,Los Angeles Angels,away,5,14.0,14.0,14.0,14.0,HIGH
+2026-07-10,823685,805673,Zebby Matthews,Minnesota Twins,home,5,17.33,18.2,18.2,17.77,HIGH
+2026-07-10,823033,519242,Chris Sale,Atlanta Braves,away,5,17.0,17.4,17.4,17.2,HIGH
+2026-07-10,823033,681517,Kyle Leahy,St. Louis Cardinals,home,5,14.0,14.4,14.4,14.2,HIGH
+2026-07-10,823278,669456,Shane Bieber,Toronto Blue Jays,away,4,14.0,13.25,13.25,13.62,MEDIUM
+2026-07-10,823278,676664,JP Sears,San Diego Padres,home,4,14.0,14.75,14.75,14.38,MEDIUM
+2026-07-10,823927,593958,Eduardo Rodriguez,Arizona Diamondbacks,away,5,16.0,16.8,16.8,16.4,HIGH
+2026-07-10,823927,669165,Kyle Hurt,Los Angeles Dodgers,home,5,3.0,3.0,3.0,6.0,HIGH
+2026-07-10,823200,685299,Tanner Gordon,Colorado Rockies,away,5,9.0,10.2,10.2,9.6,HIGH
+2026-07-10,823200,592662,Robbie Ray,San Francisco Giants,home,5,17.67,17.0,17.0,17.33,HIGH
+2026-07-10,823357,687075,Brandon Sproat,Milwaukee Brewers,away,5,15.67,13.4,13.4,14.53,HIGH
+2026-07-10,823357,677952,Braxton Ashcraft,Pittsburgh Pirates,home,5,17.67,17.8,17.8,17.73,HIGH

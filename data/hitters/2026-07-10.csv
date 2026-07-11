@@ -179,24 +179,24 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,668885,Austin Martin,7,RF,Final
 2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,605170,Victor Caratini,8,1B,Final
 2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,807712,Luke Keaschall,9,CF,Final
-2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,671739,Michael Harris II,1,CF,Game Over
-2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,645277,Ozzie Albies,2,2B,Game Over
-2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,621566,Matt Olson,3,1B,Game Over
-2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,686948,Drake Baldwin,4,C,Game Over
-2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,643289,Mauricio Dubón,5,LF,Game Over
-2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,642201,Eli White,6,RF,Game Over
-2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,663586,Austin Riley,7,3B,Game Over
-2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,642086,Dominic Smith,8,DH,Game Over
-2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,622761,Jorge Mateo,9,SS,Game Over
-2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,802139,JJ Wetherholt,1,2B,Game Over
-2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,671056,Iván Herrera,2,DH,Game Over
-2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691023,Jordan Walker,3,RF,Game Over
-2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,663457,Lars Nootbaar,4,LF,Game Over
-2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,676475,Alec Burleson,5,1B,Game Over
-2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691026,Masyn Winn,6,SS,Game Over
-2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,701675,Nathan Church,7,CF,Game Over
-2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691458,Blaze Jordan,8,3B,Game Over
-2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,699625,Jimmy Crooks,9,C,Game Over
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,671739,Michael Harris II,1,CF,Final
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,645277,Ozzie Albies,2,2B,Final
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,621566,Matt Olson,3,1B,Final
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,686948,Drake Baldwin,4,C,Final
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,643289,Mauricio Dubón,5,LF,Final
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,642201,Eli White,6,RF,Final
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,663586,Austin Riley,7,3B,Final
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,642086,Dominic Smith,8,DH,Final
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,622761,Jorge Mateo,9,SS,Final
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,802139,JJ Wetherholt,1,2B,Final
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,671056,Iván Herrera,2,DH,Final
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691023,Jordan Walker,3,RF,Final
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,663457,Lars Nootbaar,4,LF,Final
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,676475,Alec Burleson,5,1B,Final
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691026,Masyn Winn,6,SS,Final
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,701675,Nathan Church,7,CF,Final
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691458,Blaze Jordan,8,3B,Final
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,699625,Jimmy Crooks,9,C,Final
 2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,676391,Ernie Clement,1,2B,Final
 2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,665489,Vladimir Guerrero Jr.,2,1B,Final
 2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,672960,Kazuma Okamoto,3,3B,Final
@@ -233,21 +233,21 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,606192,Teoscar Hernández,7,LF,Final
 2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,500743,Miguel Rojas,8,2B,Final
 2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,687221,Dalton Rushing,9,1B,Final
-2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,664983,Jake McCarthy,1,LF,In Progress
-2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,691720,Kyle Karros,2,3B,In Progress
-2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,694249,Cole Carrigg,3,CF,In Progress
-2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,696100,Hunter Goodman,4,C,In Progress
-2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,666397,Edouard Julien,5,2B,In Progress
-2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,671289,Tyler Freeman,6,RF,In Progress
-2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,650489,Willi Castro,7,SS,In Progress
-2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,666160,Mickey Moniak,8,DH,In Progress
-2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,687859,Troy Johnston,9,1B,In Progress
-2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,687529,Grant McCray,1,LF,In Progress
-2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,650333,Luis Arraez,2,2B,In Progress
-2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,669477,Casey Schmitt,3,3B,In Progress
-2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,646240,Rafael Devers,4,DH,In Progress
-2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,642715,Willy Adames,5,SS,In Progress
-2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,805811,Bryce Eldridge,6,1B,In Progress
-2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,808982,Jung Hoo Lee,7,RF,In Progress
-2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,687551,Drew Gilbert,8,CF,In Progress
-2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,701852,Drew Cavanaugh,9,C,In Progress
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,664983,Jake McCarthy,1,LF,Final
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,691720,Kyle Karros,2,3B,Final
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,694249,Cole Carrigg,3,CF,Final
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,696100,Hunter Goodman,4,C,Final
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,666397,Edouard Julien,5,2B,Final
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,671289,Tyler Freeman,6,RF,Final
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,650489,Willi Castro,7,SS,Final
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,666160,Mickey Moniak,8,DH,Final
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,687859,Troy Johnston,9,1B,Final
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,687529,Grant McCray,1,LF,Final
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,650333,Luis Arraez,2,2B,Final
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,669477,Casey Schmitt,3,3B,Final
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,646240,Rafael Devers,4,DH,Final
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,642715,Willy Adames,5,SS,Final
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,805811,Bryce Eldridge,6,1B,Final
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,808982,Jung Hoo Lee,7,RF,Final
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,687551,Drew Gilbert,8,CF,Final
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,606992,Eric Haase,9,PR,Final
