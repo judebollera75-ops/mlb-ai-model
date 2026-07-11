@@ -1,36 +1,97 @@
-import requests
-import pandas as pd
+from datetime import date
+from pathlib import Path
 
-def download_pitchers(target_date="2026-07-10"):
+import pandas as pd
+import requests
+
+
+OUTPUT_DIRECTORY = Path("data/pitchers")
+
+
+def download_pitchers(target_date=None):
+    if target_date is None:
+        target_date = date.today().isoformat()
+
+    OUTPUT_DIRECTORY.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
     url = "https://statsapi.mlb.com/api/v1/schedule"
+
     params = {
         "sportId": 1,
         "date": target_date,
-        "hydrate": "probablePitcher"
+        "hydrate": "probablePitcher",
     }
 
-    data = requests.get(url, params=params).json()
+    response = requests.get(
+        url,
+        params=params,
+        timeout=30,
+    )
+
+    response.raise_for_status()
+    data = response.json()
 
     rows = []
 
-    for d in data.get("dates", []):
-        for g in d.get("games", []):
+    for schedule_date in data.get("dates", []):
+        actual_date = schedule_date.get(
+            "date",
+            target_date,
+        )
+
+        for game in schedule_date.get("games", []):
+
             for side in ["away", "home"]:
-                pitcher = g["teams"][side].get("probablePitcher")
 
-                if pitcher:
-                    rows.append({
-                        "date": target_date,
-                        "game_id": g["gamePk"],
-                        "team": g["teams"][side]["team"]["name"],
-                        "pitcher_id": pitcher["id"],
-                        "pitcher_name": pitcher["fullName"],
-                        "side": side
-                    })
+                pitcher = (
+                    game.get("teams", {})
+                    .get(side, {})
+                    .get("probablePitcher")
+                )
 
-    df = pd.DataFrame(rows)
-    df.to_csv(f"data/pitchers/{target_date}.csv", index=False)
-    return df
+                if pitcher is None:
+                    continue
+
+                rows.append(
+                    {
+                        "date": actual_date,
+                        "game_id": game.get("gamePk"),
+                        "team": (
+                            game.get("teams", {})
+                            .get(side, {})
+                            .get("team", {})
+                            .get("name")
+                        ),
+                        "pitcher_id": pitcher.get("id"),
+                        "pitcher_name": pitcher.get("fullName"),
+                        "side": side,
+                    }
+                )
+
+    pitchers = pd.DataFrame(rows)
+
+    output_path = (
+        OUTPUT_DIRECTORY
+        / f"{target_date}.csv"
+    )
+
+    pitchers.to_csv(
+        output_path,
+        index=False,
+    )
+
+    print(
+        f"Saved {len(pitchers)} pitchers to {output_path}"
+    )
+
+    if not pitchers.empty:
+        print(pitchers.to_string(index=False))
+
+    return pitchers
+
 
 if __name__ == "__main__":
-    print(download_pitchers())
+    download_pitchers()
