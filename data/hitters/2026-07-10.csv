@@ -17,22 +17,22 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,656716,Zach McKinstry,7,2B,Final
 2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,681546,James Outman,8,CF,Final
 2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,668670,Jake Rogers,9,C,Final
-2026-07-10,822709,New York Yankees,Washington Nationals,away,641857,Ryan McMahon,1,3B,In Progress
+2026-07-10,822709,New York Yankees,Washington Nationals,away,683011,Anthony Volpe,1,SS,In Progress
 2026-07-10,822709,New York Yankees,Washington Nationals,away,700250,Ben Rice,2,DH,In Progress
 2026-07-10,822709,New York Yankees,Washington Nationals,away,663757,Trent Grisham,3,CF,In Progress
 2026-07-10,822709,New York Yankees,Washington Nationals,away,502671,Paul Goldschmidt,4,1B,In Progress
 2026-07-10,822709,New York Yankees,Washington Nationals,away,641355,Cody Bellinger,5,LF,In Progress
 2026-07-10,822709,New York Yankees,Washington Nationals,away,691176,Jasson Domínguez,6,RF,In Progress
 2026-07-10,822709,New York Yankees,Washington Nationals,away,665862,Jazz Chisholm Jr.,7,2B,In Progress
-2026-07-10,822709,New York Yankees,Washington Nationals,away,676609,José Caballero,8,SS,In Progress
+2026-07-10,822709,New York Yankees,Washington Nationals,away,676609,José Caballero,8,3B,In Progress
 2026-07-10,822709,New York Yankees,Washington Nationals,away,669224,Austin Wells,9,C,In Progress
 2026-07-10,822709,Washington Nationals,New York Yankees,home,695578,James Wood,1,RF,In Progress
 2026-07-10,822709,Washington Nationals,New York Yankees,home,678554,Curtis Mead,2,3B,In Progress
 2026-07-10,822709,Washington Nationals,New York Yankees,home,686611,Dylan Crews,3,LF,In Progress
 2026-07-10,822709,Washington Nationals,New York Yankees,home,682928,CJ Abrams,4,SS,In Progress
 2026-07-10,822709,Washington Nationals,New York Yankees,home,696285,Jacob Young,5,CF,In Progress
-2026-07-10,822709,Washington Nationals,New York Yankees,home,665953,Andrés Chaparro,6,DH,In Progress
-2026-07-10,822709,Washington Nationals,New York Yankees,home,683083,Nasim Nuñez,7,2B,In Progress
+2026-07-10,822709,Washington Nationals,New York Yankees,home,695734,Daylen Lile,6,DH,In Progress
+2026-07-10,822709,Washington Nationals,New York Yankees,home,678391,Jorbit Vivas,7,2B,In Progress
 2026-07-10,822709,Washington Nationals,New York Yankees,home,671277,Luis García Jr.,8,1B,In Progress
 2026-07-10,822709,Washington Nationals,New York Yankees,home,660688,Keibert Ruiz,9,C,In Progress
 2026-07-10,824817,Kansas City Royals,Baltimore Orioles,away,695600,Carter Jensen,1,C,Final
@@ -107,24 +107,24 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,665052,Griffin Conine,7,PH,Final
 2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,805300,Jakob Marsee,8,CF,Final
 2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,691788,Joe Mack,9,C,Final
-2026-07-10,823604,Boston Red Sox,New York Mets,away,678011,Anthony Seigler,1,2B,In Progress
-2026-07-10,823604,Boston Red Sox,New York Mets,away,678882,Ceddanne Rafaela,2,CF,In Progress
-2026-07-10,823604,Boston Red Sox,New York Mets,away,677800,Wilyer Abreu,3,RF,In Progress
-2026-07-10,823604,Boston Red Sox,New York Mets,away,663853,Romy Gonzalez,4,1B,In Progress
-2026-07-10,823604,Boston Red Sox,New York Mets,away,807799,Masataka Yoshida,5,DH,In Progress
-2026-07-10,823604,Boston Red Sox,New York Mets,away,702332,Caleb Durbin,6,3B,In Progress
-2026-07-10,823604,Boston Red Sox,New York Mets,away,680776,Jarren Duran,7,LF,In Progress
-2026-07-10,823604,Boston Red Sox,New York Mets,away,657136,Connor Wong,8,C,In Progress
-2026-07-10,823604,Boston Red Sox,New York Mets,away,691907,Tsung-Che Cheng,9,SS,In Progress
-2026-07-10,823604,New York Mets,Boston Red Sox,home,805999,A.J. Ewing,1,2B,In Progress
-2026-07-10,823604,New York Mets,Boston Red Sox,home,665742,Juan Soto,2,LF,In Progress
-2026-07-10,823604,New York Mets,Boston Red Sox,home,596019,Francisco Lindor,3,SS,In Progress
-2026-07-10,823604,New York Mets,Boston Red Sox,home,701807,Carson Benge,4,RF,In Progress
-2026-07-10,823604,New York Mets,Boston Red Sox,home,593871,Jorge Polanco,5,DH,In Progress
-2026-07-10,823604,New York Mets,Boston Red Sox,home,676724,Jared Young,6,1B,In Progress
-2026-07-10,823604,New York Mets,Boston Red Sox,home,682626,Francisco Alvarez,7,C,In Progress
-2026-07-10,823604,New York Mets,Boston Red Sox,home,683146,Brett Baty,8,3B,In Progress
-2026-07-10,823604,New York Mets,Boston Red Sox,home,621438,Tyrone Taylor,9,CF,In Progress
+2026-07-10,823604,Boston Red Sox,New York Mets,away,678011,Anthony Seigler,1,2B,Final
+2026-07-10,823604,Boston Red Sox,New York Mets,away,678882,Ceddanne Rafaela,2,CF,Final
+2026-07-10,823604,Boston Red Sox,New York Mets,away,677800,Wilyer Abreu,3,RF,Final
+2026-07-10,823604,Boston Red Sox,New York Mets,away,663853,Romy Gonzalez,4,1B,Final
+2026-07-10,823604,Boston Red Sox,New York Mets,away,807799,Masataka Yoshida,5,DH,Final
+2026-07-10,823604,Boston Red Sox,New York Mets,away,702332,Caleb Durbin,6,3B,Final
+2026-07-10,823604,Boston Red Sox,New York Mets,away,680776,Jarren Duran,7,LF,Final
+2026-07-10,823604,Boston Red Sox,New York Mets,away,657136,Connor Wong,8,C,Final
+2026-07-10,823604,Boston Red Sox,New York Mets,away,691907,Tsung-Che Cheng,9,SS,Final
+2026-07-10,823604,New York Mets,Boston Red Sox,home,805999,A.J. Ewing,1,2B,Final
+2026-07-10,823604,New York Mets,Boston Red Sox,home,665742,Juan Soto,2,LF,Final
+2026-07-10,823604,New York Mets,Boston Red Sox,home,596019,Francisco Lindor,3,SS,Final
+2026-07-10,823604,New York Mets,Boston Red Sox,home,701807,Carson Benge,4,RF,Final
+2026-07-10,823604,New York Mets,Boston Red Sox,home,593871,Jorge Polanco,5,DH,Final
+2026-07-10,823604,New York Mets,Boston Red Sox,home,676724,Jared Young,6,1B,Final
+2026-07-10,823604,New York Mets,Boston Red Sox,home,682626,Francisco Alvarez,7,C,Final
+2026-07-10,823604,New York Mets,Boston Red Sox,home,683146,Brett Baty,8,3B,Final
+2026-07-10,823604,New York Mets,Boston Red Sox,home,621438,Tyrone Taylor,9,CF,Final
 2026-07-10,824575,Athletics,Chicago White Sox,away,671732,Lawrence Butler,1,RF,Final
 2026-07-10,824575,Athletics,Chicago White Sox,away,666126,Carlos Cortes,2,P,Final
 2026-07-10,824575,Athletics,Chicago White Sox,away,687515,Colby Thomas,3,LF,Final
@@ -143,42 +143,42 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-10,824575,Chicago White Sox,Athletics,home,643217,Andrew Benintendi,7,DH,Final
 2026-07-10,824575,Chicago White Sox,Athletics,home,691019,Kyle Teel,8,C,Final
 2026-07-10,824575,Chicago White Sox,Athletics,home,671976,Tristan Peters,9,CF,Final
-2026-07-10,822878,Houston Astros,Texas Rangers,away,665161,Jeremy Peña,1,SS,In Progress
-2026-07-10,822878,Houston Astros,Texas Rangers,away,670541,Yordan Alvarez,2,DH,In Progress
-2026-07-10,822878,Houston Astros,Texas Rangers,away,670623,Isaac Paredes,3,3B,In Progress
-2026-07-10,822878,Houston Astros,Texas Rangers,away,572233,Christian Walker,4,1B,In Progress
-2026-07-10,822878,Houston Astros,Texas Rangers,away,514888,Jose Altuve,5,2B,In Progress
-2026-07-10,822878,Houston Astros,Texas Rangers,away,701305,Zach Dezenzo,6,PH,In Progress
-2026-07-10,822878,Houston Astros,Texas Rangers,away,701358,Cam Smith,7,RF,In Progress
-2026-07-10,822878,Houston Astros,Texas Rangers,away,673237,Yainer Diaz,8,C,In Progress
-2026-07-10,822878,Houston Astros,Texas Rangers,away,694728,Brice Matthews,9,CF,In Progress
-2026-07-10,822878,Texas Rangers,Houston Astros,home,553869,Elias Díaz,1,DH,In Progress
-2026-07-10,822878,Texas Rangers,Houston Astros,home,694671,Wyatt Langford,2,LF,In Progress
-2026-07-10,822878,Texas Rangers,Houston Astros,home,673962,Josh Jung,3,3B,In Progress
-2026-07-10,822878,Texas Rangers,Houston Astros,home,607043,Brandon Nimmo,4,RF,In Progress
-2026-07-10,822878,Texas Rangers,Houston Astros,home,669394,Jake Burger,5,1B,In Progress
-2026-07-10,822878,Texas Rangers,Houston Astros,home,677649,Ezequiel Duran,6,SS,In Progress
-2026-07-10,822878,Texas Rangers,Houston Astros,home,694497,Evan Carter,7,CF,In Progress
-2026-07-10,822878,Texas Rangers,Houston Astros,home,679822,Justin Foscue,8,2B,In Progress
-2026-07-10,822878,Texas Rangers,Houston Astros,home,543309,Kyle Higashioka,9,C,In Progress
-2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,687263,Zach Neto,1,SS,In Progress
-2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,694384,Nolan Schanuel,2,1B,In Progress
-2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,694203,Denzer Guzman,3,3B,In Progress
-2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,624585,Jorge Soler,4,DH,In Progress
-2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,666139,Josh Lowe,5,CF,In Progress
-2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,666176,Jo Adell,6,RF,In Progress
-2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,672724,Oswald Peraza,7,2B,In Progress
-2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,685133,Wade Meckler,8,LF,In Progress
-2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,623168,Tyler Heineman,9,C,In Progress
-2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,663616,Trevor Larnach,1,LF,In Progress
-2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,680777,Ryan Jeffers,2,C,In Progress
-2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,665019,Kody Clemens,3,2B,In Progress
-2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,605137,Josh Bell,4,DH,In Progress
-2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,668904,Royce Lewis,5,1B,In Progress
-2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,686797,Brooks Lee,6,3B,In Progress
-2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,668885,Austin Martin,7,RF,In Progress
-2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,668952,Ryan Kreidler,8,SS,In Progress
-2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,807712,Luke Keaschall,9,CF,In Progress
+2026-07-10,822878,Houston Astros,Texas Rangers,away,665161,Jeremy Peña,1,SS,Final
+2026-07-10,822878,Houston Astros,Texas Rangers,away,670541,Yordan Alvarez,2,DH,Final
+2026-07-10,822878,Houston Astros,Texas Rangers,away,670623,Isaac Paredes,3,3B,Final
+2026-07-10,822878,Houston Astros,Texas Rangers,away,572233,Christian Walker,4,1B,Final
+2026-07-10,822878,Houston Astros,Texas Rangers,away,514888,Jose Altuve,5,2B,Final
+2026-07-10,822878,Houston Astros,Texas Rangers,away,701305,Zach Dezenzo,6,PH,Final
+2026-07-10,822878,Houston Astros,Texas Rangers,away,701358,Cam Smith,7,RF,Final
+2026-07-10,822878,Houston Astros,Texas Rangers,away,673237,Yainer Diaz,8,C,Final
+2026-07-10,822878,Houston Astros,Texas Rangers,away,694728,Brice Matthews,9,CF,Final
+2026-07-10,822878,Texas Rangers,Houston Astros,home,553869,Elias Díaz,1,DH,Final
+2026-07-10,822878,Texas Rangers,Houston Astros,home,694671,Wyatt Langford,2,LF,Final
+2026-07-10,822878,Texas Rangers,Houston Astros,home,673962,Josh Jung,3,3B,Final
+2026-07-10,822878,Texas Rangers,Houston Astros,home,607043,Brandon Nimmo,4,RF,Final
+2026-07-10,822878,Texas Rangers,Houston Astros,home,669394,Jake Burger,5,1B,Final
+2026-07-10,822878,Texas Rangers,Houston Astros,home,677649,Ezequiel Duran,6,SS,Final
+2026-07-10,822878,Texas Rangers,Houston Astros,home,694497,Evan Carter,7,CF,Final
+2026-07-10,822878,Texas Rangers,Houston Astros,home,679822,Justin Foscue,8,2B,Final
+2026-07-10,822878,Texas Rangers,Houston Astros,home,543309,Kyle Higashioka,9,C,Final
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,687263,Zach Neto,1,SS,Final
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,694384,Nolan Schanuel,2,1B,Final
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,694203,Denzer Guzman,3,3B,Final
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,624585,Jorge Soler,4,DH,Final
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,666139,Josh Lowe,5,LF,Final
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,666176,Jo Adell,6,RF,Final
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,672724,Oswald Peraza,7,2B,Final
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,642350,Jose Siri,8,CF,Final
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,623168,Tyler Heineman,9,C,Final
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,663616,Trevor Larnach,1,LF,Final
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,680777,Ryan Jeffers,2,C,Final
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,665019,Kody Clemens,3,2B,Final
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,605137,Josh Bell,4,DH,Final
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,668904,Royce Lewis,5,3B,Final
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,686797,Brooks Lee,6,SS,Final
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,668885,Austin Martin,7,RF,Final
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,605170,Victor Caratini,8,1B,Final
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,807712,Luke Keaschall,9,CF,Final
 2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,671739,Michael Harris II,1,CF,Delayed
 2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,645277,Ozzie Albies,2,2B,Delayed
 2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,621566,Matt Olson,3,1B,Delayed

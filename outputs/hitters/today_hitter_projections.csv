@@ -1,253 +1,253 @@
 date,game_id,player_id,player_name,team,opponent,side,batting_order,position,prior_games,days_rest,projected_hits,projected_total_bases
-2026-07-10,822709,502671,Paul Goldschmidt,New York Yankees,Washington Nationals,away,4,1B,65,2,0.905,2.348
-2026-07-10,822878,514888,Jose Altuve,Houston Astros,Texas Rangers,away,5,2B,71,2,1.101,2.246
-2026-07-10,824493,682829,Elly De La Cruz,Cincinnati Reds,Chicago Cubs,home,1,SS,73,1,1.028,2.174
-2026-07-10,822878,670541,Yordan Alvarez,Houston Astros,Texas Rangers,away,2,DH,93,2,1.102,2.15
-2026-07-10,822709,678554,Curtis Mead,Washington Nationals,New York Yankees,home,2,3B,77,2,1.214,2.141
-2026-07-10,823927,518692,Freddie Freeman,Los Angeles Dodgers,Arizona Diamondbacks,home,3,1B,91,2,1.092,2.098
-2026-07-10,822878,670623,Isaac Paredes,Houston Astros,Texas Rangers,away,3,3B,88,2,1.028,2.083
-2026-07-10,822709,682928,CJ Abrams,Washington Nationals,New York Yankees,home,4,SS,90,2,1.082,2.068
-2026-07-10,823845,689414,Liam Hicks,Miami Marlins,Cleveland Guardians,home,6,PH,82,1,1.136,2.039
-2026-07-10,823845,669065,Kyle Stowers,Miami Marlins,Cleveland Guardians,home,5,1B,69,1,0.859,2.027
-2026-07-10,824252,664761,Alec Bohm,Philadelphia Phillies,Detroit Tigers,away,5,3B,89,1,1.065,2.007
-2026-07-10,822955,691406,Junior Caminero,Tampa Bay Rays,Seattle Mariners,home,3,3B,91,1,1.068,1.997
-2026-07-10,823845,672640,Otto Lopez,Miami Marlins,Cleveland Guardians,home,1,SS,92,1,1.085,1.99
-2026-07-10,822878,572233,Christian Walker,Houston Astros,Texas Rangers,away,4,1B,93,2,0.965,1.965
-2026-07-10,823278,665487,Fernando Tatis Jr.,San Diego Padres,Toronto Blue Jays,home,1,2B,92,1,1.01,1.958
-2026-07-10,824493,553993,Eugenio Suárez,Cincinnati Reds,Chicago Cubs,home,5,DH,64,1,0.792,1.951
-2026-07-10,823278,672960,Kazuma Okamoto,Toronto Blue Jays,San Diego Padres,away,3,3B,90,2,0.971,1.943
-2026-07-10,823685,663616,Trevor Larnach,Minnesota Twins,Los Angeles Angels,home,1,LF,77,1,1.082,1.936
-2026-07-10,824493,683737,Michael Busch,Chicago Cubs,Cincinnati Reds,away,3,1B,92,1,1.102,1.928
-2026-07-10,824252,547180,Bryce Harper,Philadelphia Phillies,Detroit Tigers,away,3,1B,94,1,1.113,1.912
-2026-07-10,823927,605141,Mookie Betts,Los Angeles Dodgers,Arizona Diamondbacks,home,4,SS,57,2,1.129,1.91
-2026-07-10,824252,656941,Kyle Schwarber,Philadelphia Phillies,Detroit Tigers,away,2,DH,90,1,0.913,1.908
-2026-07-10,823927,663656,Kyle Tucker,Los Angeles Dodgers,Arizona Diamondbacks,home,6,RF,88,2,0.975,1.904
-2026-07-10,823927,660271,Shohei Ohtani,Los Angeles Dodgers,Arizona Diamondbacks,home,1,DH,85,2,1.096,1.885
-2026-07-10,823200,642715,Willy Adames,San Francisco Giants,Colorado Rockies,home,5,SS,88,1,0.851,1.884
-2026-07-10,822955,686527,Dominic Canzone,Seattle Mariners,Tampa Bay Rays,away,3,DH,81,1,0.929,1.882
-2026-07-10,824817,683002,Gunnar Henderson,Baltimore Orioles,Kansas City Royals,home,1,SS,93,1,1.201,1.88
-2026-07-10,824575,678246,Miguel Vargas,Chicago White Sox,Athletics,home,3,1B,91,1,1.17,1.88
-2026-07-10,822955,656775,Cedric Mullins,Tampa Bay Rays,Seattle Mariners,home,4,CF,79,2,0.955,1.879
-2026-07-10,823278,543807,George Springer,Toronto Blue Jays,San Diego Padres,away,4,DH,64,2,0.992,1.876
-2026-07-10,824493,691718,Pete Crow-Armstrong,Chicago Cubs,Cincinnati Reds,away,1,CF,93,1,0.908,1.862
-2026-07-10,824493,673548,Seiya Suzuki,Chicago Cubs,Cincinnati Reds,away,4,RF,77,1,1.084,1.846
-2026-07-10,823278,592518,Manny Machado,San Diego Padres,Toronto Blue Jays,home,4,3B,90,1,1.028,1.816
-2026-07-10,823033,643289,Mauricio Dubón,Atlanta Braves,St. Louis Cardinals,away,5,LF,88,1,1.097,1.814
-2026-07-10,823685,668904,Royce Lewis,Minnesota Twins,Los Angeles Angels,home,5,1B,60,1,0.956,1.81
-2026-07-10,823278,665489,Vladimir Guerrero Jr.,Toronto Blue Jays,San Diego Padres,away,2,1B,88,2,0.952,1.809
-2026-07-10,822878,673962,Josh Jung,Texas Rangers,Houston Astros,home,3,3B,84,1,0.941,1.799
-2026-07-10,824252,805808,Kevin McGonigle,Detroit Tigers,Philadelphia Phillies,home,1,SS,90,1,1.027,1.798
-2026-07-10,823927,606466,Ketel Marte,Arizona Diamondbacks,Los Angeles Dodgers,away,1,DH,89,1,1.109,1.794
-2026-07-10,822878,701358,Cam Smith,Houston Astros,Texas Rangers,away,7,RF,93,2,0.888,1.791
-2026-07-10,823845,669364,Xavier Edwards,Miami Marlins,Cleveland Guardians,home,3,2B,94,1,1.1,1.788
-2026-07-10,824817,677951,Bobby Witt Jr.,Kansas City Royals,Baltimore Orioles,away,2,SS,88,1,1.031,1.787
-2026-07-10,823200,808982,Jung Hoo Lee,San Francisco Giants,Colorado Rockies,home,7,RF,85,1,1.086,1.786
-2026-07-10,824817,695506,Jac Caglianone,Kansas City Royals,Baltimore Orioles,away,3,RF,87,1,0.982,1.781
-2026-07-10,823278,701538,Jackson Merrill,San Diego Padres,Toronto Blue Jays,home,2,CF,90,1,0.973,1.777
-2026-07-10,823033,686948,Drake Baldwin,Atlanta Braves,St. Louis Cardinals,away,4,C,69,1,1.01,1.776
-2026-07-10,823604,677800,Wilyer Abreu,Boston Red Sox,New York Mets,away,3,RF,89,1,1.037,1.76
-2026-07-10,823604,678882,Ceddanne Rafaela,Boston Red Sox,New York Mets,away,2,CF,87,1,1.028,1.757
-2026-07-10,822709,671277,Luis García Jr.,Washington Nationals,New York Yankees,home,8,1B,87,2,1.137,1.753
-2026-07-10,823604,702332,Caleb Durbin,Boston Red Sox,New York Mets,away,6,3B,84,1,0.989,1.753
-2026-07-10,823927,672695,Geraldo Perdomo,Arizona Diamondbacks,Los Angeles Dodgers,away,2,SS,89,1,1.032,1.742
-2026-07-10,824575,803011,Sam Antonacci,Chicago White Sox,Athletics,home,1,3B,73,1,1.08,1.738
-2026-07-10,823845,800050,Chase DeLauter,Cleveland Guardians,Miami Marlins,away,3,RF,77,1,1.017,1.735
-2026-07-10,822955,650490,Yandy Díaz,Tampa Bay Rays,Seattle Mariners,home,1,DH,87,1,1.058,1.731
-2026-07-10,824252,680664,Eduardo Valencia,Detroit Tigers,Philadelphia Phillies,home,6,DH,1,1,1.05,1.722
-2026-07-10,823927,681624,Andy Pages,Los Angeles Dodgers,Arizona Diamondbacks,home,2,CF,93,2,1.002,1.722
-2026-07-10,823685,694384,Nolan Schanuel,Los Angeles Angels,Minnesota Twins,away,2,1B,74,1,0.959,1.722
-2026-07-10,823033,645277,Ozzie Albies,Atlanta Braves,St. Louis Cardinals,away,2,2B,92,1,0.908,1.722
-2026-07-10,823200,671218,Heliot Ramos,San Francisco Giants,Colorado Rockies,home,1,LF,55,1,0.974,1.716
-2026-07-10,823927,571448,Nolan Arenado,Arizona Diamondbacks,Los Angeles Dodgers,away,7,3B,87,1,1.004,1.711
-2026-07-10,823685,686797,Brooks Lee,Minnesota Twins,Los Angeles Angels,home,6,3B,90,1,0.963,1.711
-2026-07-10,823200,696100,Hunter Goodman,Colorado Rockies,San Francisco Giants,away,4,C,87,1,0.925,1.707
-2026-07-10,824252,681082,Bryson Stott,Philadelphia Phillies,Detroit Tigers,away,6,2B,88,1,0.988,1.703
-2026-07-10,824252,669016,Brandon Marsh,Philadelphia Phillies,Detroit Tigers,away,4,LF,89,1,1.201,1.701
-2026-07-10,823845,683953,Travis Bazzana,Cleveland Guardians,Miami Marlins,away,1,2B,62,1,1.047,1.701
-2026-07-10,823845,677587,Brayan Rocchio,Cleveland Guardians,Miami Marlins,away,2,SS,91,1,0.962,1.7
-2026-07-10,823200,669477,Casey Schmitt,San Francisco Giants,Colorado Rockies,home,3,3B,85,1,1.034,1.699
-2026-07-10,823200,666160,Mickey Moniak,Colorado Rockies,San Francisco Giants,away,8,DH,59,2,0.91,1.698
-2026-07-10,824575,805367,Chase Meidroth,Chicago White Sox,Athletics,home,6,2B,90,1,0.967,1.697
-2026-07-10,823200,650333,Luis Arraez,San Francisco Giants,Colorado Rockies,home,2,2B,88,1,1.13,1.696
-2026-07-10,822955,668227,Randy Arozarena,Seattle Mariners,Tampa Bay Rays,away,2,LF,86,1,0.949,1.695
-2026-07-10,823845,691594,Javier Sanoja,Miami Marlins,Cleveland Guardians,home,4,3B,76,1,1.02,1.679
-2026-07-10,824252,679529,Spencer Torkelson,Detroit Tigers,Philadelphia Phillies,home,4,1B,92,1,0.894,1.679
-2026-07-10,823033,621566,Matt Olson,Atlanta Braves,St. Louis Cardinals,away,3,1B,92,1,0.925,1.678
-2026-07-10,824817,657041,Lane Thomas,Kansas City Royals,Baltimore Orioles,away,4,CF,79,1,0.944,1.674
-2026-07-10,824252,656716,Zach McKinstry,Detroit Tigers,Philadelphia Phillies,home,7,2B,68,1,0.996,1.673
-2026-07-10,823927,672515,Gabriel Moreno,Arizona Diamondbacks,Los Angeles Dodgers,away,4,C,66,1,1.09,1.672
-2026-07-10,823604,596019,Francisco Lindor,New York Mets,Boston Red Sox,home,3,SS,37,1,0.942,1.671
-2026-07-10,822709,695578,James Wood,Washington Nationals,New York Yankees,home,1,RF,94,2,0.877,1.671
-2026-07-10,823685,665019,Kody Clemens,Minnesota Twins,Los Angeles Angels,home,3,2B,80,1,0.97,1.67
-2026-07-10,824817,695600,Carter Jensen,Kansas City Royals,Baltimore Orioles,away,1,C,86,1,0.861,1.669
-2026-07-10,823200,650489,Willi Castro,Colorado Rockies,San Francisco Giants,away,7,2B,80,1,0.834,1.655
-2026-07-10,823033,671056,Iván Herrera,St. Louis Cardinals,Atlanta Braves,home,2,DH,92,1,0.959,1.653
-2026-07-10,823200,691720,Kyle Karros,Colorado Rockies,San Francisco Giants,away,2,3B,90,1,0.894,1.651
-2026-07-10,824575,695657,Colson Montgomery,Chicago White Sox,Athletics,home,4,SS,88,1,0.817,1.651
-2026-07-10,823604,683146,Brett Baty,New York Mets,Boston Red Sox,home,8,3B,90,1,0.983,1.644
-2026-07-10,824252,690993,Colt Keith,Detroit Tigers,Philadelphia Phillies,home,2,3B,83,2,0.691,1.644
-2026-07-10,823033,802139,JJ Wetherholt,St. Louis Cardinals,Atlanta Braves,home,1,2B,87,1,1.068,1.638
-2026-07-10,823200,678662,Ezequiel Tovar,Colorado Rockies,San Francisco Giants,away,9,SS,89,1,0.95,1.638
-2026-07-10,822878,669394,Jake Burger,Texas Rangers,Houston Astros,home,5,1B,89,1,0.974,1.637
-2026-07-10,823200,805811,Bryce Eldridge,San Francisco Giants,Colorado Rockies,home,6,1B,51,1,0.895,1.637
-2026-07-10,822955,663728,Cal Raleigh,Seattle Mariners,Tampa Bay Rays,away,4,C,62,1,0.853,1.636
-2026-07-10,824493,701398,Sal Stewart,Cincinnati Reds,Chicago Cubs,home,2,1B,92,1,0.941,1.632
-2026-07-10,823200,664983,Jake McCarthy,Colorado Rockies,San Francisco Giants,away,1,LF,80,1,1.128,1.628
-2026-07-10,822955,641487,J.P. Crawford,Seattle Mariners,Tampa Bay Rays,away,1,SS,76,1,0.975,1.628
-2026-07-10,824493,621020,Dansby Swanson,Chicago Cubs,Cincinnati Reds,away,9,SS,89,1,1.048,1.627
-2026-07-10,823685,624585,Jorge Soler,Los Angeles Angels,Minnesota Twins,away,4,DH,71,1,0.939,1.622
-2026-07-10,823033,663586,Austin Riley,Atlanta Braves,St. Louis Cardinals,away,7,3B,92,1,0.92,1.622
-2026-07-10,822709,683083,Nasim Nuñez,Washington Nationals,New York Yankees,home,7,2B,86,3,0.862,1.622
-2026-07-10,824817,677942,Blaze Alexander,Baltimore Orioles,Kansas City Royals,home,8,3B,80,1,0.92,1.606
-2026-07-10,822709,663757,Trent Grisham,New York Yankees,Washington Nationals,away,3,CF,73,1,0.993,1.605
-2026-07-10,822878,677649,Ezequiel Duran,Texas Rangers,Houston Astros,home,6,SS,84,1,0.962,1.598
-2026-07-10,824493,624424,Michael Conforto,Chicago Cubs,Cincinnati Reds,away,7,DH,61,1,0.909,1.598
-2026-07-10,824817,668939,Adley Rutschman,Baltimore Orioles,Kansas City Royals,home,2,C,63,1,0.939,1.594
-2026-07-10,822955,666018,Jonathan Aranda,Tampa Bay Rays,Seattle Mariners,home,2,1B,90,1,0.973,1.586
-2026-07-10,823685,605137,Josh Bell,Minnesota Twins,Los Angeles Angels,home,4,DH,91,1,0.9,1.577
-2026-07-10,823278,664034,Ty France,San Diego Padres,Toronto Blue Jays,home,6,1B,67,4,0.846,1.573
-2026-07-10,822878,607043,Brandon Nimmo,Texas Rangers,Houston Astros,home,4,RF,87,1,0.946,1.572
-2026-07-10,822955,702284,Cole Young,Seattle Mariners,Tampa Bay Rays,away,7,2B,94,1,0.963,1.57
-2026-07-10,823604,593871,Jorge Polanco,New York Mets,Boston Red Sox,home,5,DH,16,2,0.959,1.57
-2026-07-10,823200,646240,Rafael Devers,San Francisco Giants,Colorado Rockies,home,4,DH,93,1,0.912,1.567
-2026-07-10,822955,670764,Taylor Walls,Tampa Bay Rays,Seattle Mariners,home,7,SS,73,1,0.934,1.565
-2026-07-10,824817,521692,Salvador Perez,Kansas City Royals,Baltimore Orioles,away,6,1B,86,1,0.975,1.562
-2026-07-10,823604,682626,Francisco Alvarez,New York Mets,Boston Red Sox,home,7,C,62,1,0.9,1.56
-2026-07-10,824575,811965,Joshua Kuroda-Grauer,Athletics,Chicago White Sox,away,7,3B,9,1,1.038,1.549
-2026-07-10,823845,805300,Jakob Marsee,Miami Marlins,Cleveland Guardians,home,8,CF,91,1,0.974,1.545
-2026-07-10,823278,676391,Ernie Clement,Toronto Blue Jays,San Diego Padres,away,1,SS,90,2,1.102,1.543
-2026-07-10,823200,681198,TJ Rumfield,Colorado Rockies,San Francisco Giants,away,5,1B,92,1,0.888,1.542
-2026-07-10,822955,647304,Josh Naylor,Seattle Mariners,Tampa Bay Rays,away,5,1B,87,1,0.997,1.541
-2026-07-10,822709,641355,Cody Bellinger,New York Yankees,Washington Nationals,away,5,LF,91,1,0.982,1.541
-2026-07-10,823033,671739,Michael Harris II,Atlanta Braves,St. Louis Cardinals,away,1,CF,86,1,0.959,1.53
-2026-07-10,823845,681715,Heriberto Hernández,Miami Marlins,Cleveland Guardians,home,2,LF,64,1,0.804,1.527
-2026-07-10,824493,663886,Tyler Stephenson,Cincinnati Reds,Chicago Cubs,home,6,C,70,1,0.898,1.518
-2026-07-10,823033,676475,Alec Burleson,St. Louis Cardinals,Atlanta Braves,home,5,1B,91,1,0.872,1.516
-2026-07-10,822878,673237,Yainer Diaz,Houston Astros,Texas Rangers,away,8,C,41,2,0.962,1.515
-2026-07-10,823604,665742,Juan Soto,New York Mets,Boston Red Sox,home,2,LF,75,1,0.878,1.514
-2026-07-10,823604,701807,Carson Benge,New York Mets,Boston Red Sox,home,4,RF,91,1,1.207,1.512
-2026-07-10,823927,687221,Dalton Rushing,Los Angeles Dodgers,Arizona Diamondbacks,home,9,C,58,3,0.848,1.507
-2026-07-10,823685,694203,Denzer Guzman,Los Angeles Angels,Minnesota Twins,away,3,3B,25,1,0.901,1.504
-2026-07-10,824575,666126,Carlos Cortes,Athletics,Chicago White Sox,away,2,P,70,2,0.795,1.5
-2026-07-10,823604,807799,Masataka Yoshida,Boston Red Sox,New York Mets,away,5,DH,58,2,0.892,1.496
-2026-07-10,824575,671976,Tristan Peters,Chicago White Sox,Athletics,home,9,CF,88,1,0.727,1.474
-2026-07-10,824493,608348,Carson Kelly,Chicago Cubs,Cincinnati Reds,away,8,C,67,1,0.847,1.471
-2026-07-10,824493,668709,JJ Bleday,Cincinnati Reds,Chicago Cubs,home,4,LF,64,1,0.902,1.466
-2026-07-10,823033,691026,Masyn Winn,St. Louis Cardinals,Atlanta Braves,home,6,SS,84,1,0.873,1.465
-2026-07-10,824817,679845,Nick Loftin,Kansas City Royals,Baltimore Orioles,away,8,DH,57,1,0.946,1.463
-2026-07-10,824575,675961,Alika Williams,Athletics,Chicago White Sox,away,5,SS,33,1,0.867,1.461
-2026-07-10,823685,680777,Ryan Jeffers,Minnesota Twins,Los Angeles Angels,home,2,C,37,14,0.978,1.445
-2026-07-10,824817,621493,Taylor Ward,Baltimore Orioles,Kansas City Royals,home,3,LF,93,1,1.013,1.443
-2026-07-10,824817,624413,Pete Alonso,Baltimore Orioles,Kansas City Royals,home,4,1B,94,1,0.845,1.443
-2026-07-10,823685,687263,Zach Neto,Los Angeles Angels,Minnesota Twins,away,1,SS,91,1,0.78,1.442
-2026-07-10,823845,665052,Griffin Conine,Miami Marlins,Cleveland Guardians,home,7,PH,27,1,0.944,1.44
-2026-07-10,824252,607208,Trea Turner,Philadelphia Phillies,Detroit Tigers,away,1,SS,91,1,0.964,1.437
-2026-07-10,822709,660688,Keibert Ruiz,Washington Nationals,New York Yankees,home,9,C,60,2,0.909,1.437
-2026-07-10,823685,807712,Luke Keaschall,Minnesota Twins,Los Angeles Angels,home,9,CF,88,1,0.806,1.437
-2026-07-10,822955,802415,Chandler Simpson,Tampa Bay Rays,Seattle Mariners,home,5,LF,86,1,1.056,1.433
-2026-07-10,824575,691019,Kyle Teel,Chicago White Sox,Athletics,home,8,C,14,1,0.799,1.428
-2026-07-10,823685,668952,Ryan Kreidler,Minnesota Twins,Los Angeles Angels,home,8,SS,49,2,0.803,1.427
-2026-07-10,824493,608324,Alex Bregman,Chicago Cubs,Cincinnati Reds,away,2,3B,91,1,1.05,1.425
-2026-07-10,823685,672724,Oswald Peraza,Los Angeles Angels,Minnesota Twins,away,7,2B,81,1,0.793,1.422
-2026-07-10,824575,703607,Henry Bolte,Athletics,Chicago White Sox,away,8,CF,51,1,0.89,1.421
-2026-07-10,823278,672386,Alejandro Kirk,Toronto Blue Jays,San Diego Padres,away,5,C,23,2,0.815,1.413
-2026-07-10,823033,805347,Jim Jarvis,Atlanta Braves,St. Louis Cardinals,away,9,SS,7,1,0.87,1.411
-2026-07-10,822709,676609,José Caballero,New York Yankees,Washington Nationals,away,8,SS,80,1,0.864,1.41
-2026-07-10,823604,805999,A.J. Ewing,New York Mets,Boston Red Sox,home,1,2B,54,1,0.852,1.404
-2026-07-10,824252,668670,Jake Rogers,Detroit Tigers,Philadelphia Phillies,home,9,C,29,1,0.701,1.401
-2026-07-10,824575,671732,Lawrence Butler,Athletics,Chicago White Sox,away,1,RF,85,1,0.801,1.396
-2026-07-10,822709,686611,Dylan Crews,Washington Nationals,New York Yankees,home,3,LF,44,2,0.87,1.394
-2026-07-10,824575,641680,Jonah Heim,Athletics,Chicago White Sox,away,4,C,48,1,0.88,1.393
-2026-07-10,822955,683748,Victor Mesa Jr.,Tampa Bay Rays,Seattle Mariners,home,6,RF,30,1,0.866,1.383
-2026-07-10,824817,641933,Tyler O'Neill,Baltimore Orioles,Kansas City Royals,home,6,RF,56,1,0.706,1.375
-2026-07-10,823927,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Los Angeles Dodgers,away,5,LF,44,1,0.811,1.373
-2026-07-10,822709,691176,Jasson Domínguez,New York Yankees,Washington Nationals,away,6,RF,33,1,0.892,1.366
-2026-07-10,824493,695490,Edwin Arroyo,Cincinnati Reds,Chicago Cubs,home,8,2B,30,1,0.871,1.366
-2026-07-10,822878,679822,Justin Foscue,Texas Rangers,Houston Astros,home,8,2B,43,1,0.826,1.364
-2026-07-10,823604,678011,Anthony Seigler,Boston Red Sox,New York Mets,away,1,2B,19,1,0.834,1.358
-2026-07-10,824817,694212,Samuel Basallo,Baltimore Orioles,Kansas City Royals,home,5,DH,80,1,0.803,1.358
-2026-07-10,823604,663853,Romy Gonzalez,Boston Red Sox,New York Mets,away,4,1B,8,1,0.785,1.357
-2026-07-10,823278,657757,Gavin Sheets,San Diego Padres,Toronto Blue Jays,home,5,LF,87,1,0.935,1.355
-2026-07-10,823604,676724,Jared Young,New York Mets,Boston Red Sox,home,6,1B,49,1,0.877,1.353
-2026-07-10,823685,666139,Josh Lowe,Los Angeles Angels,Minnesota Twins,away,5,CF,58,1,0.8,1.353
-2026-07-10,823033,642086,Dominic Smith,Atlanta Braves,St. Louis Cardinals,away,8,DH,76,1,0.706,1.348
-2026-07-10,823927,682998,Corbin Carroll,Arizona Diamondbacks,Los Angeles Dodgers,away,3,RF,90,1,0.994,1.34
-2026-07-10,823927,606192,Teoscar Hernández,Los Angeles Dodgers,Arizona Diamondbacks,home,7,LF,60,2,0.817,1.337
-2026-07-10,823278,593428,Xander Bogaerts,San Diego Padres,Toronto Blue Jays,home,3,SS,88,1,0.878,1.334
-2026-07-10,824575,643217,Andrew Benintendi,Chicago White Sox,Athletics,home,7,DH,81,1,0.81,1.33
-2026-07-10,824817,686555,Isaac Collins,Kansas City Royals,Baltimore Orioles,away,9,LF,83,1,0.789,1.325
-2026-07-10,824252,663837,Matt Vierling,Detroit Tigers,Philadelphia Phillies,home,5,RF,78,1,0.866,1.324
-2026-07-10,823033,573262,Mike Yastrzemski,Atlanta Braves,St. Louis Cardinals,away,6,RF,84,1,0.798,1.323
-2026-07-10,824575,695731,Braden Montgomery,Chicago White Sox,Athletics,home,5,RF,26,1,0.864,1.322
-2026-07-10,823278,662139,Daulton Varsho,Toronto Blue Jays,San Diego Padres,away,6,CF,80,2,0.803,1.32
-2026-07-10,822955,670042,Luke Raley,Seattle Mariners,Tampa Bay Rays,away,6,RF,80,1,0.782,1.31
-2026-07-10,823604,680776,Jarren Duran,Boston Red Sox,New York Mets,away,7,LF,84,1,0.789,1.306
-2026-07-10,822878,553869,Elias Díaz,Texas Rangers,Houston Astros,home,1,DH,35,1,0.774,1.303
-2026-07-10,823845,696135,Kahlil Watson,Cleveland Guardians,Miami Marlins,away,6,CF,20,1,0.853,1.291
-2026-07-10,824493,663538,Nico Hoerner,Chicago Cubs,Cincinnati Reds,away,6,2B,91,1,0.922,1.29
-2026-07-10,823685,666176,Jo Adell,Los Angeles Angels,Minnesota Twins,away,6,RF,93,1,1.042,1.289
-2026-07-10,823200,694249,Cole Carrigg,Colorado Rockies,San Francisco Giants,away,3,CF,28,1,0.856,1.289
-2026-07-10,824252,687282,Gabriel Rincones Jr.,Philadelphia Phillies,Detroit Tigers,away,7,RF,19,1,0.803,1.283
-2026-07-10,824493,664023,Ian Happ,Chicago Cubs,Cincinnati Reds,away,5,LF,89,1,0.786,1.277
-2026-07-10,823033,665877,José Fermín,St. Louis Cardinals,Atlanta Braves,home,7,CF,58,1,0.759,1.274
-2026-07-10,823033,691023,Jordan Walker,St. Louis Cardinals,Atlanta Braves,home,3,RF,90,1,0.933,1.271
-2026-07-10,822878,665161,Jeremy Peña,Houston Astros,Texas Rangers,away,1,SS,48,12,0.807,1.271
-2026-07-10,822955,676439,Hunter Feduccia,Tampa Bay Rays,Seattle Mariners,home,9,C,50,3,0.735,1.265
-2026-07-10,822709,696285,Jacob Young,Washington Nationals,New York Yankees,home,5,CF,85,3,0.742,1.264
-2026-07-10,824575,643446,Jeff McNeil,Athletics,Chicago White Sox,away,9,2B,83,1,0.786,1.262
-2026-07-10,822878,694671,Wyatt Langford,Texas Rangers,Houston Astros,home,2,LF,41,1,0.835,1.254
-2026-07-10,823033,691458,Blaze Jordan,St. Louis Cardinals,Atlanta Braves,home,8,3B,21,2,0.807,1.245
-2026-07-10,824493,668715,Spencer Steer,Cincinnati Reds,Chicago Cubs,home,3,RF,88,1,0.77,1.237
-2026-07-10,824575,687515,Colby Thomas,Athletics,Chicago White Sox,away,3,LF,44,1,0.757,1.237
-2026-07-10,822878,694497,Evan Carter,Texas Rangers,Houston Astros,home,7,CF,75,1,0.639,1.237
-2026-07-10,823927,814439,Ryan Waldschmidt,Arizona Diamondbacks,Los Angeles Dodgers,away,8,CF,33,14,0.768,1.225
-2026-07-10,824493,670770,TJ Friedl,Cincinnati Reds,Chicago Cubs,home,7,CF,57,1,0.683,1.222
-2026-07-10,824252,681546,James Outman,Detroit Tigers,Philadelphia Phillies,home,8,CF,71,1,0.647,1.215
-2026-07-10,823604,621438,Tyrone Taylor,New York Mets,Boston Red Sox,home,9,CF,52,1,0.72,1.211
-2026-07-10,823845,691788,Joe Mack,Miami Marlins,Cleveland Guardians,home,9,C,50,2,0.666,1.205
-2026-07-10,823278,609280,Miguel Andujar,San Diego Padres,Toronto Blue Jays,home,7,DH,70,1,0.704,1.203
-2026-07-10,823685,685133,Wade Meckler,Los Angeles Angels,Minnesota Twins,away,8,LF,40,1,0.741,1.19
-2026-07-10,822955,671083,Buddy Kennedy,Seattle Mariners,Tampa Bay Rays,away,9,3B,8,6,0.441,1.19
-2026-07-10,823845,595978,Austin Hedges,Cleveland Guardians,Miami Marlins,away,8,C,46,2,0.72,1.185
-2026-07-10,822955,680700,Richie Palacios,Tampa Bay Rays,Seattle Mariners,home,8,2B,67,1,0.736,1.176
-2026-07-10,823604,691907,Tsung-Che Cheng,Boston Red Sox,New York Mets,away,9,SS,7,2,0.752,1.154
-2026-07-10,822709,641857,Ryan McMahon,New York Yankees,Washington Nationals,away,1,3B,74,1,0.679,1.149
-2026-07-10,823845,700932,Kyle Manzardo,Cleveland Guardians,Miami Marlins,away,4,1B,84,1,0.839,1.139
-2026-07-10,823604,657136,Connor Wong,Boston Red Sox,New York Mets,away,8,C,39,1,0.711,1.137
-2026-07-10,823845,656555,Rhys Hoskins,Cleveland Guardians,Miami Marlins,away,5,DH,75,2,0.62,1.132
-2026-07-10,824817,702616,Jackson Holliday,Baltimore Orioles,Kansas City Royals,home,9,2B,42,1,0.675,1.13
-2026-07-10,822878,543309,Kyle Higashioka,Texas Rangers,Houston Astros,home,9,C,51,1,0.677,1.128
-2026-07-10,823200,671289,Tyler Freeman,Colorado Rockies,San Francisco Giants,away,6,RF,64,1,0.697,1.124
-2026-07-10,822709,700250,Ben Rice,New York Yankees,Washington Nationals,away,2,DH,88,1,0.782,1.12
-2026-07-10,823278,682729,Jonatan Clase,Toronto Blue Jays,San Diego Padres,away,9,LF,3,2,0.718,1.111
-2026-07-10,822955,645302,Victor Robles,Seattle Mariners,Tampa Bay Rays,away,8,CF,38,1,0.728,1.093
-2026-07-10,823927,500743,Miguel Rojas,Los Angeles Dodgers,Arizona Diamondbacks,home,8,2B,61,3,0.654,1.089
-2026-07-10,824817,686681,Michael Massey,Kansas City Royals,Baltimore Orioles,away,5,2B,74,2,0.714,1.086
-2026-07-10,824493,663647,Ke'Bryan Hayes,Cincinnati Reds,Chicago Cubs,home,9,3B,44,14,0.726,1.074
-2026-07-10,823845,682177,Daniel Schneemann,Cleveland Guardians,Miami Marlins,away,7,3B,78,1,0.662,1.072
-2026-07-10,823033,676369,Nelson Velázquez,St. Louis Cardinals,Atlanta Braves,home,4,LF,23,2,0.621,1.059
-2026-07-10,823685,668885,Austin Martin,Minnesota Twins,Los Angeles Angels,home,7,RF,81,2,0.569,1.054
-2026-07-10,824252,656537,Derek Hill,Philadelphia Phillies,Detroit Tigers,away,8,CF,70,1,0.582,1.051
-2026-07-10,823845,680757,Steven Kwan,Cleveland Guardians,Miami Marlins,away,9,LF,86,1,0.679,1.045
-2026-07-10,823278,664702,Myles Straw,Toronto Blue Jays,San Diego Padres,away,8,RF,81,2,0.581,1.043
-2026-07-10,824575,608841,Joey Meneses,Athletics,Chicago White Sox,away,6,1B,7,10,0.594,1.033
-2026-07-10,823927,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Dodgers,away,6,2B,80,1,0.744,1.01
-2026-07-10,823200,701852,Drew Cavanaugh,San Francisco Giants,Colorado Rockies,home,9,C,10,1,0.638,1.001
-2026-07-10,823278,649966,Luis Urías,Toronto Blue Jays,San Diego Padres,away,7,2B,10,5,0.55,0.991
-2026-07-10,823685,623168,Tyler Heineman,Los Angeles Angels,Minnesota Twins,away,9,C,37,6,0.605,0.98
-2026-07-10,823927,669242,Tommy Edman,Los Angeles Dodgers,Arizona Diamondbacks,home,5,3B,19,2,0.679,0.972
-2026-07-10,823200,687551,Drew Gilbert,San Francisco Giants,Colorado Rockies,home,8,CF,72,1,0.611,0.97
-2026-07-10,822709,665953,Andrés Chaparro,Washington Nationals,New York Yankees,home,6,DH,29,3,0.552,0.967
-2026-07-10,822709,669224,Austin Wells,New York Yankees,Washington Nationals,away,9,C,63,1,0.641,0.966
-2026-07-10,824575,678577,Junior Perez,Chicago White Sox,Athletics,home,2,LF,16,1,0.537,0.958
-2026-07-10,824252,665561,Rafael Marchán,Philadelphia Phillies,Detroit Tigers,away,9,C,30,2,0.563,0.944
-2026-07-10,822709,665862,Jazz Chisholm Jr.,New York Yankees,Washington Nationals,away,7,2B,88,1,0.671,0.941
-2026-07-10,823278,660710,Rodolfo Durán,San Diego Padres,Toronto Blue Jays,home,9,C,33,4,0.544,0.941
-2026-07-10,824252,701162,Ben Malgeri,Detroit Tigers,Philadelphia Phillies,home,3,LF,9,2,0.613,0.925
-2026-07-10,822878,694728,Brice Matthews,Houston Astros,Texas Rangers,away,9,CF,79,2,0.628,0.9
-2026-07-10,823033,686780,Pedro Pagés,St. Louis Cardinals,Atlanta Braves,home,9,C,53,2,0.447,0.885
-2026-07-10,823927,694374,Tim Tawa,Arizona Diamondbacks,Los Angeles Dodgers,away,9,1B,36,1,0.52,0.856
-2026-07-10,824817,668942,Josh Rojas,Kansas City Royals,Baltimore Orioles,away,7,3B,13,1,0.471,0.815
-2026-07-10,823278,687749,Jase Bowen,San Diego Padres,Toronto Blue Jays,home,8,RF,25,2,0.402,0.778
-2026-07-10,824817,681297,Colton Cowser,Baltimore Orioles,Kansas City Royals,home,7,CF,82,1,0.621,0.769
-2026-07-10,822878,701305,Zach Dezenzo,Houston Astros,Texas Rangers,away,6,PH,25,2,0.474,0.769
+2026-07-10,822878,670541,Yordan Alvarez,Houston Astros,Texas Rangers,away,2,DH,93,2,1.131,2.251
+2026-07-10,822709,678554,Curtis Mead,Washington Nationals,New York Yankees,home,2,3B,77,2,1.241,2.22
+2026-07-10,822709,695734,Daylen Lile,Washington Nationals,New York Yankees,home,6,DH,92,2,1.036,2.184
+2026-07-10,823927,518692,Freddie Freeman,Los Angeles Dodgers,Arizona Diamondbacks,home,3,1B,91,2,1.124,2.136
+2026-07-10,822878,514888,Jose Altuve,Houston Astros,Texas Rangers,away,5,2B,71,2,1.125,2.127
+2026-07-10,822878,670623,Isaac Paredes,Houston Astros,Texas Rangers,away,3,3B,88,2,0.988,2.08
+2026-07-10,824252,656941,Kyle Schwarber,Philadelphia Phillies,Detroit Tigers,away,2,DH,90,1,0.867,2.068
+2026-07-10,823278,543807,George Springer,Toronto Blue Jays,San Diego Padres,away,4,DH,64,2,0.987,2.046
+2026-07-10,822955,691406,Junior Caminero,Tampa Bay Rays,Seattle Mariners,home,3,3B,91,1,0.994,2.036
+2026-07-10,824575,678246,Miguel Vargas,Chicago White Sox,Athletics,home,3,1B,91,1,1.014,2.027
+2026-07-10,824252,547180,Bryce Harper,Philadelphia Phillies,Detroit Tigers,away,3,1B,94,1,0.932,2.027
+2026-07-10,824252,664761,Alec Bohm,Philadelphia Phillies,Detroit Tigers,away,5,3B,89,1,0.941,1.979
+2026-07-10,823845,672640,Otto Lopez,Miami Marlins,Cleveland Guardians,home,1,SS,92,1,0.992,1.974
+2026-07-10,824493,691718,Pete Crow-Armstrong,Chicago Cubs,Cincinnati Reds,away,1,CF,93,1,0.866,1.972
+2026-07-10,824493,673548,Seiya Suzuki,Chicago Cubs,Cincinnati Reds,away,4,RF,77,1,1.028,1.961
+2026-07-10,824493,682829,Elly De La Cruz,Cincinnati Reds,Chicago Cubs,home,1,SS,73,1,0.994,1.957
+2026-07-10,822709,682928,CJ Abrams,Washington Nationals,New York Yankees,home,4,SS,90,2,1.156,1.953
+2026-07-10,823278,665487,Fernando Tatis Jr.,San Diego Padres,Toronto Blue Jays,home,1,2B,92,1,0.929,1.941
+2026-07-10,823685,605170,Victor Caratini,Minnesota Twins,Los Angeles Angels,home,8,1B,68,2,1.007,1.917
+2026-07-10,824493,553993,Eugenio Suárez,Cincinnati Reds,Chicago Cubs,home,5,DH,64,1,0.866,1.917
+2026-07-10,822955,686527,Dominic Canzone,Seattle Mariners,Tampa Bay Rays,away,3,DH,81,1,0.96,1.909
+2026-07-10,823278,672960,Kazuma Okamoto,Toronto Blue Jays,San Diego Padres,away,3,3B,90,2,0.993,1.899
+2026-07-10,824493,683737,Michael Busch,Chicago Cubs,Cincinnati Reds,away,3,1B,92,1,1.026,1.898
+2026-07-10,823927,605141,Mookie Betts,Los Angeles Dodgers,Arizona Diamondbacks,home,4,SS,57,2,1.093,1.896
+2026-07-10,824252,680664,Eduardo Valencia,Detroit Tigers,Philadelphia Phillies,home,6,DH,1,1,1.214,1.895
+2026-07-10,822709,502671,Paul Goldschmidt,New York Yankees,Washington Nationals,away,4,1B,65,2,0.789,1.892
+2026-07-10,823033,643289,Mauricio Dubón,Atlanta Braves,St. Louis Cardinals,away,5,LF,88,1,1.06,1.889
+2026-07-10,823927,663656,Kyle Tucker,Los Angeles Dodgers,Arizona Diamondbacks,home,6,RF,88,2,0.933,1.878
+2026-07-10,823927,571448,Nolan Arenado,Arizona Diamondbacks,Los Angeles Dodgers,away,7,3B,87,1,1.003,1.875
+2026-07-10,823033,621566,Matt Olson,Atlanta Braves,St. Louis Cardinals,away,3,1B,92,1,0.929,1.873
+2026-07-10,824817,683002,Gunnar Henderson,Baltimore Orioles,Kansas City Royals,home,1,SS,93,1,1.063,1.863
+2026-07-10,823927,606466,Ketel Marte,Arizona Diamondbacks,Los Angeles Dodgers,away,1,DH,89,1,1.092,1.842
+2026-07-10,822878,673962,Josh Jung,Texas Rangers,Houston Astros,home,3,3B,84,1,0.947,1.841
+2026-07-10,822709,671277,Luis García Jr.,Washington Nationals,New York Yankees,home,8,1B,87,2,1.204,1.839
+2026-07-10,823685,663616,Trevor Larnach,Minnesota Twins,Los Angeles Angels,home,1,LF,77,1,0.946,1.839
+2026-07-10,823927,660271,Shohei Ohtani,Los Angeles Dodgers,Arizona Diamondbacks,home,1,DH,85,2,1.048,1.832
+2026-07-10,823278,592518,Manny Machado,San Diego Padres,Toronto Blue Jays,home,4,3B,90,1,0.98,1.823
+2026-07-10,823845,691594,Javier Sanoja,Miami Marlins,Cleveland Guardians,home,4,3B,76,1,1.01,1.821
+2026-07-10,823685,668904,Royce Lewis,Minnesota Twins,Los Angeles Angels,home,5,3B,60,1,0.957,1.815
+2026-07-10,823845,669065,Kyle Stowers,Miami Marlins,Cleveland Guardians,home,5,1B,69,1,0.862,1.809
+2026-07-10,823278,701538,Jackson Merrill,San Diego Padres,Toronto Blue Jays,home,2,CF,90,1,0.961,1.808
+2026-07-10,823604,678882,Ceddanne Rafaela,Boston Red Sox,New York Mets,away,2,CF,87,1,1.077,1.807
+2026-07-10,823927,672695,Geraldo Perdomo,Arizona Diamondbacks,Los Angeles Dodgers,away,2,SS,89,1,1.019,1.805
+2026-07-10,822709,695578,James Wood,Washington Nationals,New York Yankees,home,1,RF,94,2,0.886,1.802
+2026-07-10,823845,669364,Xavier Edwards,Miami Marlins,Cleveland Guardians,home,3,2B,94,1,1.044,1.798
+2026-07-10,822955,650490,Yandy Díaz,Tampa Bay Rays,Seattle Mariners,home,1,DH,87,1,1.082,1.791
+2026-07-10,823200,642715,Willy Adames,San Francisco Giants,Colorado Rockies,home,5,SS,88,1,0.833,1.789
+2026-07-10,824252,805808,Kevin McGonigle,Detroit Tigers,Philadelphia Phillies,home,1,SS,90,1,0.957,1.785
+2026-07-10,823033,663586,Austin Riley,Atlanta Braves,St. Louis Cardinals,away,7,3B,92,1,0.867,1.783
+2026-07-10,823200,808982,Jung Hoo Lee,San Francisco Giants,Colorado Rockies,home,7,RF,85,1,0.986,1.779
+2026-07-10,823200,691720,Kyle Karros,Colorado Rockies,San Francisco Giants,away,2,3B,90,1,0.927,1.776
+2026-07-10,823604,677800,Wilyer Abreu,Boston Red Sox,New York Mets,away,3,RF,89,1,0.973,1.775
+2026-07-10,823845,689414,Liam Hicks,Miami Marlins,Cleveland Guardians,home,6,PH,82,1,1.151,1.772
+2026-07-10,823200,650333,Luis Arraez,San Francisco Giants,Colorado Rockies,home,2,2B,88,1,1.104,1.772
+2026-07-10,823033,645277,Ozzie Albies,Atlanta Braves,St. Louis Cardinals,away,2,2B,92,1,0.899,1.77
+2026-07-10,823685,686797,Brooks Lee,Minnesota Twins,Los Angeles Angels,home,6,SS,90,1,0.976,1.769
+2026-07-10,824817,677951,Bobby Witt Jr.,Kansas City Royals,Baltimore Orioles,away,2,SS,88,1,1.033,1.762
+2026-07-10,823033,686948,Drake Baldwin,Atlanta Braves,St. Louis Cardinals,away,4,C,69,1,0.971,1.759
+2026-07-10,822878,572233,Christian Walker,Houston Astros,Texas Rangers,away,4,1B,93,2,0.912,1.757
+2026-07-10,822955,668227,Randy Arozarena,Seattle Mariners,Tampa Bay Rays,away,2,LF,86,1,0.985,1.745
+2026-07-10,823845,800050,Chase DeLauter,Cleveland Guardians,Miami Marlins,away,3,RF,77,1,1.126,1.739
+2026-07-10,824575,803011,Sam Antonacci,Chicago White Sox,Athletics,home,1,3B,73,1,1.027,1.737
+2026-07-10,824575,805367,Chase Meidroth,Chicago White Sox,Athletics,home,6,2B,90,1,0.916,1.73
+2026-07-10,824817,657041,Lane Thomas,Kansas City Royals,Baltimore Orioles,away,4,CF,79,1,1.062,1.725
+2026-07-10,822955,656775,Cedric Mullins,Tampa Bay Rays,Seattle Mariners,home,4,CF,79,2,0.817,1.724
+2026-07-10,823845,683953,Travis Bazzana,Cleveland Guardians,Miami Marlins,away,1,2B,62,1,1.059,1.722
+2026-07-10,822955,641487,J.P. Crawford,Seattle Mariners,Tampa Bay Rays,away,1,SS,76,1,0.963,1.715
+2026-07-10,823200,669477,Casey Schmitt,San Francisco Giants,Colorado Rockies,home,3,3B,85,1,0.985,1.708
+2026-07-10,822709,641355,Cody Bellinger,New York Yankees,Washington Nationals,away,5,LF,91,1,0.888,1.707
+2026-07-10,823604,683146,Brett Baty,New York Mets,Boston Red Sox,home,8,3B,90,1,0.98,1.704
+2026-07-10,824493,701398,Sal Stewart,Cincinnati Reds,Chicago Cubs,home,2,1B,92,1,0.929,1.703
+2026-07-10,823200,666160,Mickey Moniak,Colorado Rockies,San Francisco Giants,away,8,DH,59,2,0.902,1.701
+2026-07-10,824252,656716,Zach McKinstry,Detroit Tigers,Philadelphia Phillies,home,7,2B,68,1,0.979,1.693
+2026-07-10,822878,701358,Cam Smith,Houston Astros,Texas Rangers,away,7,RF,93,2,0.798,1.692
+2026-07-10,823278,664034,Ty France,San Diego Padres,Toronto Blue Jays,home,6,1B,67,4,0.852,1.679
+2026-07-10,823604,596019,Francisco Lindor,New York Mets,Boston Red Sox,home,3,SS,37,1,0.982,1.678
+2026-07-10,824252,669016,Brandon Marsh,Philadelphia Phillies,Detroit Tigers,away,4,LF,89,1,1.106,1.676
+2026-07-10,823927,672515,Gabriel Moreno,Arizona Diamondbacks,Los Angeles Dodgers,away,4,C,66,1,1.116,1.675
+2026-07-10,822878,669394,Jake Burger,Texas Rangers,Houston Astros,home,5,1B,89,1,0.924,1.671
+2026-07-10,823685,665019,Kody Clemens,Minnesota Twins,Los Angeles Angels,home,3,2B,80,1,0.952,1.67
+2026-07-10,823845,677587,Brayan Rocchio,Cleveland Guardians,Miami Marlins,away,2,SS,91,1,0.894,1.667
+2026-07-10,823200,671218,Heliot Ramos,San Francisco Giants,Colorado Rockies,home,1,LF,55,1,0.938,1.658
+2026-07-10,824817,677942,Blaze Alexander,Baltimore Orioles,Kansas City Royals,home,8,3B,80,1,0.838,1.658
+2026-07-10,823200,696100,Hunter Goodman,Colorado Rockies,San Francisco Giants,away,4,C,87,1,0.925,1.657
+2026-07-10,823604,665742,Juan Soto,New York Mets,Boston Red Sox,home,2,LF,75,1,0.852,1.653
+2026-07-10,823033,671739,Michael Harris II,Atlanta Braves,St. Louis Cardinals,away,1,CF,86,1,0.913,1.65
+2026-07-10,824493,621020,Dansby Swanson,Chicago Cubs,Cincinnati Reds,away,9,SS,89,1,1.007,1.648
+2026-07-10,824252,681082,Bryson Stott,Philadelphia Phillies,Detroit Tigers,away,6,2B,88,1,0.947,1.645
+2026-07-10,823200,664983,Jake McCarthy,Colorado Rockies,San Francisco Giants,away,1,LF,80,1,0.966,1.643
+2026-07-10,824575,695657,Colson Montgomery,Chicago White Sox,Athletics,home,4,SS,88,1,0.855,1.641
+2026-07-10,824817,695506,Jac Caglianone,Kansas City Royals,Baltimore Orioles,away,3,RF,87,1,0.943,1.637
+2026-07-10,823200,805811,Bryce Eldridge,San Francisco Giants,Colorado Rockies,home,6,1B,51,1,0.884,1.631
+2026-07-10,823685,624585,Jorge Soler,Los Angeles Angels,Minnesota Twins,away,4,DH,71,1,0.937,1.621
+2026-07-10,824252,690993,Colt Keith,Detroit Tigers,Philadelphia Phillies,home,2,3B,83,2,0.716,1.617
+2026-07-10,824817,695600,Carter Jensen,Kansas City Royals,Baltimore Orioles,away,1,C,86,1,0.762,1.613
+2026-07-10,823200,646240,Rafael Devers,San Francisco Giants,Colorado Rockies,home,4,DH,93,1,0.935,1.611
+2026-07-10,824575,811965,Joshua Kuroda-Grauer,Athletics,Chicago White Sox,away,7,3B,9,1,1.075,1.609
+2026-07-10,824252,679529,Spencer Torkelson,Detroit Tigers,Philadelphia Phillies,home,4,1B,92,1,0.846,1.607
+2026-07-10,823278,665489,Vladimir Guerrero Jr.,Toronto Blue Jays,San Diego Padres,away,2,1B,88,2,0.898,1.598
+2026-07-10,823033,802139,JJ Wetherholt,St. Louis Cardinals,Atlanta Braves,home,1,2B,87,1,1.002,1.594
+2026-07-10,822709,663757,Trent Grisham,New York Yankees,Washington Nationals,away,3,CF,73,1,0.973,1.594
+2026-07-10,824575,666126,Carlos Cortes,Athletics,Chicago White Sox,away,2,P,70,2,0.805,1.594
+2026-07-10,823033,671056,Iván Herrera,St. Louis Cardinals,Atlanta Braves,home,2,DH,92,1,0.87,1.583
+2026-07-10,822955,647304,Josh Naylor,Seattle Mariners,Tampa Bay Rays,away,5,1B,87,1,0.912,1.582
+2026-07-10,822955,663728,Cal Raleigh,Seattle Mariners,Tampa Bay Rays,away,4,C,62,1,0.871,1.58
+2026-07-10,823927,681624,Andy Pages,Los Angeles Dodgers,Arizona Diamondbacks,home,2,CF,93,2,0.861,1.579
+2026-07-10,824493,624424,Michael Conforto,Chicago Cubs,Cincinnati Reds,away,7,DH,61,1,0.91,1.575
+2026-07-10,823685,605137,Josh Bell,Minnesota Twins,Los Angeles Angels,home,4,DH,91,1,0.855,1.573
+2026-07-10,822955,666018,Jonathan Aranda,Tampa Bay Rays,Seattle Mariners,home,2,1B,90,1,0.936,1.558
+2026-07-10,822955,702284,Cole Young,Seattle Mariners,Tampa Bay Rays,away,7,2B,94,1,0.826,1.558
+2026-07-10,822878,673237,Yainer Diaz,Houston Astros,Texas Rangers,away,8,C,41,2,0.965,1.556
+2026-07-10,824817,668939,Adley Rutschman,Baltimore Orioles,Kansas City Royals,home,2,C,63,1,0.956,1.554
+2026-07-10,822878,607043,Brandon Nimmo,Texas Rangers,Houston Astros,home,4,RF,87,1,0.84,1.553
+2026-07-10,823604,702332,Caleb Durbin,Boston Red Sox,New York Mets,away,6,3B,84,1,0.935,1.552
+2026-07-10,823685,694203,Denzer Guzman,Los Angeles Angels,Minnesota Twins,away,3,3B,25,1,0.921,1.545
+2026-07-10,824493,668709,JJ Bleday,Cincinnati Reds,Chicago Cubs,home,4,LF,64,1,0.874,1.54
+2026-07-10,823604,682626,Francisco Alvarez,New York Mets,Boston Red Sox,home,7,C,62,1,0.877,1.538
+2026-07-10,822878,677649,Ezequiel Duran,Texas Rangers,Houston Astros,home,6,SS,84,1,0.921,1.537
+2026-07-10,823604,593871,Jorge Polanco,New York Mets,Boston Red Sox,home,5,DH,16,2,0.968,1.532
+2026-07-10,822955,670764,Taylor Walls,Tampa Bay Rays,Seattle Mariners,home,7,SS,73,1,0.86,1.529
+2026-07-10,824817,521692,Salvador Perez,Kansas City Royals,Baltimore Orioles,away,6,1B,86,1,0.915,1.523
+2026-07-10,822709,678391,Jorbit Vivas,Washington Nationals,New York Yankees,home,7,2B,68,2,0.776,1.519
+2026-07-10,823200,681198,TJ Rumfield,Colorado Rockies,San Francisco Giants,away,5,1B,92,1,0.85,1.518
+2026-07-10,824493,663886,Tyler Stephenson,Cincinnati Reds,Chicago Cubs,home,6,C,70,1,0.921,1.509
+2026-07-10,823278,676391,Ernie Clement,Toronto Blue Jays,San Diego Padres,away,1,SS,90,2,1.022,1.502
+2026-07-10,824575,675961,Alika Williams,Athletics,Chicago White Sox,away,5,SS,33,1,0.858,1.501
+2026-07-10,822709,660688,Keibert Ruiz,Washington Nationals,New York Yankees,home,9,C,60,2,0.92,1.498
+2026-07-10,824575,671976,Tristan Peters,Chicago White Sox,Athletics,home,9,CF,88,1,0.791,1.496
+2026-07-10,823200,650489,Willi Castro,Colorado Rockies,San Francisco Giants,away,7,2B,80,1,0.766,1.492
+2026-07-10,823033,676475,Alec Burleson,St. Louis Cardinals,Atlanta Braves,home,5,1B,91,1,0.881,1.491
+2026-07-10,822709,676609,José Caballero,New York Yankees,Washington Nationals,away,8,3B,80,1,0.786,1.49
+2026-07-10,823845,681715,Heriberto Hernández,Miami Marlins,Cleveland Guardians,home,2,LF,64,1,0.874,1.487
+2026-07-10,824493,608348,Carson Kelly,Chicago Cubs,Cincinnati Reds,away,8,C,67,1,0.82,1.485
+2026-07-10,823033,691026,Masyn Winn,St. Louis Cardinals,Atlanta Braves,home,6,SS,84,1,0.764,1.485
+2026-07-10,823200,678662,Ezequiel Tovar,Colorado Rockies,San Francisco Giants,away,9,SS,89,1,0.803,1.484
+2026-07-10,823927,687221,Dalton Rushing,Los Angeles Dodgers,Arizona Diamondbacks,home,9,C,58,3,0.879,1.476
+2026-07-10,824817,621493,Taylor Ward,Baltimore Orioles,Kansas City Royals,home,3,LF,93,1,0.912,1.47
+2026-07-10,823845,665052,Griffin Conine,Miami Marlins,Cleveland Guardians,home,7,PH,27,1,0.931,1.468
+2026-07-10,822955,802415,Chandler Simpson,Tampa Bay Rays,Seattle Mariners,home,5,LF,86,1,0.961,1.467
+2026-07-10,823845,656555,Rhys Hoskins,Cleveland Guardians,Miami Marlins,away,5,DH,75,2,0.621,1.462
+2026-07-10,823685,694384,Nolan Schanuel,Los Angeles Angels,Minnesota Twins,away,2,1B,74,1,0.938,1.451
+2026-07-10,824252,607208,Trea Turner,Philadelphia Phillies,Detroit Tigers,away,1,SS,91,1,0.877,1.447
+2026-07-10,822955,683748,Victor Mesa Jr.,Tampa Bay Rays,Seattle Mariners,home,6,RF,30,1,0.842,1.447
+2026-07-10,824817,624413,Pete Alonso,Baltimore Orioles,Kansas City Royals,home,4,1B,94,1,0.834,1.443
+2026-07-10,824575,703607,Henry Bolte,Athletics,Chicago White Sox,away,8,CF,51,1,0.879,1.441
+2026-07-10,823604,701807,Carson Benge,New York Mets,Boston Red Sox,home,4,RF,91,1,1.159,1.439
+2026-07-10,824817,679845,Nick Loftin,Kansas City Royals,Baltimore Orioles,away,8,DH,57,1,0.904,1.437
+2026-07-10,823685,666176,Jo Adell,Los Angeles Angels,Minnesota Twins,away,6,RF,93,1,0.942,1.434
+2026-07-10,823278,672386,Alejandro Kirk,Toronto Blue Jays,San Diego Padres,away,5,C,23,2,0.831,1.433
+2026-07-10,823604,805999,A.J. Ewing,New York Mets,Boston Red Sox,home,1,2B,54,1,0.94,1.432
+2026-07-10,823033,691023,Jordan Walker,St. Louis Cardinals,Atlanta Braves,home,3,RF,90,1,0.796,1.432
+2026-07-10,824575,641680,Jonah Heim,Athletics,Chicago White Sox,away,4,C,48,1,0.874,1.426
+2026-07-10,823685,687263,Zach Neto,Los Angeles Angels,Minnesota Twins,away,1,SS,91,1,0.782,1.421
+2026-07-10,823604,807799,Masataka Yoshida,Boston Red Sox,New York Mets,away,5,DH,58,2,0.902,1.419
+2026-07-10,823685,680777,Ryan Jeffers,Minnesota Twins,Los Angeles Angels,home,2,C,37,14,0.928,1.412
+2026-07-10,822878,679822,Justin Foscue,Texas Rangers,Houston Astros,home,8,2B,43,1,0.82,1.396
+2026-07-10,823278,593428,Xander Bogaerts,San Diego Padres,Toronto Blue Jays,home,3,SS,88,1,0.757,1.393
+2026-07-10,824493,695490,Edwin Arroyo,Cincinnati Reds,Chicago Cubs,home,8,2B,30,1,0.856,1.392
+2026-07-10,823685,807712,Luke Keaschall,Minnesota Twins,Los Angeles Angels,home,9,CF,88,1,0.809,1.392
+2026-07-10,822709,686611,Dylan Crews,Washington Nationals,New York Yankees,home,3,LF,44,2,0.885,1.39
+2026-07-10,824252,668670,Jake Rogers,Detroit Tigers,Philadelphia Phillies,home,9,C,29,1,0.741,1.384
+2026-07-10,823033,805347,Jim Jarvis,Atlanta Braves,St. Louis Cardinals,away,9,SS,7,1,0.851,1.383
+2026-07-10,823033,573262,Mike Yastrzemski,Atlanta Braves,St. Louis Cardinals,away,6,RF,84,1,0.85,1.382
+2026-07-10,822709,696285,Jacob Young,Washington Nationals,New York Yankees,home,5,CF,85,3,0.751,1.378
+2026-07-10,822878,694497,Evan Carter,Texas Rangers,Houston Astros,home,7,CF,75,1,0.615,1.378
+2026-07-10,824575,691019,Kyle Teel,Chicago White Sox,Athletics,home,8,C,14,1,0.842,1.373
+2026-07-10,823845,805300,Jakob Marsee,Miami Marlins,Cleveland Guardians,home,8,CF,91,1,0.863,1.371
+2026-07-10,823604,678011,Anthony Seigler,Boston Red Sox,New York Mets,away,1,2B,19,1,0.837,1.367
+2026-07-10,823927,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Los Angeles Dodgers,away,5,LF,44,1,0.816,1.364
+2026-07-10,824493,608324,Alex Bregman,Chicago Cubs,Cincinnati Reds,away,2,3B,91,1,1.002,1.36
+2026-07-10,823927,606192,Teoscar Hernández,Los Angeles Dodgers,Arizona Diamondbacks,home,7,LF,60,2,0.801,1.355
+2026-07-10,824817,641933,Tyler O'Neill,Baltimore Orioles,Kansas City Royals,home,6,RF,56,1,0.695,1.354
+2026-07-10,823604,676724,Jared Young,New York Mets,Boston Red Sox,home,6,1B,49,1,0.861,1.351
+2026-07-10,823685,672724,Oswald Peraza,Los Angeles Angels,Minnesota Twins,away,7,2B,81,1,0.768,1.351
+2026-07-10,823685,666139,Josh Lowe,Los Angeles Angels,Minnesota Twins,away,5,LF,58,1,0.775,1.35
+2026-07-10,823927,682998,Corbin Carroll,Arizona Diamondbacks,Los Angeles Dodgers,away,3,RF,90,1,0.791,1.343
+2026-07-10,822709,691176,Jasson Domínguez,New York Yankees,Washington Nationals,away,6,RF,33,1,0.897,1.339
+2026-07-10,823604,663853,Romy Gonzalez,Boston Red Sox,New York Mets,away,4,1B,8,1,0.81,1.333
+2026-07-10,824817,686555,Isaac Collins,Kansas City Royals,Baltimore Orioles,away,9,LF,83,1,0.8,1.324
+2026-07-10,824575,671732,Lawrence Butler,Athletics,Chicago White Sox,away,1,RF,85,1,0.739,1.32
+2026-07-10,824575,695731,Braden Montgomery,Chicago White Sox,Athletics,home,5,RF,26,1,0.858,1.316
+2026-07-10,824252,687282,Gabriel Rincones Jr.,Philadelphia Phillies,Detroit Tigers,away,7,RF,19,1,0.808,1.306
+2026-07-10,823200,694249,Cole Carrigg,Colorado Rockies,San Francisco Giants,away,3,CF,28,1,0.831,1.301
+2026-07-10,823278,657757,Gavin Sheets,San Diego Padres,Toronto Blue Jays,home,5,LF,87,1,0.751,1.294
+2026-07-10,824493,664023,Ian Happ,Chicago Cubs,Cincinnati Reds,away,5,LF,89,1,0.767,1.29
+2026-07-10,822878,694671,Wyatt Langford,Texas Rangers,Houston Astros,home,2,LF,41,1,0.904,1.288
+2026-07-10,822878,665161,Jeremy Peña,Houston Astros,Texas Rangers,away,1,SS,48,12,0.825,1.286
+2026-07-10,823278,662139,Daulton Varsho,Toronto Blue Jays,San Diego Padres,away,6,CF,80,2,0.656,1.281
+2026-07-10,822878,553869,Elias Díaz,Texas Rangers,Houston Astros,home,1,DH,35,1,0.769,1.276
+2026-07-10,824575,643217,Andrew Benintendi,Chicago White Sox,Athletics,home,7,DH,81,1,0.723,1.274
+2026-07-10,824493,663538,Nico Hoerner,Chicago Cubs,Cincinnati Reds,away,6,2B,91,1,0.804,1.268
+2026-07-10,824252,663837,Matt Vierling,Detroit Tigers,Philadelphia Phillies,home,5,RF,78,1,0.795,1.268
+2026-07-10,822955,670042,Luke Raley,Seattle Mariners,Tampa Bay Rays,away,6,RF,80,1,0.718,1.268
+2026-07-10,822955,676439,Hunter Feduccia,Tampa Bay Rays,Seattle Mariners,home,9,C,50,3,0.708,1.261
+2026-07-10,824817,694212,Samuel Basallo,Baltimore Orioles,Kansas City Royals,home,5,DH,80,1,0.707,1.26
+2026-07-10,824252,681546,James Outman,Detroit Tigers,Philadelphia Phillies,home,8,CF,71,1,0.695,1.26
+2026-07-10,823845,691788,Joe Mack,Miami Marlins,Cleveland Guardians,home,9,C,50,2,0.668,1.259
+2026-07-10,823033,665877,José Fermín,St. Louis Cardinals,Atlanta Braves,home,7,CF,58,1,0.756,1.254
+2026-07-10,824575,687515,Colby Thomas,Athletics,Chicago White Sox,away,3,LF,44,1,0.753,1.254
+2026-07-10,823927,814439,Ryan Waldschmidt,Arizona Diamondbacks,Los Angeles Dodgers,away,8,CF,33,14,0.805,1.24
+2026-07-10,823033,691458,Blaze Jordan,St. Louis Cardinals,Atlanta Braves,home,8,3B,21,2,0.831,1.238
+2026-07-10,823604,680776,Jarren Duran,Boston Red Sox,New York Mets,away,7,LF,84,1,0.875,1.228
+2026-07-10,822955,671083,Buddy Kennedy,Seattle Mariners,Tampa Bay Rays,away,9,3B,8,6,0.424,1.228
+2026-07-10,823604,621438,Tyrone Taylor,New York Mets,Boston Red Sox,home,9,CF,52,1,0.735,1.227
+2026-07-10,824493,670770,TJ Friedl,Cincinnati Reds,Chicago Cubs,home,7,CF,57,1,0.669,1.226
+2026-07-10,823278,609280,Miguel Andujar,San Diego Padres,Toronto Blue Jays,home,7,DH,70,1,0.686,1.192
+2026-07-10,823033,642086,Dominic Smith,Atlanta Braves,St. Louis Cardinals,away,8,DH,76,1,0.771,1.183
+2026-07-10,822955,680700,Richie Palacios,Tampa Bay Rays,Seattle Mariners,home,8,2B,67,1,0.759,1.172
+2026-07-10,822878,543309,Kyle Higashioka,Texas Rangers,Houston Astros,home,9,C,51,1,0.708,1.171
+2026-07-10,823604,691907,Tsung-Che Cheng,Boston Red Sox,New York Mets,away,9,SS,7,2,0.749,1.166
+2026-07-10,823845,680757,Steven Kwan,Cleveland Guardians,Miami Marlins,away,9,LF,86,1,0.716,1.165
+2026-07-10,823845,595978,Austin Hedges,Cleveland Guardians,Miami Marlins,away,8,C,46,2,0.721,1.163
+2026-07-10,823604,657136,Connor Wong,Boston Red Sox,New York Mets,away,8,C,39,1,0.714,1.16
+2026-07-10,824493,668715,Spencer Steer,Cincinnati Reds,Chicago Cubs,home,3,RF,88,1,0.688,1.144
+2026-07-10,823927,500743,Miguel Rojas,Los Angeles Dodgers,Arizona Diamondbacks,home,8,2B,61,3,0.641,1.131
+2026-07-10,824575,643446,Jeff McNeil,Athletics,Chicago White Sox,away,9,2B,83,1,0.734,1.129
+2026-07-10,823685,668885,Austin Martin,Minnesota Twins,Los Angeles Angels,home,7,RF,81,2,0.608,1.125
+2026-07-10,823200,671289,Tyler Freeman,Colorado Rockies,San Francisco Giants,away,6,RF,64,1,0.709,1.121
+2026-07-10,822878,694728,Brice Matthews,Houston Astros,Texas Rangers,away,9,CF,79,2,0.528,1.121
+2026-07-10,823845,696135,Kahlil Watson,Cleveland Guardians,Miami Marlins,away,6,CF,20,1,0.733,1.099
+2026-07-10,823278,682729,Jonatan Clase,Toronto Blue Jays,San Diego Padres,away,9,LF,3,2,0.705,1.097
+2026-07-10,823278,664702,Myles Straw,Toronto Blue Jays,San Diego Padres,away,8,RF,81,2,0.492,1.079
+2026-07-10,823845,682177,Daniel Schneemann,Cleveland Guardians,Miami Marlins,away,7,3B,78,1,0.565,1.069
+2026-07-10,823033,676369,Nelson Velázquez,St. Louis Cardinals,Atlanta Braves,home,4,LF,23,2,0.634,1.067
+2026-07-10,824817,702616,Jackson Holliday,Baltimore Orioles,Kansas City Royals,home,9,2B,42,1,0.694,1.064
+2026-07-10,822709,683011,Anthony Volpe,New York Yankees,Washington Nationals,away,1,SS,42,2,0.615,1.064
+2026-07-10,823927,669242,Tommy Edman,Los Angeles Dodgers,Arizona Diamondbacks,home,5,3B,19,2,0.74,1.053
+2026-07-10,824493,663647,Ke'Bryan Hayes,Cincinnati Reds,Chicago Cubs,home,9,3B,44,14,0.699,1.036
+2026-07-10,822709,700250,Ben Rice,New York Yankees,Washington Nationals,away,2,DH,88,1,0.974,1.029
+2026-07-10,824817,686681,Michael Massey,Kansas City Royals,Baltimore Orioles,away,5,2B,74,2,0.716,1.026
+2026-07-10,822955,645302,Victor Robles,Seattle Mariners,Tampa Bay Rays,away,8,CF,38,1,0.744,1.023
+2026-07-10,824575,608841,Joey Meneses,Athletics,Chicago White Sox,away,6,1B,7,10,0.563,1.022
+2026-07-10,823927,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Dodgers,away,6,2B,80,1,0.593,1.016
+2026-07-10,823200,701852,Drew Cavanaugh,San Francisco Giants,Colorado Rockies,home,9,C,10,1,0.629,1.015
+2026-07-10,822709,665862,Jazz Chisholm Jr.,New York Yankees,Washington Nationals,away,7,2B,88,1,0.655,1.01
+2026-07-10,823845,700932,Kyle Manzardo,Cleveland Guardians,Miami Marlins,away,4,1B,84,1,0.657,0.992
+2026-07-10,823685,623168,Tyler Heineman,Los Angeles Angels,Minnesota Twins,away,9,C,37,6,0.611,0.983
+2026-07-10,822709,669224,Austin Wells,New York Yankees,Washington Nationals,away,9,C,63,1,0.625,0.976
+2026-07-10,823200,687551,Drew Gilbert,San Francisco Giants,Colorado Rockies,home,8,CF,72,1,0.641,0.953
+2026-07-10,824252,656537,Derek Hill,Philadelphia Phillies,Detroit Tigers,away,8,CF,70,1,0.51,0.95
+2026-07-10,824252,701162,Ben Malgeri,Detroit Tigers,Philadelphia Phillies,home,3,LF,9,2,0.629,0.94
+2026-07-10,823278,660710,Rodolfo Durán,San Diego Padres,Toronto Blue Jays,home,9,C,33,4,0.571,0.94
+2026-07-10,824575,678577,Junior Perez,Chicago White Sox,Athletics,home,2,LF,16,1,0.55,0.926
+2026-07-10,824252,665561,Rafael Marchán,Philadelphia Phillies,Detroit Tigers,away,9,C,30,2,0.559,0.925
+2026-07-10,823278,687749,Jase Bowen,San Diego Padres,Toronto Blue Jays,home,8,RF,25,2,0.478,0.888
+2026-07-10,823685,642350,Jose Siri,Los Angeles Angels,Minnesota Twins,away,8,CF,42,1,0.505,0.882
+2026-07-10,823278,649966,Luis Urías,Toronto Blue Jays,San Diego Padres,away,7,2B,10,5,0.519,0.872
+2026-07-10,822878,701305,Zach Dezenzo,Houston Astros,Texas Rangers,away,6,PH,25,2,0.489,0.853
+2026-07-10,824817,668942,Josh Rojas,Kansas City Royals,Baltimore Orioles,away,7,3B,13,1,0.473,0.849
+2026-07-10,823927,694374,Tim Tawa,Arizona Diamondbacks,Los Angeles Dodgers,away,9,1B,36,1,0.598,0.823
+2026-07-10,823033,686780,Pedro Pagés,St. Louis Cardinals,Atlanta Braves,home,9,C,53,2,0.45,0.796
+2026-07-10,824817,681297,Colton Cowser,Baltimore Orioles,Kansas City Royals,home,7,CF,82,1,0.581,0.781
