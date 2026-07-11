@@ -116,7 +116,7 @@ def build_daily_card():
         merged["opponent"] = merged["opponent_projection"]
 
     # Remove rows that do not have a model projection
-    merged = merged[merged["projection"].notna()].copy()
+    # merged = merged[merged["projection"].notna()].copy()
 
     # Rank grades correctly
     grade_rank = {
