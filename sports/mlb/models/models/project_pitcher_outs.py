@@ -223,28 +223,11 @@ def calculate_pitcher_summary(logs):
         last5_avg = outs.head(5).mean()
         season_avg = outs.mean()
 
-        available_values = []
-        available_weights = []
-
-        if pd.notna(last3_avg):
-            available_values.append(last3_avg)
-            available_weights.append(0.50)
-
-        if pd.notna(last5_avg):
-            available_values.append(last5_avg)
-            available_weights.append(0.30)
-
-        if pd.notna(season_avg):
-            available_values.append(season_avg)
-            available_weights.append(0.20)
-
-        projected_outs = sum(
-            value * weight
-            for value, weight in zip(
-                available_values,
-                available_weights,
-            )
-        ) / sum(available_weights)
+        projected_outs = (
+            last3_avg * 0.50
+            + last5_avg * 0.30
+            + season_avg * 0.20
+        )
 
         projected_outs = max(
             MIN_PROJECTED_OUTS,
@@ -332,11 +315,15 @@ def project_pitcher_outs():
             "game logs. Refusing to create fallback projections."
         )
 
-    projections.insert(
-        0,
-        "date",
-        target_date,
-    )
+    # The daily pitcher file may already contain a date column.
+    if "date" in projections.columns:
+        projections["date"] = target_date
+    else:
+        projections.insert(
+            0,
+            "date",
+            target_date,
+        )
 
     preferred_columns = [
         "date",
