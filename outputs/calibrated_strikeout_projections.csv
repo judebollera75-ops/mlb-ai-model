@@ -2,6 +2,7 @@ date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,
 2026-07-11,822711,Cam Schlittler,New York Yankees,away,19,131,6.894736842105263,8.4,7.948,RECENT_AND_SEASON,HIGH,7.948,7.948
 2026-07-11,823682,Joe Ryan,Minnesota Twins,home,19,122,6.421052631578948,7.6,7.246,RECENT_AND_SEASON,HIGH,7.246,7.246
 2026-07-11,822953,Logan Gilbert,Seattle Mariners,away,18,114,6.333333333333333,7.4,7.08,RECENT_AND_SEASON,HIGH,7.08,7.08
+2026-07-11,823357,Braxton Ashcraft,Pittsburgh Pirates,home,19,123,6.473684210526316,6.6,6.562,RECENT_AND_SEASON,HIGH,6.562,6.562
 2026-07-11,824813,Kyle Bradish,Baltimore Orioles,home,18,101,5.611111111111111,6.6,6.303,RECENT_AND_SEASON,HIGH,6.303,6.303
 2026-07-11,823926,Yoshinobu Yamamoto,Los Angeles Dodgers,home,16,100,6.25,6.2,6.215,RECENT_AND_SEASON,HIGH,6.215,6.215
 2026-07-11,823844,Eury Pérez,Miami Marlins,home,15,89,5.933333333333334,6.2,6.12,RECENT_AND_SEASON,HIGH,6.12,6.12
@@ -9,6 +10,7 @@ date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,
 2026-07-11,824249,Casey Mize,Detroit Tigers,home,13,72,5.538461538461538,5.8,5.722,RECENT_AND_SEASON,HIGH,5.722,5.722
 2026-07-11,823356,Shane Drohan,Milwaukee Brewers,away,8,61,7.625,4.8,5.648,RECENT_AND_SEASON,MEDIUM,5.648,5.648
 2026-07-11,824249,Cristopher Sánchez,Philadelphia Phillies,away,19,137,7.2105263157894735,4.8,5.523,RECENT_AND_SEASON,HIGH,5.523,5.523
+2026-07-11,823357,Brandon Sproat,Milwaukee Brewers,away,15,84,5.6,5.4,5.46,RECENT_AND_SEASON,HIGH,5.46,5.46
 2026-07-11,824576,Gage Jump,Athletics,away,8,41,5.125,5.6,5.458,RECENT_AND_SEASON,MEDIUM,5.458,5.458
 2026-07-11,822875,Peter Lambert,Houston Astros,away,14,74,5.285714285714286,5.4,5.366,RECENT_AND_SEASON,HIGH,5.366,5.366
 2026-07-11,823276,Walker Buehler,San Diego Padres,home,18,80,4.444444444444445,5.4,5.113,RECENT_AND_SEASON,HIGH,5.113,5.113
@@ -25,6 +27,7 @@ date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,
 2026-07-11,823682,Ryan Johnson,Los Angeles Angels,away,5,24,4.8,3.8,4.1,RECENT_AND_SEASON,MEDIUM,4.1,4.1
 2026-07-11,823926,Brandon Pfaadt,Arizona Diamondbacks,away,5,39,7.8,2.4,4.02,RECENT_AND_SEASON,MEDIUM,4.02,4.02
 2026-07-11,823356,Bubba Chandler,Pittsburgh Pirates,home,17,79,4.647058823529412,3.4,3.774,RECENT_AND_SEASON,HIGH,3.774,3.774
-2026-07-11,822711,Miles Mikolas,Washington Nationals,home,8,50,6.25,2.4,3.555,RECENT_AND_SEASON,MEDIUM,3.555,3.555
 2026-07-11,824576,Bryan Hudson,Chicago White Sox,home,5,39,7.8,1.6,3.46,RECENT_AND_SEASON,MEDIUM,3.46,3.46
 2026-07-11,824492,Javier Assad,Chicago Cubs,away,7,33,4.714285714285714,2.8,3.374,RECENT_AND_SEASON,MEDIUM,3.374,3.374
+2026-07-11,823603,Eduardo Rivera,Boston Red Sox,away,0,3,,3.0,3.0,RECENT_ONLY,LOW,3.0,3.0
+2026-07-11,822711,PJ Poulin,Washington Nationals,home,10,22,2.2,0.6,1.08,RECENT_AND_SEASON,HIGH,1.08,2.0

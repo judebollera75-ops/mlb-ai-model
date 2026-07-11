@@ -1,4 +1,6 @@
 date,game_id,team,pitcher_id,pitcher_name,side
+2026-07-11,823357,Milwaukee Brewers,687075,Brandon Sproat,away
+2026-07-11,823357,Pittsburgh Pirates,677952,Braxton Ashcraft,home
 2026-07-11,823356,Milwaukee Brewers,675660,Shane Drohan,away
 2026-07-11,823356,Pittsburgh Pirates,696149,Bubba Chandler,home
 2026-07-11,823682,Los Angeles Angels,696270,Ryan Johnson,away
@@ -8,7 +10,8 @@ date,game_id,team,pitcher_id,pitcher_name,side
 2026-07-11,823198,Colorado Rockies,607536,Kyle Freeland,away
 2026-07-11,823198,San Francisco Giants,641816,Tyler Mahle,home
 2026-07-11,822711,New York Yankees,693645,Cam Schlittler,away
-2026-07-11,822711,Washington Nationals,571945,Miles Mikolas,home
+2026-07-11,822711,Washington Nationals,676571,PJ Poulin,home
+2026-07-11,823603,Boston Red Sox,700842,Eduardo Rivera,away
 2026-07-11,823603,New York Mets,642547,Freddy Peralta,home
 2026-07-11,822953,Seattle Mariners,669302,Logan Gilbert,away
 2026-07-11,822953,Tampa Bay Rays,643377,Griffin Jax,home

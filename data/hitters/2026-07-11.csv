@@ -1,1 +1,55 @@
 date,game_id,team,opponent,side,player_id,player_name,batting_order,position,status
+2026-07-11,823357,Milwaukee Brewers,Pittsburgh Pirates,away,592885,Christian Yelich,1,DH,In Progress
+2026-07-11,823357,Milwaukee Brewers,Pittsburgh Pirates,away,669003,Garrett Mitchell,2,CF,In Progress
+2026-07-11,823357,Milwaukee Brewers,Pittsburgh Pirates,away,668930,Brice Turang,3,2B,In Progress
+2026-07-11,823357,Milwaukee Brewers,Pittsburgh Pirates,away,661388,William Contreras,4,C,In Progress
+2026-07-11,823357,Milwaukee Brewers,Pittsburgh Pirates,away,641343,Jake Bauers,5,1B,In Progress
+2026-07-11,823357,Milwaukee Brewers,Pittsburgh Pirates,away,800325,Luis Lara,6,LF,In Progress
+2026-07-11,823357,Milwaukee Brewers,Pittsburgh Pirates,away,806198,Cooper Pratt,7,SS,In Progress
+2026-07-11,823357,Milwaukee Brewers,Pittsburgh Pirates,away,686217,Sal Frelick,8,RF,In Progress
+2026-07-11,823357,Milwaukee Brewers,Pittsburgh Pirates,away,687401,Joey Ortiz,9,3B,In Progress
+2026-07-11,823357,Pittsburgh Pirates,Milwaukee Brewers,home,663968,Jake Mangum,1,CF,In Progress
+2026-07-11,823357,Pittsburgh Pirates,Milwaukee Brewers,home,664040,Brandon Lowe,2,2B,In Progress
+2026-07-11,823357,Pittsburgh Pirates,Milwaukee Brewers,home,668804,Bryan Reynolds,3,DH,In Progress
+2026-07-11,823357,Pittsburgh Pirates,Milwaukee Brewers,home,699013,Esmerlyn Valdez,4,RF,In Progress
+2026-07-11,823357,Pittsburgh Pirates,Milwaukee Brewers,home,656811,Ryan O'Hearn,5,1B,In Progress
+2026-07-11,823357,Pittsburgh Pirates,Milwaukee Brewers,home,693304,Nick Gonzales,6,3B,In Progress
+2026-07-11,823357,Pittsburgh Pirates,Milwaukee Brewers,home,682997,Tyler Callihan,7,LF,In Progress
+2026-07-11,823357,Pittsburgh Pirates,Milwaukee Brewers,home,669707,Jared Triolo,8,SS,In Progress
+2026-07-11,823357,Pittsburgh Pirates,Milwaukee Brewers,home,680779,Henry Davis,9,C,In Progress
+2026-07-11,823682,Los Angeles Angels,Minnesota Twins,away,687263,Zach Neto,1,SS,Pre-Game
+2026-07-11,823682,Los Angeles Angels,Minnesota Twins,away,545361,Mike Trout,2,CF,Pre-Game
+2026-07-11,823682,Los Angeles Angels,Minnesota Twins,away,694384,Nolan Schanuel,3,1B,Pre-Game
+2026-07-11,823682,Los Angeles Angels,Minnesota Twins,away,624585,Jorge Soler,4,DH,Pre-Game
+2026-07-11,823682,Los Angeles Angels,Minnesota Twins,away,687093,Vaughn Grissom,5,2B,Pre-Game
+2026-07-11,823682,Los Angeles Angels,Minnesota Twins,away,666176,Jo Adell,6,RF,Pre-Game
+2026-07-11,823682,Los Angeles Angels,Minnesota Twins,away,685133,Wade Meckler,7,LF,Pre-Game
+2026-07-11,823682,Los Angeles Angels,Minnesota Twins,away,694203,Denzer Guzman,8,3B,Pre-Game
+2026-07-11,823682,Los Angeles Angels,Minnesota Twins,away,681351,Logan O'Hoppe,9,C,Pre-Game
+2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,663616,Trevor Larnach,1,LF,Pre-Game
+2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,686797,Brooks Lee,2,3B,Pre-Game
+2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,605137,Josh Bell,3,DH,Pre-Game
+2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,665019,Kody Clemens,4,2B,Pre-Game
+2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,668904,Royce Lewis,5,1B,Pre-Game
+2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,605170,Victor Caratini,6,C,Pre-Game
+2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,702176,Alan Roden,7,RF,Pre-Game
+2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,656484,Tristan Gray,8,SS,Pre-Game
+2026-07-11,823682,Minnesota Twins,Los Angeles Angels,home,807712,Luke Keaschall,9,CF,Pre-Game
+2026-07-11,824576,Athletics,Chicago White Sox,away,805779,Jacob Wilson,1,SS,Pre-Game
+2026-07-11,824576,Athletics,Chicago White Sox,away,691016,Tyler Soderstrom,2,DH,Pre-Game
+2026-07-11,824576,Athletics,Chicago White Sox,away,669127,Shea Langeliers,3,C,Pre-Game
+2026-07-11,824576,Athletics,Chicago White Sox,away,641680,Jonah Heim,4,1B,Pre-Game
+2026-07-11,824576,Athletics,Chicago White Sox,away,811965,Joshua Kuroda-Grauer,5,3B,Pre-Game
+2026-07-11,824576,Athletics,Chicago White Sox,away,671732,Lawrence Butler,6,RF,Pre-Game
+2026-07-11,824576,Athletics,Chicago White Sox,away,666126,Carlos Cortes,7,LF,Pre-Game
+2026-07-11,824576,Athletics,Chicago White Sox,away,643446,Jeff McNeil,8,2B,Pre-Game
+2026-07-11,824576,Athletics,Chicago White Sox,away,703607,Henry Bolte,9,CF,Pre-Game
+2026-07-11,824576,Chicago White Sox,Athletics,home,545341,Randal Grichuk,1,LF,Pre-Game
+2026-07-11,824576,Chicago White Sox,Athletics,home,808959,Munetaka Murakami,2,DH,Pre-Game
+2026-07-11,824576,Chicago White Sox,Athletics,home,678246,Miguel Vargas,3,1B,Pre-Game
+2026-07-11,824576,Chicago White Sox,Athletics,home,695657,Colson Montgomery,4,3B,Pre-Game
+2026-07-11,824576,Chicago White Sox,Athletics,home,805367,Chase Meidroth,5,2B,Pre-Game
+2026-07-11,824576,Chicago White Sox,Athletics,home,695731,Braden Montgomery,6,RF,Pre-Game
+2026-07-11,824576,Chicago White Sox,Athletics,home,682668,Luisangel Acuña,7,SS,Pre-Game
+2026-07-11,824576,Chicago White Sox,Athletics,home,678577,Junior Perez,8,CF,Pre-Game
+2026-07-11,824576,Chicago White Sox,Athletics,home,691011,Drew Romo,9,C,Pre-Game

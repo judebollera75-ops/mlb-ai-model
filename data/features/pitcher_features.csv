@@ -1,10 +1,13 @@
 pitcher_id,pitcher_name,team,recent_games,avg_ip,avg_k,avg_bb,avg_hits,avg_er,avg_hr,avg_era
 694297,Brandon Pfaadt,Arizona Diamondbacks,5,2.933,2.4,0.6,3.0,1.0,0.6,5.47
+687075,Brandon Sproat,Milwaukee Brewers,5,3.8,5.4,1.4,2.4,1.4,0.4,5.382
+677952,Braxton Ashcraft,Pittsburgh Pirates,5,4.867,6.6,1.2,4.0,1.6,0.8,3.208
 663542,Bryan Hudson,Chicago White Sox,5,0.867,1.6,0.4,1.2,0.2,0.0,2.246
 696149,Bubba Chandler,Pittsburgh Pirates,5,5.467,3.4,2.4,5.4,2.8,0.4,4.648
 693645,Cam Schlittler,New York Yankees,5,6.0,8.4,1.4,5.2,1.6,1.2,1.848
 663554,Casey Mize,Detroit Tigers,5,5.6,5.8,1.0,4.4,1.8,0.6,2.614
 650911,Cristopher Sánchez,Philadelphia Phillies,5,5.4,4.8,1.2,7.0,3.8,1.4,2.074
+700842,Eduardo Rivera,Boston Red Sox,1,3.333,3.0,0.0,1.0,0.0,0.0,0.0
 691587,Eury Pérez,Miami Marlins,5,5.467,6.2,0.8,2.0,0.6,0.6,4.394
 642547,Freddy Peralta,New York Mets,5,4.4,3.8,1.4,6.4,3.4,0.8,4.55
 695611,Gage Jump,Athletics,5,4.933,5.6,1.6,5.6,2.6,0.8,2.84
@@ -16,9 +19,9 @@ pitcher_id,pitcher_name,team,recent_games,avg_ip,avg_k,avg_bb,avg_hits,avg_er,av
 607536,Kyle Freeland,Colorado Rockies,5,5.8,5.0,0.4,8.0,4.4,0.8,7.51
 669302,Logan Gilbert,Seattle Mariners,5,6.733,7.4,1.0,3.2,1.4,0.2,3.39
 669461,Matthew Liberatore,St. Louis Cardinals,5,4.267,4.2,1.8,5.0,3.8,1.2,5.234
-571945,Miles Mikolas,Washington Nationals,5,5.867,2.4,0.6,7.0,3.6,1.2,5.444
 666157,Nick Lodolo,Cincinnati Reds,5,5.0,4.2,2.0,5.0,2.0,0.0,5.33
 702070,Noah Cameron,Kansas City Royals,5,4.6,3.8,2.6,7.6,3.8,0.8,4.506
+676571,PJ Poulin,Washington Nationals,5,1.133,0.6,0.4,0.4,0.2,0.0,2.916
 663567,Peter Lambert,Houston Astros,5,5.867,5.4,1.4,4.2,1.8,1.4,3.35
 625643,Reynaldo López,Atlanta Braves,5,3.6,3.2,0.8,2.2,0.6,0.2,3.444
 696270,Ryan Johnson,Los Angeles Angels,5,4.4,3.8,0.8,4.6,2.6,1.4,10.236

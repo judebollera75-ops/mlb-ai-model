@@ -1,4 +1,6 @@
 date,game_id,pitcher_id,pitcher_name,team,side,history_games,last3_avg_outs,last5_avg_outs,season_avg_outs,projected_outs,projection_confidence
+2026-07-11,823357,687075,Brandon Sproat,Milwaukee Brewers,away,5,9.33,11.4,11.4,10.37,HIGH
+2026-07-11,823357,677952,Braxton Ashcraft,Pittsburgh Pirates,home,5,12.33,14.6,14.6,13.47,HIGH
 2026-07-11,823356,675660,Shane Drohan,Milwaukee Brewers,away,5,16.0,15.6,15.6,15.8,HIGH
 2026-07-11,823356,696149,Bubba Chandler,Pittsburgh Pirates,home,5,15.67,16.4,16.4,16.03,HIGH
 2026-07-11,823682,696270,Ryan Johnson,Los Angeles Angels,away,5,15.0,13.2,13.2,14.1,HIGH
@@ -8,7 +10,8 @@ date,game_id,pitcher_id,pitcher_name,team,side,history_games,last3_avg_outs,last
 2026-07-11,823198,607536,Kyle Freeland,Colorado Rockies,away,5,16.0,17.4,17.4,16.7,HIGH
 2026-07-11,823198,641816,Tyler Mahle,San Francisco Giants,home,5,14.33,14.6,14.6,14.47,HIGH
 2026-07-11,822711,693645,Cam Schlittler,New York Yankees,away,5,17.0,18.0,18.0,17.5,HIGH
-2026-07-11,822711,571945,Miles Mikolas,Washington Nationals,home,5,16.33,17.6,17.6,16.97,HIGH
+2026-07-11,822711,676571,PJ Poulin,Washington Nationals,home,5,3.33,3.4,3.4,6.0,HIGH
+2026-07-11,823603,700842,Eduardo Rivera,Boston Red Sox,away,1,10.0,10.0,10.0,10.0,LOW
 2026-07-11,823603,642547,Freddy Peralta,New York Mets,home,5,14.33,13.2,13.2,13.77,HIGH
 2026-07-11,822953,669302,Logan Gilbert,Seattle Mariners,away,5,20.67,20.2,20.2,20.43,HIGH
 2026-07-11,822953,643377,Griffin Jax,Tampa Bay Rays,home,5,16.0,15.6,15.6,15.8,HIGH

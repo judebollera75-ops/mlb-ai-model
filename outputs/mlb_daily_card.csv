@@ -1,51 +1,51 @@
 grade,platform,player,market,direction,line,sportsbook_odds,projection,edge,absolute_edge,pick,team,opponent,commence_time
-A+,BetOnline.ag,Brandon Marsh,hitter_hits,Over,0.5,-204,1.183,0.683,0.683,MORE/YES,Philadelphia Phillies,Detroit Tigers,2026-07-11T22:11:00Z
-A+,BetOnline.ag,Curtis Mead,hitter_hits,Over,0.5,-200,1.178,0.678,0.678,MORE/YES,Washington Nationals,New York Yankees,2026-07-11T20:05:00Z
-A+,BetMGM,Ozzie Albies,hitter_hits,Under,1.5,-220,0.845,-0.655,0.655,LESS/NO,Atlanta Braves,St. Louis Cardinals,2026-07-11T23:15:00Z
-A+,DraftKings,Gabriel Moreno,hitter_hits,Over,0.5,-166,1.145,0.645,0.645,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers,2026-07-12T01:10:00Z
-A+,BetOnline.ag,Sal Stewart,hitter_hits,Under,1.5,-250,0.863,-0.637,0.637,LESS/NO,Cincinnati Reds,Chicago Cubs,2026-07-11T23:11:00Z
-A+,BetOnline.ag,Trea Turner,hitter_hits,Under,1.5,-263,0.865,-0.635,0.635,LESS/NO,Philadelphia Phillies,Detroit Tigers,2026-07-11T22:11:00Z
-A+,BetOnline.ag,Jose Caballero,hitter_hits,Under,1.5,-294,0.866,-0.634,0.634,LESS/NO,New York Yankees,Washington Nationals,2026-07-11T20:05:00Z
-A+,BetOnline.ag,Liam Hicks,hitter_hits,Over,0.5,-227,1.123,0.623,0.623,MORE/YES,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
-A+,BetOnline.ag,Nico Hoerner,hitter_hits,Under,1.5,-238,0.884,-0.616,0.616,LESS/NO,Chicago Cubs,Cincinnati Reds,2026-07-11T23:11:00Z
-A+,DraftKings,Ketel Marte,hitter_hits,Over,0.5,-230,1.112,0.612,0.612,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers,2026-07-12T01:10:00Z
-A+,BetOnline.ag,Cody Bellinger,hitter_hits,Under,1.5,-238,0.893,-0.607,0.607,LESS/NO,New York Yankees,Washington Nationals,2026-07-11T20:05:00Z
-A+,BetMGM,Jose Altuve,hitter_hits,Over,0.5,-185,1.103,0.603,0.603,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
-A+,DraftKings,Miguel Vargas,hitter_hits,Over,0.5,-251,1.1,0.6,0.6,MORE/YES,Chicago White Sox,Athletics,2026-07-11T18:11:00Z
-A+,BetOnline.ag,Jasson Domínguez,hitter_hits,Under,1.5,-238,0.904,-0.596,0.596,LESS/NO,New York Yankees,Washington Nationals,2026-07-11T20:05:00Z
-A+,BetMGM,Gunnar Henderson,hitter_hits,Over,0.5,-225,1.095,0.595,0.595,MORE/YES,Baltimore Orioles,Kansas City Royals,2026-07-11T23:06:00Z
-A+,BetMGM,Jose Altuve,hitter_total_bases,Over,0.5,-185,2.498,1.998,1.998,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
-A+,Fanatics,Isaac Paredes,hitter_total_bases,Over,0.5,-160,1.957,1.457,1.457,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
-A+,BetOnline.ag,Javier Sanoja,hitter_total_bases,Over,0.5,-164,1.861,1.361,1.361,MORE/YES,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
-A+,BetMGM,Cedric Mullins,hitter_total_bases,Over,0.5,-140,1.824,1.324,1.324,MORE/YES,Tampa Bay Rays,Seattle Mariners,2026-07-11T20:11:00Z
-A+,BetMGM,Lane Thomas,hitter_total_bases,Over,0.5,-160,1.802,1.302,1.302,MORE/YES,Kansas City Royals,Baltimore Orioles,2026-07-11T23:06:00Z
-A+,BetMGM,Kyle Karros,hitter_total_bases,Over,0.5,-190,1.761,1.261,1.261,MORE/YES,Colorado Rockies,San Francisco Giants,2026-07-11T20:06:00Z
-A+,BetMGM,J.P. Crawford,hitter_total_bases,Over,0.5,-185,1.724,1.224,1.224,MORE/YES,Seattle Mariners,Tampa Bay Rays,2026-07-11T20:11:00Z
-A+,BetMGM,Randy Arozarena,hitter_total_bases,Over,0.5,-190,1.717,1.217,1.217,MORE/YES,Seattle Mariners,Tampa Bay Rays,2026-07-11T20:11:00Z
-A+,Fanatics,Luke Keaschall,hitter_total_bases,Over,0.5,-200,1.712,1.212,1.212,MORE/YES,Minnesota Twins,Los Angeles Angels,2026-07-11T18:11:00Z
-A+,BetMGM,Cam Smith,hitter_total_bases,Over,0.5,-165,1.691,1.191,1.191,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
-A+,BetMGM,Jac Caglianone,hitter_total_bases,Over,0.5,-190,1.67,1.17,1.17,MORE/YES,Kansas City Royals,Baltimore Orioles,2026-07-11T23:06:00Z
-A+,BetMGM,Cal Raleigh,hitter_total_bases,Over,0.5,-135,1.664,1.164,1.164,MORE/YES,Seattle Mariners,Tampa Bay Rays,2026-07-11T20:11:00Z
-A+,BetMGM,Edouard Julien,hitter_total_bases,Over,0.5,-120,1.64,1.14,1.14,MORE/YES,Colorado Rockies,San Francisco Giants,2026-07-11T20:06:00Z
-A+,BetOnline.ag,Zach McKinstry,hitter_total_bases,Over,0.5,-149,1.64,1.14,1.14,MORE/YES,Detroit Tigers,Philadelphia Phillies,2026-07-11T22:11:00Z
-A+,Fanatics,Colson Montgomery,hitter_total_bases,Over,0.5,-180,1.605,1.105,1.105,MORE/YES,Chicago White Sox,Athletics,2026-07-11T18:11:00Z
-A+,Bovada,Freddy Peralta,pitcher_outs,Under,17.5,-115,13.77,-3.73,3.73,LESS/NO,New York Mets,,2026-07-11T20:11:00Z
-A+,Bovada,Logan Gilbert,pitcher_outs,Over,17.5,-220,20.43,2.93,2.93,MORE/YES,Seattle Mariners,,2026-07-11T20:11:00Z
-A+,Bovada,Gage Jump,pitcher_outs,Under,16.5,100,13.73,-2.77,2.77,LESS/NO,Athletics,,2026-07-11T18:11:00Z
-A+,Fanatics,Noah Cameron,pitcher_outs,Under,16.5,-125,13.73,-2.77,2.77,LESS/NO,Kansas City Royals,,2026-07-11T23:06:00Z
-A+,Bovada,Cristopher Sanchez,pitcher_outs,Under,18.5,-180,15.77,-2.73,2.73,LESS/NO,Philadelphia Phillies,,2026-07-11T22:11:00Z
-A+,Bovada,Javier Assad,pitcher_outs,Under,15.5,-155,13.37,-2.13,2.13,LESS/NO,Chicago Cubs,,2026-07-11T23:11:00Z
-A+,Bovada,Tyler Mahle,pitcher_outs,Under,16.5,-120,14.47,-2.03,2.03,LESS/NO,San Francisco Giants,,2026-07-11T20:06:00Z
-A+,BetOnline.ag,Cam Schlittler,pitcher_strikeouts,Over,5.5,-141,7.948,2.448,2.448,MORE/YES,New York Yankees,,2026-07-11T20:05:00Z
-A+,DraftKings,Cristopher Sanchez,pitcher_strikeouts,Under,7.5,-154,5.523,-1.977,1.977,LESS/NO,Philadelphia Phillies,,2026-07-11T22:11:00Z
-A+,BetOnline.ag,Walker Buehler,pitcher_strikeouts,Over,3.5,-135,5.113,1.613,1.613,MORE/YES,San Diego Padres,,2026-07-12T00:41:00Z
-A+,BetMGM,Noah Cameron,pitcher_strikeouts,Under,5.5,-165,4.107,-1.393,1.393,LESS/NO,Kansas City Royals,,2026-07-11T23:06:00Z
-A+,BetMGM,Nick Lodolo,pitcher_strikeouts,Under,5.5,-150,4.195,-1.305,1.305,LESS/NO,Cincinnati Reds,,2026-07-11T23:11:00Z
-A+,DraftKings,Freddy Peralta,pitcher_strikeouts,Under,5.5,106,4.207,-1.293,1.293,LESS/NO,New York Mets,,2026-07-11T20:11:00Z
-A,Bovada,Kumar Rocker,pitcher_outs,Under,16.5,-125,14.67,-1.83,1.83,LESS/NO,Texas Rangers,,2026-07-11T23:06:00Z
-A,Bovada,Kyle Bradish,pitcher_outs,Over,17.5,-150,19.23,1.73,1.73,MORE/YES,Baltimore Orioles,,2026-07-11T23:06:00Z
-A,Fanatics,Yoshinobu Yamamoto,pitcher_outs,Over,18.5,115,20.1,1.6,1.6,MORE/YES,Los Angeles Dodgers,,2026-07-12T01:10:00Z
-A,FanDuel,Shane Drohan,pitcher_strikeouts,Over,4.5,-156,5.648,1.148,1.148,MORE/YES,Milwaukee Brewers,,2026-07-11T20:06:00Z
+A+,BetMGM,Ceddanne Rafaela,hitter_hits,Over,0.5,-225,1.173,0.673,0.673,MORE/YES,Boston Red Sox,New York Mets,2026-07-11T20:11:00Z
+A+,BetRivers,Otto Lopez,hitter_hits,Over,0.5,-275,1.166,0.666,0.666,MORE/YES,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
+A+,BetMGM,Jose Altuve,hitter_hits,Over,0.5,-185,1.141,0.641,0.641,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
+A+,BetMGM,Chase DeLauter,hitter_hits,Over,0.5,-210,1.135,0.635,0.635,MORE/YES,Cleveland Guardians,Miami Marlins,2026-07-11T20:11:00Z
+A+,BetMGM,Jeremy Pena,hitter_hits,Under,1.5,-250,0.877,-0.623,0.623,LESS/NO,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
+A+,BetMGM,Eugenio Suarez,hitter_hits,Over,0.5,-190,1.123,0.623,0.623,MORE/YES,Cincinnati Reds,Chicago Cubs,2026-07-11T23:11:00Z
+A+,BetMGM,Liam Hicks,hitter_hits,Over,0.5,-220,1.122,0.622,0.622,MORE/YES,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
+A+,BetMGM,Miguel Vargas,hitter_hits,Over,0.5,-225,1.121,0.621,0.621,MORE/YES,Chicago White Sox,Athletics,2026-07-11T18:11:00Z
+A+,BetMGM,Curtis Mead,hitter_hits,Over,0.5,-190,1.117,0.617,0.617,MORE/YES,Washington Nationals,New York Yankees,2026-07-11T20:05:00Z
+A+,BetMGM,Bryce Harper,hitter_hits,Over,0.5,-220,1.11,0.61,0.61,MORE/YES,Philadelphia Phillies,Detroit Tigers,2026-07-11T22:11:00Z
+A+,BetOnline.ag,Nico Hoerner,hitter_hits,Under,1.5,-256,0.892,-0.608,0.608,LESS/NO,Chicago Cubs,Cincinnati Reds,2026-07-11T23:11:00Z
+A+,BetMGM,Gunnar Henderson,hitter_hits,Over,0.5,-225,1.107,0.607,0.607,MORE/YES,Baltimore Orioles,Kansas City Royals,2026-07-11T23:06:00Z
+A+,BetMGM,Ozzie Albies,hitter_hits,Under,1.5,-225,0.893,-0.607,0.607,LESS/NO,Atlanta Braves,St. Louis Cardinals,2026-07-11T23:15:00Z
+A+,BetMGM,Michael Busch,hitter_hits,Over,0.5,-210,1.102,0.602,0.602,MORE/YES,Chicago Cubs,Cincinnati Reds,2026-07-11T23:11:00Z
+A+,BetMGM,CJ Abrams,hitter_hits,Over,0.5,-200,1.096,0.596,0.596,MORE/YES,Washington Nationals,New York Yankees,2026-07-11T20:05:00Z
+A+,BetMGM,Jose Altuve,hitter_total_bases,Over,0.5,-185,2.195,1.695,1.695,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
+A+,BetMGM,Kazuma Okamoto,hitter_total_bases,Over,0.5,-160,2.068,1.568,1.568,MORE/YES,Toronto Blue Jays,San Diego Padres,2026-07-12T00:41:00Z
+A+,BetMGM,Manny Machado,hitter_total_bases,Over,0.5,-175,2.0,1.5,1.5,MORE/YES,San Diego Padres,Toronto Blue Jays,2026-07-12T00:41:00Z
+A+,BetMGM,Curtis Mead,hitter_total_bases,Over,0.5,-190,1.983,1.483,1.483,MORE/YES,Washington Nationals,New York Yankees,2026-07-11T20:05:00Z
+A+,Fanatics,Isaac Paredes,hitter_total_bases,Over,0.5,-180,1.969,1.469,1.469,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
+A+,BetMGM,George Springer,hitter_total_bases,Over,0.5,-200,1.907,1.407,1.407,MORE/YES,Toronto Blue Jays,San Diego Padres,2026-07-12T00:41:00Z
+A+,BetMGM,Geraldo Perdomo,hitter_total_bases,Over,0.5,-190,1.842,1.342,1.342,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers,2026-07-12T01:10:00Z
+A+,BetMGM,Javier Sanoja,hitter_total_bases,Over,0.5,-160,1.831,1.331,1.331,MORE/YES,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
+A+,BetMGM,Nolan Arenado,hitter_total_bases,Over,0.5,-130,1.821,1.321,1.321,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers,2026-07-12T01:10:00Z
+A+,Caesars,Chase Meidroth,hitter_total_bases,Over,0.5,-200,1.805,1.305,1.305,MORE/YES,Chicago White Sox,Athletics,2026-07-11T18:11:00Z
+A+,BetMGM,Caleb Durbin,hitter_total_bases,Over,0.5,-155,1.805,1.305,1.305,MORE/YES,Boston Red Sox,New York Mets,2026-07-11T20:11:00Z
+A+,BetMGM,Cam Smith,hitter_total_bases,Over,0.5,-165,1.803,1.303,1.303,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
+A+,BetMGM,Travis Bazzana,hitter_total_bases,Over,0.5,-190,1.8,1.3,1.3,MORE/YES,Cleveland Guardians,Miami Marlins,2026-07-11T20:11:00Z
+A+,BetMGM,Blaze Alexander,hitter_total_bases,Over,0.5,-190,1.78,1.28,1.28,MORE/YES,Baltimore Orioles,Kansas City Royals,2026-07-11T23:06:00Z
+A+,BetMGM,Kyle Karros,hitter_total_bases,Over,0.5,-190,1.765,1.265,1.265,MORE/YES,Colorado Rockies,San Francisco Giants,2026-07-11T20:06:00Z
+A+,BetMGM,Brandon Sproat,pitcher_outs,Under,15.5,-185,10.37,-5.13,5.13,LESS/NO,Milwaukee Brewers,,2026-07-11T16:07:00Z
+A+,BetMGM,Brandon Pfaadt,pitcher_outs,Under,14.5,-110,10.07,-4.43,4.43,LESS/NO,Arizona Diamondbacks,,2026-07-12T01:10:00Z
+A+,Bovada,Gage Jump,pitcher_outs,Under,17.5,-145,13.73,-3.77,3.77,LESS/NO,Athletics,,2026-07-11T18:11:00Z
+A+,BetMGM,Freddy Peralta,pitcher_outs,Under,17.5,-130,13.77,-3.73,3.73,LESS/NO,New York Mets,,2026-07-11T20:11:00Z
+A+,BetMGM,Logan Gilbert,pitcher_outs,Over,17.5,-200,20.43,2.93,2.93,MORE/YES,Seattle Mariners,,2026-07-11T20:11:00Z
+A+,BetMGM,Noah Cameron,pitcher_outs,Under,16.5,-130,13.73,-2.77,2.77,LESS/NO,Kansas City Royals,,2026-07-11T23:06:00Z
+A+,BetMGM,Cristopher Sanchez,pitcher_outs,Under,18.5,-200,15.77,-2.73,2.73,LESS/NO,Philadelphia Phillies,,2026-07-11T22:11:00Z
+A+,BetMGM,Javier Assad,pitcher_outs,Under,15.5,-190,13.37,-2.13,2.13,LESS/NO,Chicago Cubs,,2026-07-11T23:11:00Z
+A+,BetMGM,Tyler Mahle,pitcher_outs,Under,16.5,-110,14.47,-2.03,2.03,LESS/NO,San Francisco Giants,,2026-07-11T20:06:00Z
+A+,BetOnline.ag,Cam Schlittler,pitcher_strikeouts,Over,5.5,-167,7.948,2.448,2.448,MORE/YES,New York Yankees,,2026-07-11T20:05:00Z
+A+,BetMGM,Walker Buehler,pitcher_strikeouts,Over,3.5,-135,5.113,1.613,1.613,MORE/YES,San Diego Padres,,2026-07-12T00:41:00Z
+A+,BetMGM,Logan Gilbert,pitcher_strikeouts,Over,5.5,-160,7.08,1.58,1.58,MORE/YES,Seattle Mariners,,2026-07-11T20:11:00Z
+A+,BetMGM,Noah Cameron,pitcher_strikeouts,Under,5.5,-160,4.107,-1.393,1.393,LESS/NO,Kansas City Royals,,2026-07-11T23:06:00Z
+A+,BetMGM,Nick Lodolo,pitcher_strikeouts,Under,5.5,-185,4.195,-1.305,1.305,LESS/NO,Cincinnati Reds,,2026-07-11T23:11:00Z
+A+,BetMGM,Freddy Peralta,pitcher_strikeouts,Under,5.5,-105,4.207,-1.293,1.293,LESS/NO,New York Mets,,2026-07-11T20:11:00Z
+A,BetMGM,Kyle Bradish,pitcher_outs,Over,17.5,-155,19.23,1.73,1.73,MORE/YES,Baltimore Orioles,,2026-07-11T23:06:00Z
+A,Bovada,Shane Drohan,pitcher_strikeouts,Over,4.5,-160,5.648,1.148,1.148,MORE/YES,Milwaukee Brewers,,2026-07-11T20:06:00Z
 A,BetMGM,Tyler Mahle,pitcher_strikeouts,Under,5.5,-160,4.419,-1.081,1.081,LESS/NO,San Francisco Giants,,2026-07-11T20:06:00Z
-A,BetMGM,Peter Lambert,pitcher_strikeouts,Over,4.5,-135,5.366,0.866,0.866,MORE/YES,Houston Astros,,2026-07-11T23:06:00Z
-B,BetMGM,Kyle Bradish,pitcher_strikeouts,Over,5.5,105,6.303,0.803,0.803,MORE/YES,Baltimore Orioles,,2026-07-11T23:06:00Z
+A,BetMGM,Braxton Ashcraft,pitcher_strikeouts,Over,5.5,-150,6.562,1.062,1.062,MORE/YES,Pittsburgh Pirates,,2026-07-11T16:07:00Z
+A,BetMGM,Cristopher Sanchez,pitcher_strikeouts,Under,6.5,-105,5.523,-0.977,0.977,LESS/NO,Philadelphia Phillies,,2026-07-11T22:11:00Z
