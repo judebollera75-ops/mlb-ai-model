@@ -191,30 +191,30 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,802139,JJ Wetherholt,1,2B,In Progress
 2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,671056,Iván Herrera,2,DH,In Progress
 2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691023,Jordan Walker,3,RF,In Progress
-2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,676369,Nelson Velázquez,4,LF,In Progress
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,663457,Lars Nootbaar,4,LF,In Progress
 2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,676475,Alec Burleson,5,1B,In Progress
 2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691026,Masyn Winn,6,SS,In Progress
 2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,665877,José Fermín,7,CF,In Progress
 2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691458,Blaze Jordan,8,3B,In Progress
-2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,686780,Pedro Pagés,9,C,In Progress
-2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,676391,Ernie Clement,1,2B,In Progress
-2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,665489,Vladimir Guerrero Jr.,2,1B,In Progress
-2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,672960,Kazuma Okamoto,3,3B,In Progress
-2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,543807,George Springer,4,DH,In Progress
-2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,672386,Alejandro Kirk,5,C,In Progress
-2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,662139,Daulton Varsho,6,CF,In Progress
-2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,665926,Andrés Giménez,7,SS,In Progress
-2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,664702,Myles Straw,8,LF,In Progress
-2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,664770,Nathan Lukes,9,RF,In Progress
-2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,665487,Fernando Tatis Jr.,1,RF,In Progress
-2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,701538,Jackson Merrill,2,CF,In Progress
-2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,593428,Xander Bogaerts,3,SS,In Progress
-2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,592518,Manny Machado,4,3B,In Progress
-2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,657757,Gavin Sheets,5,LF,In Progress
-2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,664034,Ty France,6,1B,In Progress
-2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,630105,Jake Cronenworth,7,PH,In Progress
-2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,650859,Luis Rengifo,8,2B,In Progress
-2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,669134,Luis Campusano,9,C,In Progress
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,699625,Jimmy Crooks,9,C,In Progress
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,676391,Ernie Clement,1,2B,Final
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,665489,Vladimir Guerrero Jr.,2,1B,Final
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,672960,Kazuma Okamoto,3,3B,Final
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,543807,George Springer,4,DH,Final
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,672386,Alejandro Kirk,5,C,Final
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,662139,Daulton Varsho,6,CF,Final
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,665926,Andrés Giménez,7,SS,Final
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,664702,Myles Straw,8,LF,Final
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,664770,Nathan Lukes,9,RF,Final
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,665487,Fernando Tatis Jr.,1,RF,Final
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,701538,Jackson Merrill,2,CF,Final
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,593428,Xander Bogaerts,3,SS,Final
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,592518,Manny Machado,4,3B,Final
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,657757,Gavin Sheets,5,LF,Final
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,664034,Ty France,6,1B,Final
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,630105,Jake Cronenworth,7,PH,Final
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,650859,Luis Rengifo,8,2B,Final
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,669134,Luis Campusano,9,C,Final
 2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,606466,Ketel Marte,1,DH,In Progress
 2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,672695,Geraldo Perdomo,2,SS,In Progress
 2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,682998,Corbin Carroll,3,RF,In Progress
@@ -226,8 +226,8 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,694374,Tim Tawa,9,1B,In Progress
 2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,660271,Shohei Ohtani,1,DH,In Progress
 2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,681624,Andy Pages,2,CF,In Progress
-2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,518692,Freddie Freeman,3,1B,In Progress
-2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,605141,Mookie Betts,4,SS,In Progress
+2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,669743,Alex Call,3,PH,In Progress
+2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,690976,Alex Freeland,4,PH,In Progress
 2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,669242,Tommy Edman,5,3B,In Progress
 2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,663656,Kyle Tucker,6,RF,In Progress
 2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,606192,Teoscar Hernández,7,LF,In Progress

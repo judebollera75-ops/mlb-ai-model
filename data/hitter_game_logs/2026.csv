@@ -196,97 +196,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,822712,514888,Jose Altuve,Houston Astros,Washington Nationals,5,5,1,0,0,1,4,1,3,0,1,0,0,0
 2026-07-07,822713,514888,Jose Altuve,Houston Astros,Washington Nationals,5,5,1,0,0,1,4,1,1,0,1,0,0,0
 2026-07-08,822710,514888,Jose Altuve,Houston Astros,Washington Nationals,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-03-26,823974,518692,Freddie Freeman,Los Angeles Dodgers,Arizona Diamondbacks,5,4,0,0,0,0,0,0,0,1,0,0,0,0
-2026-03-27,823971,518692,Freddie Freeman,Los Angeles Dodgers,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-03-28,823973,518692,Freddie Freeman,Los Angeles Dodgers,Arizona Diamondbacks,4,4,3,1,0,0,4,0,1,0,0,0,0,0
-2026-03-30,823972,518692,Freddie Freeman,Los Angeles Dodgers,Cleveland Guardians,4,4,0,0,0,0,0,0,1,0,0,0,0,0
-2026-03-31,823969,518692,Freddie Freeman,Los Angeles Dodgers,Cleveland Guardians,4,4,1,0,0,0,1,1,0,0,1,0,0,0
-2026-04-01,823970,518692,Freddie Freeman,Los Angeles Dodgers,Cleveland Guardians,4,4,1,0,0,1,4,1,1,0,0,0,0,0
-2026-04-03,822758,518692,Freddie Freeman,Los Angeles Dodgers,Washington Nationals,5,4,1,0,0,1,4,1,2,0,0,0,0,1
-2026-04-04,822757,518692,Freddie Freeman,Los Angeles Dodgers,Washington Nationals,5,5,2,2,0,0,4,0,4,0,1,0,0,0
-2026-04-05,822756,518692,Freddie Freeman,Los Angeles Dodgers,Washington Nationals,5,5,1,0,0,0,1,1,0,0,0,0,0,0
-2026-04-06,822832,518692,Freddie Freeman,Los Angeles Dodgers,Toronto Blue Jays,5,4,2,1,0,1,6,2,3,1,1,0,0,0
-2026-04-07,822831,518692,Freddie Freeman,Los Angeles Dodgers,Toronto Blue Jays,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-08,822833,518692,Freddie Freeman,Los Angeles Dodgers,Toronto Blue Jays,5,5,2,0,0,0,2,0,1,0,1,0,0,0
-2026-04-10,823968,518692,Freddie Freeman,Los Angeles Dodgers,Texas Rangers,5,4,0,0,0,0,0,0,0,1,2,0,0,0
-2026-04-11,823967,518692,Freddie Freeman,Los Angeles Dodgers,Texas Rangers,4,3,1,0,0,0,1,1,0,1,0,0,0,0
-2026-04-12,823966,518692,Freddie Freeman,Los Angeles Dodgers,Texas Rangers,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-13,823964,518692,Freddie Freeman,Los Angeles Dodgers,New York Mets,4,4,2,1,0,0,3,1,0,0,1,0,0,0
-2026-04-14,823965,518692,Freddie Freeman,Los Angeles Dodgers,New York Mets,4,4,0,0,0,0,0,0,1,0,2,0,0,0
-2026-04-15,823963,518692,Freddie Freeman,Los Angeles Dodgers,New York Mets,5,4,2,1,0,0,3,0,0,1,0,0,0,0
-2026-04-17,824373,518692,Freddie Freeman,Los Angeles Dodgers,Colorado Rockies,5,4,2,1,0,0,3,1,0,1,0,0,0,0
-2026-04-18,824372,518692,Freddie Freeman,Los Angeles Dodgers,Colorado Rockies,4,3,2,0,1,0,4,0,0,1,0,0,0,0
-2026-04-21,823236,518692,Freddie Freeman,Los Angeles Dodgers,San Francisco Giants,4,2,0,0,0,0,0,0,0,2,0,0,0,0
-2026-04-22,823231,518692,Freddie Freeman,Los Angeles Dodgers,San Francisco Giants,4,4,2,0,0,0,2,0,0,0,0,0,0,0
-2026-04-23,823233,518692,Freddie Freeman,Los Angeles Dodgers,San Francisco Giants,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-24,823962,518692,Freddie Freeman,Los Angeles Dodgers,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-25,823960,518692,Freddie Freeman,Los Angeles Dodgers,Chicago Cubs,5,5,1,0,0,0,1,1,1,0,2,0,0,0
-2026-04-26,823959,518692,Freddie Freeman,Los Angeles Dodgers,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-27,823961,518692,Freddie Freeman,Los Angeles Dodgers,Miami Marlins,5,3,1,0,0,0,1,1,0,2,0,0,0,0
-2026-04-28,823956,518692,Freddie Freeman,Los Angeles Dodgers,Miami Marlins,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-29,823958,518692,Freddie Freeman,Los Angeles Dodgers,Miami Marlins,5,5,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-01,823066,518692,Freddie Freeman,Los Angeles Dodgers,St. Louis Cardinals,4,4,2,0,0,0,2,1,0,0,0,0,0,0
-2026-05-02,823067,518692,Freddie Freeman,Los Angeles Dodgers,St. Louis Cardinals,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-05-03,823065,518692,Freddie Freeman,Los Angeles Dodgers,St. Louis Cardinals,5,5,2,1,0,0,3,0,1,0,2,0,0,0
-2026-05-04,824201,518692,Freddie Freeman,Los Angeles Dodgers,Houston Astros,5,5,2,0,0,0,2,0,2,0,3,0,0,0
-2026-05-05,824200,518692,Freddie Freeman,Los Angeles Dodgers,Houston Astros,4,4,1,1,0,0,2,0,0,0,1,0,0,0
-2026-05-06,824198,518692,Freddie Freeman,Los Angeles Dodgers,Houston Astros,4,2,1,1,0,0,2,1,1,2,0,0,0,0
-2026-05-08,823957,518692,Freddie Freeman,Los Angeles Dodgers,Atlanta Braves,4,4,1,0,0,1,4,1,1,0,0,0,0,0
-2026-05-09,823955,518692,Freddie Freeman,Los Angeles Dodgers,Atlanta Braves,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-10,823954,518692,Freddie Freeman,Los Angeles Dodgers,Atlanta Braves,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-05-11,823953,518692,Freddie Freeman,Los Angeles Dodgers,San Francisco Giants,4,4,2,1,0,0,3,1,0,0,1,0,0,0
-2026-05-12,823951,518692,Freddie Freeman,Los Angeles Dodgers,San Francisco Giants,4,2,1,0,0,0,1,0,0,2,0,0,0,0
-2026-05-13,823952,518692,Freddie Freeman,Los Angeles Dodgers,San Francisco Giants,4,3,1,0,0,0,1,0,0,1,0,1,0,0
-2026-05-14,823950,518692,Freddie Freeman,Los Angeles Dodgers,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-16,824038,518692,Freddie Freeman,Los Angeles Dodgers,Los Angeles Angels,5,4,0,0,0,0,0,1,0,1,1,0,0,0
-2026-05-17,824034,518692,Freddie Freeman,Los Angeles Dodgers,Los Angeles Angels,5,4,0,0,0,0,0,1,0,1,2,0,0,0
-2026-05-18,823301,518692,Freddie Freeman,Los Angeles Dodgers,San Diego Padres,4,2,0,0,0,0,0,0,0,2,2,0,0,0
-2026-05-19,823302,518692,Freddie Freeman,Los Angeles Dodgers,San Diego Padres,4,4,2,0,0,2,8,2,3,0,2,0,0,0
-2026-05-20,823299,518692,Freddie Freeman,Los Angeles Dodgers,San Diego Padres,5,5,2,2,0,0,4,0,0,0,1,0,0,0
-2026-05-22,823788,518692,Freddie Freeman,Los Angeles Dodgers,Milwaukee Brewers,4,2,0,0,0,0,0,0,0,2,2,0,0,0
-2026-05-23,823787,518692,Freddie Freeman,Los Angeles Dodgers,Milwaukee Brewers,5,1,1,1,0,0,2,3,0,4,0,1,0,0
-2026-05-24,823786,518692,Freddie Freeman,Los Angeles Dodgers,Milwaukee Brewers,5,3,0,0,0,0,0,1,0,2,3,0,0,0
-2026-05-25,823948,518692,Freddie Freeman,Los Angeles Dodgers,Colorado Rockies,4,4,1,1,0,0,2,1,1,0,1,0,0,0
-2026-05-26,823949,518692,Freddie Freeman,Los Angeles Dodgers,Colorado Rockies,5,3,2,0,0,0,2,2,1,1,1,0,0,0
-2026-05-27,823947,518692,Freddie Freeman,Los Angeles Dodgers,Colorado Rockies,4,4,2,0,0,1,5,1,1,0,0,0,0,0
-2026-05-29,823946,518692,Freddie Freeman,Los Angeles Dodgers,Philadelphia Phillies,4,4,1,0,0,1,4,1,1,0,0,0,0,0
-2026-05-30,823945,518692,Freddie Freeman,Los Angeles Dodgers,Philadelphia Phillies,4,4,1,0,0,0,1,0,0,0,2,0,0,0
-2026-05-31,823944,518692,Freddie Freeman,Los Angeles Dodgers,Philadelphia Phillies,5,3,1,0,0,0,1,1,2,0,2,0,0,0
-2026-06-01,825078,518692,Freddie Freeman,Los Angeles Dodgers,Arizona Diamondbacks,4,4,0,0,0,0,0,0,1,0,0,0,0,0
-2026-06-02,825079,518692,Freddie Freeman,Los Angeles Dodgers,Arizona Diamondbacks,5,5,3,0,0,1,6,1,2,0,1,0,0,0
-2026-06-03,825077,518692,Freddie Freeman,Los Angeles Dodgers,Arizona Diamondbacks,6,6,2,0,0,0,2,1,2,0,1,0,0,0
-2026-06-04,825076,518692,Freddie Freeman,Los Angeles Dodgers,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-05,823943,518692,Freddie Freeman,Los Angeles Dodgers,Los Angeles Angels,4,3,2,0,0,1,5,1,1,1,1,0,0,0
-2026-06-06,823942,518692,Freddie Freeman,Los Angeles Dodgers,Los Angeles Angels,2,2,1,0,0,0,1,1,0,0,0,0,0,0
-2026-06-07,823941,518692,Freddie Freeman,Los Angeles Dodgers,Los Angeles Angels,5,5,2,0,0,0,2,0,0,0,1,0,0,0
-2026-06-09,823374,518692,Freddie Freeman,Los Angeles Dodgers,Pittsburgh Pirates,5,4,2,1,0,0,3,2,1,1,1,0,0,0
-2026-06-10,823372,518692,Freddie Freeman,Los Angeles Dodgers,Pittsburgh Pirates,5,4,1,1,0,0,2,2,0,1,0,0,0,0
-2026-06-11,823371,518692,Freddie Freeman,Los Angeles Dodgers,Pittsburgh Pirates,6,3,1,0,0,0,1,1,1,1,0,0,0,2
-2026-06-12,824588,518692,Freddie Freeman,Los Angeles Dodgers,Chicago White Sox,3,3,0,0,0,0,0,0,0,0,2,0,0,0
-2026-06-13,824587,518692,Freddie Freeman,Los Angeles Dodgers,Chicago White Sox,5,5,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-14,824586,518692,Freddie Freeman,Los Angeles Dodgers,Chicago White Sox,5,4,1,0,0,1,4,1,1,1,1,0,0,0
-2026-06-15,823938,518692,Freddie Freeman,Los Angeles Dodgers,Tampa Bay Rays,4,3,1,0,0,0,1,0,0,1,0,0,0,0
-2026-06-16,823939,518692,Freddie Freeman,Los Angeles Dodgers,Tampa Bay Rays,3,3,2,0,0,0,2,0,0,0,0,0,0,0
-2026-06-17,823940,518692,Freddie Freeman,Los Angeles Dodgers,Tampa Bay Rays,5,4,1,0,0,1,4,2,2,1,0,0,0,0
-2026-06-19,823936,518692,Freddie Freeman,Los Angeles Dodgers,Baltimore Orioles,5,4,0,0,0,0,0,0,0,1,1,0,0,0
-2026-06-20,823937,518692,Freddie Freeman,Los Angeles Dodgers,Baltimore Orioles,4,3,0,0,0,0,0,1,0,1,1,0,0,0
-2026-06-21,823934,518692,Freddie Freeman,Los Angeles Dodgers,Baltimore Orioles,3,3,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-22,823692,518692,Freddie Freeman,Los Angeles Dodgers,Minnesota Twins,4,4,1,0,0,1,4,1,1,0,2,0,0,0
-2026-06-23,823690,518692,Freddie Freeman,Los Angeles Dodgers,Minnesota Twins,6,5,3,2,0,0,5,1,2,1,1,0,0,0
-2026-06-24,823691,518692,Freddie Freeman,Los Angeles Dodgers,Minnesota Twins,4,3,2,0,0,0,2,1,0,1,1,0,0,0
-2026-06-26,823285,518692,Freddie Freeman,Los Angeles Dodgers,San Diego Padres,4,3,2,1,0,0,3,0,0,1,1,0,0,0
-2026-06-27,823283,518692,Freddie Freeman,Los Angeles Dodgers,San Diego Padres,5,5,3,1,0,0,4,2,1,0,0,0,0,0
-2026-06-28,823281,518692,Freddie Freeman,Los Angeles Dodgers,San Diego Padres,4,3,0,0,0,0,0,0,1,1,1,0,0,0
-2026-06-29,824986,518692,Freddie Freeman,Los Angeles Dodgers,Athletics,5,5,2,0,0,0,2,0,1,0,0,0,0,0
-2026-06-30,824984,518692,Freddie Freeman,Los Angeles Dodgers,Athletics,5,4,2,1,0,0,3,2,0,1,0,0,0,0
-2026-07-01,824985,518692,Freddie Freeman,Los Angeles Dodgers,Athletics,3,2,1,0,0,1,4,1,1,1,0,1,0,0
-2026-07-02,823935,518692,Freddie Freeman,Los Angeles Dodgers,San Diego Padres,5,4,1,0,0,0,1,0,0,1,1,0,0,0
-2026-07-03,823933,518692,Freddie Freeman,Los Angeles Dodgers,San Diego Padres,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-07-04,823932,518692,Freddie Freeman,Los Angeles Dodgers,San Diego Padres,4,3,2,0,0,1,5,1,2,1,1,0,0,0
-2026-07-05,823931,518692,Freddie Freeman,Los Angeles Dodgers,San Diego Padres,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-06,823930,518692,Freddie Freeman,Los Angeles Dodgers,Colorado Rockies,5,5,1,0,0,0,1,0,0,0,0,0,0,0
-2026-07-07,823929,518692,Freddie Freeman,Los Angeles Dodgers,Colorado Rockies,5,5,2,0,0,0,2,0,0,0,1,0,0,0
-2026-07-08,823928,518692,Freddie Freeman,Los Angeles Dodgers,Colorado Rockies,4,4,2,1,0,0,3,1,0,0,1,0,0,0
 2026-03-27,824946,521692,Salvador Perez,Kansas City Royals,Atlanta Braves,4,4,1,0,0,0,1,0,0,0,0,0,0,0
 2026-03-28,824945,521692,Salvador Perez,Kansas City Royals,Atlanta Braves,4,4,1,0,0,1,4,1,1,0,0,0,0,0
 2026-03-29,824944,521692,Salvador Perez,Kansas City Royals,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,1,0,0,0
@@ -1393,63 +1302,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,823687,605137,Josh Bell,Minnesota Twins,Cleveland Guardians,4,3,2,0,0,0,2,1,0,1,0,0,0,0
 2026-07-08,823684,605137,Josh Bell,Minnesota Twins,Cleveland Guardians,5,5,1,0,0,0,1,1,0,0,1,0,0,0
 2026-07-09,823683,605137,Josh Bell,Minnesota Twins,Cleveland Guardians,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-03-26,823974,605141,Mookie Betts,Los Angeles Dodgers,Arizona Diamondbacks,5,4,1,0,0,0,1,1,1,0,1,0,0,1
-2026-03-27,823971,605141,Mookie Betts,Los Angeles Dodgers,Arizona Diamondbacks,4,4,1,0,0,1,4,1,3,0,0,0,0,0
-2026-03-28,823973,605141,Mookie Betts,Los Angeles Dodgers,Arizona Diamondbacks,4,3,0,0,0,0,0,1,0,1,0,0,0,0
-2026-03-30,823972,605141,Mookie Betts,Los Angeles Dodgers,Cleveland Guardians,4,4,1,1,0,0,2,1,1,0,1,0,0,0
-2026-03-31,823969,605141,Mookie Betts,Los Angeles Dodgers,Cleveland Guardians,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-01,823970,605141,Mookie Betts,Los Angeles Dodgers,Cleveland Guardians,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-04-03,822758,605141,Mookie Betts,Los Angeles Dodgers,Washington Nationals,6,6,2,0,0,1,5,2,2,0,0,0,0,0
-2026-04-04,822757,605141,Mookie Betts,Los Angeles Dodgers,Washington Nationals,1,0,0,0,0,0,0,1,0,1,0,0,0,0
-2026-05-11,823953,605141,Mookie Betts,Los Angeles Dodgers,San Francisco Giants,5,5,1,0,0,0,1,0,0,0,1,0,0,0
-2026-05-12,823951,605141,Mookie Betts,Los Angeles Dodgers,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-13,823952,605141,Mookie Betts,Los Angeles Dodgers,San Francisco Giants,4,4,1,0,0,1,4,1,1,0,0,0,0,0
-2026-05-15,824037,605141,Mookie Betts,Los Angeles Dodgers,Los Angeles Angels,5,5,0,0,0,0,0,0,0,0,2,0,0,0
-2026-05-16,824038,605141,Mookie Betts,Los Angeles Dodgers,Los Angeles Angels,5,4,2,0,0,1,5,2,1,1,0,0,0,0
-2026-05-18,823301,605141,Mookie Betts,Los Angeles Dodgers,San Diego Padres,4,4,1,0,0,0,1,0,0,0,0,0,1,0
-2026-05-19,823302,605141,Mookie Betts,Los Angeles Dodgers,San Diego Padres,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-20,823299,605141,Mookie Betts,Los Angeles Dodgers,San Diego Padres,5,4,2,1,0,0,3,0,0,1,0,0,1,0
-2026-05-22,823788,605141,Mookie Betts,Los Angeles Dodgers,Milwaukee Brewers,4,3,0,0,0,0,0,0,0,1,1,0,0,0
-2026-05-23,823787,605141,Mookie Betts,Los Angeles Dodgers,Milwaukee Brewers,6,6,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-24,823786,605141,Mookie Betts,Los Angeles Dodgers,Milwaukee Brewers,5,5,1,0,0,0,1,1,0,0,1,0,0,0
-2026-05-25,823948,605141,Mookie Betts,Los Angeles Dodgers,Colorado Rockies,4,3,0,0,0,0,0,0,1,0,0,0,0,0
-2026-05-26,823949,605141,Mookie Betts,Los Angeles Dodgers,Colorado Rockies,5,5,3,0,0,2,9,2,5,0,1,0,0,0
-2026-05-27,823947,605141,Mookie Betts,Los Angeles Dodgers,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-29,823946,605141,Mookie Betts,Los Angeles Dodgers,Philadelphia Phillies,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-30,823945,605141,Mookie Betts,Los Angeles Dodgers,Philadelphia Phillies,4,4,3,1,0,0,4,0,1,0,0,0,0,0
-2026-05-31,823944,605141,Mookie Betts,Los Angeles Dodgers,Philadelphia Phillies,5,3,0,0,0,0,0,1,0,2,1,0,0,0
-2026-06-01,825078,605141,Mookie Betts,Los Angeles Dodgers,Arizona Diamondbacks,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-02,825079,605141,Mookie Betts,Los Angeles Dodgers,Arizona Diamondbacks,5,4,1,0,0,0,1,0,1,1,1,0,0,0
-2026-06-03,825077,605141,Mookie Betts,Los Angeles Dodgers,Arizona Diamondbacks,5,5,0,0,0,0,0,1,0,0,1,0,0,0
-2026-06-04,825076,605141,Mookie Betts,Los Angeles Dodgers,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-05,823943,605141,Mookie Betts,Los Angeles Dodgers,Los Angeles Angels,3,2,0,0,0,0,0,0,0,1,0,0,0,0
-2026-06-06,823942,605141,Mookie Betts,Los Angeles Dodgers,Los Angeles Angels,4,3,1,0,0,0,1,1,0,1,0,0,0,0
-2026-06-09,823374,605141,Mookie Betts,Los Angeles Dodgers,Pittsburgh Pirates,6,6,2,1,0,0,3,2,0,0,1,0,0,0
-2026-06-10,823372,605141,Mookie Betts,Los Angeles Dodgers,Pittsburgh Pirates,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-11,823371,605141,Mookie Betts,Los Angeles Dodgers,Pittsburgh Pirates,6,5,1,0,0,0,1,0,0,1,0,0,0,0
-2026-06-12,824588,605141,Mookie Betts,Los Angeles Dodgers,Chicago White Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-13,824587,605141,Mookie Betts,Los Angeles Dodgers,Chicago White Sox,5,5,3,0,0,0,3,3,0,0,2,0,0,0
-2026-06-14,824586,605141,Mookie Betts,Los Angeles Dodgers,Chicago White Sox,4,4,2,0,0,1,5,1,1,0,0,1,0,0
-2026-06-15,823938,605141,Mookie Betts,Los Angeles Dodgers,Tampa Bay Rays,4,4,1,1,0,0,2,1,0,0,0,0,0,0
-2026-06-16,823939,605141,Mookie Betts,Los Angeles Dodgers,Tampa Bay Rays,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-17,823940,605141,Mookie Betts,Los Angeles Dodgers,Tampa Bay Rays,5,4,1,0,0,0,1,1,0,1,0,0,0,0
-2026-06-19,823936,605141,Mookie Betts,Los Angeles Dodgers,Baltimore Orioles,5,5,3,1,0,1,7,2,1,0,2,0,0,0
-2026-06-20,823937,605141,Mookie Betts,Los Angeles Dodgers,Baltimore Orioles,4,3,1,0,0,0,1,0,0,1,0,0,0,0
-2026-06-21,823934,605141,Mookie Betts,Los Angeles Dodgers,Baltimore Orioles,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-06-22,823692,605141,Mookie Betts,Los Angeles Dodgers,Minnesota Twins,4,3,0,0,0,0,0,0,0,1,1,0,0,0
-2026-06-23,823690,605141,Mookie Betts,Los Angeles Dodgers,Minnesota Twins,6,6,2,0,0,0,2,1,1,0,2,0,0,0
-2026-06-24,823691,605141,Mookie Betts,Los Angeles Dodgers,Minnesota Twins,4,4,3,1,0,1,7,1,1,0,0,0,0,0
-2026-06-26,823285,605141,Mookie Betts,Los Angeles Dodgers,San Diego Padres,4,3,1,0,0,1,4,1,1,1,0,0,0,0
-2026-06-27,823283,605141,Mookie Betts,Los Angeles Dodgers,San Diego Padres,5,5,1,0,0,1,4,1,3,0,1,0,0,0
-2026-06-28,823281,605141,Mookie Betts,Los Angeles Dodgers,San Diego Padres,4,4,2,0,0,0,2,0,2,0,0,0,0,0
-2026-06-29,824986,605141,Mookie Betts,Los Angeles Dodgers,Athletics,5,5,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-30,824984,605141,Mookie Betts,Los Angeles Dodgers,Athletics,5,5,3,1,0,0,4,1,1,0,0,0,0,0
-2026-07-02,823935,605141,Mookie Betts,Los Angeles Dodgers,San Diego Padres,5,5,2,1,0,0,3,2,1,0,0,0,0,0
-2026-07-03,823933,605141,Mookie Betts,Los Angeles Dodgers,San Diego Padres,4,3,0,0,0,0,0,1,0,1,0,0,0,0
-2026-07-04,823932,605141,Mookie Betts,Los Angeles Dodgers,San Diego Padres,4,4,1,1,0,0,2,0,0,0,0,0,0,0
-2026-07-05,823931,605141,Mookie Betts,Los Angeles Dodgers,San Diego Padres,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-07-06,823930,605141,Mookie Betts,Los Angeles Dodgers,Colorado Rockies,5,5,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-08,823928,605141,Mookie Betts,Los Angeles Dodgers,Colorado Rockies,4,3,1,0,0,0,1,1,1,1,1,0,0,0
 2026-03-26,824865,605170,Victor Caratini,Minnesota Twins,Baltimore Orioles,4,3,1,0,0,0,1,0,0,1,0,0,0,0
 2026-03-29,824864,605170,Victor Caratini,Minnesota Twins,Baltimore Orioles,5,5,2,0,0,0,2,1,0,0,0,0,0,0
 2026-03-30,824135,605170,Victor Caratini,Minnesota Twins,Kansas City Royals,3,3,0,0,0,0,0,0,0,0,1,0,0,0
@@ -4805,6 +4657,35 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,823205,662139,Daulton Varsho,Toronto Blue Jays,San Francisco Giants,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-07,823203,662139,Daulton Varsho,Toronto Blue Jays,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-08,823202,662139,Daulton Varsho,Toronto Blue Jays,San Francisco Giants,5,4,2,0,0,0,2,2,1,1,0,1,0,0
+2026-06-05,823049,663457,Lars Nootbaar,St. Louis Cardinals,Cincinnati Reds,6,6,2,1,0,0,3,1,1,0,1,0,0,0
+2026-06-06,823048,663457,Lars Nootbaar,St. Louis Cardinals,Cincinnati Reds,2,1,1,0,0,1,4,1,2,1,0,0,0,0
+2026-06-07,823047,663457,Lars Nootbaar,St. Louis Cardinals,Cincinnati Reds,5,3,0,0,0,0,0,0,0,2,2,0,0,0
+2026-06-09,823620,663457,Lars Nootbaar,St. Louis Cardinals,New York Mets,4,4,0,0,0,0,0,0,1,0,0,0,0,0
+2026-06-10,823618,663457,Lars Nootbaar,St. Louis Cardinals,New York Mets,5,4,0,0,0,0,0,0,0,1,2,0,0,0
+2026-06-11,823619,663457,Lars Nootbaar,St. Louis Cardinals,New York Mets,4,4,2,1,0,1,6,1,1,0,0,0,0,0
+2026-06-12,823695,663457,Lars Nootbaar,St. Louis Cardinals,Minnesota Twins,5,5,1,0,0,0,1,1,0,0,2,0,0,0
+2026-06-13,823694,663457,Lars Nootbaar,St. Louis Cardinals,Minnesota Twins,2,1,1,0,0,0,1,1,0,1,0,0,0,0
+2026-06-14,823693,663457,Lars Nootbaar,St. Louis Cardinals,Minnesota Twins,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-15,823046,663457,Lars Nootbaar,St. Louis Cardinals,San Diego Padres,4,3,2,0,0,0,2,1,0,1,1,0,1,0
+2026-06-16,823045,663457,Lars Nootbaar,St. Louis Cardinals,San Diego Padres,4,2,1,0,0,0,1,1,1,1,1,0,0,0
+2026-06-17,823044,663457,Lars Nootbaar,St. Louis Cardinals,San Diego Padres,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-06-19,824097,663457,Lars Nootbaar,St. Louis Cardinals,Kansas City Royals,4,4,1,0,0,0,1,1,0,0,0,0,0,0
+2026-06-21,824095,663457,Lars Nootbaar,St. Louis Cardinals,Kansas City Royals,5,5,2,1,0,0,3,1,1,0,0,0,0,0
+2026-06-22,823040,663457,Lars Nootbaar,St. Louis Cardinals,Arizona Diamondbacks,4,2,0,0,0,0,0,1,0,2,1,0,0,0
+2026-06-23,823043,663457,Lars Nootbaar,St. Louis Cardinals,Arizona Diamondbacks,4,3,2,1,0,0,3,1,0,1,0,0,0,0
+2026-06-24,823041,663457,Lars Nootbaar,St. Louis Cardinals,Arizona Diamondbacks,4,4,1,0,1,0,3,1,0,0,1,0,0,0
+2026-06-26,823039,663457,Lars Nootbaar,St. Louis Cardinals,Miami Marlins,4,3,1,0,0,0,1,0,0,1,1,0,0,0
+2026-06-27,823038,663457,Lars Nootbaar,St. Louis Cardinals,Miami Marlins,4,3,2,0,0,0,2,0,0,1,1,0,0,0
+2026-06-28,823037,663457,Lars Nootbaar,St. Louis Cardinals,Miami Marlins,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-30,824907,663457,Lars Nootbaar,St. Louis Cardinals,Atlanta Braves,4,4,2,0,0,0,2,1,0,0,1,0,0,0
+2026-07-01,824905,663457,Lars Nootbaar,St. Louis Cardinals,Atlanta Braves,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-02,824906,663457,Lars Nootbaar,St. Louis Cardinals,Atlanta Braves,5,5,2,1,0,0,3,0,1,0,1,0,0,0
+2026-07-04,824658,663457,Lars Nootbaar,St. Louis Cardinals,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-05,824656,663457,Lars Nootbaar,St. Louis Cardinals,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-06,823036,663457,Lars Nootbaar,St. Louis Cardinals,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-07,823062,663457,Lars Nootbaar,St. Louis Cardinals,Milwaukee Brewers,4,3,1,1,0,0,2,0,0,1,1,0,0,0
+2026-07-08,823032,663457,Lars Nootbaar,St. Louis Cardinals,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-09,823034,663457,Lars Nootbaar,St. Louis Cardinals,Milwaukee Brewers,4,4,1,0,0,0,1,0,1,0,1,0,0,0
 2026-03-26,824704,663538,Nico Hoerner,Chicago Cubs,Washington Nationals,4,4,0,0,0,0,0,1,0,0,1,0,0,0
 2026-03-28,824701,663538,Nico Hoerner,Chicago Cubs,Washington Nationals,5,3,1,1,0,0,2,1,1,2,0,1,0,0
 2026-03-29,824700,663538,Nico Hoerner,Chicago Cubs,Washington Nationals,4,4,1,0,0,0,1,0,0,0,1,1,0,0
@@ -8057,6 +7938,60 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,823203,669477,Casey Schmitt,San Francisco Giants,Toronto Blue Jays,4,4,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-08,823202,669477,Casey Schmitt,San Francisco Giants,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-09,823201,669477,Casey Schmitt,San Francisco Giants,Colorado Rockies,5,4,2,1,0,1,6,2,2,1,1,0,0,0
+2026-04-03,822758,669743,Alex Call,Los Angeles Dodgers,Washington Nationals,1,0,0,0,0,0,0,1,0,1,0,0,0,0
+2026-04-04,822757,669743,Alex Call,Los Angeles Dodgers,Washington Nationals,5,5,2,1,0,0,3,1,1,0,0,0,0,0
+2026-04-05,822756,669743,Alex Call,Los Angeles Dodgers,Washington Nationals,5,3,2,1,0,0,3,2,0,2,0,0,0,0
+2026-04-06,822832,669743,Alex Call,Los Angeles Dodgers,Toronto Blue Jays,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-12,823966,669743,Alex Call,Los Angeles Dodgers,Texas Rangers,4,3,1,0,0,0,1,0,0,1,1,0,1,0
+2026-04-18,824372,669743,Alex Call,Los Angeles Dodgers,Colorado Rockies,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+2026-04-19,824371,669743,Alex Call,Los Angeles Dodgers,Colorado Rockies,4,3,1,0,0,0,1,1,0,1,1,0,0,0
+2026-04-20,824370,669743,Alex Call,Los Angeles Dodgers,Colorado Rockies,6,5,1,0,0,0,1,1,1,1,1,0,0,0
+2026-04-21,823236,669743,Alex Call,Los Angeles Dodgers,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-25,823960,669743,Alex Call,Los Angeles Dodgers,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-27,823961,669743,Alex Call,Los Angeles Dodgers,Miami Marlins,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-29,823958,669743,Alex Call,Los Angeles Dodgers,Miami Marlins,4,3,1,0,0,0,1,0,1,1,1,0,0,0
+2026-05-02,823067,669743,Alex Call,Los Angeles Dodgers,St. Louis Cardinals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-03,823065,669743,Alex Call,Los Angeles Dodgers,St. Louis Cardinals,1,1,1,0,0,0,1,0,1,0,0,0,0,0
+2026-05-05,824200,669743,Alex Call,Los Angeles Dodgers,Houston Astros,1,1,1,1,0,0,2,1,0,0,0,0,0,0
+2026-05-06,824198,669743,Alex Call,Los Angeles Dodgers,Houston Astros,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-09,823955,669743,Alex Call,Los Angeles Dodgers,Atlanta Braves,2,2,1,1,0,0,2,1,0,0,0,0,0,0
+2026-05-10,823954,669743,Alex Call,Los Angeles Dodgers,Atlanta Braves,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-05-13,823952,669743,Alex Call,Los Angeles Dodgers,San Francisco Giants,4,2,0,0,0,0,0,0,1,1,0,0,0,0
+2026-05-14,823950,669743,Alex Call,Los Angeles Dodgers,San Francisco Giants,1,1,1,0,0,0,1,1,2,0,0,0,0,0
+2026-05-16,824038,669743,Alex Call,Los Angeles Dodgers,Los Angeles Angels,5,4,1,0,0,0,1,1,2,1,1,0,0,0
+2026-05-18,823301,669743,Alex Call,Los Angeles Dodgers,San Diego Padres,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-19,823302,669743,Alex Call,Los Angeles Dodgers,San Diego Padres,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-05-26,823949,669743,Alex Call,Los Angeles Dodgers,Colorado Rockies,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-27,823947,669743,Alex Call,Los Angeles Dodgers,Colorado Rockies,3,3,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-29,823946,669743,Alex Call,Los Angeles Dodgers,Philadelphia Phillies,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-30,823945,669743,Alex Call,Los Angeles Dodgers,Philadelphia Phillies,4,4,2,1,0,0,3,1,1,0,0,0,0,0
+2026-05-31,823944,669743,Alex Call,Los Angeles Dodgers,Philadelphia Phillies,2,2,1,0,0,0,1,0,2,0,0,0,0,0
+2026-06-01,825078,669743,Alex Call,Los Angeles Dodgers,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-02,825079,669743,Alex Call,Los Angeles Dodgers,Arizona Diamondbacks,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-03,825077,669743,Alex Call,Los Angeles Dodgers,Arizona Diamondbacks,5,4,1,0,0,0,1,0,0,0,1,0,0,1
+2026-06-04,825076,669743,Alex Call,Los Angeles Dodgers,Arizona Diamondbacks,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-05,823943,669743,Alex Call,Los Angeles Dodgers,Los Angeles Angels,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-06,823942,669743,Alex Call,Los Angeles Dodgers,Los Angeles Angels,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-06-07,823941,669743,Alex Call,Los Angeles Dodgers,Los Angeles Angels,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-06-09,823374,669743,Alex Call,Los Angeles Dodgers,Pittsburgh Pirates,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-10,823372,669743,Alex Call,Los Angeles Dodgers,Pittsburgh Pirates,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-11,823371,669743,Alex Call,Los Angeles Dodgers,Pittsburgh Pirates,2,1,1,0,0,0,1,1,0,1,0,0,0,0
+2026-06-12,824588,669743,Alex Call,Los Angeles Dodgers,Chicago White Sox,4,3,1,0,0,0,1,0,0,0,0,0,0,1
+2026-06-13,824587,669743,Alex Call,Los Angeles Dodgers,Chicago White Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-15,823938,669743,Alex Call,Los Angeles Dodgers,Tampa Bay Rays,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-16,823939,669743,Alex Call,Los Angeles Dodgers,Tampa Bay Rays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-17,823940,669743,Alex Call,Los Angeles Dodgers,Tampa Bay Rays,4,3,1,0,0,0,1,1,1,1,1,1,0,0
+2026-06-19,823936,669743,Alex Call,Los Angeles Dodgers,Baltimore Orioles,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-06-20,823937,669743,Alex Call,Los Angeles Dodgers,Baltimore Orioles,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-21,823934,669743,Alex Call,Los Angeles Dodgers,Baltimore Orioles,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-22,823692,669743,Alex Call,Los Angeles Dodgers,Minnesota Twins,3,3,2,0,0,0,2,0,0,0,1,0,0,0
+2026-06-23,823690,669743,Alex Call,Los Angeles Dodgers,Minnesota Twins,6,4,2,0,0,1,5,3,1,2,0,0,0,0
+2026-06-24,823691,669743,Alex Call,Los Angeles Dodgers,Minnesota Twins,4,3,0,0,0,0,0,0,1,0,0,0,0,0
+2026-06-26,823285,669743,Alex Call,Los Angeles Dodgers,San Diego Padres,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-27,823283,669743,Alex Call,Los Angeles Dodgers,San Diego Padres,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-05,823931,669743,Alex Call,Los Angeles Dodgers,San Diego Padres,3,2,0,0,0,0,0,0,0,1,2,0,0,0
+2026-07-07,823929,669743,Alex Call,Los Angeles Dodgers,Colorado Rockies,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-08,823928,669743,Alex Call,Los Angeles Dodgers,Colorado Rockies,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-26,823163,670042,Luke Raley,Seattle Mariners,Cleveland Guardians,4,4,1,0,0,1,4,1,1,0,2,0,0,0
 2026-03-27,823162,670042,Luke Raley,Seattle Mariners,Cleveland Guardians,4,4,1,0,0,1,4,1,2,0,1,0,0,0
 2026-03-28,823161,670042,Luke Raley,Seattle Mariners,Cleveland Guardians,2,1,1,0,0,1,4,1,2,1,0,0,0,0
@@ -9689,29 +9624,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-03,824982,675961,Alika Williams,Athletics,Miami Marlins,4,4,1,1,0,0,2,1,0,0,2,0,0,0
 2026-07-04,824983,675961,Alika Williams,Athletics,Miami Marlins,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-09,824251,675961,Alika Williams,Athletics,Detroit Tigers,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-29,823055,676369,Nelson Velázquez,St. Louis Cardinals,Chicago Cubs,4,3,2,0,0,1,5,2,3,0,0,0,0,1
-2026-05-31,823053,676369,Nelson Velázquez,St. Louis Cardinals,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-01,823050,676369,Nelson Velázquez,St. Louis Cardinals,Texas Rangers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-02,823052,676369,Nelson Velázquez,St. Louis Cardinals,Texas Rangers,2,2,1,0,0,0,1,0,0,0,1,0,0,0
-2026-06-03,823051,676369,Nelson Velázquez,St. Louis Cardinals,Texas Rangers,4,3,2,1,0,0,3,1,1,1,1,0,0,0
-2026-06-06,823048,676369,Nelson Velázquez,St. Louis Cardinals,Cincinnati Reds,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-07,823047,676369,Nelson Velázquez,St. Louis Cardinals,Cincinnati Reds,1,1,1,0,0,0,1,1,0,0,0,0,0,0
-2026-06-10,823618,676369,Nelson Velázquez,St. Louis Cardinals,New York Mets,4,4,1,0,0,1,4,1,2,0,1,0,0,0
-2026-06-12,823695,676369,Nelson Velázquez,St. Louis Cardinals,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-13,823694,676369,Nelson Velázquez,St. Louis Cardinals,Minnesota Twins,3,3,1,0,0,0,1,0,0,0,1,0,0,0
-2026-06-17,823044,676369,Nelson Velázquez,St. Louis Cardinals,San Diego Padres,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-18,824098,676369,Nelson Velázquez,St. Louis Cardinals,Kansas City Royals,5,4,1,1,0,0,2,0,0,1,1,0,0,0
-2026-06-19,824097,676369,Nelson Velázquez,St. Louis Cardinals,Kansas City Royals,1,0,0,0,0,0,0,1,0,1,0,0,0,0
-2026-06-23,823043,676369,Nelson Velázquez,St. Louis Cardinals,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-24,823041,676369,Nelson Velázquez,St. Louis Cardinals,Arizona Diamondbacks,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-30,824907,676369,Nelson Velázquez,St. Louis Cardinals,Atlanta Braves,3,2,2,0,0,1,5,1,1,1,0,0,0,0
-2026-07-01,824905,676369,Nelson Velázquez,St. Louis Cardinals,Atlanta Braves,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-03,824659,676369,Nelson Velázquez,St. Louis Cardinals,Chicago Cubs,6,3,0,0,0,0,0,1,2,2,0,0,0,0
-2026-07-05,824656,676369,Nelson Velázquez,St. Louis Cardinals,Chicago Cubs,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-06,823036,676369,Nelson Velázquez,St. Louis Cardinals,Milwaukee Brewers,3,3,1,1,0,0,2,1,1,0,0,0,0,0
-2026-07-07,823062,676369,Nelson Velázquez,St. Louis Cardinals,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-07,823035,676369,Nelson Velázquez,St. Louis Cardinals,Milwaukee Brewers,4,4,1,0,0,1,4,1,2,0,0,0,0,0
-2026-07-08,823032,676369,Nelson Velázquez,St. Louis Cardinals,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-27,822839,676391,Ernie Clement,Toronto Blue Jays,Athletics,4,4,2,2,0,0,4,1,0,0,0,0,0,0
 2026-03-28,822838,676391,Ernie Clement,Toronto Blue Jays,Athletics,6,6,2,0,0,0,2,0,1,0,0,0,0,0
 2026-03-29,822837,676391,Ernie Clement,Toronto Blue Jays,Athletics,3,3,0,0,0,0,0,0,0,0,1,0,0,0
@@ -13054,59 +12966,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,824089,686681,Michael Massey,Kansas City Royals,Philadelphia Phillies,2,1,1,0,0,0,1,1,1,1,0,0,0,0
 2026-07-07,823607,686681,Michael Massey,Kansas City Royals,New York Mets,6,4,2,1,0,0,3,4,2,2,1,0,0,0
 2026-07-08,823605,686681,Michael Massey,Kansas City Royals,New York Mets,3,3,1,0,0,0,1,0,0,0,0,0,0,0
-2026-03-26,823081,686780,Pedro Pagés,St. Louis Cardinals,Tampa Bay Rays,4,4,1,0,0,0,1,1,0,0,0,0,0,0
-2026-03-28,823082,686780,Pedro Pagés,St. Louis Cardinals,Tampa Bay Rays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-03-29,823079,686780,Pedro Pagés,St. Louis Cardinals,Tampa Bay Rays,4,4,2,0,0,1,5,1,2,0,0,0,0,0
-2026-03-30,823080,686780,Pedro Pagés,St. Louis Cardinals,New York Mets,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-01,823078,686780,Pedro Pagés,St. Louis Cardinals,New York Mets,4,4,0,0,0,0,0,0,0,0,3,0,0,0
-2026-04-04,824295,686780,Pedro Pagés,St. Louis Cardinals,Detroit Tigers,3,1,0,0,0,0,0,0,0,0,1,0,0,2
-2026-04-05,824296,686780,Pedro Pagés,St. Louis Cardinals,Detroit Tigers,4,4,1,0,0,0,1,1,1,0,1,0,0,0
-2026-04-07,822754,686780,Pedro Pagés,St. Louis Cardinals,Washington Nationals,3,2,0,0,0,0,0,0,0,1,1,0,0,0
-2026-04-10,823076,686780,Pedro Pagés,St. Louis Cardinals,Boston Red Sox,4,4,1,1,0,0,2,0,0,0,1,0,0,0
-2026-04-11,823074,686780,Pedro Pagés,St. Louis Cardinals,Boston Red Sox,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-13,823073,686780,Pedro Pagés,St. Louis Cardinals,Cleveland Guardians,4,3,1,0,0,0,1,0,1,0,0,0,0,0
-2026-04-15,823071,686780,Pedro Pagés,St. Louis Cardinals,Cleveland Guardians,4,3,1,0,0,0,1,0,1,0,0,1,0,0
-2026-04-17,824207,686780,Pedro Pagés,St. Louis Cardinals,Houston Astros,4,4,1,1,0,0,2,1,0,0,0,0,0,0
-2026-04-19,824205,686780,Pedro Pagés,St. Louis Cardinals,Houston Astros,5,4,1,0,0,0,1,1,0,1,1,0,0,0
-2026-04-21,823880,686780,Pedro Pagés,St. Louis Cardinals,Miami Marlins,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-22,823878,686780,Pedro Pagés,St. Louis Cardinals,Miami Marlins,3,3,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-25,823070,686780,Pedro Pagés,St. Louis Cardinals,Seattle Mariners,4,3,3,0,0,1,6,1,2,1,0,1,0,0
-2026-04-27,823395,686780,Pedro Pagés,St. Louis Cardinals,Pittsburgh Pirates,3,3,1,0,0,1,4,1,1,0,0,0,0,0
-2026-04-28,823390,686780,Pedro Pagés,St. Louis Cardinals,Pittsburgh Pirates,5,5,1,0,0,0,1,0,0,0,2,0,0,0
-2026-04-30,823391,686780,Pedro Pagés,St. Louis Cardinals,Pittsburgh Pirates,5,5,2,0,0,0,2,0,0,0,2,0,0,0
-2026-05-01,823066,686780,Pedro Pagés,St. Louis Cardinals,Los Angeles Dodgers,4,4,1,1,0,0,2,0,0,0,2,0,0,0
-2026-05-03,823065,686780,Pedro Pagés,St. Louis Cardinals,Los Angeles Dodgers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-04,823064,686780,Pedro Pagés,St. Louis Cardinals,Milwaukee Brewers,4,3,0,0,0,0,0,1,0,1,2,0,0,0
-2026-05-06,823063,686780,Pedro Pagés,St. Louis Cardinals,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-07,823306,686780,Pedro Pagés,St. Louis Cardinals,San Diego Padres,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-09,823304,686780,Pedro Pagés,St. Louis Cardinals,San Diego Padres,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-10,823305,686780,Pedro Pagés,St. Louis Cardinals,San Diego Padres,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-13,825010,686780,Pedro Pagés,St. Louis Cardinals,Athletics,4,3,1,0,0,0,1,1,0,0,1,0,0,0
-2026-05-15,823061,686780,Pedro Pagés,St. Louis Cardinals,Kansas City Royals,5,4,1,0,0,1,4,1,1,0,2,0,0,0
-2026-05-16,823060,686780,Pedro Pagés,St. Louis Cardinals,Kansas City Royals,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-19,823059,686780,Pedro Pagés,St. Louis Cardinals,Pittsburgh Pirates,4,3,1,0,0,0,1,1,0,1,1,0,0,0
-2026-05-21,823056,686780,Pedro Pagés,St. Louis Cardinals,Pittsburgh Pirates,4,4,2,0,0,0,2,0,0,0,0,0,0,0
-2026-05-23,824516,686780,Pedro Pagés,St. Louis Cardinals,Cincinnati Reds,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-25,823784,686780,Pedro Pagés,St. Louis Cardinals,Milwaukee Brewers,3,3,1,0,0,0,1,0,0,0,1,0,0,0
-2026-05-27,823783,686780,Pedro Pagés,St. Louis Cardinals,Milwaukee Brewers,3,3,1,1,0,0,2,0,0,0,1,0,0,0
-2026-05-31,823053,686780,Pedro Pagés,St. Louis Cardinals,Chicago Cubs,3,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-02,823052,686780,Pedro Pagés,St. Louis Cardinals,Texas Rangers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-06,823048,686780,Pedro Pagés,St. Louis Cardinals,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-12,823695,686780,Pedro Pagés,St. Louis Cardinals,Minnesota Twins,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-13,823694,686780,Pedro Pagés,St. Louis Cardinals,Minnesota Twins,4,4,3,2,0,0,5,1,1,0,1,0,0,0
-2026-06-17,823044,686780,Pedro Pagés,St. Louis Cardinals,San Diego Padres,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-18,824098,686780,Pedro Pagés,St. Louis Cardinals,Kansas City Royals,5,4,0,0,0,0,0,0,1,0,1,0,0,0
-2026-06-23,823043,686780,Pedro Pagés,St. Louis Cardinals,Arizona Diamondbacks,2,1,0,0,0,0,0,0,0,1,1,0,0,0
-2026-06-24,823041,686780,Pedro Pagés,St. Louis Cardinals,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-28,823037,686780,Pedro Pagés,St. Louis Cardinals,Miami Marlins,3,3,1,0,0,0,1,0,0,0,0,0,0,0
-2026-07-01,824905,686780,Pedro Pagés,St. Louis Cardinals,Atlanta Braves,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-02,824906,686780,Pedro Pagés,St. Louis Cardinals,Atlanta Braves,2,2,1,0,0,0,1,0,0,0,0,0,0,0
-2026-07-03,824659,686780,Pedro Pagés,St. Louis Cardinals,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-04,824658,686780,Pedro Pagés,St. Louis Cardinals,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-07-06,823036,686780,Pedro Pagés,St. Louis Cardinals,Milwaukee Brewers,3,3,1,0,0,0,1,1,0,0,0,0,0,0
-2026-07-07,823062,686780,Pedro Pagés,St. Louis Cardinals,Milwaukee Brewers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-07,823035,686780,Pedro Pagés,St. Louis Cardinals,Milwaukee Brewers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-08,823032,686780,Pedro Pagés,St. Louis Cardinals,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,3,0,0,0
 2026-03-26,824865,686797,Brooks Lee,Minnesota Twins,Baltimore Orioles,3,3,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-28,824862,686797,Brooks Lee,Minnesota Twins,Baltimore Orioles,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-29,824864,686797,Brooks Lee,Minnesota Twins,Baltimore Orioles,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -13632,6 +13491,73 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,823847,689414,Liam Hicks,Miami Marlins,Seattle Mariners,5,5,3,1,0,0,4,1,0,0,1,0,0,0
 2026-07-08,823848,689414,Liam Hicks,Miami Marlins,Seattle Mariners,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-09,823846,689414,Liam Hicks,Miami Marlins,Seattle Mariners,5,5,1,1,0,0,2,1,1,0,0,0,0,0
+2026-03-27,823971,690976,Alex Freeland,Los Angeles Dodgers,Arizona Diamondbacks,3,3,2,1,0,1,6,2,1,0,0,0,0,0
+2026-03-28,823973,690976,Alex Freeland,Los Angeles Dodgers,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-03-31,823969,690976,Alex Freeland,Los Angeles Dodgers,Cleveland Guardians,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-01,823970,690976,Alex Freeland,Los Angeles Dodgers,Cleveland Guardians,3,2,0,0,0,0,0,0,0,1,2,0,0,0
+2026-04-03,822758,690976,Alex Freeland,Los Angeles Dodgers,Washington Nationals,5,3,0,0,0,0,0,0,0,2,2,0,0,0
+2026-04-04,822757,690976,Alex Freeland,Los Angeles Dodgers,Washington Nationals,5,5,1,0,0,0,1,1,0,0,2,0,0,0
+2026-04-05,822756,690976,Alex Freeland,Los Angeles Dodgers,Washington Nationals,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-06,822832,690976,Alex Freeland,Los Angeles Dodgers,Toronto Blue Jays,5,5,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-07,822831,690976,Alex Freeland,Los Angeles Dodgers,Toronto Blue Jays,4,3,3,1,0,0,4,2,1,0,0,0,0,0
+2026-04-08,822833,690976,Alex Freeland,Los Angeles Dodgers,Toronto Blue Jays,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-04-10,823968,690976,Alex Freeland,Los Angeles Dodgers,Texas Rangers,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-11,823967,690976,Alex Freeland,Los Angeles Dodgers,Texas Rangers,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-12,823966,690976,Alex Freeland,Los Angeles Dodgers,Texas Rangers,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-04-14,823965,690976,Alex Freeland,Los Angeles Dodgers,New York Mets,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-15,823963,690976,Alex Freeland,Los Angeles Dodgers,New York Mets,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-04-17,824373,690976,Alex Freeland,Los Angeles Dodgers,Colorado Rockies,4,3,1,0,0,0,1,0,1,0,0,0,0,0
+2026-04-18,824372,690976,Alex Freeland,Los Angeles Dodgers,Colorado Rockies,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-19,824371,690976,Alex Freeland,Los Angeles Dodgers,Colorado Rockies,4,4,2,0,0,0,2,1,2,0,1,0,0,0
+2026-04-21,823236,690976,Alex Freeland,Los Angeles Dodgers,San Francisco Giants,4,3,0,0,0,0,0,0,0,1,3,0,0,0
+2026-04-23,823233,690976,Alex Freeland,Los Angeles Dodgers,San Francisco Giants,4,3,1,0,0,0,1,0,0,1,1,0,0,0
+2026-04-24,823962,690976,Alex Freeland,Los Angeles Dodgers,Chicago Cubs,3,2,1,0,0,0,1,1,0,1,0,0,0,0
+2026-04-25,823960,690976,Alex Freeland,Los Angeles Dodgers,Chicago Cubs,4,4,2,2,0,0,4,1,1,0,1,0,0,0
+2026-04-26,823959,690976,Alex Freeland,Los Angeles Dodgers,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-27,823961,690976,Alex Freeland,Los Angeles Dodgers,Miami Marlins,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-28,823956,690976,Alex Freeland,Los Angeles Dodgers,Miami Marlins,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-04-29,823958,690976,Alex Freeland,Los Angeles Dodgers,Miami Marlins,4,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-02,823067,690976,Alex Freeland,Los Angeles Dodgers,St. Louis Cardinals,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-03,823065,690976,Alex Freeland,Los Angeles Dodgers,St. Louis Cardinals,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-04,824201,690976,Alex Freeland,Los Angeles Dodgers,Houston Astros,5,4,3,0,0,1,6,2,1,1,0,0,0,0
+2026-05-05,824200,690976,Alex Freeland,Los Angeles Dodgers,Houston Astros,3,1,0,0,0,0,0,0,0,2,0,0,0,0
+2026-05-06,824198,690976,Alex Freeland,Los Angeles Dodgers,Houston Astros,5,4,1,0,0,0,1,1,1,1,1,0,0,0
+2026-05-09,823955,690976,Alex Freeland,Los Angeles Dodgers,Atlanta Braves,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-10,823954,690976,Alex Freeland,Los Angeles Dodgers,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-27,823947,690976,Alex Freeland,Los Angeles Dodgers,Colorado Rockies,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-29,823946,690976,Alex Freeland,Los Angeles Dodgers,Philadelphia Phillies,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-31,823944,690976,Alex Freeland,Los Angeles Dodgers,Philadelphia Phillies,4,3,2,1,0,1,6,2,2,1,1,0,0,0
+2026-06-01,825078,690976,Alex Freeland,Los Angeles Dodgers,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-02,825079,690976,Alex Freeland,Los Angeles Dodgers,Arizona Diamondbacks,4,3,1,0,0,0,1,1,0,0,1,0,0,0
+2026-06-03,825077,690976,Alex Freeland,Los Angeles Dodgers,Arizona Diamondbacks,5,4,3,0,0,0,3,0,2,1,0,1,0,0
+2026-06-04,825076,690976,Alex Freeland,Los Angeles Dodgers,Arizona Diamondbacks,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-05,823943,690976,Alex Freeland,Los Angeles Dodgers,Los Angeles Angels,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+2026-06-06,823942,690976,Alex Freeland,Los Angeles Dodgers,Los Angeles Angels,4,4,0,0,0,0,0,1,1,0,2,0,0,0
+2026-06-07,823941,690976,Alex Freeland,Los Angeles Dodgers,Los Angeles Angels,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-06-09,823374,690976,Alex Freeland,Los Angeles Dodgers,Pittsburgh Pirates,5,3,2,0,0,0,2,2,1,2,0,0,0,0
+2026-06-10,823372,690976,Alex Freeland,Los Angeles Dodgers,Pittsburgh Pirates,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-11,823371,690976,Alex Freeland,Los Angeles Dodgers,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-12,824588,690976,Alex Freeland,Los Angeles Dodgers,Chicago White Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-13,824587,690976,Alex Freeland,Los Angeles Dodgers,Chicago White Sox,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-14,824586,690976,Alex Freeland,Los Angeles Dodgers,Chicago White Sox,4,3,1,1,0,0,2,0,2,0,1,0,0,0
+2026-06-15,823938,690976,Alex Freeland,Los Angeles Dodgers,Tampa Bay Rays,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-16,823939,690976,Alex Freeland,Los Angeles Dodgers,Tampa Bay Rays,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-17,823940,690976,Alex Freeland,Los Angeles Dodgers,Tampa Bay Rays,4,3,1,0,0,0,1,0,1,1,2,0,0,0
+2026-06-19,823936,690976,Alex Freeland,Los Angeles Dodgers,Baltimore Orioles,4,4,2,0,0,0,2,1,0,0,2,0,0,0
+2026-06-20,823937,690976,Alex Freeland,Los Angeles Dodgers,Baltimore Orioles,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-21,823934,690976,Alex Freeland,Los Angeles Dodgers,Baltimore Orioles,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-06-22,823692,690976,Alex Freeland,Los Angeles Dodgers,Minnesota Twins,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-23,823690,690976,Alex Freeland,Los Angeles Dodgers,Minnesota Twins,5,4,2,0,0,0,2,1,0,1,0,0,0,0
+2026-06-24,823691,690976,Alex Freeland,Los Angeles Dodgers,Minnesota Twins,4,4,1,1,0,0,2,1,0,0,1,0,0,0
+2026-06-26,823285,690976,Alex Freeland,Los Angeles Dodgers,San Diego Padres,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-27,823283,690976,Alex Freeland,Los Angeles Dodgers,San Diego Padres,5,4,0,0,0,0,0,1,0,1,1,0,0,0
+2026-06-28,823281,690976,Alex Freeland,Los Angeles Dodgers,San Diego Padres,3,2,1,0,0,0,1,2,0,1,1,0,0,0
+2026-06-29,824986,690976,Alex Freeland,Los Angeles Dodgers,Athletics,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-01,824985,690976,Alex Freeland,Los Angeles Dodgers,Athletics,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-07-03,823933,690976,Alex Freeland,Los Angeles Dodgers,San Diego Padres,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-04,823932,690976,Alex Freeland,Los Angeles Dodgers,San Diego Padres,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-05,823931,690976,Alex Freeland,Los Angeles Dodgers,San Diego Padres,4,4,1,0,0,0,1,0,1,0,2,0,0,0
+2026-07-07,823929,690976,Alex Freeland,Los Angeles Dodgers,Colorado Rockies,4,4,3,0,0,0,3,1,1,0,1,1,0,0
 2026-03-26,823325,690993,Colt Keith,Detroit Tigers,San Diego Padres,5,5,2,0,0,0,2,1,0,0,1,0,0,0
 2026-03-27,823324,690993,Colt Keith,Detroit Tigers,San Diego Padres,2,1,0,0,0,0,0,1,0,1,0,0,0,0
 2026-03-28,823323,690993,Colt Keith,Detroit Tigers,San Diego Padres,4,3,2,1,0,0,3,0,0,1,1,0,0,0
@@ -15497,6 +15423,29 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-01,824740,696285,Jacob Young,Washington Nationals,Boston Red Sox,5,3,2,2,0,0,4,1,1,2,1,0,0,0
 2026-07-06,822712,696285,Jacob Young,Washington Nationals,Houston Astros,4,4,1,0,0,0,1,1,0,0,0,0,0,0
 2026-07-07,822713,696285,Jacob Young,Washington Nationals,Houston Astros,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-30,823054,699625,Jimmy Crooks,St. Louis Cardinals,Chicago Cubs,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-01,823050,699625,Jimmy Crooks,St. Louis Cardinals,Texas Rangers,2,2,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-02,823052,699625,Jimmy Crooks,St. Louis Cardinals,Texas Rangers,4,4,2,1,0,0,3,0,1,0,0,0,0,0
+2026-06-05,823049,699625,Jimmy Crooks,St. Louis Cardinals,Cincinnati Reds,5,3,0,0,0,0,0,0,1,2,2,0,0,0
+2026-06-06,823048,699625,Jimmy Crooks,St. Louis Cardinals,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-09,823620,699625,Jimmy Crooks,St. Louis Cardinals,New York Mets,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-11,823619,699625,Jimmy Crooks,St. Louis Cardinals,New York Mets,4,4,1,0,0,1,4,1,2,0,1,0,0,0
+2026-06-12,823695,699625,Jimmy Crooks,St. Louis Cardinals,Minnesota Twins,4,3,1,0,0,0,1,1,0,1,0,0,0,0
+2026-06-15,823046,699625,Jimmy Crooks,St. Louis Cardinals,San Diego Padres,3,3,1,1,0,0,2,0,2,0,0,0,0,0
+2026-06-16,823045,699625,Jimmy Crooks,St. Louis Cardinals,San Diego Padres,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-06-17,823044,699625,Jimmy Crooks,St. Louis Cardinals,San Diego Padres,2,1,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-18,824098,699625,Jimmy Crooks,St. Louis Cardinals,Kansas City Royals,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-19,824097,699625,Jimmy Crooks,St. Louis Cardinals,Kansas City Royals,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-21,824095,699625,Jimmy Crooks,St. Louis Cardinals,Kansas City Royals,5,4,1,0,0,0,1,0,0,0,2,0,0,1
+2026-06-22,823040,699625,Jimmy Crooks,St. Louis Cardinals,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-23,823043,699625,Jimmy Crooks,St. Louis Cardinals,Arizona Diamondbacks,2,2,1,0,0,0,1,0,1,0,1,0,0,0
+2026-06-24,823041,699625,Jimmy Crooks,St. Louis Cardinals,Arizona Diamondbacks,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-27,823038,699625,Jimmy Crooks,St. Louis Cardinals,Miami Marlins,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-07-01,824905,699625,Jimmy Crooks,St. Louis Cardinals,Atlanta Braves,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-02,824906,699625,Jimmy Crooks,St. Louis Cardinals,Atlanta Braves,2,2,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-03,824659,699625,Jimmy Crooks,St. Louis Cardinals,Chicago Cubs,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+2026-07-07,823062,699625,Jimmy Crooks,St. Louis Cardinals,Milwaukee Brewers,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-07,823035,699625,Jimmy Crooks,St. Louis Cardinals,Milwaukee Brewers,1,0,0,0,0,0,0,0,0,0,0,0,0,1
 2026-03-25,823244,700250,Ben Rice,New York Yankees,San Francisco Giants,5,4,1,0,0,0,1,1,0,1,2,0,0,0
 2026-03-28,823241,700250,Ben Rice,New York Yankees,San Francisco Giants,4,4,1,1,0,0,2,0,2,0,1,0,0,0
 2026-03-30,823159,700250,Ben Rice,New York Yankees,Seattle Mariners,4,4,1,0,0,0,1,1,0,0,0,0,0,0
