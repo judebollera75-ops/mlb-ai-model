@@ -3973,6 +3973,63 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,822956,650490,Yandy Díaz,Tampa Bay Rays,New York Yankees,4,4,2,0,0,1,5,1,2,0,0,0,0,0
 2026-07-08,822957,650490,Yandy Díaz,Tampa Bay Rays,New York Yankees,4,4,4,1,0,0,5,1,0,0,0,0,0,0
 2026-07-09,822954,650490,Yandy Díaz,Tampa Bay Rays,New York Yankees,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-03-26,823812,650859,Luis Rengifo,San Diego Padres,Chicago White Sox,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-03-29,823810,650859,Luis Rengifo,San Diego Padres,Chicago White Sox,5,4,1,0,0,0,1,1,2,1,0,0,0,0
+2026-03-30,823809,650859,Luis Rengifo,San Diego Padres,Tampa Bay Rays,4,3,1,0,0,0,1,0,0,1,0,0,0,0
+2026-03-31,823807,650859,Luis Rengifo,San Diego Padres,Tampa Bay Rays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-04,824132,650859,Luis Rengifo,San Diego Padres,Kansas City Royals,5,5,2,2,0,0,4,1,0,0,1,0,0,0
+2026-04-05,824131,650859,Luis Rengifo,San Diego Padres,Kansas City Royals,5,5,1,1,0,0,2,1,0,0,1,0,0,0
+2026-04-06,824783,650859,Luis Rengifo,San Diego Padres,Boston Red Sox,5,5,1,1,0,0,2,1,0,0,2,0,0,0
+2026-04-07,824780,650859,Luis Rengifo,San Diego Padres,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-08,824779,650859,Luis Rengifo,San Diego Padres,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-10,823808,650859,Luis Rengifo,San Diego Padres,Washington Nationals,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-04-11,823805,650859,Luis Rengifo,San Diego Padres,Washington Nationals,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-12,823804,650859,Luis Rengifo,San Diego Padres,Washington Nationals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-14,823802,650859,Luis Rengifo,San Diego Padres,Toronto Blue Jays,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-16,823801,650859,Luis Rengifo,San Diego Padres,Toronto Blue Jays,2,1,0,0,0,0,0,0,1,0,0,0,0,0
+2026-04-17,823883,650859,Luis Rengifo,San Diego Padres,Miami Marlins,5,4,2,1,0,0,3,1,1,0,0,1,0,1
+2026-04-18,823882,650859,Luis Rengifo,San Diego Padres,Miami Marlins,5,4,1,1,0,0,2,1,0,1,0,0,0,0
+2026-04-19,823881,650859,Luis Rengifo,San Diego Padres,Miami Marlins,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-04-21,824290,650859,Luis Rengifo,San Diego Padres,Detroit Tigers,4,3,1,0,0,0,1,1,1,1,0,0,0,0
+2026-04-22,824286,650859,Luis Rengifo,San Diego Padres,Detroit Tigers,2,1,1,0,0,0,1,1,0,1,0,0,0,0
+2026-04-23,824288,650859,Luis Rengifo,San Diego Padres,Detroit Tigers,4,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-24,823800,650859,Luis Rengifo,San Diego Padres,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-25,823799,650859,Luis Rengifo,San Diego Padres,Pittsburgh Pirates,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-26,823797,650859,Luis Rengifo,San Diego Padres,Pittsburgh Pirates,4,3,1,0,0,0,1,1,1,1,0,0,0,0
+2026-04-28,823798,650859,Luis Rengifo,San Diego Padres,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-29,823796,650859,Luis Rengifo,San Diego Padres,Arizona Diamondbacks,4,4,2,1,0,0,3,0,0,0,0,0,0,0
+2026-04-30,823795,650859,Luis Rengifo,San Diego Padres,Arizona Diamondbacks,5,5,1,1,0,0,2,0,3,0,1,0,0,0
+2026-05-01,822744,650859,Luis Rengifo,San Diego Padres,Washington Nationals,5,4,1,0,0,0,1,0,1,1,0,0,0,0
+2026-05-02,822746,650859,Luis Rengifo,San Diego Padres,Washington Nationals,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-03,822742,650859,Luis Rengifo,San Diego Padres,Washington Nationals,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-04,823064,650859,Luis Rengifo,San Diego Padres,St. Louis Cardinals,4,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-08,823794,650859,Luis Rengifo,San Diego Padres,New York Yankees,4,2,0,0,0,0,0,1,0,2,0,0,0,0
+2026-05-09,823792,650859,Luis Rengifo,San Diego Padres,New York Yankees,4,3,0,0,0,0,0,1,0,1,0,0,0,0
+2026-05-10,823793,650859,Luis Rengifo,San Diego Padres,New York Yankees,4,4,2,0,0,0,2,1,0,0,1,1,0,0
+2026-05-13,823791,650859,Luis Rengifo,San Diego Padres,San Diego Padres,4,4,3,0,0,0,3,0,0,0,0,0,0,0
+2026-05-14,823789,650859,Luis Rengifo,San Diego Padres,San Diego Padres,4,4,2,0,0,0,2,0,3,0,0,0,0,0
+2026-05-15,823707,650859,Luis Rengifo,San Diego Padres,Minnesota Twins,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-16,823706,650859,Luis Rengifo,San Diego Padres,Minnesota Twins,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-17,823708,650859,Luis Rengifo,San Diego Padres,Minnesota Twins,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-18,824680,650859,Luis Rengifo,San Diego Padres,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-19,824677,650859,Luis Rengifo,San Diego Padres,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-22,823788,650859,Luis Rengifo,San Diego Padres,Los Angeles Dodgers,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-24,823786,650859,Luis Rengifo,San Diego Padres,Los Angeles Dodgers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-25,823784,650859,Luis Rengifo,San Diego Padres,St. Louis Cardinals,4,3,2,0,0,0,2,0,0,1,0,0,1,0
+2026-05-26,823785,650859,Luis Rengifo,San Diego Padres,St. Louis Cardinals,4,3,0,0,0,0,0,0,0,1,0,1,0,0
+2026-05-27,823783,650859,Luis Rengifo,San Diego Padres,St. Louis Cardinals,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-29,824191,650859,Luis Rengifo,San Diego Padres,Houston Astros,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-01,823781,650859,Luis Rengifo,San Diego Padres,San Francisco Giants,5,3,2,0,0,0,2,3,1,2,0,0,0,0
+2026-06-02,823782,650859,Luis Rengifo,San Diego Padres,San Francisco Giants,4,3,0,0,0,0,0,0,0,0,0,0,1,0
+2026-06-03,823780,650859,Luis Rengifo,San Diego Padres,San Francisco Giants,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-04,823779,650859,Luis Rengifo,San Diego Padres,San Francisco Giants,5,5,1,0,0,0,1,0,1,0,0,0,0,0
+2026-06-05,824350,650859,Luis Rengifo,San Diego Padres,Colorado Rockies,3,3,0,0,0,0,0,0,1,0,0,0,0,0
+2026-06-07,824349,650859,Luis Rengifo,San Diego Padres,Colorado Rockies,5,3,1,1,0,0,2,1,2,1,0,0,0,0
+2026-06-08,824998,650859,Luis Rengifo,San Diego Padres,Athletics,6,4,0,0,0,0,0,1,0,2,4,0,0,0
+2026-06-09,824999,650859,Luis Rengifo,San Diego Padres,Athletics,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-10,824996,650859,Luis Rengifo,San Diego Padres,Athletics,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-13,823776,650859,Luis Rengifo,San Diego Padres,Philadelphia Phillies,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-06-14,823777,650859,Luis Rengifo,San Diego Padres,Philadelphia Phillies,4,4,1,0,0,0,1,1,0,0,0,0,0,0
 2026-03-26,823812,656537,Derek Hill,Philadelphia Phillies,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-29,823810,656537,Derek Hill,Philadelphia Phillies,Milwaukee Brewers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-30,823890,656537,Derek Hill,Philadelphia Phillies,Miami Marlins,1,0,0,0,0,0,0,0,0,1,0,0,0,0
@@ -13333,31 +13390,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,824333,687551,Drew Gilbert,San Francisco Giants,Colorado Rockies,4,4,4,1,0,1,8,1,3,0,0,0,0,0
 2026-07-08,823202,687551,Drew Gilbert,San Francisco Giants,Toronto Blue Jays,3,2,0,0,0,0,0,0,0,1,2,0,0,0
 2026-07-09,823201,687551,Drew Gilbert,San Francisco Giants,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-02,823460,687749,Jase Bowen,San Diego Padres,Philadelphia Phillies,4,4,1,0,0,0,1,0,0,0,3,0,0,0
-2026-06-03,823456,687749,Jase Bowen,San Diego Padres,Philadelphia Phillies,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-04,823457,687749,Jase Bowen,San Diego Padres,Philadelphia Phillies,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-06,823292,687749,Jase Bowen,San Diego Padres,New York Mets,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-07,823291,687749,Jase Bowen,San Diego Padres,New York Mets,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-08,823289,687749,Jase Bowen,San Diego Padres,Cincinnati Reds,4,3,2,0,0,0,2,1,0,1,0,2,0,0
-2026-06-09,823290,687749,Jase Bowen,San Diego Padres,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-10,823287,687749,Jase Bowen,San Diego Padres,Cincinnati Reds,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-2026-06-13,824828,687749,Jase Bowen,San Diego Padres,Baltimore Orioles,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-14,824823,687749,Jase Bowen,San Diego Padres,Baltimore Orioles,4,4,0,0,0,0,0,0,0,0,3,0,0,0
-2026-06-16,823045,687749,Jase Bowen,San Diego Padres,St. Louis Cardinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-19,822886,687749,Jase Bowen,San Diego Padres,Texas Rangers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-20,822885,687749,Jase Bowen,San Diego Padres,Texas Rangers,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-21,822883,687749,Jase Bowen,San Diego Padres,Texas Rangers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-22,823288,687749,Jase Bowen,San Diego Padres,Atlanta Braves,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-24,823284,687749,Jase Bowen,San Diego Padres,Atlanta Braves,3,2,1,1,0,0,2,1,0,1,1,1,0,0
-2026-06-26,823285,687749,Jase Bowen,San Diego Padres,Los Angeles Dodgers,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-2026-06-27,823283,687749,Jase Bowen,San Diego Padres,Los Angeles Dodgers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-29,824662,687749,Jase Bowen,San Diego Padres,Chicago Cubs,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-30,824661,687749,Jase Bowen,San Diego Padres,Chicago Cubs,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-01,824660,687749,Jase Bowen,San Diego Padres,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-05,823931,687749,Jase Bowen,San Diego Padres,Los Angeles Dodgers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-06,823282,687749,Jase Bowen,San Diego Padres,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-07,823280,687749,Jase Bowen,San Diego Padres,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-08,823279,687749,Jase Bowen,San Diego Padres,Arizona Diamondbacks,4,4,1,0,0,0,1,0,1,0,0,0,0,0
 2026-03-28,823892,689414,Liam Hicks,Miami Marlins,Colorado Rockies,4,2,1,0,0,1,4,1,3,0,0,0,0,1
 2026-03-29,823891,689414,Liam Hicks,Miami Marlins,Colorado Rockies,2,2,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-30,823890,689414,Liam Hicks,Miami Marlins,Chicago White Sox,4,4,2,0,0,1,5,1,3,0,1,0,0,0
