@@ -1,219 +1,51 @@
-grade,platform,player,market,line,projection,edge,pick,team,opponent
-A+,DraftKings,Rafael Devers,hitter_total_bases,6.5,1.637,-4.8629999999999995,LESS/NO,San Francisco Giants,Colorado Rockies
-A+,DraftKings,Luis Arraez,hitter_hits,3.5,0.994,-2.5060000000000002,LESS/NO,San Francisco Giants,Colorado Rockies
-A+,Bovada,Logan Gilbert,pitcher_outs,17.5,15.0,-2.5,LESS/NO,Seattle Mariners,Toronto Blue Jays
-A+,Bovada,Tanner Bibee,pitcher_outs,17.5,15.0,-2.5,LESS/NO,Cleveland Guardians,Chicago White Sox
-A+,Fanatics,Freddy Peralta,pitcher_outs,17.5,15.0,-2.5,LESS/NO,New York Mets,Toronto Blue Jays
-A+,Bovada,Casey Mize,pitcher_outs,17.5,15.0,-2.5,LESS/NO,Detroit Tigers,Texas Rangers
-A+,Bovada,Kyle Bradish,pitcher_outs,17.5,15.0,-2.5,LESS/NO,Baltimore Orioles,Cincinnati Reds
-A+,Bovada,Peter Lambert,pitcher_outs,17.5,15.0,-2.5,LESS/NO,Houston Astros,Tampa Bay Rays
-A+,Bovada,Trey Yesavage,pitcher_outs,17.5,15.0,-2.5,LESS/NO,Toronto Blue Jays,Seattle Mariners
-A+,Fanatics,Isaac Paredes,hitter_total_bases,0.5,1.918,1.418,MORE/YES,Houston Astros,Texas Rangers
-A+,BetOnline.ag,Javier Sanoja,hitter_total_bases,0.5,1.832,1.332,MORE/YES,Miami Marlins,Cleveland Guardians
-A+,Caesars,Blaze Jordan,hitter_total_bases,2.5,1.232,-1.268,LESS/NO,St. Louis Cardinals,Atlanta Braves
-A+,BetOnline.ag,Zach McKinstry,hitter_total_bases,0.5,1.725,1.225,MORE/YES,Detroit Tigers,Philadelphia Phillies
-A+,BetOnline.ag,Cam Smith,hitter_total_bases,0.5,1.718,1.218,MORE/YES,Houston Astros,Texas Rangers
-A+,BetOnline.ag,Cedric Mullins,hitter_total_bases,0.5,1.675,1.175,MORE/YES,Tampa Bay Rays,Seattle Mariners
-A+,BetOnline.ag,Cole Young,hitter_total_bases,0.5,1.536,1.036,MORE/YES,Seattle Mariners,Tampa Bay Rays
-A+,BetOnline.ag,Ezequiel Duran,hitter_total_bases,0.5,1.503,1.003,MORE/YES,Texas Rangers,Houston Astros
-A+,BetOnline.ag,Jake Rogers,hitter_total_bases,0.5,1.48,0.98,MORE/YES,Detroit Tigers,Philadelphia Phillies
-A+,BetOnline.ag,Nick Loftin,hitter_total_bases,0.5,1.466,0.966,MORE/YES,Kansas City Royals,Baltimore Orioles
-A+,BetOnline.ag,Jakob Marsee,hitter_total_bases,0.5,1.434,0.9339999999999999,MORE/YES,Miami Marlins,Cleveland Guardians
-A+,BetOnline.ag,Victor Mesa Jr.,hitter_total_bases,0.5,1.434,0.9339999999999999,MORE/YES,Tampa Bay Rays,Seattle Mariners
-A+,Fanatics,Colson Montgomery,hitter_total_bases,0.5,1.417,0.917,MORE/YES,Chicago White Sox,Athletics
-A+,BetOnline.ag,Taylor Walls,hitter_total_bases,0.5,1.41,0.9099999999999999,MORE/YES,Tampa Bay Rays,Seattle Mariners
-A+,BetOnline.ag,Isaac Collins,hitter_total_bases,0.5,1.403,0.903,MORE/YES,Kansas City Royals,Baltimore Orioles
-A+,Caesars,Mike Yastrzemski,hitter_total_bases,2.5,1.616,-0.8839999999999999,LESS/NO,Atlanta Braves,St. Louis Cardinals
-A+,BetOnline.ag,Edwin Arroyo,hitter_total_bases,0.5,1.374,0.8740000000000001,MORE/YES,Cincinnati Reds,Chicago Cubs
-A+,BetOnline.ag,Luke Raley,hitter_total_bases,0.5,1.365,0.865,MORE/YES,Seattle Mariners,Tampa Bay Rays
-A+,BetOnline.ag,Evan Carter,hitter_total_bases,0.5,1.358,0.8580000000000001,MORE/YES,Texas Rangers,Houston Astros
-A+,BetOnline.ag,Gabriel Rincones Jr.,hitter_total_bases,0.5,1.348,0.8480000000000001,MORE/YES,Philadelphia Phillies,Detroit Tigers
-A+,BetOnline.ag,Joe Mack,hitter_total_bases,0.5,1.306,0.806,MORE/YES,Miami Marlins,Cleveland Guardians
-A+,BetOnline.ag,Nico Hoerner,hitter_hits,1.5,0.822,-0.678,LESS/NO,Chicago Cubs,Cincinnati Reds
-A+,BetOnline.ag,Ozzie Albies,hitter_hits,1.5,0.827,-0.673,LESS/NO,Atlanta Braves,St. Louis Cardinals
-A+,DraftKings,Gabriel Moreno,hitter_hits,0.5,1.138,0.6379999999999999,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers
-A+,BetOnline.ag,Sal Stewart,hitter_hits,1.5,0.871,-0.629,LESS/NO,Cincinnati Reds,Chicago Cubs
-A+,BetOnline.ag,Pete Crow-Armstrong,hitter_hits,1.5,0.872,-0.628,LESS/NO,Chicago Cubs,Cincinnati Reds
-A+,DraftKings,Manny Machado,hitter_hits,0.5,1.121,0.621,MORE/YES,San Diego Padres,Toronto Blue Jays
-A+,DraftKings,Jose Altuve,hitter_hits,0.5,1.103,0.603,MORE/YES,Houston Astros,Texas Rangers
-A+,BetOnline.ag,Chase DeLauter,hitter_hits,0.5,1.1,0.6000000000000001,MORE/YES,Cleveland Guardians,Miami Marlins
-A+,DraftKings,Austin Riley,hitter_hits,1.5,0.9,-0.6,LESS/NO,Atlanta Braves,St. Louis Cardinals
-A+,BetOnline.ag,Brandon Marsh,hitter_hits,0.5,1.096,0.5960000000000001,MORE/YES,Philadelphia Phillies,Detroit Tigers
-A+,DraftKings,Ketel Marte,hitter_hits,0.5,1.096,0.5960000000000001,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers
-A+,DraftKings,Casey Schmitt,hitter_hits,1.5,0.913,-0.587,LESS/NO,San Francisco Giants,Colorado Rockies
-A+,BetOnline.ag,Michael Harris II,hitter_hits,1.5,0.915,-0.585,LESS/NO,Atlanta Braves,St. Louis Cardinals
-A+,BetOnline.ag,Travis Bazzana,hitter_hits,0.5,1.083,0.583,MORE/YES,Cleveland Guardians,Miami Marlins
-A+,BetOnline.ag,Liam Hicks,hitter_hits,0.5,1.078,0.5780000000000001,MORE/YES,Miami Marlins,Cleveland Guardians
-A+,BetOnline.ag,Xavier Edwards,hitter_hits,0.5,1.071,0.571,MORE/YES,Miami Marlins,Cleveland Guardians
-A+,BetOnline.ag,Yordan Alvarez,hitter_hits,0.5,1.064,0.5640000000000001,MORE/YES,Houston Astros,Texas Rangers
-A+,DraftKings,Jordan Walker,hitter_hits,1.5,0.937,-0.563,LESS/NO,St. Louis Cardinals,Atlanta Braves
-A+,DraftKings,Heliot Ramos,hitter_hits,1.5,0.946,-0.554,LESS/NO,San Francisco Giants,Colorado Rockies
-A+,DraftKings,Kyle Tucker,hitter_hits,0.5,1.05,0.55,MORE/YES,Los Angeles Dodgers,Arizona Diamondbacks
-A+,DraftKings,Shohei Ohtani,hitter_hits,1.5,0.951,-0.549,LESS/NO,Los Angeles Dodgers,Arizona Diamondbacks
-A+,BetOnline.ag,Drake Baldwin,hitter_hits,1.5,0.954,-0.546,LESS/NO,Atlanta Braves,St. Louis Cardinals
-A+,BetOnline.ag,Bobby Witt Jr.,hitter_hits,1.5,0.955,-0.545,LESS/NO,Kansas City Royals,Baltimore Orioles
-A+,BetOnline.ag,Michael Busch,hitter_hits,0.5,1.045,0.5449999999999999,MORE/YES,Chicago Cubs,Cincinnati Reds
-A+,DraftKings,Christian Walker,hitter_hits,0.5,1.033,0.5329999999999999,MORE/YES,Houston Astros,Texas Rangers
-A+,BetOnline.ag,Alex Bregman,hitter_hits,1.5,0.97,-0.53,LESS/NO,Chicago Cubs,Cincinnati Reds
-A+,DraftKings,Hunter Goodman,hitter_hits,0.5,1.027,0.5269999999999999,MORE/YES,Colorado Rockies,San Francisco Giants
-A+,DraftKings,Geraldo Perdomo,hitter_hits,0.5,1.015,0.5149999999999999,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers
-A+,BetOnline.ag,Elly De La Cruz,hitter_hits,1.5,0.986,-0.514,LESS/NO,Cincinnati Reds,Chicago Cubs
-A+,BetOnline.ag,Adley Rutschman,hitter_hits,1.5,0.989,-0.511,LESS/NO,Baltimore Orioles,Kansas City Royals
-A+,DraftKings,Jung Hoo Lee,hitter_hits,1.5,0.994,-0.506,LESS/NO,San Francisco Giants,Colorado Rockies
-A+,DraftKings,Kyle Karros,hitter_hits,0.5,1.004,0.504,MORE/YES,Colorado Rockies,San Francisco Giants
-A+,BetOnline.ag,Kevin McGonigle,hitter_hits,0.5,1.002,0.502,MORE/YES,Detroit Tigers,Philadelphia Phillies
-A+,DraftKings,Wyatt Langford,hitter_hits,0.5,1.002,0.502,MORE/YES,Texas Rangers,Houston Astros
-A+,DraftKings,George Springer,hitter_hits,0.5,1.001,0.5009999999999999,MORE/YES,Toronto Blue Jays,San Diego Padres
-A+,DraftKings,JJ Wetherholt,hitter_hits,0.5,0.997,0.497,MORE/YES,St. Louis Cardinals,Atlanta Braves
-A+,DraftKings,Ernie Clement,hitter_hits,1.5,1.008,-0.492,LESS/NO,Toronto Blue Jays,San Diego Padres
-A+,DraftKings,Nathan Lukes,hitter_hits,0.5,0.991,0.491,MORE/YES,Toronto Blue Jays,San Diego Padres
-A+,BetOnline.ag,Alec Bohm,hitter_hits,0.5,0.989,0.489,MORE/YES,Philadelphia Phillies,Detroit Tigers
-A+,BetOnline.ag,Otto Lopez,hitter_hits,0.5,0.983,0.483,MORE/YES,Miami Marlins,Cleveland Guardians
-A+,BetOnline.ag,Griffin Conine,hitter_hits,0.5,0.981,0.481,MORE/YES,Miami Marlins,Cleveland Guardians
-A+,DraftKings,Yainer Diaz,hitter_hits,0.5,0.977,0.477,MORE/YES,Houston Astros,Texas Rangers
-A+,BetOnline.ag,Seiya Suzuki,hitter_hits,1.5,1.029,-0.4710000000000001,LESS/NO,Chicago Cubs,Cincinnati Reds
-A+,BetOnline.ag,Lane Thomas,hitter_hits,0.5,0.967,0.46699999999999997,MORE/YES,Kansas City Royals,Baltimore Orioles
-A+,DraftKings,Kazuma Okamoto,hitter_hits,0.5,0.965,0.46499999999999997,MORE/YES,Toronto Blue Jays,San Diego Padres
-A+,DraftKings,Jake McCarthy,hitter_hits,0.5,0.964,0.46399999999999997,MORE/YES,Colorado Rockies,San Francisco Giants
-A+,BetOnline.ag,Dansby Swanson,hitter_hits,0.5,0.959,0.45899999999999996,MORE/YES,Chicago Cubs,Cincinnati Reds
-A+,DraftKings,Nolan Arenado,hitter_hits,0.5,0.959,0.45899999999999996,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers
-A+,DraftKings,TJ Rumfield,hitter_hits,0.5,0.956,0.45599999999999996,MORE/YES,Colorado Rockies,San Francisco Giants
-A+,BetOnline.ag,Bryson Stott,hitter_hits,0.5,0.956,0.45599999999999996,MORE/YES,Philadelphia Phillies,Detroit Tigers
-A+,DraftKings,Fernando Tatis Jr.,hitter_hits,0.5,0.955,0.45499999999999996,MORE/YES,San Diego Padres,Toronto Blue Jays
-A+,BetOnline.ag,J.P. Crawford,hitter_hits,0.5,0.951,0.45099999999999996,MORE/YES,Seattle Mariners,Tampa Bay Rays
-A,Fanatics,Gage Jump,pitcher_outs,16.5,15.0,-1.5,LESS/NO,Athletics,Miami Marlins
-A,DraftKings,Kyle Freeland,pitcher_outs,16.5,15.0,-1.5,LESS/NO,Colorado Rockies,Miami Marlins
-A,DraftKings,Tyler Mahle,pitcher_outs,16.5,15.0,-1.5,LESS/NO,San Francisco Giants,Colorado Rockies
-A,Bovada,Kumar Rocker,pitcher_outs,16.5,15.0,-1.5,LESS/NO,Texas Rangers,Detroit Tigers
-A,BetOnline.ag,Hunter Feduccia,hitter_total_bases,0.5,1.266,0.766,MORE/YES,Tampa Bay Rays,Seattle Mariners
-A,BetOnline.ag,Steven Kwan,hitter_total_bases,0.5,1.229,0.7290000000000001,MORE/YES,Cleveland Guardians,Miami Marlins
-A,BetOnline.ag,TJ Friedl,hitter_total_bases,0.5,1.214,0.714,MORE/YES,Cincinnati Reds,Chicago Cubs
-A,BetOnline.ag,Michael Massey,hitter_total_bases,0.5,1.181,0.681,MORE/YES,Kansas City Royals,Baltimore Orioles
-A,BetOnline.ag,Kahlil Watson,hitter_total_bases,0.5,1.156,0.6559999999999999,MORE/YES,Cleveland Guardians,Miami Marlins
-A,BetOnline.ag,Richie Palacios,hitter_total_bases,0.5,1.141,0.641,MORE/YES,Tampa Bay Rays,Seattle Mariners
-A,BetOnline.ag,Daniel Schneemann,hitter_total_bases,0.5,1.12,0.6200000000000001,MORE/YES,Cleveland Guardians,Miami Marlins
-A,BetOnline.ag,Victor Robles,hitter_total_bases,0.5,1.072,0.5720000000000001,MORE/YES,Seattle Mariners,Tampa Bay Rays
-A,BetOnline.ag,Kyle Schwarber,hitter_total_bases,1.5,2.039,0.5390000000000001,MORE/YES,Philadelphia Phillies,Detroit Tigers
-A,BetOnline.ag,Bryce Harper,hitter_total_bases,1.5,2.029,0.5289999999999999,MORE/YES,Philadelphia Phillies,Detroit Tigers
-A,BetOnline.ag,Junior Caminero,hitter_hits,0.5,0.946,0.44599999999999995,MORE/YES,Tampa Bay Rays,Seattle Mariners
-A,BetOnline.ag,Blaze Alexander,hitter_hits,0.5,0.946,0.44599999999999995,MORE/YES,Baltimore Orioles,Kansas City Royals
-A,DraftKings,Willy Adames,hitter_hits,0.5,0.943,0.44299999999999995,MORE/YES,San Francisco Giants,Colorado Rockies
-A,BetOnline.ag,Dominic Canzone,hitter_hits,0.5,0.94,0.43999999999999995,MORE/YES,Seattle Mariners,Tampa Bay Rays
-A,BetOnline.ag,Randy Arozarena,hitter_hits,0.5,0.939,0.43899999999999995,MORE/YES,Seattle Mariners,Tampa Bay Rays
-A,BetOnline.ag,Josh Naylor,hitter_hits,0.5,0.938,0.43799999999999994,MORE/YES,Seattle Mariners,Tampa Bay Rays
-A,DraftKings,Ezequiel Tovar,hitter_hits,0.5,0.933,0.43300000000000005,MORE/YES,Colorado Rockies,San Francisco Giants
-A,DraftKings,Mickey Moniak,hitter_hits,0.5,0.932,0.43200000000000005,MORE/YES,Colorado Rockies,San Francisco Giants
-A,BetOnline.ag,Taylor Ward,hitter_hits,0.5,0.929,0.42900000000000005,MORE/YES,Baltimore Orioles,Kansas City Royals
-A,DraftKings,Jackson Merrill,hitter_hits,0.5,0.922,0.42200000000000004,MORE/YES,San Diego Padres,Toronto Blue Jays
-A,DraftKings,Josh Jung,hitter_hits,0.5,0.919,0.41900000000000004,MORE/YES,Texas Rangers,Houston Astros
-A,DraftKings,Corbin Carroll,hitter_hits,0.5,0.919,0.41900000000000004,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers
-A,Fanatics,Kody Clemens,hitter_hits,0.5,0.915,0.41500000000000004,MORE/YES,Minnesota Twins,Los Angeles Angels
-A,BetOnline.ag,Tyler Stephenson,hitter_hits,0.5,0.912,0.41200000000000003,MORE/YES,Cincinnati Reds,Chicago Cubs
-A,BetOnline.ag,Chandler Simpson,hitter_hits,0.5,0.909,0.40900000000000003,MORE/YES,Tampa Bay Rays,Seattle Mariners
-A,BetOnline.ag,Gunnar Henderson,hitter_hits,1.5,1.094,-0.4059999999999999,LESS/NO,Baltimore Orioles,Kansas City Royals
-A,BetOnline.ag,Jonathan Aranda,hitter_hits,0.5,0.901,0.401,MORE/YES,Tampa Bay Rays,Seattle Mariners
-A,BetOnline.ag,Brayan Rocchio,hitter_hits,0.5,0.894,0.394,MORE/YES,Cleveland Guardians,Miami Marlins
-A,BetOnline.ag,Trea Turner,hitter_hits,0.5,0.892,0.392,MORE/YES,Philadelphia Phillies,Detroit Tigers
-A,BetOnline.ag,Salvador Perez,hitter_hits,0.5,0.889,0.389,MORE/YES,Kansas City Royals,Baltimore Orioles
-A,BetOnline.ag,Jake Burger,hitter_hits,0.5,0.884,0.384,MORE/YES,Texas Rangers,Houston Astros
-A,BetOnline.ag,Spencer Torkelson,hitter_hits,0.5,0.881,0.381,MORE/YES,Detroit Tigers,Philadelphia Phillies
-A,BetOnline.ag,Cal Raleigh,hitter_hits,0.5,0.879,0.379,MORE/YES,Seattle Mariners,Tampa Bay Rays
-A,BetOnline.ag,Spencer Steer,hitter_hits,0.5,0.879,0.379,MORE/YES,Cincinnati Reds,Chicago Cubs
-A,DraftKings,Andy Pages,hitter_hits,0.5,0.871,0.371,MORE/YES,Los Angeles Dodgers,Arizona Diamondbacks
-A,BetOnline.ag,Jac Caglianone,hitter_hits,0.5,0.867,0.367,MORE/YES,Kansas City Royals,Baltimore Orioles
-A,DraftKings,Matt Olson,hitter_hits,0.5,0.866,0.366,MORE/YES,Atlanta Braves,St. Louis Cardinals
-A,DraftKings,Dalton Rushing,hitter_hits,0.5,0.863,0.363,MORE/YES,Los Angeles Dodgers,Arizona Diamondbacks
-A,BetOnline.ag,JJ Bleday,hitter_hits,0.5,0.859,0.359,MORE/YES,Cincinnati Reds,Chicago Cubs
-A,BetOnline.ag,Samuel Basallo,hitter_hits,0.5,0.858,0.358,MORE/YES,Baltimore Orioles,Kansas City Royals
-A,Fanatics,Braden Montgomery,hitter_hits,0.5,0.855,0.355,MORE/YES,Chicago White Sox,Athletics
-A,DraftKings,Jake Cronenworth,hitter_hits,0.5,0.855,0.355,MORE/YES,San Diego Padres,Toronto Blue Jays
-A,BetOnline.ag,Carter Jensen,hitter_hits,0.5,0.847,0.347,MORE/YES,Kansas City Royals,Baltimore Orioles
-A,DraftKings,Vladimir Guerrero Jr.,hitter_hits,0.5,0.847,0.347,MORE/YES,Toronto Blue Jays,San Diego Padres
-A,BetOnline.ag,Alec Burleson,hitter_hits,0.5,0.844,0.344,MORE/YES,St. Louis Cardinals,Atlanta Braves
-A,DraftKings,Cole Carrigg,hitter_hits,0.5,0.83,0.32999999999999996,MORE/YES,Colorado Rockies,San Francisco Giants
-A,DraftKings,Alejandro Kirk,hitter_hits,0.5,0.829,0.32899999999999996,MORE/YES,Toronto Blue Jays,San Diego Padres
-A,BetOnline.ag,Pete Alonso,hitter_hits,0.5,0.82,0.31999999999999995,MORE/YES,Baltimore Orioles,Kansas City Royals
-A,BetOnline.ag,Carson Kelly,hitter_hits,0.5,0.814,0.31399999999999995,MORE/YES,Chicago Cubs,Cincinnati Reds
-A,DraftKings,Brandon Nimmo,hitter_hits,0.5,0.811,0.31100000000000005,MORE/YES,Texas Rangers,Houston Astros
-A,DraftKings,Dominic Smith,hitter_hits,0.5,0.803,0.30300000000000005,MORE/YES,Atlanta Braves,St. Louis Cardinals
-A,BetOnline.ag,Tyler O'Neill,hitter_hits,0.5,0.803,0.30300000000000005,MORE/YES,Baltimore Orioles,Kansas City Royals
-B,BetOnline.ag,Kyle Stowers,hitter_total_bases,1.5,1.972,0.472,MORE/YES,Miami Marlins,Cleveland Guardians
-B,BetOnline.ag,Ben Malgeri,hitter_total_bases,0.5,0.961,0.46099999999999997,MORE/YES,Detroit Tigers,Philadelphia Phillies
-B,Fanatics,Jazz Chisholm Jr.,hitter_total_bases,1.5,1.075,-0.42500000000000004,LESS/NO,New York Yankees,Washington Nationals
-B,BetOnline.ag,Jimmy Crooks,hitter_total_bases,0.5,0.906,0.406,MORE/YES,St. Louis Cardinals,Atlanta Braves
-B,DraftKings,Lourdes Gurriel Jr.,hitter_hits,0.5,0.792,0.29200000000000004,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers
-B,DraftKings,Gavin Sheets,hitter_hits,0.5,0.79,0.29000000000000004,MORE/YES,San Diego Padres,Toronto Blue Jays
-B,BetOnline.ag,Lars Nootbaar,hitter_hits,0.5,0.789,0.28900000000000003,MORE/YES,St. Louis Cardinals,Atlanta Braves
-B,DraftKings,Matt Vierling,hitter_hits,0.5,0.78,0.28,MORE/YES,Detroit Tigers,Philadelphia Phillies
-B,BetOnline.ag,Kyle Manzardo,hitter_hits,0.5,0.774,0.274,MORE/YES,Cleveland Guardians,Miami Marlins
-B,DraftKings,Willi Castro,hitter_hits,0.5,0.773,0.273,MORE/YES,Colorado Rockies,San Francisco Giants
-B,BetOnline.ag,Ian Happ,hitter_total_bases,1.5,1.229,-0.2709999999999999,LESS/NO,Chicago Cubs,Cincinnati Reds
-B,DraftKings,Masyn Winn,hitter_hits,0.5,0.759,0.259,MORE/YES,St. Louis Cardinals,Atlanta Braves
-B,DraftKings,Xander Bogaerts,hitter_hits,0.5,0.755,0.255,MORE/YES,San Diego Padres,Toronto Blue Jays
-B,DraftKings,Daulton Varsho,hitter_hits,0.5,0.736,0.236,MORE/YES,Toronto Blue Jays,San Diego Padres
-B,DraftKings,Tommy Edman,hitter_hits,0.5,0.705,0.20499999999999996,MORE/YES,Los Angeles Dodgers,Arizona Diamondbacks
-B,DraftKings,Luis Campusano,hitter_hits,0.5,0.66,0.16000000000000003,MORE/YES,San Diego Padres,Toronto Blue Jays
-B,DraftKings,Ildemaro Vargas,hitter_hits,0.5,0.657,0.15700000000000003,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers
-PASS,Bovada,Griffin Jax,pitcher_outs,14.5,15.0,0.5,MORE/YES,Tampa Bay Rays,New York Yankees
-PASS,Bovada,Noah Cameron,pitcher_outs,15.5,15.0,-0.5,LESS/NO,Kansas City Royals,Philadelphia Phillies
-PASS,Bovada,Javier Assad,pitcher_outs,15.5,15.0,-0.5,LESS/NO,Chicago Cubs,St. Louis Cardinals
-PASS,Bovada,Walker Buehler,pitcher_outs,15.5,15.0,-0.5,LESS/NO,San Diego Padres,Chicago Cubs
-PASS,Fanatics,Josh Bell,hitter_total_bases,1.5,1.526,0.026000000000000023,MORE/YES,Minnesota Twins,Los Angeles Angels
-PASS,BetOnline.ag,Derek Hill,hitter_hits,0.5,0.513,0.013000000000000012,MORE/YES,Philadelphia Phillies,Detroit Tigers
-NO PROJECTION,Caesars,Ivan Herrera,hitter_total_bases,2.5,,,NO PROJECTION,,
-NO PROJECTION,Caesars,James Jarvis,hitter_total_bases,1.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Jose Fermin,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Mauricio Dubon,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,Bovada,Joe Ryan,pitcher_strikeouts,7.5,,,NO PROJECTION,,
-NO PROJECTION,Bovada,Ryan Johnson,pitcher_strikeouts,3.5,,,NO PROJECTION,,
-NO PROJECTION,FanDuel,Erick Fedde,pitcher_strikeouts,3.5,,,NO PROJECTION,,
-NO PROJECTION,Bovada,Cam Schlittler,pitcher_strikeouts,5.5,,,NO PROJECTION,,
-NO PROJECTION,Bovada,Miles Mikolas,pitcher_strikeouts,3.5,,,NO PROJECTION,,
-NO PROJECTION,Fanatics,Ryan McMahon,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Edouard Julien,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Eric Haase,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Jesus Rodriguez,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Troy Johnston,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Colt Emerson,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Eury Perez,pitcher_strikeouts,6.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Gabriel Arias,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Heriberto Hernandez,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Patrick Bailey,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Yandy Diaz,hitter_hits,1.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Cristopher Sanchez,pitcher_strikeouts,6.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Dillon Dingler,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Hao-Yu Lee,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,J.T. Realmuto,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Riley Greene,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Coby Mayo,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Elias Diaz,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Jeremy Pena,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Joc Pederson,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,LaMonte Wade Jr.,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Leody Taveras,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Nicky Lopez,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Taylor Trammell,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Vinnie Pasquantino,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Eugenio Suarez,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Kevin Alcantara,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Miguel Amaya,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Nick Lodolo,pitcher_strikeouts,4.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Noelvi Marte,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Eli White,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Joey Bart,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Jorge Mateo,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Matthew Liberatore,pitcher_strikeouts,4.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Nathan Church,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,BetOnline.ag,Reynaldo Lopez,pitcher_strikeouts,3.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Andres Gimenez,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Jonatan Clase,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Miguel Andujar,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Sung-Mun Song,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,Bovada,Brandon Pfaadt,pitcher_strikeouts,3.5,,,NO PROJECTION,,
-NO PROJECTION,Bovada,Freddie Freeman,hitter_total_bases,1.5,,,NO PROJECTION,,
-NO PROJECTION,Bovada,Max Muncy,hitter_total_bases,1.5,,,NO PROJECTION,,
-NO PROJECTION,Bovada,Mookie Betts,hitter_total_bases,1.5,,,NO PROJECTION,,
-NO PROJECTION,Bovada,Yoshinobu Yamamoto,pitcher_strikeouts,5.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Max Kepler,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Teoscar Hernandez,hitter_hits,0.5,,,NO PROJECTION,,
-NO PROJECTION,DraftKings,Tommy Troy,hitter_hits,0.5,,,NO PROJECTION,,
+grade,platform,player,market,direction,line,sportsbook_odds,projection,edge,absolute_edge,pick,team,opponent,commence_time
+A+,DraftKings,Luis Arraez,hitter_total_bases,Under,3.5,-425,1.578,-1.922,1.922,LESS/NO,San Francisco Giants,Colorado Rockies,2026-07-11T02:16:00Z
+A+,BetOnline.ag,Javier Sanoja,hitter_total_bases,Over,0.5,-149,1.96,1.46,1.46,MORE/YES,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
+A+,Fanatics,Isaac Paredes,hitter_total_bases,Over,0.5,-170,1.949,1.449,1.449,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
+A+,BetOnline.ag,Cam Smith,hitter_total_bases,Over,0.5,-156,1.672,1.172,1.172,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
+A+,BetOnline.ag,Zach McKinstry,hitter_total_bases,Over,0.5,-143,1.669,1.169,1.169,MORE/YES,Detroit Tigers,Philadelphia Phillies,2026-07-11T22:11:00Z
+A+,BetOnline.ag,Cedric Mullins,hitter_total_bases,Over,0.5,-123,1.595,1.095,1.095,MORE/YES,Tampa Bay Rays,Seattle Mariners,2026-07-11T20:11:00Z
+A+,Fanatics,Colson Montgomery,hitter_total_bases,Over,0.5,-180,1.58,1.08,1.08,MORE/YES,Chicago White Sox,Athletics,2026-07-11T18:11:00Z
+A+,BetOnline.ag,Cole Young,hitter_total_bases,Over,0.5,-164,1.548,1.048,1.048,MORE/YES,Seattle Mariners,Tampa Bay Rays,2026-07-11T20:11:00Z
+A+,BetOnline.ag,Taylor Walls,hitter_total_bases,Over,0.5,-108,1.51,1.01,1.01,MORE/YES,Tampa Bay Rays,Seattle Mariners,2026-07-11T20:11:00Z
+A+,BetOnline.ag,Victor Mesa Jr.,hitter_total_bases,Over,0.5,-108,1.487,0.987,0.987,MORE/YES,Tampa Bay Rays,Seattle Mariners,2026-07-11T20:11:00Z
+A+,BetOnline.ag,Ezequiel Duran,hitter_total_bases,Over,0.5,-164,1.464,0.964,0.964,MORE/YES,Texas Rangers,Houston Astros,2026-07-11T23:06:00Z
+A+,BetOnline.ag,Nathan Church,hitter_total_bases,Over,0.5,-149,1.449,0.949,0.949,MORE/YES,St. Louis Cardinals,Atlanta Braves,2026-07-11T23:15:00Z
+A+,BetOnline.ag,Jakob Marsee,hitter_total_bases,Over,0.5,-143,1.436,0.936,0.936,MORE/YES,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
+A+,BetOnline.ag,Edwin Arroyo,hitter_total_bases,Over,0.5,-164,1.381,0.881,0.881,MORE/YES,Cincinnati Reds,Chicago Cubs,2026-07-11T23:11:00Z
+A+,BetOnline.ag,Gabriel Rincones Jr.,hitter_total_bases,Over,0.5,-135,1.378,0.878,0.878,MORE/YES,Philadelphia Phillies,Detroit Tigers,2026-07-11T22:11:00Z
+A+,BetOnline.ag,Nick Loftin,hitter_total_bases,Over,0.5,-135,1.376,0.876,0.876,MORE/YES,Kansas City Royals,Baltimore Orioles,2026-07-11T23:06:00Z
+A+,BetOnline.ag,Luke Raley,hitter_total_bases,Over,0.5,-112,1.344,0.844,0.844,MORE/YES,Seattle Mariners,Tampa Bay Rays,2026-07-11T20:11:00Z
+A+,BetOnline.ag,Jake Rogers,hitter_total_bases,Over,0.5,112,1.322,0.822,0.822,MORE/YES,Detroit Tigers,Philadelphia Phillies,2026-07-11T22:11:00Z
+A+,BetOnline.ag,Nico Hoerner,hitter_hits,Under,1.5,-238,0.792,-0.708,0.708,LESS/NO,Chicago Cubs,Cincinnati Reds,2026-07-11T23:11:00Z
+A+,BetOnline.ag,Pete Crow-Armstrong,hitter_hits,Under,1.5,-250,0.792,-0.708,0.708,LESS/NO,Chicago Cubs,Cincinnati Reds,2026-07-11T23:11:00Z
+A+,BetOnline.ag,Liam Hicks,hitter_hits,Over,0.5,-222,1.171,0.671,0.671,MORE/YES,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
+A+,DraftKings,Gabriel Moreno,hitter_hits,Over,0.5,-166,1.167,0.667,0.667,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers,2026-07-12T01:10:00Z
+A+,DraftKings,Jose Altuve,hitter_hits,Over,0.5,-200,1.145,0.645,0.645,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
+A+,DraftKings,Paul Goldschmidt,hitter_hits,Under,1.5,-244,0.865,-0.635,0.635,LESS/NO,New York Yankees,Washington Nationals,2026-07-11T20:05:00Z
+A+,BetOnline.ag,Otto Lopez,hitter_hits,Over,0.5,-256,1.127,0.627,0.627,MORE/YES,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
+A+,DraftKings,Mickey Moniak,hitter_hits,Under,1.5,-10000,0.882,-0.618,0.618,LESS/NO,Colorado Rockies,San Francisco Giants,2026-07-11T02:16:00Z
+A+,BetOnline.ag,Ozzie Albies,hitter_hits,Under,1.5,-244,0.882,-0.618,0.618,LESS/NO,Atlanta Braves,St. Louis Cardinals,2026-07-11T23:15:00Z
+A+,BetOnline.ag,Sal Stewart,hitter_hits,Under,1.5,-263,0.895,-0.605,0.605,LESS/NO,Cincinnati Reds,Chicago Cubs,2026-07-11T23:11:00Z
+A+,DraftKings,CJ Abrams,hitter_hits,Over,0.5,-184,1.102,0.602,0.602,MORE/YES,Washington Nationals,New York Yankees,2026-07-11T20:05:00Z
+A+,BetOnline.ag,Xavier Edwards,hitter_hits,Over,0.5,-244,1.098,0.598,0.598,MORE/YES,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
+A+,DraftKings,Luis Garcia Jr.,hitter_hits,Over,0.5,-187,1.078,0.578,0.578,MORE/YES,Washington Nationals,New York Yankees,2026-07-11T20:05:00Z
+A+,DraftKings,Ketel Marte,hitter_hits,Over,0.5,-230,1.078,0.578,0.578,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers,2026-07-12T01:10:00Z
+A+,DraftKings,Kazuma Okamoto,hitter_hits,Over,0.5,-160,1.073,0.573,0.573,MORE/YES,Toronto Blue Jays,San Diego Padres,2026-07-12T00:41:00Z
+A+,DraftKings,Casey Schmitt,hitter_hits,Under,1.5,-233,0.935,-0.565,0.565,LESS/NO,San Francisco Giants,Colorado Rockies,2026-07-11T20:06:00Z
+A+,DraftKings,Ben Rice,hitter_hits,Under,1.5,-189,0.936,-0.564,0.564,LESS/NO,New York Yankees,Washington Nationals,2026-07-11T20:05:00Z
+A+,DraftKings,Daylen Lile,hitter_hits,Over,0.5,-190,1.063,0.563,0.563,MORE/YES,Washington Nationals,New York Yankees,2026-07-11T20:05:00Z
+A+,BetOnline.ag,Michael Busch,hitter_hits,Over,0.5,-208,1.051,0.551,0.551,MORE/YES,Chicago Cubs,Cincinnati Reds,2026-07-11T23:11:00Z
+A+,DraftKings,Geraldo Perdomo,hitter_hits,Over,0.5,-186,1.051,0.551,0.551,MORE/YES,Arizona Diamondbacks,Los Angeles Dodgers,2026-07-12T01:10:00Z
+A+,BetOnline.ag,J.P. Crawford,hitter_hits,Over,0.5,-169,1.048,0.548,0.548,MORE/YES,Seattle Mariners,Tampa Bay Rays,2026-07-11T20:11:00Z
+A+,DraftKings,Curtis Mead,hitter_hits,Over,0.5,-175,1.046,0.546,0.546,MORE/YES,Washington Nationals,New York Yankees,2026-07-11T20:05:00Z
+A+,BetOnline.ag,Travis Bazzana,hitter_hits,Over,0.5,-185,1.045,0.545,0.545,MORE/YES,Cleveland Guardians,Miami Marlins,2026-07-11T20:11:00Z
+A+,DraftKings,Cody Bellinger,hitter_hits,Under,1.5,-244,0.958,-0.542,0.542,LESS/NO,New York Yankees,Washington Nationals,2026-07-11T20:05:00Z
+A+,DraftKings,Ernie Clement,hitter_hits,Under,1.5,-269,0.968,-0.532,0.532,LESS/NO,Toronto Blue Jays,San Diego Padres,2026-07-12T00:41:00Z
+A+,BetOnline.ag,Adley Rutschman,hitter_hits,Under,1.5,-244,0.969,-0.531,0.531,LESS/NO,Baltimore Orioles,Kansas City Royals,2026-07-11T23:06:00Z
+A+,BetOnline.ag,Chase DeLauter,hitter_hits,Over,0.5,-204,1.027,0.527,0.527,MORE/YES,Cleveland Guardians,Miami Marlins,2026-07-11T20:11:00Z
+A+,BetOnline.ag,Yordan Alvarez,hitter_hits,Over,0.5,-238,1.027,0.527,0.527,MORE/YES,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
+A+,BetOnline.ag,Drake Baldwin,hitter_hits,Under,1.5,-278,0.975,-0.525,0.525,LESS/NO,Atlanta Braves,St. Louis Cardinals,2026-07-11T23:15:00Z
+A+,DraftKings,Jake McCarthy,hitter_hits,Over,0.5,-239,1.025,0.525,0.525,MORE/YES,Colorado Rockies,San Francisco Giants,2026-07-11T20:06:00Z
+A+,DraftKings,Elly De La Cruz,hitter_hits,Over,0.5,-264,1.025,0.525,0.525,MORE/YES,Cincinnati Reds,Chicago Cubs,2026-07-11T23:11:00Z
+A+,BetOnline.ag,Bryce Harper,hitter_hits,Over,0.5,-204,1.023,0.523,0.523,MORE/YES,Philadelphia Phillies,Detroit Tigers,2026-07-11T22:11:00Z
