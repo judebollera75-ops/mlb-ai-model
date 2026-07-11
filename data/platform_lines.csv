@@ -7,8 +7,8 @@ event_id,commence_time,platform,player,market,direction,line,sportsbook_odds,hom
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Bovada,Chase Meidroth,hitter_total_bases,Under,1.5,-190,Chicago White Sox,Athletics
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Bovada,Gage Jump,pitcher_outs,Over,16.5,-135,Chicago White Sox,Athletics
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Bovada,Gage Jump,pitcher_outs,Under,16.5,-105,Chicago White Sox,Athletics
-8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Bovada,Gage Jump,pitcher_strikeouts,Over,5.5,105,Chicago White Sox,Athletics
-8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Bovada,Gage Jump,pitcher_strikeouts,Under,5.5,-135,Chicago White Sox,Athletics
+8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Bovada,Gage Jump,pitcher_strikeouts,Over,5.5,110,Chicago White Sox,Athletics
+8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Bovada,Gage Jump,pitcher_strikeouts,Under,5.5,-145,Chicago White Sox,Athletics
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Bovada,Jacob Wilson,hitter_total_bases,Over,1.5,105,Chicago White Sox,Athletics
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Bovada,Jacob Wilson,hitter_total_bases,Under,1.5,-135,Chicago White Sox,Athletics
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Bovada,Joe Ryan,pitcher_strikeouts,Over,7.5,-125,Minnesota Twins,Los Angeles Angels
@@ -67,8 +67,8 @@ event_id,commence_time,platform,player,market,direction,line,sportsbook_odds,hom
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Caesars,Kody Clemens,hitter_total_bases,Under,1.5,-127,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Caesars,Luke Keaschall,hitter_total_bases,Over,1.5,133,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Caesars,Luke Keaschall,hitter_total_bases,Under,1.5,-179,Minnesota Twins,Los Angeles Angels
-8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Caesars,Miguel Vargas,hitter_total_bases,Over,1.5,-102,Chicago White Sox,Athletics
-8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Caesars,Miguel Vargas,hitter_total_bases,Under,1.5,-132,Chicago White Sox,Athletics
+8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Caesars,Miguel Vargas,hitter_total_bases,Over,1.5,101,Chicago White Sox,Athletics
+8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Caesars,Miguel Vargas,hitter_total_bases,Under,1.5,-136,Chicago White Sox,Athletics
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Caesars,Mike Trout,hitter_total_bases,Over,1.5,116,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Caesars,Mike Trout,hitter_total_bases,Under,1.5,-154,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Caesars,Nolan Schanuel,hitter_total_bases,Over,1.5,135,Minnesota Twins,Los Angeles Angels
@@ -207,20 +207,20 @@ event_id,commence_time,platform,player,market,direction,line,sportsbook_odds,hom
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,DraftKings,Tyler Soderstrom,hitter_total_bases,Under,1.5,-149,Chicago White Sox,Athletics
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,DraftKings,Zach Neto,hitter_hits,Over,0.5,-176,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,DraftKings,Zach Neto,hitter_hits,Under,0.5,132,Minnesota Twins,Los Angeles Angels
-8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,FanDuel,Gage Jump,pitcher_strikeouts,Over,5.5,104,Chicago White Sox,Athletics
-8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,FanDuel,Gage Jump,pitcher_strikeouts,Under,5.5,-132,Chicago White Sox,Athletics
+8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,FanDuel,Gage Jump,pitcher_strikeouts,Over,5.5,110,Chicago White Sox,Athletics
+8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,FanDuel,Gage Jump,pitcher_strikeouts,Under,5.5,-140,Chicago White Sox,Athletics
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,FanDuel,Joe Ryan,pitcher_strikeouts,Over,7.5,-125,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,FanDuel,Joe Ryan,pitcher_strikeouts,Under,7.5,-102,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,FanDuel,Ryan Johnson,pitcher_outs,Over,15.5,130,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,FanDuel,Ryan Johnson,pitcher_outs,Under,15.5,-178,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,FanDuel,Ryan Johnson,pitcher_strikeouts,Over,3.5,-162,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,FanDuel,Ryan Johnson,pitcher_strikeouts,Under,3.5,126,Minnesota Twins,Los Angeles Angels
-8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Braden Montgomery,hitter_hits,Over,0.5,-185,Chicago White Sox,Athletics
-8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Braden Montgomery,hitter_hits,Under,0.5,140,Chicago White Sox,Athletics
+8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Braden Montgomery,hitter_hits,Over,0.5,-200,Chicago White Sox,Athletics
+8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Braden Montgomery,hitter_hits,Under,0.5,150,Chicago White Sox,Athletics
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Colson Montgomery,hitter_total_bases,Over,0.5,-170,Chicago White Sox,Athletics
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Colson Montgomery,hitter_total_bases,Under,0.5,130,Chicago White Sox,Athletics
-8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Erick Fedde,pitcher_strikeouts,Over,3.5,100,Chicago White Sox,Athletics
-8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Erick Fedde,pitcher_strikeouts,Under,3.5,-130,Chicago White Sox,Athletics
+8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Erick Fedde,pitcher_strikeouts,Over,3.5,105,Chicago White Sox,Athletics
+8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Erick Fedde,pitcher_strikeouts,Under,3.5,-140,Chicago White Sox,Athletics
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Gage Jump,pitcher_outs,Over,16.5,-130,Chicago White Sox,Athletics
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Gage Jump,pitcher_outs,Under,16.5,-110,Chicago White Sox,Athletics
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Josh Bell,hitter_total_bases,Over,1.5,115,Minnesota Twins,Los Angeles Angels
@@ -703,28 +703,28 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Brayan Rocchi
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Brayan Rocchio,hitter_total_bases,Under,1.5,-208,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_hits,Over,0.5,-145,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_hits,Under,0.5,111,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_total_bases,Over,1.5,152,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_total_bases,Under,1.5,-200,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_total_bases,Over,1.5,155,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_total_bases,Under,1.5,-204,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_hits,Over,0.5,-135,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_hits,Under,0.5,104,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_total_bases,Over,0.5,-130,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_total_bases,Under,0.5,100,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_total_bases,Over,0.5,-135,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_total_bases,Under,0.5,105,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_hits,Over,0.5,-208,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_hits,Under,0.5,158,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_total_bases,Over,0.5,-196,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_total_bases,Under,0.5,150,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_hits,Under,0.5,159,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_total_bases,Over,0.5,-204,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_total_bases,Under,0.5,155,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Chase DeLauter,hitter_hits,Over,0.5,-204,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Chase DeLauter,hitter_hits,Under,0.5,156,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Chase DeLauter,hitter_total_bases,Over,1.5,139,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Chase DeLauter,hitter_total_bases,Under,1.5,-182,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_hits,Over,0.5,-154,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_hits,Under,0.5,118,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_total_bases,Over,0.5,-161,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_total_bases,Under,0.5,123,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_hits,Over,0.5,-115,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_hits,Under,0.5,-112,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_total_bases,Over,0.5,-110,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_total_bases,Under,0.5,-118,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_hits,Over,0.5,-156,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_hits,Under,0.5,120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_total_bases,Over,0.5,-152,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_total_bases,Under,0.5,117,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_hits,Over,0.5,-116,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_hits,Under,0.5,-111,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_total_bases,Over,0.5,-112,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_total_bases,Under,0.5,-115,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Daniel Schneemann,hitter_hits,Over,0.5,-127,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Daniel Schneemann,hitter_hits,Under,0.5,-102,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Daniel Schneemann,hitter_total_bases,Over,0.5,-118,Miami Marlins,Cleveland Guardians
@@ -741,10 +741,10 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Gabriel Arias
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Gabriel Arias,hitter_total_bases,Under,0.5,-120,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Conine,hitter_hits,Over,0.5,-147,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Conine,hitter_hits,Under,0.5,113,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Conine,hitter_total_bases,Over,1.5,182,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Conine,hitter_total_bases,Under,1.5,-244,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Jax,pitcher_strikeouts,Over,5.5,-122,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Jax,pitcher_strikeouts,Under,5.5,-106,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Conine,hitter_total_bases,Over,1.5,178,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Conine,hitter_total_bases,Under,1.5,-238,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Jax,pitcher_strikeouts,Over,5.5,-127,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Jax,pitcher_strikeouts,Under,5.5,-102,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Heriberto Hernandez,hitter_hits,Over,0.5,-196,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Heriberto Hernandez,hitter_hits,Under,0.5,148,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Heriberto Hernandez,hitter_total_bases,Over,1.5,136,Miami Marlins,Cleveland Guardians
@@ -753,8 +753,8 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Heriberto Her
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Hunter Feduccia,hitter_hits,Under,0.5,-169,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Hunter Feduccia,hitter_total_bases,Over,0.5,124,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Hunter Feduccia,hitter_total_bases,Under,0.5,-161,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_hits,Over,0.5,-169,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_hits,Under,0.5,129,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_hits,Over,0.5,-172,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_hits,Under,0.5,131,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_total_bases,Over,1.5,186,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_total_bases,Under,1.5,-250,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Jakob Marsee,hitter_hits,Over,0.5,-149,Miami Marlins,Cleveland Guardians
@@ -770,11 +770,11 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Joe Mack,hitt
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Joe Mack,hitter_total_bases,Over,0.5,-130,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Joe Mack,hitter_total_bases,Under,0.5,100,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Jonathan Aranda,hitter_hits,Over,0.5,-204,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Jonathan Aranda,hitter_hits,Under,0.5,154,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Jonathan Aranda,hitter_hits,Under,0.5,156,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Jonathan Aranda,hitter_total_bases,Over,1.5,141,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Jonathan Aranda,hitter_total_bases,Under,1.5,-185,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_hits,Over,0.5,-200,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_hits,Under,0.5,153,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_hits,Over,0.5,-204,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_hits,Under,0.5,154,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_total_bases,Over,1.5,158,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_total_bases,Under,1.5,-208,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Junior Caminero,hitter_hits,Over,0.5,-244,Tampa Bay Rays,Seattle Mariners
@@ -797,8 +797,8 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Liam Hicks,hi
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Liam Hicks,hitter_hits,Under,0.5,169,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Liam Hicks,hitter_total_bases,Over,1.5,149,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Liam Hicks,hitter_total_bases,Under,1.5,-196,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Logan Gilbert,pitcher_strikeouts,Over,6.5,122,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Logan Gilbert,pitcher_strikeouts,Under,6.5,-159,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Logan Gilbert,pitcher_strikeouts,Over,6.5,120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Logan Gilbert,pitcher_strikeouts,Under,6.5,-156,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Luke Raley,hitter_hits,Over,0.5,-119,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Luke Raley,hitter_hits,Under,0.5,-109,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Luke Raley,hitter_total_bases,Over,0.5,-115,Tampa Bay Rays,Seattle Mariners
@@ -811,14 +811,14 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Patrick Baile
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Patrick Bailey,hitter_hits,Under,0.5,-111,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Patrick Bailey,hitter_total_bases,Over,0.5,-108,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Patrick Bailey,hitter_total_bases,Under,0.5,-120,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_hits,Over,0.5,-200,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_hits,Under,0.5,152,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_hits,Over,0.5,-196,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_hits,Under,0.5,148,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_total_bases,Over,1.5,152,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_total_bases,Under,1.5,-200,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_hits,Over,0.5,-111,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_hits,Under,0.5,-116,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_total_bases,Over,0.5,-112,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_total_bases,Under,0.5,-115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_hits,Over,0.5,-110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_hits,Under,0.5,-118,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_total_bases,Over,0.5,-110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_total_bases,Under,0.5,-118,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Steven Kwan,hitter_hits,Over,0.5,-139,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Steven Kwan,hitter_hits,Under,0.5,107,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Steven Kwan,hitter_total_bases,Over,0.5,-143,Miami Marlins,Cleveland Guardians
@@ -827,8 +827,8 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Tanner Bibee,
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Tanner Bibee,pitcher_strikeouts,Under,4.5,102,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_hits,Over,0.5,-108,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_hits,Under,0.5,-120,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_total_bases,Over,0.5,103,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_total_bases,Under,0.5,-133,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_total_bases,Over,0.5,-102,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_total_bases,Under,0.5,-127,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Travis Bazzana,hitter_hits,Over,0.5,-182,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Travis Bazzana,hitter_hits,Under,0.5,138,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Travis Bazzana,hitter_total_bases,Over,1.5,158,Miami Marlins,Cleveland Guardians
@@ -837,18 +837,18 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Travis Bazzan
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Mesa Jr.,hitter_hits,Under,0.5,-105,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Mesa Jr.,hitter_total_bases,Over,0.5,-115,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Mesa Jr.,hitter_total_bases,Under,0.5,-112,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_hits,Over,0.5,-149,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_hits,Under,0.5,115,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_total_bases,Over,0.5,-143,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_total_bases,Under,0.5,110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_hits,Over,0.5,-152,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_hits,Under,0.5,116,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_total_bases,Over,0.5,-147,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_total_bases,Under,0.5,113,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Xavier Edwards,hitter_hits,Over,0.5,-244,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Xavier Edwards,hitter_hits,Under,0.5,183,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Xavier Edwards,hitter_total_bases,Over,1.5,146,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Xavier Edwards,hitter_total_bases,Under,1.5,-192,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_hits,Over,1.5,209,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_hits,Under,1.5,-286,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_total_bases,Over,1.5,120,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_total_bases,Under,1.5,-156,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_total_bases,Over,1.5,122,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_total_bases,Under,1.5,-159,Tampa Bay Rays,Seattle Mariners
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Bovada,Ceddanne Rafaela,hitter_total_bases,Over,1.5,130,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Bovada,Ceddanne Rafaela,hitter_total_bases,Under,1.5,-170,New York Mets,Boston Red Sox
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Chase DeLauter,hitter_total_bases,Over,1.5,140,Miami Marlins,Cleveland Guardians
@@ -891,8 +891,8 @@ ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Bovada,Wilyer Abreu,hitter
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Bovada,Wilyer Abreu,hitter_total_bases,Under,1.5,-170,New York Mets,Boston Red Sox
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Xavier Edwards,hitter_total_bases,Over,1.5,140,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Xavier Edwards,hitter_total_bases,Under,1.5,-185,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Yandy Diaz,hitter_total_bases,Over,1.5,115,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Yandy Diaz,hitter_total_bases,Under,1.5,-150,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Yandy Diaz,hitter_total_bases,Over,1.5,120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Yandy Diaz,hitter_total_bases,Under,1.5,-160,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Cal Raleigh,hitter_total_bases,Over,0.5,-143,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Cal Raleigh,hitter_total_bases,Under,0.5,108,Tampa Bay Rays,Seattle Mariners
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Caesars,Ceddanne Rafaela,hitter_total_bases,Over,1.5,127,New York Mets,Boston Red Sox
@@ -911,6 +911,8 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Eury Perez,pitcher
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Eury Perez,pitcher_outs,Under,16.5,-113,Miami Marlins,Cleveland Guardians
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Caesars,Freddy Peralta,pitcher_outs,Over,17.5,-125,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Caesars,Freddy Peralta,pitcher_outs,Under,17.5,-106,New York Mets,Boston Red Sox
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Heriberto Hernandez,hitter_total_bases,Over,1.5,131,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Heriberto Hernandez,hitter_total_bases,Under,1.5,-176,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Hunter Feduccia,hitter_total_bases,Over,0.5,120,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Hunter Feduccia,hitter_total_bases,Under,0.5,-159,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,J.P. Crawford,hitter_total_bases,Over,0.5,-179,Tampa Bay Rays,Seattle Mariners
@@ -925,8 +927,8 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Kyle Stowers,hitte
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Kyle Stowers,hitter_total_bases,Under,1.5,-150,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Liam Hicks,hitter_total_bases,Over,1.5,135,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Liam Hicks,hitter_total_bases,Under,1.5,-182,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Logan Gilbert,pitcher_outs,Over,17.5,-209,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Logan Gilbert,pitcher_outs,Under,17.5,154,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Logan Gilbert,pitcher_outs,Over,18.5,125,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Logan Gilbert,pitcher_outs,Under,18.5,-170,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Luke Raley,hitter_total_bases,Over,0.5,-120,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Luke Raley,hitter_total_bases,Under,0.5,-112,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Otto Lopez,hitter_total_bases,Over,1.5,114,Miami Marlins,Cleveland Guardians
@@ -939,8 +941,8 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Tanner Bibee,pitch
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Tanner Bibee,pitcher_outs,Under,17.5,103,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Taylor Walls,hitter_total_bases,Over,0.5,-106,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Taylor Walls,hitter_total_bases,Under,0.5,-125,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Victor Mesa Jr.,hitter_total_bases,Over,0.5,-121,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Victor Mesa Jr.,hitter_total_bases,Under,0.5,-110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Victor Mesa Jr.,hitter_total_bases,Over,0.5,-129,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Victor Mesa Jr.,hitter_total_bases,Under,0.5,-104,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Victor Robles,hitter_total_bases,Over,0.5,-143,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Victor Robles,hitter_total_bases,Under,0.5,108,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Xavier Edwards,hitter_total_bases,Over,1.5,133,Miami Marlins,Cleveland Guardians
@@ -1095,10 +1097,10 @@ ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Anthony Seigler,h
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Anthony Seigler,hitter_total_bases,Under,0.5,135,New York Mets,Boston Red Sox
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Brayan Rocchio,hitter_hits,Over,0.5,-190,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Brayan Rocchio,hitter_hits,Under,0.5,145,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Cedric Mullins,hitter_hits,Over,0.5,-145,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Cedric Mullins,hitter_hits,Under,0.5,110,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Colt Emerson,hitter_total_bases,Over,0.5,-110,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Colt Emerson,hitter_total_bases,Under,0.5,-120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Cedric Mullins,hitter_hits,Over,0.5,-140,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Cedric Mullins,hitter_hits,Under,0.5,105,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Colt Emerson,hitter_total_bases,Over,0.5,-115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Colt Emerson,hitter_total_bases,Under,0.5,-115,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Eury Perez,pitcher_outs,Over,16.5,-120,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Eury Perez,pitcher_outs,Under,16.5,-120,Miami Marlins,Cleveland Guardians
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Freddy Peralta,pitcher_outs,Over,17.5,-135,New York Mets,Boston Red Sox
@@ -1107,8 +1109,8 @@ ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Freddy Peralta,pi
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Freddy Peralta,pitcher_strikeouts,Under,5.5,110,New York Mets,Boston Red Sox
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Gabriel Arias,hitter_total_bases,Over,0.5,-120,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Gabriel Arias,hitter_total_bases,Under,0.5,-110,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Griffin Jax,pitcher_strikeouts,Over,5.5,-140,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Griffin Jax,pitcher_strikeouts,Under,5.5,105,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Griffin Jax,pitcher_strikeouts,Over,5.5,-130,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Griffin Jax,pitcher_strikeouts,Under,5.5,100,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Logan Gilbert,pitcher_outs,Over,17.5,-200,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Logan Gilbert,pitcher_outs,Under,17.5,140,Tampa Bay Rays,Seattle Mariners
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Romy Gonzalez,hitter_hits,Over,0.5,-190,New York Mets,Boston Red Sox
@@ -1149,8 +1151,8 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Dillon Dingle
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Dillon Dingler,hitter_total_bases,Under,0.5,140,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_hits,Over,0.5,-149,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_hits,Under,0.5,115,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_total_bases,Over,0.5,-135,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_total_bases,Under,0.5,105,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_total_bases,Over,0.5,-130,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_total_bases,Under,0.5,100,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Hao-Yu Lee,hitter_hits,Over,0.5,-172,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Hao-Yu Lee,hitter_hits,Under,0.5,131,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Hao-Yu Lee,hitter_total_bases,Over,0.5,-164,Detroit Tigers,Philadelphia Phillies
@@ -1301,19 +1303,19 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Christian Walker,hitter_hits,Under,0.5,140,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Christian Walker,hitter_total_bases,Over,1.5,140,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Christian Walker,hitter_total_bases,Under,1.5,-190,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_hits,Over,0.5,-135,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_hits,Under,0.5,100,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_total_bases,Over,0.5,-135,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_total_bases,Under,0.5,100,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_hits,Over,0.5,-125,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_hits,Under,0.5,-105,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_total_bases,Over,0.5,-125,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_total_bases,Under,0.5,-105,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_hits,Over,0.5,-190,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_hits,Under,0.5,140,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_total_bases,Over,0.5,-190,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_total_bases,Under,0.5,140,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Isaac Paredes,hitter_hits,Over,0.5,-200,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_hits,Over,0.5,-140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_hits,Under,0.5,105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_total_bases,Over,0.5,-140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_total_bases,Under,0.5,105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_hits,Over,0.5,-120,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_hits,Under,0.5,-110,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_total_bases,Over,0.5,-120,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_total_bases,Under,0.5,-110,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_hits,Over,0.5,-200,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_hits,Under,0.5,145,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_total_bases,Over,0.5,-200,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_total_bases,Under,0.5,145,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Isaac Paredes,hitter_hits,Over,0.5,-210,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Isaac Paredes,hitter_hits,Under,0.5,150,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Isaac Paredes,hitter_total_bases,Over,1.5,135,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Isaac Paredes,hitter_total_bases,Under,1.5,-185,Texas Rangers,Houston Astros
@@ -1325,34 +1327,42 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jeremy Pena,hitter_hits,Under,1.5,-250,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jeremy Pena,hitter_total_bases,Over,1.5,115,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jeremy Pena,hitter_total_bases,Under,1.5,-155,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_hits,Over,0.5,-165,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_hits,Under,0.5,125,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_total_bases,Over,0.5,-165,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_total_bases,Under,0.5,125,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_hits,Over,0.5,-190,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_hits,Under,0.5,140,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_total_bases,Over,0.5,-190,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_total_bases,Under,0.5,140,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Kumar Rocker,pitcher_strikeouts,Over,4.5,-120,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Kumar Rocker,pitcher_strikeouts,Under,4.5,-110,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_hits,Over,0.5,-135,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_hits,Under,0.5,100,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_total_bases,Over,0.5,-135,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_total_bases,Under,0.5,100,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Peter Lambert,pitcher_strikeouts,Over,4.5,-140,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Peter Lambert,pitcher_strikeouts,Under,4.5,105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_hits,Over,0.5,-160,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_hits,Under,0.5,120,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_total_bases,Over,0.5,-160,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_total_bases,Under,0.5,120,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_hits,Over,0.5,-185,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_hits,Under,0.5,135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_total_bases,Over,0.5,-185,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_total_bases,Under,0.5,135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Josh Jung,hitter_hits,Over,0.5,-250,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Josh Jung,hitter_hits,Under,0.5,180,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Josh Jung,hitter_total_bases,Over,1.5,120,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Josh Jung,hitter_total_bases,Under,1.5,-160,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Kumar Rocker,pitcher_strikeouts,Over,4.5,-115,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Kumar Rocker,pitcher_strikeouts,Under,4.5,-115,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_hits,Over,0.5,-140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_hits,Under,0.5,105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_total_bases,Over,0.5,-140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_total_bases,Under,0.5,105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Peter Lambert,pitcher_strikeouts,Over,4.5,-135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Peter Lambert,pitcher_strikeouts,Under,4.5,100,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Taylor Trammell,hitter_hits,Over,0.5,-105,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Taylor Trammell,hitter_hits,Under,0.5,-125,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Taylor Trammell,hitter_total_bases,Over,0.5,-105,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Taylor Trammell,hitter_total_bases,Under,0.5,-125,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Wyatt Langford,hitter_hits,Over,0.5,-225,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Wyatt Langford,hitter_hits,Under,0.5,165,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Wyatt Langford,hitter_total_bases,Over,1.5,115,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Wyatt Langford,hitter_total_bases,Under,1.5,-155,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yainer Diaz,hitter_hits,Over,0.5,-200,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yainer Diaz,hitter_hits,Under,0.5,145,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yainer Diaz,hitter_total_bases,Over,0.5,-200,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yainer Diaz,hitter_total_bases,Under,0.5,145,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_hits,Over,1.5,185,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_hits,Under,1.5,-250,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_total_bases,Over,1.5,-105,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_total_bases,Under,1.5,-130,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_hits,Over,1.5,190,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_hits,Under,1.5,-275,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_total_bases,Over,1.5,100,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_total_bases,Under,1.5,-135,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Adley Rutschman,hitter_hits,Over,1.5,171,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Adley Rutschman,hitter_hits,Under,1.5,-227,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Adley Rutschman,hitter_total_bases,Over,1.5,104,Baltimore Orioles,Kansas City Royals
@@ -1367,10 +1377,10 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Bobby Witt Jr.,hitter_total_bases,Under,1.5,-133,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Brandon Nimmo,hitter_total_bases,Over,1.5,118,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Brandon Nimmo,hitter_total_bases,Under,1.5,-154,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Cam Smith,hitter_hits,Over,0.5,-159,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Cam Smith,hitter_hits,Under,0.5,122,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Cam Smith,hitter_total_bases,Over,0.5,-156,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Cam Smith,hitter_total_bases,Under,0.5,120,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Cam Smith,hitter_hits,Over,0.5,-161,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Cam Smith,hitter_hits,Under,0.5,123,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Cam Smith,hitter_total_bases,Over,0.5,-161,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Cam Smith,hitter_total_bases,Under,0.5,123,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Carter Jensen,hitter_hits,Over,0.5,-196,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Carter Jensen,hitter_hits,Under,0.5,150,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Carter Jensen,hitter_total_bases,Over,1.5,144,Baltimore Orioles,Kansas City Royals
@@ -1379,18 +1389,18 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Coby Mayo,hitter_hits,Under,0.5,133,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Coby Mayo,hitter_total_bases,Over,1.5,146,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Coby Mayo,hitter_total_bases,Under,1.5,-192,Baltimore Orioles,Kansas City Royals
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Elias Diaz,hitter_hits,Over,0.5,-152,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Elias Diaz,hitter_hits,Under,0.5,117,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Elias Diaz,hitter_total_bases,Over,0.5,-143,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Elias Diaz,hitter_total_bases,Under,0.5,110,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Elias Diaz,hitter_hits,Over,0.5,-147,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Elias Diaz,hitter_hits,Under,0.5,114,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Elias Diaz,hitter_total_bases,Over,0.5,-141,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Elias Diaz,hitter_total_bases,Under,0.5,108,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Evan Carter,hitter_hits,Over,0.5,-119,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Evan Carter,hitter_hits,Under,0.5,-109,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Evan Carter,hitter_total_bases,Over,0.5,-112,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Evan Carter,hitter_total_bases,Under,0.5,-115,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Ezequiel Duran,hitter_hits,Over,0.5,-161,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Ezequiel Duran,hitter_hits,Under,0.5,124,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Ezequiel Duran,hitter_total_bases,Over,0.5,-149,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Ezequiel Duran,hitter_total_bases,Under,0.5,115,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Evan Carter,hitter_total_bases,Over,0.5,-115,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Evan Carter,hitter_total_bases,Under,0.5,-112,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Ezequiel Duran,hitter_hits,Over,0.5,-169,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Ezequiel Duran,hitter_hits,Under,0.5,129,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Ezequiel Duran,hitter_total_bases,Over,0.5,-169,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Ezequiel Duran,hitter_total_bases,Under,0.5,130,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Gunnar Henderson,hitter_hits,Over,1.5,186,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Gunnar Henderson,hitter_hits,Under,1.5,-250,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Gunnar Henderson,hitter_total_bases,Over,1.5,113,Baltimore Orioles,Kansas City Royals
@@ -1399,30 +1409,30 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Collins,hitter_hits,Under,0.5,109,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Collins,hitter_total_bases,Over,0.5,-143,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Collins,hitter_total_bases,Under,0.5,110,Baltimore Orioles,Kansas City Royals
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Paredes,hitter_hits,Over,0.5,-179,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Paredes,hitter_hits,Under,0.5,136,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Paredes,hitter_hits,Over,0.5,-185,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Paredes,hitter_hits,Under,0.5,140,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Jac Caglianone,hitter_hits,Over,0.5,-217,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Jac Caglianone,hitter_hits,Under,0.5,163,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Jac Caglianone,hitter_total_bases,Over,1.5,130,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Jac Caglianone,hitter_total_bases,Under,1.5,-169,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Jake Burger,hitter_hits,Over,0.5,-185,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Jake Burger,hitter_hits,Under,0.5,141,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Jeremy Pena,hitter_hits,Over,0.5,-244,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Jeremy Pena,hitter_hits,Under,0.5,180,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Jeremy Pena,hitter_total_bases,Over,1.5,126,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Jeremy Pena,hitter_total_bases,Under,1.5,-164,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Jeremy Pena,hitter_hits,Over,1.5,178,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Jeremy Pena,hitter_hits,Under,1.5,-238,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Jeremy Pena,hitter_total_bases,Over,1.5,124,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Jeremy Pena,hitter_total_bases,Under,1.5,-161,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Joc Pederson,hitter_hits,Over,0.5,-156,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Joc Pederson,hitter_hits,Under,0.5,120,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Josh Jung,hitter_total_bases,Over,1.5,124,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Josh Jung,hitter_total_bases,Under,1.5,-161,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Kumar Rocker,pitcher_strikeouts,Over,4.5,104,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Kumar Rocker,pitcher_strikeouts,Under,4.5,-135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Josh Jung,hitter_total_bases,Over,1.5,122,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Josh Jung,hitter_total_bases,Under,1.5,-159,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Kumar Rocker,pitcher_strikeouts,Over,4.5,100,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Kumar Rocker,pitcher_strikeouts,Under,4.5,-130,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Kyle Bradish,pitcher_strikeouts,Over,5.5,113,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Kyle Bradish,pitcher_strikeouts,Under,5.5,-147,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,LaMonte Wade Jr.,hitter_hits,Over,0.5,-141,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,LaMonte Wade Jr.,hitter_hits,Under,0.5,109,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,LaMonte Wade Jr.,hitter_total_bases,Over,0.5,-143,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,LaMonte Wade Jr.,hitter_total_bases,Under,0.5,110,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,LaMonte Wade Jr.,hitter_hits,Under,0.5,108,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,LaMonte Wade Jr.,hitter_total_bases,Over,0.5,-141,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,LaMonte Wade Jr.,hitter_total_bases,Under,0.5,108,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Lane Thomas,hitter_hits,Over,0.5,-169,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Lane Thomas,hitter_hits,Under,0.5,130,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Lane Thomas,hitter_total_bases,Over,0.5,-164,Baltimore Orioles,Kansas City Royals
@@ -1449,8 +1459,8 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Pete Alonso,hitter_hits,Under,0.5,175,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Pete Alonso,hitter_total_bases,Over,1.5,124,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Pete Alonso,hitter_total_bases,Under,1.5,-161,Baltimore Orioles,Kansas City Royals
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Peter Lambert,pitcher_strikeouts,Over,4.5,-120,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Peter Lambert,pitcher_strikeouts,Under,4.5,-108,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Peter Lambert,pitcher_strikeouts,Over,4.5,-123,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Peter Lambert,pitcher_strikeouts,Under,4.5,-105,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Salvador Perez,hitter_hits,Over,0.5,-196,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Salvador Perez,hitter_hits,Under,0.5,148,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Salvador Perez,hitter_total_bases,Over,1.5,152,Baltimore Orioles,Kansas City Royals
@@ -1459,10 +1469,10 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Samuel Basallo,hitter_hits,Under,0.5,155,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Samuel Basallo,hitter_total_bases,Over,1.5,152,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Samuel Basallo,hitter_total_bases,Under,1.5,-200,Baltimore Orioles,Kansas City Royals
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Taylor Trammell,hitter_hits,Over,0.5,-118,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Taylor Trammell,hitter_hits,Under,0.5,-110,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Taylor Trammell,hitter_total_bases,Over,0.5,-112,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Taylor Trammell,hitter_total_bases,Under,0.5,-115,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Taylor Trammell,hitter_hits,Over,0.5,-115,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Taylor Trammell,hitter_hits,Under,0.5,-112,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Taylor Trammell,hitter_total_bases,Over,0.5,-108,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Taylor Trammell,hitter_total_bases,Under,0.5,-120,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Taylor Ward,hitter_hits,Over,0.5,-263,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Taylor Ward,hitter_hits,Under,0.5,193,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Taylor Ward,hitter_total_bases,Over,1.5,118,Baltimore Orioles,Kansas City Royals
@@ -1477,10 +1487,10 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Vinnie Pasquantino,hitter_total_bases,Under,1.5,-217,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Wyatt Langford,hitter_total_bases,Over,1.5,115,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Wyatt Langford,hitter_total_bases,Under,1.5,-149,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Yordan Alvarez,hitter_hits,Over,1.5,186,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Yordan Alvarez,hitter_hits,Under,1.5,-250,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Yordan Alvarez,hitter_total_bases,Over,1.5,-108,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Yordan Alvarez,hitter_total_bases,Under,1.5,-120,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Yordan Alvarez,hitter_hits,Over,1.5,190,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Yordan Alvarez,hitter_hits,Under,1.5,-256,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Yordan Alvarez,hitter_total_bases,Over,1.5,-105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Yordan Alvarez,hitter_total_bases,Under,1.5,-123,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Adley Rutschman,hitter_total_bases,Over,1.5,105,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Adley Rutschman,hitter_total_bases,Under,1.5,-135,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Blaze Alexander,hitter_total_bases,Over,1.5,140,Baltimore Orioles,Kansas City Royals
@@ -1531,18 +1541,26 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Bobby Witt Jr.,hitter_total_bases,Under,1.5,-132,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Brandon Nimmo,hitter_total_bases,Over,1.5,118,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Brandon Nimmo,hitter_total_bases,Under,1.5,-159,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Evan Carter,hitter_total_bases,Over,0.5,-117,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Evan Carter,hitter_total_bases,Under,0.5,-114,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Ezequiel Duran,hitter_total_bases,Over,0.5,-170,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Ezequiel Duran,hitter_total_bases,Under,0.5,127,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Gunnar Henderson,hitter_total_bases,Over,1.5,103,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Gunnar Henderson,hitter_total_bases,Under,1.5,-137,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Jac Caglianone,hitter_total_bases,Over,1.5,124,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Jac Caglianone,hitter_total_bases,Under,1.5,-170,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Jeremy Pena,hitter_total_bases,Over,1.5,127,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Jeremy Pena,hitter_total_bases,Under,1.5,-170,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Jose Altuve,hitter_total_bases,Over,0.5,-193,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Jose Altuve,hitter_total_bases,Under,0.5,143,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Josh Jung,hitter_total_bases,Over,1.5,113,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Josh Jung,hitter_total_bases,Under,1.5,-150,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Kumar Rocker,pitcher_outs,Over,16.5,-110,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Kumar Rocker,pitcher_outs,Under,16.5,-125,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Kyle Bradish,pitcher_outs,Over,17.5,-148,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Kyle Bradish,pitcher_outs,Under,17.5,111,Baltimore Orioles,Kansas City Royals
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,LaMonte Wade Jr.,hitter_total_bases,Over,0.5,-136,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,LaMonte Wade Jr.,hitter_total_bases,Under,0.5,102,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Noah Cameron,pitcher_outs,Over,15.5,-112,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Noah Cameron,pitcher_outs,Under,15.5,-120,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Pete Alonso,hitter_total_bases,Over,1.5,113,Baltimore Orioles,Kansas City Royals
@@ -1551,8 +1569,10 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Samuel Basallo,hitter_total_bases,Under,1.5,-190,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Taylor Ward,hitter_total_bases,Over,1.5,118,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Caesars,Taylor Ward,hitter_total_bases,Under,1.5,-157,Baltimore Orioles,Kansas City Royals
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Wyatt Langford,hitter_total_bases,Over,1.5,106,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Wyatt Langford,hitter_total_bases,Under,1.5,-141,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Wyatt Langford,hitter_total_bases,Over,1.5,108,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Wyatt Langford,hitter_total_bases,Under,1.5,-143,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Yainer Diaz,hitter_total_bases,Over,0.5,-200,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Yainer Diaz,hitter_total_bases,Under,0.5,148,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Yordan Alvarez,hitter_total_bases,Over,1.5,-115,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Caesars,Yordan Alvarez,hitter_total_bases,Under,1.5,-115,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Adley Rutschman,hitter_hits,Over,1.5,170,Baltimore Orioles,Kansas City Royals
@@ -1677,10 +1697,10 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,FanDuel,Noah Cameron,pitcher_strikeouts,Under,5.5,-146,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,FanDuel,Peter Lambert,pitcher_strikeouts,Over,4.5,-120,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,FanDuel,Peter Lambert,pitcher_strikeouts,Under,4.5,-106,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Christian Walker,hitter_hits,Over,0.5,-200,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Christian Walker,hitter_hits,Under,0.5,150,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Isaac Paredes,hitter_total_bases,Over,0.5,-170,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Isaac Paredes,hitter_total_bases,Under,0.5,130,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Christian Walker,hitter_hits,Over,0.5,-180,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Christian Walker,hitter_hits,Under,0.5,135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Isaac Paredes,hitter_total_bases,Over,0.5,-160,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Isaac Paredes,hitter_total_bases,Under,0.5,120,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Kumar Rocker,pitcher_outs,Over,16.5,-120,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Kumar Rocker,pitcher_outs,Under,16.5,-120,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Fanatics,Kyle Bradish,pitcher_strikeouts,Over,5.5,110,Baltimore Orioles,Kansas City Royals
@@ -1691,8 +1711,8 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Fanatics,Nick Loftin,hitter_total_bases,Under,0.5,115,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Fanatics,Noah Cameron,pitcher_outs,Over,16.5,-110,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Fanatics,Noah Cameron,pitcher_outs,Under,16.5,-130,Baltimore Orioles,Kansas City Royals
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Peter Lambert,pitcher_strikeouts,Over,4.5,-115,Texas Rangers,Houston Astros
-3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Peter Lambert,pitcher_strikeouts,Under,4.5,-115,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Peter Lambert,pitcher_strikeouts,Over,4.5,-110,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Fanatics,Peter Lambert,pitcher_strikeouts,Under,4.5,-120,Texas Rangers,Houston Astros
 27168ae4cc8b352a2cb7e3f6dab8b610,2026-07-11T23:11:00Z,BetOnline.ag,Alex Bregman,hitter_hits,Over,1.5,186,Cincinnati Reds,Chicago Cubs
 27168ae4cc8b352a2cb7e3f6dab8b610,2026-07-11T23:11:00Z,BetOnline.ag,Alex Bregman,hitter_hits,Under,1.5,-250,Cincinnati Reds,Chicago Cubs
 27168ae4cc8b352a2cb7e3f6dab8b610,2026-07-11T23:11:00Z,BetOnline.ag,Alex Bregman,hitter_total_bases,Over,1.5,112,Cincinnati Reds,Chicago Cubs
