@@ -13,6 +13,10 @@ OUTPUT_DIR = "outputs/hitters"
 TARGETS = {
     "hits": "target_hits",
     "total_bases": "target_total_bases",
+    "runs": "target_runs",
+    "rbi": "target_rbi",
+    "hits_runs_rbis": "target_hits_runs_rbis",
+    "fantasy_score": "target_fantasy_score",
 }
 
 
@@ -23,7 +27,7 @@ def train_hitter_models():
     df = pd.read_csv(DATA_PATH)
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
 
-    # Only pregame information.
+    # Only pregame information
     feature_cols = [
         column
         for column in df.columns
@@ -31,6 +35,9 @@ def train_hitter_models():
             column.startswith("last3_avg_")
             or column.startswith("last5_avg_")
             or column.startswith("last10_avg_")
+            or column.startswith("last3_")
+            or column.startswith("last5_")
+            or column.startswith("last10_")
             or column.startswith("previous_game_")
             or column in ["days_rest", "prior_games"]
         )
@@ -45,13 +52,25 @@ def train_hitter_models():
     df = df.dropna(subset=["date"])
     df = df.sort_values(["date", "game_id"]).reset_index(drop=True)
 
-    # Use the first 80% chronologically for training.
-    split_index = int(len(df) * 0.80)
+    # Split by unique date so a single slate does not get split across train/test
+    unique_dates = sorted(df["date"].dropna().unique())
 
-    train = df.iloc[:split_index].copy()
-    test = df.iloc[split_index:].copy()
+    if len(unique_dates) < 2:
+        raise ValueError("Not enough unique dates to create a train/test split.")
 
-    # Calculate medians using training data only.
+    split_idx = max(1, int(len(unique_dates) * 0.80))
+    if split_idx >= len(unique_dates):
+        split_idx = len(unique_dates) - 1
+
+    split_date = unique_dates[split_idx]
+
+    train = df[df["date"] < split_date].copy()
+    test = df[df["date"] >= split_date].copy()
+
+    if train.empty or test.empty:
+        raise ValueError("Train/test split failed. One side is empty.")
+
+    # Calculate medians using training data only
     medians = train[feature_cols].median()
 
     X_train = train[feature_cols].fillna(medians)
@@ -60,6 +79,7 @@ def train_hitter_models():
     print("Pregame features:", len(feature_cols))
     print("Train rows:", len(train))
     print("Test rows:", len(test))
+    print("Train range:", train["date"].min(), "to", train["date"].max())
     print("Test range:", test["date"].min(), "to", test["date"].max())
     print()
 
@@ -83,6 +103,10 @@ def train_hitter_models():
         train_mask = y_train.notna()
         test_mask = y_test.notna()
 
+        if train_mask.sum() == 0 or test_mask.sum() == 0:
+            print(f"Skipping {market}: no train/test rows available")
+            continue
+
         model = XGBRegressor(
             n_estimators=350,
             max_depth=3,
@@ -103,13 +127,30 @@ def train_hitter_models():
             X_test.loc[test_mask]
         )
 
-        # These stats cannot be negative.
+        # These stats cannot be negative
         predictions = predictions.clip(min=0)
 
         mae = mean_absolute_error(
             y_test.loc[test_mask],
             predictions,
         )
+
+        # Simple baseline: last5 average of the same stat if available
+        baseline_col = f"last5_avg_{market}"
+        baseline_mae = None
+
+        if baseline_col in test.columns:
+            baseline_preds = pd.to_numeric(
+                test.loc[test_mask, baseline_col],
+                errors="coerce"
+            ).fillna(
+                pd.to_numeric(train[baseline_col], errors="coerce").median()
+            )
+
+            baseline_mae = mean_absolute_error(
+                y_test.loc[test_mask],
+                baseline_preds,
+            )
 
         model_path = f"{MODEL_DIR}/{market}_model.pkl"
 
@@ -119,6 +160,8 @@ def train_hitter_models():
                 "features": feature_cols,
                 "medians": medians.to_dict(),
                 "target": target_col,
+                "market": market,
+                "split_date": str(split_date),
             },
             model_path,
         )
@@ -139,19 +182,39 @@ def train_hitter_models():
             results[target_col] - results["prediction"]
         ).abs()
 
+        if baseline_col in test.columns:
+            results["baseline_last5"] = pd.to_numeric(
+                test.loc[test_mask, baseline_col],
+                errors="coerce"
+            )
+            results["baseline_last5_error"] = (
+                results[target_col] - results["baseline_last5"]
+            ).abs()
+
         results.to_csv(
             f"{OUTPUT_DIR}/{market}_test_results.csv",
             index=False,
         )
 
-        summary.append({
+        summary_row = {
             "market": market,
             "mae": round(mae, 3),
             "test_rows": int(test_mask.sum()),
-        })
+        }
+
+        if baseline_mae is not None:
+            summary_row["baseline_last5_mae"] = round(baseline_mae, 3)
+            summary_row["model_vs_baseline"] = round(
+                baseline_mae - mae, 3
+            )
+
+        summary.append(summary_row)
 
         print(f"{market.upper()} model trained")
         print("MAE:", round(mae, 3))
+        if baseline_mae is not None:
+            print("Baseline last5 MAE:", round(baseline_mae, 3))
+            print("Model improvement:", round(baseline_mae - mae, 3))
         print("Saved:", model_path)
         print()
 
