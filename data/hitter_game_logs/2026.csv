@@ -662,6 +662,41 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,824495,547180,Bryce Harper,Philadelphia Phillies,Cincinnati Reds,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-08,824496,547180,Bryce Harper,Philadelphia Phillies,Cincinnati Reds,5,3,0,0,0,0,0,1,0,2,0,0,0,0
 2026-07-09,824494,547180,Bryce Harper,Philadelphia Phillies,Cincinnati Reds,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-19,823556,553869,Elias Díaz,Texas Rangers,New York Yankees,3,3,2,1,0,0,3,0,0,0,0,0,0,0
+2026-04-20,824125,553869,Elias Díaz,Texas Rangers,Baltimore Orioles,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-24,824124,553869,Elias Díaz,Texas Rangers,Los Angeles Angels,4,3,1,1,0,0,2,1,2,1,1,0,0,0
+2026-04-30,825016,553869,Elias Díaz,Texas Rangers,Athletics,4,4,1,0,0,1,4,1,1,0,0,0,0,0
+2026-05-06,824118,553869,Elias Díaz,Texas Rangers,Cleveland Guardians,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-08,824116,553869,Elias Díaz,Texas Rangers,Detroit Tigers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-10,824113,553869,Elias Díaz,Texas Rangers,Detroit Tigers,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-13,824603,553869,Elias Díaz,Texas Rangers,Chicago White Sox,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-16,823060,553869,Elias Díaz,Texas Rangers,St. Louis Cardinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-20,824111,553869,Elias Díaz,Texas Rangers,Boston Red Sox,3,3,1,0,0,1,4,1,2,0,1,0,0,0
+2026-06-07,822890,553869,Elias Díaz,Texas Rangers,Cleveland Guardians,4,4,1,0,0,0,1,1,0,0,2,0,0,0
+2026-06-10,824103,553869,Elias Díaz,Texas Rangers,Kansas City Royals,1,1,1,1,0,0,2,1,1,0,0,0,0,0
+2026-06-11,824101,553869,Elias Díaz,Texas Rangers,Kansas City Royals,4,4,2,0,0,0,2,0,1,0,0,0,0,0
+2026-06-12,824752,553869,Elias Díaz,Texas Rangers,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-13,824749,553869,Elias Díaz,Texas Rangers,Boston Red Sox,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-14,824751,553869,Elias Díaz,Texas Rangers,Boston Red Sox,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-15,822887,553869,Elias Díaz,Texas Rangers,Minnesota Twins,2,2,1,0,0,0,1,1,0,0,0,0,0,0
+2026-06-16,822888,553869,Elias Díaz,Texas Rangers,Minnesota Twins,3,3,1,1,0,0,2,0,1,0,1,0,0,0
+2026-06-19,822886,553869,Elias Díaz,Texas Rangers,San Diego Padres,4,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-06-20,822885,553869,Elias Díaz,Texas Rangers,San Diego Padres,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-06-21,822883,553869,Elias Díaz,Texas Rangers,San Diego Padres,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-22,823851,553869,Elias Díaz,Texas Rangers,Miami Marlins,4,3,1,0,0,0,1,0,1,0,0,0,0,0
+2026-06-24,823850,553869,Elias Díaz,Texas Rangers,Miami Marlins,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-26,822796,553869,Elias Díaz,Texas Rangers,Toronto Blue Jays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-27,822794,553869,Elias Díaz,Texas Rangers,Toronto Blue Jays,5,5,1,1,0,0,2,0,2,0,2,0,0,0
+2026-06-28,822795,553869,Elias Díaz,Texas Rangers,Toronto Blue Jays,4,4,2,0,0,0,2,0,1,0,1,0,0,0
+2026-06-29,824420,553869,Elias Díaz,Texas Rangers,Cleveland Guardians,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-30,824418,553869,Elias Díaz,Texas Rangers,Cleveland Guardians,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-01,824419,553869,Elias Díaz,Texas Rangers,Cleveland Guardians,4,4,2,0,0,1,5,1,2,0,0,0,0,0
+2026-07-02,822884,553869,Elias Díaz,Texas Rangers,Detroit Tigers,5,4,2,1,0,1,6,2,1,1,0,0,0,0
+2026-07-04,822882,553869,Elias Díaz,Texas Rangers,Detroit Tigers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-05,822879,553869,Elias Díaz,Texas Rangers,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-07,822881,553869,Elias Díaz,Texas Rangers,Los Angeles Angels,4,4,2,0,0,0,2,0,0,0,0,0,0,0
+2026-07-08,822880,553869,Elias Díaz,Texas Rangers,Los Angeles Angels,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-09,822877,553869,Elias Díaz,Texas Rangers,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-26,824541,553993,Eugenio Suárez,Cincinnati Reds,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,3,0,0,0
 2026-03-28,824540,553993,Eugenio Suárez,Cincinnati Reds,Boston Red Sox,5,5,1,0,0,0,1,0,1,0,1,0,0,0
 2026-03-29,824538,553993,Eugenio Suárez,Cincinnati Reds,Boston Red Sox,4,3,1,0,0,1,4,1,3,1,1,0,0,0
@@ -1080,91 +1115,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,823282,592518,Manny Machado,San Diego Padres,Arizona Diamondbacks,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-07-07,823280,592518,Manny Machado,San Diego Padres,Arizona Diamondbacks,4,3,0,0,0,0,0,0,0,1,2,0,0,0
 2026-07-09,823277,592518,Manny Machado,San Diego Padres,Arizona Diamondbacks,3,3,2,0,0,1,5,1,1,0,0,0,0,0
-2026-03-26,823486,592626,Joc Pederson,Texas Rangers,Philadelphia Phillies,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-03-28,823488,592626,Joc Pederson,Texas Rangers,Philadelphia Phillies,2,1,0,0,0,0,0,0,0,1,0,0,0,0
-2026-03-30,824863,592626,Joc Pederson,Texas Rangers,Baltimore Orioles,3,2,0,0,0,0,0,0,1,0,1,0,0,0
-2026-03-31,824861,592626,Joc Pederson,Texas Rangers,Baltimore Orioles,5,4,0,0,0,0,0,0,0,1,2,0,0,0
-2026-04-03,822919,592626,Joc Pederson,Texas Rangers,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-04,822920,592626,Joc Pederson,Texas Rangers,Cincinnati Reds,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-05,822917,592626,Joc Pederson,Texas Rangers,Cincinnati Reds,4,3,1,0,0,1,4,1,1,1,1,0,0,0
-2026-04-06,822918,592626,Joc Pederson,Texas Rangers,Seattle Mariners,3,3,1,1,0,0,2,0,0,0,1,0,0,0
-2026-04-07,822916,592626,Joc Pederson,Texas Rangers,Seattle Mariners,3,3,1,0,0,0,1,1,0,0,0,0,0,0
-2026-04-08,822915,592626,Joc Pederson,Texas Rangers,Seattle Mariners,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-10,823968,592626,Joc Pederson,Texas Rangers,Los Angeles Dodgers,1,1,1,0,0,0,1,1,0,0,0,0,0,0
-2026-04-11,823967,592626,Joc Pederson,Texas Rangers,Los Angeles Dodgers,2,2,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-12,823966,592626,Joc Pederson,Texas Rangers,Los Angeles Dodgers,5,4,1,0,0,0,1,1,0,1,2,0,0,0
-2026-04-13,825024,592626,Joc Pederson,Texas Rangers,Athletics,5,5,3,0,0,0,3,1,0,0,1,0,0,0
-2026-04-14,825022,592626,Joc Pederson,Texas Rangers,Athletics,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-15,825021,592626,Joc Pederson,Texas Rangers,Athletics,2,2,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-16,825023,592626,Joc Pederson,Texas Rangers,Athletics,3,1,1,0,0,0,1,2,1,2,0,0,0,0
-2026-04-17,823152,592626,Joc Pederson,Texas Rangers,Seattle Mariners,3,2,1,0,0,0,1,0,0,1,1,0,0,0
-2026-04-18,823151,592626,Joc Pederson,Texas Rangers,Seattle Mariners,3,2,1,0,0,0,1,0,0,1,1,0,0,0
-2026-04-19,823150,592626,Joc Pederson,Texas Rangers,Seattle Mariners,4,3,0,0,0,0,0,0,0,0,1,0,0,1
-2026-04-21,822914,592626,Joc Pederson,Texas Rangers,Pittsburgh Pirates,4,3,1,0,0,0,1,1,0,1,2,0,0,0
-2026-04-22,822913,592626,Joc Pederson,Texas Rangers,Pittsburgh Pirates,3,1,0,0,0,0,0,1,0,2,0,0,0,0
-2026-04-23,822912,592626,Joc Pederson,Texas Rangers,Pittsburgh Pirates,3,3,1,0,0,0,1,1,1,0,1,0,0,0
-2026-04-24,822909,592626,Joc Pederson,Texas Rangers,Athletics,3,3,1,0,0,0,1,0,0,0,2,0,0,0
-2026-04-25,822910,592626,Joc Pederson,Texas Rangers,Athletics,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-26,822911,592626,Joc Pederson,Texas Rangers,Athletics,3,2,0,0,0,0,0,0,0,1,0,0,0,0
-2026-04-27,822906,592626,Joc Pederson,Texas Rangers,New York Yankees,2,2,1,0,0,1,4,1,1,0,0,0,0,0
-2026-04-28,822908,592626,Joc Pederson,Texas Rangers,New York Yankees,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-29,822907,592626,Joc Pederson,Texas Rangers,New York Yankees,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-05-01,824287,592626,Joc Pederson,Texas Rangers,Detroit Tigers,4,3,0,0,0,0,0,0,1,0,0,0,0,0
-2026-05-02,824284,592626,Joc Pederson,Texas Rangers,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-05,823553,592626,Joc Pederson,Texas Rangers,New York Yankees,3,2,0,0,0,0,0,0,1,0,1,0,0,0
-2026-05-07,823551,592626,Joc Pederson,Texas Rangers,New York Yankees,2,2,1,0,0,0,1,0,0,0,0,0,0,0
-2026-05-08,822904,592626,Joc Pederson,Texas Rangers,Chicago Cubs,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-2026-05-09,822905,592626,Joc Pederson,Texas Rangers,Chicago Cubs,4,3,2,1,0,0,3,1,1,1,1,0,0,0
-2026-05-10,822902,592626,Joc Pederson,Texas Rangers,Chicago Cubs,4,3,1,1,0,0,2,0,0,1,1,0,0,0
-2026-05-11,822901,592626,Joc Pederson,Texas Rangers,Arizona Diamondbacks,2,1,0,0,0,0,0,0,0,1,0,0,0,0
-2026-05-12,822903,592626,Joc Pederson,Texas Rangers,Arizona Diamondbacks,5,5,1,0,0,1,4,1,1,0,3,0,0,0
-2026-05-13,822900,592626,Joc Pederson,Texas Rangers,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-15,824194,592626,Joc Pederson,Texas Rangers,Houston Astros,3,2,0,0,0,0,0,0,0,1,2,0,0,0
-2026-05-16,824193,592626,Joc Pederson,Texas Rangers,Houston Astros,5,3,1,0,0,0,1,0,1,2,1,0,0,0
-2026-05-17,824192,592626,Joc Pederson,Texas Rangers,Houston Astros,3,1,0,0,0,0,0,1,0,2,1,0,0,0
-2026-05-18,824357,592626,Joc Pederson,Texas Rangers,Colorado Rockies,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-19,824356,592626,Joc Pederson,Texas Rangers,Colorado Rockies,5,5,4,1,0,0,5,1,1,0,0,0,0,0
-2026-05-20,824355,592626,Joc Pederson,Texas Rangers,Colorado Rockies,2,1,0,0,0,0,0,1,0,0,0,0,0,0
-2026-05-22,824029,592626,Joc Pederson,Texas Rangers,Los Angeles Angels,3,2,1,1,0,0,2,0,0,1,0,0,0,0
-2026-05-23,824030,592626,Joc Pederson,Texas Rangers,Los Angeles Angels,3,3,1,0,0,0,1,0,0,0,0,0,0,0
-2026-05-24,824028,592626,Joc Pederson,Texas Rangers,Los Angeles Angels,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-25,822899,592626,Joc Pederson,Texas Rangers,Houston Astros,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-05-26,822898,592626,Joc Pederson,Texas Rangers,Houston Astros,4,4,1,0,0,1,4,1,3,0,1,0,0,0
-2026-05-27,822897,592626,Joc Pederson,Texas Rangers,Houston Astros,4,4,3,0,0,2,9,3,2,0,0,0,0,0
-2026-05-28,822896,592626,Joc Pederson,Texas Rangers,Houston Astros,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-29,822894,592626,Joc Pederson,Texas Rangers,Kansas City Royals,5,4,1,0,0,1,4,2,1,1,2,0,0,0
-2026-05-30,822893,592626,Joc Pederson,Texas Rangers,Kansas City Royals,5,5,1,0,0,1,4,1,1,0,2,0,0,0
-2026-05-31,822895,592626,Joc Pederson,Texas Rangers,Kansas City Royals,5,3,0,0,0,0,0,0,0,2,0,0,0,0
-2026-06-01,823050,592626,Joc Pederson,Texas Rangers,St. Louis Cardinals,4,3,1,0,0,0,1,0,1,1,0,0,0,0
-2026-06-02,823052,592626,Joc Pederson,Texas Rangers,St. Louis Cardinals,5,4,3,2,0,0,5,1,2,0,0,0,0,1
-2026-06-03,823051,592626,Joc Pederson,Texas Rangers,St. Louis Cardinals,5,5,1,0,1,0,3,0,2,0,1,0,0,0
-2026-06-05,822892,592626,Joc Pederson,Texas Rangers,Cleveland Guardians,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-06,822891,592626,Joc Pederson,Texas Rangers,Cleveland Guardians,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-07,822890,592626,Joc Pederson,Texas Rangers,Cleveland Guardians,5,5,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-09,824105,592626,Joc Pederson,Texas Rangers,Kansas City Royals,5,5,1,0,1,0,3,1,0,0,1,0,0,0
-2026-06-10,824103,592626,Joc Pederson,Texas Rangers,Kansas City Royals,2,1,0,0,0,0,0,0,0,1,0,0,0,0
-2026-06-12,824752,592626,Joc Pederson,Texas Rangers,Boston Red Sox,3,3,2,0,0,0,2,1,0,0,0,0,0,0
-2026-06-13,824749,592626,Joc Pederson,Texas Rangers,Boston Red Sox,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-14,824751,592626,Joc Pederson,Texas Rangers,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-15,822887,592626,Joc Pederson,Texas Rangers,Minnesota Twins,4,3,2,0,0,1,5,1,2,0,1,0,0,1
-2026-06-16,822888,592626,Joc Pederson,Texas Rangers,Minnesota Twins,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-18,822889,592626,Joc Pederson,Texas Rangers,Minnesota Twins,3,3,0,0,0,0,0,0,0,0,3,0,0,0
-2026-06-19,822886,592626,Joc Pederson,Texas Rangers,San Diego Padres,5,4,0,0,0,0,0,1,0,1,1,0,0,0
-2026-06-20,822885,592626,Joc Pederson,Texas Rangers,San Diego Padres,5,5,0,0,0,0,0,0,0,0,2,0,0,0
-2026-06-21,822883,592626,Joc Pederson,Texas Rangers,San Diego Padres,4,3,0,0,0,0,0,0,0,1,1,0,0,0
-2026-06-22,823851,592626,Joc Pederson,Texas Rangers,Miami Marlins,4,4,2,0,0,0,2,0,0,0,1,0,0,0
-2026-06-23,823849,592626,Joc Pederson,Texas Rangers,Miami Marlins,5,5,3,0,0,1,6,1,1,0,0,0,0,0
-2026-06-24,823850,592626,Joc Pederson,Texas Rangers,Miami Marlins,4,4,1,0,0,1,4,1,1,0,1,0,0,0
-2026-06-25,822797,592626,Joc Pederson,Texas Rangers,Toronto Blue Jays,5,3,2,0,0,1,5,2,1,2,0,0,0,0
-2026-06-27,822794,592626,Joc Pederson,Texas Rangers,Toronto Blue Jays,5,5,0,0,0,0,0,0,0,0,3,0,0,0
-2026-06-28,822795,592626,Joc Pederson,Texas Rangers,Toronto Blue Jays,5,5,1,0,0,1,4,1,1,0,3,0,0,0
-2026-06-30,824418,592626,Joc Pederson,Texas Rangers,Cleveland Guardians,4,4,1,0,0,1,4,1,2,0,1,0,0,0
-2026-07-01,824419,592626,Joc Pederson,Texas Rangers,Cleveland Guardians,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-04,822882,592626,Joc Pederson,Texas Rangers,Detroit Tigers,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-07-05,822879,592626,Joc Pederson,Texas Rangers,Detroit Tigers,4,3,1,0,0,0,1,0,0,1,1,0,0,0
-2026-07-07,822881,592626,Joc Pederson,Texas Rangers,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-08,822880,592626,Joc Pederson,Texas Rangers,Los Angeles Angels,3,2,0,0,0,0,0,0,0,1,2,1,0,0
-2026-07-09,822877,592626,Joc Pederson,Texas Rangers,Los Angeles Angels,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-26,823325,593428,Xander Bogaerts,San Diego Padres,Detroit Tigers,4,4,2,1,0,0,3,0,1,0,0,0,0,0
 2026-03-27,823324,593428,Xander Bogaerts,San Diego Padres,Detroit Tigers,4,4,1,0,0,0,1,0,0,0,0,0,0,0
 2026-03-28,823323,593428,Xander Bogaerts,San Diego Padres,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,0,0,0,0
@@ -2151,6 +2101,58 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,824820,621020,Dansby Swanson,Chicago Cubs,Baltimore Orioles,4,4,2,0,0,0,2,1,1,0,0,0,0,0
 2026-07-08,824815,621020,Dansby Swanson,Chicago Cubs,Baltimore Orioles,4,4,1,0,0,0,1,1,0,0,1,0,0,0
 2026-07-09,824816,621020,Dansby Swanson,Chicago Cubs,Baltimore Orioles,4,4,1,0,0,0,1,0,0,0,1,2,0,0
+2026-03-28,823651,621438,Tyrone Taylor,New York Mets,Pittsburgh Pirates,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-01,823078,621438,Tyrone Taylor,New York Mets,St. Louis Cardinals,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-02,823242,621438,Tyrone Taylor,New York Mets,San Francisco Giants,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-03,823240,621438,Tyrone Taylor,New York Mets,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-04,823239,621438,Tyrone Taylor,New York Mets,San Francisco Giants,3,3,2,0,0,1,5,1,4,0,0,0,0,0
+2026-04-05,823238,621438,Tyrone Taylor,New York Mets,San Francisco Giants,1,1,0,0,0,0,0,1,0,0,0,0,0,0
+2026-04-07,823648,621438,Tyrone Taylor,New York Mets,Arizona Diamondbacks,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-04-09,823645,621438,Tyrone Taylor,New York Mets,Arizona Diamondbacks,2,2,1,1,0,0,2,0,0,0,0,0,0,0
+2026-04-11,823644,621438,Tyrone Taylor,New York Mets,Athletics,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-12,823642,621438,Tyrone Taylor,New York Mets,Athletics,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-04-13,823964,621438,Tyrone Taylor,New York Mets,Los Angeles Dodgers,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-17,824693,621438,Tyrone Taylor,New York Mets,Chicago Cubs,4,3,2,0,0,0,2,0,2,0,1,0,0,0
+2026-04-18,824694,621438,Tyrone Taylor,New York Mets,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-19,824691,621438,Tyrone Taylor,New York Mets,Chicago Cubs,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-21,823640,621438,Tyrone Taylor,New York Mets,Minnesota Twins,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-22,823641,621438,Tyrone Taylor,New York Mets,Minnesota Twins,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-04-23,823639,621438,Tyrone Taylor,New York Mets,Minnesota Twins,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-24,823638,621438,Tyrone Taylor,New York Mets,Colorado Rockies,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-04-26,823635,621438,Tyrone Taylor,New York Mets,Colorado Rockies,3,3,1,0,0,1,4,1,1,0,0,0,0,0
+2026-04-26,823637,621438,Tyrone Taylor,New York Mets,Colorado Rockies,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-28,823636,621438,Tyrone Taylor,New York Mets,Washington Nationals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-29,823633,621438,Tyrone Taylor,New York Mets,Washington Nationals,4,4,2,0,0,0,2,0,0,0,1,0,0,0
+2026-04-30,823634,621438,Tyrone Taylor,New York Mets,Washington Nationals,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-01,824041,621438,Tyrone Taylor,New York Mets,Los Angeles Angels,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-02,824042,621438,Tyrone Taylor,New York Mets,Los Angeles Angels,4,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-03,824043,621438,Tyrone Taylor,New York Mets,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-04,824363,621438,Tyrone Taylor,New York Mets,Colorado Rockies,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-06,824361,621438,Tyrone Taylor,New York Mets,Colorado Rockies,2,2,0,0,0,0,0,0,1,0,0,0,1,0
+2026-05-07,824362,621438,Tyrone Taylor,New York Mets,Colorado Rockies,3,2,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-08,825088,621438,Tyrone Taylor,New York Mets,Arizona Diamondbacks,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-09,825089,621438,Tyrone Taylor,New York Mets,Arizona Diamondbacks,3,3,1,1,0,0,2,0,0,0,0,0,0,0
+2026-05-10,825085,621438,Tyrone Taylor,New York Mets,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-12,823632,621438,Tyrone Taylor,New York Mets,Detroit Tigers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-13,823631,621438,Tyrone Taylor,New York Mets,Detroit Tigers,4,4,0,0,0,0,0,0,1,0,2,0,0,0
+2026-05-14,823630,621438,Tyrone Taylor,New York Mets,Detroit Tigers,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-17,823628,621438,Tyrone Taylor,New York Mets,New York Yankees,3,3,1,0,0,1,4,1,3,0,0,0,0,0
+2026-05-18,822734,621438,Tyrone Taylor,New York Mets,Washington Nationals,6,6,2,1,0,0,3,2,0,0,0,0,0,0
+2026-05-19,822736,621438,Tyrone Taylor,New York Mets,Washington Nationals,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-20,822735,621438,Tyrone Taylor,New York Mets,Washington Nationals,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-22,823863,621438,Tyrone Taylor,New York Mets,Miami Marlins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-23,823862,621438,Tyrone Taylor,New York Mets,Miami Marlins,1,1,1,1,0,0,2,1,0,0,0,0,0,0
+2026-05-24,823861,621438,Tyrone Taylor,New York Mets,Miami Marlins,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-25,823625,621438,Tyrone Taylor,New York Mets,Cincinnati Reds,3,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-28,823608,621438,Tyrone Taylor,New York Mets,Philadelphia Phillies,2,2,2,0,0,0,2,1,0,0,0,0,0,0
+2026-06-29,822792,621438,Tyrone Taylor,New York Mets,Toronto Blue Jays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-01,822791,621438,Tyrone Taylor,New York Mets,Toronto Blue Jays,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-03,824904,621438,Tyrone Taylor,New York Mets,Atlanta Braves,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-04,824903,621438,Tyrone Taylor,New York Mets,Atlanta Braves,4,3,1,0,0,1,4,1,1,1,1,0,0,0
+2026-07-05,824902,621438,Tyrone Taylor,New York Mets,Atlanta Braves,4,4,1,0,0,1,4,1,1,0,1,0,0,0
+2026-07-06,824900,621438,Tyrone Taylor,New York Mets,Atlanta Braves,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-07-08,823605,621438,Tyrone Taylor,New York Mets,Kansas City Royals,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-07-09,823606,621438,Tyrone Taylor,New York Mets,Kansas City Royals,3,3,2,1,0,1,6,1,1,0,0,0,0,0
 2026-03-26,824865,621493,Taylor Ward,Baltimore Orioles,Minnesota Twins,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-28,824862,621493,Taylor Ward,Baltimore Orioles,Minnesota Twins,5,3,0,0,0,0,0,0,0,2,2,0,0,0
 2026-03-29,824864,621493,Taylor Ward,Baltimore Orioles,Minnesota Twins,5,4,1,0,0,0,1,1,0,1,1,0,0,0
@@ -2814,6 +2816,80 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,824980,641680,Jonah Heim,Athletics,Miami Marlins,4,4,2,0,0,1,5,1,6,0,1,0,0,0
 2026-07-07,824254,641680,Jonah Heim,Athletics,Detroit Tigers,4,3,1,0,0,0,1,0,0,0,0,0,0,1
 2026-07-09,824251,641680,Jonah Heim,Athletics,Detroit Tigers,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-03-25,823244,641857,Ryan McMahon,New York Yankees,San Francisco Giants,4,3,1,0,0,0,1,1,2,1,2,0,0,0
+2026-03-27,823243,641857,Ryan McMahon,New York Yankees,San Francisco Giants,2,1,0,0,0,0,0,0,0,1,1,0,0,0
+2026-03-28,823241,641857,Ryan McMahon,New York Yankees,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-03-30,823159,641857,Ryan McMahon,New York Yankees,Seattle Mariners,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-03-31,823158,641857,Ryan McMahon,New York Yankees,Seattle Mariners,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-04-01,823157,641857,Ryan McMahon,New York Yankees,Seattle Mariners,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-03,823568,641857,Ryan McMahon,New York Yankees,Miami Marlins,4,2,0,0,0,0,0,0,0,2,1,0,0,0
+2026-04-04,823569,641857,Ryan McMahon,New York Yankees,Miami Marlins,4,3,0,0,0,0,0,1,0,1,2,0,0,0
+2026-04-05,823566,641857,Ryan McMahon,New York Yankees,Miami Marlins,4,3,1,0,0,0,1,0,0,1,1,0,0,0
+2026-04-07,823567,641857,Ryan McMahon,New York Yankees,Athletics,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-08,823564,641857,Ryan McMahon,New York Yankees,Athletics,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-04-09,823565,641857,Ryan McMahon,New York Yankees,Athletics,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-11,822996,641857,Ryan McMahon,New York Yankees,Tampa Bay Rays,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-12,822998,641857,Ryan McMahon,New York Yankees,Tampa Bay Rays,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-04-13,823563,641857,Ryan McMahon,New York Yankees,Los Angeles Angels,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-04-14,823562,641857,Ryan McMahon,New York Yankees,Los Angeles Angels,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-15,823561,641857,Ryan McMahon,New York Yankees,Los Angeles Angels,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-17,823559,641857,Ryan McMahon,New York Yankees,Kansas City Royals,1,1,1,0,0,1,4,1,2,0,0,0,0,0
+2026-04-18,823558,641857,Ryan McMahon,New York Yankees,Kansas City Royals,1,0,0,0,0,0,0,1,0,1,0,0,0,0
+2026-04-19,823556,641857,Ryan McMahon,New York Yankees,Kansas City Royals,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-04-21,824773,641857,Ryan McMahon,New York Yankees,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-22,824774,641857,Ryan McMahon,New York Yankees,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-23,824770,641857,Ryan McMahon,New York Yankees,Boston Red Sox,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-24,824204,641857,Ryan McMahon,New York Yankees,Houston Astros,4,4,1,0,0,1,4,1,1,0,0,0,0,0
+2026-04-25,824203,641857,Ryan McMahon,New York Yankees,Houston Astros,5,5,2,0,0,0,2,1,1,0,1,0,0,0
+2026-04-26,824202,641857,Ryan McMahon,New York Yankees,Houston Astros,4,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-04-27,822906,641857,Ryan McMahon,New York Yankees,Texas Rangers,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-04-28,822908,641857,Ryan McMahon,New York Yankees,Texas Rangers,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-29,822907,641857,Ryan McMahon,New York Yankees,Texas Rangers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-01,823557,641857,Ryan McMahon,New York Yankees,Baltimore Orioles,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-02,823554,641857,Ryan McMahon,New York Yankees,Baltimore Orioles,4,4,1,1,0,0,2,1,0,0,1,0,0,0
+2026-05-03,823555,641857,Ryan McMahon,New York Yankees,Baltimore Orioles,4,4,3,1,0,0,4,1,1,0,0,1,0,0
+2026-05-04,823552,641857,Ryan McMahon,New York Yankees,Baltimore Orioles,4,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-05,823553,641857,Ryan McMahon,New York Yankees,Texas Rangers,4,4,2,0,0,1,5,2,2,0,1,0,0,0
+2026-05-06,823550,641857,Ryan McMahon,New York Yankees,Texas Rangers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-07,823551,641857,Ryan McMahon,New York Yankees,Texas Rangers,5,3,2,1,0,0,3,1,1,2,1,0,0,0
+2026-05-08,823794,641857,Ryan McMahon,New York Yankees,Milwaukee Brewers,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-09,823792,641857,Ryan McMahon,New York Yankees,Milwaukee Brewers,1,1,1,0,0,0,1,0,1,0,0,0,0,0
+2026-05-10,823793,641857,Ryan McMahon,New York Yankees,Milwaukee Brewers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-11,824844,641857,Ryan McMahon,New York Yankees,Baltimore Orioles,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-12,824843,641857,Ryan McMahon,New York Yankees,Baltimore Orioles,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-13,824841,641857,Ryan McMahon,New York Yankees,Baltimore Orioles,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-15,823629,641857,Ryan McMahon,New York Yankees,New York Mets,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-17,823628,641857,Ryan McMahon,New York Yankees,New York Mets,5,4,0,0,0,0,0,0,0,0,0,1,0,0
+2026-05-18,823549,641857,Ryan McMahon,New York Yankees,Toronto Blue Jays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-19,823548,641857,Ryan McMahon,New York Yankees,Toronto Blue Jays,4,4,2,0,0,1,5,1,3,0,0,1,0,0
+2026-05-20,823547,641857,Ryan McMahon,New York Yankees,Toronto Blue Jays,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-21,823545,641857,Ryan McMahon,New York Yankees,Toronto Blue Jays,3,3,1,1,0,0,2,0,0,0,1,0,0,0
+2026-05-22,823546,641857,Ryan McMahon,New York Yankees,Tampa Bay Rays,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-24,823544,641857,Ryan McMahon,New York Yankees,Tampa Bay Rays,3,3,1,0,0,0,1,0,0,0,2,0,0,0
+2026-05-27,824104,641857,Ryan McMahon,New York Yankees,Kansas City Royals,4,4,2,0,0,1,5,2,2,0,1,0,0,0
+2026-05-29,825002,641857,Ryan McMahon,New York Yankees,Athletics,4,4,1,0,0,1,4,1,1,0,1,0,0,0
+2026-05-30,825000,641857,Ryan McMahon,New York Yankees,Athletics,4,4,2,0,0,0,2,1,0,0,2,0,0,0
+2026-05-31,825001,641857,Ryan McMahon,New York Yankees,Athletics,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-03,823540,641857,Ryan McMahon,New York Yankees,Cleveland Guardians,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-04,823542,641857,Ryan McMahon,New York Yankees,Cleveland Guardians,3,3,1,0,0,0,1,0,1,0,1,0,0,0
+2026-06-05,823538,641857,Ryan McMahon,New York Yankees,Boston Red Sox,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-07,823537,641857,Ryan McMahon,New York Yankees,Boston Red Sox,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-08,824427,641857,Ryan McMahon,New York Yankees,Cleveland Guardians,2,2,1,0,0,1,4,1,1,0,1,0,0,0
+2026-06-09,824429,641857,Ryan McMahon,New York Yankees,Cleveland Guardians,4,3,2,0,0,0,2,0,0,1,0,0,0,0
+2026-06-10,824428,641857,Ryan McMahon,New York Yankees,Cleveland Guardians,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-12,822803,641857,Ryan McMahon,New York Yankees,Toronto Blue Jays,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-06-13,822802,641857,Ryan McMahon,New York Yankees,Toronto Blue Jays,3,2,0,0,0,0,0,0,0,1,0,0,1,0
+2026-06-14,822801,641857,Ryan McMahon,New York Yankees,Toronto Blue Jays,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-06-16,823535,641857,Ryan McMahon,New York Yankees,Chicago White Sox,5,5,1,0,0,0,1,0,1,0,1,0,0,0
+2026-06-17,823536,641857,Ryan McMahon,New York Yankees,Chicago White Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-18,823533,641857,Ryan McMahon,New York Yankees,Chicago White Sox,3,3,1,0,0,1,4,1,1,0,1,0,0,0
+2026-06-19,823534,641857,Ryan McMahon,New York Yankees,Cincinnati Reds,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-21,823531,641857,Ryan McMahon,New York Yankees,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-03,823527,641857,Ryan McMahon,New York Yankees,Minnesota Twins,3,2,1,1,0,0,2,1,0,1,0,0,0,0
+2026-07-04,823526,641857,Ryan McMahon,New York Yankees,Minnesota Twins,4,3,0,0,0,0,0,1,0,1,2,0,0,0
+2026-07-06,822958,641857,Ryan McMahon,New York Yankees,Tampa Bay Rays,3,3,0,0,0,0,0,0,0,0,3,0,0,0
+2026-07-07,822956,641857,Ryan McMahon,New York Yankees,Tampa Bay Rays,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-09,822954,641857,Ryan McMahon,New York Yankees,Tampa Bay Rays,5,5,2,2,0,0,4,1,2,0,2,0,0,0
 2026-03-26,824865,641933,Tyler O'Neill,Baltimore Orioles,Minnesota Twins,3,2,1,0,0,0,1,1,0,1,0,0,0,0
 2026-03-28,824862,641933,Tyler O'Neill,Baltimore Orioles,Minnesota Twins,2,2,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-29,824864,641933,Tyler O'Neill,Baltimore Orioles,Minnesota Twins,4,3,1,0,0,1,4,2,3,1,0,0,0,0
@@ -2946,59 +3022,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,824900,642086,Dominic Smith,Atlanta Braves,New York Mets,2,2,1,0,0,0,1,1,0,0,1,0,0,0
 2026-07-07,823361,642086,Dominic Smith,Atlanta Braves,Pittsburgh Pirates,4,4,0,0,0,0,0,1,0,0,0,0,0,0
 2026-07-09,823359,642086,Dominic Smith,Atlanta Braves,Pittsburgh Pirates,5,3,1,0,0,0,1,1,0,2,1,0,0,0
-2026-03-27,823243,642708,Amed Rosario,New York Yankees,San Francisco Giants,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-03-30,823159,642708,Amed Rosario,New York Yankees,Seattle Mariners,2,1,0,0,0,0,0,0,1,0,1,0,0,0
-2026-04-01,823157,642708,Amed Rosario,New York Yankees,Seattle Mariners,3,3,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-07,823567,642708,Amed Rosario,New York Yankees,Athletics,4,4,2,0,0,2,8,2,4,0,1,0,0,0
-2026-04-08,823564,642708,Amed Rosario,New York Yankees,Athletics,4,4,1,0,0,0,1,0,0,0,2,0,0,0
-2026-04-09,823565,642708,Amed Rosario,New York Yankees,Athletics,4,2,0,0,0,0,0,0,0,2,0,0,0,0
-2026-04-10,822997,642708,Amed Rosario,New York Yankees,Tampa Bay Rays,4,4,2,0,1,0,4,0,1,0,1,0,0,0
-2026-04-11,822996,642708,Amed Rosario,New York Yankees,Tampa Bay Rays,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-12,822998,642708,Amed Rosario,New York Yankees,Tampa Bay Rays,1,1,1,1,0,0,2,0,0,0,0,0,0,0
-2026-04-13,823563,642708,Amed Rosario,New York Yankees,Los Angeles Angels,2,2,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-14,823562,642708,Amed Rosario,New York Yankees,Los Angeles Angels,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-16,823560,642708,Amed Rosario,New York Yankees,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-17,823559,642708,Amed Rosario,New York Yankees,Kansas City Royals,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-18,823558,642708,Amed Rosario,New York Yankees,Kansas City Royals,5,5,2,0,0,1,5,2,3,0,0,0,0,0
-2026-04-19,823556,642708,Amed Rosario,New York Yankees,Kansas City Royals,4,3,1,0,0,0,1,0,0,1,1,0,0,0
-2026-04-21,824773,642708,Amed Rosario,New York Yankees,Boston Red Sox,4,3,0,0,0,0,0,1,0,1,0,0,0,0
-2026-04-22,824774,642708,Amed Rosario,New York Yankees,Boston Red Sox,2,1,1,0,0,1,4,1,4,0,0,0,0,0
-2026-04-23,824770,642708,Amed Rosario,New York Yankees,Boston Red Sox,3,3,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-24,824204,642708,Amed Rosario,New York Yankees,Houston Astros,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-25,824203,642708,Amed Rosario,New York Yankees,Houston Astros,5,5,1,0,0,0,1,1,0,0,2,0,0,0
-2026-05-01,823557,642708,Amed Rosario,New York Yankees,Baltimore Orioles,4,3,1,0,0,0,1,0,1,1,2,0,0,0
-2026-05-07,823551,642708,Amed Rosario,New York Yankees,Texas Rangers,4,4,1,0,0,0,1,1,0,0,1,0,0,0
-2026-05-08,823794,642708,Amed Rosario,New York Yankees,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-09,823792,642708,Amed Rosario,New York Yankees,Milwaukee Brewers,4,3,1,1,0,0,2,1,0,1,1,0,0,0
-2026-05-12,824843,642708,Amed Rosario,New York Yankees,Baltimore Orioles,3,3,1,0,0,0,1,1,1,0,0,0,0,0
-2026-05-16,823627,642708,Amed Rosario,New York Yankees,New York Mets,4,4,1,1,0,0,2,0,0,0,2,0,0,0
-2026-05-17,823628,642708,Amed Rosario,New York Yankees,New York Mets,1,0,0,0,0,0,0,0,1,0,0,0,0,0
-2026-05-18,823549,642708,Amed Rosario,New York Yankees,Toronto Blue Jays,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-20,823547,642708,Amed Rosario,New York Yankees,Toronto Blue Jays,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-26,824106,642708,Amed Rosario,New York Yankees,Kansas City Royals,6,6,4,0,0,2,10,3,4,0,0,0,0,0
-2026-05-27,824104,642708,Amed Rosario,New York Yankees,Kansas City Royals,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-02,823541,642708,Amed Rosario,New York Yankees,Cleveland Guardians,4,4,0,0,0,0,0,0,0,0,3,0,0,0
-2026-06-05,823538,642708,Amed Rosario,New York Yankees,Boston Red Sox,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-2026-06-07,823537,642708,Amed Rosario,New York Yankees,Boston Red Sox,4,4,1,0,0,0,1,1,0,0,0,1,0,0
-2026-06-08,824427,642708,Amed Rosario,New York Yankees,Cleveland Guardians,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-10,824428,642708,Amed Rosario,New York Yankees,Cleveland Guardians,3,3,1,0,0,0,1,0,0,0,1,0,0,0
-2026-06-12,822803,642708,Amed Rosario,New York Yankees,Toronto Blue Jays,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-14,822801,642708,Amed Rosario,New York Yankees,Toronto Blue Jays,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-17,823536,642708,Amed Rosario,New York Yankees,Chicago White Sox,4,4,1,1,0,0,2,1,0,0,1,0,0,0
-2026-06-20,823532,642708,Amed Rosario,New York Yankees,Cincinnati Reds,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-06-21,823531,642708,Amed Rosario,New York Yankees,Cincinnati Reds,2,2,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-22,824261,642708,Amed Rosario,New York Yankees,Detroit Tigers,5,5,1,0,0,1,4,1,2,0,2,0,0,0
-2026-06-25,824747,642708,Amed Rosario,New York Yankees,Boston Red Sox,4,4,1,0,0,0,1,0,0,0,2,0,0,0
-2026-06-26,824743,642708,Amed Rosario,New York Yankees,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-27,824745,642708,Amed Rosario,New York Yankees,Boston Red Sox,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-28,824744,642708,Amed Rosario,New York Yankees,Boston Red Sox,4,3,2,0,0,0,2,1,1,1,0,0,0,0
-2026-06-29,823529,642708,Amed Rosario,New York Yankees,Detroit Tigers,1,1,1,0,0,1,4,1,3,0,0,0,0,0
-2026-06-30,823528,642708,Amed Rosario,New York Yankees,Detroit Tigers,4,3,0,0,0,0,0,1,0,1,1,0,0,0
-2026-07-01,823530,642708,Amed Rosario,New York Yankees,Detroit Tigers,5,5,1,0,0,1,4,1,1,0,1,0,0,0
-2026-07-04,823526,642708,Amed Rosario,New York Yankees,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-05,823525,642708,Amed Rosario,New York Yankees,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-07,822956,642708,Amed Rosario,New York Yankees,Tampa Bay Rays,2,2,0,0,0,0,0,0,0,0,2,0,0,0
-2026-07-08,822957,642708,Amed Rosario,New York Yankees,Tampa Bay Rays,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-03-25,823244,642715,Willy Adames,San Francisco Giants,New York Yankees,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-27,823243,642715,Willy Adames,San Francisco Giants,New York Yankees,3,3,0,0,0,0,0,0,0,0,3,0,0,0
 2026-03-28,823241,642715,Willy Adames,San Francisco Giants,New York Yankees,4,4,1,0,0,0,1,0,0,0,1,0,0,0
@@ -7938,46 +7961,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,823203,669477,Casey Schmitt,San Francisco Giants,Toronto Blue Jays,4,4,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-08,823202,669477,Casey Schmitt,San Francisco Giants,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-09,823201,669477,Casey Schmitt,San Francisco Giants,Colorado Rockies,5,4,2,1,0,1,6,2,2,1,1,0,0,0
-2026-04-25,823960,670032,Nicky Lopez,Texas Rangers,Los Angeles Dodgers,2,2,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-28,823310,670032,Nicky Lopez,Texas Rangers,San Diego Padres,2,2,0,0,0,0,0,1,0,0,0,0,0,0
-2026-05-05,824682,670032,Nicky Lopez,Texas Rangers,Cincinnati Reds,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-09,822905,670032,Nicky Lopez,Texas Rangers,Texas Rangers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-27,822897,670032,Nicky Lopez,Texas Rangers,Houston Astros,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-28,822896,670032,Nicky Lopez,Texas Rangers,Houston Astros,4,3,0,0,0,0,0,0,0,1,1,0,0,0
-2026-05-29,822894,670032,Nicky Lopez,Texas Rangers,Kansas City Royals,4,4,1,0,0,1,4,1,2,0,1,0,0,0
-2026-05-30,822893,670032,Nicky Lopez,Texas Rangers,Kansas City Royals,3,3,2,0,0,0,2,0,1,0,0,0,0,0
-2026-05-31,822895,670032,Nicky Lopez,Texas Rangers,Kansas City Royals,4,4,2,0,0,0,2,1,0,0,1,0,0,0
-2026-06-01,823050,670032,Nicky Lopez,Texas Rangers,St. Louis Cardinals,4,4,2,0,0,0,2,0,0,0,1,0,0,0
-2026-06-02,823052,670032,Nicky Lopez,Texas Rangers,St. Louis Cardinals,4,3,0,0,0,0,0,1,1,0,2,0,0,0
-2026-06-03,823051,670032,Nicky Lopez,Texas Rangers,St. Louis Cardinals,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-07,822890,670032,Nicky Lopez,Texas Rangers,Cleveland Guardians,1,1,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-10,824103,670032,Nicky Lopez,Texas Rangers,Kansas City Royals,5,3,2,1,0,0,3,0,1,1,0,0,0,1
-2026-06-11,824101,670032,Nicky Lopez,Texas Rangers,Kansas City Royals,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-12,824752,670032,Nicky Lopez,Texas Rangers,Boston Red Sox,3,3,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-13,824749,670032,Nicky Lopez,Texas Rangers,Boston Red Sox,4,4,2,0,0,0,2,1,0,0,0,1,0,0
-2026-06-14,824751,670032,Nicky Lopez,Texas Rangers,Boston Red Sox,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-15,822887,670032,Nicky Lopez,Texas Rangers,Minnesota Twins,3,3,1,0,0,0,1,0,0,0,0,1,0,0
-2026-06-16,822888,670032,Nicky Lopez,Texas Rangers,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-18,822889,670032,Nicky Lopez,Texas Rangers,Minnesota Twins,1,1,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-19,822886,670032,Nicky Lopez,Texas Rangers,San Diego Padres,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-20,822885,670032,Nicky Lopez,Texas Rangers,San Diego Padres,3,3,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-21,822883,670032,Nicky Lopez,Texas Rangers,San Diego Padres,3,2,2,0,0,0,2,2,0,0,0,0,0,0
-2026-06-22,823851,670032,Nicky Lopez,Texas Rangers,Miami Marlins,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-23,823849,670032,Nicky Lopez,Texas Rangers,Miami Marlins,4,3,0,0,0,0,0,0,1,1,0,0,0,0
-2026-06-24,823850,670032,Nicky Lopez,Texas Rangers,Miami Marlins,1,1,1,0,0,0,1,0,0,0,0,0,1,0
-2026-06-25,822797,670032,Nicky Lopez,Texas Rangers,Toronto Blue Jays,4,4,2,0,0,0,2,1,0,0,0,0,0,0
-2026-06-26,822796,670032,Nicky Lopez,Texas Rangers,Toronto Blue Jays,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-06-27,822794,670032,Nicky Lopez,Texas Rangers,Toronto Blue Jays,4,4,1,0,0,0,1,0,0,0,2,1,0,0
-2026-06-28,822795,670032,Nicky Lopez,Texas Rangers,Toronto Blue Jays,1,1,0,0,0,0,0,0,0,0,0,0,1,0
-2026-06-29,824420,670032,Nicky Lopez,Texas Rangers,Cleveland Guardians,4,4,2,0,0,0,2,1,1,0,1,0,0,0
-2026-06-30,824418,670032,Nicky Lopez,Texas Rangers,Cleveland Guardians,3,3,1,0,0,0,1,1,0,0,0,0,0,0
-2026-07-01,824419,670032,Nicky Lopez,Texas Rangers,Cleveland Guardians,4,3,1,1,0,0,2,0,1,0,1,0,0,1
-2026-07-02,822884,670032,Nicky Lopez,Texas Rangers,Detroit Tigers,5,5,3,0,0,0,3,2,1,0,0,1,0,0
-2026-07-04,822882,670032,Nicky Lopez,Texas Rangers,Detroit Tigers,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-05,822879,670032,Nicky Lopez,Texas Rangers,Detroit Tigers,3,3,1,0,0,0,1,1,0,0,0,0,0,0
-2026-07-07,822881,670032,Nicky Lopez,Texas Rangers,Los Angeles Angels,2,1,1,0,0,0,1,0,2,0,0,0,0,0
-2026-07-08,822880,670032,Nicky Lopez,Texas Rangers,Los Angeles Angels,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-09,822877,670032,Nicky Lopez,Texas Rangers,Los Angeles Angels,1,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-26,823163,670042,Luke Raley,Seattle Mariners,Cleveland Guardians,4,4,1,0,0,1,4,1,1,0,2,0,0,0
 2026-03-27,823162,670042,Luke Raley,Seattle Mariners,Cleveland Guardians,4,4,1,0,0,1,4,1,2,0,1,0,0,0
 2026-03-28,823161,670042,Luke Raley,Seattle Mariners,Cleveland Guardians,2,1,1,0,0,1,4,1,2,1,0,0,0,0
@@ -8058,32 +8041,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,823847,670042,Luke Raley,Seattle Mariners,Miami Marlins,4,3,1,1,0,0,2,0,1,0,0,0,0,0
 2026-07-08,823848,670042,Luke Raley,Seattle Mariners,Miami Marlins,4,4,1,0,0,0,1,0,0,0,2,0,0,0
 2026-07-09,823846,670042,Luke Raley,Seattle Mariners,Miami Marlins,4,4,2,0,0,0,2,0,0,0,1,0,0,0
-2026-05-03,824285,670097,Zack Short,New York Mets,Texas Rangers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-04,824283,670097,Zack Short,New York Mets,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-08,824116,670097,Zack Short,New York Mets,Kansas City Royals,4,2,0,0,0,0,0,0,0,2,1,0,0,0
-2026-05-10,824113,670097,Zack Short,New York Mets,Kansas City Royals,2,1,0,0,0,0,0,1,0,1,0,0,0,0
-2026-05-12,823632,670097,Zack Short,New York Mets,New York Mets,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-13,823631,670097,Zack Short,New York Mets,New York Mets,3,2,0,0,0,0,0,0,0,0,0,0,0,1
-2026-05-16,824278,670097,Zack Short,New York Mets,Toronto Blue Jays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-18,824277,670097,Zack Short,New York Mets,Cleveland Guardians,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-19,824276,670097,Zack Short,New York Mets,Cleveland Guardians,3,2,0,0,0,0,0,0,0,1,1,0,0,0
-2026-05-20,824273,670097,Zack Short,New York Mets,Cleveland Guardians,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-21,824274,670097,Zack Short,New York Mets,Cleveland Guardians,2,2,1,0,0,0,1,0,0,0,0,0,0,0
-2026-05-24,824839,670097,Zack Short,New York Mets,Baltimore Orioles,4,4,1,1,0,0,2,0,0,0,1,0,0,0
-2026-05-24,824840,670097,Zack Short,New York Mets,Baltimore Orioles,4,3,1,0,0,0,1,0,0,1,0,0,0,0
-2026-05-29,824594,670097,Zack Short,New York Mets,Chicago White Sox,4,2,0,0,0,0,0,1,1,1,1,0,0,0
-2026-05-30,824593,670097,Zack Short,New York Mets,Chicago White Sox,2,1,0,0,0,0,0,0,0,1,1,0,0,0
-2026-06-01,822974,670097,Zack Short,New York Mets,Tampa Bay Rays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-02,822971,670097,Zack Short,New York Mets,Tampa Bay Rays,4,3,2,1,0,0,3,1,1,0,0,0,0,0
-2026-06-03,822973,670097,Zack Short,New York Mets,Tampa Bay Rays,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-05,824271,670097,Zack Short,New York Mets,Seattle Mariners,3,3,1,0,0,0,1,0,0,0,2,0,0,0
-2026-06-07,824268,670097,Zack Short,New York Mets,Seattle Mariners,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-09,824267,670097,Zack Short,New York Mets,Minnesota Twins,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-10,824266,670097,Zack Short,New York Mets,Minnesota Twins,2,2,0,0,0,0,0,0,0,0,2,0,0,0
-2026-06-11,824265,670097,Zack Short,New York Mets,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-17,824503,670097,Zack Short,New York Mets,Cincinnati Reds,4,3,0,0,0,0,0,0,0,0,2,0,0,0
-2026-06-18,823448,670097,Zack Short,New York Mets,Philadelphia Phillies,1,1,0,0,0,0,0,1,0,0,0,0,0,0
-2026-06-20,823447,670097,Zack Short,New York Mets,Philadelphia Phillies,4,4,1,0,0,0,1,0,0,0,3,0,0,0
 2026-03-26,824218,670541,Yordan Alvarez,Houston Astros,Los Angeles Angels,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-03-27,824216,670541,Yordan Alvarez,Houston Astros,Los Angeles Angels,5,5,1,0,0,1,4,1,1,0,1,0,0,0
 2026-03-28,824213,670541,Yordan Alvarez,Houston Astros,Los Angeles Angels,5,3,2,1,0,0,3,1,0,1,1,0,0,1
@@ -9603,6 +9560,39 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-02,822884,673962,Josh Jung,Texas Rangers,Detroit Tigers,5,3,2,1,0,0,3,1,2,2,0,0,0,0
 2026-07-04,822882,673962,Josh Jung,Texas Rangers,Detroit Tigers,4,4,1,1,0,0,2,0,0,0,1,0,0,0
 2026-07-09,822877,673962,Josh Jung,Texas Rangers,Los Angeles Angels,4,4,1,1,0,0,2,1,0,0,1,0,0,0
+2026-05-17,825006,675961,Alika Williams,Athletics,San Francisco Giants,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-18,824035,675961,Alika Williams,Athletics,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-19,824033,675961,Alika Williams,Athletics,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-20,824032,675961,Alika Williams,Athletics,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-21,824031,675961,Alika Williams,Athletics,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-24,823297,675961,Alika Williams,Athletics,San Diego Padres,4,4,1,0,0,0,1,0,1,0,1,0,1,0
+2026-05-26,825004,675961,Alika Williams,Athletics,Seattle Mariners,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-29,825002,675961,Alika Williams,Athletics,New York Yankees,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-30,825000,675961,Alika Williams,Athletics,New York Yankees,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-02,824675,675961,Alika Williams,Athletics,Chicago Cubs,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-03,824671,675961,Alika Williams,Athletics,Chicago Cubs,4,4,1,0,0,0,1,1,1,0,2,0,0,0
+2026-06-04,824672,675961,Alika Williams,Athletics,Chicago Cubs,4,3,0,0,0,0,0,1,0,1,1,0,0,0
+2026-06-07,824183,675961,Alika Williams,Athletics,Houston Astros,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-06-08,824998,675961,Alika Williams,Athletics,Milwaukee Brewers,6,5,1,1,0,0,2,0,1,0,1,0,0,0
+2026-06-09,824999,675961,Alika Williams,Athletics,Milwaukee Brewers,4,4,1,1,0,0,2,0,0,0,0,0,0,0
+2026-06-10,824996,675961,Alika Williams,Athletics,Milwaukee Brewers,3,3,2,0,0,1,5,1,1,0,0,0,0,0
+2026-06-12,824997,675961,Alika Williams,Athletics,Colorado Rockies,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-13,824995,675961,Alika Williams,Athletics,Colorado Rockies,4,3,3,2,0,0,5,1,1,1,0,0,0,0
+2026-06-14,824994,675961,Alika Williams,Athletics,Colorado Rockies,4,4,2,0,0,0,2,1,0,0,0,0,0,0
+2026-06-16,824991,675961,Alika Williams,Athletics,Pittsburgh Pirates,2,2,1,1,0,0,2,0,0,0,1,0,0,0
+2026-06-17,824992,675961,Alika Williams,Athletics,Pittsburgh Pirates,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-18,824989,675961,Alika Williams,Athletics,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-20,824988,675961,Alika Williams,Athletics,Los Angeles Angels,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-25,823209,675961,Alika Williams,Athletics,San Francisco Giants,4,4,2,1,0,0,3,2,1,0,1,0,0,0
+2026-06-26,824014,675961,Alika Williams,Athletics,Los Angeles Angels,4,4,1,0,0,0,1,1,1,0,2,0,0,0
+2026-06-27,824015,675961,Alika Williams,Athletics,Los Angeles Angels,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-28,824011,675961,Alika Williams,Athletics,Los Angeles Angels,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-29,824986,675961,Alika Williams,Athletics,Los Angeles Dodgers,3,3,2,0,0,0,2,1,0,0,0,0,0,0
+2026-06-30,824984,675961,Alika Williams,Athletics,Los Angeles Dodgers,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-01,824985,675961,Alika Williams,Athletics,Los Angeles Dodgers,4,3,1,0,0,1,4,1,1,1,1,0,0,0
+2026-07-03,824982,675961,Alika Williams,Athletics,Miami Marlins,4,4,1,1,0,0,2,1,0,0,2,0,0,0
+2026-07-04,824983,675961,Alika Williams,Athletics,Miami Marlins,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-09,824251,675961,Alika Williams,Athletics,Detroit Tigers,2,2,0,0,0,0,0,0,0,0,0,0,0,0
 2026-05-29,823055,676369,Nelson Velázquez,St. Louis Cardinals,Chicago Cubs,4,3,2,0,0,1,5,2,3,0,0,0,0,1
 2026-05-31,823053,676369,Nelson Velázquez,St. Louis Cardinals,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,0,0,0,0
 2026-06-01,823050,676369,Nelson Velázquez,St. Louis Cardinals,Texas Rangers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
@@ -10873,6 +10863,49 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,824254,679529,Spencer Torkelson,Detroit Tigers,Athletics,4,4,1,0,0,0,1,1,0,0,2,0,0,0
 2026-07-08,824253,679529,Spencer Torkelson,Detroit Tigers,Athletics,4,3,1,0,0,1,4,1,3,1,2,0,0,0
 2026-07-09,824251,679529,Spencer Torkelson,Detroit Tigers,Athletics,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-05,823553,679822,Justin Foscue,Texas Rangers,New York Yankees,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-07,823551,679822,Justin Foscue,Texas Rangers,New York Yankees,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-08,822904,679822,Justin Foscue,Texas Rangers,Chicago Cubs,2,2,1,0,0,0,1,0,1,0,0,0,0,0
+2026-05-09,822905,679822,Justin Foscue,Texas Rangers,Chicago Cubs,3,3,1,0,0,1,4,1,1,0,0,0,0,0
+2026-05-10,822902,679822,Justin Foscue,Texas Rangers,Chicago Cubs,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-11,822901,679822,Justin Foscue,Texas Rangers,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-15,824194,679822,Justin Foscue,Texas Rangers,Houston Astros,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-16,824193,679822,Justin Foscue,Texas Rangers,Houston Astros,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-05-17,824192,679822,Justin Foscue,Texas Rangers,Houston Astros,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-18,824357,679822,Justin Foscue,Texas Rangers,Colorado Rockies,4,3,3,2,0,1,8,1,3,1,0,0,0,0
+2026-05-19,824356,679822,Justin Foscue,Texas Rangers,Colorado Rockies,6,4,1,1,0,0,2,1,1,1,1,0,0,0
+2026-05-20,824355,679822,Justin Foscue,Texas Rangers,Colorado Rockies,5,5,3,0,0,0,3,1,0,0,2,0,0,0
+2026-05-22,824029,679822,Justin Foscue,Texas Rangers,Los Angeles Angels,4,3,2,0,0,0,2,1,1,0,1,0,0,1
+2026-05-23,824030,679822,Justin Foscue,Texas Rangers,Los Angeles Angels,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-05-24,824028,679822,Justin Foscue,Texas Rangers,Los Angeles Angels,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-05-25,822899,679822,Justin Foscue,Texas Rangers,Houston Astros,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-26,822898,679822,Justin Foscue,Texas Rangers,Houston Astros,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-27,822897,679822,Justin Foscue,Texas Rangers,Houston Astros,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-28,822896,679822,Justin Foscue,Texas Rangers,Houston Astros,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-29,822894,679822,Justin Foscue,Texas Rangers,Kansas City Royals,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-30,822893,679822,Justin Foscue,Texas Rangers,Kansas City Royals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-03,823051,679822,Justin Foscue,Texas Rangers,St. Louis Cardinals,2,2,1,1,0,0,2,1,0,0,0,0,0,0
+2026-06-05,822892,679822,Justin Foscue,Texas Rangers,Cleveland Guardians,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-06,822891,679822,Justin Foscue,Texas Rangers,Cleveland Guardians,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+2026-06-07,822890,679822,Justin Foscue,Texas Rangers,Cleveland Guardians,5,4,1,0,0,1,4,2,2,1,1,0,0,0
+2026-06-12,824752,679822,Justin Foscue,Texas Rangers,Boston Red Sox,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-13,824749,679822,Justin Foscue,Texas Rangers,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-14,824751,679822,Justin Foscue,Texas Rangers,Boston Red Sox,3,3,3,0,0,0,3,1,0,0,0,0,0,0
+2026-06-16,822888,679822,Justin Foscue,Texas Rangers,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-18,822889,679822,Justin Foscue,Texas Rangers,Minnesota Twins,2,1,1,0,0,1,4,1,1,1,0,0,0,0
+2026-06-19,822886,679822,Justin Foscue,Texas Rangers,San Diego Padres,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-20,822885,679822,Justin Foscue,Texas Rangers,San Diego Padres,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-21,822883,679822,Justin Foscue,Texas Rangers,San Diego Padres,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-22,823851,679822,Justin Foscue,Texas Rangers,Miami Marlins,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-24,823850,679822,Justin Foscue,Texas Rangers,Miami Marlins,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-26,822796,679822,Justin Foscue,Texas Rangers,Toronto Blue Jays,4,4,2,0,0,1,5,1,3,0,1,0,0,0
+2026-06-28,822795,679822,Justin Foscue,Texas Rangers,Toronto Blue Jays,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-29,824420,679822,Justin Foscue,Texas Rangers,Cleveland Guardians,5,5,2,2,0,0,4,0,2,0,1,0,0,0
+2026-07-01,824419,679822,Justin Foscue,Texas Rangers,Cleveland Guardians,5,4,1,0,0,0,1,1,0,1,1,0,0,0
+2026-07-02,822884,679822,Justin Foscue,Texas Rangers,Detroit Tigers,3,2,0,0,0,0,0,0,0,1,1,0,0,0
+2026-07-07,822881,679822,Justin Foscue,Texas Rangers,Los Angeles Angels,2,2,2,0,0,1,5,2,2,0,0,0,0,0
+2026-07-08,822880,679822,Justin Foscue,Texas Rangers,Los Angeles Angels,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-09,822877,679822,Justin Foscue,Texas Rangers,Los Angeles Angels,4,3,2,1,0,1,6,1,2,1,0,0,0,0
 2026-03-29,824944,679845,Nick Loftin,Kansas City Royals,Atlanta Braves,4,4,1,1,0,0,2,2,0,0,0,0,0,0
 2026-04-01,824136,679845,Nick Loftin,Kansas City Royals,Minnesota Twins,1,0,0,0,0,0,0,0,0,1,0,0,0,0
 2026-04-04,824132,679845,Nick Loftin,Kansas City Royals,Milwaukee Brewers,4,3,0,0,0,0,0,1,0,1,0,0,0,0
@@ -13300,6 +13333,50 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,824089,687282,Gabriel Rincones Jr.,Philadelphia Phillies,Kansas City Royals,1,1,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-08,824496,687282,Gabriel Rincones Jr.,Philadelphia Phillies,Cincinnati Reds,5,5,1,1,0,0,2,1,0,0,1,0,0,0
 2026-07-09,824494,687282,Gabriel Rincones Jr.,Philadelphia Phillies,Cincinnati Reds,3,2,0,0,0,0,0,0,0,0,0,0,0,1
+2026-04-25,822910,687515,Colby Thomas,Athletics,Texas Rangers,4,4,1,0,0,0,1,0,1,0,3,0,0,0
+2026-04-28,825017,687515,Colby Thomas,Athletics,Kansas City Royals,4,3,1,0,0,0,1,0,0,1,1,0,0,0
+2026-04-30,825016,687515,Colby Thomas,Athletics,Kansas City Royals,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-01,825012,687515,Colby Thomas,Athletics,Cleveland Guardians,4,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-02,825014,687515,Colby Thomas,Athletics,Cleveland Guardians,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-03,825013,687515,Colby Thomas,Athletics,Cleveland Guardians,2,2,1,0,0,1,4,1,1,0,0,0,0,0
+2026-05-05,823469,687515,Colby Thomas,Athletics,Philadelphia Phillies,4,4,1,0,0,0,1,1,0,0,0,0,0,0
+2026-05-06,823470,687515,Colby Thomas,Athletics,Philadelphia Phillies,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-09,824847,687515,Colby Thomas,Athletics,Baltimore Orioles,2,2,2,0,0,0,2,0,1,0,0,0,0,0
+2026-05-13,825010,687515,Colby Thomas,Athletics,St. Louis Cardinals,4,4,2,1,0,0,3,0,0,0,1,0,0,0
+2026-05-14,825008,687515,Colby Thomas,Athletics,St. Louis Cardinals,2,2,1,0,0,0,1,1,0,0,1,0,0,0
+2026-05-16,825007,687515,Colby Thomas,Athletics,San Francisco Giants,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-17,825006,687515,Colby Thomas,Athletics,San Francisco Giants,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-19,824033,687515,Colby Thomas,Athletics,Los Angeles Angels,3,3,1,1,0,0,2,1,2,0,1,0,0,0
+2026-05-20,824032,687515,Colby Thomas,Athletics,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-22,823298,687515,Colby Thomas,Athletics,San Diego Padres,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-26,825004,687515,Colby Thomas,Athletics,Seattle Mariners,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-29,825002,687515,Colby Thomas,Athletics,New York Yankees,3,3,0,0,0,0,0,0,0,0,0,0,1,0
+2026-05-30,825000,687515,Colby Thomas,Athletics,New York Yankees,4,3,0,0,0,0,0,1,0,1,2,0,0,0
+2026-06-02,824675,687515,Colby Thomas,Athletics,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-03,824671,687515,Colby Thomas,Athletics,Chicago Cubs,1,1,1,0,0,1,4,1,1,0,0,0,0,0
+2026-06-04,824672,687515,Colby Thomas,Athletics,Chicago Cubs,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-05,824186,687515,Colby Thomas,Athletics,Houston Astros,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-06,824184,687515,Colby Thomas,Athletics,Houston Astros,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-08,824998,687515,Colby Thomas,Athletics,Milwaukee Brewers,3,2,1,0,0,0,1,1,0,1,0,0,0,0
+2026-06-09,824999,687515,Colby Thomas,Athletics,Milwaukee Brewers,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-12,824997,687515,Colby Thomas,Athletics,Colorado Rockies,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-13,824995,687515,Colby Thomas,Athletics,Colorado Rockies,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-14,824994,687515,Colby Thomas,Athletics,Colorado Rockies,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-16,824991,687515,Colby Thomas,Athletics,Pittsburgh Pirates,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-18,824989,687515,Colby Thomas,Athletics,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-19,824990,687515,Colby Thomas,Athletics,Los Angeles Angels,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-20,824988,687515,Colby Thomas,Athletics,Los Angeles Angels,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-21,824987,687515,Colby Thomas,Athletics,Los Angeles Angels,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-23,823210,687515,Colby Thomas,Athletics,San Francisco Giants,3,3,0,0,0,0,0,1,0,0,0,0,0,0
+2026-06-27,824015,687515,Colby Thomas,Athletics,Los Angeles Angels,3,3,1,0,0,0,1,0,1,0,0,1,0,0
+2026-06-28,824011,687515,Colby Thomas,Athletics,Los Angeles Angels,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-29,824986,687515,Colby Thomas,Athletics,Los Angeles Dodgers,3,3,2,0,0,1,5,1,1,0,0,0,0,0
+2026-06-30,824984,687515,Colby Thomas,Athletics,Los Angeles Dodgers,3,3,2,0,0,1,5,1,2,0,0,0,0,0
+2026-07-01,824985,687515,Colby Thomas,Athletics,Los Angeles Dodgers,4,4,1,1,0,0,2,1,1,0,1,0,0,0
+2026-07-03,824982,687515,Colby Thomas,Athletics,Miami Marlins,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-05,824980,687515,Colby Thomas,Athletics,Miami Marlins,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-07,824254,687515,Colby Thomas,Athletics,Detroit Tigers,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-09,824251,687515,Colby Thomas,Athletics,Detroit Tigers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-04-15,824532,687551,Drew Gilbert,San Francisco Giants,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-16,824530,687551,Drew Gilbert,San Francisco Giants,Cincinnati Reds,3,2,0,0,0,0,0,0,0,1,1,0,0,0
 2026-04-17,822752,687551,Drew Gilbert,San Francisco Giants,Washington Nationals,4,3,1,0,0,1,4,2,1,1,1,0,0,0
@@ -13562,88 +13639,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,822879,690993,Colt Keith,Detroit Tigers,Texas Rangers,2,1,0,0,0,0,0,0,0,1,0,0,0,0
 2026-07-07,824254,690993,Colt Keith,Detroit Tigers,Athletics,3,2,1,0,0,1,4,1,2,1,0,0,0,0
 2026-07-08,824253,690993,Colt Keith,Detroit Tigers,Athletics,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-03-27,822839,691016,Tyler Soderstrom,Athletics,Toronto Blue Jays,4,3,0,0,0,0,0,0,0,1,2,0,0,0
-2026-03-28,822838,691016,Tyler Soderstrom,Athletics,Toronto Blue Jays,5,5,2,1,0,0,3,0,1,0,2,0,0,0
-2026-03-29,822837,691016,Tyler Soderstrom,Athletics,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-03-30,824943,691016,Tyler Soderstrom,Athletics,Atlanta Braves,4,4,2,0,0,0,2,0,0,0,0,0,0,0
-2026-03-31,824942,691016,Tyler Soderstrom,Athletics,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-01,824940,691016,Tyler Soderstrom,Athletics,Atlanta Braves,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-03,825026,691016,Tyler Soderstrom,Athletics,Houston Astros,5,4,2,1,0,0,3,2,2,1,0,0,0,0
-2026-04-04,825027,691016,Tyler Soderstrom,Athletics,Houston Astros,3,2,0,0,0,0,0,0,0,1,2,0,0,0
-2026-04-05,825025,691016,Tyler Soderstrom,Athletics,Houston Astros,6,4,1,0,1,0,3,3,3,2,1,0,0,0
-2026-04-07,823567,691016,Tyler Soderstrom,Athletics,New York Yankees,4,4,2,1,0,0,3,0,1,0,0,1,0,0
-2026-04-08,823564,691016,Tyler Soderstrom,Athletics,New York Yankees,5,5,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-09,823565,691016,Tyler Soderstrom,Athletics,New York Yankees,4,4,1,0,0,0,1,0,1,0,2,0,0,0
-2026-04-10,823643,691016,Tyler Soderstrom,Athletics,New York Mets,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-11,823644,691016,Tyler Soderstrom,Athletics,New York Mets,5,5,3,0,0,2,9,2,5,0,0,0,0,0
-2026-04-12,823642,691016,Tyler Soderstrom,Athletics,New York Mets,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-13,825024,691016,Tyler Soderstrom,Athletics,Texas Rangers,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-04-14,825022,691016,Tyler Soderstrom,Athletics,Texas Rangers,4,2,0,0,0,0,0,0,0,2,0,0,0,0
-2026-04-15,825021,691016,Tyler Soderstrom,Athletics,Texas Rangers,4,2,1,1,0,0,2,1,1,2,1,0,0,0
-2026-04-16,825023,691016,Tyler Soderstrom,Athletics,Texas Rangers,5,5,1,1,0,0,2,1,0,0,1,0,0,0
-2026-04-17,825019,691016,Tyler Soderstrom,Athletics,Chicago White Sox,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-18,825020,691016,Tyler Soderstrom,Athletics,Chicago White Sox,6,5,1,0,0,0,1,0,1,1,1,0,0,0
-2026-04-19,825018,691016,Tyler Soderstrom,Athletics,Chicago White Sox,4,4,1,1,0,0,2,1,0,0,2,0,0,0
-2026-04-20,823149,691016,Tyler Soderstrom,Athletics,Seattle Mariners,5,5,2,1,0,0,3,1,0,0,0,0,0,0
-2026-04-21,823148,691016,Tyler Soderstrom,Athletics,Seattle Mariners,5,4,2,2,0,0,4,1,1,1,0,0,0,0
-2026-04-22,823147,691016,Tyler Soderstrom,Athletics,Seattle Mariners,4,3,0,0,0,0,0,0,1,0,0,0,0,0
-2026-04-24,822909,691016,Tyler Soderstrom,Athletics,Texas Rangers,4,4,1,0,0,1,4,1,1,0,0,0,0,0
-2026-04-25,822910,691016,Tyler Soderstrom,Athletics,Texas Rangers,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-26,822911,691016,Tyler Soderstrom,Athletics,Texas Rangers,5,3,1,1,0,0,2,1,0,2,1,0,0,0
-2026-04-28,825017,691016,Tyler Soderstrom,Athletics,Kansas City Royals,2,2,0,0,0,0,0,0,0,0,2,0,0,0
-2026-05-01,825012,691016,Tyler Soderstrom,Athletics,Cleveland Guardians,5,4,1,1,0,0,2,1,0,1,1,0,0,0
-2026-05-02,825014,691016,Tyler Soderstrom,Athletics,Cleveland Guardians,5,5,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-03,825013,691016,Tyler Soderstrom,Athletics,Cleveland Guardians,4,4,3,0,0,1,6,2,1,0,1,0,0,0
-2026-05-05,823469,691016,Tyler Soderstrom,Athletics,Philadelphia Phillies,4,3,0,0,0,0,0,0,0,1,2,0,0,0
-2026-05-06,823470,691016,Tyler Soderstrom,Athletics,Philadelphia Phillies,4,4,1,0,0,1,4,1,1,0,1,0,0,0
-2026-05-07,823467,691016,Tyler Soderstrom,Athletics,Philadelphia Phillies,5,3,1,0,0,0,1,2,0,2,0,0,0,0
-2026-05-08,824846,691016,Tyler Soderstrom,Athletics,Baltimore Orioles,4,4,0,0,0,0,0,1,0,0,2,0,0,0
-2026-05-09,824847,691016,Tyler Soderstrom,Athletics,Baltimore Orioles,5,5,0,0,0,0,0,0,0,0,3,0,0,0
-2026-05-10,824845,691016,Tyler Soderstrom,Athletics,Baltimore Orioles,4,4,1,1,0,0,2,1,0,0,0,0,0,0
-2026-05-12,825011,691016,Tyler Soderstrom,Athletics,St. Louis Cardinals,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-14,825008,691016,Tyler Soderstrom,Athletics,St. Louis Cardinals,5,5,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-15,825009,691016,Tyler Soderstrom,Athletics,San Francisco Giants,4,4,1,1,0,0,2,0,0,0,2,0,0,0
-2026-05-16,825007,691016,Tyler Soderstrom,Athletics,San Francisco Giants,4,3,1,1,0,0,2,0,0,0,0,0,0,1
-2026-05-17,825006,691016,Tyler Soderstrom,Athletics,San Francisco Giants,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-05-18,824035,691016,Tyler Soderstrom,Athletics,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-19,824033,691016,Tyler Soderstrom,Athletics,Los Angeles Angels,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-20,824032,691016,Tyler Soderstrom,Athletics,Los Angeles Angels,5,5,2,0,1,0,4,0,3,0,2,0,0,0
-2026-05-21,824031,691016,Tyler Soderstrom,Athletics,Los Angeles Angels,5,4,1,0,0,0,1,0,0,1,0,0,0,0
-2026-05-22,823298,691016,Tyler Soderstrom,Athletics,San Diego Padres,4,3,1,0,0,0,1,0,0,1,1,0,1,0
-2026-05-23,823300,691016,Tyler Soderstrom,Athletics,San Diego Padres,4,3,0,0,0,0,0,0,0,1,1,0,0,0
-2026-05-24,823297,691016,Tyler Soderstrom,Athletics,San Diego Padres,5,5,2,0,0,0,2,0,1,0,0,0,0,0
-2026-05-25,825005,691016,Tyler Soderstrom,Athletics,Seattle Mariners,4,4,1,1,0,0,2,1,0,0,0,0,0,0
-2026-05-26,825004,691016,Tyler Soderstrom,Athletics,Seattle Mariners,4,4,2,0,0,1,5,1,1,0,0,0,0,0
-2026-05-27,825003,691016,Tyler Soderstrom,Athletics,Seattle Mariners,4,3,1,1,0,0,2,0,0,1,1,0,0,0
-2026-05-29,825002,691016,Tyler Soderstrom,Athletics,New York Yankees,4,2,1,0,0,0,1,0,0,2,0,0,0,0
-2026-05-30,825000,691016,Tyler Soderstrom,Athletics,New York Yankees,4,3,3,1,0,1,7,1,1,1,0,0,0,0
-2026-05-31,825001,691016,Tyler Soderstrom,Athletics,New York Yankees,3,2,1,0,0,0,1,1,0,1,0,0,0,0
-2026-06-02,824675,691016,Tyler Soderstrom,Athletics,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-03,824671,691016,Tyler Soderstrom,Athletics,Chicago Cubs,5,5,2,0,0,0,2,0,2,0,1,0,0,0
-2026-06-04,824672,691016,Tyler Soderstrom,Athletics,Chicago Cubs,4,4,1,0,0,1,4,1,1,0,2,0,0,0
-2026-06-05,824186,691016,Tyler Soderstrom,Athletics,Houston Astros,4,2,0,0,0,0,0,0,0,2,0,0,0,0
-2026-06-06,824184,691016,Tyler Soderstrom,Athletics,Houston Astros,3,2,1,0,0,0,1,0,1,1,0,0,0,0
-2026-06-07,824183,691016,Tyler Soderstrom,Athletics,Houston Astros,4,3,0,0,0,0,0,0,0,1,2,0,0,0
-2026-06-08,824998,691016,Tyler Soderstrom,Athletics,Milwaukee Brewers,6,4,3,0,0,2,9,2,4,2,0,0,0,0
-2026-06-09,824999,691016,Tyler Soderstrom,Athletics,Milwaukee Brewers,4,3,1,0,0,1,4,1,2,1,0,0,0,0
-2026-06-10,824996,691016,Tyler Soderstrom,Athletics,Milwaukee Brewers,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-12,824997,691016,Tyler Soderstrom,Athletics,Colorado Rockies,5,4,0,0,0,0,0,0,0,1,2,0,0,0
-2026-06-13,824995,691016,Tyler Soderstrom,Athletics,Colorado Rockies,2,2,1,1,0,0,2,1,1,0,0,0,0,0
-2026-06-14,824994,691016,Tyler Soderstrom,Athletics,Colorado Rockies,4,4,2,1,0,1,6,2,2,0,0,0,0,0
-2026-06-15,824993,691016,Tyler Soderstrom,Athletics,Pittsburgh Pirates,5,5,1,0,0,0,1,1,0,0,2,0,0,0
-2026-06-16,824991,691016,Tyler Soderstrom,Athletics,Pittsburgh Pirates,5,2,0,0,0,0,0,1,0,3,1,0,0,0
-2026-06-17,824992,691016,Tyler Soderstrom,Athletics,Pittsburgh Pirates,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-18,824989,691016,Tyler Soderstrom,Athletics,Los Angeles Angels,4,4,1,0,0,1,4,1,1,0,0,0,0,0
-2026-06-19,824990,691016,Tyler Soderstrom,Athletics,Los Angeles Angels,5,3,3,1,0,0,4,3,0,2,0,0,0,0
-2026-06-20,824988,691016,Tyler Soderstrom,Athletics,Los Angeles Angels,4,3,0,0,0,0,0,0,0,0,2,0,0,1
-2026-06-21,824987,691016,Tyler Soderstrom,Athletics,Los Angeles Angels,4,3,1,0,0,0,1,1,1,1,0,0,0,0
-2026-06-23,823210,691016,Tyler Soderstrom,Athletics,San Francisco Giants,4,4,2,0,0,0,2,0,0,0,1,0,0,0
-2026-06-24,823208,691016,Tyler Soderstrom,Athletics,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-25,823209,691016,Tyler Soderstrom,Athletics,San Francisco Giants,5,4,2,0,0,0,2,1,0,1,0,0,0,0
-2026-06-26,824014,691016,Tyler Soderstrom,Athletics,Los Angeles Angels,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-06-27,824015,691016,Tyler Soderstrom,Athletics,Los Angeles Angels,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-08,824253,691016,Tyler Soderstrom,Athletics,Detroit Tigers,4,3,1,1,0,0,2,1,0,1,0,0,0,0
-2026-07-09,824251,691016,Tyler Soderstrom,Athletics,Detroit Tigers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-06-22,824585,691019,Kyle Teel,Chicago White Sox,Cleveland Guardians,4,4,0,0,0,0,0,0,0,0,3,0,0,0
 2026-06-24,824583,691019,Kyle Teel,Chicago White Sox,Cleveland Guardians,5,3,1,0,0,0,1,1,0,1,0,0,0,1
 2026-06-26,824582,691019,Kyle Teel,Chicago White Sox,Kansas City Royals,6,5,2,0,0,1,5,2,3,1,1,0,0,0
@@ -16648,59 +16643,6 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,824579,805367,Chase Meidroth,Chicago White Sox,Boston Red Sox,4,3,0,0,0,0,0,1,0,1,0,0,0,0
 2026-07-08,824578,805367,Chase Meidroth,Chicago White Sox,Boston Red Sox,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-07-09,824577,805367,Chase Meidroth,Chicago White Sox,Boston Red Sox,4,3,1,0,0,0,1,0,0,1,1,0,0,0
-2026-03-27,822839,805779,Jacob Wilson,Athletics,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-03-28,822838,805779,Jacob Wilson,Athletics,Toronto Blue Jays,5,5,0,0,0,0,0,0,0,0,2,0,0,0
-2026-03-29,822837,805779,Jacob Wilson,Athletics,Toronto Blue Jays,4,4,2,1,0,0,3,1,0,0,1,0,0,0
-2026-03-30,824943,805779,Jacob Wilson,Athletics,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-03-31,824942,805779,Jacob Wilson,Athletics,Atlanta Braves,4,4,2,1,0,0,3,0,2,0,0,0,0,0
-2026-04-01,824940,805779,Jacob Wilson,Athletics,Atlanta Braves,4,4,1,1,0,0,2,0,0,0,0,0,0,0
-2026-04-03,825026,805779,Jacob Wilson,Athletics,Houston Astros,4,4,2,0,0,0,2,1,1,0,0,0,0,0
-2026-04-04,825027,805779,Jacob Wilson,Athletics,Houston Astros,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-05,825025,805779,Jacob Wilson,Athletics,Houston Astros,5,5,2,0,0,0,2,0,0,0,0,0,0,0
-2026-04-07,823567,805779,Jacob Wilson,Athletics,New York Yankees,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-08,823564,805779,Jacob Wilson,Athletics,New York Yankees,5,5,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-09,823565,805779,Jacob Wilson,Athletics,New York Yankees,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-10,823643,805779,Jacob Wilson,Athletics,New York Mets,4,4,3,0,0,0,3,1,0,0,0,0,0,0
-2026-04-11,823644,805779,Jacob Wilson,Athletics,New York Mets,5,5,2,0,0,0,2,2,0,0,1,0,0,0
-2026-04-13,825024,805779,Jacob Wilson,Athletics,Texas Rangers,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-14,825022,805779,Jacob Wilson,Athletics,Texas Rangers,4,3,1,0,0,0,1,0,2,1,1,0,0,0
-2026-04-15,825021,805779,Jacob Wilson,Athletics,Texas Rangers,4,4,2,0,0,1,5,1,2,0,0,0,0,0
-2026-04-16,825023,805779,Jacob Wilson,Athletics,Texas Rangers,5,5,2,0,0,0,2,1,2,0,0,1,0,0
-2026-04-17,825019,805779,Jacob Wilson,Athletics,Chicago White Sox,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-18,825020,805779,Jacob Wilson,Athletics,Chicago White Sox,6,6,2,0,0,1,5,2,1,0,1,0,0,0
-2026-04-19,825018,805779,Jacob Wilson,Athletics,Chicago White Sox,5,5,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-20,823149,805779,Jacob Wilson,Athletics,Seattle Mariners,4,4,2,0,0,0,2,1,0,0,0,0,0,0
-2026-04-21,823148,805779,Jacob Wilson,Athletics,Seattle Mariners,5,5,2,1,0,0,3,0,2,0,1,0,0,0
-2026-04-22,823147,805779,Jacob Wilson,Athletics,Seattle Mariners,4,4,2,1,0,0,3,0,1,0,0,0,0,0
-2026-04-24,822909,805779,Jacob Wilson,Athletics,Texas Rangers,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-2026-04-25,822910,805779,Jacob Wilson,Athletics,Texas Rangers,4,3,2,1,0,0,3,1,1,0,0,0,0,0
-2026-04-26,822911,805779,Jacob Wilson,Athletics,Texas Rangers,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-28,825017,805779,Jacob Wilson,Athletics,Kansas City Royals,5,5,1,0,0,0,1,0,1,0,2,0,0,0
-2026-04-29,825015,805779,Jacob Wilson,Athletics,Kansas City Royals,4,3,2,1,0,0,3,2,0,1,0,0,0,0
-2026-04-30,825016,805779,Jacob Wilson,Athletics,Kansas City Royals,5,5,2,0,0,0,2,2,0,0,0,0,0,0
-2026-05-01,825012,805779,Jacob Wilson,Athletics,Cleveland Guardians,5,4,1,0,0,0,1,1,0,1,0,0,0,0
-2026-05-02,825014,805779,Jacob Wilson,Athletics,Cleveland Guardians,3,3,2,1,0,0,3,0,0,0,0,0,0,0
-2026-05-03,825013,805779,Jacob Wilson,Athletics,Cleveland Guardians,5,4,1,0,0,0,1,0,0,1,0,0,0,0
-2026-05-05,823469,805779,Jacob Wilson,Athletics,Philadelphia Phillies,4,3,1,0,0,0,1,0,0,0,1,0,0,0
-2026-05-06,823470,805779,Jacob Wilson,Athletics,Philadelphia Phillies,5,5,1,0,0,0,1,0,1,0,1,1,0,0
-2026-05-07,823467,805779,Jacob Wilson,Athletics,Philadelphia Phillies,4,4,1,0,0,1,4,1,2,0,0,0,0,0
-2026-05-08,824846,805779,Jacob Wilson,Athletics,Baltimore Orioles,4,3,2,0,0,0,2,1,1,1,0,0,0,0
-2026-05-09,824847,805779,Jacob Wilson,Athletics,Baltimore Orioles,5,5,0,0,0,0,0,0,0,0,3,0,0,0
-2026-05-10,824845,805779,Jacob Wilson,Athletics,Baltimore Orioles,2,2,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-12,824997,805779,Jacob Wilson,Athletics,Colorado Rockies,4,3,0,0,0,0,0,1,0,1,0,0,0,0
-2026-06-13,824995,805779,Jacob Wilson,Athletics,Colorado Rockies,4,4,1,0,0,0,1,0,2,0,0,0,0,0
-2026-06-15,824993,805779,Jacob Wilson,Athletics,Pittsburgh Pirates,5,5,1,1,0,0,2,0,0,0,1,0,0,0
-2026-06-16,824991,805779,Jacob Wilson,Athletics,Pittsburgh Pirates,5,4,1,0,0,0,1,1,0,1,1,0,0,0
-2026-06-17,824992,805779,Jacob Wilson,Athletics,Pittsburgh Pirates,3,3,1,0,0,0,1,0,2,0,0,0,0,0
-2026-06-18,824989,805779,Jacob Wilson,Athletics,Los Angeles Angels,4,3,1,0,0,0,1,1,0,1,0,0,0,0
-2026-06-19,824990,805779,Jacob Wilson,Athletics,Los Angeles Angels,5,5,2,1,0,1,6,1,3,0,1,0,0,0
-2026-06-20,824988,805779,Jacob Wilson,Athletics,Los Angeles Angels,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-06-21,824987,805779,Jacob Wilson,Athletics,Los Angeles Angels,5,4,0,0,0,0,0,1,0,1,0,0,0,0
-2026-06-23,823210,805779,Jacob Wilson,Athletics,San Francisco Giants,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-06-24,823208,805779,Jacob Wilson,Athletics,San Francisco Giants,3,3,1,0,0,0,1,0,0,0,1,0,0,0
-2026-07-07,824254,805779,Jacob Wilson,Athletics,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-08,824253,805779,Jacob Wilson,Athletics,Detroit Tigers,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-07-09,824251,805779,Jacob Wilson,Athletics,Detroit Tigers,4,4,2,0,0,0,2,1,0,0,1,0,0,0
 2026-03-26,823325,805808,Kevin McGonigle,Detroit Tigers,San Diego Padres,5,5,4,2,0,0,6,2,2,0,0,0,0,0
 2026-03-27,823324,805808,Kevin McGonigle,Detroit Tigers,San Diego Padres,4,3,1,0,0,0,1,0,2,1,0,0,0,0
 2026-03-28,823323,805808,Kevin McGonigle,Detroit Tigers,San Diego Padres,4,4,0,0,0,0,0,0,0,0,3,0,0,0
