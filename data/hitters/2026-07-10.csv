@@ -1,1 +1,253 @@
 date,game_id,team,opponent,side,player_id,player_name,batting_order,position,status
+2026-07-10,824252,Philadelphia Phillies,Detroit Tigers,away,607208,Trea Turner,1,SS,Final
+2026-07-10,824252,Philadelphia Phillies,Detroit Tigers,away,656941,Kyle Schwarber,2,DH,Final
+2026-07-10,824252,Philadelphia Phillies,Detroit Tigers,away,547180,Bryce Harper,3,1B,Final
+2026-07-10,824252,Philadelphia Phillies,Detroit Tigers,away,669016,Brandon Marsh,4,LF,Final
+2026-07-10,824252,Philadelphia Phillies,Detroit Tigers,away,664761,Alec Bohm,5,3B,Final
+2026-07-10,824252,Philadelphia Phillies,Detroit Tigers,away,681082,Bryson Stott,6,2B,Final
+2026-07-10,824252,Philadelphia Phillies,Detroit Tigers,away,687282,Gabriel Rincones Jr.,7,RF,Final
+2026-07-10,824252,Philadelphia Phillies,Detroit Tigers,away,656537,Derek Hill,8,CF,Final
+2026-07-10,824252,Philadelphia Phillies,Detroit Tigers,away,665561,Rafael Marchán,9,C,Final
+2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,805808,Kevin McGonigle,1,SS,Final
+2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,690993,Colt Keith,2,3B,Final
+2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,701162,Ben Malgeri,3,LF,Final
+2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,679529,Spencer Torkelson,4,1B,Final
+2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,663837,Matt Vierling,5,RF,Final
+2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,680664,Eduardo Valencia,6,DH,Final
+2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,656716,Zach McKinstry,7,2B,Final
+2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,681546,James Outman,8,CF,Final
+2026-07-10,824252,Detroit Tigers,Philadelphia Phillies,home,668670,Jake Rogers,9,C,Final
+2026-07-10,822709,New York Yankees,Washington Nationals,away,642708,Amed Rosario,1,3B,In Progress
+2026-07-10,822709,New York Yankees,Washington Nationals,away,700250,Ben Rice,2,DH,In Progress
+2026-07-10,822709,New York Yankees,Washington Nationals,away,663757,Trent Grisham,3,CF,In Progress
+2026-07-10,822709,New York Yankees,Washington Nationals,away,502671,Paul Goldschmidt,4,1B,In Progress
+2026-07-10,822709,New York Yankees,Washington Nationals,away,641355,Cody Bellinger,5,LF,In Progress
+2026-07-10,822709,New York Yankees,Washington Nationals,away,691176,Jasson Domínguez,6,RF,In Progress
+2026-07-10,822709,New York Yankees,Washington Nationals,away,665862,Jazz Chisholm Jr.,7,2B,In Progress
+2026-07-10,822709,New York Yankees,Washington Nationals,away,676609,José Caballero,8,SS,In Progress
+2026-07-10,822709,New York Yankees,Washington Nationals,away,669224,Austin Wells,9,C,In Progress
+2026-07-10,822709,Washington Nationals,New York Yankees,home,695578,James Wood,1,RF,In Progress
+2026-07-10,822709,Washington Nationals,New York Yankees,home,678554,Curtis Mead,2,3B,In Progress
+2026-07-10,822709,Washington Nationals,New York Yankees,home,686611,Dylan Crews,3,LF,In Progress
+2026-07-10,822709,Washington Nationals,New York Yankees,home,682928,CJ Abrams,4,SS,In Progress
+2026-07-10,822709,Washington Nationals,New York Yankees,home,696285,Jacob Young,5,CF,In Progress
+2026-07-10,822709,Washington Nationals,New York Yankees,home,665953,Andrés Chaparro,6,DH,In Progress
+2026-07-10,822709,Washington Nationals,New York Yankees,home,683083,Nasim Nuñez,7,2B,In Progress
+2026-07-10,822709,Washington Nationals,New York Yankees,home,671277,Luis García Jr.,8,1B,In Progress
+2026-07-10,822709,Washington Nationals,New York Yankees,home,660688,Keibert Ruiz,9,C,In Progress
+2026-07-10,824817,Kansas City Royals,Baltimore Orioles,away,695600,Carter Jensen,1,C,Final
+2026-07-10,824817,Kansas City Royals,Baltimore Orioles,away,677951,Bobby Witt Jr.,2,SS,Final
+2026-07-10,824817,Kansas City Royals,Baltimore Orioles,away,695506,Jac Caglianone,3,RF,Final
+2026-07-10,824817,Kansas City Royals,Baltimore Orioles,away,657041,Lane Thomas,4,CF,Final
+2026-07-10,824817,Kansas City Royals,Baltimore Orioles,away,686681,Michael Massey,5,2B,Final
+2026-07-10,824817,Kansas City Royals,Baltimore Orioles,away,521692,Salvador Perez,6,1B,Final
+2026-07-10,824817,Kansas City Royals,Baltimore Orioles,away,668942,Josh Rojas,7,3B,Final
+2026-07-10,824817,Kansas City Royals,Baltimore Orioles,away,679845,Nick Loftin,8,DH,Final
+2026-07-10,824817,Kansas City Royals,Baltimore Orioles,away,686555,Isaac Collins,9,LF,Final
+2026-07-10,824817,Baltimore Orioles,Kansas City Royals,home,683002,Gunnar Henderson,1,SS,Final
+2026-07-10,824817,Baltimore Orioles,Kansas City Royals,home,668939,Adley Rutschman,2,C,Final
+2026-07-10,824817,Baltimore Orioles,Kansas City Royals,home,621493,Taylor Ward,3,LF,Final
+2026-07-10,824817,Baltimore Orioles,Kansas City Royals,home,624413,Pete Alonso,4,1B,Final
+2026-07-10,824817,Baltimore Orioles,Kansas City Royals,home,694212,Samuel Basallo,5,DH,Final
+2026-07-10,824817,Baltimore Orioles,Kansas City Royals,home,641933,Tyler O'Neill,6,RF,Final
+2026-07-10,824817,Baltimore Orioles,Kansas City Royals,home,681297,Colton Cowser,7,CF,Final
+2026-07-10,824817,Baltimore Orioles,Kansas City Royals,home,677942,Blaze Alexander,8,3B,Final
+2026-07-10,824817,Baltimore Orioles,Kansas City Royals,home,702616,Jackson Holliday,9,2B,Final
+2026-07-10,824493,Chicago Cubs,Cincinnati Reds,away,691718,Pete Crow-Armstrong,1,CF,Game Over
+2026-07-10,824493,Chicago Cubs,Cincinnati Reds,away,608324,Alex Bregman,2,3B,Game Over
+2026-07-10,824493,Chicago Cubs,Cincinnati Reds,away,683737,Michael Busch,3,1B,Game Over
+2026-07-10,824493,Chicago Cubs,Cincinnati Reds,away,673548,Seiya Suzuki,4,RF,Game Over
+2026-07-10,824493,Chicago Cubs,Cincinnati Reds,away,664023,Ian Happ,5,LF,Game Over
+2026-07-10,824493,Chicago Cubs,Cincinnati Reds,away,663538,Nico Hoerner,6,2B,Game Over
+2026-07-10,824493,Chicago Cubs,Cincinnati Reds,away,624424,Michael Conforto,7,DH,Game Over
+2026-07-10,824493,Chicago Cubs,Cincinnati Reds,away,608348,Carson Kelly,8,C,Game Over
+2026-07-10,824493,Chicago Cubs,Cincinnati Reds,away,621020,Dansby Swanson,9,SS,Game Over
+2026-07-10,824493,Cincinnati Reds,Chicago Cubs,home,682829,Elly De La Cruz,1,SS,Game Over
+2026-07-10,824493,Cincinnati Reds,Chicago Cubs,home,701398,Sal Stewart,2,1B,Game Over
+2026-07-10,824493,Cincinnati Reds,Chicago Cubs,home,668715,Spencer Steer,3,RF,Game Over
+2026-07-10,824493,Cincinnati Reds,Chicago Cubs,home,668709,JJ Bleday,4,LF,Game Over
+2026-07-10,824493,Cincinnati Reds,Chicago Cubs,home,553993,Eugenio Suárez,5,DH,Game Over
+2026-07-10,824493,Cincinnati Reds,Chicago Cubs,home,663886,Tyler Stephenson,6,C,Game Over
+2026-07-10,824493,Cincinnati Reds,Chicago Cubs,home,670770,TJ Friedl,7,CF,Game Over
+2026-07-10,824493,Cincinnati Reds,Chicago Cubs,home,695490,Edwin Arroyo,8,2B,Game Over
+2026-07-10,824493,Cincinnati Reds,Chicago Cubs,home,663647,Ke'Bryan Hayes,9,3B,Game Over
+2026-07-10,822955,Seattle Mariners,Tampa Bay Rays,away,641487,J.P. Crawford,1,SS,Final
+2026-07-10,822955,Seattle Mariners,Tampa Bay Rays,away,668227,Randy Arozarena,2,LF,Final
+2026-07-10,822955,Seattle Mariners,Tampa Bay Rays,away,686527,Dominic Canzone,3,DH,Final
+2026-07-10,822955,Seattle Mariners,Tampa Bay Rays,away,663728,Cal Raleigh,4,C,Final
+2026-07-10,822955,Seattle Mariners,Tampa Bay Rays,away,647304,Josh Naylor,5,1B,Final
+2026-07-10,822955,Seattle Mariners,Tampa Bay Rays,away,670042,Luke Raley,6,RF,Final
+2026-07-10,822955,Seattle Mariners,Tampa Bay Rays,away,702284,Cole Young,7,2B,Final
+2026-07-10,822955,Seattle Mariners,Tampa Bay Rays,away,645302,Victor Robles,8,CF,Final
+2026-07-10,822955,Seattle Mariners,Tampa Bay Rays,away,671083,Buddy Kennedy,9,3B,Final
+2026-07-10,822955,Tampa Bay Rays,Seattle Mariners,home,650490,Yandy Díaz,1,DH,Final
+2026-07-10,822955,Tampa Bay Rays,Seattle Mariners,home,666018,Jonathan Aranda,2,1B,Final
+2026-07-10,822955,Tampa Bay Rays,Seattle Mariners,home,691406,Junior Caminero,3,3B,Final
+2026-07-10,822955,Tampa Bay Rays,Seattle Mariners,home,656775,Cedric Mullins,4,CF,Final
+2026-07-10,822955,Tampa Bay Rays,Seattle Mariners,home,802415,Chandler Simpson,5,LF,Final
+2026-07-10,822955,Tampa Bay Rays,Seattle Mariners,home,683748,Victor Mesa Jr.,6,RF,Final
+2026-07-10,822955,Tampa Bay Rays,Seattle Mariners,home,670764,Taylor Walls,7,SS,Final
+2026-07-10,822955,Tampa Bay Rays,Seattle Mariners,home,680700,Richie Palacios,8,2B,Final
+2026-07-10,822955,Tampa Bay Rays,Seattle Mariners,home,676439,Hunter Feduccia,9,C,Final
+2026-07-10,823845,Cleveland Guardians,Miami Marlins,away,683953,Travis Bazzana,1,2B,Final
+2026-07-10,823845,Cleveland Guardians,Miami Marlins,away,677587,Brayan Rocchio,2,SS,Final
+2026-07-10,823845,Cleveland Guardians,Miami Marlins,away,800050,Chase DeLauter,3,RF,Final
+2026-07-10,823845,Cleveland Guardians,Miami Marlins,away,700932,Kyle Manzardo,4,1B,Final
+2026-07-10,823845,Cleveland Guardians,Miami Marlins,away,656555,Rhys Hoskins,5,DH,Final
+2026-07-10,823845,Cleveland Guardians,Miami Marlins,away,696135,Kahlil Watson,6,CF,Final
+2026-07-10,823845,Cleveland Guardians,Miami Marlins,away,682177,Daniel Schneemann,7,3B,Final
+2026-07-10,823845,Cleveland Guardians,Miami Marlins,away,595978,Austin Hedges,8,C,Final
+2026-07-10,823845,Cleveland Guardians,Miami Marlins,away,680757,Steven Kwan,9,LF,Final
+2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,672640,Otto Lopez,1,SS,Final
+2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,681715,Heriberto Hernández,2,LF,Final
+2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,669364,Xavier Edwards,3,2B,Final
+2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,691594,Javier Sanoja,4,3B,Final
+2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,669065,Kyle Stowers,5,1B,Final
+2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,689414,Liam Hicks,6,PH,Final
+2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,665052,Griffin Conine,7,PH,Final
+2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,805300,Jakob Marsee,8,CF,Final
+2026-07-10,823845,Miami Marlins,Cleveland Guardians,home,691788,Joe Mack,9,C,Final
+2026-07-10,823604,Boston Red Sox,New York Mets,away,678011,Anthony Seigler,1,2B,In Progress
+2026-07-10,823604,Boston Red Sox,New York Mets,away,678882,Ceddanne Rafaela,2,CF,In Progress
+2026-07-10,823604,Boston Red Sox,New York Mets,away,677800,Wilyer Abreu,3,RF,In Progress
+2026-07-10,823604,Boston Red Sox,New York Mets,away,663853,Romy Gonzalez,4,1B,In Progress
+2026-07-10,823604,Boston Red Sox,New York Mets,away,807799,Masataka Yoshida,5,DH,In Progress
+2026-07-10,823604,Boston Red Sox,New York Mets,away,702332,Caleb Durbin,6,3B,In Progress
+2026-07-10,823604,Boston Red Sox,New York Mets,away,680776,Jarren Duran,7,LF,In Progress
+2026-07-10,823604,Boston Red Sox,New York Mets,away,657136,Connor Wong,8,C,In Progress
+2026-07-10,823604,Boston Red Sox,New York Mets,away,691907,Tsung-Che Cheng,9,SS,In Progress
+2026-07-10,823604,New York Mets,Boston Red Sox,home,805999,A.J. Ewing,1,CF,In Progress
+2026-07-10,823604,New York Mets,Boston Red Sox,home,665742,Juan Soto,2,LF,In Progress
+2026-07-10,823604,New York Mets,Boston Red Sox,home,596019,Francisco Lindor,3,SS,In Progress
+2026-07-10,823604,New York Mets,Boston Red Sox,home,701807,Carson Benge,4,RF,In Progress
+2026-07-10,823604,New York Mets,Boston Red Sox,home,593871,Jorge Polanco,5,DH,In Progress
+2026-07-10,823604,New York Mets,Boston Red Sox,home,676724,Jared Young,6,1B,In Progress
+2026-07-10,823604,New York Mets,Boston Red Sox,home,682626,Francisco Alvarez,7,C,In Progress
+2026-07-10,823604,New York Mets,Boston Red Sox,home,683146,Brett Baty,8,3B,In Progress
+2026-07-10,823604,New York Mets,Boston Red Sox,home,670097,Zack Short,9,2B,In Progress
+2026-07-10,824575,Athletics,Chicago White Sox,away,671732,Lawrence Butler,1,RF,In Progress
+2026-07-10,824575,Athletics,Chicago White Sox,away,669127,Shea Langeliers,2,DH,In Progress
+2026-07-10,824575,Athletics,Chicago White Sox,away,691016,Tyler Soderstrom,3,LF,In Progress
+2026-07-10,824575,Athletics,Chicago White Sox,away,641680,Jonah Heim,4,C,In Progress
+2026-07-10,824575,Athletics,Chicago White Sox,away,805779,Jacob Wilson,5,SS,In Progress
+2026-07-10,824575,Athletics,Chicago White Sox,away,608841,Joey Meneses,6,1B,In Progress
+2026-07-10,824575,Athletics,Chicago White Sox,away,811965,Joshua Kuroda-Grauer,7,3B,In Progress
+2026-07-10,824575,Athletics,Chicago White Sox,away,703607,Henry Bolte,8,CF,In Progress
+2026-07-10,824575,Athletics,Chicago White Sox,away,643446,Jeff McNeil,9,2B,In Progress
+2026-07-10,824575,Chicago White Sox,Athletics,home,803011,Sam Antonacci,1,LF,In Progress
+2026-07-10,824575,Chicago White Sox,Athletics,home,808959,Munetaka Murakami,2,1B,In Progress
+2026-07-10,824575,Chicago White Sox,Athletics,home,678246,Miguel Vargas,3,3B,In Progress
+2026-07-10,824575,Chicago White Sox,Athletics,home,695657,Colson Montgomery,4,SS,In Progress
+2026-07-10,824575,Chicago White Sox,Athletics,home,695731,Braden Montgomery,5,RF,In Progress
+2026-07-10,824575,Chicago White Sox,Athletics,home,805367,Chase Meidroth,6,2B,In Progress
+2026-07-10,824575,Chicago White Sox,Athletics,home,643217,Andrew Benintendi,7,DH,In Progress
+2026-07-10,824575,Chicago White Sox,Athletics,home,691019,Kyle Teel,8,C,In Progress
+2026-07-10,824575,Chicago White Sox,Athletics,home,671976,Tristan Peters,9,CF,In Progress
+2026-07-10,822878,Houston Astros,Texas Rangers,away,665161,Jeremy Peña,1,SS,In Progress
+2026-07-10,822878,Houston Astros,Texas Rangers,away,670541,Yordan Alvarez,2,DH,In Progress
+2026-07-10,822878,Houston Astros,Texas Rangers,away,670623,Isaac Paredes,3,3B,In Progress
+2026-07-10,822878,Houston Astros,Texas Rangers,away,572233,Christian Walker,4,1B,In Progress
+2026-07-10,822878,Houston Astros,Texas Rangers,away,514888,Jose Altuve,5,2B,In Progress
+2026-07-10,822878,Houston Astros,Texas Rangers,away,664774,LaMonte Wade Jr.,6,LF,In Progress
+2026-07-10,822878,Houston Astros,Texas Rangers,away,701358,Cam Smith,7,RF,In Progress
+2026-07-10,822878,Houston Astros,Texas Rangers,away,673237,Yainer Diaz,8,C,In Progress
+2026-07-10,822878,Houston Astros,Texas Rangers,away,694728,Brice Matthews,9,CF,In Progress
+2026-07-10,822878,Texas Rangers,Houston Astros,home,592626,Joc Pederson,1,DH,In Progress
+2026-07-10,822878,Texas Rangers,Houston Astros,home,694671,Wyatt Langford,2,LF,In Progress
+2026-07-10,822878,Texas Rangers,Houston Astros,home,673962,Josh Jung,3,3B,In Progress
+2026-07-10,822878,Texas Rangers,Houston Astros,home,607043,Brandon Nimmo,4,RF,In Progress
+2026-07-10,822878,Texas Rangers,Houston Astros,home,669394,Jake Burger,5,1B,In Progress
+2026-07-10,822878,Texas Rangers,Houston Astros,home,677649,Ezequiel Duran,6,SS,In Progress
+2026-07-10,822878,Texas Rangers,Houston Astros,home,694497,Evan Carter,7,CF,In Progress
+2026-07-10,822878,Texas Rangers,Houston Astros,home,670032,Nicky Lopez,8,2B,In Progress
+2026-07-10,822878,Texas Rangers,Houston Astros,home,543309,Kyle Higashioka,9,C,In Progress
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,687263,Zach Neto,1,SS,In Progress
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,694384,Nolan Schanuel,2,1B,In Progress
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,687093,Vaughn Grissom,3,3B,In Progress
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,624585,Jorge Soler,4,DH,In Progress
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,666139,Josh Lowe,5,CF,In Progress
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,666176,Jo Adell,6,RF,In Progress
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,672724,Oswald Peraza,7,2B,In Progress
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,685133,Wade Meckler,8,LF,In Progress
+2026-07-10,823685,Los Angeles Angels,Minnesota Twins,away,623168,Tyler Heineman,9,C,In Progress
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,663616,Trevor Larnach,1,LF,In Progress
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,680777,Ryan Jeffers,2,C,In Progress
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,665019,Kody Clemens,3,2B,In Progress
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,605137,Josh Bell,4,DH,In Progress
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,668904,Royce Lewis,5,1B,In Progress
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,686797,Brooks Lee,6,3B,In Progress
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,668885,Austin Martin,7,PH,In Progress
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,668952,Ryan Kreidler,8,PH,In Progress
+2026-07-10,823685,Minnesota Twins,Los Angeles Angels,home,807712,Luke Keaschall,9,CF,In Progress
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,671739,Michael Harris II,1,CF,Delayed
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,645277,Ozzie Albies,2,2B,Delayed
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,621566,Matt Olson,3,1B,Delayed
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,686948,Drake Baldwin,4,C,Delayed
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,643289,Mauricio Dubón,5,LF,Delayed
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,573262,Mike Yastrzemski,6,RF,Delayed
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,663586,Austin Riley,7,3B,Delayed
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,642086,Dominic Smith,8,DH,Delayed
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,away,805347,Jim Jarvis,9,SS,Delayed
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,802139,JJ Wetherholt,1,2B,Delayed
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,671056,Iván Herrera,2,DH,Delayed
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691023,Jordan Walker,3,RF,Delayed
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,676369,Nelson Velázquez,4,LF,Delayed
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,676475,Alec Burleson,5,1B,Delayed
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691026,Masyn Winn,6,SS,Delayed
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,665877,José Fermín,7,CF,Delayed
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,691458,Blaze Jordan,8,3B,Delayed
+2026-07-10,823033,St. Louis Cardinals,Atlanta Braves,home,686780,Pedro Pagés,9,C,Delayed
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,676391,Ernie Clement,1,SS,In Progress
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,665489,Vladimir Guerrero Jr.,2,1B,In Progress
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,672960,Kazuma Okamoto,3,3B,In Progress
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,543807,George Springer,4,DH,In Progress
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,672386,Alejandro Kirk,5,C,In Progress
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,662139,Daulton Varsho,6,CF,In Progress
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,649966,Luis Urías,7,2B,In Progress
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,664702,Myles Straw,8,RF,In Progress
+2026-07-10,823278,Toronto Blue Jays,San Diego Padres,away,682729,Jonatan Clase,9,LF,In Progress
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,665487,Fernando Tatis Jr.,1,2B,In Progress
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,701538,Jackson Merrill,2,CF,In Progress
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,593428,Xander Bogaerts,3,SS,In Progress
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,592518,Manny Machado,4,3B,In Progress
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,657757,Gavin Sheets,5,LF,In Progress
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,664034,Ty France,6,1B,In Progress
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,609280,Miguel Andujar,7,DH,In Progress
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,687749,Jase Bowen,8,RF,In Progress
+2026-07-10,823278,San Diego Padres,Toronto Blue Jays,home,660710,Rodolfo Durán,9,C,In Progress
+2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,606466,Ketel Marte,1,DH,Warmup
+2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,672695,Geraldo Perdomo,2,SS,Warmup
+2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,682998,Corbin Carroll,3,RF,Warmup
+2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,672515,Gabriel Moreno,4,C,Warmup
+2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,666971,Lourdes Gurriel Jr.,5,LF,Warmup
+2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,545121,Ildemaro Vargas,6,2B,Warmup
+2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,571448,Nolan Arenado,7,3B,Warmup
+2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,814439,Ryan Waldschmidt,8,CF,Warmup
+2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,away,694374,Tim Tawa,9,1B,Warmup
+2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,660271,Shohei Ohtani,1,DH,Warmup
+2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,681624,Andy Pages,2,CF,Warmup
+2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,518692,Freddie Freeman,3,1B,Warmup
+2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,605141,Mookie Betts,4,SS,Warmup
+2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,669242,Tommy Edman,5,3B,Warmup
+2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,663656,Kyle Tucker,6,RF,Warmup
+2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,606192,Teoscar Hernández,7,LF,Warmup
+2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,500743,Miguel Rojas,8,2B,Warmup
+2026-07-10,823927,Los Angeles Dodgers,Arizona Diamondbacks,home,687221,Dalton Rushing,9,C,Warmup
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,664983,Jake McCarthy,1,LF,Warmup
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,691720,Kyle Karros,2,3B,Warmup
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,694249,Cole Carrigg,3,CF,Warmup
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,696100,Hunter Goodman,4,C,Warmup
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,681198,TJ Rumfield,5,1B,Warmup
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,671289,Tyler Freeman,6,RF,Warmup
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,650489,Willi Castro,7,2B,Warmup
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,666160,Mickey Moniak,8,DH,Warmup
+2026-07-10,823200,Colorado Rockies,San Francisco Giants,away,678662,Ezequiel Tovar,9,SS,Warmup
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,671218,Heliot Ramos,1,LF,Warmup
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,650333,Luis Arraez,2,2B,Warmup
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,669477,Casey Schmitt,3,3B,Warmup
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,646240,Rafael Devers,4,DH,Warmup
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,642715,Willy Adames,5,SS,Warmup
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,805811,Bryce Eldridge,6,1B,Warmup
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,808982,Jung Hoo Lee,7,RF,Warmup
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,687551,Drew Gilbert,8,CF,Warmup
+2026-07-10,823200,San Francisco Giants,Colorado Rockies,home,701852,Drew Cavanaugh,9,C,Warmup

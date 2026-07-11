@@ -1,8 +1,6 @@
 date,game_id,team,pitcher_id,pitcher_name,side
 2026-07-10,824252,Philadelphia Phillies,605400,Aaron Nola,away
 2026-07-10,824252,Detroit Tigers,656427,Jack Flaherty,home
-2026-07-10,823357,Milwaukee Brewers,687075,Brandon Sproat,away
-2026-07-10,823357,Pittsburgh Pirates,677952,Braxton Ashcraft,home
 2026-07-10,822709,New York Yankees,677960,Ryan Weathers,away
 2026-07-10,822709,Washington Nationals,687223,Carson Palmquist,home
 2026-07-10,824817,Kansas City Royals,679883,Luinder Avila,away
@@ -26,6 +24,8 @@ date,game_id,team,pitcher_id,pitcher_name,side
 2026-07-10,823278,Toronto Blue Jays,669456,Shane Bieber,away
 2026-07-10,823278,San Diego Padres,676664,JP Sears,home
 2026-07-10,823927,Arizona Diamondbacks,593958,Eduardo Rodriguez,away
-2026-07-10,823927,Los Angeles Dodgers,660271,Shohei Ohtani,home
+2026-07-10,823927,Los Angeles Dodgers,669165,Kyle Hurt,home
 2026-07-10,823200,Colorado Rockies,685299,Tanner Gordon,away
 2026-07-10,823200,San Francisco Giants,592662,Robbie Ray,home
+2026-07-10,823357,Milwaukee Brewers,687075,Brandon Sproat,away
+2026-07-10,823357,Pittsburgh Pirates,677952,Braxton Ashcraft,home
