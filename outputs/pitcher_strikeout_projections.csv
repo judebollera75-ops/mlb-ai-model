@@ -1,31 +1,30 @@
-pitcher_name,team,games_started,strikeouts,season_k_per_start,avg_k,projected_ks
-Kyle Hurt,Los Angeles Dodgers,1,38,38.0,1.2,12.24
-Hunter Greene,Cincinnati Reds,2,19,9.5,9.5,9.5
-Nolan McLean,New York Mets,19,125,6.578947368421052,7.6,7.293684210526315
-Ryan Weathers,New York Yankees,18,110,6.111111111111111,7.2,6.873333333333333
-Braxton Ashcraft,Pittsburgh Pirates,18,122,6.777777777777778,6.4,6.513333333333333
-Hunter Brown,Houston Astros,7,39,5.571428571428571,6.4,6.151428571428571
-Shota Imanaga,Chicago Cubs,19,105,5.526315789473684,6.4,6.137894736842105
-Chris Sale,Atlanta Braves,17,117,6.882352941176471,5.8,6.124705882352941
-Robbie Ray,San Francisco Giants,18,90,5.0,6.2,5.84
-Parker Messick,Cleveland Guardians,19,110,5.7894736842105265,5.8,5.796842105263158
-Aaron Nola,Philadelphia Phillies,19,102,5.368421052631579,5.8,5.670526315789473
-Tanner Gordon,Colorado Rockies,5,47,9.4,4.0,5.619999999999999
-Zebby Matthews,Minnesota Twins,11,54,4.909090909090909,5.2,5.112727272727272
-Sean Burke,Chicago White Sox,15,115,7.666666666666667,4.0,5.1
-Jack Flaherty,Detroit Tigers,18,98,5.444444444444445,4.8,4.993333333333333
-Luis Castillo,Seattle Mariners,15,81,5.4,4.6,4.84
-Sandy Alcantara,Miami Marlins,20,100,5.0,4.6,4.72
-Brandon Sproat,Milwaukee Brewers,15,84,5.6,4.0,4.4799999999999995
-JP Sears,San Diego Padres,4,17,4.25,4.25,4.25
-Grayson Rodriguez,Los Angeles Angels,7,24,3.4285714285714284,4.6,4.248571428571428
-Brandon Young,Baltimore Orioles,15,67,4.466666666666667,3.8,4.0
-Nick Martinez,Tampa Bay Rays,18,62,3.4444444444444446,4.0,3.833333333333333
-Eduardo Rodriguez,Arizona Diamondbacks,19,79,4.157894736842105,3.6,3.7673684210526313
-Cal Quantrill,Texas Rangers,4,28,7.0,2.2,3.64
-Jacob Lopez,Athletics,11,43,3.909090909090909,3.4,3.5527272727272727
-Kyle Leahy,St. Louis Cardinals,18,75,4.166666666666667,3.0,3.3499999999999996
-Sonny Gray,Boston Red Sox,17,85,5.0,2.6,3.32
-Shane Bieber,Toronto Blue Jays,4,13,3.25,3.25,3.25
-Luinder Avila,Kansas City Royals,9,50,5.555555555555555,2.2,3.2066666666666666
-Carson Palmquist,Washington Nationals,3,11,3.6666666666666665,2.2,2.6399999999999997
+date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,avg_k,projected_ks,projection_confidence
+2026-07-11,823356,Shane Drohan,Milwaukee Brewers,away,,,,,4.917,LOW
+2026-07-11,823356,Bubba Chandler,Pittsburgh Pirates,home,,,,,4.917,LOW
+2026-07-11,823682,Ryan Johnson,Los Angeles Angels,away,,,,,4.917,LOW
+2026-07-11,823682,Joe Ryan,Minnesota Twins,home,,,,,4.917,LOW
+2026-07-11,824576,Gage Jump,Athletics,away,,,,,4.917,LOW
+2026-07-11,824576,Bryan Hudson,Chicago White Sox,home,,,,,4.917,LOW
+2026-07-11,823198,Kyle Freeland,Colorado Rockies,away,,,,,4.917,LOW
+2026-07-11,823198,Tyler Mahle,San Francisco Giants,home,,,,,4.917,LOW
+2026-07-11,822711,Cam Schlittler,New York Yankees,away,,,,,4.917,LOW
+2026-07-11,822711,Miles Mikolas,Washington Nationals,home,,,,,4.917,LOW
+2026-07-11,823603,Freddy Peralta,New York Mets,home,,,,,4.917,LOW
+2026-07-11,822953,Logan Gilbert,Seattle Mariners,away,,,,,4.917,LOW
+2026-07-11,822953,Griffin Jax,Tampa Bay Rays,home,,,,,4.917,LOW
+2026-07-11,823844,Tanner Bibee,Cleveland Guardians,away,,,,,4.917,LOW
+2026-07-11,823844,Eury Pérez,Miami Marlins,home,,,,,4.917,LOW
+2026-07-11,824249,Cristopher Sánchez,Philadelphia Phillies,away,,,,,4.917,LOW
+2026-07-11,824249,Casey Mize,Detroit Tigers,home,,,,,4.917,LOW
+2026-07-11,824813,Noah Cameron,Kansas City Royals,away,,,,,4.917,LOW
+2026-07-11,824813,Kyle Bradish,Baltimore Orioles,home,,,,,4.917,LOW
+2026-07-11,822875,Peter Lambert,Houston Astros,away,,,,,4.917,LOW
+2026-07-11,822875,Kumar Rocker,Texas Rangers,home,,,,,4.917,LOW
+2026-07-11,824492,Javier Assad,Chicago Cubs,away,,,,,4.917,LOW
+2026-07-11,824492,Nick Lodolo,Cincinnati Reds,home,,,,,4.917,LOW
+2026-07-11,823030,Reynaldo López,Atlanta Braves,away,,,,,4.917,LOW
+2026-07-11,823030,Matthew Liberatore,St. Louis Cardinals,home,,,,,4.917,LOW
+2026-07-11,823276,Trey Yesavage,Toronto Blue Jays,away,,,,,4.917,LOW
+2026-07-11,823276,Walker Buehler,San Diego Padres,home,,,,,4.917,LOW
+2026-07-11,823926,Brandon Pfaadt,Arizona Diamondbacks,away,,,,,4.917,LOW
+2026-07-11,823926,Yoshinobu Yamamoto,Los Angeles Dodgers,home,,,,,4.917,LOW

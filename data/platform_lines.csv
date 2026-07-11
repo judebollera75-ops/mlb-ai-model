@@ -223,10 +223,10 @@ event_id,commence_time,platform,player,market,direction,line,sportsbook_odds,hom
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Erick Fedde,pitcher_strikeouts,Under,3.5,-130,Chicago White Sox,Athletics
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Gage Jump,pitcher_outs,Over,16.5,-130,Chicago White Sox,Athletics
 8ec769ee362e5e0e25ac93ee886cdfd4,2026-07-11T18:11:00Z,Fanatics,Gage Jump,pitcher_outs,Under,16.5,-110,Chicago White Sox,Athletics
-39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Josh Bell,hitter_total_bases,Over,1.5,120,Minnesota Twins,Los Angeles Angels
-39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Josh Bell,hitter_total_bases,Under,1.5,-160,Minnesota Twins,Los Angeles Angels
-39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Kody Clemens,hitter_hits,Over,0.5,-245,Minnesota Twins,Los Angeles Angels
-39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Kody Clemens,hitter_hits,Under,0.5,180,Minnesota Twins,Los Angeles Angels
+39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Josh Bell,hitter_total_bases,Over,1.5,115,Minnesota Twins,Los Angeles Angels
+39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Josh Bell,hitter_total_bases,Under,1.5,-150,Minnesota Twins,Los Angeles Angels
+39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Kody Clemens,hitter_hits,Over,0.5,-235,Minnesota Twins,Los Angeles Angels
+39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Kody Clemens,hitter_hits,Under,0.5,175,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Ryan Johnson,pitcher_outs,Over,15.5,125,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Ryan Johnson,pitcher_outs,Under,15.5,-180,Minnesota Twins,Los Angeles Angels
 39a35ef6ca846e78caf1d3d4063cba8b,2026-07-11T18:11:00Z,Fanatics,Ryan Johnson,pitcher_strikeouts,Over,3.5,-160,Minnesota Twins,Los Angeles Angels
@@ -605,8 +605,12 @@ def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,DraftKings,Willy Adames,hi
 def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,DraftKings,Willy Adames,hitter_hits,Under,0.5,155,San Francisco Giants,Colorado Rockies
 def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,DraftKings,Willy Adames,hitter_total_bases,Over,1.5,128,San Francisco Giants,Colorado Rockies
 def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,DraftKings,Willy Adames,hitter_total_bases,Under,1.5,-170,San Francisco Giants,Colorado Rockies
+3e0030b3cd282b42e4c204a9e30ec8f4,2026-07-11T20:06:00Z,FanDuel,Bubba Chandler,pitcher_strikeouts,Over,4.5,110,Pittsburgh Pirates,Milwaukee Brewers
+3e0030b3cd282b42e4c204a9e30ec8f4,2026-07-11T20:06:00Z,FanDuel,Bubba Chandler,pitcher_strikeouts,Under,4.5,-140,Pittsburgh Pirates,Milwaukee Brewers
 def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,FanDuel,Kyle Freeland,pitcher_strikeouts,Over,4.5,110,San Francisco Giants,Colorado Rockies
 def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,FanDuel,Kyle Freeland,pitcher_strikeouts,Under,4.5,-140,San Francisco Giants,Colorado Rockies
+3e0030b3cd282b42e4c204a9e30ec8f4,2026-07-11T20:06:00Z,FanDuel,Shane Drohan,pitcher_strikeouts,Over,4.5,-156,Pittsburgh Pirates,Milwaukee Brewers
+3e0030b3cd282b42e4c204a9e30ec8f4,2026-07-11T20:06:00Z,FanDuel,Shane Drohan,pitcher_strikeouts,Under,4.5,122,Pittsburgh Pirates,Milwaukee Brewers
 def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,FanDuel,Tyler Mahle,pitcher_strikeouts,Over,5.5,116,San Francisco Giants,Colorado Rockies
 def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,FanDuel,Tyler Mahle,pitcher_strikeouts,Under,5.5,-148,San Francisco Giants,Colorado Rockies
 def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,Fanatics,Edouard Julien,hitter_hits,Over,0.5,-140,San Francisco Giants,Colorado Rockies
@@ -617,72 +621,148 @@ def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,Fanatics,Kyle Freeland,pit
 def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,Fanatics,Kyle Freeland,pitcher_strikeouts,Under,4.5,-150,San Francisco Giants,Colorado Rockies
 def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,Fanatics,Luis Arraez,hitter_total_bases,Over,1.5,105,San Francisco Giants,Colorado Rockies
 def5adac76d2258bb7ff1a427e09f8a8,2026-07-11T20:06:00Z,Fanatics,Luis Arraez,hitter_total_bases,Under,1.5,-140,San Francisco Giants,Colorado Rockies
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cal Raleigh,hitter_hits,Over,0.5,-135,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cal Raleigh,hitter_hits,Under,0.5,100,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cal Raleigh,hitter_total_bases,Over,0.5,-135,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cal Raleigh,hitter_total_bases,Under,0.5,100,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cedric Mullins,hitter_hits,Over,0.5,-140,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cedric Mullins,hitter_hits,Under,0.5,105,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cedric Mullins,hitter_total_bases,Over,0.5,-140,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cedric Mullins,hitter_total_bases,Under,0.5,105,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Chandler Simpson,hitter_hits,Over,0.5,-235,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Chandler Simpson,hitter_hits,Under,0.5,170,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Chandler Simpson,hitter_total_bases,Over,1.5,155,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Chandler Simpson,hitter_total_bases,Under,1.5,-210,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cole Young,hitter_hits,Over,0.5,-160,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cole Young,hitter_hits,Under,0.5,120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cole Young,hitter_total_bases,Over,0.5,-160,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Cole Young,hitter_total_bases,Under,0.5,120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Colt Emerson,hitter_hits,Over,0.5,-115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Colt Emerson,hitter_hits,Under,0.5,-115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Colt Emerson,hitter_total_bases,Over,0.5,-115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Colt Emerson,hitter_total_bases,Under,0.5,-115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Dominic Canzone,hitter_hits,Over,0.5,-190,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Dominic Canzone,hitter_hits,Under,0.5,140,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Dominic Canzone,hitter_total_bases,Over,1.5,135,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Dominic Canzone,hitter_total_bases,Under,1.5,-185,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Griffin Jax,pitcher_strikeouts,Over,5.5,-110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Griffin Jax,pitcher_strikeouts,Under,5.5,-120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Hunter Feduccia,hitter_hits,Over,0.5,120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Hunter Feduccia,hitter_hits,Under,0.5,-160,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Hunter Feduccia,hitter_total_bases,Over,0.5,120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Hunter Feduccia,hitter_total_bases,Under,0.5,-160,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,J.P. Crawford,hitter_hits,Over,0.5,-185,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,J.P. Crawford,hitter_hits,Under,0.5,135,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,J.P. Crawford,hitter_total_bases,Over,0.5,-185,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,J.P. Crawford,hitter_total_bases,Under,0.5,135,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Jonathan Aranda,hitter_hits,Over,0.5,-210,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Jonathan Aranda,hitter_hits,Under,0.5,155,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Jonathan Aranda,hitter_total_bases,Over,1.5,130,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Jonathan Aranda,hitter_total_bases,Under,1.5,-175,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Josh Naylor,hitter_hits,Over,0.5,-200,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Josh Naylor,hitter_hits,Under,0.5,150,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Josh Naylor,hitter_total_bases,Over,1.5,145,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Josh Naylor,hitter_total_bases,Under,1.5,-200,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Junior Caminero,hitter_hits,Over,0.5,-235,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Junior Caminero,hitter_hits,Under,0.5,175,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Junior Caminero,hitter_total_bases,Over,1.5,100,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Junior Caminero,hitter_total_bases,Under,1.5,-135,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Logan Gilbert,pitcher_strikeouts,Over,6.5,110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Logan Gilbert,pitcher_strikeouts,Under,6.5,-150,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Luke Raley,hitter_hits,Over,0.5,-120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Luke Raley,hitter_hits,Under,0.5,-110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Luke Raley,hitter_total_bases,Over,0.5,-120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Luke Raley,hitter_total_bases,Under,0.5,-110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Randy Arozarena,hitter_hits,Over,0.5,-190,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Randy Arozarena,hitter_hits,Under,0.5,140,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Randy Arozarena,hitter_total_bases,Over,0.5,-190,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Randy Arozarena,hitter_total_bases,Under,0.5,140,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Richie Palacios,hitter_hits,Over,0.5,-120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Richie Palacios,hitter_hits,Under,0.5,-110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Richie Palacios,hitter_total_bases,Over,0.5,-120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Richie Palacios,hitter_total_bases,Under,0.5,-110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Taylor Walls,hitter_hits,Over,0.5,100,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Taylor Walls,hitter_hits,Under,0.5,-135,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Taylor Walls,hitter_total_bases,Over,0.5,100,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Taylor Walls,hitter_total_bases,Under,0.5,-135,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Victor Mesa Jr.,hitter_hits,Over,0.5,-125,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Victor Mesa Jr.,hitter_hits,Under,0.5,-105,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Victor Mesa Jr.,hitter_total_bases,Over,0.5,-125,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Victor Mesa Jr.,hitter_total_bases,Under,0.5,-105,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Victor Robles,hitter_hits,Over,0.5,-140,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Victor Robles,hitter_hits,Under,0.5,105,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Victor Robles,hitter_total_bases,Over,0.5,-140,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Victor Robles,hitter_total_bases,Under,0.5,105,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Yandy Diaz,hitter_hits,Over,1.5,190,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Yandy Diaz,hitter_hits,Under,1.5,-275,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Yandy Diaz,hitter_total_bases,Over,1.5,110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetMGM,Yandy Diaz,hitter_total_bases,Under,1.5,-150,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Brayan Rocchio,hitter_hits,Over,0.5,-196,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Brayan Rocchio,hitter_hits,Under,0.5,148,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Brayan Rocchio,hitter_total_bases,Over,1.5,164,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Brayan Rocchio,hitter_total_bases,Under,1.5,-217,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_hits,Over,0.5,-149,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_hits,Under,0.5,115,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Brayan Rocchio,hitter_hits,Under,0.5,150,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Brayan Rocchio,hitter_total_bases,Over,1.5,158,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Brayan Rocchio,hitter_total_bases,Under,1.5,-208,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_hits,Over,0.5,-145,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_hits,Under,0.5,111,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_total_bases,Over,1.5,152,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cal Raleigh,hitter_total_bases,Under,1.5,-200,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_hits,Over,0.5,-135,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_hits,Under,0.5,104,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_total_bases,Over,0.5,-123,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_total_bases,Under,0.5,-105,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_total_bases,Over,0.5,-130,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cedric Mullins,hitter_total_bases,Under,0.5,100,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_hits,Over,0.5,-208,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_hits,Under,0.5,157,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_total_bases,Over,0.5,-213,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_total_bases,Under,0.5,160,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_hits,Under,0.5,158,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_total_bases,Over,0.5,-196,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Chandler Simpson,hitter_total_bases,Under,0.5,150,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Chase DeLauter,hitter_hits,Over,0.5,-204,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Chase DeLauter,hitter_hits,Under,0.5,154,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Chase DeLauter,hitter_total_bases,Over,1.5,141,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Chase DeLauter,hitter_total_bases,Under,1.5,-185,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_hits,Over,0.5,-152,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_hits,Under,0.5,117,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_total_bases,Over,0.5,-164,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_total_bases,Under,0.5,125,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_hits,Over,0.5,-116,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_hits,Under,0.5,-111,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_total_bases,Over,0.5,-108,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_total_bases,Under,0.5,-120,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Chase DeLauter,hitter_hits,Under,0.5,156,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Chase DeLauter,hitter_total_bases,Over,1.5,139,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Chase DeLauter,hitter_total_bases,Under,1.5,-182,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_hits,Over,0.5,-154,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_hits,Under,0.5,118,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_total_bases,Over,0.5,-161,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Cole Young,hitter_total_bases,Under,0.5,123,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_hits,Over,0.5,-115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_hits,Under,0.5,-112,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_total_bases,Over,0.5,-110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Colt Emerson,hitter_total_bases,Under,0.5,-118,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Daniel Schneemann,hitter_hits,Over,0.5,-127,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Daniel Schneemann,hitter_hits,Under,0.5,-102,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Daniel Schneemann,hitter_total_bases,Over,0.5,-118,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Daniel Schneemann,hitter_total_bases,Under,0.5,-110,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Dominic Canzone,hitter_hits,Over,0.5,-189,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Dominic Canzone,hitter_hits,Under,0.5,144,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Dominic Canzone,hitter_total_bases,Over,1.5,144,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Dominic Canzone,hitter_total_bases,Under,1.5,-189,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Dominic Canzone,hitter_hits,Under,0.5,143,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Dominic Canzone,hitter_total_bases,Over,1.5,141,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Dominic Canzone,hitter_total_bases,Under,1.5,-185,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Eury Perez,pitcher_strikeouts,Over,6.5,-105,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Eury Perez,pitcher_strikeouts,Under,6.5,-123,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Gabriel Arias,hitter_hits,Over,0.5,-122,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Gabriel Arias,hitter_hits,Under,0.5,-106,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Gabriel Arias,hitter_hits,Over,0.5,-123,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Gabriel Arias,hitter_hits,Under,0.5,-105,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Gabriel Arias,hitter_total_bases,Over,0.5,-108,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Gabriel Arias,hitter_total_bases,Under,0.5,-120,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Conine,hitter_hits,Over,0.5,-147,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Conine,hitter_hits,Under,0.5,113,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Conine,hitter_total_bases,Over,1.5,182,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Conine,hitter_total_bases,Under,1.5,-244,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Jax,pitcher_strikeouts,Over,5.5,-127,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Jax,pitcher_strikeouts,Under,5.5,-102,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Jax,pitcher_strikeouts,Over,5.5,-122,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Griffin Jax,pitcher_strikeouts,Under,5.5,-106,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Heriberto Hernandez,hitter_hits,Over,0.5,-196,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Heriberto Hernandez,hitter_hits,Under,0.5,150,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Heriberto Hernandez,hitter_total_bases,Over,1.5,139,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Heriberto Hernandez,hitter_total_bases,Under,1.5,-182,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Hunter Feduccia,hitter_hits,Over,0.5,144,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Hunter Feduccia,hitter_hits,Under,0.5,-189,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Hunter Feduccia,hitter_total_bases,Over,0.5,130,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Hunter Feduccia,hitter_total_bases,Under,0.5,-169,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_hits,Over,0.5,-167,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_hits,Under,0.5,128,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Heriberto Hernandez,hitter_hits,Under,0.5,148,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Heriberto Hernandez,hitter_total_bases,Over,1.5,136,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Heriberto Hernandez,hitter_total_bases,Under,1.5,-179,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Hunter Feduccia,hitter_hits,Over,0.5,130,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Hunter Feduccia,hitter_hits,Under,0.5,-169,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Hunter Feduccia,hitter_total_bases,Over,0.5,124,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Hunter Feduccia,hitter_total_bases,Under,0.5,-161,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_hits,Over,0.5,-169,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_hits,Under,0.5,129,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_total_bases,Over,1.5,186,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,J.P. Crawford,hitter_total_bases,Under,1.5,-250,Tampa Bay Rays,Seattle Mariners
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Jakob Marsee,hitter_hits,Over,0.5,-152,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Jakob Marsee,hitter_hits,Under,0.5,116,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Jakob Marsee,hitter_total_bases,Over,0.5,-143,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Jakob Marsee,hitter_total_bases,Under,0.5,110,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Jakob Marsee,hitter_hits,Over,0.5,-149,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Jakob Marsee,hitter_hits,Under,0.5,115,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Jakob Marsee,hitter_total_bases,Over,0.5,-135,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Jakob Marsee,hitter_total_bases,Under,0.5,105,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Javier Sanoja,hitter_hits,Over,0.5,-175,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Javier Sanoja,hitter_hits,Under,0.5,134,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Javier Sanoja,hitter_hits,Under,0.5,135,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Javier Sanoja,hitter_total_bases,Over,0.5,-164,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Javier Sanoja,hitter_total_bases,Under,0.5,125,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Joe Mack,hitter_hits,Over,0.5,-137,Miami Marlins,Cleveland Guardians
@@ -691,84 +771,88 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Joe Mack,hitt
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Joe Mack,hitter_total_bases,Under,0.5,100,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Jonathan Aranda,hitter_hits,Over,0.5,-204,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Jonathan Aranda,hitter_hits,Under,0.5,154,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Jonathan Aranda,hitter_total_bases,Over,1.5,144,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Jonathan Aranda,hitter_total_bases,Under,1.5,-189,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_hits,Over,0.5,-204,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_hits,Under,0.5,154,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_total_bases,Over,1.5,161,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_total_bases,Under,1.5,-213,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Jonathan Aranda,hitter_total_bases,Over,1.5,141,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Jonathan Aranda,hitter_total_bases,Under,1.5,-185,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_hits,Over,0.5,-200,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_hits,Under,0.5,153,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_total_bases,Over,1.5,158,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Josh Naylor,hitter_total_bases,Under,1.5,-208,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Junior Caminero,hitter_hits,Over,0.5,-244,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Junior Caminero,hitter_hits,Under,0.5,180,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Junior Caminero,hitter_total_bases,Over,1.5,102,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Junior Caminero,hitter_total_bases,Under,1.5,-132,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Junior Caminero,hitter_total_bases,Over,1.5,103,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Junior Caminero,hitter_total_bases,Under,1.5,-133,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kahlil Watson,hitter_hits,Over,0.5,-133,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kahlil Watson,hitter_hits,Under,0.5,103,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kahlil Watson,hitter_total_bases,Over,0.5,-123,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kahlil Watson,hitter_total_bases,Under,0.5,-105,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Manzardo,hitter_hits,Over,0.5,-135,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Manzardo,hitter_hits,Under,0.5,104,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Manzardo,hitter_total_bases,Over,1.5,186,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Manzardo,hitter_total_bases,Under,1.5,-250,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Stowers,hitter_hits,Over,0.5,-185,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Stowers,hitter_hits,Under,0.5,141,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kahlil Watson,hitter_total_bases,Over,0.5,-118,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kahlil Watson,hitter_total_bases,Under,0.5,-110,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Manzardo,hitter_hits,Over,0.5,-133,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Manzardo,hitter_hits,Under,0.5,103,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Manzardo,hitter_total_bases,Over,0.5,-123,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Manzardo,hitter_total_bases,Under,0.5,-105,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Stowers,hitter_hits,Over,0.5,-189,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Stowers,hitter_hits,Under,0.5,144,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Stowers,hitter_total_bases,Over,1.5,126,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Kyle Stowers,hitter_total_bases,Under,1.5,-164,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Liam Hicks,hitter_hits,Over,0.5,-227,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Liam Hicks,hitter_hits,Under,0.5,169,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Liam Hicks,hitter_total_bases,Over,1.5,146,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Liam Hicks,hitter_total_bases,Under,1.5,-192,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Logan Gilbert,pitcher_strikeouts,Over,6.5,124,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Logan Gilbert,pitcher_strikeouts,Under,6.5,-161,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Luke Raley,hitter_hits,Over,0.5,-120,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Luke Raley,hitter_hits,Under,0.5,-108,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Luke Raley,hitter_total_bases,Over,0.5,-112,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Luke Raley,hitter_total_bases,Under,0.5,-115,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Liam Hicks,hitter_total_bases,Over,1.5,149,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Liam Hicks,hitter_total_bases,Under,1.5,-196,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Logan Gilbert,pitcher_strikeouts,Over,6.5,122,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Logan Gilbert,pitcher_strikeouts,Under,6.5,-159,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Luke Raley,hitter_hits,Over,0.5,-119,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Luke Raley,hitter_hits,Under,0.5,-109,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Luke Raley,hitter_total_bases,Over,0.5,-115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Luke Raley,hitter_total_bases,Under,0.5,-112,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Otto Lopez,hitter_hits,Over,1.5,190,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Otto Lopez,hitter_hits,Under,1.5,-256,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Otto Lopez,hitter_total_bases,Over,1.5,118,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Otto Lopez,hitter_total_bases,Under,1.5,-154,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Patrick Bailey,hitter_hits,Over,0.5,-115,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Patrick Bailey,hitter_hits,Under,0.5,-112,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Otto Lopez,hitter_total_bases,Over,1.5,117,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Otto Lopez,hitter_total_bases,Under,1.5,-152,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Patrick Bailey,hitter_hits,Over,0.5,-116,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Patrick Bailey,hitter_hits,Under,0.5,-111,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Patrick Bailey,hitter_total_bases,Over,0.5,-108,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Patrick Bailey,hitter_total_bases,Under,0.5,-120,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_hits,Over,0.5,-204,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_hits,Under,0.5,156,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_hits,Over,0.5,-200,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_hits,Under,0.5,152,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_total_bases,Over,1.5,152,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Randy Arozarena,hitter_total_bases,Under,1.5,-200,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_hits,Over,0.5,-110,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_hits,Under,0.5,-118,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_total_bases,Over,0.5,-108,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_total_bases,Under,0.5,-120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_hits,Over,0.5,-111,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_hits,Under,0.5,-116,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_total_bases,Over,0.5,-112,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Richie Palacios,hitter_total_bases,Under,0.5,-115,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Steven Kwan,hitter_hits,Over,0.5,-139,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Steven Kwan,hitter_hits,Under,0.5,107,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Steven Kwan,hitter_total_bases,Over,0.5,-143,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Steven Kwan,hitter_total_bases,Under,0.5,110,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Tanner Bibee,pitcher_strikeouts,Over,4.5,-130,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Tanner Bibee,pitcher_strikeouts,Under,4.5,100,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Tanner Bibee,pitcher_strikeouts,Over,4.5,-132,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Tanner Bibee,pitcher_strikeouts,Under,4.5,102,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_hits,Over,0.5,-108,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_hits,Under,0.5,-120,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_total_bases,Over,0.5,100,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_total_bases,Under,0.5,-130,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_total_bases,Over,0.5,103,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Taylor Walls,hitter_total_bases,Under,0.5,-133,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Travis Bazzana,hitter_hits,Over,0.5,-182,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Travis Bazzana,hitter_hits,Under,0.5,138,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Travis Bazzana,hitter_total_bases,Over,1.5,158,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Travis Bazzana,hitter_total_bases,Under,1.5,-208,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Mesa Jr.,hitter_hits,Over,0.5,-123,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Mesa Jr.,hitter_hits,Under,0.5,-105,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Mesa Jr.,hitter_total_bases,Over,0.5,-108,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Mesa Jr.,hitter_total_bases,Under,0.5,-120,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_hits,Over,0.5,-154,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_hits,Under,0.5,118,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_total_bases,Over,0.5,-149,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_total_bases,Under,0.5,115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Mesa Jr.,hitter_total_bases,Over,0.5,-115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Mesa Jr.,hitter_total_bases,Under,0.5,-112,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_hits,Over,0.5,-149,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_hits,Under,0.5,115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_total_bases,Over,0.5,-143,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Victor Robles,hitter_total_bases,Under,0.5,110,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Xavier Edwards,hitter_hits,Over,0.5,-244,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Xavier Edwards,hitter_hits,Under,0.5,183,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Xavier Edwards,hitter_total_bases,Over,1.5,146,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,BetOnline.ag,Xavier Edwards,hitter_total_bases,Under,1.5,-192,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_hits,Over,0.5,-270,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_hits,Under,0.5,198,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_total_bases,Over,1.5,124,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_total_bases,Under,1.5,-161,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_hits,Over,1.5,209,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_hits,Under,1.5,-286,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_total_bases,Over,1.5,120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,BetOnline.ag,Yandy Diaz,hitter_total_bases,Under,1.5,-156,Tampa Bay Rays,Seattle Mariners
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Bovada,Ceddanne Rafaela,hitter_total_bases,Over,1.5,130,New York Mets,Boston Red Sox
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Bovada,Ceddanne Rafaela,hitter_total_bases,Under,1.5,-170,New York Mets,Boston Red Sox
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Chase DeLauter,hitter_total_bases,Over,1.5,140,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Chase DeLauter,hitter_total_bases,Under,1.5,-185,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Dominic Canzone,hitter_total_bases,Over,1.5,140,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Dominic Canzone,hitter_total_bases,Under,1.5,-185,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Eury Perez,pitcher_outs,Over,16.5,-120,Miami Marlins,Cleveland Guardians
@@ -777,8 +861,8 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Eury Perez,pitcher_
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Eury Perez,pitcher_strikeouts,Under,6.5,-120,Miami Marlins,Cleveland Guardians
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Bovada,Freddy Peralta,pitcher_outs,Over,17.5,-125,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Bovada,Freddy Peralta,pitcher_outs,Under,17.5,-115,New York Mets,Boston Red Sox
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Griffin Jax,pitcher_outs,Over,14.5,-190,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Griffin Jax,pitcher_outs,Under,14.5,145,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Griffin Jax,pitcher_outs,Over,15.5,150,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Griffin Jax,pitcher_outs,Under,15.5,-200,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Griffin Jax,pitcher_strikeouts,Over,5.5,-130,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Griffin Jax,pitcher_strikeouts,Under,5.5,100,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Heriberto Hernandez,hitter_total_bases,Over,1.5,140,Miami Marlins,Cleveland Guardians
@@ -789,76 +873,104 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Heriberto Hernandez
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Josh Naylor,hitter_total_bases,Under,1.5,-190,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Junior Caminero,hitter_total_bases,Over,1.5,-105,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Junior Caminero,hitter_total_bases,Under,1.5,-125,Tampa Bay Rays,Seattle Mariners
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Liam Hicks,hitter_total_bases,Over,1.5,135,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Liam Hicks,hitter_total_bases,Under,1.5,-180,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Logan Gilbert,pitcher_outs,Over,17.5,-220,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Logan Gilbert,pitcher_outs,Under,17.5,155,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Liam Hicks,hitter_total_bases,Over,1.5,145,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Liam Hicks,hitter_total_bases,Under,1.5,-190,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Logan Gilbert,pitcher_outs,Over,18.5,125,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Logan Gilbert,pitcher_outs,Under,18.5,-165,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Logan Gilbert,pitcher_strikeouts,Over,6.5,130,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Logan Gilbert,pitcher_strikeouts,Under,6.5,-170,Tampa Bay Rays,Seattle Mariners
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Otto Lopez,hitter_total_bases,Over,1.5,125,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Otto Lopez,hitter_total_bases,Under,1.5,-165,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Otto Lopez,hitter_total_bases,Over,1.5,120,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Otto Lopez,hitter_total_bases,Under,1.5,-160,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Randy Arozarena,hitter_total_bases,Over,1.5,140,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Randy Arozarena,hitter_total_bases,Under,1.5,-185,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Tanner Bibee,pitcher_outs,Over,17.5,-140,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Tanner Bibee,pitcher_outs,Under,17.5,100,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Tanner Bibee,pitcher_strikeouts,Over,4.5,-130,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Tanner Bibee,pitcher_strikeouts,Under,4.5,100,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Xavier Edwards,hitter_total_bases,Over,1.5,135,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Xavier Edwards,hitter_total_bases,Under,1.5,-180,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Yandy Diaz,hitter_total_bases,Over,1.5,110,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Yandy Diaz,hitter_total_bases,Under,1.5,-145,Tampa Bay Rays,Seattle Mariners
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Bovada,Wilyer Abreu,hitter_total_bases,Over,1.5,130,New York Mets,Boston Red Sox
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Bovada,Wilyer Abreu,hitter_total_bases,Under,1.5,-170,New York Mets,Boston Red Sox
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Xavier Edwards,hitter_total_bases,Over,1.5,140,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Bovada,Xavier Edwards,hitter_total_bases,Under,1.5,-185,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Yandy Diaz,hitter_total_bases,Over,1.5,115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Bovada,Yandy Diaz,hitter_total_bases,Under,1.5,-150,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Cal Raleigh,hitter_total_bases,Over,0.5,-143,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Cal Raleigh,hitter_total_bases,Under,0.5,108,Tampa Bay Rays,Seattle Mariners
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Caesars,Ceddanne Rafaela,hitter_total_bases,Over,1.5,127,New York Mets,Boston Red Sox
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Caesars,Ceddanne Rafaela,hitter_total_bases,Under,1.5,-170,New York Mets,Boston Red Sox
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Cedric Mullins,hitter_total_bases,Over,0.5,-130,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Cedric Mullins,hitter_total_bases,Under,0.5,-103,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Chase DeLauter,hitter_total_bases,Over,1.5,133,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Chase DeLauter,hitter_total_bases,Under,1.5,-179,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Cole Young,hitter_total_bases,Over,0.5,-159,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Cole Young,hitter_total_bases,Under,0.5,119,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Colt Emerson,hitter_total_bases,Over,0.5,-113,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Colt Emerson,hitter_total_bases,Under,0.5,-118,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Dominic Canzone,hitter_total_bases,Over,1.5,136,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Dominic Canzone,hitter_total_bases,Under,1.5,-182,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Eury Perez,pitcher_outs,Over,16.5,-118,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Eury Perez,pitcher_outs,Under,16.5,-113,Miami Marlins,Cleveland Guardians
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Caesars,Freddy Peralta,pitcher_outs,Over,17.5,-125,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Caesars,Freddy Peralta,pitcher_outs,Under,17.5,-106,New York Mets,Boston Red Sox
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Griffin Jax,pitcher_outs,Over,14.5,-205,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Griffin Jax,pitcher_outs,Under,14.5,150,Tampa Bay Rays,Seattle Mariners
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Heriberto Hernandez,hitter_total_bases,Over,1.5,131,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Heriberto Hernandez,hitter_total_bases,Under,1.5,-176,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Hunter Feduccia,hitter_total_bases,Over,0.5,120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Hunter Feduccia,hitter_total_bases,Under,0.5,-159,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,J.P. Crawford,hitter_total_bases,Over,0.5,-179,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,J.P. Crawford,hitter_total_bases,Under,0.5,133,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Jonathan Aranda,hitter_total_bases,Over,1.5,135,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Jonathan Aranda,hitter_total_bases,Under,1.5,-182,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Josh Naylor,hitter_total_bases,Over,1.5,146,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Josh Naylor,hitter_total_bases,Under,1.5,-197,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Junior Caminero,hitter_total_bases,Over,1.5,-102,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Junior Caminero,hitter_total_bases,Under,1.5,-132,Tampa Bay Rays,Seattle Mariners
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Kyle Stowers,hitter_total_bases,Over,1.5,114,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Kyle Stowers,hitter_total_bases,Under,1.5,-152,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Liam Hicks,hitter_total_bases,Over,1.5,133,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Liam Hicks,hitter_total_bases,Under,1.5,-179,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Kyle Stowers,hitter_total_bases,Over,1.5,113,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Kyle Stowers,hitter_total_bases,Under,1.5,-150,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Liam Hicks,hitter_total_bases,Over,1.5,135,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Liam Hicks,hitter_total_bases,Under,1.5,-182,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Logan Gilbert,pitcher_outs,Over,17.5,-209,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Logan Gilbert,pitcher_outs,Under,17.5,154,Tampa Bay Rays,Seattle Mariners
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Otto Lopez,hitter_total_bases,Over,1.5,117,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Otto Lopez,hitter_total_bases,Under,1.5,-157,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Luke Raley,hitter_total_bases,Over,0.5,-120,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Luke Raley,hitter_total_bases,Under,0.5,-112,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Otto Lopez,hitter_total_bases,Over,1.5,114,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Otto Lopez,hitter_total_bases,Under,1.5,-152,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Randy Arozarena,hitter_total_bases,Over,1.5,142,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Randy Arozarena,hitter_total_bases,Under,1.5,-193,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Richie Palacios,hitter_total_bases,Over,0.5,-112,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Richie Palacios,hitter_total_bases,Under,0.5,-120,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Tanner Bibee,pitcher_outs,Over,17.5,-137,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Tanner Bibee,pitcher_outs,Under,17.5,103,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Taylor Walls,hitter_total_bases,Over,0.5,-106,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Taylor Walls,hitter_total_bases,Under,0.5,-125,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Victor Mesa Jr.,hitter_total_bases,Over,0.5,-121,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Victor Mesa Jr.,hitter_total_bases,Under,0.5,-110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Victor Robles,hitter_total_bases,Over,0.5,-143,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Victor Robles,hitter_total_bases,Under,0.5,108,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Xavier Edwards,hitter_total_bases,Over,1.5,133,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Caesars,Xavier Edwards,hitter_total_bases,Under,1.5,-179,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Yandy Diaz,hitter_total_bases,Over,1.5,114,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Caesars,Yandy Diaz,hitter_total_bases,Under,1.5,-152,Tampa Bay Rays,Seattle Mariners
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Anthony Seigler,hitter_hits,Over,0.5,-178,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Anthony Seigler,hitter_hits,Under,0.5,133,New York Mets,Boston Red Sox
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Brayan Rocchio,hitter_hits,Over,0.5,-183,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Brayan Rocchio,hitter_hits,Under,0.5,137,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Cal Raleigh,hitter_hits,Over,0.5,-155,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Cal Raleigh,hitter_hits,Under,0.5,117,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Brayan Rocchio,hitter_hits,Over,0.5,-191,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Brayan Rocchio,hitter_hits,Under,0.5,143,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Cal Raleigh,hitter_hits,Over,0.5,-150,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Cal Raleigh,hitter_hits,Under,0.5,113,Tampa Bay Rays,Seattle Mariners
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Caleb Durbin,hitter_hits,Over,0.5,-198,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Caleb Durbin,hitter_hits,Under,0.5,148,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Carlos Narvaez,hitter_hits,Over,0.5,-141,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Carlos Narvaez,hitter_hits,Under,0.5,106,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Ceddanne Rafaela,hitter_hits,Over,0.5,-249,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Ceddanne Rafaela,hitter_hits,Under,0.5,184,New York Mets,Boston Red Sox
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Ceddanne Rafaela,hitter_total_bases,Over,1.5,129,New York Mets,Boston Red Sox
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Ceddanne Rafaela,hitter_total_bases,Under,1.5,-172,New York Mets,Boston Red Sox
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Cedric Mullins,hitter_hits,Over,0.5,-140,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Cedric Mullins,hitter_hits,Under,0.5,105,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Chandler Simpson,hitter_hits,Over,0.5,-209,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Chandler Simpson,hitter_hits,Under,0.5,156,Tampa Bay Rays,Seattle Mariners
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Chase DeLauter,hitter_hits,Over,0.5,-192,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Chase DeLauter,hitter_hits,Under,0.5,144,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Cole Young,hitter_hits,Over,0.5,-155,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Cole Young,hitter_hits,Under,0.5,116,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Chase DeLauter,hitter_hits,Over,0.5,-202,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Chase DeLauter,hitter_hits,Under,0.5,151,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Chase DeLauter,hitter_total_bases,Over,1.5,139,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Chase DeLauter,hitter_total_bases,Under,1.5,-186,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Cole Young,hitter_hits,Over,0.5,-160,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Cole Young,hitter_hits,Under,0.5,120,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Colt Emerson,hitter_hits,Over,0.5,-118,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Colt Emerson,hitter_hits,Under,0.5,-112,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Daniel Schneemann,hitter_hits,Over,0.5,-119,Miami Marlins,Cleveland Guardians
@@ -869,34 +981,34 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Daniel Schneema
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Dominic Canzone,hitter_total_bases,Under,1.5,-183,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Eury Perez,pitcher_outs,Over,16.5,-114,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Eury Perez,pitcher_outs,Under,16.5,-117,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Eury Perez,pitcher_strikeouts,Over,6.5,103,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Eury Perez,pitcher_strikeouts,Under,6.5,-131,Miami Marlins,Cleveland Guardians
-ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Freddy Peralta,pitcher_outs,Over,17.5,-123,New York Mets,Boston Red Sox
-ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Freddy Peralta,pitcher_outs,Under,17.5,-108,New York Mets,Boston Red Sox
-ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Freddy Peralta,pitcher_strikeouts,Over,5.5,-156,New York Mets,Boston Red Sox
-ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Freddy Peralta,pitcher_strikeouts,Under,5.5,122,New York Mets,Boston Red Sox
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Gabriel Arias,hitter_hits,Over,0.5,-115,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Gabriel Arias,hitter_hits,Under,0.5,-115,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Eury Perez,pitcher_strikeouts,Over,6.5,-103,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Eury Perez,pitcher_strikeouts,Under,6.5,-124,Miami Marlins,Cleveland Guardians
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Freddy Peralta,pitcher_outs,Over,17.5,-119,New York Mets,Boston Red Sox
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Freddy Peralta,pitcher_outs,Under,17.5,-112,New York Mets,Boston Red Sox
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Freddy Peralta,pitcher_strikeouts,Over,5.5,-136,New York Mets,Boston Red Sox
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Freddy Peralta,pitcher_strikeouts,Under,5.5,106,New York Mets,Boston Red Sox
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Gabriel Arias,hitter_hits,Over,0.5,-121,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Gabriel Arias,hitter_hits,Under,0.5,-110,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Griffin Conine,hitter_hits,Over,0.5,-149,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Griffin Conine,hitter_hits,Under,0.5,112,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Griffin Jax,pitcher_outs,Over,14.5,-189,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Griffin Jax,pitcher_outs,Under,14.5,142,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Griffin Jax,pitcher_outs,Over,15.5,146,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Griffin Jax,pitcher_outs,Under,15.5,-196,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Griffin Jax,pitcher_strikeouts,Over,5.5,-133,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Griffin Jax,pitcher_strikeouts,Under,5.5,104,Tampa Bay Rays,Seattle Mariners
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Heriberto Hernandez,hitter_hits,Over,0.5,-192,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Heriberto Hernandez,hitter_hits,Under,0.5,143,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Heriberto Hernandez,hitter_hits,Over,0.5,-185,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Heriberto Hernandez,hitter_hits,Under,0.5,138,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Heriberto Hernandez,hitter_total_bases,Over,1.5,139,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Heriberto Hernandez,hitter_total_bases,Under,1.5,-186,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Heriberto Hernandez,hitter_total_bases,Under,1.5,-185,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Hunter Feduccia,hitter_hits,Over,0.5,132,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Hunter Feduccia,hitter_hits,Under,0.5,-176,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,J.P. Crawford,hitter_hits,Over,0.5,-180,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,J.P. Crawford,hitter_hits,Under,0.5,134,Tampa Bay Rays,Seattle Mariners
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Jakob Marsee,hitter_hits,Over,0.5,-148,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Jakob Marsee,hitter_hits,Under,0.5,111,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Jakob Marsee,hitter_hits,Over,0.5,-155,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Jakob Marsee,hitter_hits,Under,0.5,116,Miami Marlins,Cleveland Guardians
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Jarren Duran,hitter_hits,Over,0.5,-161,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Jarren Duran,hitter_hits,Under,0.5,121,New York Mets,Boston Red Sox
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Javier Sanoja,hitter_hits,Over,0.5,-172,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Javier Sanoja,hitter_hits,Under,0.5,129,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Javier Sanoja,hitter_hits,Over,0.5,-178,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Javier Sanoja,hitter_hits,Under,0.5,133,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Joe Mack,hitter_hits,Over,0.5,-120,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Joe Mack,hitter_hits,Under,0.5,-110,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Jonathan Aranda,hitter_hits,Over,0.5,-194,Tampa Bay Rays,Seattle Mariners
@@ -911,32 +1023,32 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Joe Mack,hitter
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Junior Caminero,hitter_hits,Under,0.5,198,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Junior Caminero,hitter_total_bases,Over,1.5,-107,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Junior Caminero,hitter_total_bases,Under,1.5,-124,Tampa Bay Rays,Seattle Mariners
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kahlil Watson,hitter_hits,Over,0.5,-117,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kahlil Watson,hitter_hits,Under,0.5,-113,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kyle Manzardo,hitter_hits,Over,0.5,-130,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kyle Manzardo,hitter_hits,Under,0.5,-102,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kyle Stowers,hitter_hits,Over,0.5,-164,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kyle Stowers,hitter_hits,Under,0.5,123,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kahlil Watson,hitter_hits,Over,0.5,-121,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kahlil Watson,hitter_hits,Under,0.5,-109,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kyle Manzardo,hitter_hits,Over,0.5,-128,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kyle Manzardo,hitter_hits,Under,0.5,-104,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kyle Stowers,hitter_hits,Over,0.5,-176,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Kyle Stowers,hitter_hits,Under,0.5,132,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Liam Hicks,hitter_hits,Over,0.5,-220,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Liam Hicks,hitter_hits,Under,0.5,163,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Liam Hicks,hitter_total_bases,Over,1.5,135,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Liam Hicks,hitter_total_bases,Under,1.5,-181,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Logan Gilbert,pitcher_outs,Over,17.5,-220,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Logan Gilbert,pitcher_outs,Under,17.5,158,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Liam Hicks,hitter_total_bases,Over,1.5,144,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Liam Hicks,hitter_total_bases,Under,1.5,-193,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Logan Gilbert,pitcher_outs,Over,18.5,125,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Logan Gilbert,pitcher_outs,Under,18.5,-167,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Logan Gilbert,pitcher_strikeouts,Over,6.5,119,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Logan Gilbert,pitcher_strikeouts,Under,6.5,-152,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Luke Raley,hitter_hits,Over,0.5,-125,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Luke Raley,hitter_hits,Under,0.5,-106,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Luke Raley,hitter_hits,Over,0.5,-129,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Luke Raley,hitter_hits,Under,0.5,-103,Tampa Bay Rays,Seattle Mariners
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Masataka Yoshida,hitter_hits,Over,0.5,-189,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Masataka Yoshida,hitter_hits,Under,0.5,141,New York Mets,Boston Red Sox
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Otto Lopez,hitter_hits,Over,0.5,-261,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Otto Lopez,hitter_hits,Under,0.5,192,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Otto Lopez,hitter_total_bases,Over,1.5,126,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Otto Lopez,hitter_total_bases,Under,1.5,-167,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Patrick Bailey,hitter_hits,Over,0.5,107,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Patrick Bailey,hitter_hits,Under,0.5,-141,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Randy Arozarena,hitter_hits,Over,0.5,-217,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Randy Arozarena,hitter_hits,Under,0.5,161,Tampa Bay Rays,Seattle Mariners
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Otto Lopez,hitter_hits,Over,1.5,195,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Otto Lopez,hitter_hits,Under,1.5,-265,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Otto Lopez,hitter_total_bases,Over,1.5,122,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Otto Lopez,hitter_total_bases,Under,1.5,-162,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Patrick Bailey,hitter_hits,Over,0.5,102,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Patrick Bailey,hitter_hits,Under,0.5,-135,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Randy Arozarena,hitter_hits,Over,0.5,-208,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Randy Arozarena,hitter_hits,Under,0.5,155,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Randy Arozarena,hitter_total_bases,Over,1.5,137,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Randy Arozarena,hitter_total_bases,Under,1.5,-182,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Richie Palacios,hitter_hits,Over,0.5,105,Tampa Bay Rays,Seattle Mariners
@@ -947,8 +1059,8 @@ b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Steven Kwan,hit
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Steven Kwan,hitter_hits,Under,0.5,106,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Tanner Bibee,pitcher_outs,Over,17.5,-136,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Tanner Bibee,pitcher_outs,Under,17.5,102,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Tanner Bibee,pitcher_strikeouts,Over,4.5,-130,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Tanner Bibee,pitcher_strikeouts,Under,4.5,102,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Tanner Bibee,pitcher_strikeouts,Over,4.5,-136,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Tanner Bibee,pitcher_strikeouts,Under,4.5,107,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Taylor Walls,hitter_hits,Over,0.5,-117,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Taylor Walls,hitter_hits,Under,0.5,-114,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Travis Bazzana,hitter_hits,Over,0.5,-177,Miami Marlins,Cleveland Guardians
@@ -961,14 +1073,16 @@ ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Tsung-Che Cheng
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Victor Robles,hitter_hits,Under,0.5,114,Tampa Bay Rays,Seattle Mariners
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Wilyer Abreu,hitter_hits,Over,0.5,-192,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Wilyer Abreu,hitter_hits,Under,0.5,143,New York Mets,Boston Red Sox
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Xavier Edwards,hitter_hits,Over,0.5,-247,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Xavier Edwards,hitter_hits,Under,0.5,182,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Xavier Edwards,hitter_total_bases,Over,1.5,133,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Xavier Edwards,hitter_total_bases,Under,1.5,-178,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Yandy Diaz,hitter_hits,Over,0.5,-267,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Yandy Diaz,hitter_hits,Under,0.5,196,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Yandy Diaz,hitter_total_bases,Over,1.5,108,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Yandy Diaz,hitter_total_bases,Under,1.5,-144,Tampa Bay Rays,Seattle Mariners
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Wilyer Abreu,hitter_total_bases,Over,1.5,127,New York Mets,Boston Red Sox
+ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,DraftKings,Wilyer Abreu,hitter_total_bases,Under,1.5,-169,New York Mets,Boston Red Sox
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Xavier Edwards,hitter_hits,Over,0.5,-237,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Xavier Edwards,hitter_hits,Under,0.5,175,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Xavier Edwards,hitter_total_bases,Over,1.5,138,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,DraftKings,Xavier Edwards,hitter_total_bases,Under,1.5,-184,Miami Marlins,Cleveland Guardians
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Yandy Diaz,hitter_hits,Over,0.5,-254,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Yandy Diaz,hitter_hits,Under,0.5,188,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Yandy Diaz,hitter_total_bases,Over,1.5,118,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,DraftKings,Yandy Diaz,hitter_total_bases,Under,1.5,-156,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,FanDuel,Eury Perez,pitcher_strikeouts,Over,6.5,-108,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,FanDuel,Eury Perez,pitcher_strikeouts,Under,6.5,-118,Miami Marlins,Cleveland Guardians
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,FanDuel,Griffin Jax,pitcher_strikeouts,Over,5.5,-128,Tampa Bay Rays,Seattle Mariners
@@ -981,10 +1095,10 @@ ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Anthony Seigler,h
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Anthony Seigler,hitter_total_bases,Under,0.5,135,New York Mets,Boston Red Sox
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Brayan Rocchio,hitter_hits,Over,0.5,-190,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Brayan Rocchio,hitter_hits,Under,0.5,145,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Cedric Mullins,hitter_hits,Over,0.5,-140,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Cedric Mullins,hitter_hits,Under,0.5,105,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Colt Emerson,hitter_total_bases,Over,0.5,-115,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Colt Emerson,hitter_total_bases,Under,0.5,-115,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Cedric Mullins,hitter_hits,Over,0.5,-145,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Cedric Mullins,hitter_hits,Under,0.5,110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Colt Emerson,hitter_total_bases,Over,0.5,-110,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Colt Emerson,hitter_total_bases,Under,0.5,-120,Tampa Bay Rays,Seattle Mariners
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Eury Perez,pitcher_outs,Over,16.5,-120,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Eury Perez,pitcher_outs,Under,16.5,-120,Miami Marlins,Cleveland Guardians
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Freddy Peralta,pitcher_outs,Over,17.5,-135,New York Mets,Boston Red Sox
@@ -993,68 +1107,68 @@ ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Freddy Peralta,pi
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Freddy Peralta,pitcher_strikeouts,Under,5.5,110,New York Mets,Boston Red Sox
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Gabriel Arias,hitter_total_bases,Over,0.5,-120,Miami Marlins,Cleveland Guardians
 b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Gabriel Arias,hitter_total_bases,Under,0.5,-110,Miami Marlins,Cleveland Guardians
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Griffin Jax,pitcher_strikeouts,Over,5.5,-125,Tampa Bay Rays,Seattle Mariners
-93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Griffin Jax,pitcher_strikeouts,Under,5.5,-105,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Griffin Jax,pitcher_strikeouts,Over,5.5,-140,Tampa Bay Rays,Seattle Mariners
+93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Griffin Jax,pitcher_strikeouts,Under,5.5,105,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Logan Gilbert,pitcher_outs,Over,17.5,-200,Tampa Bay Rays,Seattle Mariners
 93a5e6119186fda8b8ae5e4ec2abd550,2026-07-11T20:11:00Z,Fanatics,Logan Gilbert,pitcher_outs,Under,17.5,140,Tampa Bay Rays,Seattle Mariners
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Romy Gonzalez,hitter_hits,Over,0.5,-190,New York Mets,Boston Red Sox
 ff676cfabd491a806f9fad9a93924adb,2026-07-11T20:11:00Z,Fanatics,Romy Gonzalez,hitter_hits,Under,0.5,145,New York Mets,Boston Red Sox
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Tanner Bibee,pitcher_strikeouts,Over,4.5,-125,Miami Marlins,Cleveland Guardians
-b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Tanner Bibee,pitcher_strikeouts,Under,4.5,-105,Miami Marlins,Cleveland Guardians
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Alec Bohm,hitter_hits,Over,0.5,-222,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Alec Bohm,hitter_hits,Under,0.5,167,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Alec Bohm,hitter_total_bases,Over,1.5,158,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Alec Bohm,hitter_total_bases,Under,1.5,-208,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Ben Malgeri,hitter_hits,Over,0.5,-145,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Ben Malgeri,hitter_hits,Under,0.5,111,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Ben Malgeri,hitter_total_bases,Over,0.5,-143,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Ben Malgeri,hitter_total_bases,Under,0.5,110,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Brandon Marsh,hitter_hits,Over,0.5,-200,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Brandon Marsh,hitter_hits,Under,0.5,152,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Brandon Marsh,hitter_total_bases,Over,1.5,144,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Brandon Marsh,hitter_total_bases,Under,1.5,-189,Detroit Tigers,Philadelphia Phillies
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Tanner Bibee,pitcher_strikeouts,Over,4.5,-130,Miami Marlins,Cleveland Guardians
+b552ecd25e0e2e615532c65ff294144f,2026-07-11T20:11:00Z,Fanatics,Tanner Bibee,pitcher_strikeouts,Under,4.5,100,Miami Marlins,Cleveland Guardians
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Alec Bohm,hitter_hits,Over,0.5,-233,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Alec Bohm,hitter_hits,Under,0.5,173,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Alec Bohm,hitter_total_bases,Over,1.5,152,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Alec Bohm,hitter_total_bases,Under,1.5,-200,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Ben Malgeri,hitter_hits,Over,0.5,-152,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Ben Malgeri,hitter_hits,Under,0.5,116,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Ben Malgeri,hitter_total_bases,Over,0.5,-149,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Ben Malgeri,hitter_total_bases,Under,0.5,115,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Brandon Marsh,hitter_hits,Over,0.5,-204,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Brandon Marsh,hitter_hits,Under,0.5,154,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Brandon Marsh,hitter_total_bases,Over,1.5,146,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Brandon Marsh,hitter_total_bases,Under,1.5,-192,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Bryce Harper,hitter_hits,Over,0.5,-204,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Bryce Harper,hitter_hits,Under,0.5,155,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Bryce Harper,hitter_total_bases,Over,1.5,130,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Bryce Harper,hitter_total_bases,Under,1.5,-169,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Bryson Stott,hitter_hits,Over,0.5,-182,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Bryson Stott,hitter_hits,Under,0.5,139,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Bryson Stott,hitter_hits,Over,0.5,-185,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Bryson Stott,hitter_hits,Under,0.5,141,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Bryson Stott,hitter_total_bases,Over,1.5,155,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Bryson Stott,hitter_total_bases,Under,1.5,-204,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Casey Mize,pitcher_strikeouts,Over,5.5,-101,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Casey Mize,pitcher_strikeouts,Under,5.5,-128,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Cristopher Sanchez,pitcher_strikeouts,Over,6.5,-141,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Cristopher Sanchez,pitcher_strikeouts,Under,6.5,108,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Casey Mize,pitcher_strikeouts,Over,5.5,103,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Casey Mize,pitcher_strikeouts,Under,5.5,-133,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Cristopher Sanchez,pitcher_strikeouts,Over,6.5,-135,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Cristopher Sanchez,pitcher_strikeouts,Under,6.5,104,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Derek Hill,hitter_hits,Over,0.5,-114,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Derek Hill,hitter_hits,Under,0.5,-114,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Derek Hill,hitter_total_bases,Over,0.5,-102,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Derek Hill,hitter_total_bases,Under,0.5,-127,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Dillon Dingler,hitter_hits,Over,0.5,-196,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Dillon Dingler,hitter_hits,Under,0.5,149,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Dillon Dingler,hitter_total_bases,Over,1.5,146,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Dillon Dingler,hitter_total_bases,Under,1.5,-192,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_hits,Over,0.5,-152,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_hits,Under,0.5,116,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_total_bases,Over,0.5,-143,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_total_bases,Under,0.5,110,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Hao-Yu Lee,hitter_hits,Over,0.5,-164,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Hao-Yu Lee,hitter_hits,Under,0.5,126,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Hao-Yu Lee,hitter_total_bases,Over,0.5,-156,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Hao-Yu Lee,hitter_total_bases,Under,0.5,120,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,J.T. Realmuto,hitter_hits,Over,0.5,-172,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,J.T. Realmuto,hitter_hits,Under,0.5,132,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Dillon Dingler,hitter_hits,Under,0.5,150,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Dillon Dingler,hitter_total_bases,Over,0.5,-185,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Dillon Dingler,hitter_total_bases,Under,0.5,140,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_hits,Over,0.5,-149,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_hits,Under,0.5,115,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_total_bases,Over,0.5,-135,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Gabriel Rincones Jr.,hitter_total_bases,Under,0.5,105,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Hao-Yu Lee,hitter_hits,Over,0.5,-172,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Hao-Yu Lee,hitter_hits,Under,0.5,131,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Hao-Yu Lee,hitter_total_bases,Over,0.5,-164,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Hao-Yu Lee,hitter_total_bases,Under,0.5,125,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,J.T. Realmuto,hitter_hits,Over,0.5,-182,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,J.T. Realmuto,hitter_hits,Under,0.5,139,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,J.T. Realmuto,hitter_total_bases,Over,1.5,171,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,J.T. Realmuto,hitter_total_bases,Under,1.5,-227,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Jake Rogers,hitter_hits,Over,0.5,103,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Jake Rogers,hitter_hits,Under,0.5,-133,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Jake Rogers,hitter_hits,Over,0.5,106,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Jake Rogers,hitter_hits,Under,0.5,-137,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Jake Rogers,hitter_total_bases,Over,0.5,100,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Jake Rogers,hitter_total_bases,Under,0.5,-130,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kevin McGonigle,hitter_hits,Over,0.5,-227,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kevin McGonigle,hitter_hits,Under,0.5,172,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kevin McGonigle,hitter_total_bases,Over,1.5,149,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kevin McGonigle,hitter_total_bases,Under,1.5,-196,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kyle Schwarber,hitter_hits,Over,0.5,-164,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kyle Schwarber,hitter_hits,Under,0.5,126,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kevin McGonigle,hitter_hits,Over,0.5,-233,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kevin McGonigle,hitter_hits,Under,0.5,173,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kevin McGonigle,hitter_total_bases,Over,1.5,152,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kevin McGonigle,hitter_total_bases,Under,1.5,-200,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kyle Schwarber,hitter_hits,Over,0.5,-167,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kyle Schwarber,hitter_hits,Under,0.5,127,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kyle Schwarber,hitter_total_bases,Over,1.5,128,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Kyle Schwarber,hitter_total_bases,Under,1.5,-167,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Riley Greene,hitter_hits,Over,0.5,-159,Detroit Tigers,Philadelphia Phillies
@@ -1062,115 +1176,183 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Riley Greene,
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Riley Greene,hitter_total_bases,Over,0.5,-156,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Riley Greene,hitter_total_bases,Under,0.5,120,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Spencer Torkelson,hitter_hits,Over,0.5,-167,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Spencer Torkelson,hitter_hits,Under,0.5,127,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Spencer Torkelson,hitter_hits,Under,0.5,128,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Spencer Torkelson,hitter_total_bases,Over,1.5,171,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Spencer Torkelson,hitter_total_bases,Under,1.5,-227,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Trea Turner,hitter_hits,Over,1.5,195,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Trea Turner,hitter_hits,Under,1.5,-263,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Trea Turner,hitter_total_bases,Over,1.5,120,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Trea Turner,hitter_total_bases,Under,1.5,-156,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Zach McKinstry,hitter_hits,Over,0.5,-149,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Zach McKinstry,hitter_hits,Under,0.5,115,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Zach McKinstry,hitter_total_bases,Over,0.5,-135,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Zach McKinstry,hitter_total_bases,Under,0.5,105,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Trea Turner,hitter_total_bases,Over,1.5,117,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Trea Turner,hitter_total_bases,Under,1.5,-152,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Zach McKinstry,hitter_hits,Over,0.5,-154,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Zach McKinstry,hitter_hits,Under,0.5,119,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Zach McKinstry,hitter_total_bases,Over,0.5,-149,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,BetOnline.ag,Zach McKinstry,hitter_total_bases,Under,0.5,115,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Alec Bohm,hitter_total_bases,Over,1.5,145,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Alec Bohm,hitter_total_bases,Under,1.5,-190,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Bryce Harper,hitter_total_bases,Over,1.5,140,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Bryce Harper,hitter_total_bases,Under,1.5,-185,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Bryce Harper,hitter_total_bases,Over,1.5,135,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Bryce Harper,hitter_total_bases,Under,1.5,-180,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Casey Mize,pitcher_outs,Over,17.5,-115,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Casey Mize,pitcher_outs,Under,17.5,-125,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Casey Mize,pitcher_strikeouts,Over,5.5,110,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Casey Mize,pitcher_strikeouts,Under,5.5,-145,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Cristopher Sanchez,pitcher_outs,Over,18.5,130,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Cristopher Sanchez,pitcher_outs,Under,18.5,-170,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Cristopher Sanchez,pitcher_outs,Over,17.5,-180,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Cristopher Sanchez,pitcher_outs,Under,17.5,140,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Cristopher Sanchez,pitcher_strikeouts,Over,6.5,-145,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Cristopher Sanchez,pitcher_strikeouts,Under,6.5,110,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Kevin McGonigle,hitter_total_bases,Over,1.5,150,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Kevin McGonigle,hitter_total_bases,Under,1.5,-200,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Matt Vierling,hitter_total_bases,Over,1.5,145,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Matt Vierling,hitter_total_bases,Under,1.5,-190,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Matt Vierling,hitter_total_bases,Over,1.5,140,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Matt Vierling,hitter_total_bases,Under,1.5,-185,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Trea Turner,hitter_total_bases,Over,1.5,115,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Bovada,Trea Turner,hitter_total_bases,Under,1.5,-150,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Alec Bohm,hitter_total_bases,Over,1.5,144,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Alec Bohm,hitter_total_bases,Under,1.5,-197,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Bryce Harper,hitter_total_bases,Over,1.5,124,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Bryce Harper,hitter_total_bases,Over,1.5,126,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Bryce Harper,hitter_total_bases,Under,1.5,-170,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Casey Mize,pitcher_outs,Over,17.5,-107,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Casey Mize,pitcher_outs,Under,17.5,-125,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Cristopher Sanchez,pitcher_outs,Over,18.5,134,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Cristopher Sanchez,pitcher_outs,Under,18.5,-182,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Cristopher Sanchez,pitcher_outs,Over,17.5,-197,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Cristopher Sanchez,pitcher_outs,Under,17.5,146,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Kevin McGonigle,hitter_total_bases,Over,1.5,139,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Kevin McGonigle,hitter_total_bases,Under,1.5,-190,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Matt Vierling,hitter_total_bases,Over,1.5,133,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Matt Vierling,hitter_total_bases,Under,1.5,-179,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Matt Vierling,hitter_total_bases,Over,1.5,132,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Matt Vierling,hitter_total_bases,Under,1.5,-176,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Trea Turner,hitter_total_bases,Over,1.5,112,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Caesars,Trea Turner,hitter_total_bases,Under,1.5,-150,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Alec Bohm,hitter_hits,Over,0.5,-220,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Alec Bohm,hitter_hits,Under,0.5,163,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Alec Bohm,hitter_hits,Over,0.5,-229,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Alec Bohm,hitter_hits,Under,0.5,170,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Alec Bohm,hitter_total_bases,Over,1.5,146,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Alec Bohm,hitter_total_bases,Under,1.5,-196,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Ben Malgeri,hitter_hits,Over,0.5,-137,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Ben Malgeri,hitter_hits,Under,0.5,103,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Ben Malgeri,hitter_hits,Over,0.5,-135,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Ben Malgeri,hitter_hits,Under,0.5,102,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Brandon Marsh,hitter_hits,Over,0.5,-195,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Brandon Marsh,hitter_hits,Under,0.5,146,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Bryce Harper,hitter_hits,Over,0.5,-192,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Bryce Harper,hitter_hits,Under,0.5,143,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Bryce Harper,hitter_total_bases,Over,1.5,138,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Bryce Harper,hitter_total_bases,Under,1.5,-184,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Bryson Stott,hitter_hits,Over,0.5,-180,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Bryson Stott,hitter_hits,Under,0.5,135,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Casey Mize,pitcher_outs,Over,17.5,-112,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Bryce Harper,hitter_total_bases,Over,1.5,133,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Bryce Harper,hitter_total_bases,Under,1.5,-178,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Bryson Stott,hitter_hits,Over,0.5,-178,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Bryson Stott,hitter_hits,Under,0.5,134,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Casey Mize,pitcher_outs,Over,17.5,-113,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Casey Mize,pitcher_outs,Under,17.5,-118,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Casey Mize,pitcher_strikeouts,Over,5.5,-107,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Casey Mize,pitcher_strikeouts,Under,5.5,-119,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Cristopher Sanchez,pitcher_outs,Over,18.5,129,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Cristopher Sanchez,pitcher_outs,Under,18.5,-172,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Cristopher Sanchez,pitcher_strikeouts,Over,6.5,-149,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Cristopher Sanchez,pitcher_strikeouts,Under,6.5,117,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Derek Hill,hitter_hits,Over,0.5,-121,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Derek Hill,hitter_hits,Under,0.5,-109,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Dillon Dingler,hitter_hits,Over,0.5,-192,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Dillon Dingler,hitter_hits,Under,0.5,143,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Casey Mize,pitcher_strikeouts,Over,5.5,100,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Casey Mize,pitcher_strikeouts,Under,5.5,-128,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Cristopher Sanchez,pitcher_outs,Over,17.5,-181,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Cristopher Sanchez,pitcher_outs,Under,17.5,135,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Cristopher Sanchez,pitcher_strikeouts,Over,7.5,120,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Cristopher Sanchez,pitcher_strikeouts,Under,7.5,-154,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Derek Hill,hitter_hits,Over,0.5,-134,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Derek Hill,hitter_hits,Under,0.5,101,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Dillon Dingler,hitter_hits,Over,0.5,-193,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Dillon Dingler,hitter_hits,Under,0.5,144,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Gabriel Rincones Jr.,hitter_hits,Over,0.5,-133,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Gabriel Rincones Jr.,hitter_hits,Under,0.5,100,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Hao-Yu Lee,hitter_hits,Over,0.5,-149,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Hao-Yu Lee,hitter_hits,Under,0.5,112,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Hao-Yu Lee,hitter_hits,Over,0.5,-161,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Hao-Yu Lee,hitter_hits,Under,0.5,121,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,J.T. Realmuto,hitter_hits,Over,0.5,-177,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,J.T. Realmuto,hitter_hits,Under,0.5,133,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Jake Rogers,hitter_hits,Over,0.5,104,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Jake Rogers,hitter_hits,Under,0.5,-138,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kevin McGonigle,hitter_hits,Over,0.5,-229,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kevin McGonigle,hitter_hits,Under,0.5,170,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kevin McGonigle,hitter_total_bases,Over,1.5,147,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kevin McGonigle,hitter_total_bases,Under,1.5,-197,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kyle Schwarber,hitter_hits,Over,0.5,-158,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kyle Schwarber,hitter_hits,Under,0.5,118,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Matt Vierling,hitter_hits,Over,0.5,-210,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Matt Vierling,hitter_hits,Under,0.5,156,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Matt Vierling,hitter_total_bases,Over,1.5,143,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Matt Vierling,hitter_total_bases,Under,1.5,-192,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Riley Greene,hitter_hits,Over,0.5,-154,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Riley Greene,hitter_hits,Under,0.5,116,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Spencer Torkelson,hitter_hits,Over,0.5,-168,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Spencer Torkelson,hitter_hits,Under,0.5,126,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Trea Turner,hitter_hits,Over,1.5,195,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Trea Turner,hitter_hits,Under,1.5,-265,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Jake Rogers,hitter_hits,Over,0.5,110,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Jake Rogers,hitter_hits,Under,0.5,-146,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kevin McGonigle,hitter_hits,Over,0.5,-232,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kevin McGonigle,hitter_hits,Under,0.5,172,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kevin McGonigle,hitter_total_bases,Over,1.5,149,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kevin McGonigle,hitter_total_bases,Under,1.5,-199,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kyle Schwarber,hitter_hits,Over,0.5,-163,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Kyle Schwarber,hitter_hits,Under,0.5,123,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Matt Vierling,hitter_hits,Over,0.5,-217,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Matt Vierling,hitter_hits,Under,0.5,161,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Matt Vierling,hitter_total_bases,Over,1.5,138,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Matt Vierling,hitter_total_bases,Under,1.5,-185,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Riley Greene,hitter_hits,Over,0.5,-155,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Riley Greene,hitter_hits,Under,0.5,117,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Spencer Torkelson,hitter_hits,Over,0.5,-166,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Spencer Torkelson,hitter_hits,Under,0.5,124,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Trea Turner,hitter_hits,Over,1.5,194,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Trea Turner,hitter_hits,Under,1.5,-263,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Trea Turner,hitter_total_bases,Over,1.5,113,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Trea Turner,hitter_total_bases,Under,1.5,-151,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Zach McKinstry,hitter_hits,Over,0.5,-152,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Zach McKinstry,hitter_hits,Under,0.5,114,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Zach McKinstry,hitter_hits,Over,0.5,-154,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,DraftKings,Zach McKinstry,hitter_hits,Under,0.5,116,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,FanDuel,Casey Mize,pitcher_strikeouts,Over,5.5,108,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,FanDuel,Casey Mize,pitcher_strikeouts,Under,5.5,-138,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,FanDuel,Cristopher Sanchez,pitcher_strikeouts,Over,6.5,-138,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,FanDuel,Cristopher Sanchez,pitcher_strikeouts,Under,6.5,108,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Bryce Harper,hitter_total_bases,Over,1.5,120,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Bryce Harper,hitter_total_bases,Under,1.5,-160,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Bryce Harper,hitter_total_bases,Over,1.5,135,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Bryce Harper,hitter_total_bases,Under,1.5,-180,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Casey Mize,pitcher_outs,Over,17.5,-105,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Casey Mize,pitcher_outs,Under,17.5,-135,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Cristopher Sanchez,pitcher_strikeouts,Over,6.5,-150,Detroit Tigers,Philadelphia Phillies
-ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Cristopher Sanchez,pitcher_strikeouts,Under,6.5,115,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Cristopher Sanchez,pitcher_strikeouts,Over,6.5,-140,Detroit Tigers,Philadelphia Phillies
+ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Cristopher Sanchez,pitcher_strikeouts,Under,6.5,105,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones Jr.,hitter_hits,Over,0.5,-145,Detroit Tigers,Philadelphia Phillies
 ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones Jr.,hitter_hits,Under,0.5,110,Detroit Tigers,Philadelphia Phillies
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Alejandro Osuna,hitter_hits,Over,0.5,-135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Alejandro Osuna,hitter_hits,Under,0.5,100,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Alejandro Osuna,hitter_total_bases,Over,0.5,-135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Alejandro Osuna,hitter_total_bases,Under,0.5,100,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Brandon Nimmo,hitter_hits,Over,0.5,-190,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Brandon Nimmo,hitter_hits,Under,0.5,140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Brandon Nimmo,hitter_total_bases,Over,0.5,-190,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Brandon Nimmo,hitter_total_bases,Under,0.5,140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Cam Smith,hitter_hits,Over,0.5,-165,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Cam Smith,hitter_hits,Under,0.5,125,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Cam Smith,hitter_total_bases,Over,0.5,-165,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Cam Smith,hitter_total_bases,Under,0.5,125,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Christian Walker,hitter_hits,Over,0.5,-190,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Christian Walker,hitter_hits,Under,0.5,140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Christian Walker,hitter_total_bases,Over,1.5,140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Christian Walker,hitter_total_bases,Under,1.5,-190,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_hits,Over,0.5,-135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_hits,Under,0.5,100,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_total_bases,Over,0.5,-135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Elias Diaz,hitter_total_bases,Under,0.5,100,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_hits,Over,0.5,-125,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_hits,Under,0.5,-105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_total_bases,Over,0.5,-125,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Evan Carter,hitter_total_bases,Under,0.5,-105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_hits,Over,0.5,-190,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_hits,Under,0.5,140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_total_bases,Over,0.5,-190,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Ezequiel Duran,hitter_total_bases,Under,0.5,140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Isaac Paredes,hitter_hits,Over,0.5,-200,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Isaac Paredes,hitter_hits,Under,0.5,150,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Isaac Paredes,hitter_total_bases,Over,1.5,135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Isaac Paredes,hitter_total_bases,Under,1.5,-185,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jake Burger,hitter_hits,Over,0.5,-190,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jake Burger,hitter_hits,Under,0.5,140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jake Burger,hitter_total_bases,Over,1.5,135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jake Burger,hitter_total_bases,Under,1.5,-185,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jeremy Pena,hitter_hits,Over,1.5,180,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jeremy Pena,hitter_hits,Under,1.5,-250,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jeremy Pena,hitter_total_bases,Over,1.5,115,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jeremy Pena,hitter_total_bases,Under,1.5,-155,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_hits,Over,0.5,-165,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_hits,Under,0.5,125,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_total_bases,Over,0.5,-165,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Joc Pederson,hitter_total_bases,Under,0.5,125,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_hits,Over,0.5,-190,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_hits,Under,0.5,140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_total_bases,Over,0.5,-190,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Jose Altuve,hitter_total_bases,Under,0.5,140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Kumar Rocker,pitcher_strikeouts,Over,4.5,-120,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Kumar Rocker,pitcher_strikeouts,Under,4.5,-110,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_hits,Over,0.5,-135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_hits,Under,0.5,100,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_total_bases,Over,0.5,-135,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,LaMonte Wade Jr.,hitter_total_bases,Under,0.5,100,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Peter Lambert,pitcher_strikeouts,Over,4.5,-140,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Peter Lambert,pitcher_strikeouts,Under,4.5,105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Taylor Trammell,hitter_hits,Over,0.5,-105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Taylor Trammell,hitter_hits,Under,0.5,-125,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Taylor Trammell,hitter_total_bases,Over,0.5,-105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Taylor Trammell,hitter_total_bases,Under,0.5,-125,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Wyatt Langford,hitter_total_bases,Over,1.5,115,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Wyatt Langford,hitter_total_bases,Under,1.5,-155,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yainer Diaz,hitter_total_bases,Over,0.5,-200,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yainer Diaz,hitter_total_bases,Under,0.5,145,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_hits,Over,1.5,185,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_hits,Under,1.5,-250,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_total_bases,Over,1.5,-105,Texas Rangers,Houston Astros
+3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetMGM,Yordan Alvarez,hitter_total_bases,Under,1.5,-130,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Adley Rutschman,hitter_hits,Over,1.5,171,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Adley Rutschman,hitter_hits,Under,1.5,-227,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Adley Rutschman,hitter_total_bases,Over,1.5,104,Baltimore Orioles,Kansas City Royals
@@ -1179,10 +1361,10 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Blaze Alexander,hitter_hits,Under,0.5,166,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Blaze Alexander,hitter_total_bases,Over,1.5,141,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Blaze Alexander,hitter_total_bases,Under,1.5,-185,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Bobby Witt Jr.,hitter_hits,Over,1.5,186,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Bobby Witt Jr.,hitter_hits,Under,1.5,-250,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Bobby Witt Jr.,hitter_total_bases,Over,1.5,104,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Bobby Witt Jr.,hitter_total_bases,Under,1.5,-135,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Bobby Witt Jr.,hitter_hits,Over,1.5,182,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Bobby Witt Jr.,hitter_hits,Under,1.5,-244,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Bobby Witt Jr.,hitter_total_bases,Over,1.5,103,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Bobby Witt Jr.,hitter_total_bases,Under,1.5,-133,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Brandon Nimmo,hitter_total_bases,Over,1.5,118,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Brandon Nimmo,hitter_total_bases,Under,1.5,-154,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Cam Smith,hitter_hits,Over,0.5,-159,Texas Rangers,Houston Astros
@@ -1213,14 +1395,14 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Gunnar Henderson,hitter_hits,Under,1.5,-250,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Gunnar Henderson,hitter_total_bases,Over,1.5,113,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Gunnar Henderson,hitter_total_bases,Under,1.5,-147,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Collins,hitter_hits,Over,0.5,-143,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Collins,hitter_hits,Under,0.5,110,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Collins,hitter_hits,Over,0.5,-141,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Collins,hitter_hits,Under,0.5,109,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Collins,hitter_total_bases,Over,0.5,-143,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Collins,hitter_total_bases,Under,0.5,110,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Paredes,hitter_hits,Over,0.5,-179,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Isaac Paredes,hitter_hits,Under,0.5,136,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Jac Caglianone,hitter_hits,Over,0.5,-217,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Jac Caglianone,hitter_hits,Under,0.5,165,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Jac Caglianone,hitter_hits,Under,0.5,163,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Jac Caglianone,hitter_total_bases,Over,1.5,130,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Jac Caglianone,hitter_total_bases,Under,1.5,-169,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Jake Burger,hitter_hits,Over,0.5,-185,Texas Rangers,Houston Astros
@@ -1250,7 +1432,7 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Leody Taveras,hitter_total_bases,Over,0.5,-164,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Leody Taveras,hitter_total_bases,Under,0.5,125,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Michael Massey,hitter_hits,Over,0.5,-185,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Michael Massey,hitter_hits,Under,0.5,141,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Michael Massey,hitter_hits,Under,0.5,142,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Michael Massey,hitter_total_bases,Over,1.5,167,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Michael Massey,hitter_total_bases,Under,1.5,-222,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Nick Loftin,hitter_hits,Over,0.5,-149,Baltimore Orioles,Kansas City Royals
@@ -1265,14 +1447,14 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Noah Cameron,pitcher_strikeouts,Under,5.5,-147,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Pete Alonso,hitter_hits,Over,0.5,-233,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Pete Alonso,hitter_hits,Under,0.5,175,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Pete Alonso,hitter_total_bases,Over,1.5,122,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Pete Alonso,hitter_total_bases,Under,1.5,-159,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Pete Alonso,hitter_total_bases,Over,1.5,124,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Pete Alonso,hitter_total_bases,Under,1.5,-161,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Peter Lambert,pitcher_strikeouts,Over,4.5,-120,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Peter Lambert,pitcher_strikeouts,Under,4.5,-108,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Salvador Perez,hitter_hits,Over,0.5,-196,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Salvador Perez,hitter_hits,Under,0.5,148,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Salvador Perez,hitter_total_bases,Over,1.5,155,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Salvador Perez,hitter_total_bases,Under,1.5,-204,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Salvador Perez,hitter_total_bases,Over,1.5,152,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Salvador Perez,hitter_total_bases,Under,1.5,-200,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Samuel Basallo,hitter_hits,Over,0.5,-204,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Samuel Basallo,hitter_hits,Under,0.5,155,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,BetOnline.ag,Samuel Basallo,hitter_total_bases,Over,1.5,152,Baltimore Orioles,Kansas City Royals
@@ -1301,10 +1483,10 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,BetOnline.ag,Yordan Alvarez,hitter_total_bases,Under,1.5,-120,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Adley Rutschman,hitter_total_bases,Over,1.5,105,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Adley Rutschman,hitter_total_bases,Under,1.5,-135,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Blaze Alexander,hitter_total_bases,Over,1.5,135,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Blaze Alexander,hitter_total_bases,Under,1.5,-180,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Bobby Witt Jr.,hitter_total_bases,Over,1.5,110,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Bobby Witt Jr.,hitter_total_bases,Under,1.5,-145,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Blaze Alexander,hitter_total_bases,Over,1.5,140,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Blaze Alexander,hitter_total_bases,Under,1.5,-185,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Bobby Witt Jr.,hitter_total_bases,Over,1.5,105,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Bobby Witt Jr.,hitter_total_bases,Under,1.5,-135,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Bovada,Brandon Nimmo,hitter_total_bases,Over,1.5,130,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Bovada,Brandon Nimmo,hitter_total_bases,Under,1.5,-170,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Gunnar Henderson,hitter_total_bases,Over,1.5,110,Baltimore Orioles,Kansas City Royals
@@ -1335,8 +1517,8 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Bovada,Peter Lambert,pitcher_strikeouts,Under,4.5,-110,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Samuel Basallo,hitter_total_bases,Over,1.5,150,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Samuel Basallo,hitter_total_bases,Under,1.5,-200,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Taylor Ward,hitter_total_bases,Over,1.5,120,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Taylor Ward,hitter_total_bases,Under,1.5,-160,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Taylor Ward,hitter_total_bases,Over,1.5,115,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,Bovada,Taylor Ward,hitter_total_bases,Under,1.5,-150,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Bovada,Wyatt Langford,hitter_total_bases,Over,1.5,115,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Bovada,Wyatt Langford,hitter_total_bases,Under,1.5,-150,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,Bovada,Yordan Alvarez,hitter_total_bases,Over,1.5,-110,Texas Rangers,Houston Astros
@@ -1379,12 +1561,12 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Adley Rutschman,hitter_total_bases,Under,1.5,-136,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Blaze Alexander,hitter_hits,Over,0.5,-226,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Blaze Alexander,hitter_hits,Under,0.5,168,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Blaze Alexander,hitter_total_bases,Over,1.5,135,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Blaze Alexander,hitter_total_bases,Under,1.5,-181,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Bobby Witt Jr.,hitter_hits,Over,1.5,199,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Bobby Witt Jr.,hitter_hits,Under,1.5,-270,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Bobby Witt Jr.,hitter_total_bases,Over,1.5,109,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Bobby Witt Jr.,hitter_total_bases,Under,1.5,-144,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Blaze Alexander,hitter_total_bases,Over,1.5,140,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Blaze Alexander,hitter_total_bases,Under,1.5,-187,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Bobby Witt Jr.,hitter_hits,Over,1.5,192,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Bobby Witt Jr.,hitter_hits,Under,1.5,-261,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Bobby Witt Jr.,hitter_total_bases,Over,1.5,105,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Bobby Witt Jr.,hitter_total_bases,Under,1.5,-139,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,DraftKings,Brandon Nimmo,hitter_hits,Over,0.5,-213,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,DraftKings,Brandon Nimmo,hitter_hits,Under,0.5,158,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,DraftKings,Brandon Nimmo,hitter_total_bases,Over,1.5,130,Texas Rangers,Houston Astros
@@ -1407,8 +1589,8 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Gunnar Henderson,hitter_hits,Under,1.5,-254,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Gunnar Henderson,hitter_total_bases,Over,1.5,107,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Gunnar Henderson,hitter_total_bases,Under,1.5,-142,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Isaac Collins,hitter_hits,Over,0.5,-139,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Isaac Collins,hitter_hits,Under,0.5,105,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Isaac Collins,hitter_hits,Over,0.5,-135,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Isaac Collins,hitter_hits,Under,0.5,102,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,DraftKings,Isaac Paredes,hitter_hits,Over,0.5,-176,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,DraftKings,Isaac Paredes,hitter_hits,Under,0.5,132,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Jac Caglianone,hitter_hits,Over,0.5,-207,Baltimore Orioles,Kansas City Royals
@@ -1443,8 +1625,8 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Lane Thomas,hitter_hits,Under,0.5,125,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Leody Taveras,hitter_hits,Over,0.5,-170,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Leody Taveras,hitter_hits,Under,0.5,128,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Michael Massey,hitter_hits,Over,0.5,-182,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Michael Massey,hitter_hits,Under,0.5,136,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Michael Massey,hitter_hits,Over,0.5,-176,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Michael Massey,hitter_hits,Under,0.5,132,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Nick Loftin,hitter_hits,Over,0.5,-145,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Nick Loftin,hitter_hits,Under,0.5,109,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,DraftKings,Nicky Lopez,hitter_hits,Over,0.5,-139,Texas Rangers,Houston Astros
@@ -1455,8 +1637,8 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Noah Cameron,pitcher_strikeouts,Under,5.5,-149,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Pete Alonso,hitter_hits,Over,0.5,-227,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Pete Alonso,hitter_hits,Under,0.5,169,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Pete Alonso,hitter_total_bases,Over,1.5,117,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Pete Alonso,hitter_total_bases,Under,1.5,-155,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Pete Alonso,hitter_total_bases,Over,1.5,122,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Pete Alonso,hitter_total_bases,Under,1.5,-162,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,DraftKings,Peter Lambert,pitcher_outs,Over,17.5,102,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,DraftKings,Peter Lambert,pitcher_outs,Under,17.5,-135,Texas Rangers,Houston Astros
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,DraftKings,Peter Lambert,pitcher_strikeouts,Over,4.5,-112,Texas Rangers,Houston Astros
@@ -1471,10 +1653,10 @@ ba8bc57255560c92ff44bf4ac63a4fd9,2026-07-11T22:11:00Z,Fanatics,Gabriel Rincones 
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,DraftKings,Taylor Trammell,hitter_hits,Under,0.5,-127,Texas Rangers,Houston Astros
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Taylor Ward,hitter_hits,Over,0.5,-267,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Taylor Ward,hitter_hits,Under,0.5,196,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Taylor Ward,hitter_total_bases,Over,1.5,119,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Taylor Ward,hitter_total_bases,Under,1.5,-158,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Tyler O'Neill,hitter_hits,Over,0.5,-166,Baltimore Orioles,Kansas City Royals
-09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Tyler O'Neill,hitter_hits,Under,0.5,125,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Taylor Ward,hitter_total_bases,Over,1.5,114,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Taylor Ward,hitter_total_bases,Under,1.5,-152,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Tyler O'Neill,hitter_hits,Over,0.5,-160,Baltimore Orioles,Kansas City Royals
+09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Tyler O'Neill,hitter_hits,Under,0.5,120,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Vinnie Pasquantino,hitter_hits,Over,0.5,-191,Baltimore Orioles,Kansas City Royals
 09d58ac97a07ac9cc6bc658cf72f08a3,2026-07-11T23:06:00Z,DraftKings,Vinnie Pasquantino,hitter_hits,Under,0.5,143,Baltimore Orioles,Kansas City Royals
 3e2ce9905fcaa6c74169c61fcb777080,2026-07-11T23:06:00Z,DraftKings,Wyatt Langford,hitter_hits,Over,0.5,-218,Texas Rangers,Houston Astros
@@ -1889,8 +2071,8 @@ db5e5f99da28e0ea52c06c7694fb5ad1,2026-07-12T00:41:00Z,BetOnline.ag,Jonatan Clase
 db5e5f99da28e0ea52c06c7694fb5ad1,2026-07-12T00:41:00Z,BetOnline.ag,Jonatan Clase,hitter_total_bases,Under,0.5,-110,San Diego Padres,Toronto Blue Jays
 db5e5f99da28e0ea52c06c7694fb5ad1,2026-07-12T00:41:00Z,BetOnline.ag,Kazuma Okamoto,hitter_hits,Over,0.5,-167,San Diego Padres,Toronto Blue Jays
 db5e5f99da28e0ea52c06c7694fb5ad1,2026-07-12T00:41:00Z,BetOnline.ag,Kazuma Okamoto,hitter_hits,Under,0.5,128,San Diego Padres,Toronto Blue Jays
-db5e5f99da28e0ea52c06c7694fb5ad1,2026-07-12T00:41:00Z,BetOnline.ag,Kazuma Okamoto,hitter_total_bases,Over,1.5,164,San Diego Padres,Toronto Blue Jays
-db5e5f99da28e0ea52c06c7694fb5ad1,2026-07-12T00:41:00Z,BetOnline.ag,Kazuma Okamoto,hitter_total_bases,Under,1.5,-217,San Diego Padres,Toronto Blue Jays
+db5e5f99da28e0ea52c06c7694fb5ad1,2026-07-12T00:41:00Z,BetOnline.ag,Kazuma Okamoto,hitter_total_bases,Over,1.5,161,San Diego Padres,Toronto Blue Jays
+db5e5f99da28e0ea52c06c7694fb5ad1,2026-07-12T00:41:00Z,BetOnline.ag,Kazuma Okamoto,hitter_total_bases,Under,1.5,-213,San Diego Padres,Toronto Blue Jays
 db5e5f99da28e0ea52c06c7694fb5ad1,2026-07-12T00:41:00Z,BetOnline.ag,Luis Campusano,hitter_hits,Over,0.5,-145,San Diego Padres,Toronto Blue Jays
 db5e5f99da28e0ea52c06c7694fb5ad1,2026-07-12T00:41:00Z,BetOnline.ag,Luis Campusano,hitter_hits,Under,0.5,112,San Diego Padres,Toronto Blue Jays
 db5e5f99da28e0ea52c06c7694fb5ad1,2026-07-12T00:41:00Z,BetOnline.ag,Luis Campusano,hitter_total_bases,Over,0.5,-143,San Diego Padres,Toronto Blue Jays

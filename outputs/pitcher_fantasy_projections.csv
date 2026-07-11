@@ -1,31 +1,30 @@
-pitcher_name,team,games_started,strikeouts,season_k_per_start,avg_k,projected_ks,projected_ip,projected_er,projected_hits_allowed,projected_walks,projected_win,draftkings_pitcher_points,fanduel_pitcher_points
-Kyle Hurt,Los Angeles Dodgers,1,38,38.0,1.2,12.24,5.5,2.5,5.0,2.0,0.35,29.055000000000003,47.82
-Hunter Greene,Cincinnati Reds,2,19,9.5,9.5,9.5,5.5,2.5,5.0,2.0,0.35,23.575,39.6
-Nolan McLean,New York Mets,19,125,6.578947368421052,7.6,7.293684210526315,5.5,2.5,5.0,2.0,0.35,19.16236842105263,32.98105263157895
-Ryan Weathers,New York Yankees,18,110,6.111111111111111,7.2,6.873333333333333,5.5,2.5,5.0,2.0,0.35,18.321666666666665,31.72
-Braxton Ashcraft,Pittsburgh Pirates,18,122,6.777777777777778,6.4,6.513333333333333,5.5,2.5,5.0,2.0,0.35,17.601666666666663,30.64
-Hunter Brown,Houston Astros,7,39,5.571428571428571,6.4,6.151428571428571,5.5,2.5,5.0,2.0,0.35,16.877857142857142,29.55428571428572
-Shota Imanaga,Chicago Cubs,19,105,5.526315789473684,6.4,6.137894736842105,5.5,2.5,5.0,2.0,0.35,16.85078947368421,29.513684210526314
-Chris Sale,Atlanta Braves,17,117,6.882352941176471,5.8,6.124705882352941,5.5,2.5,5.0,2.0,0.35,16.824411764705882,29.474117647058826
-Robbie Ray,San Francisco Giants,18,90,5.0,6.2,5.84,5.5,2.5,5.0,2.0,0.35,16.255,28.619999999999997
-Parker Messick,Cleveland Guardians,19,110,5.789473684210527,5.8,5.796842105263158,5.5,2.5,5.0,2.0,0.35,16.168684210526315,28.490526315789474
-Aaron Nola,Philadelphia Phillies,19,102,5.368421052631579,5.8,5.670526315789473,5.5,2.5,5.0,2.0,0.35,15.916052631578948,28.11157894736842
-Tanner Gordon,Colorado Rockies,5,47,9.4,4.0,5.619999999999999,5.5,2.5,5.0,2.0,0.35,15.815,27.96
-Zebby Matthews,Minnesota Twins,11,54,4.909090909090909,5.2,5.112727272727272,5.5,2.5,5.0,2.0,0.35,14.800454545454548,26.438181818181818
-Sean Burke,Chicago White Sox,15,115,7.666666666666667,4.0,5.1,5.5,2.5,5.0,2.0,0.35,14.775,26.4
-Jack Flaherty,Detroit Tigers,18,98,5.444444444444445,4.8,4.993333333333333,5.5,2.5,5.0,2.0,0.35,14.561666666666666,26.08
-Luis Castillo,Seattle Mariners,15,81,5.4,4.6,4.84,5.5,2.5,5.0,2.0,0.35,14.255,25.619999999999997
-Sandy Alcantara,Miami Marlins,20,100,5.0,4.6,4.72,5.5,2.5,5.0,2.0,0.35,14.014999999999999,25.259999999999998
-Brandon Sproat,Milwaukee Brewers,15,84,5.6,4.0,4.48,5.5,2.5,5.0,2.0,0.35,13.535000000000002,24.54
-JP Sears,San Diego Padres,4,17,4.25,4.25,4.25,5.5,2.5,5.0,2.0,0.35,13.075000000000001,23.85
-Grayson Rodriguez,Los Angeles Angels,7,24,3.4285714285714284,4.6,4.248571428571428,5.5,2.5,5.0,2.0,0.35,13.072142857142856,23.845714285714287
-Brandon Young,Baltimore Orioles,15,67,4.466666666666667,3.8,4.0,5.5,2.5,5.0,2.0,0.35,12.575000000000001,23.1
-Nick Martinez,Tampa Bay Rays,18,62,3.4444444444444446,4.0,3.833333333333333,5.5,2.5,5.0,2.0,0.35,12.241666666666665,22.6
-Eduardo Rodriguez,Arizona Diamondbacks,19,79,4.157894736842105,3.6,3.7673684210526313,5.5,2.5,5.0,2.0,0.35,12.109736842105262,22.402105263157893
-Cal Quantrill,Texas Rangers,4,28,7.0,2.2,3.64,5.5,2.5,5.0,2.0,0.35,11.855000000000002,22.020000000000003
-Jacob Lopez,Athletics,11,43,3.909090909090909,3.4,3.5527272727272727,5.5,2.5,5.0,2.0,0.35,11.680454545454547,21.758181818181818
-Kyle Leahy,St. Louis Cardinals,18,75,4.166666666666667,3.0,3.35,5.5,2.5,5.0,2.0,0.35,11.275,21.15
-Sonny Gray,Boston Red Sox,17,85,5.0,2.6,3.32,5.5,2.5,5.0,2.0,0.35,11.215000000000002,21.060000000000002
-Shane Bieber,Toronto Blue Jays,4,13,3.25,3.25,3.25,5.5,2.5,5.0,2.0,0.35,11.075000000000001,20.85
-Luinder Avila,Kansas City Royals,9,50,5.555555555555555,2.2,3.2066666666666666,5.5,2.5,5.0,2.0,0.35,10.988333333333335,20.72
-Carson Palmquist,Washington Nationals,3,11,3.6666666666666665,2.2,2.64,5.5,2.5,5.0,2.0,0.35,9.855000000000002,19.020000000000003
+date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,avg_k,projected_ks,projection_confidence,projected_ip,projected_er,projected_hits_allowed,projected_walks,projected_win,draftkings_pitcher_points,fanduel_pitcher_points
+2026-07-11,823356,Shane Drohan,Milwaukee Brewers,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823356,Bubba Chandler,Pittsburgh Pirates,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823682,Ryan Johnson,Los Angeles Angels,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823682,Joe Ryan,Minnesota Twins,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,824576,Gage Jump,Athletics,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,824576,Bryan Hudson,Chicago White Sox,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823198,Kyle Freeland,Colorado Rockies,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823198,Tyler Mahle,San Francisco Giants,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,822711,Cam Schlittler,New York Yankees,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,822711,Miles Mikolas,Washington Nationals,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823603,Freddy Peralta,New York Mets,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,822953,Logan Gilbert,Seattle Mariners,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,822953,Griffin Jax,Tampa Bay Rays,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823844,Tanner Bibee,Cleveland Guardians,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823844,Eury Pérez,Miami Marlins,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,824249,Cristopher Sánchez,Philadelphia Phillies,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,824249,Casey Mize,Detroit Tigers,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,824813,Noah Cameron,Kansas City Royals,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,824813,Kyle Bradish,Baltimore Orioles,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,822875,Peter Lambert,Houston Astros,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,822875,Kumar Rocker,Texas Rangers,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,824492,Javier Assad,Chicago Cubs,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,824492,Nick Lodolo,Cincinnati Reds,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823030,Reynaldo López,Atlanta Braves,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823030,Matthew Liberatore,St. Louis Cardinals,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823276,Trey Yesavage,Toronto Blue Jays,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823276,Walker Buehler,San Diego Padres,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823926,Brandon Pfaadt,Arizona Diamondbacks,away,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
+2026-07-11,823926,Yoshinobu Yamamoto,Los Angeles Dodgers,home,,,,,4.917,LOW,5.5,2.5,5.0,2.0,0.35,14.409,25.851
