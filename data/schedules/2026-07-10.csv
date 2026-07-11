@@ -1,6 +1,6 @@
 date,game_id,away_team,home_team,away_pitcher,home_pitcher,status
 2026-07-10,824252,Philadelphia Phillies,Detroit Tigers,Aaron Nola,Jack Flaherty,Final
-2026-07-10,822709,New York Yankees,Washington Nationals,Ryan Weathers,Carson Palmquist,In Progress
+2026-07-10,822709,New York Yankees,Washington Nationals,Ryan Weathers,Carson Palmquist,Final
 2026-07-10,824817,Kansas City Royals,Baltimore Orioles,Luinder Avila,Brandon Young,Final
 2026-07-10,824493,Chicago Cubs,Cincinnati Reds,Shota Imanaga,Hunter Greene,Final
 2026-07-10,822955,Seattle Mariners,Tampa Bay Rays,Luis Castillo,Nick Martinez,Final
@@ -9,7 +9,7 @@ date,game_id,away_team,home_team,away_pitcher,home_pitcher,status
 2026-07-10,824575,Athletics,Chicago White Sox,Jacob Lopez,Sean Burke,Final
 2026-07-10,822878,Houston Astros,Texas Rangers,Hunter Brown,Cal Quantrill,Final
 2026-07-10,823685,Los Angeles Angels,Minnesota Twins,Grayson Rodriguez,Zebby Matthews,Final
-2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,Chris Sale,Kyle Leahy,Delayed
+2026-07-10,823033,Atlanta Braves,St. Louis Cardinals,Chris Sale,Kyle Leahy,In Progress
 2026-07-10,823278,Toronto Blue Jays,San Diego Padres,Shane Bieber,JP Sears,In Progress
 2026-07-10,823927,Arizona Diamondbacks,Los Angeles Dodgers,Eduardo Rodriguez,Kyle Hurt,In Progress
 2026-07-10,823200,Colorado Rockies,San Francisco Giants,Tanner Gordon,Robbie Ray,In Progress
