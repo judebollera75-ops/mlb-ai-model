@@ -233,6 +233,15 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-11,824492,Cincinnati Reds,Chicago Cubs,home,624431,Jose Trevino,7,C,Pre-Game
 2026-07-11,824492,Cincinnati Reds,Chicago Cubs,home,695490,Edwin Arroyo,8,2B,Pre-Game
 2026-07-11,824492,Cincinnati Reds,Chicago Cubs,home,670770,TJ Friedl,9,CF,Pre-Game
+2026-07-11,823030,Atlanta Braves,St. Louis Cardinals,away,671739,Michael Harris II,1,CF,Pre-Game
+2026-07-11,823030,Atlanta Braves,St. Louis Cardinals,away,645277,Ozzie Albies,2,2B,Pre-Game
+2026-07-11,823030,Atlanta Braves,St. Louis Cardinals,away,621566,Matt Olson,3,1B,Pre-Game
+2026-07-11,823030,Atlanta Braves,St. Louis Cardinals,away,686948,Drake Baldwin,4,DH,Pre-Game
+2026-07-11,823030,Atlanta Braves,St. Louis Cardinals,away,643289,Mauricio Dubón,5,LF,Pre-Game
+2026-07-11,823030,Atlanta Braves,St. Louis Cardinals,away,663586,Austin Riley,6,3B,Pre-Game
+2026-07-11,823030,Atlanta Braves,St. Louis Cardinals,away,642201,Eli White,7,RF,Pre-Game
+2026-07-11,823030,Atlanta Braves,St. Louis Cardinals,away,663698,Joey Bart,8,C,Pre-Game
+2026-07-11,823030,Atlanta Braves,St. Louis Cardinals,away,622761,Jorge Mateo,9,SS,Pre-Game
 2026-07-11,823030,St. Louis Cardinals,Atlanta Braves,home,802139,JJ Wetherholt,1,2B,Pre-Game
 2026-07-11,823030,St. Louis Cardinals,Atlanta Braves,home,671056,Iván Herrera,2,C,Pre-Game
 2026-07-11,823030,St. Louis Cardinals,Atlanta Braves,home,676475,Alec Burleson,3,1B,Pre-Game
