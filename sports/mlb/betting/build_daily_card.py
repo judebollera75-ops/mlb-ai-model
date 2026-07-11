@@ -11,14 +11,15 @@ LINES_PATH = Path("data/platform_lines.csv")
 OUTPUT_PATH = Path("outputs/mlb_daily_card.csv")
 AUDIT_PATH = Path("outputs/mlb_daily_card_audit.csv")
 
-# Only grades that should appear as recommendations in the app.
 ACTIONABLE_GRADES = ["A+", "A", "B"]
 
-# Keep one recommendation per player.
-ONE_PROP_PER_PLAYER = True
-
-# Prevent the board from becoming excessively large.
-MAX_CARD_ROWS = 50
+MARKET_LIMITS = {
+    "hitter_hits": 15,
+    "hitter_total_bases": 15,
+    "pitcher_strikeouts": 10,
+    "pitcher_outs": 10,
+    "pitcher_fantasy_score": 5,
+}
 
 MARKET_THRESHOLDS = {
     "hitter_hits": {
@@ -48,9 +49,8 @@ MARKET_THRESHOLDS = {
     },
 }
 
-# Remove obviously abnormal or misleading alternate lines.
 VALID_LINE_RANGES = {
-    "hitter_hits": (0.5, 2.5),
+    "hitter_hits": (0.5, 1.5),
     "hitter_total_bases": (0.5, 3.5),
     "pitcher_strikeouts": (1.5, 12.5),
     "pitcher_outs": (11.5, 21.5),
@@ -68,7 +68,6 @@ GRADE_RANK = {
 
 
 def normalize_text(value):
-    """Normalize names and team names for reliable matching."""
     if pd.isna(value):
         return ""
 
@@ -116,7 +115,6 @@ def grade_edge(market, edge):
 
 
 def normalize_direction(value):
-    """Convert sportsbook side labels into the app's pick labels."""
     normalized = normalize_text(value)
 
     if normalized in {
@@ -154,47 +152,33 @@ def line_is_valid(row):
 
 
 def matchup_matches(row):
-    """
-    Verify that the projection matchup matches the sportsbook event.
-
-    This prevents a current projection from being joined to a line from
-    another date or another matchup simply because the player name matches.
-    """
     projection_team = row.get("team_key", "")
     projection_opponent = row.get("opponent_key", "")
     home_team = row.get("home_team_key", "")
     away_team = row.get("away_team_key", "")
 
-    # If matchup data is unavailable, do not automatically reject the row.
     if not projection_team or not projection_opponent:
         return True
 
     if not home_team or not away_team:
         return True
 
-    event_teams = {
+    return {
+        projection_team,
+        projection_opponent,
+    } == {
         home_team,
         away_team,
     }
 
-    projection_teams = {
-        projection_team,
-        projection_opponent,
-    }
-
-    return event_teams == projection_teams
-
 
 def restore_column(merged, base_name):
-    """Restore a readable column after pandas adds merge suffixes."""
     line_column = f"{base_name}_line"
     projection_column = f"{base_name}_projection"
 
     if line_column in merged.columns:
         merged[base_name] = merged[line_column]
-        return
-
-    if projection_column in merged.columns:
+    elif projection_column in merged.columns:
         merged[base_name] = merged[projection_column]
 
 
@@ -282,7 +266,6 @@ def build_daily_card():
         print(f"Saved 0 rows to {OUTPUT_PATH}")
         return empty_output
 
-    # Clean market names and numeric values.
     for dataframe in [projections, lines]:
         dataframe["player"] = (
             dataframe["player"]
@@ -307,13 +290,11 @@ def build_daily_card():
         errors="coerce",
     )
 
-    # Create normalized player keys.
     lines["player_key"] = normalize_series(lines["player"])
     projections["player_key"] = normalize_series(
         projections["player"]
     )
 
-    # Normalize matchup fields when available.
     if "team" in projections.columns:
         projections["team_key"] = normalize_series(
             projections["team"]
@@ -342,7 +323,6 @@ def build_daily_card():
     else:
         lines["away_team_key"] = ""
 
-    # Remove unusable input rows before merging.
     lines = lines.dropna(
         subset=[
             "player",
@@ -372,7 +352,6 @@ def build_daily_card():
         "valid-line filtering."
     )
 
-    # Merge sportsbook lines with model projections.
     merged = lines.merge(
         projections,
         on=[
@@ -390,7 +369,6 @@ def build_daily_card():
     restore_column(merged, "team")
     restore_column(merged, "opponent")
 
-    # Remove unmatched model rows.
     merged["projection"] = pd.to_numeric(
         merged["projection"],
         errors="coerce",
@@ -404,7 +382,6 @@ def build_daily_card():
         f"{len(merged)} rows matched a model projection."
     )
 
-    # Reject lines from the wrong game or wrong slate.
     merged = merged[
         merged.apply(
             matchup_matches,
@@ -416,7 +393,6 @@ def build_daily_card():
         f"{len(merged)} rows remained after matchup validation."
     )
 
-    # Calculate model edge and recommendation.
     merged["edge"] = (
         merged["projection"]
         - merged["line"]
@@ -432,7 +408,6 @@ def build_daily_card():
         )
     )
 
-    # Only use the sportsbook outcome whose direction agrees with the model.
     if "direction" in merged.columns:
         merged["normalized_direction"] = merged[
             "direction"
@@ -467,27 +442,14 @@ def build_daily_card():
         .astype(int)
     )
 
-    # Keep a complete diagnostic file before final card filtering.
     merged.to_csv(
         AUDIT_PATH,
         index=False,
     )
 
-    # Only actionable recommendations belong on the live app.
     merged = merged[
         merged["grade"].isin(ACTIONABLE_GRADES)
     ].copy()
-
-    # Prefer the best grade, then largest edge.
-    sort_columns = [
-        "grade_rank",
-        "absolute_edge",
-    ]
-
-    ascending_values = [
-        True,
-        False,
-    ]
 
     if "sportsbook_odds" in merged.columns:
         merged["sportsbook_odds"] = pd.to_numeric(
@@ -496,11 +458,16 @@ def build_daily_card():
         )
 
     merged = merged.sort_values(
-        sort_columns,
-        ascending=ascending_values,
+        [
+            "grade_rank",
+            "absolute_edge",
+        ],
+        ascending=[
+            True,
+            False,
+        ],
     )
 
-    # Remove repeated identical lines.
     duplicate_columns = [
         column
         for column in [
@@ -519,14 +486,63 @@ def build_daily_card():
             keep="first",
         )
 
-    # Keep only the highest-ranked recommendation for each player.
-    if ONE_PROP_PER_PLAYER:
-        merged = merged.drop_duplicates(
-            subset=["player_key"],
-            keep="first",
+    # Keep the best sportsbook offer for each player and market.
+    merged = merged.drop_duplicates(
+        subset=[
+            "player_key",
+            "market",
+        ],
+        keep="first",
+    )
+
+    # Reserve card space for each market.
+    market_sections = []
+
+    for market, limit in MARKET_LIMITS.items():
+        market_rows = merged[
+            merged["market"] == market
+        ].copy()
+
+        market_rows = market_rows.sort_values(
+            [
+                "grade_rank",
+                "absolute_edge",
+            ],
+            ascending=[
+                True,
+                False,
+            ],
         )
 
-    merged = merged.head(MAX_CARD_ROWS).copy()
+        market_rows = market_rows.head(limit)
+
+        print(
+            f"Selected {len(market_rows)} rows "
+            f"for {market}."
+        )
+
+        market_sections.append(market_rows)
+
+    if market_sections:
+        selected = pd.concat(
+            market_sections,
+            ignore_index=True,
+        )
+    else:
+        selected = pd.DataFrame()
+
+    selected = selected.sort_values(
+        [
+            "grade_rank",
+            "market",
+            "absolute_edge",
+        ],
+        ascending=[
+            True,
+            True,
+            False,
+        ],
+    )
 
     output_columns = [
         "grade",
@@ -548,27 +564,12 @@ def build_daily_card():
     output_columns = [
         column
         for column in output_columns
-        if column in merged.columns
+        if column in selected.columns
     ]
 
-    output = merged[
+    output = selected[
         output_columns
     ].copy()
-
-    numeric_columns = [
-        "line",
-        "sportsbook_odds",
-        "projection",
-        "edge",
-        "absolute_edge",
-    ]
-
-    for column in numeric_columns:
-        if column in output.columns:
-            output[column] = pd.to_numeric(
-                output[column],
-                errors="coerce",
-            )
 
     for column in [
         "line",
@@ -577,7 +578,10 @@ def build_daily_card():
         "absolute_edge",
     ]:
         if column in output.columns:
-            output[column] = output[column].round(3)
+            output[column] = pd.to_numeric(
+                output[column],
+                errors="coerce",
+            ).round(3)
 
     output.to_csv(
         OUTPUT_PATH,
@@ -590,31 +594,23 @@ def build_daily_card():
     )
 
     print(
-        f"Saved full merge diagnostics to {AUDIT_PATH}"
+        f"Saved full diagnostics to {AUDIT_PATH}"
     )
 
     if output.empty:
         print(
-            "No actionable props survived the matching "
-            "and quality filters."
+            "No actionable props survived the quality filters."
         )
     else:
-        print()
-        print(output.to_string(index=False))
-
-        print("\nCard breakdown by grade:")
-        print(
-            output["grade"]
-            .value_counts()
-            .to_string()
-        )
-
         print("\nCard breakdown by market:")
         print(
             output["market"]
             .value_counts()
             .to_string()
         )
+
+        print()
+        print(output.to_string(index=False))
 
     return output
 
