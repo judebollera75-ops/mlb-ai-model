@@ -1,4 +1,3 @@
-import os
 import re
 import unicodedata
 from pathlib import Path
@@ -8,6 +7,8 @@ import pandas as pd
 
 PROJECTIONS_PATH = Path("outputs/mlb_universal_projections.csv")
 LINES_PATH = Path("data/platform_lines.csv")
+PROBABILITY_PATH = Path("outputs/probability_table.csv")
+
 OUTPUT_PATH = Path("outputs/mlb_daily_card.csv")
 AUDIT_PATH = Path("outputs/mlb_daily_card_audit.csv")
 
@@ -232,6 +233,215 @@ def load_data():
     return projections, lines
 
 
+def load_probability_table():
+    if not PROBABILITY_PATH.exists():
+        print(
+            f"Probability file not found: {PROBABILITY_PATH}. "
+            "Probabilities will remain blank."
+        )
+
+        return pd.DataFrame(
+            columns=[
+                "probability_player_key",
+                "probability_line",
+                "over_prob",
+                "under_prob",
+                "fair_over_odds",
+                "fair_under_odds",
+            ]
+        )
+
+    probabilities = pd.read_csv(PROBABILITY_PATH)
+
+    required_columns = {
+        "pitcher",
+        "line",
+        "over_prob",
+        "under_prob",
+        "fair_over_odds",
+        "fair_under_odds",
+    }
+
+    missing_columns = required_columns - set(probabilities.columns)
+
+    if missing_columns:
+        print(
+            "Probability table is missing columns: "
+            f"{sorted(missing_columns)}"
+        )
+
+        return pd.DataFrame(
+            columns=[
+                "probability_player_key",
+                "probability_line",
+                "over_prob",
+                "under_prob",
+                "fair_over_odds",
+                "fair_under_odds",
+            ]
+        )
+
+    probabilities = probabilities.copy()
+
+    probabilities["probability_player_key"] = normalize_series(
+        probabilities["pitcher"]
+    )
+
+    probabilities["probability_line"] = pd.to_numeric(
+        probabilities["line"],
+        errors="coerce",
+    ).round(3)
+
+    for column in [
+        "over_prob",
+        "under_prob",
+        "fair_over_odds",
+        "fair_under_odds",
+    ]:
+        probabilities[column] = pd.to_numeric(
+            probabilities[column],
+            errors="coerce",
+        )
+
+    probabilities = probabilities.dropna(
+        subset=[
+            "probability_player_key",
+            "probability_line",
+        ]
+    ).copy()
+
+    probabilities = probabilities.drop_duplicates(
+        subset=[
+            "probability_player_key",
+            "probability_line",
+        ],
+        keep="first",
+    )
+
+    print(
+        f"Loaded {len(probabilities)} strikeout probability rows "
+        f"from {PROBABILITY_PATH}."
+    )
+
+    return probabilities[
+        [
+            "probability_player_key",
+            "probability_line",
+            "over_prob",
+            "under_prob",
+            "fair_over_odds",
+            "fair_under_odds",
+        ]
+    ].copy()
+
+
+def add_strikeout_probabilities(merged):
+    merged = merged.copy()
+
+    merged["win_probability"] = pd.NA
+    merged["fair_odds"] = pd.NA
+    merged["calibration_status"] = "PENDING"
+
+    probabilities = load_probability_table()
+
+    if probabilities.empty:
+        return merged
+
+    strikeout_mask = (
+        merged["market"] == "pitcher_strikeouts"
+    )
+
+    if not strikeout_mask.any():
+        return merged
+
+    strikeout_rows = merged.loc[
+        strikeout_mask
+    ].copy()
+
+    strikeout_rows["probability_player_key"] = (
+        strikeout_rows["player_key"]
+    )
+
+    strikeout_rows["probability_line"] = pd.to_numeric(
+        strikeout_rows["line"],
+        errors="coerce",
+    ).round(3)
+
+    strikeout_rows["_original_index"] = strikeout_rows.index
+
+    strikeout_rows = strikeout_rows.merge(
+        probabilities,
+        on=[
+            "probability_player_key",
+            "probability_line",
+        ],
+        how="left",
+    )
+
+    strikeout_rows["win_probability"] = strikeout_rows.apply(
+        lambda row: (
+            row["over_prob"]
+            if row["pick"] == "MORE/YES"
+            else row["under_prob"]
+            if row["pick"] == "LESS/NO"
+            else pd.NA
+        ),
+        axis=1,
+    )
+
+    strikeout_rows["fair_odds"] = strikeout_rows.apply(
+        lambda row: (
+            row["fair_over_odds"]
+            if row["pick"] == "MORE/YES"
+            else row["fair_under_odds"]
+            if row["pick"] == "LESS/NO"
+            else pd.NA
+        ),
+        axis=1,
+    )
+
+    strikeout_rows["calibration_status"] = (
+        strikeout_rows["win_probability"]
+        .notna()
+        .map(
+            {
+                True: "CALIBRATED",
+                False: "PENDING",
+            }
+        )
+    )
+
+    strikeout_rows = strikeout_rows.set_index(
+        "_original_index"
+    )
+
+    merged.loc[
+        strikeout_rows.index,
+        "win_probability",
+    ] = strikeout_rows["win_probability"]
+
+    merged.loc[
+        strikeout_rows.index,
+        "fair_odds",
+    ] = strikeout_rows["fair_odds"]
+
+    merged.loc[
+        strikeout_rows.index,
+        "calibration_status",
+    ] = strikeout_rows["calibration_status"]
+
+    calibrated_count = (
+        merged["win_probability"].notna().sum()
+    )
+
+    print(
+        f"Matched probabilities for {calibrated_count} "
+        "strikeout rows."
+    )
+
+    return merged
+
+
 def build_daily_card():
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
@@ -255,6 +465,9 @@ def build_daily_card():
             "edge",
             "absolute_edge",
             "pick",
+            "win_probability",
+            "fair_odds",
+            "calibration_status",
             "team",
             "opponent",
             "commence_time",
@@ -442,6 +655,9 @@ def build_daily_card():
         .astype(int)
     )
 
+    # Add calibrated probabilities for pitcher strikeouts.
+    merged = add_strikeout_probabilities(merged)
+
     merged.to_csv(
         AUDIT_PATH,
         index=False,
@@ -486,7 +702,6 @@ def build_daily_card():
             keep="first",
         )
 
-    # Keep the best sportsbook offer for each player and market.
     merged = merged.drop_duplicates(
         subset=[
             "player_key",
@@ -495,7 +710,6 @@ def build_daily_card():
         keep="first",
     )
 
-    # Reserve card space for each market.
     market_sections = []
 
     for market, limit in MARKET_LIMITS.items():
@@ -556,6 +770,9 @@ def build_daily_card():
         "edge",
         "absolute_edge",
         "pick",
+        "win_probability",
+        "fair_odds",
+        "calibration_status",
         "team",
         "opponent",
         "commence_time",
@@ -576,12 +793,33 @@ def build_daily_card():
         "projection",
         "edge",
         "absolute_edge",
+        "win_probability",
+        "fair_odds",
     ]:
         if column in output.columns:
             output[column] = pd.to_numeric(
                 output[column],
                 errors="coerce",
-            ).round(3)
+            )
+
+    for column in [
+        "line",
+        "projection",
+        "edge",
+        "absolute_edge",
+    ]:
+        if column in output.columns:
+            output[column] = output[column].round(3)
+
+    if "win_probability" in output.columns:
+        output["win_probability"] = (
+            output["win_probability"].round(3)
+        )
+
+    if "fair_odds" in output.columns:
+        output["fair_odds"] = (
+            output["fair_odds"].round(0)
+        )
 
     output.to_csv(
         OUTPUT_PATH,
@@ -607,6 +845,15 @@ def build_daily_card():
             output["market"]
             .value_counts()
             .to_string()
+        )
+
+        calibrated = output[
+            output["win_probability"].notna()
+        ]
+
+        print(
+            f"\nCalibrated picks in final card: "
+            f"{len(calibrated)}"
         )
 
         print()
