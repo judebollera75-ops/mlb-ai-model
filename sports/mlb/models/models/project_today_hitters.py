@@ -20,6 +20,7 @@ feature drift.
 from __future__ import annotations
 
 import os
+import sys
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any
@@ -27,6 +28,13 @@ from typing import Any
 import joblib
 import numpy as np
 import pandas as pd
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[4]
+
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 
 from sports.mlb.features.features.build_hitter_training_dataset import (
     MINIMUM_PRIOR_GAMES,
@@ -45,8 +53,6 @@ from sports.mlb.features.features.build_hitter_training_dataset import (
     normalize_text_columns,
 )
 
-
-PROJECT_ROOT = Path(__file__).resolve().parents[4]
 
 MODEL_DIRECTORY = PROJECT_ROOT / "models" / "hitters"
 
@@ -306,6 +312,7 @@ def load_historical_logs(
     ].copy()
 
     logs = normalize_text_columns(logs)
+
     logs = clean_numeric_columns(
         logs,
         RAW_STAT_COLUMNS,
@@ -334,35 +341,39 @@ def build_projection_rows(
     accidental current-game statistics can leak into the projection.
     """
     projection_rows = hitters.copy()
+    historical_logs = logs.copy()
 
-    for column in logs.columns:
+    for column in historical_logs.columns:
         if column not in projection_rows.columns:
             projection_rows[column] = pd.NA
 
     for column in projection_rows.columns:
-        if column not in logs.columns:
-            logs[column] = pd.NA
+        if column not in historical_logs.columns:
+            historical_logs[column] = pd.NA
 
     for column in RAW_STAT_COLUMNS:
         projection_rows[column] = 0.0
 
     projection_rows["__is_projection_row"] = 1
-    logs["__is_projection_row"] = 0
+    historical_logs["__is_projection_row"] = 0
 
     combined_columns = list(
         dict.fromkeys(
-            list(logs.columns)
+            list(historical_logs.columns)
             + list(projection_rows.columns)
         )
     )
 
-    logs = logs.reindex(columns=combined_columns)
+    historical_logs = historical_logs.reindex(
+        columns=combined_columns
+    )
+
     projection_rows = projection_rows.reindex(
         columns=combined_columns
     )
 
     combined = pd.concat(
-        [logs, projection_rows],
+        [historical_logs, projection_rows],
         ignore_index=True,
         sort=False,
     )
@@ -405,7 +416,10 @@ def engineer_live_features(
 
     featured[numeric_columns] = featured[
         numeric_columns
-    ].replace([np.inf, -np.inf], np.nan)
+    ].replace(
+        [np.inf, -np.inf],
+        np.nan,
+    )
 
     today_features = featured.loc[
         featured["__is_projection_row"].eq(1)
@@ -506,7 +520,10 @@ def residual_interval(
 ) -> tuple[np.ndarray, np.ndarray, float]:
     """Create empirical prediction ranges from holdout residuals."""
     clean_residuals = pd.to_numeric(
-        pd.Series(residuals, dtype="object"),
+        pd.Series(
+            residuals,
+            dtype="object",
+        ),
         errors="coerce",
     ).dropna()
 
@@ -516,21 +533,33 @@ def residual_interval(
 
     if len(clean_residuals) < 50:
         return (
-            np.full(len(predictions), np.nan),
-            np.full(len(predictions), np.nan),
+            np.full(
+                len(predictions),
+                np.nan,
+            ),
+            np.full(
+                len(predictions),
+                np.nan,
+            ),
             float("nan"),
         )
 
     lower_residual = float(
-        clean_residuals.quantile(lower_quantile)
+        clean_residuals.quantile(
+            lower_quantile
+        )
     )
 
     upper_residual = float(
-        clean_residuals.quantile(upper_quantile)
+        clean_residuals.quantile(
+            upper_quantile
+        )
     )
 
     residual_standard_deviation = float(
-        clean_residuals.std(ddof=0)
+        clean_residuals.std(
+            ddof=0
+        )
     )
 
     lower_bound = np.clip(
@@ -579,21 +608,38 @@ def add_market_prediction(
 
     lower_bound, upper_bound, residual_std = residual_interval(
         predictions,
-        bundle.get("holdout_residuals", []),
+        bundle.get(
+            "holdout_residuals",
+            [],
+        ),
     )
 
     projected = frame.copy()
 
     projected[output_column] = predictions
-    projected[f"{output_column}_lower_80"] = lower_bound
-    projected[f"{output_column}_upper_80"] = upper_bound
-    projected[f"{output_column}_residual_std"] = residual_std
-    projected[f"{market}_model_name"] = bundle.get(
+
+    projected[
+        f"{output_column}_lower_80"
+    ] = lower_bound
+
+    projected[
+        f"{output_column}_upper_80"
+    ] = upper_bound
+
+    projected[
+        f"{output_column}_residual_std"
+    ] = residual_std
+
+    projected[
+        f"{market}_model_name"
+    ] = bundle.get(
         "model_name",
         type(bundle["model"]).__name__,
     )
 
-    projected[f"{market}_validation_mae"] = bundle.get(
+    projected[
+        f"{market}_validation_mae"
+    ] = bundle.get(
         "validation_mae",
         np.nan,
     )
@@ -644,7 +690,10 @@ def select_output_columns(
 def project_today_hitters() -> pd.DataFrame:
     """Generate and save all current hitter-market projections."""
     target_date = get_target_date()
-    hitters_path, logs_path = get_paths(target_date)
+
+    hitters_path, logs_path = get_paths(
+        target_date
+    )
 
     OUTPUT_DIRECTORY.mkdir(
         parents=True,
@@ -673,7 +722,9 @@ def project_today_hitters() -> pd.DataFrame:
         logs,
     )
 
-    today = engineer_live_features(combined)
+    today = engineer_live_features(
+        combined
+    )
 
     projected_player_ids = set(
         today["player_id"].astype(int)
@@ -684,13 +735,19 @@ def project_today_hitters() -> pd.DataFrame:
     )
 
     skipped_player_ids = (
-        requested_player_ids - projected_player_ids
+        requested_player_ids
+        - projected_player_ids
     )
 
     if skipped_player_ids:
         skipped = hitters.loc[
-            hitters["player_id"].isin(skipped_player_ids),
-            ["player_id", "player_name"],
+            hitters["player_id"].isin(
+                skipped_player_ids
+            ),
+            [
+                "player_id",
+                "player_name",
+            ],
         ].drop_duplicates()
 
         print(
@@ -698,7 +755,11 @@ def project_today_hitters() -> pd.DataFrame:
             f"{MINIMUM_PRIOR_GAMES} prior games:"
         )
 
-        print(skipped.to_string(index=False))
+        print(
+            skipped.to_string(
+                index=False
+            )
+        )
 
     if today.empty:
         raise RuntimeError(
@@ -729,11 +790,17 @@ def project_today_hitters() -> pd.DataFrame:
             "_upper_80",
             "_residual_std",
         ]:
-            interval_column = f"{column}{suffix}"
+            interval_column = (
+                f"{column}{suffix}"
+            )
 
             if interval_column in today.columns:
-                today[interval_column] = pd.to_numeric(
-                    today[interval_column],
+                today[
+                    interval_column
+                ] = pd.to_numeric(
+                    today[
+                        interval_column
+                    ],
                     errors="coerce",
                 ).round(3)
 
@@ -743,7 +810,9 @@ def project_today_hitters() -> pd.DataFrame:
         {
             feature
             for market in MODEL_MARKETS
-            for feature in load_model_bundle(market)["features"]
+            for feature in load_model_bundle(
+                market
+            )["features"]
             if feature in today.columns
         }
     )
@@ -768,9 +837,13 @@ def project_today_hitters() -> pd.DataFrame:
         index=False,
     )
 
-    output_columns = select_output_columns(today)
+    output_columns = select_output_columns(
+        today
+    )
 
-    output = today[output_columns].copy()
+    output = today[
+        output_columns
+    ].copy()
 
     sort_columns = [
         column
@@ -789,17 +862,30 @@ def project_today_hitters() -> pd.DataFrame:
             ascending=False,
         )
 
-    output = output.reset_index(drop=True)
+    output = output.reset_index(
+        drop=True
+    )
 
     output.to_csv(
         OUTPUT_PATH,
         index=False,
     )
 
-    print("\nHitter projections completed successfully.")
-    print(f"Projected hitters: {len(output):,}")
-    print(f"Saved projections: {OUTPUT_PATH}")
-    print(f"Saved live features: {LIVE_FEATURES_PATH}")
+    print(
+        "\nHitter projections completed successfully."
+    )
+
+    print(
+        f"Projected hitters: {len(output):,}"
+    )
+
+    print(
+        f"Saved projections: {OUTPUT_PATH}"
+    )
+
+    print(
+        f"Saved live features: {LIVE_FEATURES_PATH}"
+    )
 
     preview_columns = [
         column
@@ -821,10 +907,15 @@ def project_today_hitters() -> pd.DataFrame:
 
     if preview_columns:
         print("\nTop projected hitters:")
+
         print(
-            output[preview_columns]
+            output[
+                preview_columns
+            ]
             .head(30)
-            .to_string(index=False)
+            .to_string(
+                index=False
+            )
         )
 
     return output
