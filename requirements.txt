@@ -3,5 +3,7 @@ numpy
 pandas
 requests
 scikit-learn
+scipy
 streamlit
+urllib3
 xgboost
