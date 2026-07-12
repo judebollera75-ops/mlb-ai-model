@@ -113,10 +113,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Remove Python cache files created during validation and execution.
-          find . -type d -name "__pycache__" -prune -exec rm -rf {} +
-          find . -type f -name "*.pyc" -delete
-
           # Stage only generated MLB data, models, and outputs.
           git add data models outputs
 
@@ -125,8 +121,12 @@ jobs:
           else
             git commit -m "Automatic MLB update for ${MLB_TARGET_DATE}"
 
-            # Update against the latest main branch without pulling over
-            # unstaged cache files.
+            # Remove every uncommitted cache or temporary change while
+            # preserving the generated-data commit created above.
+            git reset --hard HEAD
+            git clean -fd
+
+            # Update against the latest main branch and push.
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
