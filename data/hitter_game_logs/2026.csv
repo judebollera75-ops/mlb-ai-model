@@ -7714,6 +7714,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,823205,664702,Myles Straw,Toronto Blue Jays,San Francisco Giants,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-07,823203,664702,Myles Straw,Toronto Blue Jays,San Francisco Giants,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-08,823202,664702,Myles Straw,Toronto Blue Jays,San Francisco Giants,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-10,823278,664702,Myles Straw,Toronto Blue Jays,San Diego Padres,4,4,2,0,0,0,2,1,0,0,0,0,0,0
+2026-07-11,823276,664702,Myles Straw,Toronto Blue Jays,San Diego Padres,0,0,0,0,0,0,0,0,0,0,0,1,0,0
 2026-03-26,823486,664761,Alec Bohm,Philadelphia Phillies,Texas Rangers,4,3,1,0,0,1,4,1,3,1,0,0,0,0
 2026-03-28,823488,664761,Alec Bohm,Philadelphia Phillies,Texas Rangers,5,5,1,0,0,0,1,1,0,0,0,0,0,0
 2026-03-29,823487,664761,Alec Bohm,Philadelphia Phillies,Texas Rangers,4,2,0,0,0,0,0,0,1,1,0,0,0,1
@@ -12450,6 +12452,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,823117,672386,Alejandro Kirk,Toronto Blue Jays,Seattle Mariners,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-06,823205,672386,Alejandro Kirk,Toronto Blue Jays,San Francisco Giants,4,3,0,0,0,0,0,0,0,1,0,0,0,0
 2026-07-08,823202,672386,Alejandro Kirk,Toronto Blue Jays,San Francisco Giants,5,4,1,0,0,0,1,0,0,1,0,0,0,0
+2026-07-10,823278,672386,Alejandro Kirk,Toronto Blue Jays,San Diego Padres,4,4,1,1,0,0,2,0,1,0,1,0,0,0
+2026-07-11,823276,672386,Alejandro Kirk,Toronto Blue Jays,San Diego Padres,4,4,2,1,0,0,3,1,1,0,0,0,0,0
 2026-03-26,823974,672515,Gabriel Moreno,Arizona Diamondbacks,Los Angeles Dodgers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-27,823971,672515,Gabriel Moreno,Arizona Diamondbacks,Los Angeles Dodgers,4,4,2,0,0,0,2,1,0,0,0,0,0,0
 2026-03-30,825108,672515,Gabriel Moreno,Arizona Diamondbacks,Detroit Tigers,5,4,2,1,0,0,3,1,1,1,0,0,0,0
@@ -14433,6 +14437,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-04,825063,678489,Jorge Barrosa,Arizona Diamondbacks,Milwaukee Brewers,0,0,0,0,0,0,0,1,0,0,0,0,0,0
 2026-07-06,823282,678489,Jorge Barrosa,Arizona Diamondbacks,San Diego Padres,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-09,823277,678489,Jorge Barrosa,Arizona Diamondbacks,San Diego Padres,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-10,823927,678489,Jorge Barrosa,Arizona Diamondbacks,Los Angeles Dodgers,2,1,1,0,0,0,1,2,0,0,0,0,0,0
+2026-07-11,823926,678489,Jorge Barrosa,Arizona Diamondbacks,Los Angeles Dodgers,2,2,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-31,823485,678554,Curtis Mead,Washington Nationals,Philadelphia Phillies,2,1,0,0,0,0,0,0,0,1,0,0,0,0
 2026-04-01,823483,678554,Curtis Mead,Washington Nationals,Philadelphia Phillies,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-04,822757,678554,Curtis Mead,Washington Nationals,Los Angeles Dodgers,4,4,1,1,0,0,2,0,1,0,2,0,0,0
@@ -17972,6 +17978,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,823931,687221,Dalton Rushing,Los Angeles Dodgers,San Diego Padres,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-06,823930,687221,Dalton Rushing,Los Angeles Dodgers,Colorado Rockies,5,5,3,2,0,0,5,2,1,0,1,0,0,0
 2026-07-07,823929,687221,Dalton Rushing,Los Angeles Dodgers,Colorado Rockies,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-10,823927,687221,Dalton Rushing,Los Angeles Dodgers,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-11,823926,687221,Dalton Rushing,Los Angeles Dodgers,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-26,824218,687263,Zach Neto,Los Angeles Angels,Houston Astros,5,5,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-27,824216,687263,Zach Neto,Los Angeles Angels,Houston Astros,5,5,2,1,0,1,6,2,1,0,1,0,0,0
 2026-03-28,824213,687263,Zach Neto,Los Angeles Angels,Houston Astros,5,3,0,0,0,0,0,2,0,2,1,1,0,0
@@ -18213,6 +18221,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,824251,687515,Colby Thomas,Athletics,Detroit Tigers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-10,824575,687515,Colby Thomas,Athletics,Chicago White Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-11,824576,687515,Colby Thomas,Athletics,Chicago White Sox,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-10,823200,687529,Grant McCray,San Francisco Giants,Colorado Rockies,1,1,0,0,0,0,0,1,0,0,0,1,0,0
 2026-04-15,824532,687551,Drew Gilbert,San Francisco Giants,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-16,824530,687551,Drew Gilbert,San Francisco Giants,Cincinnati Reds,3,2,0,0,0,0,0,0,0,1,1,0,0,0
 2026-04-17,822752,687551,Drew Gilbert,San Francisco Giants,Washington Nationals,4,3,1,0,0,1,4,2,1,1,1,0,0,0
@@ -18329,6 +18338,33 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,824815,687637,Dylan Beavers,Baltimore Orioles,Chicago Cubs,3,3,2,1,0,0,3,0,0,0,0,0,1,0
 2026-07-09,824816,687637,Dylan Beavers,Baltimore Orioles,Chicago Cubs,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-10,824817,687637,Dylan Beavers,Baltimore Orioles,Kansas City Royals,3,3,1,0,0,0,1,1,0,0,0,0,0,0
+2026-06-02,823460,687749,Jase Bowen,San Diego Padres,Philadelphia Phillies,4,4,1,0,0,0,1,0,0,0,3,0,0,0
+2026-06-03,823456,687749,Jase Bowen,San Diego Padres,Philadelphia Phillies,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-04,823457,687749,Jase Bowen,San Diego Padres,Philadelphia Phillies,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-06,823292,687749,Jase Bowen,San Diego Padres,New York Mets,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-07,823291,687749,Jase Bowen,San Diego Padres,New York Mets,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-08,823289,687749,Jase Bowen,San Diego Padres,Cincinnati Reds,4,3,2,0,0,0,2,1,0,1,0,2,0,0
+2026-06-09,823290,687749,Jase Bowen,San Diego Padres,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-10,823287,687749,Jase Bowen,San Diego Padres,Cincinnati Reds,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-06-13,824828,687749,Jase Bowen,San Diego Padres,Baltimore Orioles,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-14,824823,687749,Jase Bowen,San Diego Padres,Baltimore Orioles,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-06-16,823045,687749,Jase Bowen,San Diego Padres,St. Louis Cardinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-19,822886,687749,Jase Bowen,San Diego Padres,Texas Rangers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-20,822885,687749,Jase Bowen,San Diego Padres,Texas Rangers,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-21,822883,687749,Jase Bowen,San Diego Padres,Texas Rangers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-22,823288,687749,Jase Bowen,San Diego Padres,Atlanta Braves,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-24,823284,687749,Jase Bowen,San Diego Padres,Atlanta Braves,3,2,1,1,0,0,2,1,0,1,1,1,0,0
+2026-06-26,823285,687749,Jase Bowen,San Diego Padres,Los Angeles Dodgers,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-06-27,823283,687749,Jase Bowen,San Diego Padres,Los Angeles Dodgers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-29,824662,687749,Jase Bowen,San Diego Padres,Chicago Cubs,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-30,824661,687749,Jase Bowen,San Diego Padres,Chicago Cubs,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-01,824660,687749,Jase Bowen,San Diego Padres,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-05,823931,687749,Jase Bowen,San Diego Padres,Los Angeles Dodgers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-06,823282,687749,Jase Bowen,San Diego Padres,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-07,823280,687749,Jase Bowen,San Diego Padres,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-08,823279,687749,Jase Bowen,San Diego Padres,Arizona Diamondbacks,4,4,1,0,0,0,1,0,1,0,0,0,0,0
+2026-07-10,823278,687749,Jase Bowen,San Diego Padres,Toronto Blue Jays,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-11,823276,687749,Jase Bowen,San Diego Padres,Toronto Blue Jays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-28,823892,687859,Troy Johnston,Colorado Rockies,Miami Marlins,3,3,1,0,0,0,1,0,0,0,1,0,0,0
 2026-03-29,823891,687859,Troy Johnston,Colorado Rockies,Miami Marlins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-30,822834,687859,Troy Johnston,Colorado Rockies,Toronto Blue Jays,5,5,2,0,0,1,5,1,2,0,1,0,0,0

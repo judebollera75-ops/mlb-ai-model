@@ -6,7 +6,7 @@ date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,
 2026-07-12,823358,Paul Skenes,Pittsburgh Pirates,home,20,130,6.5,6.8,6.71,RECENT_AND_SEASON,HIGH
 2026-07-12,822876,MacKenzie Gore,Texas Rangers,home,20,115,5.75,7.0,6.625,RECENT_AND_SEASON,HIGH
 2026-07-12,823842,Joey Cantillo,Cleveland Guardians,away,20,105,5.25,6.6,6.195,RECENT_AND_SEASON,HIGH
-2026-07-12,823274,Kevin Gausman,Toronto Blue Jays,away,20,114,5.7,5.8,5.77,RECENT_AND_SEASON,HIGH
+2026-07-12,823274,Kevin Gausman,Toronto Blue Jays,away,20,116,5.8,5.8,5.8,RECENT_AND_SEASON,HIGH
 2026-07-12,822708,Cade Cavalli,Washington Nationals,home,20,110,5.5,5.8,5.71,RECENT_AND_SEASON,HIGH
 2026-07-12,823681,José Soriano,Los Angeles Angels,away,20,115,5.75,5.6,5.645,RECENT_AND_SEASON,HIGH
 2026-07-12,823602,Payton Tolle,Boston Red Sox,away,15,87,5.8,5.2,5.38,RECENT_AND_SEASON,HIGH
@@ -24,7 +24,7 @@ date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,
 2026-07-12,823842,Tyler Phillips,Miami Marlins,home,9,56,6.222222222222222,2.8,3.827,RECENT_AND_SEASON,MEDIUM
 2026-07-12,824814,Seth Lugo,Kansas City Royals,away,19,86,4.526315789473684,3.2,3.598,RECENT_AND_SEASON,HIGH
 2026-07-12,823199,Michael Lorenzen,Colorado Rockies,away,20,73,3.65,3.4,3.475,RECENT_AND_SEASON,HIGH
-2026-07-12,823199,Trevor McDonald,San Francisco Giants,home,13,53,4.076923076923077,2.6,3.043,RECENT_AND_SEASON,HIGH
+2026-07-12,823199,Trevor McDonald,San Francisco Giants,home,13,54,4.153846153846154,2.6,3.066,RECENT_AND_SEASON,HIGH
 2026-07-12,823274,Germán Márquez,San Diego Padres,home,8,28,3.5,2.8,3.01,RECENT_AND_SEASON,MEDIUM
 2026-07-12,823925,Mitch Bratt,Arizona Diamondbacks,away,2,3,1.5,3.0,2.55,RECENT_AND_SEASON,LOW
 2026-07-12,822876,Cristian Javier,Houston Astros,away,4,12,3.0,1.6,2.02,RECENT_AND_SEASON,LOW

@@ -197,75 +197,75 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-12,823029,St. Louis Cardinals,Atlanta Braves,home,663494,Bryan Torres,7,LF,Final
 2026-07-12,823029,St. Louis Cardinals,Atlanta Braves,home,665877,José Fermín,8,3B,Final
 2026-07-12,823029,St. Louis Cardinals,Atlanta Braves,home,699625,Jimmy Crooks,9,C,Final
-2026-07-12,822876,Houston Astros,Texas Rangers,away,665161,Jeremy Peña,1,SS,Game Over
-2026-07-12,822876,Houston Astros,Texas Rangers,away,670541,Yordan Alvarez,2,DH,Game Over
-2026-07-12,822876,Houston Astros,Texas Rangers,away,670623,Isaac Paredes,3,3B,Game Over
-2026-07-12,822876,Houston Astros,Texas Rangers,away,572233,Christian Walker,4,1B,Game Over
-2026-07-12,822876,Houston Astros,Texas Rangers,away,514888,Jose Altuve,5,2B,Game Over
-2026-07-12,822876,Houston Astros,Texas Rangers,away,701358,Cam Smith,6,CF,Game Over
-2026-07-12,822876,Houston Astros,Texas Rangers,away,664774,LaMonte Wade Jr.,7,RF,Game Over
-2026-07-12,822876,Houston Astros,Texas Rangers,away,701305,Zach Dezenzo,8,LF,Game Over
-2026-07-12,822876,Houston Astros,Texas Rangers,away,673237,Yainer Diaz,9,C,Game Over
-2026-07-12,822876,Texas Rangers,Houston Astros,home,679822,Justin Foscue,1,DH,Game Over
-2026-07-12,822876,Texas Rangers,Houston Astros,home,694671,Wyatt Langford,2,LF,Game Over
-2026-07-12,822876,Texas Rangers,Houston Astros,home,673962,Josh Jung,3,3B,Game Over
-2026-07-12,822876,Texas Rangers,Houston Astros,home,607043,Brandon Nimmo,4,RF,Game Over
-2026-07-12,822876,Texas Rangers,Houston Astros,home,669394,Jake Burger,5,1B,Game Over
-2026-07-12,822876,Texas Rangers,Houston Astros,home,677649,Ezequiel Duran,6,SS,Game Over
-2026-07-12,822876,Texas Rangers,Houston Astros,home,695508,Cam Cauley,7,2B,Game Over
-2026-07-12,822876,Texas Rangers,Houston Astros,home,553869,Elias Díaz,8,C,Game Over
-2026-07-12,822876,Texas Rangers,Houston Astros,home,696030,Alejandro Osuna,9,CF,Game Over
-2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,664983,Jake McCarthy,1,RF,In Progress
-2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,666160,Mickey Moniak,2,DH,In Progress
-2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,696100,Hunter Goodman,3,C,In Progress
-2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,681198,TJ Rumfield,4,1B,In Progress
-2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,691720,Kyle Karros,5,3B,In Progress
-2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,694249,Cole Carrigg,6,CF,In Progress
-2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,687859,Troy Johnston,7,LF,In Progress
-2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,671289,Tyler Freeman,8,2B,In Progress
-2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,678662,Ezequiel Tovar,9,SS,In Progress
-2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,671218,Heliot Ramos,1,LF,In Progress
-2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,650333,Luis Arraez,2,2B,In Progress
-2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,669477,Casey Schmitt,3,3B,In Progress
-2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,646240,Rafael Devers,4,1B,In Progress
-2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,808982,Jung Hoo Lee,5,RF,In Progress
-2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,805811,Bryce Eldridge,6,DH,In Progress
-2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,642715,Willy Adames,7,SS,In Progress
-2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,687551,Drew Gilbert,8,CF,In Progress
-2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,701852,Drew Cavanaugh,9,C,In Progress
-2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,606466,Ketel Marte,1,DH,In Progress
-2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,672695,Geraldo Perdomo,2,SS,In Progress
-2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,682998,Corbin Carroll,3,RF,In Progress
-2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,672515,Gabriel Moreno,4,C,In Progress
-2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,666971,Lourdes Gurriel Jr.,5,LF,In Progress
-2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,545121,Ildemaro Vargas,6,2B,In Progress
-2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,571448,Nolan Arenado,7,3B,In Progress
-2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,694374,Tim Tawa,8,1B,In Progress
-2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,814439,Ryan Waldschmidt,9,CF,In Progress
-2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,660271,Shohei Ohtani,1,DH,In Progress
-2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,681624,Andy Pages,2,CF,In Progress
-2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,518692,Freddie Freeman,3,1B,In Progress
-2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,605141,Mookie Betts,4,SS,In Progress
-2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,669242,Tommy Edman,5,2B,In Progress
-2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,663656,Kyle Tucker,6,RF,In Progress
-2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,606192,Teoscar Hernández,7,LF,In Progress
-2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,571970,Max Muncy,8,3B,In Progress
-2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,672613,Eliezer Alfonzo,9,C,In Progress
-2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,676391,Ernie Clement,1,2B,In Progress
-2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,664770,Nathan Lukes,2,RF,In Progress
-2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,665489,Vladimir Guerrero Jr.,3,DH,In Progress
-2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,672960,Kazuma Okamoto,4,3B,In Progress
-2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,662139,Daulton Varsho,5,CF,In Progress
-2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,678218,Brandon Valenzuela,6,C,In Progress
-2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,815873,Sean Keys,7,1B,In Progress
-2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,682729,Jonatan Clase,8,LF,In Progress
-2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,665926,Andrés Giménez,9,SS,In Progress
-2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,665487,Fernando Tatis Jr.,1,RF,In Progress
-2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,701538,Jackson Merrill,2,CF,In Progress
-2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,593428,Xander Bogaerts,3,SS,In Progress
-2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,592518,Manny Machado,4,DH,In Progress
-2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,657757,Gavin Sheets,5,LF,In Progress
-2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,664034,Ty France,6,1B,In Progress
-2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,630105,Jake Cronenworth,7,2B,In Progress
-2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,660710,Rodolfo Durán,8,C,In Progress
-2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,823550,Sung-Mun Song,9,3B,In Progress
+2026-07-12,822876,Houston Astros,Texas Rangers,away,665161,Jeremy Peña,1,SS,Final
+2026-07-12,822876,Houston Astros,Texas Rangers,away,670541,Yordan Alvarez,2,DH,Final
+2026-07-12,822876,Houston Astros,Texas Rangers,away,670623,Isaac Paredes,3,3B,Final
+2026-07-12,822876,Houston Astros,Texas Rangers,away,572233,Christian Walker,4,1B,Final
+2026-07-12,822876,Houston Astros,Texas Rangers,away,514888,Jose Altuve,5,2B,Final
+2026-07-12,822876,Houston Astros,Texas Rangers,away,701358,Cam Smith,6,CF,Final
+2026-07-12,822876,Houston Astros,Texas Rangers,away,664774,LaMonte Wade Jr.,7,RF,Final
+2026-07-12,822876,Houston Astros,Texas Rangers,away,701305,Zach Dezenzo,8,LF,Final
+2026-07-12,822876,Houston Astros,Texas Rangers,away,673237,Yainer Diaz,9,C,Final
+2026-07-12,822876,Texas Rangers,Houston Astros,home,679822,Justin Foscue,1,DH,Final
+2026-07-12,822876,Texas Rangers,Houston Astros,home,694671,Wyatt Langford,2,LF,Final
+2026-07-12,822876,Texas Rangers,Houston Astros,home,673962,Josh Jung,3,3B,Final
+2026-07-12,822876,Texas Rangers,Houston Astros,home,607043,Brandon Nimmo,4,RF,Final
+2026-07-12,822876,Texas Rangers,Houston Astros,home,669394,Jake Burger,5,1B,Final
+2026-07-12,822876,Texas Rangers,Houston Astros,home,677649,Ezequiel Duran,6,SS,Final
+2026-07-12,822876,Texas Rangers,Houston Astros,home,695508,Cam Cauley,7,2B,Final
+2026-07-12,822876,Texas Rangers,Houston Astros,home,553869,Elias Díaz,8,C,Final
+2026-07-12,822876,Texas Rangers,Houston Astros,home,696030,Alejandro Osuna,9,CF,Final
+2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,664983,Jake McCarthy,1,RF,Final
+2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,666160,Mickey Moniak,2,DH,Final
+2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,696100,Hunter Goodman,3,C,Final
+2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,681198,TJ Rumfield,4,1B,Final
+2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,691720,Kyle Karros,5,3B,Final
+2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,694249,Cole Carrigg,6,CF,Final
+2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,687859,Troy Johnston,7,LF,Final
+2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,671289,Tyler Freeman,8,2B,Final
+2026-07-12,823199,Colorado Rockies,San Francisco Giants,away,678662,Ezequiel Tovar,9,SS,Final
+2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,671218,Heliot Ramos,1,LF,Final
+2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,650333,Luis Arraez,2,2B,Final
+2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,669477,Casey Schmitt,3,3B,Final
+2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,646240,Rafael Devers,4,1B,Final
+2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,808982,Jung Hoo Lee,5,RF,Final
+2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,687529,Grant McCray,6,DH,Final
+2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,642715,Willy Adames,7,SS,Final
+2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,687551,Drew Gilbert,8,CF,Final
+2026-07-12,823199,San Francisco Giants,Colorado Rockies,home,701852,Drew Cavanaugh,9,C,Final
+2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,606466,Ketel Marte,1,DH,Final
+2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,672695,Geraldo Perdomo,2,SS,Final
+2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,682998,Corbin Carroll,3,RF,Final
+2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,672515,Gabriel Moreno,4,C,Final
+2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,678489,Jorge Barrosa,5,CF,Final
+2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,545121,Ildemaro Vargas,6,2B,Final
+2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,571448,Nolan Arenado,7,3B,Final
+2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,694374,Tim Tawa,8,1B,Final
+2026-07-12,823925,Arizona Diamondbacks,Los Angeles Dodgers,away,814439,Ryan Waldschmidt,9,LF,Final
+2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,660271,Shohei Ohtani,1,DH,Final
+2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,681624,Andy Pages,2,CF,Final
+2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,518692,Freddie Freeman,3,1B,Final
+2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,605141,Mookie Betts,4,SS,Final
+2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,669242,Tommy Edman,5,2B,Final
+2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,663656,Kyle Tucker,6,RF,Final
+2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,606192,Teoscar Hernández,7,LF,Final
+2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,571970,Max Muncy,8,3B,Final
+2026-07-12,823925,Los Angeles Dodgers,Arizona Diamondbacks,home,687221,Dalton Rushing,9,C,Final
+2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,676391,Ernie Clement,1,2B,Final
+2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,664702,Myles Straw,2,RF,Final
+2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,665489,Vladimir Guerrero Jr.,3,DH,Final
+2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,672960,Kazuma Okamoto,4,3B,Final
+2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,662139,Daulton Varsho,5,CF,Final
+2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,678218,Brandon Valenzuela,6,1B,Final
+2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,672386,Alejandro Kirk,7,C,Final
+2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,682729,Jonatan Clase,8,LF,Final
+2026-07-12,823274,Toronto Blue Jays,San Diego Padres,away,665926,Andrés Giménez,9,SS,Final
+2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,665487,Fernando Tatis Jr.,1,RF,Final
+2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,701538,Jackson Merrill,2,CF,Final
+2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,593428,Xander Bogaerts,3,SS,Final
+2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,687749,Jase Bowen,4,DH,Final
+2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,657757,Gavin Sheets,5,LF,Final
+2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,664034,Ty France,6,1B,Final
+2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,630105,Jake Cronenworth,7,2B,Final
+2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,660710,Rodolfo Durán,8,C,Final
+2026-07-12,823274,San Diego Padres,Toronto Blue Jays,home,823550,Sung-Mun Song,9,3B,Final
