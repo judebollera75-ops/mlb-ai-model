@@ -990,6 +990,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,822880,553869,Elias Díaz,Texas Rangers,Los Angeles Angels,3,3,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-09,822877,553869,Elias Díaz,Texas Rangers,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-10,822878,553869,Elias Díaz,Texas Rangers,Houston Astros,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-11,822875,553869,Elias Díaz,Texas Rangers,Houston Astros,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-03-26,824541,553993,Eugenio Suárez,Cincinnati Reds,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,3,0,0,0
 2026-03-28,824540,553993,Eugenio Suárez,Cincinnati Reds,Boston Red Sox,5,5,1,0,0,0,1,0,1,0,1,0,0,0
 2026-03-29,824538,553993,Eugenio Suárez,Cincinnati Reds,Boston Red Sox,4,3,1,0,0,1,4,1,3,1,1,0,0,0
@@ -12923,6 +12924,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,822712,673237,Yainer Diaz,Houston Astros,Washington Nationals,4,4,2,0,0,1,5,2,2,0,0,0,0,0
 2026-07-08,822710,673237,Yainer Diaz,Houston Astros,Washington Nationals,4,4,1,1,0,0,2,1,0,0,1,0,0,0
 2026-07-10,822878,673237,Yainer Diaz,Houston Astros,Texas Rangers,3,3,1,0,0,1,4,1,2,0,0,0,0,0
+2026-07-11,822875,673237,Yainer Diaz,Houston Astros,Texas Rangers,4,4,1,1,0,0,2,0,0,0,0,0,0,0
 2026-04-10,824695,673548,Seiya Suzuki,Chicago Cubs,Pittsburgh Pirates,4,3,1,0,0,0,1,0,0,1,1,0,0,0
 2026-04-11,824697,673548,Seiya Suzuki,Chicago Cubs,Pittsburgh Pirates,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-04-12,824696,673548,Seiya Suzuki,Chicago Cubs,Pittsburgh Pirates,5,3,0,0,0,0,0,1,0,2,1,0,0,0
@@ -14844,6 +14846,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,822881,679822,Justin Foscue,Texas Rangers,Los Angeles Angels,2,2,2,0,0,1,5,2,2,0,0,0,0,0
 2026-07-08,822880,679822,Justin Foscue,Texas Rangers,Los Angeles Angels,2,2,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-09,822877,679822,Justin Foscue,Texas Rangers,Los Angeles Angels,4,3,2,1,0,1,6,1,2,1,0,0,0,0
+2026-07-10,822878,679822,Justin Foscue,Texas Rangers,Houston Astros,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-11,822875,679822,Justin Foscue,Texas Rangers,Houston Astros,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-29,824944,679845,Nick Loftin,Kansas City Royals,Atlanta Braves,4,4,1,1,0,0,2,2,0,0,0,0,0,0
 2026-04-01,824136,679845,Nick Loftin,Kansas City Royals,Minnesota Twins,1,0,0,0,0,0,0,0,0,1,0,0,0,0
 2026-04-04,824132,679845,Nick Loftin,Kansas City Royals,Milwaukee Brewers,4,3,0,0,0,0,0,1,0,1,0,0,0,0
@@ -20470,6 +20474,15 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,823606,695506,Jac Caglianone,Kansas City Royals,New York Mets,4,4,1,1,0,0,2,0,1,0,2,0,0,0
 2026-07-10,824817,695506,Jac Caglianone,Kansas City Royals,Baltimore Orioles,4,4,2,0,0,1,5,1,1,0,0,0,0,0
 2026-07-11,824813,695506,Jac Caglianone,Kansas City Royals,Baltimore Orioles,4,4,1,0,0,0,1,1,0,0,0,0,0,0
+2026-06-29,824420,695508,Cam Cauley,Texas Rangers,Cleveland Guardians,4,3,1,0,1,0,3,2,0,1,0,0,0,0
+2026-06-30,824418,695508,Cam Cauley,Texas Rangers,Cleveland Guardians,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-01,824419,695508,Cam Cauley,Texas Rangers,Cleveland Guardians,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-02,822884,695508,Cam Cauley,Texas Rangers,Detroit Tigers,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-05,822879,695508,Cam Cauley,Texas Rangers,Detroit Tigers,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-07,822881,695508,Cam Cauley,Texas Rangers,Los Angeles Angels,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-08,822880,695508,Cam Cauley,Texas Rangers,Los Angeles Angels,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-09,822877,695508,Cam Cauley,Texas Rangers,Los Angeles Angels,3,3,1,0,0,0,1,1,0,0,1,0,0,0
+2026-07-11,822875,695508,Cam Cauley,Texas Rangers,Houston Astros,1,1,1,0,0,0,1,1,0,0,0,0,0,0
 2026-03-26,824704,695578,James Wood,Washington Nationals,Chicago Cubs,5,5,0,0,0,0,0,0,0,0,4,0,0,0
 2026-03-28,824701,695578,James Wood,Washington Nationals,Chicago Cubs,4,4,1,0,0,1,4,1,1,0,1,0,0,0
 2026-03-29,824700,695578,James Wood,Washington Nationals,Chicago Cubs,5,4,0,0,0,0,0,0,0,1,2,0,0,0
@@ -20866,6 +20879,66 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,822710,695734,Daylen Lile,Washington Nationals,Houston Astros,5,5,2,1,0,0,3,1,1,0,0,0,0,0
 2026-07-10,822709,695734,Daylen Lile,Washington Nationals,New York Yankees,2,1,0,0,0,0,0,0,0,0,1,1,0,1
 2026-07-11,822711,695734,Daylen Lile,Washington Nationals,New York Yankees,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-23,822912,696030,Alejandro Osuna,Texas Rangers,Pittsburgh Pirates,4,2,1,0,0,0,1,1,0,2,0,0,1,0
+2026-04-24,822909,696030,Alejandro Osuna,Texas Rangers,Athletics,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-26,822911,696030,Alejandro Osuna,Texas Rangers,Athletics,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-27,822906,696030,Alejandro Osuna,Texas Rangers,New York Yankees,1,1,1,0,0,0,1,0,1,0,0,0,0,0
+2026-04-28,822908,696030,Alejandro Osuna,Texas Rangers,New York Yankees,2,1,0,0,0,0,0,0,0,1,1,0,0,0
+2026-04-29,822907,696030,Alejandro Osuna,Texas Rangers,New York Yankees,3,1,0,0,0,0,0,1,0,1,0,0,0,1
+2026-05-01,824287,696030,Alejandro Osuna,Texas Rangers,Detroit Tigers,4,4,1,1,0,0,2,0,1,0,2,0,0,0
+2026-05-02,824284,696030,Alejandro Osuna,Texas Rangers,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-03,824285,696030,Alejandro Osuna,Texas Rangers,Detroit Tigers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-05,823553,696030,Alejandro Osuna,Texas Rangers,New York Yankees,2,1,0,0,0,0,0,0,0,0,0,0,0,1
+2026-05-06,823550,696030,Alejandro Osuna,Texas Rangers,New York Yankees,4,3,1,0,0,0,1,0,0,1,1,0,0,0
+2026-05-07,823551,696030,Alejandro Osuna,Texas Rangers,New York Yankees,1,0,0,0,0,0,0,1,0,1,0,0,0,0
+2026-05-08,822904,696030,Alejandro Osuna,Texas Rangers,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-09,822905,696030,Alejandro Osuna,Texas Rangers,Chicago Cubs,4,4,2,0,0,0,2,0,2,0,0,0,0,0
+2026-05-10,822902,696030,Alejandro Osuna,Texas Rangers,Chicago Cubs,3,3,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-11,822901,696030,Alejandro Osuna,Texas Rangers,Arizona Diamondbacks,3,3,1,0,0,0,1,0,0,0,1,0,1,0
+2026-05-12,822903,696030,Alejandro Osuna,Texas Rangers,Arizona Diamondbacks,4,3,1,0,0,0,1,0,1,0,1,1,0,1
+2026-05-13,822900,696030,Alejandro Osuna,Texas Rangers,Arizona Diamondbacks,4,2,0,0,0,0,0,2,0,1,1,0,0,1
+2026-05-15,824194,696030,Alejandro Osuna,Texas Rangers,Houston Astros,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-16,824193,696030,Alejandro Osuna,Texas Rangers,Houston Astros,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-17,824192,696030,Alejandro Osuna,Texas Rangers,Houston Astros,4,3,1,0,0,0,1,2,0,0,0,0,0,1
+2026-05-18,824357,696030,Alejandro Osuna,Texas Rangers,Colorado Rockies,2,2,0,0,0,0,0,0,1,0,0,0,0,0
+2026-05-19,824356,696030,Alejandro Osuna,Texas Rangers,Colorado Rockies,5,4,0,0,0,0,0,0,0,1,1,0,0,0
+2026-05-20,824355,696030,Alejandro Osuna,Texas Rangers,Colorado Rockies,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-22,824029,696030,Alejandro Osuna,Texas Rangers,Los Angeles Angels,4,4,2,1,0,0,3,0,0,0,0,0,0,0
+2026-05-23,824030,696030,Alejandro Osuna,Texas Rangers,Los Angeles Angels,3,3,3,0,0,0,3,1,0,0,0,0,0,0
+2026-05-24,824028,696030,Alejandro Osuna,Texas Rangers,Los Angeles Angels,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-25,822899,696030,Alejandro Osuna,Texas Rangers,Houston Astros,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-05-26,822898,696030,Alejandro Osuna,Texas Rangers,Houston Astros,4,3,0,0,0,0,0,1,0,1,0,0,0,0
+2026-05-27,822897,696030,Alejandro Osuna,Texas Rangers,Houston Astros,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-28,822896,696030,Alejandro Osuna,Texas Rangers,Houston Astros,3,2,0,0,0,0,0,0,0,0,0,0,0,1
+2026-05-29,822894,696030,Alejandro Osuna,Texas Rangers,Kansas City Royals,4,4,1,0,0,0,1,0,0,0,0,1,0,0
+2026-05-30,822893,696030,Alejandro Osuna,Texas Rangers,Kansas City Royals,2,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-31,822895,696030,Alejandro Osuna,Texas Rangers,Kansas City Royals,4,4,1,0,0,0,1,1,1,0,1,0,0,0
+2026-06-01,823050,696030,Alejandro Osuna,Texas Rangers,St. Louis Cardinals,4,4,1,0,0,0,1,0,0,0,0,1,0,0
+2026-06-02,823052,696030,Alejandro Osuna,Texas Rangers,St. Louis Cardinals,4,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-06-03,823051,696030,Alejandro Osuna,Texas Rangers,St. Louis Cardinals,2,1,0,0,0,0,0,0,0,1,0,1,0,0
+2026-06-14,824751,696030,Alejandro Osuna,Texas Rangers,Boston Red Sox,4,4,1,0,0,0,1,1,0,0,0,0,0,0
+2026-06-15,822887,696030,Alejandro Osuna,Texas Rangers,Minnesota Twins,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-16,822888,696030,Alejandro Osuna,Texas Rangers,Minnesota Twins,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-06-18,822889,696030,Alejandro Osuna,Texas Rangers,Minnesota Twins,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-19,822886,696030,Alejandro Osuna,Texas Rangers,San Diego Padres,3,3,2,1,0,0,3,1,2,0,1,0,0,0
+2026-06-21,822883,696030,Alejandro Osuna,Texas Rangers,San Diego Padres,3,2,0,0,0,0,0,0,0,0,0,0,0,1
+2026-06-22,823851,696030,Alejandro Osuna,Texas Rangers,Miami Marlins,4,3,1,1,0,0,2,0,1,1,1,0,0,0
+2026-06-23,823849,696030,Alejandro Osuna,Texas Rangers,Miami Marlins,4,4,2,0,0,0,2,1,0,0,0,0,0,0
+2026-06-24,823850,696030,Alejandro Osuna,Texas Rangers,Miami Marlins,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-25,822797,696030,Alejandro Osuna,Texas Rangers,Toronto Blue Jays,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-26,822796,696030,Alejandro Osuna,Texas Rangers,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-27,822794,696030,Alejandro Osuna,Texas Rangers,Toronto Blue Jays,5,4,2,0,0,0,2,1,2,1,0,0,0,0
+2026-06-28,822795,696030,Alejandro Osuna,Texas Rangers,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-29,824420,696030,Alejandro Osuna,Texas Rangers,Cleveland Guardians,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-30,824418,696030,Alejandro Osuna,Texas Rangers,Cleveland Guardians,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-01,824419,696030,Alejandro Osuna,Texas Rangers,Cleveland Guardians,4,4,0,0,0,0,0,1,0,0,0,0,0,0
+2026-07-02,822884,696030,Alejandro Osuna,Texas Rangers,Detroit Tigers,5,5,3,0,0,0,3,2,1,0,0,0,0,0
+2026-07-04,822882,696030,Alejandro Osuna,Texas Rangers,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-05,822879,696030,Alejandro Osuna,Texas Rangers,Detroit Tigers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-07,822881,696030,Alejandro Osuna,Texas Rangers,Los Angeles Angels,4,3,1,0,0,1,4,2,3,1,1,0,0,0
+2026-07-08,822880,696030,Alejandro Osuna,Texas Rangers,Los Angeles Angels,4,2,1,0,0,0,1,0,0,2,0,0,0,0
+2026-07-09,822877,696030,Alejandro Osuna,Texas Rangers,Los Angeles Angels,4,3,1,0,0,0,1,1,0,0,1,0,0,1
+2026-07-11,822875,696030,Alejandro Osuna,Texas Rangers,Houston Astros,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-27,823893,696100,Hunter Goodman,Colorado Rockies,Miami Marlins,4,4,2,0,0,0,2,0,0,0,0,0,0,0
 2026-03-28,823892,696100,Hunter Goodman,Colorado Rockies,Miami Marlins,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-03-29,823891,696100,Hunter Goodman,Colorado Rockies,Miami Marlins,4,4,1,0,0,0,1,1,0,0,1,0,0,0
@@ -21349,6 +21422,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,824172,701305,Zach Dezenzo,Houston Astros,Tampa Bay Rays,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-07,822713,701305,Zach Dezenzo,Houston Astros,Washington Nationals,4,2,0,0,0,0,0,2,0,2,1,1,0,0
 2026-07-08,822710,701305,Zach Dezenzo,Houston Astros,Washington Nationals,3,3,2,0,0,0,2,1,0,0,1,0,0,0
+2026-07-10,822878,701305,Zach Dezenzo,Houston Astros,Texas Rangers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-26,824218,701358,Cam Smith,Houston Astros,Los Angeles Angels,4,3,0,0,0,0,0,0,0,1,2,1,0,0
 2026-03-27,824216,701358,Cam Smith,Houston Astros,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-28,824213,701358,Cam Smith,Houston Astros,Los Angeles Angels,5,4,1,0,0,0,1,1,0,1,1,0,0,0

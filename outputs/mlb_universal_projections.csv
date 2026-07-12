@@ -98,7 +98,7 @@ MLB,2026-07-12,822876,607043,Brandon Nimmo,Texas Rangers,Houston Astros,hitter_f
 MLB,2026-07-12,823199,650333,Luis Arraez,San Francisco Giants,Colorado Rockies,hitter_fantasy_score,7.412,0.375,17.809,7.308,xgboost,5.6223,2.0,2B,4.4344,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,665489,Vladimir Guerrero Jr.,Toronto Blue Jays,San Diego Padres,hitter_fantasy_score,7.405,0.368,17.802,7.308,xgboost,5.6223,3.0,DH,4.4389,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,703607,Henry Bolte,Athletics,Chicago White Sox,hitter_fantasy_score,7.37,0.333,17.767,7.308,xgboost,5.6223,8.0,CF,3.5609,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_fantasy_score,7.367,0.331,17.765,7.308,xgboost,5.6223,6.0,RF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_fantasy_score,7.367,0.331,17.765,7.308,xgboost,5.6223,6.0,CF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,593871,Jorge Polanco,New York Mets,Boston Red Sox,hitter_fantasy_score,7.33,0.293,17.727,7.308,xgboost,5.6223,7.0,PH,4.1967,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,677587,Brayan Rocchio,Cleveland Guardians,Miami Marlins,hitter_fantasy_score,7.299,0.262,17.697,7.308,xgboost,5.6223,2.0,SS,4.0313,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,680664,Eduardo Valencia,Detroit Tigers,Philadelphia Phillies,hitter_fantasy_score,7.299,0.262,17.697,7.308,xgboost,5.6223,6.0,DH,3.3333,1.0,outputs/hitters/today_hitter_projections.csv
@@ -141,6 +141,7 @@ MLB,2026-07-12,823199,678662,Ezequiel Tovar,Colorado Rockies,San Francisco Giant
 MLB,2026-07-12,824574,811965,Joshua Kuroda-Grauer,Athletics,Chicago White Sox,hitter_fantasy_score,6.811,0.0,17.209,7.308,xgboost,5.6223,2.0,3B,3.8036,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,656775,Cedric Mullins,Tampa Bay Rays,Seattle Mariners,hitter_fantasy_score,6.795,0.0,17.193,7.308,xgboost,5.6223,4.0,CF,3.8178,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,694212,Samuel Basallo,Baltimore Orioles,Kansas City Royals,hitter_fantasy_score,6.742,0.0,17.139,7.308,xgboost,5.6223,5.0,C,3.642,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,673237,Yainer Diaz,Houston Astros,Texas Rangers,hitter_fantasy_score,6.725,0.0,17.123,7.308,xgboost,5.6223,9.0,C,3.9,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,592663,J.T. Realmuto,Philadelphia Phillies,Detroit Tigers,hitter_fantasy_score,6.71,0.0,17.107,7.308,xgboost,5.6223,8.0,C,3.6952,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,676391,Ernie Clement,Toronto Blue Jays,San Diego Padres,hitter_fantasy_score,6.698,0.0,17.095,7.308,xgboost,5.6223,1.0,2B,4.4622,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,666971,Lourdes Gurriel Jr.,Arizona Diamondbacks,Los Angeles Dodgers,hitter_fantasy_score,6.685,0.0,17.082,7.308,xgboost,5.6223,5.0,LF,3.8144,2.0,outputs/hitters/today_hitter_projections.csv
@@ -173,7 +174,6 @@ MLB,2026-07-12,824491,663886,Tyler Stephenson,Cincinnati Reds,Chicago Cubs,hitte
 MLB,2026-07-12,823358,542303,Marcell Ozuna,Pittsburgh Pirates,Milwaukee Brewers,hitter_fantasy_score,6.142,0.0,16.54,7.308,xgboost,5.6223,7.0,DH,3.9867,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,665052,Griffin Conine,Miami Marlins,Cleveland Guardians,hitter_fantasy_score,6.138,0.0,16.535,7.308,xgboost,5.6223,8.0,DH,3.1038,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,687859,Troy Johnston,Colorado Rockies,San Francisco Giants,hitter_fantasy_score,6.126,0.0,16.524,7.308,xgboost,5.6223,7.0,LF,3.0533,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,592626,Joc Pederson,Texas Rangers,Houston Astros,hitter_fantasy_score,6.12,0.0,16.517,7.308,xgboost,5.6223,1.0,DH,3.159,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,671289,Tyler Freeman,Colorado Rockies,San Francisco Giants,hitter_fantasy_score,6.107,0.0,16.504,7.308,xgboost,5.6223,8.0,2B,3.8131,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,681715,Heriberto Hernández,Miami Marlins,Cleveland Guardians,hitter_fantasy_score,6.094,0.0,16.491,7.308,xgboost,5.6223,2.0,LF,3.4288,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,699013,Esmerlyn Valdez,Pittsburgh Pirates,Milwaukee Brewers,hitter_fantasy_score,6.03,0.0,16.427,7.308,xgboost,5.6223,4.0,RF,4.3207,1.0,outputs/hitters/today_hitter_projections.csv
@@ -183,7 +183,7 @@ MLB,2026-07-12,824574,671976,Tristan Peters,Chicago White Sox,Athletics,hitter_f
 MLB,2026-07-12,823029,665877,José Fermín,St. Louis Cardinals,Atlanta Braves,hitter_fantasy_score,5.939,0.0,16.336,7.308,xgboost,5.6223,8.0,3B,3.2229,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,687401,Joey Ortiz,Milwaukee Brewers,Pittsburgh Pirates,hitter_fantasy_score,5.931,0.0,16.328,7.308,xgboost,5.6223,8.0,SS,3.368,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,807799,Masataka Yoshida,Boston Red Sox,New York Mets,hitter_fantasy_score,5.923,0.0,16.32,7.308,xgboost,5.6223,8.0,LF,4.0467,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_fantasy_score,5.912,0.0,16.31,7.308,xgboost,5.6223,7.0,LF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_fantasy_score,5.912,0.0,16.31,7.308,xgboost,5.6223,7.0,RF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,805347,Jim Jarvis,Atlanta Braves,St. Louis Cardinals,hitter_fantasy_score,5.888,0.0,16.285,7.308,xgboost,5.6223,8.0,SS,3.2556,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,641933,Tyler O'Neill,Baltimore Orioles,Kansas City Royals,hitter_fantasy_score,5.884,0.0,16.281,7.308,xgboost,5.6223,7.0,RF,2.4466,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,815873,Sean Keys,Toronto Blue Jays,San Diego Padres,hitter_fantasy_score,5.881,0.0,16.279,7.308,xgboost,5.6223,7.0,1B,3.5125,5.0,outputs/hitters/today_hitter_projections.csv
@@ -206,7 +206,6 @@ MLB,2026-07-12,823842,696135,Kahlil Watson,Cleveland Guardians,Miami Marlins,hit
 MLB,2026-07-12,823274,665926,Andrés Giménez,Toronto Blue Jays,San Diego Padres,hitter_fantasy_score,5.618,0.0,16.016,7.308,xgboost,5.6223,9.0,SS,2.8967,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,680757,Steven Kwan,Cleveland Guardians,Miami Marlins,hitter_fantasy_score,5.617,0.0,16.015,7.308,xgboost,5.6223,9.0,LF,3.3555,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,690993,Colt Keith,Detroit Tigers,Philadelphia Phillies,hitter_fantasy_score,5.616,0.0,16.014,7.308,xgboost,5.6223,3.0,3B,2.8306,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,694497,Evan Carter,Texas Rangers,Houston Astros,hitter_fantasy_score,5.604,0.0,16.001,7.308,xgboost,5.6223,7.0,CF,3.1431,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,657136,Connor Wong,Boston Red Sox,New York Mets,hitter_fantasy_score,5.547,0.0,15.944,7.308,xgboost,5.6223,9.0,C,3.73,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,687551,Drew Gilbert,San Francisco Giants,Colorado Rockies,hitter_fantasy_score,5.539,0.0,15.936,7.308,xgboost,5.6223,8.0,CF,3.123,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,663837,Matt Vierling,Detroit Tigers,Philadelphia Phillies,hitter_fantasy_score,5.539,0.0,15.937,7.308,xgboost,5.6223,8.0,RF,3.5975,1.0,outputs/hitters/today_hitter_projections.csv
@@ -219,24 +218,25 @@ MLB,2026-07-12,823681,666139,Josh Lowe,Los Angeles Angels,Minnesota Twins,hitter
 MLB,2026-07-12,823602,691907,Tsung-Che Cheng,Boston Red Sox,New York Mets,hitter_fantasy_score,5.487,0.0,15.885,7.308,xgboost,5.6223,4.0,SS,3.4222,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,691788,Joe Mack,Miami Marlins,Cleveland Guardians,hitter_fantasy_score,5.469,0.0,15.866,7.308,xgboost,5.6223,9.0,C,3.0238,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,624641,Edmundo Sosa,Philadelphia Phillies,Detroit Tigers,hitter_fantasy_score,5.396,0.0,15.794,7.308,xgboost,5.6223,5.0,LF,3.6596,4.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543309,Kyle Higashioka,Texas Rangers,Houston Astros,hitter_fantasy_score,5.367,0.0,15.764,7.308,xgboost,5.6223,9.0,C,3.0554,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,683011,Anthony Volpe,New York Yankees,Washington Nationals,hitter_fantasy_score,5.358,0.0,15.755,7.308,xgboost,5.6223,8.0,SS,2.9136,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,699393,Pedro Ramírez,Chicago Cubs,Cincinnati Reds,hitter_fantasy_score,5.344,0.0,15.741,7.308,xgboost,5.6223,9.0,DH,1.978,7.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,696030,Alejandro Osuna,Texas Rangers,Houston Astros,hitter_fantasy_score,5.315,0.0,15.712,7.308,xgboost,5.6223,9.0,CF,2.9233,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,682997,Tyler Callihan,Pittsburgh Pirates,Milwaukee Brewers,hitter_fantasy_score,5.293,0.0,15.691,7.308,xgboost,5.6223,2.0,2B,3.5786,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,676439,Hunter Feduccia,Tampa Bay Rays,Seattle Mariners,hitter_fantasy_score,5.276,0.0,15.673,7.308,xgboost,5.6223,9.0,C,3.2116,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,675961,Alika Williams,Athletics,Chicago White Sox,hitter_fantasy_score,5.243,0.0,15.64,7.308,xgboost,5.6223,9.0,2B,2.5557,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,655316,Andruw Monasterio,Boston Red Sox,New York Mets,hitter_fantasy_score,5.237,0.0,15.635,7.308,xgboost,5.6223,6.0,1B,3.5389,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,694374,Tim Tawa,Arizona Diamondbacks,Los Angeles Dodgers,hitter_fantasy_score,5.222,0.0,15.62,7.308,xgboost,5.6223,8.0,1B,3.24,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543877,Christian Vázquez,Houston Astros,Texas Rangers,hitter_fantasy_score,5.21,0.0,15.608,7.308,xgboost,5.6223,9.0,C,3.4007,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,672356,Gabriel Arias,Cleveland Guardians,Miami Marlins,hitter_fantasy_score,5.206,0.0,15.603,7.308,xgboost,5.6223,6.0,3B,3.12,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,682729,Jonatan Clase,Toronto Blue Jays,San Diego Padres,hitter_fantasy_score,5.203,0.0,15.6,7.308,xgboost,5.6223,8.0,LF,3.0,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,694378,Jacob Gonzalez,Pittsburgh Pirates,Milwaukee Brewers,hitter_fantasy_score,5.202,0.0,15.599,7.308,xgboost,5.6223,3.0,1B,2.8067,3.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,678391,Jorbit Vivas,Washington Nationals,New York Yankees,hitter_fantasy_score,5.193,0.0,15.591,7.308,xgboost,5.6223,8.0,3B,3.4986,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,679822,Justin Foscue,Texas Rangers,Houston Astros,hitter_fantasy_score,5.183,0.0,15.58,7.308,xgboost,5.6223,1.0,DH,2.4856,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,680779,Henry Davis,Pittsburgh Pirates,Milwaukee Brewers,hitter_fantasy_score,5.157,0.0,15.554,7.308,xgboost,5.6223,9.0,C,2.7733,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,668885,Austin Martin,Minnesota Twins,Los Angeles Angels,hitter_fantasy_score,5.154,0.0,15.552,7.308,xgboost,5.6223,1.0,LF,2.8754,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Dodgers,hitter_fantasy_score,5.148,0.0,15.546,7.308,xgboost,5.6223,6.0,2B,3.032,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,681546,James Outman,Detroit Tigers,Philadelphia Phillies,hitter_fantasy_score,5.075,0.0,15.472,7.308,xgboost,5.6223,9.0,CF,2.6294,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,656537,Derek Hill,Philadelphia Phillies,Detroit Tigers,hitter_fantasy_score,5.06,0.0,15.458,7.308,xgboost,5.6223,7.0,CF,2.6817,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,553869,Elias Díaz,Texas Rangers,Houston Astros,hitter_fantasy_score,4.998,0.0,15.395,7.308,xgboost,5.6223,8.0,C,2.6273,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,683734,Andrew Vaughn,Milwaukee Brewers,Pittsburgh Pirates,hitter_fantasy_score,4.984,0.0,15.382,7.308,xgboost,5.6223,9.0,3B,2.1759,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,676724,Jared Young,New York Mets,Boston Red Sox,hitter_fantasy_score,4.983,0.0,15.38,7.308,xgboost,5.6223,4.0,1B,3.904,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,702176,Alan Roden,Minnesota Twins,Los Angeles Angels,hitter_fantasy_score,4.96,0.0,15.357,7.308,xgboost,5.6223,7.0,RF,3.25,1.0,outputs/hitters/today_hitter_projections.csv
@@ -252,14 +252,14 @@ MLB,2026-07-12,823029,699625,Jimmy Crooks,St. Louis Cardinals,Atlanta Braves,hit
 MLB,2026-07-12,823274,660710,Rodolfo Durán,San Diego Padres,Toronto Blue Jays,hitter_fantasy_score,4.649,0.0,15.047,7.308,xgboost,5.6223,8.0,C,2.3218,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,642201,Eli White,Atlanta Braves,St. Louis Cardinals,hitter_fantasy_score,4.633,0.0,15.03,7.308,xgboost,5.6223,6.0,DH,2.0036,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,668942,Josh Rojas,Kansas City Royals,Baltimore Orioles,hitter_fantasy_score,4.608,0.0,15.006,7.308,xgboost,5.6223,8.0,3B,2.6629,2.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,670032,Nicky Lopez,Texas Rangers,Houston Astros,hitter_fantasy_score,4.593,0.0,14.99,7.308,xgboost,5.6223,8.0,2B,2.6857,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,666211,Taylor Trammell,Houston Astros,Texas Rangers,hitter_fantasy_score,4.578,0.0,14.976,7.308,xgboost,5.6223,8.0,CF,2.7374,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,645302,Victor Robles,Seattle Mariners,Tampa Bay Rays,hitter_fantasy_score,4.542,0.0,14.939,7.308,xgboost,5.6223,7.0,CF,2.91,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,695508,Cam Cauley,Texas Rangers,Houston Astros,hitter_fantasy_score,4.538,0.0,14.935,7.308,xgboost,5.6223,7.0,2B,2.1222,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,663494,Bryan Torres,St. Louis Cardinals,Atlanta Braves,hitter_fantasy_score,4.53,0.0,14.927,7.308,xgboost,5.6223,7.0,LF,2.4197,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,680474,Max Schuemann,New York Yankees,Washington Nationals,hitter_fantasy_score,4.454,0.0,14.851,7.308,xgboost,5.6223,9.0,RF,2.8067,3.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,608841,Joey Meneses,Athletics,Chicago White Sox,hitter_fantasy_score,4.352,0.0,14.749,7.308,xgboost,5.6223,6.0,1B,2.5125,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,671155,Ivan Johnson,Cincinnati Reds,Chicago Cubs,hitter_fantasy_score,4.295,0.0,14.693,7.308,xgboost,5.6223,9.0,PH,1.6667,5.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,645305,Ali Sánchez,New York Yankees,Washington Nationals,hitter_fantasy_score,4.281,0.0,14.678,7.308,xgboost,5.6223,2.0,C,2.2118,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701305,Zach Dezenzo,Houston Astros,Texas Rangers,hitter_fantasy_score,4.104,0.0,14.501,7.308,xgboost,5.6223,8.0,LF,1.9792,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,672613,Eliezer Alfonzo,Los Angeles Dodgers,Arizona Diamondbacks,hitter_fantasy_score,4.038,0.0,14.435,7.308,xgboost,5.6223,9.0,C,1.75,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,670156,Miles Mastrobuoni,Seattle Mariners,Tampa Bay Rays,hitter_fantasy_score,4.012,0.0,14.409,7.308,xgboost,5.6223,8.0,RF,1.79,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,690984,Petey Halpin,Cleveland Guardians,Miami Marlins,hitter_fantasy_score,3.947,0.0,14.344,7.308,xgboost,5.6223,7.0,CF,2.3867,1.0,outputs/hitters/today_hitter_projections.csv
@@ -285,6 +285,7 @@ MLB,2026-07-12,822876,673962,Josh Jung,Texas Rangers,Houston Astros,hitter_hits,
 MLB,2026-07-12,823029,671739,Michael Harris II,Atlanta Braves,St. Louis Cardinals,hitter_hits,1.021,0.071,2.18,0.864,extra_trees,0.6897,4.0,CF,4.5009,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,606466,Ketel Marte,Arizona Diamondbacks,Los Angeles Dodgers,hitter_hits,1.018,0.068,2.178,0.864,extra_trees,0.6897,1.0,DH,4.5313,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,811965,Joshua Kuroda-Grauer,Athletics,Chicago White Sox,hitter_hits,1.014,0.064,2.173,0.864,extra_trees,0.6897,2.0,3B,3.8036,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,673237,Yainer Diaz,Houston Astros,Texas Rangers,hitter_hits,1.012,0.062,2.172,0.864,extra_trees,0.6897,9.0,C,3.9,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,678882,Ceddanne Rafaela,Boston Red Sox,New York Mets,hitter_hits,1.009,0.059,2.169,0.864,extra_trees,0.6897,2.0,CF,4.6557,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,650490,Yandy Díaz,Tampa Bay Rays,Seattle Mariners,hitter_hits,1.009,0.059,2.169,0.864,extra_trees,0.6897,1.0,DH,4.3964,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,663656,Kyle Tucker,Los Angeles Dodgers,Arizona Diamondbacks,hitter_hits,1.007,0.057,2.167,0.864,extra_trees,0.6897,6.0,RF,3.8478,1.0,outputs/hitters/today_hitter_projections.csv
@@ -419,7 +420,7 @@ MLB,2026-07-12,823199,691720,Kyle Karros,Colorado Rockies,San Francisco Giants,h
 MLB,2026-07-12,824491,663886,Tyler Stephenson,Cincinnati Reds,Chicago Cubs,hitter_hits,0.828,0.0,1.988,0.864,extra_trees,0.6897,6.0,C,3.3828,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,805347,Jim Jarvis,Atlanta Braves,St. Louis Cardinals,hitter_hits,0.819,0.0,1.978,0.864,extra_trees,0.6897,8.0,SS,3.2556,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,815873,Sean Keys,Toronto Blue Jays,San Diego Padres,hitter_hits,0.818,0.0,1.978,0.864,extra_trees,0.6897,7.0,1B,3.5125,5.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_hits,0.811,0.0,1.971,0.864,extra_trees,0.6897,6.0,RF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_hits,0.811,0.0,1.971,0.864,extra_trees,0.6897,6.0,CF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,663728,Cal Raleigh,Seattle Mariners,Tampa Bay Rays,hitter_hits,0.81,0.0,1.97,0.864,extra_trees,0.6897,3.0,DH,4.1594,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,657757,Gavin Sheets,San Diego Padres,Toronto Blue Jays,hitter_hits,0.81,0.0,1.97,0.864,extra_trees,0.6897,5.0,LF,4.0746,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,657041,Lane Thomas,Kansas City Royals,Baltimore Orioles,hitter_hits,0.81,0.0,1.97,0.864,extra_trees,0.6897,4.0,CF,4.1143,1.0,outputs/hitters/today_hitter_projections.csv
@@ -457,7 +458,6 @@ MLB,2026-07-12,823925,571448,Nolan Arenado,Arizona Diamondbacks,Los Angeles Dodg
 MLB,2026-07-12,823681,666139,Josh Lowe,Los Angeles Angels,Minnesota Twins,hitter_hits,0.756,0.0,1.915,0.864,extra_trees,0.6897,6.0,LF,3.5636,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,686217,Sal Frelick,Milwaukee Brewers,Pittsburgh Pirates,hitter_hits,0.755,0.0,1.914,0.864,extra_trees,0.6897,7.0,RF,3.1,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,676724,Jared Young,New York Mets,Boston Red Sox,hitter_hits,0.754,0.0,1.914,0.864,extra_trees,0.6897,4.0,1B,3.904,2.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,592626,Joc Pederson,Texas Rangers,Houston Astros,hitter_hits,0.754,0.0,1.914,0.864,extra_trees,0.6897,1.0,DH,3.159,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,657136,Connor Wong,Boston Red Sox,New York Mets,hitter_hits,0.751,0.0,1.911,0.864,extra_trees,0.6897,9.0,C,3.73,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,665877,José Fermín,St. Louis Cardinals,Atlanta Braves,hitter_hits,0.751,0.0,1.911,0.864,extra_trees,0.6897,8.0,3B,3.2229,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,671289,Tyler Freeman,Colorado Rockies,San Francisco Giants,hitter_hits,0.75,0.0,1.91,0.864,extra_trees,0.6897,8.0,2B,3.8131,2.0,outputs/hitters/today_hitter_projections.csv
@@ -465,7 +465,6 @@ MLB,2026-07-12,824250,656716,Zach McKinstry,Detroit Tigers,Philadelphia Phillies
 MLB,2026-07-12,823358,669707,Jared Triolo,Pittsburgh Pirates,Milwaukee Brewers,hitter_hits,0.746,0.0,1.905,0.864,extra_trees,0.6897,8.0,SS,3.7174,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,678662,Ezequiel Tovar,Colorado Rockies,San Francisco Giants,hitter_hits,0.745,0.0,1.904,0.864,extra_trees,0.6897,9.0,SS,3.4329,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,672356,Gabriel Arias,Cleveland Guardians,Miami Marlins,hitter_hits,0.741,0.0,1.901,0.864,extra_trees,0.6897,6.0,3B,3.12,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,670032,Nicky Lopez,Texas Rangers,Houston Astros,hitter_hits,0.741,0.0,1.9,0.864,extra_trees,0.6897,8.0,2B,2.6857,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,671732,Lawrence Butler,Athletics,Chicago White Sox,hitter_hits,0.739,0.0,1.898,0.864,extra_trees,0.6897,7.0,RF,3.3707,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,680700,Richie Palacios,Tampa Bay Rays,Seattle Mariners,hitter_hits,0.737,0.0,1.897,0.864,extra_trees,0.6897,8.0,2B,2.9193,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,696135,Kahlil Watson,Cleveland Guardians,Miami Marlins,hitter_hits,0.735,0.0,1.895,0.864,extra_trees,0.6897,5.0,RF,3.3618,1.0,outputs/hitters/today_hitter_projections.csv
@@ -474,6 +473,7 @@ MLB,2026-07-12,824491,608348,Carson Kelly,Chicago Cubs,Cincinnati Reds,hitter_hi
 MLB,2026-07-12,824250,663837,Matt Vierling,Detroit Tigers,Philadelphia Phillies,hitter_hits,0.731,0.0,1.891,0.864,extra_trees,0.6897,8.0,RF,3.5975,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,682997,Tyler Callihan,Pittsburgh Pirates,Milwaukee Brewers,hitter_hits,0.73,0.0,1.889,0.864,extra_trees,0.6897,2.0,2B,3.5786,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,687859,Troy Johnston,Colorado Rockies,San Francisco Giants,hitter_hits,0.719,0.0,1.879,0.864,extra_trees,0.6897,7.0,LF,3.0533,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,696030,Alejandro Osuna,Texas Rangers,Houston Astros,hitter_hits,0.714,0.0,1.874,0.864,extra_trees,0.6897,9.0,CF,2.9233,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,656537,Derek Hill,Philadelphia Phillies,Detroit Tigers,hitter_hits,0.714,0.0,1.873,0.864,extra_trees,0.6897,7.0,CF,2.6817,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,630105,Jake Cronenworth,San Diego Padres,Toronto Blue Jays,hitter_hits,0.714,0.0,1.873,0.864,extra_trees,0.6897,7.0,2B,3.3522,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,596142,Gary Sánchez,Milwaukee Brewers,Pittsburgh Pirates,hitter_hits,0.71,0.0,1.87,0.864,extra_trees,0.6897,5.0,C,3.4766,1.0,outputs/hitters/today_hitter_projections.csv
@@ -483,6 +483,7 @@ MLB,2026-07-12,823274,678218,Brandon Valenzuela,Toronto Blue Jays,San Diego Padr
 MLB,2026-07-12,823199,687551,Drew Gilbert,San Francisco Giants,Colorado Rockies,hitter_hits,0.706,0.0,1.865,0.864,extra_trees,0.6897,8.0,CF,3.123,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,676609,José Caballero,New York Yankees,Washington Nationals,hitter_hits,0.705,0.0,1.865,0.864,extra_trees,0.6897,6.0,3B,3.4371,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,683083,Nasim Nuñez,Washington Nationals,New York Yankees,hitter_hits,0.705,0.0,1.864,0.864,extra_trees,0.6897,7.0,2B,3.3832,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,553869,Elias Díaz,Texas Rangers,Houston Astros,hitter_hits,0.702,0.0,1.861,0.864,extra_trees,0.6897,8.0,C,2.6273,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,672275,Patrick Bailey,Cleveland Guardians,Miami Marlins,hitter_hits,0.702,0.0,1.862,0.864,extra_trees,0.6897,8.0,C,3.3932,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,691723,Coby Mayo,Baltimore Orioles,Kansas City Royals,hitter_hits,0.701,0.0,1.861,0.864,extra_trees,0.6897,6.0,3B,2.744,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,702176,Alan Roden,Minnesota Twins,Los Angeles Angels,hitter_hits,0.7,0.0,1.86,0.864,extra_trees,0.6897,7.0,RF,3.25,1.0,outputs/hitters/today_hitter_projections.csv
@@ -498,9 +499,9 @@ MLB,2026-07-12,823274,665926,Andrés Giménez,Toronto Blue Jays,San Diego Padres
 MLB,2026-07-12,823274,823550,Sung-Mun Song,San Diego Padres,Toronto Blue Jays,hitter_hits,0.678,0.0,1.838,0.864,extra_trees,0.6897,9.0,3B,3.2834,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,669236,Jeremiah Jackson,Baltimore Orioles,Kansas City Royals,hitter_hits,0.676,0.0,1.836,0.864,extra_trees,0.6897,9.0,2B,2.6487,3.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,687637,Dylan Beavers,Baltimore Orioles,Kansas City Royals,hitter_hits,0.674,0.0,1.834,0.864,extra_trees,0.6897,3.0,LF,2.421,2.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,679822,Justin Foscue,Texas Rangers,Houston Astros,hitter_hits,0.674,0.0,1.834,0.864,extra_trees,0.6897,1.0,DH,2.4856,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,683011,Anthony Volpe,New York Yankees,Washington Nationals,hitter_hits,0.672,0.0,1.831,0.864,extra_trees,0.6897,8.0,SS,2.9136,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Dodgers,hitter_hits,0.668,0.0,1.828,0.864,extra_trees,0.6897,6.0,2B,3.032,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543877,Christian Vázquez,Houston Astros,Texas Rangers,hitter_hits,0.66,0.0,1.82,0.864,extra_trees,0.6897,9.0,C,3.4007,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,701852,Drew Cavanaugh,San Francisco Giants,Colorado Rockies,hitter_hits,0.656,0.0,1.816,0.864,extra_trees,0.6897,9.0,C,3.1182,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,678391,Jorbit Vivas,Washington Nationals,New York Yankees,hitter_hits,0.655,0.0,1.814,0.864,extra_trees,0.6897,8.0,3B,3.4986,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,641933,Tyler O'Neill,Baltimore Orioles,Kansas City Royals,hitter_hits,0.655,0.0,1.815,0.864,extra_trees,0.6897,7.0,RF,2.4466,1.0,outputs/hitters/today_hitter_projections.csv
@@ -509,9 +510,7 @@ MLB,2026-07-12,824574,666126,Carlos Cortes,Athletics,Chicago White Sox,hitter_hi
 MLB,2026-07-12,823842,700932,Kyle Manzardo,Cleveland Guardians,Miami Marlins,hitter_hits,0.645,0.0,1.805,0.864,extra_trees,0.6897,4.0,1B,3.7193,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,621438,Tyrone Taylor,New York Mets,Boston Red Sox,hitter_hits,0.643,0.0,1.803,0.864,extra_trees,0.6897,6.0,LF,1.633,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,676439,Hunter Feduccia,Tampa Bay Rays,Seattle Mariners,hitter_hits,0.642,0.0,1.802,0.864,extra_trees,0.6897,9.0,C,3.2116,2.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_hits,0.639,0.0,1.799,0.864,extra_trees,0.6897,7.0,LF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,666211,Taylor Trammell,Houston Astros,Texas Rangers,hitter_hits,0.637,0.0,1.796,0.864,extra_trees,0.6897,8.0,CF,2.7374,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543309,Kyle Higashioka,Texas Rangers,Houston Astros,hitter_hits,0.635,0.0,1.795,0.864,extra_trees,0.6897,9.0,C,3.0554,2.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_hits,0.639,0.0,1.799,0.864,extra_trees,0.6897,7.0,RF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,665750,Leody Taveras,Baltimore Orioles,Kansas City Royals,hitter_hits,0.634,0.0,1.794,0.864,extra_trees,0.6897,8.0,CF,2.8062,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,660710,Rodolfo Durán,San Diego Padres,Toronto Blue Jays,hitter_hits,0.631,0.0,1.79,0.864,extra_trees,0.6897,8.0,C,2.3218,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,680779,Henry Davis,Pittsburgh Pirates,Milwaukee Brewers,hitter_hits,0.627,0.0,1.787,0.864,extra_trees,0.6897,9.0,C,2.7733,1.0,outputs/hitters/today_hitter_projections.csv
@@ -520,12 +519,13 @@ MLB,2026-07-12,822708,680474,Max Schuemann,New York Yankees,Washington Nationals
 MLB,2026-07-12,822951,645302,Victor Robles,Seattle Mariners,Tampa Bay Rays,hitter_hits,0.621,0.0,1.781,0.864,extra_trees,0.6897,7.0,CF,2.91,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,681546,James Outman,Detroit Tigers,Philadelphia Phillies,hitter_hits,0.613,0.0,1.772,0.864,extra_trees,0.6897,9.0,CF,2.6294,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,668885,Austin Martin,Minnesota Twins,Los Angeles Angels,hitter_hits,0.603,0.0,1.763,0.864,extra_trees,0.6897,1.0,LF,2.8754,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,694497,Evan Carter,Texas Rangers,Houston Astros,hitter_hits,0.603,0.0,1.762,0.864,extra_trees,0.6897,7.0,CF,3.1431,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,699393,Pedro Ramírez,Chicago Cubs,Cincinnati Reds,hitter_hits,0.591,0.0,1.751,0.864,extra_trees,0.6897,9.0,DH,1.978,7.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,690984,Petey Halpin,Cleveland Guardians,Miami Marlins,hitter_hits,0.584,0.0,1.744,0.864,extra_trees,0.6897,7.0,CF,2.3867,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,608841,Joey Meneses,Athletics,Chicago White Sox,hitter_hits,0.577,0.0,1.737,0.864,extra_trees,0.6897,6.0,1B,2.5125,2.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,695508,Cam Cauley,Texas Rangers,Houston Astros,hitter_hits,0.575,0.0,1.734,0.864,extra_trees,0.6897,7.0,2B,2.1222,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,670156,Miles Mastrobuoni,Seattle Mariners,Tampa Bay Rays,hitter_hits,0.568,0.0,1.728,0.864,extra_trees,0.6897,8.0,RF,1.79,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,645305,Ali Sánchez,New York Yankees,Washington Nationals,hitter_hits,0.563,0.0,1.722,0.864,extra_trees,0.6897,2.0,C,2.2118,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701305,Zach Dezenzo,Houston Astros,Texas Rangers,hitter_hits,0.561,0.0,1.721,0.864,extra_trees,0.6897,8.0,LF,1.9792,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,699625,Jimmy Crooks,St. Louis Cardinals,Atlanta Braves,hitter_hits,0.526,0.0,1.686,0.864,extra_trees,0.6897,9.0,C,1.85,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,642201,Eli White,Atlanta Braves,St. Louis Cardinals,hitter_hits,0.524,0.0,1.683,0.864,extra_trees,0.6897,6.0,DH,2.0036,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,663494,Bryan Torres,St. Louis Cardinals,Atlanta Braves,hitter_hits,0.501,0.0,1.661,0.864,extra_trees,0.6897,7.0,LF,2.4197,1.0,outputs/hitters/today_hitter_projections.csv
@@ -634,6 +634,7 @@ MLB,2026-07-12,823602,805999,A.J. Ewing,New York Mets,Boston Red Sox,hitter_hits
 MLB,2026-07-12,822876,665161,Jeremy Peña,Houston Astros,Texas Rangers,hitter_hits_runs_rbis,1.918,0.0,4.697,1.983,xgboost,1.5362,1.0,SS,4.344,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,641487,J.P. Crawford,Seattle Mariners,Tampa Bay Rays,hitter_hits_runs_rbis,1.915,0.0,4.694,1.983,xgboost,1.5362,1.0,SS,4.3362,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,805367,Chase Meidroth,Chicago White Sox,Athletics,hitter_hits_runs_rbis,1.907,0.0,4.686,1.983,xgboost,1.5362,9.0,2B,4.0435,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,673237,Yainer Diaz,Houston Astros,Texas Rangers,hitter_hits_runs_rbis,1.904,0.0,4.683,1.983,xgboost,1.5362,9.0,C,3.9,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,702332,Caleb Durbin,Boston Red Sox,New York Mets,hitter_hits_runs_rbis,1.903,0.0,4.682,1.983,xgboost,1.5362,5.0,3B,4.1879,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822876,669394,Jake Burger,Texas Rangers,Houston Astros,hitter_hits_runs_rbis,1.893,0.0,4.672,1.983,xgboost,1.5362,5.0,1B,3.9388,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,677587,Brayan Rocchio,Cleveland Guardians,Miami Marlins,hitter_hits_runs_rbis,1.889,0.0,4.668,1.983,xgboost,1.5362,2.0,SS,4.0313,1.0,outputs/hitters/today_hitter_projections.csv
@@ -663,7 +664,7 @@ MLB,2026-07-12,824574,703607,Henry Bolte,Athletics,Chicago White Sox,hitter_hits
 MLB,2026-07-12,823199,808982,Jung Hoo Lee,San Francisco Giants,Colorado Rockies,hitter_hits_runs_rbis,1.838,0.0,4.617,1.983,xgboost,1.5362,5.0,RF,3.5077,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,672515,Gabriel Moreno,Arizona Diamondbacks,Los Angeles Dodgers,hitter_hits_runs_rbis,1.837,0.0,4.616,1.983,xgboost,1.5362,4.0,C,4.2871,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,800325,Luis Lara,Milwaukee Brewers,Pittsburgh Pirates,hitter_hits_runs_rbis,1.836,0.0,4.615,1.983,xgboost,1.5362,1.0,PH,4.25,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_hits_runs_rbis,1.823,0.0,4.602,1.983,xgboost,1.5362,6.0,RF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_hits_runs_rbis,1.823,0.0,4.602,1.983,xgboost,1.5362,6.0,CF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,592663,J.T. Realmuto,Philadelphia Phillies,Detroit Tigers,hitter_hits_runs_rbis,1.818,0.0,4.597,1.983,xgboost,1.5362,8.0,C,3.6952,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,665489,Vladimir Guerrero Jr.,Toronto Blue Jays,San Diego Padres,hitter_hits_runs_rbis,1.807,0.0,4.587,1.983,xgboost,1.5362,3.0,DH,4.4389,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,681715,Heriberto Hernández,Miami Marlins,Cleveland Guardians,hitter_hits_runs_rbis,1.805,0.0,4.584,1.983,xgboost,1.5362,2.0,LF,3.4288,1.0,outputs/hitters/today_hitter_projections.csv
@@ -724,7 +725,6 @@ MLB,2026-07-12,824574,671732,Lawrence Butler,Athletics,Chicago White Sox,hitter_
 MLB,2026-07-12,824491,668715,Spencer Steer,Cincinnati Reds,Chicago Cubs,hitter_hits_runs_rbis,1.57,0.0,4.349,1.983,xgboost,1.5362,3.0,CF,3.9944,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,553993,Eugenio Suárez,Cincinnati Reds,Chicago Cubs,hitter_hits_runs_rbis,1.568,0.0,4.347,1.983,xgboost,1.5362,5.0,DH,4.157,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,695490,Edwin Arroyo,Cincinnati Reds,Chicago Cubs,hitter_hits_runs_rbis,1.565,0.0,4.344,1.983,xgboost,1.5362,8.0,2B,3.5,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,592626,Joc Pederson,Texas Rangers,Houston Astros,hitter_hits_runs_rbis,1.565,0.0,4.344,1.983,xgboost,1.5362,1.0,DH,3.159,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,641680,Jonah Heim,Athletics,Chicago White Sox,hitter_hits_runs_rbis,1.559,0.0,4.339,1.983,xgboost,1.5362,4.0,DH,3.904,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,694378,Jacob Gonzalez,Pittsburgh Pirates,Milwaukee Brewers,hitter_hits_runs_rbis,1.558,0.0,4.337,1.983,xgboost,1.5362,3.0,1B,2.8067,3.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,682622,Noelvi Marte,Cincinnati Reds,Chicago Cubs,hitter_hits_runs_rbis,1.555,0.0,4.334,1.983,xgboost,1.5362,7.0,RF,3.345,1.0,outputs/hitters/today_hitter_projections.csv
@@ -735,12 +735,13 @@ MLB,2026-07-12,822951,680700,Richie Palacios,Tampa Bay Rays,Seattle Mariners,hit
 MLB,2026-07-12,823681,666139,Josh Lowe,Los Angeles Angels,Minnesota Twins,hitter_hits_runs_rbis,1.53,0.0,4.309,1.983,xgboost,1.5362,6.0,LF,3.5636,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,668952,Ryan Kreidler,Minnesota Twins,Los Angeles Angels,hitter_hits_runs_rbis,1.52,0.0,4.299,1.983,xgboost,1.5362,9.0,SS,2.9951,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,815873,Sean Keys,Toronto Blue Jays,San Diego Padres,hitter_hits_runs_rbis,1.514,0.0,4.293,1.983,xgboost,1.5362,7.0,1B,3.5125,5.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_hits_runs_rbis,1.506,0.0,4.285,1.983,xgboost,1.5362,7.0,LF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_hits_runs_rbis,1.506,0.0,4.285,1.983,xgboost,1.5362,7.0,RF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,664770,Nathan Lukes,Toronto Blue Jays,San Diego Padres,hitter_hits_runs_rbis,1.502,0.0,4.281,1.983,xgboost,1.5362,2.0,RF,3.9682,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,665926,Andrés Giménez,Toronto Blue Jays,San Diego Padres,hitter_hits_runs_rbis,1.48,0.0,4.259,1.983,xgboost,1.5362,9.0,SS,2.8967,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,672275,Patrick Bailey,Cleveland Guardians,Miami Marlins,hitter_hits_runs_rbis,1.474,0.0,4.254,1.983,xgboost,1.5362,8.0,C,3.3932,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Dodgers,hitter_hits_runs_rbis,1.472,0.0,4.251,1.983,xgboost,1.5362,6.0,2B,3.032,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,663837,Matt Vierling,Detroit Tigers,Philadelphia Phillies,hitter_hits_runs_rbis,1.47,0.0,4.249,1.983,xgboost,1.5362,8.0,RF,3.5975,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,553869,Elias Díaz,Texas Rangers,Houston Astros,hitter_hits_runs_rbis,1.469,0.0,4.248,1.983,xgboost,1.5362,8.0,C,2.6273,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,691788,Joe Mack,Miami Marlins,Cleveland Guardians,hitter_hits_runs_rbis,1.468,0.0,4.247,1.983,xgboost,1.5362,9.0,C,3.0238,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,671155,Ivan Johnson,Cincinnati Reds,Chicago Cubs,hitter_hits_runs_rbis,1.467,0.0,4.246,1.983,xgboost,1.5362,9.0,PH,1.6667,5.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,542303,Marcell Ozuna,Pittsburgh Pirates,Milwaukee Brewers,hitter_hits_runs_rbis,1.466,0.0,4.245,1.983,xgboost,1.5362,7.0,DH,3.9867,1.0,outputs/hitters/today_hitter_projections.csv
@@ -760,20 +761,19 @@ MLB,2026-07-12,823358,682997,Tyler Callihan,Pittsburgh Pirates,Milwaukee Brewers
 MLB,2026-07-12,823274,630105,Jake Cronenworth,San Diego Padres,Toronto Blue Jays,hitter_hits_runs_rbis,1.396,0.0,4.175,1.983,xgboost,1.5362,7.0,2B,3.3522,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,685133,Wade Meckler,Los Angeles Angels,Minnesota Twins,hitter_hits_runs_rbis,1.396,0.0,4.175,1.983,xgboost,1.5362,7.0,PH,3.0967,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,680757,Steven Kwan,Cleveland Guardians,Miami Marlins,hitter_hits_runs_rbis,1.39,0.0,4.169,1.983,xgboost,1.5362,9.0,LF,3.3555,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543309,Kyle Higashioka,Texas Rangers,Houston Astros,hitter_hits_runs_rbis,1.378,0.0,4.157,1.983,xgboost,1.5362,9.0,C,3.0554,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,596142,Gary Sánchez,Milwaukee Brewers,Pittsburgh Pirates,hitter_hits_runs_rbis,1.374,0.0,4.153,1.983,xgboost,1.5362,5.0,C,3.4766,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543877,Christian Vázquez,Houston Astros,Texas Rangers,hitter_hits_runs_rbis,1.371,0.0,4.15,1.983,xgboost,1.5362,9.0,C,3.4007,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,678391,Jorbit Vivas,Washington Nationals,New York Yankees,hitter_hits_runs_rbis,1.368,0.0,4.147,1.983,xgboost,1.5362,8.0,3B,3.4986,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,702176,Alan Roden,Minnesota Twins,Los Angeles Angels,hitter_hits_runs_rbis,1.355,0.0,4.134,1.983,xgboost,1.5362,7.0,RF,3.25,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,679822,Justin Foscue,Texas Rangers,Houston Astros,hitter_hits_runs_rbis,1.353,0.0,4.132,1.983,xgboost,1.5362,1.0,DH,2.4856,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,666126,Carlos Cortes,Athletics,Chicago White Sox,hitter_hits_runs_rbis,1.352,0.0,4.131,1.983,xgboost,1.5362,5.0,LF,2.7933,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,669242,Tommy Edman,Los Angeles Dodgers,Arizona Diamondbacks,hitter_hits_runs_rbis,1.35,0.0,4.129,1.983,xgboost,1.5362,5.0,2B,3.3648,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,694497,Evan Carter,Texas Rangers,Houston Astros,hitter_hits_runs_rbis,1.343,0.0,4.122,1.983,xgboost,1.5362,7.0,CF,3.1431,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,680779,Henry Davis,Pittsburgh Pirates,Milwaukee Brewers,hitter_hits_runs_rbis,1.342,0.0,4.121,1.983,xgboost,1.5362,9.0,C,2.7733,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,669236,Jeremiah Jackson,Baltimore Orioles,Kansas City Royals,hitter_hits_runs_rbis,1.338,0.0,4.118,1.983,xgboost,1.5362,9.0,2B,2.6487,3.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,670032,Nicky Lopez,Texas Rangers,Houston Astros,hitter_hits_runs_rbis,1.324,0.0,4.103,1.983,xgboost,1.5362,8.0,2B,2.6857,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,696030,Alejandro Osuna,Texas Rangers,Houston Astros,hitter_hits_runs_rbis,1.336,0.0,4.115,1.983,xgboost,1.5362,9.0,CF,2.9233,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,701852,Drew Cavanaugh,San Francisco Giants,Colorado Rockies,hitter_hits_runs_rbis,1.32,0.0,4.099,1.983,xgboost,1.5362,9.0,C,3.1182,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,699393,Pedro Ramírez,Chicago Cubs,Cincinnati Reds,hitter_hits_runs_rbis,1.306,0.0,4.085,1.983,xgboost,1.5362,9.0,DH,1.978,7.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,668885,Austin Martin,Minnesota Twins,Los Angeles Angels,hitter_hits_runs_rbis,1.298,0.0,4.077,1.983,xgboost,1.5362,1.0,LF,2.8754,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,695508,Cam Cauley,Texas Rangers,Houston Astros,hitter_hits_runs_rbis,1.294,0.0,4.073,1.983,xgboost,1.5362,7.0,2B,2.1222,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,691723,Coby Mayo,Baltimore Orioles,Kansas City Royals,hitter_hits_runs_rbis,1.294,0.0,4.073,1.983,xgboost,1.5362,6.0,3B,2.744,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,665750,Leody Taveras,Baltimore Orioles,Kansas City Royals,hitter_hits_runs_rbis,1.294,0.0,4.073,1.983,xgboost,1.5362,8.0,CF,2.8062,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,700932,Kyle Manzardo,Cleveland Guardians,Miami Marlins,hitter_hits_runs_rbis,1.292,0.0,4.071,1.983,xgboost,1.5362,4.0,1B,3.7193,1.0,outputs/hitters/today_hitter_projections.csv
@@ -788,7 +788,6 @@ MLB,2026-07-12,823842,696135,Kahlil Watson,Cleveland Guardians,Miami Marlins,hit
 MLB,2026-07-12,823274,660710,Rodolfo Durán,San Diego Padres,Toronto Blue Jays,hitter_hits_runs_rbis,1.227,0.0,4.006,1.983,xgboost,1.5362,8.0,C,2.3218,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,621438,Tyrone Taylor,New York Mets,Boston Red Sox,hitter_hits_runs_rbis,1.216,0.0,3.995,1.983,xgboost,1.5362,6.0,LF,1.633,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,668942,Josh Rojas,Kansas City Royals,Baltimore Orioles,hitter_hits_runs_rbis,1.21,0.0,3.99,1.983,xgboost,1.5362,8.0,3B,2.6629,2.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,666211,Taylor Trammell,Houston Astros,Texas Rangers,hitter_hits_runs_rbis,1.21,0.0,3.989,1.983,xgboost,1.5362,8.0,CF,2.7374,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,823550,Sung-Mun Song,San Diego Padres,Toronto Blue Jays,hitter_hits_runs_rbis,1.207,0.0,3.986,1.983,xgboost,1.5362,9.0,3B,3.2834,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,645305,Ali Sánchez,New York Yankees,Washington Nationals,hitter_hits_runs_rbis,1.206,0.0,3.986,1.983,xgboost,1.5362,2.0,C,2.2118,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,645302,Victor Robles,Seattle Mariners,Tampa Bay Rays,hitter_hits_runs_rbis,1.188,0.0,3.967,1.983,xgboost,1.5362,7.0,CF,2.91,1.0,outputs/hitters/today_hitter_projections.csv
@@ -797,6 +796,7 @@ MLB,2026-07-12,823029,663494,Bryan Torres,St. Louis Cardinals,Atlanta Braves,hit
 MLB,2026-07-12,824574,608841,Joey Meneses,Athletics,Chicago White Sox,hitter_hits_runs_rbis,1.111,0.0,3.89,1.983,xgboost,1.5362,6.0,1B,2.5125,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,690984,Petey Halpin,Cleveland Guardians,Miami Marlins,hitter_hits_runs_rbis,1.086,0.0,3.865,1.983,xgboost,1.5362,7.0,CF,2.3867,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,672613,Eliezer Alfonzo,Los Angeles Dodgers,Arizona Diamondbacks,hitter_hits_runs_rbis,1.082,0.0,3.861,1.983,xgboost,1.5362,9.0,C,1.75,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701305,Zach Dezenzo,Houston Astros,Texas Rangers,hitter_hits_runs_rbis,1.073,0.0,3.853,1.983,xgboost,1.5362,8.0,LF,1.9792,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,699625,Jimmy Crooks,St. Louis Cardinals,Atlanta Braves,hitter_hits_runs_rbis,1.039,0.0,3.818,1.983,xgboost,1.5362,9.0,C,1.85,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,671083,Buddy Kennedy,Seattle Mariners,Tampa Bay Rays,hitter_hits_runs_rbis,1.036,0.0,3.815,1.983,xgboost,1.5362,9.0,3B,1.3667,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,670156,Miles Mastrobuoni,Seattle Mariners,Tampa Bay Rays,hitter_hits_runs_rbis,0.992,0.0,3.771,1.983,xgboost,1.5362,8.0,RF,1.79,1.0,outputs/hitters/today_hitter_projections.csv
@@ -896,13 +896,14 @@ MLB,2026-07-12,823925,518692,Freddie Freeman,Los Angeles Dodgers,Arizona Diamond
 MLB,2026-07-12,824491,621020,Dansby Swanson,Chicago Cubs,Cincinnati Reds,hitter_rbis,0.495,0.0,1.918,0.863,xgboost,0.6341,8.0,SS,3.7836,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,593871,Jorge Polanco,New York Mets,Boston Red Sox,hitter_rbis,0.495,0.0,1.918,0.863,xgboost,0.6341,7.0,PH,4.1967,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,693304,Nick Gonzales,Pittsburgh Pirates,Milwaukee Brewers,hitter_rbis,0.49,0.0,1.913,0.863,xgboost,0.6341,6.0,3B,4.2678,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,673237,Yainer Diaz,Houston Astros,Texas Rangers,hitter_rbis,0.49,0.0,1.913,0.863,xgboost,0.6341,9.0,C,3.9,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,657041,Lane Thomas,Kansas City Royals,Baltimore Orioles,hitter_rbis,0.489,0.0,1.913,0.863,xgboost,0.6341,4.0,CF,4.1143,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,683737,Michael Busch,Chicago Cubs,Cincinnati Reds,hitter_rbis,0.488,0.0,1.912,0.863,xgboost,0.6341,5.0,1B,4.4436,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,702332,Caleb Durbin,Boston Red Sox,New York Mets,hitter_rbis,0.487,0.0,1.91,0.863,xgboost,0.6341,5.0,3B,4.1879,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Dodgers,hitter_rbis,0.486,0.0,1.909,0.863,xgboost,0.6341,6.0,2B,3.032,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,666018,Jonathan Aranda,Tampa Bay Rays,Seattle Mariners,hitter_rbis,0.486,0.0,1.909,0.863,xgboost,0.6341,2.0,1B,4.3939,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,664983,Jake McCarthy,Colorado Rockies,San Francisco Giants,hitter_rbis,0.485,0.0,1.908,0.863,xgboost,0.6341,1.0,RF,4.159,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_rbis,0.484,0.0,1.907,0.863,xgboost,0.6341,6.0,RF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_rbis,0.484,0.0,1.907,0.863,xgboost,0.6341,6.0,CF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,699013,Esmerlyn Valdez,Pittsburgh Pirates,Milwaukee Brewers,hitter_rbis,0.484,0.0,1.907,0.863,xgboost,0.6341,4.0,RF,4.3207,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,682985,Riley Greene,Detroit Tigers,Philadelphia Phillies,hitter_rbis,0.484,0.0,1.907,0.863,xgboost,0.6341,4.0,LF,4.1326,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,664034,Ty France,San Diego Padres,Toronto Blue Jays,hitter_rbis,0.483,0.0,1.906,0.863,xgboost,0.6341,6.0,1B,4.0722,1.0,outputs/hitters/today_hitter_projections.csv
@@ -970,7 +971,7 @@ MLB,2026-07-12,823681,694203,Denzer Guzman,Los Angeles Angels,Minnesota Twins,hi
 MLB,2026-07-12,823925,672695,Geraldo Perdomo,Arizona Diamondbacks,Los Angeles Dodgers,hitter_rbis,0.42,0.0,1.844,0.863,xgboost,0.6341,2.0,SS,4.5305,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,691176,Jasson Domínguez,New York Yankees,Washington Nationals,hitter_rbis,0.419,0.0,1.842,0.863,xgboost,0.6341,3.0,DH,3.8771,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,663728,Cal Raleigh,Seattle Mariners,Tampa Bay Rays,hitter_rbis,0.418,0.0,1.841,0.863,xgboost,0.6341,3.0,DH,4.1594,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_rbis,0.418,0.0,1.842,0.863,xgboost,0.6341,7.0,LF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_rbis,0.418,0.0,1.842,0.863,xgboost,0.6341,7.0,RF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,686555,Isaac Collins,Kansas City Royals,Baltimore Orioles,hitter_rbis,0.417,0.0,1.84,0.863,xgboost,0.6341,9.0,LF,3.5918,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,682622,Noelvi Marte,Cincinnati Reds,Chicago Cubs,hitter_rbis,0.417,0.0,1.84,0.863,xgboost,0.6341,7.0,RF,3.345,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,677587,Brayan Rocchio,Cleveland Guardians,Miami Marlins,hitter_rbis,0.413,0.0,1.836,0.863,xgboost,0.6341,2.0,SS,4.0313,1.0,outputs/hitters/today_hitter_projections.csv
@@ -985,7 +986,6 @@ MLB,2026-07-12,823842,805300,Jakob Marsee,Miami Marlins,Cleveland Guardians,hitt
 MLB,2026-07-12,823274,664770,Nathan Lukes,Toronto Blue Jays,San Diego Padres,hitter_rbis,0.402,0.0,1.825,0.863,xgboost,0.6341,2.0,RF,3.9682,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,671289,Tyler Freeman,Colorado Rockies,San Francisco Giants,hitter_rbis,0.402,0.0,1.826,0.863,xgboost,0.6341,8.0,2B,3.8131,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,672515,Gabriel Moreno,Arizona Diamondbacks,Los Angeles Dodgers,hitter_rbis,0.401,0.0,1.825,0.863,xgboost,0.6341,4.0,C,4.2871,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543309,Kyle Higashioka,Texas Rangers,Houston Astros,hitter_rbis,0.401,0.0,1.824,0.863,xgboost,0.6341,9.0,C,3.0554,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,687637,Dylan Beavers,Baltimore Orioles,Kansas City Royals,hitter_rbis,0.4,0.0,1.823,0.863,xgboost,0.6341,3.0,LF,2.421,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,683734,Andrew Vaughn,Milwaukee Brewers,Pittsburgh Pirates,hitter_rbis,0.399,0.0,1.822,0.863,xgboost,0.6341,9.0,3B,2.1759,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,686681,Michael Massey,Kansas City Royals,Baltimore Orioles,hitter_rbis,0.397,0.0,1.82,0.863,xgboost,0.6341,7.0,2B,3.4868,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1003,13 +1003,12 @@ MLB,2026-07-12,823358,596142,Gary Sánchez,Milwaukee Brewers,Pittsburgh Pirates,
 MLB,2026-07-12,823842,691788,Joe Mack,Miami Marlins,Cleveland Guardians,hitter_rbis,0.383,0.0,1.806,0.863,xgboost,0.6341,9.0,C,3.0238,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,807799,Masataka Yoshida,Boston Red Sox,New York Mets,hitter_rbis,0.383,0.0,1.806,0.863,xgboost,0.6341,8.0,LF,4.0467,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,669364,Xavier Edwards,Miami Marlins,Cleveland Guardians,hitter_rbis,0.383,0.0,1.807,0.863,xgboost,0.6341,4.0,2B,4.3338,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,592626,Joc Pederson,Texas Rangers,Houston Astros,hitter_rbis,0.382,0.0,1.805,0.863,xgboost,0.6341,1.0,DH,3.159,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,811965,Joshua Kuroda-Grauer,Athletics,Chicago White Sox,hitter_rbis,0.382,0.0,1.805,0.863,xgboost,0.6341,2.0,3B,3.8036,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,670764,Taylor Walls,Tampa Bay Rays,Seattle Mariners,hitter_rbis,0.382,0.0,1.805,0.863,xgboost,0.6341,7.0,SS,3.6808,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,663886,Tyler Stephenson,Cincinnati Reds,Chicago Cubs,hitter_rbis,0.381,0.0,1.804,0.863,xgboost,0.6341,6.0,C,3.3828,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,687401,Joey Ortiz,Milwaukee Brewers,Pittsburgh Pirates,hitter_rbis,0.379,0.0,1.802,0.863,xgboost,0.6341,8.0,SS,3.368,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,571448,Nolan Arenado,Arizona Diamondbacks,Los Angeles Dodgers,hitter_rbis,0.379,0.0,1.802,0.863,xgboost,0.6341,7.0,3B,4.1008,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,694497,Evan Carter,Texas Rangers,Houston Astros,hitter_rbis,0.376,0.0,1.799,0.863,xgboost,0.6341,7.0,CF,3.1431,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,679822,Justin Foscue,Texas Rangers,Houston Astros,hitter_rbis,0.378,0.0,1.801,0.863,xgboost,0.6341,1.0,DH,2.4856,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,678391,Jorbit Vivas,Washington Nationals,New York Yankees,hitter_rbis,0.375,0.0,1.798,0.863,xgboost,0.6341,8.0,3B,3.4986,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,621493,Taylor Ward,Baltimore Orioles,Kansas City Royals,hitter_rbis,0.375,0.0,1.798,0.863,xgboost,0.6341,2.0,DH,4.3037,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,680700,Richie Palacios,Tampa Bay Rays,Seattle Mariners,hitter_rbis,0.372,0.0,1.795,0.863,xgboost,0.6341,8.0,2B,2.9193,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1019,6 +1018,7 @@ MLB,2026-07-12,822708,683083,Nasim Nuñez,Washington Nationals,New York Yankees,
 MLB,2026-07-12,824814,668942,Josh Rojas,Kansas City Royals,Baltimore Orioles,hitter_rbis,0.37,0.0,1.793,0.863,xgboost,0.6341,8.0,3B,2.6629,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,675961,Alika Williams,Athletics,Chicago White Sox,hitter_rbis,0.369,0.0,1.792,0.863,xgboost,0.6341,9.0,2B,2.5557,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,655316,Andruw Monasterio,Boston Red Sox,New York Mets,hitter_rbis,0.368,0.0,1.791,0.863,xgboost,0.6341,6.0,1B,3.5389,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,553869,Elias Díaz,Texas Rangers,Houston Astros,hitter_rbis,0.368,0.0,1.791,0.863,xgboost,0.6341,8.0,C,2.6273,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,687551,Drew Gilbert,San Francisco Giants,Colorado Rockies,hitter_rbis,0.366,0.0,1.79,0.863,xgboost,0.6341,8.0,CF,3.123,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,702176,Alan Roden,Minnesota Twins,Los Angeles Angels,hitter_rbis,0.365,0.0,1.788,0.863,xgboost,0.6341,7.0,RF,3.25,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,624641,Edmundo Sosa,Philadelphia Phillies,Detroit Tigers,hitter_rbis,0.365,0.0,1.789,0.863,xgboost,0.6341,5.0,LF,3.6596,4.0,outputs/hitters/today_hitter_projections.csv
@@ -1033,7 +1033,6 @@ MLB,2026-07-12,824574,608841,Joey Meneses,Athletics,Chicago White Sox,hitter_rbi
 MLB,2026-07-12,822951,676439,Hunter Feduccia,Tampa Bay Rays,Seattle Mariners,hitter_rbis,0.351,0.0,1.774,0.863,xgboost,0.6341,9.0,C,3.2116,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,671976,Tristan Peters,Chicago White Sox,Athletics,hitter_rbis,0.351,0.0,1.775,0.863,xgboost,0.6341,8.0,CF,2.5722,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,685133,Wade Meckler,Los Angeles Angels,Minnesota Twins,hitter_rbis,0.351,0.0,1.774,0.863,xgboost,0.6341,7.0,PH,3.0967,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543877,Christian Vázquez,Houston Astros,Texas Rangers,hitter_rbis,0.347,0.0,1.771,0.863,xgboost,0.6341,9.0,C,3.4007,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,669236,Jeremiah Jackson,Baltimore Orioles,Kansas City Royals,hitter_rbis,0.345,0.0,1.769,0.863,xgboost,0.6341,9.0,2B,2.6487,3.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,671155,Ivan Johnson,Cincinnati Reds,Chicago Cubs,hitter_rbis,0.342,0.0,1.765,0.863,xgboost,0.6341,9.0,PH,1.6667,5.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,682729,Jonatan Clase,Toronto Blue Jays,San Diego Padres,hitter_rbis,0.342,0.0,1.765,0.863,xgboost,0.6341,8.0,LF,3.0,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1042,6 +1041,7 @@ MLB,2026-07-12,823681,807712,Luke Keaschall,Minnesota Twins,Los Angeles Angels,h
 MLB,2026-07-12,824814,691723,Coby Mayo,Baltimore Orioles,Kansas City Royals,hitter_rbis,0.34,0.0,1.763,0.863,xgboost,0.6341,6.0,3B,2.744,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,665750,Leody Taveras,Baltimore Orioles,Kansas City Royals,hitter_rbis,0.34,0.0,1.763,0.863,xgboost,0.6341,8.0,CF,2.8062,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,660710,Rodolfo Durán,San Diego Padres,Toronto Blue Jays,hitter_rbis,0.34,0.0,1.763,0.863,xgboost,0.6341,8.0,C,2.3218,2.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,695508,Cam Cauley,Texas Rangers,Houston Astros,hitter_rbis,0.339,0.0,1.763,0.863,xgboost,0.6341,7.0,2B,2.1222,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,665953,Andrés Chaparro,Washington Nationals,New York Yankees,hitter_rbis,0.338,0.0,1.762,0.863,xgboost,0.6341,2.0,1B,1.9167,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,676724,Jared Young,New York Mets,Boston Red Sox,hitter_rbis,0.338,0.0,1.761,0.863,xgboost,0.6341,4.0,1B,3.904,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,641598,Mitch Garver,Seattle Mariners,Tampa Bay Rays,hitter_rbis,0.336,0.0,1.759,0.863,xgboost,0.6341,5.0,C,2.6752,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1061,14 +1061,14 @@ MLB,2026-07-12,822708,680474,Max Schuemann,New York Yankees,Washington Nationals
 MLB,2026-07-12,824491,699393,Pedro Ramírez,Chicago Cubs,Cincinnati Reds,hitter_rbis,0.295,0.0,1.718,0.863,xgboost,0.6341,9.0,DH,1.978,7.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,657136,Connor Wong,Boston Red Sox,New York Mets,hitter_rbis,0.293,0.0,1.717,0.863,xgboost,0.6341,9.0,C,3.73,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,621438,Tyrone Taylor,New York Mets,Boston Red Sox,hitter_rbis,0.293,0.0,1.716,0.863,xgboost,0.6341,6.0,LF,1.633,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,670032,Nicky Lopez,Texas Rangers,Houston Astros,hitter_rbis,0.292,0.0,1.716,0.863,xgboost,0.6341,8.0,2B,2.6857,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,681546,James Outman,Detroit Tigers,Philadelphia Phillies,hitter_rbis,0.291,0.0,1.714,0.863,xgboost,0.6341,9.0,CF,2.6294,2.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,666211,Taylor Trammell,Houston Astros,Texas Rangers,hitter_rbis,0.29,0.0,1.713,0.863,xgboost,0.6341,8.0,CF,2.7374,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,690984,Petey Halpin,Cleveland Guardians,Miami Marlins,hitter_rbis,0.286,0.0,1.709,0.863,xgboost,0.6341,7.0,CF,2.3867,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,680779,Henry Davis,Pittsburgh Pirates,Milwaukee Brewers,hitter_rbis,0.271,0.0,1.694,0.863,xgboost,0.6341,9.0,C,2.7733,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,670156,Miles Mastrobuoni,Seattle Mariners,Tampa Bay Rays,hitter_rbis,0.266,0.0,1.69,0.863,xgboost,0.6341,8.0,RF,1.79,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,699625,Jimmy Crooks,St. Louis Cardinals,Atlanta Braves,hitter_rbis,0.257,0.0,1.68,0.863,xgboost,0.6341,9.0,C,1.85,2.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,696030,Alejandro Osuna,Texas Rangers,Houston Astros,hitter_rbis,0.256,0.0,1.679,0.863,xgboost,0.6341,9.0,CF,2.9233,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,645302,Victor Robles,Seattle Mariners,Tampa Bay Rays,hitter_rbis,0.255,0.0,1.678,0.863,xgboost,0.6341,7.0,CF,2.91,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701305,Zach Dezenzo,Houston Astros,Texas Rangers,hitter_rbis,0.255,0.0,1.678,0.863,xgboost,0.6341,8.0,LF,1.9792,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,671083,Buddy Kennedy,Seattle Mariners,Tampa Bay Rays,hitter_rbis,0.209,0.0,1.633,0.863,xgboost,0.6341,9.0,3B,1.3667,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,695257,Billy Cook,Pittsburgh Pirates,Milwaukee Brewers,hitter_rbis,0.187,0.0,1.61,0.863,xgboost,0.6341,5.0,CF,0.7659,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,695578,James Wood,Washington Nationals,New York Yankees,hitter_runs,0.837,0.276,1.501,0.689,extra_trees,0.5825,1.0,RF,4.9375,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1205,6 +1205,7 @@ MLB,2026-07-12,824574,641680,Jonah Heim,Athletics,Chicago White Sox,hitter_runs,
 MLB,2026-07-12,823199,681198,TJ Rumfield,Colorado Rockies,San Francisco Giants,hitter_runs,0.473,0.0,1.137,0.689,extra_trees,0.5825,4.0,1B,3.9785,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,664034,Ty France,San Diego Padres,Toronto Blue Jays,hitter_runs,0.473,0.0,1.136,0.689,extra_trees,0.5825,6.0,1B,4.0722,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,663538,Nico Hoerner,Chicago Cubs,Cincinnati Reds,hitter_runs,0.471,0.0,1.135,0.689,extra_trees,0.5825,6.0,2B,3.9946,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,673237,Yainer Diaz,Houston Astros,Texas Rangers,hitter_runs,0.471,0.0,1.135,0.689,extra_trees,0.5825,9.0,C,3.9,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,665742,Juan Soto,New York Mets,Boston Red Sox,hitter_runs,0.47,0.0,1.134,0.689,extra_trees,0.5825,2.0,DH,4.4071,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,670764,Taylor Walls,Tampa Bay Rays,Seattle Mariners,hitter_runs,0.469,0.0,1.133,0.689,extra_trees,0.5825,7.0,SS,3.6808,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,671976,Tristan Peters,Chicago White Sox,Athletics,hitter_runs,0.467,0.0,1.13,0.689,extra_trees,0.5825,8.0,CF,2.5722,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1230,6 +1231,7 @@ MLB,2026-07-12,822876,677649,Ezequiel Duran,Texas Rangers,Houston Astros,hitter_
 MLB,2026-07-12,823358,542303,Marcell Ozuna,Pittsburgh Pirates,Milwaukee Brewers,hitter_runs,0.445,0.0,1.109,0.689,extra_trees,0.5825,7.0,DH,3.9867,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,683011,Anthony Volpe,New York Yankees,Washington Nationals,hitter_runs,0.444,0.0,1.108,0.689,extra_trees,0.5825,8.0,SS,2.9136,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,666160,Mickey Moniak,Colorado Rockies,San Francisco Giants,hitter_runs,0.444,0.0,1.108,0.689,extra_trees,0.5825,2.0,DH,3.3811,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,696030,Alejandro Osuna,Texas Rangers,Houston Astros,hitter_runs,0.442,0.0,1.106,0.689,extra_trees,0.5825,9.0,CF,2.9233,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,669707,Jared Triolo,Pittsburgh Pirates,Milwaukee Brewers,hitter_runs,0.438,0.0,1.102,0.689,extra_trees,0.5825,8.0,SS,3.7174,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,663457,Lars Nootbaar,St. Louis Cardinals,Atlanta Braves,hitter_runs,0.438,0.0,1.102,0.689,extra_trees,0.5825,5.0,CF,3.2148,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,682622,Noelvi Marte,Cincinnati Reds,Chicago Cubs,hitter_runs,0.433,0.0,1.096,0.689,extra_trees,0.5825,7.0,RF,3.345,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1244,7 +1246,7 @@ MLB,2026-07-12,822708,676609,José Caballero,New York Yankees,Washington Nationa
 MLB,2026-07-12,823602,593871,Jorge Polanco,New York Mets,Boston Red Sox,hitter_runs,0.426,0.0,1.089,0.689,extra_trees,0.5825,7.0,PH,4.1967,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,683083,Nasim Nuñez,Washington Nationals,New York Yankees,hitter_runs,0.426,0.0,1.09,0.689,extra_trees,0.5825,7.0,2B,3.3832,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,687859,Troy Johnston,Colorado Rockies,San Francisco Giants,hitter_runs,0.426,0.0,1.089,0.689,extra_trees,0.5825,7.0,LF,3.0533,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_runs,0.425,0.0,1.089,0.689,extra_trees,0.5825,6.0,RF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_runs,0.425,0.0,1.089,0.689,extra_trees,0.5825,6.0,CF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,671289,Tyler Freeman,Colorado Rockies,San Francisco Giants,hitter_runs,0.425,0.0,1.088,0.689,extra_trees,0.5825,8.0,2B,3.8131,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,703607,Henry Bolte,Athletics,Chicago White Sox,hitter_runs,0.424,0.0,1.088,0.689,extra_trees,0.5825,8.0,CF,3.5609,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,656775,Cedric Mullins,Tampa Bay Rays,Seattle Mariners,hitter_runs,0.423,0.0,1.087,0.689,extra_trees,0.5825,4.0,CF,3.8178,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1258,7 +1260,6 @@ MLB,2026-07-12,823199,691720,Kyle Karros,Colorado Rockies,San Francisco Giants,h
 MLB,2026-07-12,822951,663728,Cal Raleigh,Seattle Mariners,Tampa Bay Rays,hitter_runs,0.414,0.0,1.078,0.689,extra_trees,0.5825,3.0,DH,4.1594,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,669242,Tommy Edman,Los Angeles Dodgers,Arizona Diamondbacks,hitter_runs,0.414,0.0,1.077,0.689,extra_trees,0.5825,5.0,2B,3.3648,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,672356,Gabriel Arias,Cleveland Guardians,Miami Marlins,hitter_runs,0.413,0.0,1.077,0.689,extra_trees,0.5825,6.0,3B,3.12,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,592626,Joc Pederson,Texas Rangers,Houston Astros,hitter_runs,0.413,0.0,1.077,0.689,extra_trees,0.5825,1.0,DH,3.159,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,807799,Masataka Yoshida,Boston Red Sox,New York Mets,hitter_runs,0.411,0.0,1.074,0.689,extra_trees,0.5825,8.0,LF,4.0467,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,663837,Matt Vierling,Detroit Tigers,Philadelphia Phillies,hitter_runs,0.41,0.0,1.074,0.689,extra_trees,0.5825,8.0,RF,3.5975,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,664770,Nathan Lukes,Toronto Blue Jays,San Diego Padres,hitter_runs,0.41,0.0,1.073,0.689,extra_trees,0.5825,2.0,RF,3.9682,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1290,24 +1291,22 @@ MLB,2026-07-12,824814,694212,Samuel Basallo,Baltimore Orioles,Kansas City Royals
 MLB,2026-07-12,823199,687551,Drew Gilbert,San Francisco Giants,Colorado Rockies,hitter_runs,0.386,0.0,1.049,0.689,extra_trees,0.5825,8.0,CF,3.123,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,681715,Heriberto Hernández,Miami Marlins,Cleveland Guardians,hitter_runs,0.386,0.0,1.05,0.689,extra_trees,0.5825,2.0,LF,3.4288,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,660710,Rodolfo Durán,San Diego Padres,Toronto Blue Jays,hitter_runs,0.384,0.0,1.048,0.689,extra_trees,0.5825,8.0,C,2.3218,2.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_runs,0.383,0.0,1.046,0.689,extra_trees,0.5825,7.0,LF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_runs,0.383,0.0,1.046,0.689,extra_trees,0.5825,7.0,RF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,690993,Colt Keith,Detroit Tigers,Philadelphia Phillies,hitter_runs,0.381,0.0,1.045,0.689,extra_trees,0.5825,3.0,3B,2.8306,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,592663,J.T. Realmuto,Philadelphia Phillies,Detroit Tigers,hitter_runs,0.381,0.0,1.045,0.689,extra_trees,0.5825,8.0,C,3.6952,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,545121,Ildemaro Vargas,Arizona Diamondbacks,Los Angeles Dodgers,hitter_runs,0.38,0.0,1.044,0.689,extra_trees,0.5825,6.0,2B,3.032,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543309,Kyle Higashioka,Texas Rangers,Houston Astros,hitter_runs,0.38,0.0,1.044,0.689,extra_trees,0.5825,9.0,C,3.0554,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,685133,Wade Meckler,Los Angeles Angels,Minnesota Twins,hitter_runs,0.38,0.0,1.043,0.689,extra_trees,0.5825,7.0,PH,3.0967,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,666126,Carlos Cortes,Athletics,Chicago White Sox,hitter_runs,0.379,0.0,1.043,0.689,extra_trees,0.5825,5.0,LF,2.7933,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,683734,Andrew Vaughn,Milwaukee Brewers,Pittsburgh Pirates,hitter_runs,0.377,0.0,1.041,0.689,extra_trees,0.5825,9.0,3B,2.1759,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,657136,Connor Wong,Boston Red Sox,New York Mets,hitter_runs,0.376,0.0,1.04,0.689,extra_trees,0.5825,9.0,C,3.73,2.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,553869,Elias Díaz,Texas Rangers,Houston Astros,hitter_runs,0.376,0.0,1.04,0.689,extra_trees,0.5825,8.0,C,2.6273,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,665953,Andrés Chaparro,Washington Nationals,New York Yankees,hitter_runs,0.375,0.0,1.039,0.689,extra_trees,0.5825,2.0,1B,1.9167,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,665926,Andrés Giménez,Toronto Blue Jays,San Diego Padres,hitter_runs,0.372,0.0,1.035,0.689,extra_trees,0.5825,9.0,SS,2.8967,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,679822,Justin Foscue,Texas Rangers,Houston Astros,hitter_runs,0.372,0.0,1.036,0.689,extra_trees,0.5825,1.0,DH,2.4856,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,682997,Tyler Callihan,Pittsburgh Pirates,Milwaukee Brewers,hitter_runs,0.371,0.0,1.035,0.689,extra_trees,0.5825,2.0,2B,3.5786,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,643217,Andrew Benintendi,Chicago White Sox,Athletics,hitter_runs,0.369,0.0,1.033,0.689,extra_trees,0.5825,5.0,DH,3.5027,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,678391,Jorbit Vivas,Washington Nationals,New York Yankees,hitter_runs,0.369,0.0,1.033,0.689,extra_trees,0.5825,8.0,3B,3.4986,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,701852,Drew Cavanaugh,San Francisco Giants,Colorado Rockies,hitter_runs,0.368,0.0,1.032,0.689,extra_trees,0.5825,9.0,C,3.1182,2.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543877,Christian Vázquez,Houston Astros,Texas Rangers,hitter_runs,0.366,0.0,1.029,0.689,extra_trees,0.5825,9.0,C,3.4007,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,694497,Evan Carter,Texas Rangers,Houston Astros,hitter_runs,0.365,0.0,1.029,0.689,extra_trees,0.5825,7.0,CF,3.1431,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,670032,Nicky Lopez,Texas Rangers,Houston Astros,hitter_runs,0.364,0.0,1.027,0.689,extra_trees,0.5825,8.0,2B,2.6857,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,683748,Victor Mesa Jr.,Tampa Bay Rays,Seattle Mariners,hitter_runs,0.364,0.0,1.027,0.689,extra_trees,0.5825,6.0,RF,2.915,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,700932,Kyle Manzardo,Cleveland Guardians,Miami Marlins,hitter_runs,0.363,0.0,1.026,0.689,extra_trees,0.5825,4.0,1B,3.7193,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,702176,Alan Roden,Minnesota Twins,Los Angeles Angels,hitter_runs,0.362,0.0,1.025,0.689,extra_trees,0.5825,7.0,RF,3.25,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1316,6 +1315,7 @@ MLB,2026-07-12,823274,823550,Sung-Mun Song,San Diego Padres,Toronto Blue Jays,hi
 MLB,2026-07-12,822951,676439,Hunter Feduccia,Tampa Bay Rays,Seattle Mariners,hitter_runs,0.361,0.0,1.025,0.689,extra_trees,0.5825,9.0,C,3.2116,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,641598,Mitch Garver,Seattle Mariners,Tampa Bay Rays,hitter_runs,0.361,0.0,1.025,0.689,extra_trees,0.5825,5.0,C,2.6752,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,675961,Alika Williams,Athletics,Chicago White Sox,hitter_runs,0.359,0.0,1.023,0.689,extra_trees,0.5825,9.0,2B,2.5557,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701305,Zach Dezenzo,Houston Astros,Texas Rangers,hitter_runs,0.358,0.0,1.022,0.689,extra_trees,0.5825,8.0,LF,1.9792,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,680779,Henry Davis,Pittsburgh Pirates,Milwaukee Brewers,hitter_runs,0.357,0.0,1.02,0.689,extra_trees,0.5825,9.0,C,2.7733,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,805347,Jim Jarvis,Atlanta Braves,St. Louis Cardinals,hitter_runs,0.356,0.0,1.02,0.689,extra_trees,0.5825,8.0,SS,3.2556,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,682729,Jonatan Clase,Toronto Blue Jays,San Diego Padres,hitter_runs,0.356,0.0,1.02,0.689,extra_trees,0.5825,8.0,LF,3.0,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1324,8 +1324,8 @@ MLB,2026-07-12,824814,668942,Josh Rojas,Kansas City Royals,Baltimore Orioles,hit
 MLB,2026-07-12,824814,687637,Dylan Beavers,Baltimore Orioles,Kansas City Royals,hitter_runs,0.348,0.0,1.012,0.689,extra_trees,0.5825,3.0,LF,2.421,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,699625,Jimmy Crooks,St. Louis Cardinals,Atlanta Braves,hitter_runs,0.348,0.0,1.012,0.689,extra_trees,0.5825,9.0,C,1.85,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,672613,Eliezer Alfonzo,Los Angeles Dodgers,Arizona Diamondbacks,hitter_runs,0.345,0.0,1.008,0.689,extra_trees,0.5825,9.0,C,1.75,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,695508,Cam Cauley,Texas Rangers,Houston Astros,hitter_runs,0.341,0.0,1.005,0.689,extra_trees,0.5825,7.0,2B,2.1222,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,621438,Tyrone Taylor,New York Mets,Boston Red Sox,hitter_runs,0.338,0.0,1.002,0.689,extra_trees,0.5825,6.0,LF,1.633,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,666211,Taylor Trammell,Houston Astros,Texas Rangers,hitter_runs,0.332,0.0,0.996,0.689,extra_trees,0.5825,8.0,CF,2.7374,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,645302,Victor Robles,Seattle Mariners,Tampa Bay Rays,hitter_runs,0.332,0.0,0.996,0.689,extra_trees,0.5825,7.0,CF,2.91,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824250,656537,Derek Hill,Philadelphia Phillies,Detroit Tigers,hitter_runs,0.326,0.0,0.989,0.689,extra_trees,0.5825,7.0,CF,2.6817,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,608841,Joey Meneses,Athletics,Chicago White Sox,hitter_runs,0.326,0.0,0.99,0.689,extra_trees,0.5825,6.0,1B,2.5125,2.0,outputs/hitters/today_hitter_projections.csv
@@ -1454,6 +1454,7 @@ MLB,2026-07-12,822951,647304,Josh Naylor,Seattle Mariners,Tampa Bay Rays,hitter_
 MLB,2026-07-12,824814,521692,Salvador Perez,Kansas City Royals,Baltimore Orioles,hitter_total_bases,1.539,0.0,4.096,1.794,extra_trees,1.3752,6.0,1B,4.2309,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,805811,Bryce Eldridge,San Francisco Giants,Colorado Rockies,hitter_total_bases,1.538,0.0,4.095,1.794,extra_trees,1.3752,6.0,DH,4.0638,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822876,514888,Jose Altuve,Houston Astros,Texas Rangers,hitter_total_bases,1.535,0.0,4.092,1.794,extra_trees,1.3752,5.0,2B,4.3775,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,673237,Yainer Diaz,Houston Astros,Texas Rangers,hitter_total_bases,1.533,0.0,4.09,1.794,extra_trees,1.3752,9.0,C,3.9,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,803011,Sam Antonacci,Chicago White Sox,Athletics,hitter_total_bases,1.531,0.0,4.088,1.794,extra_trees,1.3752,1.0,LF,4.1381,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,811965,Joshua Kuroda-Grauer,Athletics,Chicago White Sox,hitter_total_bases,1.523,0.0,4.08,1.794,extra_trees,1.3752,2.0,3B,3.8036,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,641933,Tyler O'Neill,Baltimore Orioles,Kansas City Royals,hitter_total_bases,1.523,0.0,4.08,1.794,extra_trees,1.3752,7.0,RF,2.4466,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1480,7 +1481,7 @@ MLB,2026-07-12,823358,542303,Marcell Ozuna,Pittsburgh Pirates,Milwaukee Brewers,
 MLB,2026-07-12,823199,808982,Jung Hoo Lee,San Francisco Giants,Colorado Rockies,hitter_total_bases,1.46,0.0,4.018,1.794,extra_trees,1.3752,5.0,RF,3.5077,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,694212,Samuel Basallo,Baltimore Orioles,Kansas City Royals,hitter_total_bases,1.458,0.0,4.015,1.794,extra_trees,1.3752,5.0,C,3.642,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,663586,Austin Riley,Atlanta Braves,St. Louis Cardinals,hitter_total_bases,1.457,0.0,4.014,1.794,extra_trees,1.3752,7.0,3B,3.9085,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_total_bases,1.457,0.0,4.015,1.794,extra_trees,1.3752,6.0,RF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701358,Cam Smith,Houston Astros,Texas Rangers,hitter_total_bases,1.457,0.0,4.015,1.794,extra_trees,1.3752,6.0,CF,3.6616,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,802139,JJ Wetherholt,St. Louis Cardinals,Atlanta Braves,hitter_total_bases,1.457,0.0,4.014,1.794,extra_trees,1.3752,1.0,2B,4.2256,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,672695,Geraldo Perdomo,Arizona Diamondbacks,Los Angeles Dodgers,hitter_total_bases,1.455,0.0,4.012,1.794,extra_trees,1.3752,2.0,SS,4.5305,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,663538,Nico Hoerner,Chicago Cubs,Cincinnati Reds,hitter_total_bases,1.455,0.0,4.012,1.794,extra_trees,1.3752,6.0,2B,3.9946,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1499,11 +1500,11 @@ MLB,2026-07-12,824574,691019,Kyle Teel,Chicago White Sox,Athletics,hitter_total_
 MLB,2026-07-12,823842,677587,Brayan Rocchio,Cleveland Guardians,Miami Marlins,hitter_total_bases,1.399,0.0,3.956,1.794,extra_trees,1.3752,2.0,SS,4.0313,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,695731,Braden Montgomery,Chicago White Sox,Athletics,hitter_total_bases,1.395,0.0,3.952,1.794,extra_trees,1.3752,7.0,RF,4.03,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,691594,Javier Sanoja,Miami Marlins,Cleveland Guardians,hitter_total_bases,1.391,0.0,3.948,1.794,extra_trees,1.3752,5.0,3B,3.1354,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,592626,Joc Pederson,Texas Rangers,Houston Astros,hitter_total_bases,1.388,0.0,3.945,1.794,extra_trees,1.3752,1.0,DH,3.159,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,814439,Ryan Waldschmidt,Arizona Diamondbacks,Los Angeles Dodgers,hitter_total_bases,1.388,0.0,3.945,1.794,extra_trees,1.3752,9.0,CF,3.7394,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,593428,Xander Bogaerts,San Diego Padres,Toronto Blue Jays,hitter_total_bases,1.384,0.0,3.941,1.794,extra_trees,1.3752,3.0,SS,4.3278,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,691720,Kyle Karros,Colorado Rockies,San Francisco Giants,hitter_total_bases,1.383,0.0,3.94,1.794,extra_trees,1.3752,5.0,3B,4.2435,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,678662,Ezequiel Tovar,Colorado Rockies,San Francisco Giants,hitter_total_bases,1.381,0.0,3.938,1.794,extra_trees,1.3752,9.0,SS,3.4329,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,679822,Justin Foscue,Texas Rangers,Houston Astros,hitter_total_bases,1.376,0.0,3.933,1.794,extra_trees,1.3752,1.0,DH,2.4856,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,683146,Brett Baty,New York Mets,Boston Red Sox,hitter_total_bases,1.373,0.0,3.931,1.794,extra_trees,1.3752,8.0,3B,4.0343,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,664034,Ty France,San Diego Padres,Toronto Blue Jays,hitter_total_bases,1.365,0.0,3.922,1.794,extra_trees,1.3752,6.0,1B,4.0722,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,641680,Jonah Heim,Athletics,Chicago White Sox,hitter_total_bases,1.356,0.0,3.913,1.794,extra_trees,1.3752,4.0,DH,3.904,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1532,6 +1533,7 @@ MLB,2026-07-12,823842,665052,Griffin Conine,Miami Marlins,Cleveland Guardians,hi
 MLB,2026-07-12,824491,682622,Noelvi Marte,Cincinnati Reds,Chicago Cubs,hitter_total_bases,1.265,0.0,3.822,1.794,extra_trees,1.3752,7.0,RF,3.345,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,669236,Jeremiah Jackson,Baltimore Orioles,Kansas City Royals,hitter_total_bases,1.263,0.0,3.82,1.794,extra_trees,1.3752,9.0,2B,2.6487,3.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,670764,Taylor Walls,Tampa Bay Rays,Seattle Mariners,hitter_total_bases,1.255,0.0,3.812,1.794,extra_trees,1.3752,7.0,SS,3.6808,2.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,696030,Alejandro Osuna,Texas Rangers,Houston Astros,hitter_total_bases,1.251,0.0,3.808,1.794,extra_trees,1.3752,9.0,CF,2.9233,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,807799,Masataka Yoshida,Boston Red Sox,New York Mets,hitter_total_bases,1.25,0.0,3.807,1.794,extra_trees,1.3752,8.0,LF,4.0467,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,805347,Jim Jarvis,Atlanta Braves,St. Louis Cardinals,hitter_total_bases,1.245,0.0,3.802,1.794,extra_trees,1.3752,8.0,SS,3.2556,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,665877,José Fermín,St. Louis Cardinals,Atlanta Braves,hitter_total_bases,1.245,0.0,3.802,1.794,extra_trees,1.3752,8.0,3B,3.2229,2.0,outputs/hitters/today_hitter_projections.csv
@@ -1558,8 +1560,9 @@ MLB,2026-07-12,823602,621438,Tyrone Taylor,New York Mets,Boston Red Sox,hitter_t
 MLB,2026-07-12,823274,823550,Sung-Mun Song,San Diego Padres,Toronto Blue Jays,hitter_total_bases,1.178,0.0,3.735,1.794,extra_trees,1.3752,9.0,3B,3.2834,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,682729,Jonatan Clase,Toronto Blue Jays,San Diego Padres,hitter_total_bases,1.172,0.0,3.729,1.794,extra_trees,1.3752,8.0,LF,3.0,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,630105,Jake Cronenworth,San Diego Padres,Toronto Blue Jays,hitter_total_bases,1.171,0.0,3.728,1.794,extra_trees,1.3752,7.0,2B,3.3522,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,701305,Zach Dezenzo,Houston Astros,Texas Rangers,hitter_total_bases,1.171,0.0,3.728,1.794,extra_trees,1.3752,8.0,LF,1.9792,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823602,676724,Jared Young,New York Mets,Boston Red Sox,hitter_total_bases,1.169,0.0,3.726,1.794,extra_trees,1.3752,4.0,1B,3.904,2.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_total_bases,1.169,0.0,3.726,1.794,extra_trees,1.3752,7.0,LF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,664774,LaMonte Wade Jr.,Houston Astros,Texas Rangers,hitter_total_bases,1.169,0.0,3.726,1.794,extra_trees,1.3752,7.0,RF,3.3667,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,683734,Andrew Vaughn,Milwaukee Brewers,Pittsburgh Pirates,hitter_total_bases,1.168,0.0,3.725,1.794,extra_trees,1.3752,9.0,3B,2.1759,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,691788,Joe Mack,Miami Marlins,Cleveland Guardians,hitter_total_bases,1.161,0.0,3.718,1.794,extra_trees,1.3752,9.0,C,3.0238,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823274,665926,Andrés Giménez,Toronto Blue Jays,San Diego Padres,hitter_total_bases,1.156,0.0,3.713,1.794,extra_trees,1.3752,9.0,SS,2.8967,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1576,14 +1579,13 @@ MLB,2026-07-12,824250,663837,Matt Vierling,Detroit Tigers,Philadelphia Phillies,
 MLB,2026-07-12,823842,680757,Steven Kwan,Cleveland Guardians,Miami Marlins,hitter_total_bases,1.114,0.0,3.671,1.794,extra_trees,1.3752,9.0,LF,3.3555,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,678391,Jorbit Vivas,Washington Nationals,New York Yankees,hitter_total_bases,1.113,0.0,3.67,1.794,extra_trees,1.3752,8.0,3B,3.4986,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,666126,Carlos Cortes,Athletics,Chicago White Sox,hitter_total_bases,1.099,0.0,3.656,1.794,extra_trees,1.3752,5.0,LF,2.7933,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,553869,Elias Díaz,Texas Rangers,Houston Astros,hitter_total_bases,1.097,0.0,3.654,1.794,extra_trees,1.3752,8.0,C,2.6273,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,685133,Wade Meckler,Los Angeles Angels,Minnesota Twins,hitter_total_bases,1.09,0.0,3.648,1.794,extra_trees,1.3752,7.0,PH,3.0967,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,702176,Alan Roden,Minnesota Twins,Los Angeles Angels,hitter_total_bases,1.089,0.0,3.646,1.794,extra_trees,1.3752,7.0,RF,3.25,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,645305,Ali Sánchez,New York Yankees,Washington Nationals,hitter_total_bases,1.089,0.0,3.646,1.794,extra_trees,1.3752,2.0,C,2.2118,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,687859,Troy Johnston,Colorado Rockies,San Francisco Giants,hitter_total_bases,1.087,0.0,3.644,1.794,extra_trees,1.3752,7.0,LF,3.0533,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,683083,Nasim Nuñez,Washington Nationals,New York Yankees,hitter_total_bases,1.061,0.0,3.618,1.794,extra_trees,1.3752,7.0,2B,3.3832,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,670032,Nicky Lopez,Texas Rangers,Houston Astros,hitter_total_bases,1.053,0.0,3.61,1.794,extra_trees,1.3752,8.0,2B,2.6857,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,676439,Hunter Feduccia,Tampa Bay Rays,Seattle Mariners,hitter_total_bases,1.052,0.0,3.61,1.794,extra_trees,1.3752,9.0,C,3.2116,2.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543877,Christian Vázquez,Houston Astros,Texas Rangers,hitter_total_bases,1.044,0.0,3.601,1.794,extra_trees,1.3752,9.0,C,3.4007,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824814,665750,Leody Taveras,Baltimore Orioles,Kansas City Royals,hitter_total_bases,1.031,0.0,3.588,1.794,extra_trees,1.3752,8.0,CF,2.8062,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823681,642350,Jose Siri,Los Angeles Angels,Minnesota Twins,hitter_total_bases,1.028,0.0,3.585,1.794,extra_trees,1.3752,4.0,CF,1.9265,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823842,700932,Kyle Manzardo,Cleveland Guardians,Miami Marlins,hitter_total_bases,1.025,0.0,3.582,1.794,extra_trees,1.3752,4.0,1B,3.7193,1.0,outputs/hitters/today_hitter_projections.csv
@@ -1593,105 +1595,103 @@ MLB,2026-07-12,823842,690984,Petey Halpin,Cleveland Guardians,Miami Marlins,hitt
 MLB,2026-07-12,823681,668885,Austin Martin,Minnesota Twins,Los Angeles Angels,hitter_total_bases,1.002,0.0,3.559,1.794,extra_trees,1.3752,1.0,LF,2.8754,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823199,701852,Drew Cavanaugh,San Francisco Giants,Colorado Rockies,hitter_total_bases,1.001,0.0,3.558,1.794,extra_trees,1.3752,9.0,C,3.1182,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824574,608841,Joey Meneses,Athletics,Chicago White Sox,hitter_total_bases,0.989,0.0,3.546,1.794,extra_trees,1.3752,6.0,1B,2.5125,2.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,666211,Taylor Trammell,Houston Astros,Texas Rangers,hitter_total_bases,0.976,0.0,3.533,1.794,extra_trees,1.3752,8.0,CF,2.7374,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,665953,Andrés Chaparro,Washington Nationals,New York Yankees,hitter_total_bases,0.971,0.0,3.528,1.794,extra_trees,1.3752,2.0,1B,1.9167,2.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,543309,Kyle Higashioka,Texas Rangers,Houston Astros,hitter_total_bases,0.967,0.0,3.524,1.794,extra_trees,1.3752,9.0,C,3.0554,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822708,683011,Anthony Volpe,New York Yankees,Washington Nationals,hitter_total_bases,0.961,0.0,3.518,1.794,extra_trees,1.3752,8.0,SS,2.9136,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,699625,Jimmy Crooks,St. Louis Cardinals,Atlanta Braves,hitter_total_bases,0.96,0.0,3.517,1.794,extra_trees,1.3752,9.0,C,1.85,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,645302,Victor Robles,Seattle Mariners,Tampa Bay Rays,hitter_total_bases,0.954,0.0,3.512,1.794,extra_trees,1.3752,7.0,CF,2.91,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,670156,Miles Mastrobuoni,Seattle Mariners,Tampa Bay Rays,hitter_total_bases,0.918,0.0,3.475,1.794,extra_trees,1.3752,8.0,RF,1.79,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,642201,Eli White,Atlanta Braves,St. Louis Cardinals,hitter_total_bases,0.917,0.0,3.474,1.794,extra_trees,1.3752,6.0,DH,2.0036,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,824491,671155,Ivan Johnson,Cincinnati Reds,Chicago Cubs,hitter_total_bases,0.91,0.0,3.467,1.794,extra_trees,1.3752,9.0,PH,1.6667,5.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822876,694497,Evan Carter,Texas Rangers,Houston Astros,hitter_total_bases,0.909,0.0,3.466,1.794,extra_trees,1.3752,7.0,CF,3.1431,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823029,663494,Bryan Torres,St. Louis Cardinals,Atlanta Braves,hitter_total_bases,0.886,0.0,3.443,1.794,extra_trees,1.3752,7.0,LF,2.4197,1.0,outputs/hitters/today_hitter_projections.csv
+MLB,2026-07-12,822876,695508,Cam Cauley,Texas Rangers,Houston Astros,hitter_total_bases,0.869,0.0,3.426,1.794,extra_trees,1.3752,7.0,2B,2.1222,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823925,672613,Eliezer Alfonzo,Los Angeles Dodgers,Arizona Diamondbacks,hitter_total_bases,0.816,0.0,3.373,1.794,extra_trees,1.3752,9.0,C,1.75,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,822951,671083,Buddy Kennedy,Seattle Mariners,Tampa Bay Rays,hitter_total_bases,0.595,0.0,3.152,1.794,extra_trees,1.3752,9.0,3B,1.3667,2.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-12,823358,695257,Billy Cook,Pittsburgh Pirates,Milwaukee Brewers,hitter_total_bases,0.162,0.0,2.719,1.794,extra_trees,1.3752,5.0,CF,0.7659,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-12,822951,,Ian Seymour,Tampa Bay Rays,,pitcher_fantasy_score,26.475,22.2102,30.7398,3.3277,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,824250,,Zack Wheeler,Philadelphia Phillies,,pitcher_fantasy_score,24.635,19.8594,29.4106,3.7263,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823681,,Taj Bradley,Minnesota Twins,,pitcher_fantasy_score,23.944,19.138,28.75,3.75,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,824250,,Tarik Skubal,Detroit Tigers,,pitcher_fantasy_score,22.618,18.5969,26.6391,3.1375,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823842,,Joey Cantillo,Cleveland Guardians,,pitcher_fantasy_score,21.71,16.4895,26.9305,4.0734,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823358,,Robert Gasser,Milwaukee Brewers,,pitcher_fantasy_score,17.631,13.1036,22.1584,3.5326,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,822708,,Cade Cavalli,Washington Nationals,,pitcher_fantasy_score,17.13,10.1161,24.1439,5.4728,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823602,,Payton Tolle,Boston Red Sox,,pitcher_fantasy_score,17.03,11.2428,22.8172,4.5156,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,824491,,Matthew Boyd,Chicago Cubs,,pitcher_fantasy_score,16.059,11.8487,20.2693,3.2852,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,824814,,Shane Baz,Baltimore Orioles,,pitcher_fantasy_score,15.511,10.9836,20.0384,3.5326,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,824574,,J.T. Ginn,Athletics,,pitcher_fantasy_score,14.98,10.4718,19.4882,3.5176,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,822951,,Emerson Hancock,Seattle Mariners,,pitcher_fantasy_score,14.884,9.9591,19.8089,3.8428,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823602,,Zach Thornton,New York Mets,,pitcher_fantasy_score,14.425,,,,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,824491,,Andrew Abbott,Cincinnati Reds,,pitcher_fantasy_score,13.91,9.8889,17.9311,3.1375,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823358,,Paul Skenes,Pittsburgh Pirates,,pitcher_fantasy_score,12.395,7.8676,16.9224,3.5326,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,822876,,MacKenzie Gore,Texas Rangers,,pitcher_fantasy_score,12.035,7.5076,16.5624,3.5326,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823925,,Emmet Sheehan,Los Angeles Dodgers,,pitcher_fantasy_score,11.771,7.4524,16.0896,3.3697,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823842,,Tyler Phillips,Miami Marlins,,pitcher_fantasy_score,11.279,5.5775,16.9805,4.4487,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823681,,José Soriano,Los Angeles Angels,,pitcher_fantasy_score,11.245,6.2796,16.2104,3.8744,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823199,,Michael Lorenzen,Colorado Rockies,,pitcher_fantasy_score,9.85,5.6054,14.0946,3.312,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823274,,Kevin Gausman,Toronto Blue Jays,,pitcher_fantasy_score,9.69,3.5541,15.8259,4.7877,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,822708,,Will Warren,New York Yankees,,pitcher_fantasy_score,8.312,3.9864,12.6376,3.3752,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823029,,Dustin May,St. Louis Cardinals,,pitcher_fantasy_score,7.821,0.0,17.7722,7.7647,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,824574,,Noah Schultz,Chicago White Sox,,pitcher_fantasy_score,7.204,3.0698,11.3382,3.2258,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823274,,Germán Márquez,San Diego Padres,,pitcher_fantasy_score,6.509,1.5436,11.4744,3.8744,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823029,,Danny Young,Atlanta Braves,,pitcher_fantasy_score,6.15,2.2753,10.0247,3.0233,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,824814,,Seth Lugo,Kansas City Royals,,pitcher_fantasy_score,5.916,1.5641,10.2679,3.3957,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,822876,,Cristian Javier,Houston Astros,,pitcher_fantasy_score,5.125,0.1596,10.0904,3.8744,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823199,,Trevor McDonald,San Francisco Giants,,pitcher_fantasy_score,5.114,0.0,10.9806,4.5776,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-12,823358,,Robert Gasser,Milwaukee Brewers,,pitcher_outs,19.1,17.35,21.85,2.487,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823681,,Taj Bradley,Minnesota Twins,,pitcher_outs,18.6,15.6,21.6,3.0,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,824250,,Zack Wheeler,Philadelphia Phillies,,pitcher_outs,18.5,15.15,21.25,2.947,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,824814,,Shane Baz,Baltimore Orioles,,pitcher_outs,18.3,15.45,20.55,2.487,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,822951,,Ian Seymour,Tampa Bay Rays,,pitcher_outs,17.7,15.75,19.85,1.92,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,822951,,Emerson Hancock,Seattle Mariners,,pitcher_outs,17.4,14.1,20.7,3.202,,,,,,7.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,822876,,MacKenzie Gore,Texas Rangers,,pitcher_outs,17.1,14.85,19.95,2.487,,,,,,4.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,824250,,Tarik Skubal,Detroit Tigers,,pitcher_outs,17.0,15.6,18.0,1.225,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823842,,Joey Cantillo,Cleveland Guardians,,pitcher_outs,16.8,13.8,21.0,3.674,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,824491,,Andrew Abbott,Cincinnati Reds,,pitcher_outs,16.2,15.2,17.6,1.225,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823274,,Kevin Gausman,Toronto Blue Jays,,pitcher_outs,16.2,10.7,19.7,4.975,,,,,,6.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823602,,Payton Tolle,Boston Red Sox,,pitcher_outs,16.2,11.4,19.8,4.5,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,824574,,J.T. Ginn,Athletics,,pitcher_outs,16.0,13.2,18.0,2.449,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823199,,Michael Lorenzen,Colorado Rockies,,pitcher_outs,16.0,13.9,17.7,1.871,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,824491,,Matthew Boyd,Chicago Cubs,,pitcher_outs,15.9,13.95,17.65,1.785,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823842,,Tyler Phillips,Miami Marlins,,pitcher_outs,15.9,11.15,20.45,4.38,,,,,,4.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,824814,,Seth Lugo,Kansas City Royals,,pitcher_outs,15.6,13.2,17.6,2.121,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,824250,,Zack Wheeler,Philadelphia Phillies,,pitcher_fantasy_score,26.559,22.1302,30.9879,3.4557,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,822951,,Ian Seymour,Tampa Bay Rays,,pitcher_fantasy_score,24.0935,17.9763,30.2107,4.7731,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823681,,Taj Bradley,Minnesota Twins,,pitcher_fantasy_score,23.5623,18.7747,28.3499,3.7356,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,824250,,Tarik Skubal,Detroit Tigers,,pitcher_fantasy_score,22.4291,18.0012,26.857,3.455,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823842,,Joey Cantillo,Cleveland Guardians,,pitcher_fantasy_score,20.0397,14.9322,25.1473,3.9853,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823358,,Robert Gasser,Milwaukee Brewers,,pitcher_fantasy_score,17.019,12.1001,21.9379,3.8381,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823602,,Payton Tolle,Boston Red Sox,,pitcher_fantasy_score,17.0051,11.8651,22.1451,4.0106,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,822708,,Cade Cavalli,Washington Nationals,,pitcher_fantasy_score,16.8564,11.0289,22.6839,4.5471,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,824491,,Matthew Boyd,Chicago Cubs,,pitcher_fantasy_score,15.6532,11.1335,20.173,3.5267,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,822951,,Emerson Hancock,Seattle Mariners,,pitcher_fantasy_score,15.522,11.0922,19.9518,3.4565,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,824574,,J.T. Ginn,Athletics,,pitcher_fantasy_score,15.084,8.7399,21.4281,4.9501,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823358,,Paul Skenes,Pittsburgh Pirates,,pitcher_fantasy_score,14.7196,8.7954,20.6438,4.6225,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,824491,,Andrew Abbott,Cincinnati Reds,,pitcher_fantasy_score,14.173,9.7245,18.6216,3.4711,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823681,,José Soriano,Los Angeles Angels,,pitcher_fantasy_score,13.9657,8.8429,19.0885,3.9972,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,822876,,MacKenzie Gore,Texas Rangers,,pitcher_fantasy_score,13.9587,8.3495,19.5679,4.3767,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823602,,Zach Thornton,New York Mets,,pitcher_fantasy_score,13.225,,,,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,824814,,Shane Baz,Baltimore Orioles,,pitcher_fantasy_score,13.0192,8.577,17.4615,3.4662,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823274,,Kevin Gausman,Toronto Blue Jays,,pitcher_fantasy_score,12.0125,7.1352,16.8898,3.8056,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823029,,Dustin May,St. Louis Cardinals,,pitcher_fantasy_score,11.4412,4.8576,18.0248,5.137,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823925,,Emmet Sheehan,Los Angeles Dodgers,,pitcher_fantasy_score,11.326,5.9528,16.6992,4.1926,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823842,,Tyler Phillips,Miami Marlins,,pitcher_fantasy_score,9.8622,3.6744,16.0499,4.8282,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823199,,Michael Lorenzen,Colorado Rockies,,pitcher_fantasy_score,9.533,4.1591,14.9069,4.1931,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823274,,Germán Márquez,San Diego Padres,,pitcher_fantasy_score,8.5792,3.6913,13.4672,3.8139,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,822708,,Will Warren,New York Yankees,,pitcher_fantasy_score,8.1208,3.4205,12.8212,3.6676,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,824574,,Noah Schultz,Chicago White Sox,,pitcher_fantasy_score,6.673,2.2432,11.1028,3.4565,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,824814,,Seth Lugo,Kansas City Royals,,pitcher_fantasy_score,5.886,1.1387,10.6333,3.7042,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823199,,Trevor McDonald,San Francisco Giants,,pitcher_fantasy_score,5.8743,0.2448,11.5037,4.3925,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,823029,,Danny Young,Atlanta Braves,,pitcher_fantasy_score,4.88,1.0053,8.7547,3.0233,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,822876,,Cristian Javier,Houston Astros,,pitcher_fantasy_score,2.432,0.0,8.1541,4.4648,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-12,824250,,Zack Wheeler,Philadelphia Phillies,,pitcher_outs,18.529,15.486,20.886,2.287,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,824814,,Shane Baz,Baltimore Orioles,,pitcher_outs,18.127,15.293,21.293,2.315,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823358,,Robert Gasser,Milwaukee Brewers,,pitcher_outs,18.096,14.546,21.346,3.192,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823681,,Taj Bradley,Minnesota Twins,,pitcher_outs,17.876,13.994,21.994,2.968,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,822951,,Emerson Hancock,Seattle Mariners,,pitcher_outs,17.067,14.832,20.232,2.289,,,,,,7.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,824250,,Tarik Skubal,Detroit Tigers,,pitcher_outs,17.013,13.447,20.247,2.285,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,822876,,MacKenzie Gore,Texas Rangers,,pitcher_outs,16.869,14.322,21.922,4.249,,,,,,4.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823274,,Kevin Gausman,Toronto Blue Jays,,pitcher_outs,16.598,14.608,19.808,3.122,,,,,,6.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823602,,Payton Tolle,Boston Red Sox,,pitcher_outs,16.563,13.349,20.349,3.549,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,824491,,Andrew Abbott,Cincinnati Reds,,pitcher_outs,16.109,13.762,18.162,2.328,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823842,,Joey Cantillo,Cleveland Guardians,,pitcher_outs,16.092,12.734,18.934,3.498,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,824574,,J.T. Ginn,Athletics,,pitcher_outs,16.0,8.1,19.8,5.25,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823358,,Paul Skenes,Pittsburgh Pirates,,pitcher_outs,15.793,11.529,21.129,4.689,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,824814,,Seth Lugo,Kansas City Royals,,pitcher_outs,15.576,11.498,18.098,2.897,,,,,,5.0,outputs/pitcher_outs_projections.csv
 MLB,2026-07-12,823602,,Zach Thornton,New York Mets,,pitcher_outs,15.5,,,,,,,,,16.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823358,,Paul Skenes,Pittsburgh Pirates,,pitcher_outs,15.3,12.45,17.55,2.487,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,822708,,Will Warren,New York Yankees,,pitcher_outs,15.2,12.9,16.7,2.062,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,822708,,Cade Cavalli,Washington Nationals,,pitcher_outs,14.6,8.4,21.2,6.103,,,,,,7.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823681,,José Soriano,Los Angeles Angels,,pitcher_outs,14.1,10.65,16.95,3.269,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,824574,,Noah Schultz,Chicago White Sox,,pitcher_outs,13.6,11.9,15.3,1.581,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823274,,Germán Márquez,San Diego Padres,,pitcher_outs,13.5,10.05,16.35,3.269,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823199,,Trevor McDonald,San Francisco Giants,,pitcher_outs,13.2,8.3,18.1,4.61,,,,,,5.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823925,,Emmet Sheehan,Los Angeles Dodgers,,pitcher_outs,12.9,10.55,14.65,2.046,,,,,,7.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,823029,,Dustin May,St. Louis Cardinals,,pitcher_outs,9.3,0.25,20.15,9.549,,,,,,6.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,822876,,Cristian Javier,Houston Astros,,pitcher_outs,4.7,1.95,8.45,3.269,,,,,,4.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,824491,,Matthew Boyd,Chicago Cubs,,pitcher_outs,15.375,12.2,18.5,2.472,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823199,,Michael Lorenzen,Colorado Rockies,,pitcher_outs,15.18,10.28,18.48,3.906,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,822708,,Will Warren,New York Yankees,,pitcher_outs,15.151,11.596,17.896,2.813,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823681,,José Soriano,Los Angeles Angels,,pitcher_outs,14.967,11.831,19.631,3.522,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,822708,,Cade Cavalli,Washington Nationals,,pitcher_outs,14.806,7.975,19.575,4.556,,,,,,7.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823842,,Tyler Phillips,Miami Marlins,,pitcher_outs,13.99,8.74,19.74,5.044,,,,,,4.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823274,,Germán Márquez,San Diego Padres,,pitcher_outs,13.911,8.786,17.086,3.14,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,824574,,Noah Schultz,Chicago White Sox,,pitcher_outs,13.9,11.4,17.5,2.289,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823199,,Trevor McDonald,San Francisco Giants,,pitcher_outs,13.547,7.913,18.613,4.278,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,822951,,Ian Seymour,Tampa Bay Rays,,pitcher_outs,13.51,9.76,22.46,4.95,,,,,,5.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823925,,Emmet Sheehan,Los Angeles Dodgers,,pitcher_outs,12.868,8.43,16.93,3.905,,,,,,7.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,823029,,Dustin May,St. Louis Cardinals,,pitcher_outs,12.501,5.195,15.995,5.56,,,,,,6.0,outputs/pitcher_outs_projections.csv
+MLB,2026-07-12,822876,,Cristian Javier,Houston Astros,,pitcher_outs,6.04,1.64,11.44,4.409,,,,,,4.0,outputs/pitcher_outs_projections.csv
 MLB,2026-07-12,823029,,Danny Young,Atlanta Braves,,pitcher_outs,3.0,2.5,3.5,0.5,,,,,,2.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-12,824250,,Zack Wheeler,Philadelphia Phillies,,pitcher_strikeouts,8.6,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
 MLB,2026-07-12,822951,,Ian Seymour,Tampa Bay Rays,,pitcher_strikeouts,8.51,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,824250,,Tarik Skubal,Detroit Tigers,,pitcher_strikeouts,7.654,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823681,,Taj Bradley,Minnesota Twins,,pitcher_strikeouts,7.287,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823842,,Joey Cantillo,Cleveland Guardians,,pitcher_strikeouts,6.895,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823358,,Paul Skenes,Pittsburgh Pirates,,pitcher_strikeouts,6.29,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,824814,,Shane Baz,Baltimore Orioles,,pitcher_strikeouts,6.043,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,822876,,MacKenzie Gore,Texas Rangers,,pitcher_strikeouts,5.785,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,824250,,Zack Wheeler,Philadelphia Phillies,,pitcher_strikeouts,8.46,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,824250,,Tarik Skubal,Detroit Tigers,,pitcher_strikeouts,7.514,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823681,,Taj Bradley,Minnesota Twins,,pitcher_strikeouts,7.427,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823358,,Paul Skenes,Pittsburgh Pirates,,pitcher_strikeouts,6.71,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,822876,,MacKenzie Gore,Texas Rangers,,pitcher_strikeouts,6.625,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823842,,Joey Cantillo,Cleveland Guardians,,pitcher_strikeouts,6.195,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823274,,Kevin Gausman,Toronto Blue Jays,,pitcher_strikeouts,5.77,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
 MLB,2026-07-12,822708,,Cade Cavalli,Washington Nationals,,pitcher_strikeouts,5.71,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823602,,Payton Tolle,Boston Red Sox,,pitcher_strikeouts,5.52,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823925,,Emmet Sheehan,Los Angeles Dodgers,,pitcher_strikeouts,5.088,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,824574,,J.T. Ginn,Athletics,,pitcher_strikeouts,5.05,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823274,,Kevin Gausman,Toronto Blue Jays,,pitcher_strikeouts,5.01,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823681,,José Soriano,Los Angeles Angels,,pitcher_strikeouts,5.645,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823602,,Payton Tolle,Boston Red Sox,,pitcher_strikeouts,5.38,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823358,,Robert Gasser,Milwaukee Brewers,,pitcher_strikeouts,5.353,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,824491,,Andrew Abbott,Cincinnati Reds,,pitcher_strikeouts,5.18,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823925,,Emmet Sheehan,Los Angeles Dodgers,,pitcher_strikeouts,5.001,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
 MLB,2026-07-12,823602,,Zach Thornton,New York Mets,,pitcher_strikeouts,5.0,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823681,,José Soriano,Los Angeles Angels,,pitcher_strikeouts,4.945,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,824491,,Andrew Abbott,Cincinnati Reds,,pitcher_strikeouts,4.9,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823358,,Robert Gasser,Milwaukee Brewers,,pitcher_strikeouts,4.793,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823029,,Dustin May,St. Louis Cardinals,,pitcher_strikeouts,4.703,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,822951,,Emerson Hancock,Seattle Mariners,,pitcher_strikeouts,4.507,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,824491,,Matthew Boyd,Chicago Cubs,,pitcher_strikeouts,4.507,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,822708,,Will Warren,New York Yankees,,pitcher_strikeouts,4.316,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,824574,,Noah Schultz,Chicago White Sox,,pitcher_strikeouts,4.222,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,824814,,Seth Lugo,Kansas City Royals,,pitcher_strikeouts,4.158,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823842,,Tyler Phillips,Miami Marlins,,pitcher_strikeouts,3.407,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823199,,Michael Lorenzen,Colorado Rockies,,pitcher_strikeouts,2.915,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823274,,Germán Márquez,San Diego Padres,,pitcher_strikeouts,2.692,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823199,,Trevor McDonald,San Francisco Giants,,pitcher_strikeouts,2.577,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,822876,,Cristian Javier,Houston Astros,,pitcher_strikeouts,2.44,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823029,,Danny Young,Atlanta Braves,,pitcher_strikeouts,1.76,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-12,823925,,Mitch Bratt,Arizona Diamondbacks,,pitcher_strikeouts,1.5,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823029,,Dustin May,St. Louis Cardinals,,pitcher_strikeouts,4.983,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,824814,,Shane Baz,Baltimore Orioles,,pitcher_strikeouts,4.923,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,822951,,Emerson Hancock,Seattle Mariners,,pitcher_strikeouts,4.647,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,824491,,Matthew Boyd,Chicago Cubs,,pitcher_strikeouts,4.647,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,824574,,J.T. Ginn,Athletics,,pitcher_strikeouts,4.49,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,822708,,Will Warren,New York Yankees,,pitcher_strikeouts,4.176,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,824574,,Noah Schultz,Chicago White Sox,,pitcher_strikeouts,4.082,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823842,,Tyler Phillips,Miami Marlins,,pitcher_strikeouts,3.827,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,824814,,Seth Lugo,Kansas City Royals,,pitcher_strikeouts,3.598,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823199,,Michael Lorenzen,Colorado Rockies,,pitcher_strikeouts,3.475,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823199,,Trevor McDonald,San Francisco Giants,,pitcher_strikeouts,3.043,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823274,,Germán Márquez,San Diego Padres,,pitcher_strikeouts,3.01,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823925,,Mitch Bratt,Arizona Diamondbacks,,pitcher_strikeouts,2.55,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,822876,,Cristian Javier,Houston Astros,,pitcher_strikeouts,2.02,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-12,823029,,Danny Young,Atlanta Braves,,pitcher_strikeouts,1.725,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
