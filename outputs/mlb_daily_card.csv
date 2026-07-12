@@ -1,51 +1,71 @@
-grade,platform,player,market,direction,line,sportsbook_odds,projection,edge,absolute_edge,pick,win_probability,fair_odds,calibration_status,team,opponent,commence_time
-A+,BetMGM,Brayan Rocchio,hitter_hits,Under,1.5,100,0.792,-0.708,0.708,LESS/NO,,,PENDING,Cleveland Guardians,Miami Marlins,2026-07-11T20:11:00Z
-A+,BetMGM,Hunter Goodman,hitter_hits,Under,1.5,105,0.808,-0.692,0.692,LESS/NO,,,PENDING,Colorado Rockies,San Francisco Giants,2026-07-11T20:06:00Z
-A+,DraftKings,Caleb Durbin,hitter_hits,Under,1.5,-105,0.875,-0.625,0.625,LESS/NO,,,PENDING,Boston Red Sox,New York Mets,2026-07-11T20:11:00Z
-A+,BetMGM,Ernie Clement,hitter_hits,Under,1.5,-225,0.876,-0.624,0.624,LESS/NO,,,PENDING,Toronto Blue Jays,San Diego Padres,2026-07-12T00:41:00Z
-A+,BetOnline.ag,Trea Turner,hitter_hits,Under,1.5,-263,0.877,-0.623,0.623,LESS/NO,,,PENDING,Philadelphia Phillies,Detroit Tigers,2026-07-11T22:11:00Z
-A+,BetMGM,Brandon Marsh,hitter_hits,Over,0.5,-275,1.111,0.611,0.611,MORE/YES,,,PENDING,Philadelphia Phillies,Detroit Tigers,2026-07-11T22:11:00Z
-A+,BetMGM,Andy Pages,hitter_hits,Under,1.5,-275,0.891,-0.609,0.609,LESS/NO,,,PENDING,Los Angeles Dodgers,Arizona Diamondbacks,2026-07-12T01:10:00Z
-A+,BetMGM,Jeremy Pena,hitter_hits,Under,1.5,-250,0.913,-0.587,0.587,LESS/NO,,,PENDING,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
-A+,BetMGM,Ozzie Albies,hitter_hits,Under,1.5,-220,0.915,-0.585,0.585,LESS/NO,,,PENDING,Atlanta Braves,St. Louis Cardinals,2026-07-11T23:15:00Z
-A+,DraftKings,Gunnar Henderson,hitter_hits,Under,1.5,-246,0.919,-0.581,0.581,LESS/NO,,,PENDING,Baltimore Orioles,Kansas City Royals,2026-07-11T23:06:00Z
-A+,BetMGM,Sal Stewart,hitter_hits,Under,1.5,-275,0.928,-0.572,0.572,LESS/NO,,,PENDING,Cincinnati Reds,Chicago Cubs,2026-07-11T23:11:00Z
-A+,BetOnline.ag,Nico Hoerner,hitter_hits,Under,1.5,-244,0.939,-0.561,0.561,LESS/NO,,,PENDING,Chicago Cubs,Cincinnati Reds,2026-07-11T23:11:00Z
-A+,BetMGM,Mauricio Dubon,hitter_hits,Under,1.5,-250,0.939,-0.561,0.561,LESS/NO,,,PENDING,Atlanta Braves,St. Louis Cardinals,2026-07-11T23:15:00Z
-A+,BetMGM,Shohei Ohtani,hitter_hits,Under,1.5,-225,0.939,-0.561,0.561,LESS/NO,,,PENDING,Los Angeles Dodgers,Arizona Diamondbacks,2026-07-12T01:10:00Z
-A+,BetMGM,Seiya Suzuki,hitter_hits,Under,1.5,-250,0.94,-0.56,0.56,LESS/NO,,,PENDING,Chicago Cubs,Cincinnati Reds,2026-07-11T23:11:00Z
-A+,BetMGM,Paul Goldschmidt,hitter_total_bases,Over,0.5,-185,2.265,1.765,1.765,MORE/YES,,,PENDING,New York Yankees,Washington Nationals,2026-07-11T20:05:50Z
-A+,BetMGM,A.J. Ewing,hitter_total_bases,Over,0.5,-135,2.014,1.514,1.514,MORE/YES,,,PENDING,New York Mets,Boston Red Sox,2026-07-11T20:11:00Z
-A+,BetMGM,Otto Lopez,hitter_total_bases,Over,0.5,-200,1.972,1.472,1.472,MORE/YES,,,PENDING,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
-A+,BetMGM,Jose Altuve,hitter_total_bases,Over,0.5,-190,1.96,1.46,1.46,MORE/YES,,,PENDING,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
-A+,BetMGM,Kazuma Okamoto,hitter_total_bases,Over,0.5,-160,1.907,1.407,1.407,MORE/YES,,,PENDING,Toronto Blue Jays,San Diego Padres,2026-07-12T00:41:00Z
-A+,BetMGM,George Springer,hitter_total_bases,Over,0.5,-200,1.872,1.372,1.372,MORE/YES,,,PENDING,Toronto Blue Jays,San Diego Padres,2026-07-12T00:41:00Z
-A+,BetMGM,CJ Abrams,hitter_total_bases,Over,0.5,-135,1.848,1.348,1.348,MORE/YES,,,PENDING,Washington Nationals,New York Yankees,2026-07-11T20:05:50Z
-A+,BetMGM,Carson Benge,hitter_total_bases,Over,0.5,-155,1.783,1.283,1.283,MORE/YES,,,PENDING,New York Mets,Boston Red Sox,2026-07-11T20:11:00Z
-A+,BetMGM,Manny Machado,hitter_total_bases,Over,0.5,-185,1.771,1.271,1.271,MORE/YES,,,PENDING,San Diego Padres,Toronto Blue Jays,2026-07-12T00:41:00Z
-A+,Fanatics,Isaac Paredes,hitter_total_bases,Over,0.5,-190,1.767,1.267,1.267,MORE/YES,,,PENDING,Houston Astros,Texas Rangers,2026-07-11T23:06:00Z
-A+,BetMGM,Xavier Edwards,hitter_total_bases,Over,0.5,-165,1.763,1.263,1.263,MORE/YES,,,PENDING,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
-A+,BetMGM,Cal Raleigh,hitter_total_bases,Over,0.5,-135,1.762,1.262,1.262,MORE/YES,,,PENDING,Seattle Mariners,Tampa Bay Rays,2026-07-11T20:33:00Z
-A+,BetMGM,Gabriel Moreno,hitter_total_bases,Over,0.5,-190,1.76,1.26,1.26,MORE/YES,,,PENDING,Arizona Diamondbacks,Los Angeles Dodgers,2026-07-12T01:10:00Z
-A+,BetMGM,Zach McKinstry,hitter_total_bases,Over,0.5,-115,1.75,1.25,1.25,MORE/YES,,,PENDING,Detroit Tigers,Philadelphia Phillies,2026-07-11T22:11:00Z
-A+,BetMGM,Liam Hicks,hitter_total_bases,Over,0.5,-155,1.745,1.245,1.245,MORE/YES,,,PENDING,Miami Marlins,Cleveland Guardians,2026-07-11T20:11:00Z
-A+,Caesars,Freddy Peralta,pitcher_outs,Under,17.5,105,10.23,-7.27,7.27,LESS/NO,,,PENDING,New York Mets,,2026-07-11T20:11:00Z
-A+,DraftKings,Tyler Mahle,pitcher_outs,Under,17.5,-120,11.73,-5.77,5.77,LESS/NO,,,PENDING,San Francisco Giants,,2026-07-11T20:06:00Z
-A+,Caesars,Tanner Bibee,pitcher_outs,Under,17.5,104,12.73,-4.77,4.77,LESS/NO,,,PENDING,Cleveland Guardians,,2026-07-11T20:11:00Z
-A+,BetMGM,Brandon Pfaadt,pitcher_outs,Under,14.5,120,10.07,-4.43,4.43,LESS/NO,,,PENDING,Arizona Diamondbacks,,2026-07-12T01:10:00Z
-A+,Caesars,Kyle Freeland,pitcher_outs,Under,17.5,120,13.33,-4.17,4.17,LESS/NO,,,PENDING,Colorado Rockies,,2026-07-11T20:06:00Z
-A+,DraftKings,Eury Perez,pitcher_outs,Under,16.5,-130,13.27,-3.23,3.23,LESS/NO,,,PENDING,Miami Marlins,,2026-07-11T20:11:00Z
-A+,BetMGM,Logan Gilbert,pitcher_outs,Over,17.5,-190,20.43,2.93,2.93,MORE/YES,,,PENDING,Seattle Mariners,,2026-07-11T20:33:00Z
-A+,BetMGM,Noah Cameron,pitcher_outs,Under,16.5,-125,13.73,-2.77,2.77,LESS/NO,,,PENDING,Kansas City Royals,,2026-07-11T23:06:00Z
-A+,BetOnline.ag,Cristopher Sanchez,pitcher_outs,Under,18.5,-190,15.77,-2.73,2.73,LESS/NO,,,PENDING,Philadelphia Phillies,,2026-07-11T22:11:00Z
-A+,BetMGM,Javier Assad,pitcher_outs,Under,15.5,-185,13.37,-2.13,2.13,LESS/NO,,,PENDING,Chicago Cubs,,2026-07-11T23:11:00Z
-A+,DraftKings,Freddy Peralta,pitcher_strikeouts,Under,7.5,110,4.315,-3.185,3.185,LESS/NO,0.928,-1286.0,CALIBRATED,New York Mets,,2026-07-11T20:11:00Z
-A+,DraftKings,Bubba Chandler,pitcher_strikeouts,Under,5.5,-175,3.17,-2.33,2.33,LESS/NO,0.898,-880.0,CALIBRATED,Pittsburgh Pirates,,2026-07-11T20:16:00Z
-A+,BetMGM,Tyler Mahle,pitcher_strikeouts,Under,5.5,-160,3.8,-1.7,1.7,LESS/NO,0.816,-442.0,CALIBRATED,San Francisco Giants,,2026-07-11T20:06:00Z
-A+,BetMGM,Walker Buehler,pitcher_strikeouts,Over,3.5,-135,5.113,1.613,1.613,MORE/YES,0.75,-301.0,CALIBRATED,San Diego Padres,,2026-07-12T00:41:00Z
-A+,BetMGM,Logan Gilbert,pitcher_strikeouts,Over,5.5,-125,7.08,1.58,1.58,MORE/YES,0.709,-244.0,CALIBRATED,Seattle Mariners,,2026-07-11T20:33:00Z
-A+,DraftKings,Cam Schlittler,pitcher_strikeouts,Over,5.5,-160,7.02,1.52,1.52,MORE/YES,0.702,-235.0,CALIBRATED,New York Yankees,,2026-07-11T20:05:50Z
-A+,BetMGM,Tanner Bibee,pitcher_strikeouts,Under,4.5,-135,3.08,-1.42,1.42,LESS/NO,0.802,-404.0,CALIBRATED,Cleveland Guardians,,2026-07-11T20:11:00Z
-A+,BetOnline.ag,Noah Cameron,pitcher_strikeouts,Under,5.5,-169,4.107,-1.393,1.393,LESS/NO,0.768,-331.0,CALIBRATED,Kansas City Royals,,2026-07-11T23:06:00Z
-A,DraftKings,Kyle Freeland,pitcher_strikeouts,Under,5.5,-185,4.333,-1.167,1.167,LESS/NO,0.731,-272.0,CALIBRATED,Colorado Rockies,,2026-07-11T20:06:00Z
-A,BetMGM,Cristopher Sanchez,pitcher_strikeouts,Under,6.5,-115,5.523,-0.977,0.977,LESS/NO,0.682,-215.0,CALIBRATED,Philadelphia Phillies,,2026-07-11T22:11:00Z
+grade,confidence_tier,platform,player,market,direction,line,sportsbook_odds,projection,raw_projection_edge,probability,sportsbook_implied_probability,no_vig_implied_probability,probability_edge,expected_value,fair_odds,kelly_fraction,recommended_bankroll_fraction,distribution_method,calibration_sample_size,validation_mae,team,opponent,home_team,away_team,commence_time,fetched_at
+A+,Elite,Fanatics,Ian Seymour,pitcher_strikeouts,Over,6.5,120,9.08,2.58,0.8004,0.4545,0.4248,0.3756,0.7609,-401.0,0.6341,0.025,poisson,,,Tampa Bay Rays,,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+A+,Elite,FanDuel,Tarik Skubal,pitcher_outs,Under,17.5,148,16.64,-0.86,0.7017,0.4032,0.375,0.3267,0.7402,-235.0,0.5001,0.025,normal_residual_std,,,Detroit Tigers,,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+A+,Elite,FanDuel,MacKenzie Gore,pitcher_strikeouts,Over,4.5,108,6.653,2.153,0.7929,0.4808,0.4533,0.3396,0.6493,-383.0,0.6012,0.025,poisson,,,Texas Rangers,,,,2026-07-12T18:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,Bovada,Noah Schultz,pitcher_outs,Under,14.5,125,13.613,-0.887,0.7269,0.4444,0.4165,0.3104,0.6355,-266.0,0.5084,0.025,normal_residual_std,,,Chicago White Sox,,,,2026-07-12T18:11:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Cristian Javier,pitcher_outs,Under,12.5,-135,6.04,-6.46,0.9286,0.5745,0.5347,0.3939,0.6164,-1300.0,0.8321,0.025,normal_residual_std,,,Houston Astros,,,,2026-07-12T18:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,DraftKings,MacKenzie Gore,pitcher_outs,Over,14.5,-119,17.6,3.1,0.876,0.5434,0.507,0.369,0.6122,-707.0,0.7285,0.025,normal_residual_std,,,Texas Rangers,,,,2026-07-12T18:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Cristian Javier,pitcher_strikeouts,Under,3.5,-125,1.92,-1.58,0.8713,0.5556,0.5203,0.351,0.5683,-677.0,0.7103,0.025,poisson,,,Houston Astros,,,,2026-07-12T18:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Emmet Sheehan,pitcher_outs,Under,15.5,-115,11.907,-3.593,0.808,0.5349,0.497,0.3109,0.5105,-421.0,0.5871,0.025,normal_residual_std,,,Los Angeles Dodgers,,,,2026-07-12T20:11:00Z,2026-07-12T17:12:31Z
+B+,Good,BetMGM,Ian Seymour,pitcher_outs,Over,15.5,135,16.68,1.18,0.6369,0.4255,0.396,0.2409,0.4967,-175.0,0.3679,0.025,normal_residual_std,,,Tampa Bay Rays,,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetOnline.ag,Dustin May,pitcher_outs,Under,16.5,100,10.973,-5.527,0.734,0.5,0.4615,0.2724,0.4679,-276.0,0.4679,0.025,normal_residual_std,,,St. Louis Cardinals,,,,2026-07-12T18:16:00Z,2026-07-12T17:12:31Z
+B,Playable,Bovada,Tyler Phillips,pitcher_strikeouts,Over,3.5,145,4.022,0.522,0.5708,0.4082,0.3839,0.187,0.3985,-133.0,0.2748,0.025,poisson,,,Miami Marlins,,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetRivers,Trevor McDonald,pitcher_strikeouts,Under,4.5,-136,3.07,-1.43,0.8034,0.5763,0.5379,0.2655,0.3941,-409.0,0.5359,0.025,poisson,,,San Francisco Giants,,,,2026-07-12T20:06:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Seth Lugo,pitcher_strikeouts,Under,4.5,-105,3.573,-0.927,0.7116,0.5122,0.4797,0.2319,0.3893,-247.0,0.4088,0.025,poisson,,,Kansas City Royals,,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Trevor McDonald,pitcher_outs,Under,15.5,-115,12.787,-2.713,0.7425,0.5349,0.497,0.2455,0.3881,-288.0,0.4464,0.025,normal_residual_std,,,San Francisco Giants,,,,2026-07-12T20:06:00Z,2026-07-12T17:12:31Z
+B+,Good,BetMGM,Shohei Ohtani,hitter_runs,Under,0.5,120,0.532,0.032,0.6286,0.4545,0.4248,0.2037,0.3828,-169.0,0.319,0.025,empirical_holdout_residuals,4793.0,0.5825,Los Angeles Dodgers,Arizona Diamondbacks,,,2026-07-12T20:11:00Z,2026-07-12T17:12:31Z
+A,Strong,BetMGM,Matthew Boyd,pitcher_strikeouts,Under,5.5,100,4.73,-0.77,0.6632,0.5,0.4653,0.1979,0.3264,-197.0,0.3264,0.025,poisson,,,Chicago Cubs,,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+B+,Good,DraftKings,Yordan Alvarez,hitter_runs,Under,0.5,106,0.5,0.0,0.6286,0.4854,0.4499,0.1786,0.2948,-169.0,0.2782,0.025,empirical_holdout_residuals,4793.0,0.5825,Houston Astros,Texas Rangers,,,2026-07-12T18:36:00Z,2026-07-12T17:12:31Z
+B+,Good,BetMGM,Gunnar Henderson,hitter_runs,Under,0.5,105,0.573,0.073,0.6286,0.4878,0.4554,0.1732,0.2886,-169.0,0.2748,0.025,empirical_holdout_residuals,4793.0,0.5825,Baltimore Orioles,Kansas City Royals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+B,Playable,Fanatics,Joey Cantillo,pitcher_strikeouts,Over,5.5,120,6.136,0.636,0.5759,0.4545,0.4248,0.1511,0.267,-136.0,0.2225,0.025,poisson,,,Cleveland Guardians,,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Kyle Schwarber,hitter_total_bases,Over,0.5,-150,1.85,1.35,0.7591,0.6,0.5575,0.2016,0.2652,-315.0,0.3978,0.025,empirical_holdout_residuals,4793.0,1.3752,Philadelphia Phillies,Detroit Tigers,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+B+,Good,BetRivers,Zack Wheeler,pitcher_strikeouts,Over,7.5,110,8.4,0.9,0.6013,0.4762,0.4438,0.1575,0.2628,-151.0,0.2389,0.025,poisson,,,Philadelphia Phillies,,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+B,Playable,BetMGM,Samuel Basallo,hitter_hits_runs_rbis,Under,1.5,115,1.623,0.123,0.5832,0.4651,0.4367,0.1465,0.2538,-140.0,0.2207,0.025,empirical_holdout_residuals,4793.0,1.5362,Baltimore Orioles,Kansas City Royals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+B,Playable,Caesars,Eliezer Alfonzo,hitter_total_bases,Under,0.5,113,0.816,0.316,0.588,0.4695,0.4377,0.1503,0.2524,-143.0,0.2233,0.025,empirical_holdout_residuals,4793.0,1.3752,Los Angeles Dodgers,Arizona Diamondbacks,,,2026-07-12T20:11:00Z,2026-07-12T17:12:31Z
+B+,Good,Bovada,Shohei Ohtani,hitter_total_bases,Under,1.5,100,1.644,0.144,0.6242,0.5,0.4694,0.1548,0.2484,-166.0,0.2484,0.025,empirical_holdout_residuals,4793.0,1.3752,Los Angeles Dodgers,Arizona Diamondbacks,,,2026-07-12T20:11:00Z,2026-07-12T17:12:31Z
+A+,Elite,Caesars,Christian Walker,hitter_total_bases,Over,0.5,-176,1.924,1.424,0.7914,0.6377,0.5967,0.1947,0.241,-379.0,0.4242,0.025,empirical_holdout_residuals,4793.0,1.3752,Houston Astros,Texas Rangers,,,2026-07-12T18:36:00Z,2026-07-12T17:12:31Z
+B+,Good,BetMGM,Kevin Alcantara,hitter_hits,Under,0.5,-105,0.355,-0.145,0.6348,0.5122,0.4797,0.1551,0.2394,-174.0,0.2514,0.025,empirical_holdout_residuals,4793.0,0.6897,Chicago Cubs,Cincinnati Reds,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+B+,Good,DraftKings,Seiya Suzuki,hitter_runs,Under,0.5,-103,0.517,0.017,0.6286,0.5074,0.4698,0.1588,0.2388,-169.0,0.246,0.025,empirical_holdout_residuals,4793.0,0.5825,Chicago Cubs,Cincinnati Reds,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Ben Rice,hitter_hits_runs_rbis,Under,2.5,-140,1.753,-0.747,0.7198,0.5833,0.5446,0.1752,0.2339,-257.0,0.3274,0.025,empirical_holdout_residuals,4793.0,1.5362,New York Yankees,Washington Nationals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A,Strong,BetMGM,Luis Arraez,hitter_total_bases,Under,1.5,-115,1.438,-0.062,0.6598,0.5349,0.5,0.1598,0.2335,-194.0,0.2686,0.025,empirical_holdout_residuals,4793.0,1.3752,San Francisco Giants,Colorado Rockies,,,2026-07-12T20:06:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Pete Alonso,hitter_rbis,Under,0.5,-140,0.544,0.044,0.7175,0.5833,0.5446,0.1729,0.2299,-254.0,0.3219,0.025,empirical_holdout_residuals,4793.0,0.6341,Baltimore Orioles,Kansas City Royals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+B+,Good,Bovada,Yordan Alvarez,hitter_total_bases,Under,1.5,-105,1.616,0.116,0.6296,0.5122,0.4797,0.1499,0.2292,-170.0,0.2407,0.025,empirical_holdout_residuals,4793.0,1.3752,Houston Astros,Texas Rangers,,,2026-07-12T18:36:00Z,2026-07-12T17:12:31Z
+B+,Good,BetMGM,Ben Rice,hitter_runs,Under,0.5,-105,0.532,0.032,0.6286,0.5122,0.4797,0.1489,0.2272,-169.0,0.2386,0.025,empirical_holdout_residuals,4793.0,0.5825,New York Yankees,Washington Nationals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+B+,Good,BetMGM,Munetaka Murakami,hitter_runs,Under,0.5,-105,0.631,0.131,0.6273,0.5122,0.4754,0.1519,0.2248,-168.0,0.236,0.025,empirical_holdout_residuals,4793.0,0.5825,Chicago White Sox,Athletics,,,2026-07-12T18:11:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Luis Arraez,hitter_hits,Under,1.5,-185,0.973,-0.527,0.7893,0.6491,0.604,0.1853,0.2159,-375.0,0.3995,0.025,empirical_holdout_residuals,4793.0,0.6897,San Francisco Giants,Colorado Rockies,,,2026-07-12T20:06:00Z,2026-07-12T17:12:31Z
+B+,Good,Caesars,Gunnar Henderson,hitter_total_bases,Under,1.5,-112,1.575,0.075,0.6384,0.5283,0.492,0.1463,0.2083,-177.0,0.2333,0.025,empirical_holdout_residuals,4793.0,1.3752,Baltimore Orioles,Kansas City Royals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,DraftKings,Jacob Wilson,hitter_hits,Under,1.5,-190,1.004,-0.496,0.7874,0.6552,0.6132,0.1742,0.2019,-370.0,0.3835,0.025,empirical_holdout_residuals,4793.0,0.6897,Athletics,Chicago White Sox,,,2026-07-12T18:11:00Z,2026-07-12T17:12:31Z
+B+,Good,BetMGM,Pete Alonso,hitter_runs,Under,0.5,-110,0.579,0.079,0.6286,0.5238,0.4899,0.1387,0.2,-169.0,0.22,0.025,empirical_holdout_residuals,4793.0,0.5825,Baltimore Orioles,Kansas City Royals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+B,Playable,FanDuel,Andrew Abbott,pitcher_strikeouts,Over,4.5,102,5.199,0.699,0.5937,0.495,0.4669,0.1268,0.1993,-146.0,0.1954,0.025,poisson,,,Cincinnati Reds,,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+B+,Good,BetMGM,Leody Taveras,hitter_hits_runs_rbis,Under,1.5,-118,1.294,-0.206,0.6486,0.5413,0.5082,0.1403,0.1982,-185.0,0.2338,0.025,empirical_holdout_residuals,4793.0,1.5362,Baltimore Orioles,Kansas City Royals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+B+,Good,BetMGM,Bobby Witt Jr.,hitter_runs,Under,0.5,-110,0.657,0.157,0.6271,0.5238,0.4899,0.1372,0.1972,-168.0,0.2169,0.025,empirical_holdout_residuals,4793.0,0.5825,Kansas City Royals,Baltimore Orioles,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,DraftKings,Shohei Ohtani,hitter_rbis,Under,0.5,-150,0.663,0.163,0.7168,0.6,0.5563,0.1605,0.1947,-253.0,0.2921,0.025,empirical_holdout_residuals,4793.0,0.6341,Los Angeles Dodgers,Arizona Diamondbacks,,,2026-07-12T20:11:00Z,2026-07-12T17:12:31Z
+B+,Good,BetMGM,Ryan Kreidler,hitter_total_bases,Over,0.5,-115,1.585,1.085,0.6379,0.5349,0.5,0.1379,0.1927,-176.0,0.2216,0.025,empirical_holdout_residuals,4793.0,1.3752,Minnesota Twins,Los Angeles Angels,,,2026-07-12T18:11:00Z,2026-07-12T17:12:31Z
+A,Strong,DraftKings,Buddy Kennedy,hitter_hits,Under,0.5,-127,0.312,-0.188,0.6621,0.5595,0.5232,0.1389,0.1834,-196.0,0.2329,0.025,empirical_holdout_residuals,4793.0,0.6897,Seattle Mariners,Tampa Bay Rays,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+B+,Good,BetOnline.ag,Shohei Ohtani,hitter_hits_runs_rbis,Under,2.5,-120,2.324,-0.176,0.6454,0.5455,0.5,0.1454,0.1833,-182.0,0.2199,0.025,empirical_holdout_residuals,4793.0,1.5362,Los Angeles Dodgers,Arizona Diamondbacks,,,2026-07-12T20:11:00Z,2026-07-12T17:12:31Z
+A,Strong,BetMGM,Freddie Freeman,hitter_hits_runs_rbis,Under,2.5,-135,2.057,-0.443,0.679,0.5745,0.5408,0.1382,0.1819,-211.0,0.2455,0.025,empirical_holdout_residuals,4793.0,1.5362,Los Angeles Dodgers,Arizona Diamondbacks,,,2026-07-12T20:11:00Z,2026-07-12T17:12:31Z
+A,Strong,DraftKings,Yordan Alvarez,hitter_hits_runs_rbis,Under,2.5,-135,2.06,-0.44,0.6785,0.5745,0.5371,0.1414,0.1812,-211.0,0.2446,0.025,empirical_holdout_residuals,4793.0,1.5362,Houston Astros,Texas Rangers,,,2026-07-12T18:36:00Z,2026-07-12T17:12:31Z
+B+,Good,BetMGM,Luis Garcia Jr.,hitter_total_bases,Under,1.5,-115,1.616,0.116,0.6296,0.5349,0.5,0.1296,0.1771,-170.0,0.2037,0.025,empirical_holdout_residuals,4793.0,1.3752,Washington Nationals,New York Yankees,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Dansby Swanson,hitter_total_bases,Over,0.5,-165,1.781,1.281,0.732,0.6226,0.5835,0.1485,0.1757,-273.0,0.2899,0.025,empirical_holdout_residuals,4793.0,1.3752,Chicago Cubs,Cincinnati Reds,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+B,Playable,Caesars,Blaze Alexander,hitter_hits_runs_rbis,Under,1.5,100,1.616,0.116,0.5851,0.5,0.4661,0.1189,0.1701,-141.0,0.1701,0.025,empirical_holdout_residuals,4793.0,1.5362,Baltimore Orioles,Kansas City Royals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,JJ Bleday,hitter_total_bases,Over,0.5,-165,1.769,1.269,0.7268,0.6226,0.5835,0.1433,0.1673,-266.0,0.2761,0.025,empirical_holdout_residuals,4793.0,1.3752,Cincinnati Reds,Chicago Cubs,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Junior Caminero,hitter_rbis,Under,0.5,-160,0.618,0.118,0.7175,0.6154,0.5752,0.1423,0.1659,-254.0,0.2654,0.025,empirical_holdout_residuals,4793.0,0.6341,Tampa Bay Rays,Seattle Mariners,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Rafael Devers,hitter_rbis,Under,0.5,-160,0.623,0.123,0.7175,0.6154,0.5752,0.1423,0.1659,-254.0,0.2654,0.025,empirical_holdout_residuals,4793.0,0.6341,San Francisco Giants,Colorado Rockies,,,2026-07-12T20:06:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetOnline.ag,Bobby Witt Jr.,hitter_hits,Under,1.5,-200,1.103,-0.397,0.7756,0.6667,0.6269,0.1487,0.1633,-346.0,0.3267,0.025,empirical_holdout_residuals,4793.0,0.6897,Kansas City Royals,Baltimore Orioles,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,Bovada,Spencer Torkelson,hitter_hits_runs_rbis,Over,0.5,-170,1.947,1.447,0.7308,0.6296,0.5915,0.1393,0.1607,-271.0,0.2731,0.025,empirical_holdout_residuals,4793.0,1.5362,Detroit Tigers,Philadelphia Phillies,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+B+,Good,DraftKings,Andy Pages,hitter_total_bases,Under,1.5,-118,1.638,0.138,0.6261,0.5413,0.5061,0.12,0.1566,-167.0,0.1848,0.025,empirical_holdout_residuals,4793.0,1.3752,Los Angeles Dodgers,Arizona Diamondbacks,,,2026-07-12T20:11:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetOnline.ag,Gunnar Henderson,hitter_hits,Under,1.5,-217,0.982,-0.518,0.7889,0.6845,0.6438,0.1451,0.1524,-374.0,0.3308,0.025,empirical_holdout_residuals,4793.0,0.6897,Baltimore Orioles,Kansas City Royals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,DraftKings,Yordan Alvarez,hitter_rbis,Under,0.5,-165,0.592,0.092,0.7175,0.6226,0.5769,0.1406,0.1523,-254.0,0.2513,0.025,empirical_holdout_residuals,4793.0,0.6341,Houston Astros,Texas Rangers,,,2026-07-12T18:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Ben Rice,hitter_rbis,Under,0.5,-165,0.525,0.025,0.7175,0.6226,0.5835,0.134,0.1523,-254.0,0.2513,0.025,empirical_holdout_residuals,4793.0,0.6341,New York Yankees,Washington Nationals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Shea Langeliers,hitter_rbis,Under,0.5,-165,0.524,0.024,0.7175,0.6226,0.5835,0.134,0.1523,-254.0,0.2513,0.025,empirical_holdout_residuals,4793.0,0.6341,Athletics,Chicago White Sox,,,2026-07-12T18:11:00Z,2026-07-12T17:12:31Z
+B+,Good,Caesars,Dylan Beavers,hitter_hits_runs_rbis,Under,1.5,-117,1.454,-0.046,0.6207,0.5392,0.503,0.1176,0.1511,-164.0,0.1768,0.025,empirical_holdout_residuals,4793.0,1.5362,Baltimore Orioles,Kansas City Royals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A,Strong,BetMGM,Pete Alonso,hitter_hits_runs_rbis,Under,2.5,-150,1.979,-0.521,0.6898,0.6,0.5633,0.1265,0.1496,-222.0,0.2244,0.025,empirical_holdout_residuals,4793.0,1.5362,Baltimore Orioles,Kansas City Royals,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Luis Garcia Jr.,hitter_hits,Under,1.5,-220,0.975,-0.525,0.7893,0.6875,0.6413,0.148,0.1481,-375.0,0.3258,0.025,empirical_holdout_residuals,4793.0,0.6897,Washington Nationals,New York Yankees,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+B+,Good,BetOnline.ag,Kyle Manzardo,hitter_hits_runs_rbis,Under,1.5,-130,1.292,-0.208,0.6486,0.5652,0.519,0.1295,0.1474,-185.0,0.1917,0.025,empirical_holdout_residuals,4793.0,1.5362,Cleveland Guardians,Miami Marlins,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Heliot Ramos,hitter_hits,Under,1.5,-225,0.978,-0.522,0.7891,0.6923,0.6472,0.1419,0.1398,-374.0,0.3145,0.025,empirical_holdout_residuals,4793.0,0.6897,San Francisco Giants,Colorado Rockies,,,2026-07-12T20:06:00Z,2026-07-12T17:12:31Z
+A,Strong,Caesars,Joey Meneses,hitter_hits_runs_rbis,Under,1.5,-143,1.111,-0.389,0.6706,0.5885,0.5492,0.1214,0.1396,-204.0,0.1996,0.025,empirical_holdout_residuals,4793.0,1.5362,Athletics,Chicago White Sox,,,2026-07-12T18:11:00Z,2026-07-12T17:12:31Z
+A+,Elite,DraftKings,Yordan Alvarez,hitter_hits,Under,1.5,-228,0.919,-0.581,0.7908,0.6951,0.6516,0.1392,0.1376,-378.0,0.3137,0.025,empirical_holdout_residuals,4793.0,0.6897,Houston Astros,Texas Rangers,,,2026-07-12T18:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,CJ Abrams,hitter_rbis,Under,0.5,-175,0.537,0.037,0.7175,0.6364,0.5941,0.1234,0.1275,-254.0,0.223,0.025,empirical_holdout_residuals,4793.0,0.6341,Washington Nationals,New York Yankees,,,2026-07-12T17:36:00Z,2026-07-12T17:12:31Z
+A+,Elite,DraftKings,Andy Pages,hitter_hits,Under,1.5,-232,1.036,-0.464,0.7851,0.6988,0.6553,0.1299,0.1236,-365.0,0.2866,0.025,empirical_holdout_residuals,4793.0,0.6897,Los Angeles Dodgers,Arizona Diamondbacks,,,2026-07-12T20:11:00Z,2026-07-12T17:12:31Z
+A+,Elite,DraftKings,Yandy Diaz,hitter_hits,Under,1.5,-234,1.009,-0.491,0.7868,0.7006,0.6567,0.1301,0.123,-369.0,0.2879,0.025,empirical_holdout_residuals,4793.0,0.6897,Tampa Bay Rays,Seattle Mariners,,,2026-07-12T17:41:00Z,2026-07-12T17:12:31Z
+A+,Elite,BetMGM,Shohei Ohtani,hitter_hits,Under,1.5,-235,1.003,-0.497,0.7874,0.7015,0.6586,0.1288,0.1225,-370.0,0.2879,0.025,empirical_holdout_residuals,4793.0,0.6897,Los Angeles Dodgers,Arizona Diamondbacks,,,2026-07-12T20:11:00Z,2026-07-12T17:12:31Z
