@@ -56,8 +56,6 @@ OUTPUT_PATH = (
     / "pitcher_fantasy_projections.csv"
 )
 
-MINIMUM_HISTORY_GAMES = 2
-
 # DraftKings pitcher scoring.
 DK_INNING_PITCHED_POINTS = 2.25
 DK_STRIKEOUT_POINTS = 2.0
@@ -65,9 +63,6 @@ DK_WIN_POINTS = 4.0
 DK_EARNED_RUN_POINTS = -2.0
 DK_HIT_ALLOWED_POINTS = -0.6
 DK_WALK_POINTS = -0.6
-DK_COMPLETE_GAME_POINTS = 2.5
-DK_COMPLETE_GAME_SHUTOUT_POINTS = 2.5
-DK_NO_HITTER_POINTS = 5.0
 
 # FanDuel pitcher scoring.
 FD_INNING_PITCHED_POINTS = 3.0
@@ -76,7 +71,7 @@ FD_WIN_POINTS = 6.0
 FD_EARNED_RUN_POINTS = -3.0
 FD_QUALITY_START_POINTS = 4.0
 
-# Conservative fallbacks used only when historical fields are unavailable.
+# Conservative fallbacks when historical fields are unavailable.
 DEFAULT_PROJECTED_EARNED_RUNS = 2.5
 DEFAULT_PROJECTED_HITS_ALLOWED = 5.0
 DEFAULT_PROJECTED_WALKS = 2.0
@@ -170,22 +165,6 @@ def normalize_name(value: Any) -> str:
     return text
 
 
-def safe_number(
-    value: Any,
-    default: float = float("nan"),
-) -> float:
-    """Convert one value into a finite float."""
-    try:
-        number = float(value)
-    except (TypeError, ValueError):
-        return default
-
-    if not np.isfinite(number):
-        return default
-
-    return number
-
-
 def choose_column(
     frame: pd.DataFrame,
     candidates: list[str],
@@ -261,7 +240,8 @@ def load_strikeout_projections() -> pd.DataFrame:
 
     if projection_column is None:
         raise ValueError(
-            "Strikeout projection file has no recognized projection column."
+            "Strikeout projection file has no recognized "
+            "strikeout projection column."
         )
 
     frame = frame.rename(
@@ -292,24 +272,12 @@ def load_strikeout_projections() -> pd.DataFrame:
         & frame["projected_ks"].ge(0)
     ].copy()
 
-    duplicate_columns = [
-        column
-        for column in [
-            "game_id",
-            "pitcher_key",
-        ]
-        if column in frame.columns
-    ]
-
-    if not duplicate_columns:
-        duplicate_columns = ["pitcher_key"]
-
     frame = frame.drop_duplicates(
-        subset=duplicate_columns,
+        subset=["pitcher_key"],
         keep="last",
-    )
+    ).reset_index(drop=True)
 
-    return frame.reset_index(drop=True)
+    return frame
 
 
 def load_outs_projections() -> pd.DataFrame:
@@ -378,50 +346,86 @@ def load_outs_projections() -> pd.DataFrame:
         )
     ].copy()
 
-    duplicate_columns = [
-        column
-        for column in [
-            "game_id",
-            "pitcher_key",
-        ]
-        if column in frame.columns
-    ]
-
-    if not duplicate_columns:
-        duplicate_columns = ["pitcher_key"]
-
     frame = frame.drop_duplicates(
-        subset=duplicate_columns,
+        subset=["pitcher_key"],
         keep="last",
-    )
+    ).reset_index(drop=True)
 
-    return frame.reset_index(drop=True)
+    return frame
 
 
 def merge_current_projections(
     strikeouts: pd.DataFrame,
     outs: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Merge current strikeout and outs projections."""
-    merge_columns = ["pitcher_key"]
+    """Merge strikeout and outs projections by normalized pitcher name.
 
-    if (
-        "game_id" in strikeouts.columns
-        and "game_id" in outs.columns
-    ):
-        merge_columns = [
-            "game_id",
-            "pitcher_key",
-        ]
+    The source files may contain different or missing game_id values.
+    Pitcher names are therefore the primary matching key.
+    """
+    strikeout_keys = set(
+        strikeouts["pitcher_key"]
+        .dropna()
+        .astype(str)
+    )
+
+    outs_keys = set(
+        outs["pitcher_key"]
+        .dropna()
+        .astype(str)
+    )
+
+    common_keys = strikeout_keys & outs_keys
+
+    print(
+        f"Strikeout pitchers: {len(strikeout_keys)}"
+    )
+
+    print(
+        f"Outs pitchers: {len(outs_keys)}"
+    )
+
+    print(
+        f"Common normalized pitchers: {len(common_keys)}"
+    )
+
+    if not common_keys:
+        strikeout_only = sorted(
+            strikeout_keys - outs_keys
+        )[:20]
+
+        outs_only = sorted(
+            outs_keys - strikeout_keys
+        )[:20]
+
+        print(
+            "First strikeout-only pitcher keys:",
+            strikeout_only,
+        )
+
+        print(
+            "First outs-only pitcher keys:",
+            outs_only,
+        )
+
+        raise RuntimeError(
+            "No pitchers matched between strikeout and outs projections."
+        )
 
     merged = strikeouts.merge(
         outs,
-        on=merge_columns,
+        on="pitcher_key",
         how="inner",
         suffixes=(
             "_strikeouts",
             "_outs",
         ),
+        validate="one_to_one",
+    )
+
+    print(
+        f"Matched {len(merged)} pitchers "
+        f"(Strikeouts={len(strikeouts)}, Outs={len(outs)})"
     )
 
     if merged.empty:
@@ -453,16 +457,27 @@ def merge_current_projections(
             merged[base_column] = merged[
                 outs_column
             ]
+        elif base_column not in merged.columns:
+            merged[base_column] = pd.NA
 
-    if "game_id" not in merged.columns:
-        if "game_id_strikeouts" in merged.columns:
-            merged["game_id"] = merged[
-                "game_id_strikeouts"
-            ]
-        elif "game_id_outs" in merged.columns:
-            merged["game_id"] = merged[
-                "game_id_outs"
-            ]
+    if "game_id_strikeouts" in merged.columns:
+        merged["game_id"] = merged[
+            "game_id_strikeouts"
+        ].combine_first(
+            merged.get(
+                "game_id_outs",
+                pd.Series(
+                    pd.NA,
+                    index=merged.index,
+                ),
+            )
+        )
+    elif "game_id_outs" in merged.columns:
+        merged["game_id"] = merged[
+            "game_id_outs"
+        ]
+    elif "game_id" not in merged.columns:
+        merged["game_id"] = pd.NA
 
     return merged
 
@@ -612,7 +627,10 @@ def weighted_recent_average(
             + 0.40 * season
         )
 
-    return max(0.0, projection), False
+    return max(
+        0.0,
+        projection,
+    ), False
 
 
 def historical_component(
@@ -696,6 +714,38 @@ def estimate_win_probability(
     )
 
 
+def innings_to_decimal(value: Any) -> float:
+    """Convert baseball innings notation to decimal innings."""
+    if value is None or pd.isna(value):
+        return float("nan")
+
+    text = str(value).strip()
+
+    if not text:
+        return float("nan")
+
+    if "." in text:
+        whole_text, partial_text = text.split(".", 1)
+    else:
+        whole_text, partial_text = text, "0"
+
+    try:
+        whole_innings = int(whole_text)
+        partial_outs = int(
+            partial_text[:1] or "0"
+        )
+    except (TypeError, ValueError):
+        return float("nan")
+
+    if partial_outs not in {0, 1, 2}:
+        return float("nan")
+
+    return float(
+        whole_innings
+        + partial_outs / 3.0
+    )
+
+
 def estimate_quality_start_probability(
     pitcher_logs: pd.DataFrame,
 ) -> float:
@@ -724,10 +774,9 @@ def estimate_quality_start_probability(
     ):
         return float("nan")
 
-    innings = pd.to_numeric(
-        pitcher_logs[innings_column],
-        errors="coerce",
-    )
+    innings = pitcher_logs[
+        innings_column
+    ].apply(innings_to_decimal)
 
     earned_runs = pd.to_numeric(
         pitcher_logs[earned_runs_column],
@@ -762,7 +811,7 @@ def add_historical_components(
     current: pd.DataFrame,
     history: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Add projected ER, hits, walks, wins, and uncertainty."""
+    """Add projected ER, hits, walks, wins, and quality starts."""
     rows: list[dict[str, Any]] = []
 
     for _, pitcher in current.iterrows():
@@ -862,31 +911,18 @@ def calculate_draftkings_points(
     frame: pd.DataFrame,
 ) -> pd.Series:
     """Calculate expected DraftKings pitcher points."""
-    projected_ip = frame["projected_ip"]
-    projected_ks = frame["projected_ks"]
-    projected_er = frame["projected_er"]
-    projected_hits = frame[
-        "projected_hits_allowed"
-    ]
-    projected_walks = frame[
-        "projected_walks"
-    ]
-    win_probability = frame[
-        "projected_win_probability"
-    ]
-
     return (
-        projected_ip
+        frame["projected_ip"]
         * DK_INNING_PITCHED_POINTS
-        + projected_ks
+        + frame["projected_ks"]
         * DK_STRIKEOUT_POINTS
-        + projected_er
+        + frame["projected_er"]
         * DK_EARNED_RUN_POINTS
-        + projected_hits
+        + frame["projected_hits_allowed"]
         * DK_HIT_ALLOWED_POINTS
-        + projected_walks
+        + frame["projected_walks"]
         * DK_WALK_POINTS
-        + win_probability
+        + frame["projected_win_probability"]
         * DK_WIN_POINTS
     )
 
@@ -957,8 +993,10 @@ def estimate_fantasy_uncertainty(
             index=result.index,
         )
 
-    # Convert outs uncertainty into innings uncertainty.
-    innings_std = outs_std / 3.0
+    innings_std = (
+        outs_std
+        / 3.0
+    )
 
     estimated_std = np.sqrt(
         (
@@ -992,8 +1030,7 @@ def estimate_fantasy_uncertainty(
         "projected_fantasy_score_lower_80"
     ] = np.clip(
         result["projected_fantasy_score"]
-        - 1.2816
-        * estimated_std,
+        - 1.2816 * estimated_std,
         a_min=0.0,
         a_max=None,
     )
@@ -1002,8 +1039,7 @@ def estimate_fantasy_uncertainty(
         "projected_fantasy_score_upper_80"
     ] = (
         result["projected_fantasy_score"]
-        + 1.2816
-        * estimated_std
+        + 1.2816 * estimated_std
     )
 
     return result
@@ -1018,6 +1054,16 @@ def build_output(
 
     output["date"] = (
         target_date.isoformat()
+    )
+
+    output["projected_ks"] = pd.to_numeric(
+        output["projected_ks"],
+        errors="coerce",
+    )
+
+    output["projected_outs"] = pd.to_numeric(
+        output["projected_outs"],
+        errors="coerce",
     )
 
     output["projected_ip"] = (
@@ -1037,7 +1083,6 @@ def build_output(
         output
     )
 
-    # The universal projection builder currently uses this generic field.
     output["projected_fantasy_score"] = output[
         "draftkings_pitcher_points"
     ]
