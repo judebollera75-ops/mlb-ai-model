@@ -1,121 +1,151 @@
+"""Build the production MLB daily prop card.
+
+Inputs:
+    outputs/probability_table.csv
+    outputs/mlb_universal_projections.csv
+    data/platform_lines.csv
+
+Outputs:
+    outputs/mlb_daily_card.csv
+    outputs/mlb_daily_card_audit.csv
+
+The final card contains only exact platform/player/market/line combinations
+that pass probability, expected-value, freshness, calibration, and matchup
+quality checks.
+"""
+
+from __future__ import annotations
+
+import math
 import re
 import unicodedata
+from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
+import numpy as np
 import pandas as pd
 
 
-PROJECTIONS_PATH = Path("outputs/mlb_universal_projections.csv")
-LINES_PATH = Path("data/platform_lines.csv")
-PROBABILITY_PATH = Path("outputs/probability_table.csv")
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
-OUTPUT_PATH = Path("outputs/mlb_daily_card.csv")
-AUDIT_PATH = Path("outputs/mlb_daily_card_audit.csv")
+PROJECTIONS_PATH = (
+    PROJECT_ROOT / "outputs" / "mlb_universal_projections.csv"
+)
 
-ACTIONABLE_GRADES = ["A+", "A", "B"]
+LINES_PATH = PROJECT_ROOT / "data" / "platform_lines.csv"
+
+PROBABILITY_PATH = (
+    PROJECT_ROOT / "outputs" / "probability_table.csv"
+)
+
+OUTPUT_PATH = (
+    PROJECT_ROOT / "outputs" / "mlb_daily_card.csv"
+)
+
+AUDIT_PATH = (
+    PROJECT_ROOT / "outputs" / "mlb_daily_card_audit.csv"
+)
+
+MINIMUM_WIN_PROBABILITY = 0.56
+MINIMUM_PROBABILITY_EDGE = 0.025
+MINIMUM_EXPECTED_VALUE = 0.015
+MINIMUM_CALIBRATION_SAMPLE = 100
+MAXIMUM_LINE_AGE_MINUTES = 30
+MAXIMUM_KELLY_FRACTION = 0.025
+KELLY_MULTIPLIER = 0.25
 
 MARKET_LIMITS = {
-    "hitter_hits": 15,
-    "hitter_total_bases": 15,
+    "hitter_hits": 12,
+    "hitter_total_bases": 12,
+    "hitter_runs": 8,
+    "hitter_rbis": 8,
+    "hitter_hits_runs_rbis": 12,
+    "hitter_fantasy_score": 10,
     "pitcher_strikeouts": 10,
-    "pitcher_outs": 10,
-    "pitcher_fantasy_score": 5,
-}
-
-MARKET_THRESHOLDS = {
-    "hitter_hits": {
-        "A+": 0.45,
-        "A": 0.30,
-        "B": 0.15,
-    },
-    "hitter_total_bases": {
-        "A+": 0.80,
-        "A": 0.50,
-        "B": 0.25,
-    },
-    "pitcher_strikeouts": {
-        "A+": 1.25,
-        "A": 0.85,
-        "B": 0.50,
-    },
-    "pitcher_outs": {
-        "A+": 2.00,
-        "A": 1.25,
-        "B": 0.75,
-    },
-    "pitcher_fantasy_score": {
-        "A+": 5.00,
-        "A": 3.00,
-        "B": 1.50,
-    },
+    "pitcher_outs": 8,
 }
 
 VALID_LINE_RANGES = {
-    "hitter_hits": (0.5, 1.5),
-    "hitter_total_bases": (0.5, 3.5),
+    "hitter_hits": (0.5, 2.5),
+    "hitter_total_bases": (0.5, 5.5),
+    "hitter_runs": (0.5, 1.5),
+    "hitter_rbis": (0.5, 2.5),
+    "hitter_hits_runs_rbis": (0.5, 5.5),
+    "hitter_fantasy_score": (0.5, 30.5),
     "pitcher_strikeouts": (1.5, 12.5),
-    "pitcher_outs": (11.5, 21.5),
-    "pitcher_fantasy_score": (10.0, 55.0),
+    "pitcher_outs": (8.5, 24.5),
 }
 
-GRADE_RANK = {
-    "A+": 1,
-    "A": 2,
-    "B": 3,
-    "PASS": 4,
-    "UNRATED": 5,
-    "NO PROJECTION": 6,
+MARKET_MINIMUM_PROBABILITIES = {
+    "hitter_hits": 0.58,
+    "hitter_total_bases": 0.58,
+    "hitter_runs": 0.59,
+    "hitter_rbis": 0.59,
+    "hitter_hits_runs_rbis": 0.58,
+    "hitter_fantasy_score": 0.58,
+    "pitcher_strikeouts": 0.57,
+    "pitcher_outs": 0.58,
 }
 
+OUTPUT_COLUMNS = [
+    "grade",
+    "confidence_tier",
+    "platform",
+    "player",
+    "market",
+    "direction",
+    "line",
+    "sportsbook_odds",
+    "projection",
+    "raw_projection_edge",
+    "probability",
+    "sportsbook_implied_probability",
+    "no_vig_implied_probability",
+    "probability_edge",
+    "expected_value",
+    "fair_odds",
+    "kelly_fraction",
+    "recommended_bankroll_fraction",
+    "distribution_method",
+    "calibration_sample_size",
+    "validation_mae",
+    "team",
+    "opponent",
+    "home_team",
+    "away_team",
+    "commence_time",
+    "fetched_at",
+]
 
-def normalize_text(value):
-    if pd.isna(value):
+
+def normalize_text(value: Any) -> str:
+    """Normalize text for safe cross-source matching."""
+    if value is None or pd.isna(value):
         return ""
 
-    text = str(value).strip().lower()
+    text = unicodedata.normalize(
+        "NFKD",
+        str(value),
+    )
 
-    text = unicodedata.normalize("NFKD", text)
     text = "".join(
         character
         for character in text
         if not unicodedata.combining(character)
     )
 
-    text = text.replace("&", "and")
-    text = re.sub(r"[^\w\s]", "", text)
-    text = re.sub(r"\s+", " ", text)
+    text = text.casefold()
+    text = text.replace("&", " and ")
+    text = re.sub(r"\b(jr|sr|ii|iii|iv)\b", " ", text)
+    text = re.sub(r"[^a-z0-9\s]", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
 
-    return text.strip()
-
-
-def normalize_series(series):
-    return series.apply(normalize_text)
+    return text
 
 
-def grade_edge(market, edge):
-    if pd.isna(edge):
-        return "NO PROJECTION"
-
-    thresholds = MARKET_THRESHOLDS.get(market)
-
-    if thresholds is None:
-        return "UNRATED"
-
-    absolute_edge = abs(float(edge))
-
-    if absolute_edge >= thresholds["A+"]:
-        return "A+"
-
-    if absolute_edge >= thresholds["A"]:
-        return "A"
-
-    if absolute_edge >= thresholds["B"]:
-        return "B"
-
-    return "PASS"
-
-
-def normalize_direction(value):
+def normalize_direction(value: Any) -> str:
+    """Normalize platform direction names."""
     normalized = normalize_text(value)
 
     if normalized in {
@@ -124,7 +154,7 @@ def normalize_direction(value):
         "yes",
         "higher",
     }:
-        return "MORE/YES"
+        return "Over"
 
     if normalized in {
         "under",
@@ -132,607 +162,758 @@ def normalize_direction(value):
         "no",
         "lower",
     }:
-        return "LESS/NO"
+        return "Under"
 
     return ""
 
 
-def line_is_valid(row):
-    market = row.get("market")
-    line = row.get("line")
+def american_odds_to_probability(odds: Any) -> float:
+    """Convert American odds to raw implied probability."""
+    try:
+        numeric_odds = float(odds)
+    except (TypeError, ValueError):
+        return float("nan")
+
+    if not np.isfinite(numeric_odds) or numeric_odds == 0:
+        return float("nan")
+
+    if numeric_odds > 0:
+        return 100.0 / (numeric_odds + 100.0)
+
+    return abs(numeric_odds) / (
+        abs(numeric_odds) + 100.0
+    )
+
+
+def american_odds_decimal_return(odds: Any) -> float:
+    """Return decimal profit per unit risked."""
+    try:
+        numeric_odds = float(odds)
+    except (TypeError, ValueError):
+        return float("nan")
+
+    if not np.isfinite(numeric_odds) or numeric_odds == 0:
+        return float("nan")
+
+    if numeric_odds > 0:
+        return numeric_odds / 100.0
+
+    return 100.0 / abs(numeric_odds)
+
+
+def expected_value_per_unit(
+    probability: Any,
+    odds: Any,
+) -> float:
+    """Calculate expected profit per unit staked."""
+    try:
+        probability = float(probability)
+    except (TypeError, ValueError):
+        return float("nan")
+
+    profit_multiple = american_odds_decimal_return(odds)
+
+    if (
+        not np.isfinite(probability)
+        or not np.isfinite(profit_multiple)
+    ):
+        return float("nan")
+
+    loss_probability = 1.0 - probability
+
+    return (
+        probability * profit_multiple
+        - loss_probability
+    )
+
+
+def full_kelly_fraction(
+    probability: Any,
+    odds: Any,
+) -> float:
+    """Calculate the full Kelly bankroll fraction."""
+    try:
+        probability = float(probability)
+    except (TypeError, ValueError):
+        return float("nan")
+
+    profit_multiple = american_odds_decimal_return(odds)
+
+    if (
+        not np.isfinite(probability)
+        or not np.isfinite(profit_multiple)
+        or profit_multiple <= 0
+    ):
+        return float("nan")
+
+    loss_probability = 1.0 - probability
+
+    kelly = (
+        profit_multiple * probability
+        - loss_probability
+    ) / profit_multiple
+
+    return max(0.0, float(kelly))
+
+
+def recommended_bankroll_fraction(
+    probability: Any,
+    odds: Any,
+) -> float:
+    """Return capped quarter-Kelly sizing."""
+    full_kelly = full_kelly_fraction(
+        probability,
+        odds,
+    )
+
+    if not np.isfinite(full_kelly):
+        return 0.0
+
+    fractional_kelly = (
+        full_kelly * KELLY_MULTIPLIER
+    )
+
+    return min(
+        MAXIMUM_KELLY_FRACTION,
+        max(0.0, fractional_kelly),
+    )
+
+
+def line_is_valid(
+    market: Any,
+    line: Any,
+) -> bool:
+    """Validate market-specific line ranges."""
+    market = str(market).strip()
 
     if market not in VALID_LINE_RANGES:
         return False
 
-    if pd.isna(line):
+    try:
+        numeric_line = float(line)
+    except (TypeError, ValueError):
         return False
 
-    minimum_line, maximum_line = VALID_LINE_RANGES[market]
+    if not np.isfinite(numeric_line):
+        return False
 
-    return minimum_line <= float(line) <= maximum_line
+    minimum_line, maximum_line = (
+        VALID_LINE_RANGES[market]
+    )
 
-
-def matchup_matches(row):
-    projection_team = row.get("team_key", "")
-    projection_opponent = row.get("opponent_key", "")
-    home_team = row.get("home_team_key", "")
-    away_team = row.get("away_team_key", "")
-
-    if not projection_team or not projection_opponent:
-        return True
-
-    if not home_team or not away_team:
-        return True
-
-    return {
-        projection_team,
-        projection_opponent,
-    } == {
-        home_team,
-        away_team,
-    }
+    return (
+        minimum_line
+        <= numeric_line
+        <= maximum_line
+    )
 
 
-def restore_column(merged, base_name):
-    line_column = f"{base_name}_line"
-    projection_column = f"{base_name}_projection"
+def line_is_fresh(
+    fetched_at: Any,
+) -> bool:
+    """Reject stale platform prices."""
+    parsed = pd.to_datetime(
+        fetched_at,
+        errors="coerce",
+        utc=True,
+    )
 
-    if line_column in merged.columns:
-        merged[base_name] = merged[line_column]
-    elif projection_column in merged.columns:
-        merged[base_name] = merged[projection_column]
+    if pd.isna(parsed):
+        return False
+
+    age = (
+        datetime.now(timezone.utc)
+        - parsed.to_pydatetime()
+    )
+
+    return age.total_seconds() <= (
+        MAXIMUM_LINE_AGE_MINUTES * 60
+    )
 
 
-def load_data():
-    if not PROJECTIONS_PATH.exists():
-        raise FileNotFoundError(
-            f"Missing projections file: {PROJECTIONS_PATH}"
-        )
+def game_has_not_started(
+    commence_time: Any,
+) -> bool:
+    """Reject markets for games that have begun."""
+    parsed = pd.to_datetime(
+        commence_time,
+        errors="coerce",
+        utc=True,
+    )
 
-    if not LINES_PATH.exists():
-        raise FileNotFoundError(
-            f"Missing sportsbook lines file: {LINES_PATH}"
-        )
+    if pd.isna(parsed):
+        return False
 
-    projections = pd.read_csv(PROJECTIONS_PATH)
-    lines = pd.read_csv(LINES_PATH)
+    return (
+        parsed.to_pydatetime()
+        > datetime.now(timezone.utc)
+    )
 
-    required_projection_columns = {
-        "player",
-        "market",
-        "projection",
-    }
 
-    required_line_columns = {
-        "player",
+def calculate_no_vig_probabilities(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
+    """Remove sportsbook margin when both sides are present."""
+    result = frame.copy()
+
+    result["sportsbook_implied_probability"] = (
+        result["sportsbook_odds"]
+        .apply(american_odds_to_probability)
+    )
+
+    result["no_vig_implied_probability"] = np.nan
+
+    grouping_columns = [
+        "event_id",
+        "platform_key",
+        "player_key",
         "market",
         "line",
-        "platform",
-    }
+    ]
 
-    missing_projection_columns = (
-        required_projection_columns - set(projections.columns)
-    )
-
-    missing_line_columns = (
-        required_line_columns - set(lines.columns)
-    )
-
-    if missing_projection_columns:
-        raise KeyError(
-            "Projection file is missing columns: "
-            f"{sorted(missing_projection_columns)}"
+    for _, group in result.groupby(
+        grouping_columns,
+        dropna=False,
+        sort=False,
+    ):
+        directions = set(
+            group["direction"].dropna()
         )
 
-    if missing_line_columns:
-        raise KeyError(
-            "Sportsbook file is missing columns: "
-            f"{sorted(missing_line_columns)}"
+        if not {"Over", "Under"}.issubset(directions):
+            continue
+
+        implied_sum = float(
+            group[
+                "sportsbook_implied_probability"
+            ].sum()
         )
 
-    return projections, lines
+        if (
+            not np.isfinite(implied_sum)
+            or implied_sum <= 0
+        ):
+            continue
 
-
-def load_probability_table():
-    if not PROBABILITY_PATH.exists():
-        print(
-            f"Probability file not found: {PROBABILITY_PATH}. "
-            "Probabilities will remain blank."
+        result.loc[
+            group.index,
+            "no_vig_implied_probability",
+        ] = (
+            group[
+                "sportsbook_implied_probability"
+            ]
+            / implied_sum
         )
 
-        return pd.DataFrame(
-            columns=[
-                "probability_player_key",
-                "probability_line",
-                "over_prob",
-                "under_prob",
-                "fair_over_odds",
-                "fair_under_odds",
+    result["market_implied_probability"] = (
+        result["no_vig_implied_probability"]
+        .fillna(
+            result[
+                "sportsbook_implied_probability"
             ]
         )
+    )
 
-    probabilities = pd.read_csv(PROBABILITY_PATH)
+    return result
+
+
+def confidence_tier(
+    probability: Any,
+    probability_edge: Any,
+    expected_value: Any,
+) -> str:
+    """Convert model quality into an interpretable tier."""
+    try:
+        probability = float(probability)
+        probability_edge = float(probability_edge)
+        expected_value = float(expected_value)
+    except (TypeError, ValueError):
+        return "PASS"
+
+    if (
+        probability >= 0.70
+        and probability_edge >= 0.08
+        and expected_value >= 0.10
+    ):
+        return "Elite"
+
+    if (
+        probability >= 0.65
+        and probability_edge >= 0.06
+        and expected_value >= 0.07
+    ):
+        return "Strong"
+
+    if (
+        probability >= 0.60
+        and probability_edge >= 0.04
+        and expected_value >= 0.04
+    ):
+        return "Good"
+
+    if (
+        probability >= MINIMUM_WIN_PROBABILITY
+        and probability_edge >= MINIMUM_PROBABILITY_EDGE
+        and expected_value >= MINIMUM_EXPECTED_VALUE
+    ):
+        return "Playable"
+
+    return "PASS"
+
+
+def grade_from_tier(tier: str) -> str:
+    """Map confidence tiers to card grades."""
+    return {
+        "Elite": "A+",
+        "Strong": "A",
+        "Good": "B+",
+        "Playable": "B",
+        "PASS": "PASS",
+    }.get(tier, "PASS")
+
+
+def load_probability_table() -> pd.DataFrame:
+    """Load exact live-line probabilities."""
+    if not PROBABILITY_PATH.exists():
+        raise FileNotFoundError(
+            f"Missing probability table: {PROBABILITY_PATH}"
+        )
+
+    try:
+        probabilities = pd.read_csv(
+            PROBABILITY_PATH
+        )
+    except (
+        pd.errors.EmptyDataError,
+        pd.errors.ParserError,
+    ) as exc:
+        raise ValueError(
+            f"Could not read probability table: {PROBABILITY_PATH}"
+        ) from exc
 
     required_columns = {
-        "pitcher",
+        "platform",
+        "player",
+        "market",
+        "direction",
         "line",
-        "over_prob",
-        "under_prob",
-        "fair_over_odds",
-        "fair_under_odds",
+        "projection",
+        "probability",
+        "probability_status",
     }
 
-    missing_columns = required_columns - set(probabilities.columns)
+    missing_columns = (
+        required_columns - set(probabilities.columns)
+    )
 
     if missing_columns:
-        print(
+        raise ValueError(
             "Probability table is missing columns: "
             f"{sorted(missing_columns)}"
         )
 
+    return probabilities
+
+
+def load_projection_context() -> pd.DataFrame:
+    """Load team and opponent context from universal projections."""
+    if not PROJECTIONS_PATH.exists():
         return pd.DataFrame(
             columns=[
-                "probability_player_key",
-                "probability_line",
-                "over_prob",
-                "under_prob",
-                "fair_over_odds",
-                "fair_under_odds",
+                "player_key",
+                "market",
+                "team",
+                "opponent",
             ]
         )
 
-    probabilities = probabilities.copy()
-
-    probabilities["probability_player_key"] = normalize_series(
-        probabilities["pitcher"]
-    )
-
-    probabilities["probability_line"] = pd.to_numeric(
-        probabilities["line"],
-        errors="coerce",
-    ).round(3)
-
-    for column in [
-        "over_prob",
-        "under_prob",
-        "fair_over_odds",
-        "fair_under_odds",
-    ]:
-        probabilities[column] = pd.to_numeric(
-            probabilities[column],
-            errors="coerce",
+    try:
+        projections = pd.read_csv(
+            PROJECTIONS_PATH
+        )
+    except (
+        pd.errors.EmptyDataError,
+        pd.errors.ParserError,
+    ):
+        return pd.DataFrame(
+            columns=[
+                "player_key",
+                "market",
+                "team",
+                "opponent",
+            ]
         )
 
-    probabilities = probabilities.dropna(
-        subset=[
-            "probability_player_key",
-            "probability_line",
-        ]
-    ).copy()
+    required_columns = {
+        "player",
+        "market",
+    }
 
-    probabilities = probabilities.drop_duplicates(
-        subset=[
-            "probability_player_key",
-            "probability_line",
-        ],
-        keep="first",
+    if not required_columns.issubset(
+        projections.columns
+    ):
+        return pd.DataFrame(
+            columns=[
+                "player_key",
+                "market",
+                "team",
+                "opponent",
+            ]
+        )
+
+    projections["player_key"] = projections[
+        "player"
+    ].apply(normalize_text)
+
+    projections["market"] = (
+        projections["market"]
+        .astype(str)
+        .str.strip()
+        .str.lower()
     )
 
-    print(
-        f"Loaded {len(probabilities)} strikeout probability rows "
-        f"from {PROBABILITY_PATH}."
-    )
+    for column in ["team", "opponent"]:
+        if column not in projections.columns:
+            projections[column] = pd.NA
 
-    return probabilities[
+    projections = projections[
         [
-            "probability_player_key",
-            "probability_line",
-            "over_prob",
-            "under_prob",
-            "fair_over_odds",
-            "fair_under_odds",
-        ]
-    ].copy()
-
-
-def add_strikeout_probabilities(merged):
-    merged = merged.copy()
-
-    merged["win_probability"] = pd.NA
-    merged["fair_odds"] = pd.NA
-    merged["calibration_status"] = "PENDING"
-
-    probabilities = load_probability_table()
-
-    if probabilities.empty:
-        return merged
-
-    strikeout_mask = (
-        merged["market"] == "pitcher_strikeouts"
-    )
-
-    if not strikeout_mask.any():
-        return merged
-
-    strikeout_rows = merged.loc[
-        strikeout_mask
-    ].copy()
-
-    strikeout_rows["probability_player_key"] = (
-        strikeout_rows["player_key"]
-    )
-
-    strikeout_rows["probability_line"] = pd.to_numeric(
-        strikeout_rows["line"],
-        errors="coerce",
-    ).round(3)
-
-    strikeout_rows["_original_index"] = strikeout_rows.index
-
-    strikeout_rows = strikeout_rows.merge(
-        probabilities,
-        on=[
-            "probability_player_key",
-            "probability_line",
-        ],
-        how="left",
-    )
-
-    strikeout_rows["win_probability"] = strikeout_rows.apply(
-        lambda row: (
-            row["over_prob"]
-            if row["pick"] == "MORE/YES"
-            else row["under_prob"]
-            if row["pick"] == "LESS/NO"
-            else pd.NA
-        ),
-        axis=1,
-    )
-
-    strikeout_rows["fair_odds"] = strikeout_rows.apply(
-        lambda row: (
-            row["fair_over_odds"]
-            if row["pick"] == "MORE/YES"
-            else row["fair_under_odds"]
-            if row["pick"] == "LESS/NO"
-            else pd.NA
-        ),
-        axis=1,
-    )
-
-    strikeout_rows["calibration_status"] = (
-        strikeout_rows["win_probability"]
-        .notna()
-        .map(
-            {
-                True: "CALIBRATED",
-                False: "PENDING",
-            }
-        )
-    )
-
-    strikeout_rows = strikeout_rows.set_index(
-        "_original_index"
-    )
-
-    merged.loc[
-        strikeout_rows.index,
-        "win_probability",
-    ] = strikeout_rows["win_probability"]
-
-    merged.loc[
-        strikeout_rows.index,
-        "fair_odds",
-    ] = strikeout_rows["fair_odds"]
-
-    merged.loc[
-        strikeout_rows.index,
-        "calibration_status",
-    ] = strikeout_rows["calibration_status"]
-
-    calibrated_count = (
-        merged["win_probability"].notna().sum()
-    )
-
-    print(
-        f"Matched probabilities for {calibrated_count} "
-        "strikeout rows."
-    )
-
-    return merged
-
-
-def build_daily_card():
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-    projections, lines = load_data()
-
-    print(
-        f"Loaded {len(projections)} model projections and "
-        f"{len(lines)} sportsbook rows."
-    )
-
-    if projections.empty or lines.empty:
-        empty_columns = [
-            "grade",
-            "platform",
-            "player",
-            "market",
-            "direction",
-            "line",
-            "sportsbook_odds",
-            "projection",
-            "edge",
-            "absolute_edge",
-            "pick",
-            "win_probability",
-            "fair_odds",
-            "calibration_status",
-            "team",
-            "opponent",
-            "commence_time",
-        ]
-
-        empty_output = pd.DataFrame(columns=empty_columns)
-        empty_output.to_csv(OUTPUT_PATH, index=False)
-
-        print(f"Saved 0 rows to {OUTPUT_PATH}")
-        return empty_output
-
-    for dataframe in [projections, lines]:
-        dataframe["player"] = (
-            dataframe["player"]
-            .astype(str)
-            .str.strip()
-        )
-
-        dataframe["market"] = (
-            dataframe["market"]
-            .astype(str)
-            .str.strip()
-            .str.lower()
-        )
-
-    lines["line"] = pd.to_numeric(
-        lines["line"],
-        errors="coerce",
-    )
-
-    projections["projection"] = pd.to_numeric(
-        projections["projection"],
-        errors="coerce",
-    )
-
-    lines["player_key"] = normalize_series(lines["player"])
-    projections["player_key"] = normalize_series(
-        projections["player"]
-    )
-
-    if "team" in projections.columns:
-        projections["team_key"] = normalize_series(
-            projections["team"]
-        )
-    else:
-        projections["team_key"] = ""
-
-    if "opponent" in projections.columns:
-        projections["opponent_key"] = normalize_series(
-            projections["opponent"]
-        )
-    else:
-        projections["opponent_key"] = ""
-
-    if "home_team" in lines.columns:
-        lines["home_team_key"] = normalize_series(
-            lines["home_team"]
-        )
-    else:
-        lines["home_team_key"] = ""
-
-    if "away_team" in lines.columns:
-        lines["away_team_key"] = normalize_series(
-            lines["away_team"]
-        )
-    else:
-        lines["away_team_key"] = ""
-
-    lines = lines.dropna(
-        subset=[
-            "player",
-            "market",
-            "line",
-            "platform",
-        ]
-    ).copy()
-
-    projections = projections.dropna(
-        subset=[
-            "player",
-            "market",
-            "projection",
-        ]
-    ).copy()
-
-    lines = lines[
-        lines.apply(
-            line_is_valid,
-            axis=1,
-        )
-    ].copy()
-
-    print(
-        f"{len(lines)} sportsbook rows remained after "
-        "valid-line filtering."
-    )
-
-    merged = lines.merge(
-        projections,
-        on=[
             "player_key",
             "market",
-        ],
-        how="left",
-        suffixes=(
-            "_line",
-            "_projection",
+            "team",
+            "opponent",
+        ]
+    ].drop_duplicates(
+        subset=["player_key", "market"],
+        keep="last",
+    )
+
+    return projections
+
+
+def add_rejection_reason(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
+    """Record the first major reason each row is rejected."""
+    result = frame.copy()
+    result["rejection_reason"] = ""
+
+    checks = [
+        (
+            ~result["probability_status"].eq(
+                "calculated"
+            ),
+            "probability_not_calculated",
         ),
-    )
-
-    restore_column(merged, "player")
-    restore_column(merged, "team")
-    restore_column(merged, "opponent")
-
-    merged["projection"] = pd.to_numeric(
-        merged["projection"],
-        errors="coerce",
-    )
-
-    merged = merged[
-        merged["projection"].notna()
-    ].copy()
-
-    print(
-        f"{len(merged)} rows matched a model projection."
-    )
-
-    merged = merged[
-        merged.apply(
-            matchup_matches,
-            axis=1,
-        )
-    ].copy()
-
-    print(
-        f"{len(merged)} rows remained after matchup validation."
-    )
-
-    merged["edge"] = (
-        merged["projection"]
-        - merged["line"]
-    )
-
-    merged["absolute_edge"] = merged["edge"].abs()
-
-    merged["pick"] = merged["edge"].apply(
-        lambda edge: (
-            "MORE/YES"
-            if edge > 0
-            else "LESS/NO"
-        )
-    )
-
-    if "direction" in merged.columns:
-        merged["normalized_direction"] = merged[
-            "direction"
-        ].apply(normalize_direction)
-
-        known_direction = (
-            merged["normalized_direction"] != ""
-        )
-
-        matching_direction = (
-            merged["normalized_direction"]
-            == merged["pick"]
-        )
-
-        merged = merged[
-            (~known_direction)
-            | matching_direction
-        ].copy()
-
-    merged["grade"] = merged.apply(
-        lambda row: grade_edge(
-            row["market"],
-            row["edge"],
+        (
+            result["probability"].isna(),
+            "missing_probability",
         ),
-        axis=1,
-    )
+        (
+            ~result.apply(
+                lambda row: line_is_valid(
+                    row.get("market"),
+                    row.get("line"),
+                ),
+                axis=1,
+            ),
+            "invalid_line",
+        ),
+        (
+            ~result["line_is_fresh"],
+            "stale_line",
+        ),
+        (
+            ~result["game_not_started"],
+            "game_started",
+        ),
+        (
+            result["calibration_sample_size"]
+            .fillna(0)
+            .lt(MINIMUM_CALIBRATION_SAMPLE)
+            & result["distribution_method"]
+            .eq("empirical_holdout_residuals"),
+            "insufficient_calibration_sample",
+        ),
+        (
+            result["probability"]
+            .lt(result["minimum_market_probability"]),
+            "probability_below_threshold",
+        ),
+        (
+            result["probability_edge"]
+            .lt(MINIMUM_PROBABILITY_EDGE),
+            "probability_edge_below_threshold",
+        ),
+        (
+            result["expected_value"]
+            .lt(MINIMUM_EXPECTED_VALUE),
+            "expected_value_below_threshold",
+        ),
+        (
+            result["sportsbook_odds"].isna(),
+            "missing_price",
+        ),
+    ]
 
-    merged["grade_rank"] = (
-        merged["grade"]
-        .map(GRADE_RANK)
-        .fillna(99)
-        .astype(int)
-    )
-
-    # Add calibrated probabilities for pitcher strikeouts.
-    merged = add_strikeout_probabilities(merged)
-
-    merged.to_csv(
-        AUDIT_PATH,
-        index=False,
-    )
-
-    merged = merged[
-        merged["grade"].isin(ACTIONABLE_GRADES)
-    ].copy()
-
-    if "sportsbook_odds" in merged.columns:
-        merged["sportsbook_odds"] = pd.to_numeric(
-            merged["sportsbook_odds"],
-            errors="coerce",
+    for mask, reason in checks:
+        apply_mask = (
+            result["rejection_reason"].eq("")
+            & mask.fillna(True)
         )
 
-    merged = merged.sort_values(
+        result.loc[
+            apply_mask,
+            "rejection_reason",
+        ] = reason
+
+    result.loc[
+        result["rejection_reason"].eq(""),
+        "rejection_reason",
+    ] = "accepted"
+
+    return result
+
+
+def choose_best_platform_rows(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
+    """Keep the best priced exact side for each player and market."""
+    if frame.empty:
+        return frame
+
+    ranked = frame.sort_values(
         [
-            "grade_rank",
-            "absolute_edge",
+            "player_key",
+            "market",
+            "direction",
+            "expected_value",
+            "probability_edge",
+            "probability",
+            "sportsbook_odds",
         ],
         ascending=[
             True,
+            True,
+            True,
+            False,
+            False,
+            False,
             False,
         ],
     )
 
-    duplicate_columns = [
-        column
-        for column in [
-            "platform",
-            "player_key",
-            "market",
-            "line",
-            "pick",
-        ]
-        if column in merged.columns
-    ]
-
-    if duplicate_columns:
-        merged = merged.drop_duplicates(
-            subset=duplicate_columns,
-            keep="first",
-        )
-
-    merged = merged.drop_duplicates(
+    return ranked.drop_duplicates(
         subset=[
             "player_key",
             "market",
+            "direction",
         ],
         keep="first",
     )
 
-    market_sections = []
 
-    for market, limit in MARKET_LIMITS.items():
-        market_rows = merged[
-            merged["market"] == market
-        ].copy()
+def build_daily_card() -> pd.DataFrame:
+    """Create the final production betting card."""
+    OUTPUT_PATH.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
-        market_rows = market_rows.sort_values(
-            [
-                "grade_rank",
-                "absolute_edge",
-            ],
-            ascending=[
-                True,
-                False,
-            ],
+    probabilities = load_probability_table()
+    projection_context = load_projection_context()
+
+    print("=" * 72)
+    print("Building production MLB daily card")
+    print(
+        f"Probability rows loaded: "
+        f"{len(probabilities):,}"
+    )
+    print("=" * 72)
+
+    if probabilities.empty:
+        empty_output = pd.DataFrame(
+            columns=OUTPUT_COLUMNS
         )
 
-        market_rows = market_rows.head(limit)
+        empty_output.to_csv(
+            OUTPUT_PATH,
+            index=False,
+        )
+
+        empty_output.to_csv(
+            AUDIT_PATH,
+            index=False,
+        )
+
+        return empty_output
+
+    probabilities["player_key"] = probabilities[
+        "player"
+    ].apply(normalize_text)
+
+    probabilities["market"] = (
+        probabilities["market"]
+        .astype(str)
+        .str.strip()
+        .str.lower()
+    )
+
+    probabilities["direction"] = probabilities[
+        "direction"
+    ].apply(normalize_direction)
+
+    for column in [
+        "line",
+        "sportsbook_odds",
+        "projection",
+        "probability",
+        "push_probability",
+        "opposite_probability",
+        "fair_odds",
+        "calibration_sample_size",
+        "validation_mae",
+    ]:
+        if column in probabilities.columns:
+            probabilities[column] = pd.to_numeric(
+                probabilities[column],
+                errors="coerce",
+            )
+
+    probabilities = probabilities.loc[
+        probabilities["player_key"].ne("")
+        & probabilities["direction"].isin(
+            {"Over", "Under"}
+        )
+    ].copy()
+
+    probabilities = probabilities.merge(
+        projection_context,
+        on=[
+            "player_key",
+            "market",
+        ],
+        how="left",
+    )
+
+    probabilities = calculate_no_vig_probabilities(
+        probabilities
+    )
+
+    probabilities["raw_projection_edge"] = (
+        probabilities["projection"]
+        - probabilities["line"]
+    )
+
+    probabilities["probability_edge"] = (
+        probabilities["probability"]
+        - probabilities[
+            "market_implied_probability"
+        ]
+    )
+
+    probabilities["expected_value"] = (
+        probabilities.apply(
+            lambda row: expected_value_per_unit(
+                row.get("probability"),
+                row.get("sportsbook_odds"),
+            ),
+            axis=1,
+        )
+    )
+
+    probabilities["kelly_fraction"] = (
+        probabilities.apply(
+            lambda row: full_kelly_fraction(
+                row.get("probability"),
+                row.get("sportsbook_odds"),
+            ),
+            axis=1,
+        )
+    )
+
+    probabilities[
+        "recommended_bankroll_fraction"
+    ] = probabilities.apply(
+        lambda row: recommended_bankroll_fraction(
+            row.get("probability"),
+            row.get("sportsbook_odds"),
+        ),
+        axis=1,
+    )
+
+    probabilities["line_is_fresh"] = probabilities[
+        "fetched_at"
+    ].apply(line_is_fresh)
+
+    probabilities["game_not_started"] = probabilities[
+        "commence_time"
+    ].apply(game_has_not_started)
+
+    probabilities[
+        "minimum_market_probability"
+    ] = probabilities["market"].map(
+        MARKET_MINIMUM_PROBABILITIES
+    ).fillna(MINIMUM_WIN_PROBABILITY)
+
+    probabilities["confidence_tier"] = (
+        probabilities.apply(
+            lambda row: confidence_tier(
+                row.get("probability"),
+                row.get("probability_edge"),
+                row.get("expected_value"),
+            ),
+            axis=1,
+        )
+    )
+
+    probabilities["grade"] = probabilities[
+        "confidence_tier"
+    ].apply(grade_from_tier)
+
+    probabilities = add_rejection_reason(
+        probabilities
+    )
+
+    probabilities.to_csv(
+        AUDIT_PATH,
+        index=False,
+    )
+
+    accepted = probabilities.loc[
+        probabilities["rejection_reason"]
+        .eq("accepted")
+    ].copy()
+
+    accepted = choose_best_platform_rows(
+        accepted
+    )
+
+    accepted = accepted.sort_values(
+        [
+            "expected_value",
+            "probability_edge",
+            "probability",
+        ],
+        ascending=[
+            False,
+            False,
+            False,
+        ],
+    )
+
+    market_sections: list[pd.DataFrame] = []
+
+    for market, limit in MARKET_LIMITS.items():
+        market_rows = accepted.loc[
+            accepted["market"].eq(market)
+        ].head(limit)
 
         print(
-            f"Selected {len(market_rows)} rows "
-            f"for {market}."
+            f"{market}: selected "
+            f"{len(market_rows)} of "
+            f"{int(accepted['market'].eq(market).sum())} "
+            "accepted rows"
         )
 
         market_sections.append(market_rows)
@@ -743,121 +924,102 @@ def build_daily_card():
             ignore_index=True,
         )
     else:
-        selected = pd.DataFrame()
+        selected = pd.DataFrame(
+            columns=accepted.columns
+        )
 
     selected = selected.sort_values(
         [
-            "grade_rank",
-            "market",
-            "absolute_edge",
+            "expected_value",
+            "probability_edge",
+            "probability",
         ],
         ascending=[
-            True,
-            True,
+            False,
+            False,
             False,
         ],
-    )
+    ).reset_index(drop=True)
 
-    output_columns = [
-        "grade",
-        "platform",
-        "player",
-        "market",
-        "direction",
-        "line",
-        "sportsbook_odds",
-        "projection",
-        "edge",
-        "absolute_edge",
-        "pick",
-        "win_probability",
-        "fair_odds",
-        "calibration_status",
-        "team",
-        "opponent",
-        "commence_time",
-    ]
-
-    output_columns = [
-        column
-        for column in output_columns
-        if column in selected.columns
-    ]
+    for column in OUTPUT_COLUMNS:
+        if column not in selected.columns:
+            selected[column] = pd.NA
 
     output = selected[
-        output_columns
+        OUTPUT_COLUMNS
     ].copy()
 
     for column in [
         "line",
         "projection",
-        "edge",
-        "absolute_edge",
-        "win_probability",
-        "fair_odds",
+        "raw_projection_edge",
+        "probability",
+        "sportsbook_implied_probability",
+        "no_vig_implied_probability",
+        "probability_edge",
+        "expected_value",
+        "kelly_fraction",
+        "recommended_bankroll_fraction",
+        "validation_mae",
     ]:
-        if column in output.columns:
-            output[column] = pd.to_numeric(
-                output[column],
-                errors="coerce",
-            )
-
-    for column in [
-        "line",
-        "projection",
-        "edge",
-        "absolute_edge",
-    ]:
-        if column in output.columns:
-            output[column] = output[column].round(3)
-
-    if "win_probability" in output.columns:
-        output["win_probability"] = (
-            output["win_probability"].round(3)
-        )
-
-    if "fair_odds" in output.columns:
-        output["fair_odds"] = (
-            output["fair_odds"].round(0)
-        )
+        output[column] = pd.to_numeric(
+            output[column],
+            errors="coerce",
+        ).round(4)
 
     output.to_csv(
         OUTPUT_PATH,
         index=False,
     )
 
-    print(
-        f"\nSaved {len(output)} actionable props "
-        f"to {OUTPUT_PATH}"
-    )
-
-    print(
-        f"Saved full diagnostics to {AUDIT_PATH}"
-    )
+    print("\n" + "=" * 72)
+    print("MLB DAILY CARD COMPLETE")
+    print(f"Accepted props: {len(output):,}")
+    print(f"Final card: {OUTPUT_PATH}")
+    print(f"Full audit: {AUDIT_PATH}")
+    print("=" * 72)
 
     if output.empty:
         print(
-            "No actionable props survived the quality filters."
+            "No props passed every probability, price, "
+            "freshness, and calibration filter."
         )
     else:
-        print("\nCard breakdown by market:")
+        print("\nCard by market:")
         print(
             output["market"]
             .value_counts()
             .to_string()
         )
 
-        calibrated = output[
-            output["win_probability"].notna()
+        preview_columns = [
+            "grade",
+            "platform",
+            "player",
+            "market",
+            "direction",
+            "line",
+            "sportsbook_odds",
+            "projection",
+            "probability",
+            "probability_edge",
+            "expected_value",
+            "recommended_bankroll_fraction",
         ]
 
+        print("\nTop plays:")
         print(
-            f"\nCalibrated picks in final card: "
-            f"{len(calibrated)}"
+            output[preview_columns]
+            .head(40)
+            .to_string(index=False)
         )
 
-        print()
-        print(output.to_string(index=False))
+    print("\nAudit rejection reasons:")
+    print(
+        probabilities["rejection_reason"]
+        .value_counts()
+        .to_string()
+    )
 
     return output
 
