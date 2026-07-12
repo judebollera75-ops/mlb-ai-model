@@ -1,13 +1,4 @@
-"""Run the production MLB pipeline for one slate.
-
-The slate defaults to today's date. To run another date, set:
-
-    MLB_TARGET_DATE=2026-07-11 python daily_run.py
-
-This script intentionally does not retrain models. Daily inference and model
-training should remain separate so a live slate cannot accidentally overwrite
-production models.
-"""
+"""Run the production MLB pipeline for one slate."""
 
 from __future__ import annotations
 
@@ -21,20 +12,23 @@ import pandas as pd
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
+
 OUTPUT_DIRECTORY = PROJECT_ROOT / "outputs"
 HITTER_OUTPUT_DIRECTORY = OUTPUT_DIRECTORY / "hitters"
 
-TARGET_DATE = os.getenv("MLB_TARGET_DATE", date.today().isoformat())
-HITTERS_PATH = PROJECT_ROOT / "data" / "hitters" / f"{TARGET_DATE}.csv"
-HITTER_PROJECTIONS_PATH = (
-    HITTER_OUTPUT_DIRECTORY / "today_hitter_projections.csv"
+TARGET_DATE = os.getenv(
+    "MLB_TARGET_DATE",
+    date.today().isoformat(),
 )
 
 
 def validate_target_date(value: str) -> str:
-    """Require an ISO date so malformed paths cannot be created."""
+    """Require YYYY-MM-DD format."""
     try:
-        parsed = datetime.strptime(value, "%Y-%m-%d").date()
+        parsed = datetime.strptime(
+            value,
+            "%Y-%m-%d",
+        ).date()
     except ValueError as exc:
         raise ValueError(
             "MLB_TARGET_DATE must use YYYY-MM-DD format. "
@@ -44,8 +38,11 @@ def validate_target_date(value: str) -> str:
     return parsed.isoformat()
 
 
-def run_script(script: str, required: bool = True) -> bool:
-    """Run one repository script with the current Python interpreter."""
+def run_script(
+    script: str,
+    required: bool = True,
+) -> bool:
+    """Run one repository script."""
     script_path = PROJECT_ROOT / script
 
     if not script_path.exists():
@@ -54,17 +51,34 @@ def run_script(script: str, required: bool = True) -> bool:
         if required:
             raise FileNotFoundError(message)
 
-        print(f"\nSkipped optional script. {message}")
+        print(
+            f"Skipped optional script: {message}",
+            flush=True,
+        )
         return False
 
     environment = os.environ.copy()
     environment["MLB_TARGET_DATE"] = TARGET_DATE
 
-    print(f"\nRunning {script} for {TARGET_DATE}...")
+    print(
+        "\n" + "-" * 72,
+        flush=True,
+    )
+    print(
+        f"Running {script} for {TARGET_DATE}...",
+        flush=True,
+    )
+    print(
+        "-" * 72,
+        flush=True,
+    )
 
     try:
         subprocess.run(
-            [sys.executable, str(script_path)],
+            [
+                sys.executable,
+                str(script_path),
+            ],
             cwd=PROJECT_ROOT,
             env=environment,
             check=True,
@@ -73,22 +87,39 @@ def run_script(script: str, required: bool = True) -> bool:
         if required:
             raise
 
-        print(f"Optional script failed: {script}")
+        print(
+            f"Optional script failed: {script}",
+            flush=True,
+        )
         return False
 
     return True
 
 
-def confirmed_hitters_are_available() -> tuple[bool, pd.DataFrame]:
-    """Return whether a usable confirmed-lineup file exists."""
-    if not HITTERS_PATH.exists():
-        return False, pd.DataFrame()
+def hitter_file_path() -> Path:
+    """Return the current-slate hitter file."""
+    return (
+        PROJECT_ROOT
+        / "data"
+        / "hitters"
+        / f"{TARGET_DATE}.csv"
+    )
+
+
+def confirmed_hitters_are_available() -> bool:
+    """Check whether a usable lineup file exists."""
+    path = hitter_file_path()
+
+    if not path.exists():
+        return False
 
     try:
-        hitters = pd.read_csv(HITTERS_PATH)
-    except (pd.errors.EmptyDataError, pd.errors.ParserError) as exc:
-        print(f"Could not read {HITTERS_PATH}: {exc}")
-        return False, pd.DataFrame()
+        hitters = pd.read_csv(path)
+    except (
+        pd.errors.EmptyDataError,
+        pd.errors.ParserError,
+    ):
+        return False
 
     required_columns = {
         "game_id",
@@ -98,18 +129,14 @@ def confirmed_hitters_are_available() -> tuple[bool, pd.DataFrame]:
     }
 
     if hitters.empty:
-        return False, hitters
+        return False
 
-    missing_columns = required_columns - set(hitters.columns)
+    if not required_columns.issubset(
+        hitters.columns
+    ):
+        return False
 
-    if missing_columns:
-        print(
-            f"{HITTERS_PATH} is missing required columns: "
-            f"{sorted(missing_columns)}"
-        )
-        return False, hitters
-
-    valid_hitters = hitters.dropna(
+    valid = hitters.dropna(
         subset=[
             "game_id",
             "player_id",
@@ -118,36 +145,53 @@ def confirmed_hitters_are_available() -> tuple[bool, pd.DataFrame]:
         ]
     )
 
-    return not valid_hitters.empty, valid_hitters
+    return not valid.empty
 
 
-def remove_stale_hitter_projections() -> None:
-    """Prevent yesterday's hitter projections from appearing as current."""
-    if HITTER_PROJECTIONS_PATH.exists():
-        HITTER_PROJECTIONS_PATH.unlink()
+def remove_stale_hitter_output() -> None:
+    """Remove an old hitter projection file."""
+    path = (
+        HITTER_OUTPUT_DIRECTORY
+        / "today_hitter_projections.csv"
+    )
+
+    if path.exists():
+        path.unlink()
+
         print(
-            "Removed stale hitter projections because confirmed "
-            "batting orders are not available."
+            "Removed stale hitter projection output.",
+            flush=True,
         )
 
 
-def main() -> None:
-    global TARGET_DATE, HITTERS_PATH
+def remove_stale_pitcher_outputs() -> None:
+    """Remove outputs that must be rebuilt for the current slate."""
+    stale_paths = [
+        OUTPUT_DIRECTORY
+        / "pitcher_outs_projections.csv",
+        OUTPUT_DIRECTORY
+        / "pitcher_fantasy_projections.csv",
+        OUTPUT_DIRECTORY
+        / "mlb_universal_projections.csv",
+        OUTPUT_DIRECTORY
+        / "probability_table.csv",
+        OUTPUT_DIRECTORY
+        / "mlb_daily_card.csv",
+    ]
 
-    TARGET_DATE = validate_target_date(TARGET_DATE)
-    HITTERS_PATH = (
-        PROJECT_ROOT / "data" / "hitters" / f"{TARGET_DATE}.csv"
-    )
+    for path in stale_paths:
+        if path.exists():
+            path.unlink()
 
-    OUTPUT_DIRECTORY.mkdir(parents=True, exist_ok=True)
-    HITTER_OUTPUT_DIRECTORY.mkdir(parents=True, exist_ok=True)
+            print(
+                f"Removed stale output: {path}",
+                flush=True,
+            )
 
-    print("=" * 70)
-    print(f"MLB production pipeline — slate date: {TARGET_DATE}")
-    print("=" * 70)
 
-    # Download the current schedule and pitcher data first.
-    pitcher_and_schedule_scripts = [
+def run_pitcher_pipeline() -> None:
+    """Generate all current pitcher projections."""
+    scripts = [
         "sports/mlb/data/download/download_schedule.py",
         "sports/mlb/data/download/download_pitchers.py",
         "sports/mlb/data/download/download_pitcher_stats.py",
@@ -158,54 +202,133 @@ def main() -> None:
         "sports/mlb/features/features/add_recent_form.py",
         "sports/mlb/models/models/project_pitcher_strikeouts.py",
         "sports/mlb/models/models/calibrate_projections.py",
-        "sports/mlb/models/models/probability_engine.py",
-        "sports/mlb/models/models/project_pitcher_fantasy.py",
+
+        # These two must run before pitcher fantasy.
         "sports/mlb/models/models/project_pitcher_outs.py",
+        "sports/mlb/models/models/project_pitcher_fantasy.py",
     ]
 
-    for script in pitcher_and_schedule_scripts:
+    for script in scripts:
         run_script(script)
 
-    # Download confirmed batting orders. An empty file is normal early in the day.
-    run_script("sports/mlb/data/download/download_hitters.py")
 
-    hitters_available, hitters = confirmed_hitters_are_available()
-
-    if hitters_available:
-        print(f"\nConfirmed lineups found: {len(hitters)} hitters")
-
-        hitter_scripts = [
-            "sports/mlb/data/download/download_hitter_stats.py",
-            "sports/mlb/data/download/download_hitter_game_logs.py",
-            "sports/mlb/models/models/project_today_hitters.py",
-        ]
-
-        for script in hitter_scripts:
-            run_script(script)
-    else:
-        print("\nNo confirmed batting orders are available yet.")
-        print("Hitter projections will be skipped for this run.")
-        remove_stale_hitter_projections()
-
-    # Combine whichever current projections are available.
+def run_hitter_pipeline() -> bool:
+    """Generate current hitter projections."""
     run_script(
-        "sports/mlb/models/models/build_universal_mlb_projections.py"
+        "sports/mlb/data/download/download_hitters.py"
     )
 
-    # Match projections only against currently supplied platform lines.
-    run_script("sports/mlb/betting/build_daily_card.py")
+    if not confirmed_hitters_are_available():
+        print(
+            "\nConfirmed batting orders are unavailable. "
+            "Skipping hitter projections.",
+            flush=True,
+        )
 
-    # Preserve the generated recommendations for later grading.
-    run_script("sports/mlb/betting/log_daily_card.py")
+        remove_stale_hitter_output()
+        return False
 
-    print("\nMLB daily run completed successfully.")
-    print(f"Slate date: {TARGET_DATE}")
-    print("Final card: outputs/mlb_daily_card.csv")
+    scripts = [
+        "sports/mlb/data/download/download_hitter_stats.py",
+        "sports/mlb/data/download/download_hitter_game_logs.py",
+        "sports/mlb/models/models/project_today_hitters.py",
+    ]
+
+    for script in scripts:
+        run_script(script)
+
+    return True
+
+
+def run_betting_pipeline() -> None:
+    """Build projections, probabilities, card, and history."""
+    scripts = [
+        "sports/mlb/models/models/build_universal_mlb_projections.py",
+        "sports/mlb/models/models/probability_engine.py",
+        "sports/mlb/betting/build_daily_card.py",
+        "sports/mlb/backtesting/log_daily_results.py",
+    ]
+
+    for script in scripts:
+        run_script(script)
+
+
+def main() -> None:
+    """Run the complete daily production pipeline."""
+    global TARGET_DATE
+
+    TARGET_DATE = validate_target_date(
+        TARGET_DATE
+    )
+
+    OUTPUT_DIRECTORY.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    HITTER_OUTPUT_DIRECTORY.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    print(
+        "=" * 72,
+        flush=True,
+    )
+    print(
+        f"MLB production pipeline — slate date: {TARGET_DATE}",
+        flush=True,
+    )
+    print(
+        "=" * 72,
+        flush=True,
+    )
+
+    # Prevent yesterday's files from entering today's pipeline.
+    remove_stale_pitcher_outputs()
+
+    run_pitcher_pipeline()
+    hitters_available = run_hitter_pipeline()
+    run_betting_pipeline()
+
+    print(
+        "\n" + "=" * 72,
+        flush=True,
+    )
+    print(
+        "MLB DAILY PIPELINE COMPLETED",
+        flush=True,
+    )
+    print(
+        "=" * 72,
+        flush=True,
+    )
+    print(
+        "Pitcher outs: outputs/pitcher_outs_projections.csv",
+        flush=True,
+    )
+    print(
+        "Pitcher fantasy: outputs/pitcher_fantasy_projections.csv",
+        flush=True,
+    )
+    print(
+        "Universal projections: outputs/mlb_universal_projections.csv",
+        flush=True,
+    )
+    print(
+        "Probability table: outputs/probability_table.csv",
+        flush=True,
+    )
+    print(
+        "Daily card: outputs/mlb_daily_card.csv",
+        flush=True,
+    )
 
     if not hitters_available:
         print(
-            "This run contains current pitcher markets only. "
-            "Run it again after official batting orders are released."
+            "\nHitter markets were skipped because confirmed "
+            "lineups were unavailable.",
+            flush=True,
         )
 
 
