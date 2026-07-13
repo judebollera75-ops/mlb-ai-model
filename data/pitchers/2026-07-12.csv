@@ -1,31 +1,31 @@
-date,game_id,team,pitcher_id,pitcher_name,side
-2026-07-12,823358,Milwaukee Brewers,688107,Robert Gasser,away
-2026-07-12,823358,Pittsburgh Pirates,694973,Paul Skenes,home
-2026-07-12,824814,Kansas City Royals,607625,Seth Lugo,away
-2026-07-12,824814,Baltimore Orioles,669358,Shane Baz,home
-2026-07-12,822708,New York Yankees,701542,Will Warren,away
-2026-07-12,822708,Washington Nationals,676917,Cade Cavalli,home
-2026-07-12,824491,Chicago Cubs,571510,Matthew Boyd,away
-2026-07-12,824491,Cincinnati Reds,671096,Andrew Abbott,home
-2026-07-12,823602,Boston Red Sox,801139,Payton Tolle,away
-2026-07-12,823602,New York Mets,804267,Zach Thornton,home
-2026-07-12,822951,Seattle Mariners,676106,Emerson Hancock,away
-2026-07-12,822951,Tampa Bay Rays,693855,Ian Seymour,home
-2026-07-12,824250,Philadelphia Phillies,554430,Zack Wheeler,away
-2026-07-12,824250,Detroit Tigers,669373,Tarik Skubal,home
-2026-07-12,823842,Cleveland Guardians,676282,Joey Cantillo,away
-2026-07-12,823842,Miami Marlins,663969,Tyler Phillips,home
-2026-07-12,823681,Los Angeles Angels,667755,José Soriano,away
-2026-07-12,823681,Minnesota Twins,671737,Taj Bradley,home
-2026-07-12,824574,Athletics,669372,J.T. Ginn,away
-2026-07-12,824574,Chicago White Sox,702273,Noah Schultz,home
-2026-07-12,823029,Atlanta Braves,664849,Danny Young,away
-2026-07-12,823029,St. Louis Cardinals,669160,Dustin May,home
-2026-07-12,822876,Houston Astros,664299,Cristian Javier,away
-2026-07-12,822876,Texas Rangers,669022,MacKenzie Gore,home
-2026-07-12,823199,Colorado Rockies,547179,Michael Lorenzen,away
-2026-07-12,823199,San Francisco Giants,686790,Trevor McDonald,home
-2026-07-12,823925,Arizona Diamondbacks,683352,Mitch Bratt,away
-2026-07-12,823925,Los Angeles Dodgers,686218,Emmet Sheehan,home
-2026-07-12,823274,Toronto Blue Jays,592332,Kevin Gausman,away
-2026-07-12,823274,San Diego Padres,608566,Germán Márquez,home
+date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_id,pitcher_name,opposing_pitcher_id,opposing_pitcher_name,side,is_home,home_team,away_team
+2026-07-12,822708,Final,F,3309,Nationals Park,New York Yankees,Washington Nationals,701542,Will Warren,676917,Cade Cavalli,away,0,Washington Nationals,New York Yankees
+2026-07-12,822708,Final,F,3309,Nationals Park,Washington Nationals,New York Yankees,676917,Cade Cavalli,701542,Will Warren,home,1,Washington Nationals,New York Yankees
+2026-07-12,822876,Final,F,5325,Globe Life Field,Houston Astros,Texas Rangers,664299,Cristian Javier,669022,MacKenzie Gore,away,0,Texas Rangers,Houston Astros
+2026-07-12,822876,Final,F,5325,Globe Life Field,Texas Rangers,Houston Astros,669022,MacKenzie Gore,664299,Cristian Javier,home,1,Texas Rangers,Houston Astros
+2026-07-12,822951,Final,F,12,Tropicana Field,Seattle Mariners,Tampa Bay Rays,676106,Emerson Hancock,693855,Ian Seymour,away,0,Tampa Bay Rays,Seattle Mariners
+2026-07-12,822951,Final,F,12,Tropicana Field,Tampa Bay Rays,Seattle Mariners,693855,Ian Seymour,676106,Emerson Hancock,home,1,Tampa Bay Rays,Seattle Mariners
+2026-07-12,823029,Final,F,2889,Busch Stadium,Atlanta Braves,St. Louis Cardinals,664849,Danny Young,669160,Dustin May,away,0,St. Louis Cardinals,Atlanta Braves
+2026-07-12,823029,Final,F,2889,Busch Stadium,St. Louis Cardinals,Atlanta Braves,669160,Dustin May,664849,Danny Young,home,1,St. Louis Cardinals,Atlanta Braves
+2026-07-12,823199,Final,F,2395,Oracle Park,Colorado Rockies,San Francisco Giants,547179,Michael Lorenzen,686790,Trevor McDonald,away,0,San Francisco Giants,Colorado Rockies
+2026-07-12,823199,Final,F,2395,Oracle Park,San Francisco Giants,Colorado Rockies,686790,Trevor McDonald,547179,Michael Lorenzen,home,1,San Francisco Giants,Colorado Rockies
+2026-07-12,823274,Final,F,2680,Petco Park,Toronto Blue Jays,San Diego Padres,592332,Kevin Gausman,608566,Germán Márquez,away,0,San Diego Padres,Toronto Blue Jays
+2026-07-12,823274,Final,F,2680,Petco Park,San Diego Padres,Toronto Blue Jays,608566,Germán Márquez,592332,Kevin Gausman,home,1,San Diego Padres,Toronto Blue Jays
+2026-07-12,823358,Final,F,31,PNC Park,Milwaukee Brewers,Pittsburgh Pirates,688107,Robert Gasser,694973,Paul Skenes,away,0,Pittsburgh Pirates,Milwaukee Brewers
+2026-07-12,823358,Final,F,31,PNC Park,Pittsburgh Pirates,Milwaukee Brewers,694973,Paul Skenes,688107,Robert Gasser,home,1,Pittsburgh Pirates,Milwaukee Brewers
+2026-07-12,823602,Final,F,3289,Citi Field,Boston Red Sox,New York Mets,801139,Payton Tolle,804267,Zach Thornton,away,0,New York Mets,Boston Red Sox
+2026-07-12,823602,Final,F,3289,Citi Field,New York Mets,Boston Red Sox,804267,Zach Thornton,801139,Payton Tolle,home,1,New York Mets,Boston Red Sox
+2026-07-12,823681,Final,F,3312,Target Field,Los Angeles Angels,Minnesota Twins,667755,José Soriano,671737,Taj Bradley,away,0,Minnesota Twins,Los Angeles Angels
+2026-07-12,823681,Final,F,3312,Target Field,Minnesota Twins,Los Angeles Angels,671737,Taj Bradley,667755,José Soriano,home,1,Minnesota Twins,Los Angeles Angels
+2026-07-12,823842,Final,F,4169,loanDepot park,Cleveland Guardians,Miami Marlins,676282,Joey Cantillo,663969,Tyler Phillips,away,0,Miami Marlins,Cleveland Guardians
+2026-07-12,823842,Final,F,4169,loanDepot park,Miami Marlins,Cleveland Guardians,663969,Tyler Phillips,676282,Joey Cantillo,home,1,Miami Marlins,Cleveland Guardians
+2026-07-12,823925,Final,F,22,UNIQLO Field at Dodger Stadium,Arizona Diamondbacks,Los Angeles Dodgers,683352,Mitch Bratt,686218,Emmet Sheehan,away,0,Los Angeles Dodgers,Arizona Diamondbacks
+2026-07-12,823925,Final,F,22,UNIQLO Field at Dodger Stadium,Los Angeles Dodgers,Arizona Diamondbacks,686218,Emmet Sheehan,683352,Mitch Bratt,home,1,Los Angeles Dodgers,Arizona Diamondbacks
+2026-07-12,824250,Final,F,2394,Comerica Park,Philadelphia Phillies,Detroit Tigers,554430,Zack Wheeler,669373,Tarik Skubal,away,0,Detroit Tigers,Philadelphia Phillies
+2026-07-12,824250,Final,F,2394,Comerica Park,Detroit Tigers,Philadelphia Phillies,669373,Tarik Skubal,554430,Zack Wheeler,home,1,Detroit Tigers,Philadelphia Phillies
+2026-07-12,824491,Final,F,2602,Great American Ball Park,Chicago Cubs,Cincinnati Reds,571510,Matthew Boyd,671096,Andrew Abbott,away,0,Cincinnati Reds,Chicago Cubs
+2026-07-12,824491,Final,F,2602,Great American Ball Park,Cincinnati Reds,Chicago Cubs,671096,Andrew Abbott,571510,Matthew Boyd,home,1,Cincinnati Reds,Chicago Cubs
+2026-07-12,824574,Final,F,4,Rate Field,Athletics,Chicago White Sox,669372,J.T. Ginn,702273,Noah Schultz,away,0,Chicago White Sox,Athletics
+2026-07-12,824574,Final,F,4,Rate Field,Chicago White Sox,Athletics,702273,Noah Schultz,669372,J.T. Ginn,home,1,Chicago White Sox,Athletics
+2026-07-12,824814,Final,F,2,Oriole Park at Camden Yards,Kansas City Royals,Baltimore Orioles,607625,Seth Lugo,669358,Shane Baz,away,0,Baltimore Orioles,Kansas City Royals
+2026-07-12,824814,Final,F,2,Oriole Park at Camden Yards,Baltimore Orioles,Kansas City Royals,669358,Shane Baz,607625,Seth Lugo,home,1,Baltimore Orioles,Kansas City Royals
