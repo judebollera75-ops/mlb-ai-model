@@ -1,7 +1,7 @@
-"""Download and normalize current MLB player props from The Odds API.
+"""Download and normalize current MLB player props from ParlayAPI.
 
 Required environment variable:
-    ODDS_API_KEY
+    PARLAY_API_KEY
 
 Optional environment variable:
     MLB_TARGET_DATE=YYYY-MM-DD
@@ -9,15 +9,15 @@ Optional environment variable:
 Output:
     data/platform_lines.csv
 
-The downloader only saves props for the requested MLB slate date. It preserves
-separate rows for every sportsbook, side, player, market, and line so the
-betting engine can compare exact platform availability.
+The downloader retrieves player props across traditional sportsbooks, DFS
+pick'em platforms, and supported exchanges in one API request. It converts
+each provider row into separate Over and Under records while preserving exact
+platform, player, market, line, and price availability.
 """
 
 from __future__ import annotations
 
 import os
-import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -29,45 +29,77 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 
-API_KEY = os.environ.get("ODDS_API_KEY")
+API_KEY = os.environ.get("PARLAY_API_KEY")
 SPORT = "baseball_mlb"
-REGIONS = os.environ.get("ODDS_API_REGIONS", "us")
+
+BASE_URL = "https://parlay-api.com/v1"
+PROPS_URL = f"{BASE_URL}/sports/{SPORT}/props"
+
 OUTPUT_PATH = Path("data/platform_lines.csv")
 CENTRAL_TIME = ZoneInfo("America/Chicago")
 
-REQUEST_TIMEOUT_SECONDS = 30
-REQUEST_PAUSE_SECONDS = 0.20
+REQUEST_TIMEOUT_SECONDS = 45
 MAX_EVENT_AGE_MINUTES = 15
 
+# ParlayAPI supports one call for all books and requested prop markets.
 API_MARKETS = [
-    "pitcher_strikeouts",
-    "pitcher_outs",
-    "batter_hits",
-    "batter_total_bases",
-    "batter_runs_scored",
-    "batter_rbis",
-    "batter_hits_runs_rbis",
-    "batter_fantasy_score",
+    "player_strikeouts",
+    "player_pitcher_outs",
+    "player_hits",
+    "player_total_bases",
+    "player_runs",
+    "player_rbis",
+    "player_hits_runs_rbis",
+    "player_fantasy_score",
 ]
 
 MARKET_MAP = {
-    "pitcher_strikeouts": "pitcher_strikeouts",
-    "pitcher_outs": "pitcher_outs",
-    "batter_hits": "hitter_hits",
-    "batter_total_bases": "hitter_total_bases",
-    "batter_runs_scored": "hitter_runs",
-    "batter_rbis": "hitter_rbis",
-    "batter_hits_runs_rbis": "hitter_hits_runs_rbis",
-    "batter_fantasy_score": "hitter_fantasy_score",
+    "player_strikeouts": "pitcher_strikeouts",
+    "player_pitcher_outs": "pitcher_outs",
+    "player_hits": "hitter_hits",
+    "player_total_bases": "hitter_total_bases",
+    "player_runs": "hitter_runs",
+    "player_rbis": "hitter_rbis",
+    "player_hits_runs_rbis": "hitter_hits_runs_rbis",
+    "player_fantasy_score": "hitter_fantasy_score",
 }
 
-DIRECTION_MAP = {
-    "over": "Over",
-    "under": "Under",
-    "more": "Over",
-    "less": "Under",
-    "yes": "Yes",
-    "no": "No",
+PLATFORM_TITLE_MAP = {
+    "draftkings": "DraftKings",
+    "fanduel": "FanDuel",
+    "caesars": "Caesars",
+    "betmgm": "BetMGM",
+    "fanatics": "Fanatics",
+    "pinnacle": "Pinnacle",
+    "fliff": "Fliff",
+    "bet365": "bet365",
+    "betrivers": "BetRivers",
+    "hardrock": "Hard Rock",
+    "bovada": "Bovada",
+    "novig": "Novig",
+    "prophetx": "ProphetX",
+    "kalshi": "Kalshi",
+    "prizepicks": "PrizePicks",
+    "underdog": "Underdog",
+    "betr": "Betr",
+    "sleeper": "Sleeper",
+    "pick6": "Pick6",
+    "parlayplay": "ParlayPlay",
+}
+
+DFS_PLATFORM_KEYS = {
+    "prizepicks",
+    "underdog",
+    "betr",
+    "sleeper",
+    "pick6",
+    "parlayplay",
+}
+
+EXCHANGE_PLATFORM_KEYS = {
+    "kalshi",
+    "novig",
+    "prophetx",
 }
 
 OUTPUT_COLUMNS = [
@@ -92,10 +124,16 @@ OUTPUT_COLUMNS = [
 
 def get_target_date() -> date:
     """Return the requested MLB slate date."""
-    raw_value = os.environ.get("MLB_TARGET_DATE", date.today().isoformat())
+    raw_value = (
+        os.environ.get("MLB_TARGET_DATE")
+        or date.today().isoformat()
+    )
 
     try:
-        return datetime.strptime(raw_value, "%Y-%m-%d").date()
+        return datetime.strptime(
+            raw_value,
+            "%Y-%m-%d",
+        ).date()
     except ValueError as exc:
         raise ValueError(
             "MLB_TARGET_DATE must use YYYY-MM-DD format. "
@@ -104,77 +142,56 @@ def get_target_date() -> date:
 
 
 def build_session() -> requests.Session:
-    """Create a requests session with safe retry behavior."""
+    """Create a requests session with retry protection."""
     retry_strategy = Retry(
-        total=3,
-        connect=3,
-        read=3,
-        status=3,
+        total=4,
+        connect=4,
+        read=4,
+        status=4,
         backoff_factor=1.0,
-        status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=frozenset({"GET"}),
+        status_forcelist=(
+            429,
+            500,
+            502,
+            503,
+            504,
+        ),
+        allowed_methods=frozenset(
+            {"GET"}
+        ),
         respect_retry_after_header=True,
     )
 
-    adapter = HTTPAdapter(max_retries=retry_strategy)
+    adapter = HTTPAdapter(
+        max_retries=retry_strategy
+    )
 
     session = requests.Session()
-    session.mount("https://", adapter)
-    session.mount("http://", adapter)
+
+    session.mount(
+        "https://",
+        adapter,
+    )
+
+    session.mount(
+        "http://",
+        adapter,
+    )
 
     session.headers.update(
         {
             "Accept": "application/json",
-            "User-Agent": "mlb-ai-model/1.0",
+            "User-Agent": "mlb-ai-model/2.0",
+            "X-API-Key": API_KEY or "",
         }
     )
 
     return session
 
 
-def parse_utc_datetime(value: Any) -> datetime | None:
-    """Parse an API ISO timestamp into an aware UTC datetime."""
-    if value is None or pd.isna(value):
-        return None
-
-    text = str(value).strip()
-
-    if not text:
-        return None
-
-    try:
-        parsed = datetime.fromisoformat(text.replace("Z", "+00:00"))
-    except ValueError:
-        return None
-
-    if parsed.tzinfo is None:
-        parsed = parsed.replace(tzinfo=timezone.utc)
-
-    return parsed.astimezone(timezone.utc)
-
-
-def event_local_date(commence_time: Any) -> date | None:
-    """Convert an event timestamp into its Central Time calendar date."""
-    parsed = parse_utc_datetime(commence_time)
-
-    if parsed is None:
-        return None
-
-    return parsed.astimezone(CENTRAL_TIME).date()
-
-
-def normalize_direction(value: Any) -> str | None:
-    """Normalize provider side names."""
-    if value is None or pd.isna(value):
-        return None
-
-    cleaned = str(value).strip()
-    normalized = DIRECTION_MAP.get(cleaned.casefold())
-
-    return normalized or cleaned.title()
-
-
-def clean_text(value: Any) -> str | None:
+def clean_text(
+    value: Any,
+) -> str | None:
     """Return stripped text or None."""
     if value is None or pd.isna(value):
         return None
@@ -184,79 +201,270 @@ def clean_text(value: Any) -> str | None:
     return cleaned or None
 
 
-def american_odds_are_valid(value: Any) -> bool:
-    """Validate American odds without rejecting plus-money prices."""
+def parse_api_datetime(
+    value: Any,
+) -> datetime | None:
+    """Parse ISO timestamps or epoch timestamps into UTC."""
+    if value is None or pd.isna(value):
+        return None
+
+    if isinstance(
+        value,
+        (
+            int,
+            float,
+        ),
+    ):
+        numeric = float(value)
+
+        # ParlayAPI last_update values may use epoch milliseconds.
+        if numeric > 10_000_000_000:
+            numeric /= 1000.0
+
+        try:
+            return datetime.fromtimestamp(
+                numeric,
+                tz=timezone.utc,
+            )
+        except (
+            OSError,
+            OverflowError,
+            ValueError,
+        ):
+            return None
+
+    text = str(value).strip()
+
+    if not text:
+        return None
+
     try:
-        odds = int(float(value))
-    except (TypeError, ValueError):
+        parsed = datetime.fromisoformat(
+            text.replace(
+                "Z",
+                "+00:00",
+            )
+        )
+    except ValueError:
+        numeric = pd.to_numeric(
+            text,
+            errors="coerce",
+        )
+
+        if pd.isna(numeric):
+            return None
+
+        numeric = float(numeric)
+
+        if numeric > 10_000_000_000:
+            numeric /= 1000.0
+
+        try:
+            return datetime.fromtimestamp(
+                numeric,
+                tz=timezone.utc,
+            )
+        except (
+            OSError,
+            OverflowError,
+            ValueError,
+        ):
+            return None
+
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(
+            tzinfo=timezone.utc
+        )
+
+    return parsed.astimezone(
+        timezone.utc
+    )
+
+
+def american_odds_are_valid(
+    value: Any,
+) -> bool:
+    """Return True when a value resembles American odds."""
+    try:
+        odds = int(
+            round(
+                float(value)
+            )
+        )
+    except (
+        TypeError,
+        ValueError,
+    ):
         return False
 
-    return odds != 0 and abs(odds) >= 100
-
-
-def fetch_json(
-    session: requests.Session,
-    url: str,
-    params: dict[str, Any],
-) -> dict[str, Any] | list[Any]:
-    """Fetch JSON and report API quota headers."""
-    response = session.get(
-        url,
-        params=params,
-        timeout=REQUEST_TIMEOUT_SECONDS,
+    return (
+        odds != 0
+        and abs(odds) >= 100
     )
 
-    print(
-        "API usage — "
-        f"used: {response.headers.get('x-requests-used')}, "
-        f"remaining: {response.headers.get('x-requests-remaining')}, "
-        f"last request cost: {response.headers.get('x-requests-last')}"
+
+def normalize_platform_key(
+    value: Any,
+) -> str | None:
+    """Normalize a ParlayAPI bookmaker key."""
+    cleaned = clean_text(value)
+
+    if cleaned is None:
+        return None
+
+    return (
+        cleaned
+        .casefold()
+        .replace(" ", "")
+        .replace("-", "")
+        .replace("_", "")
     )
 
-    try:
-        response.raise_for_status()
-    except requests.HTTPError as exc:
-        response_preview = response.text[:500]
 
-        raise requests.HTTPError(
-            f"{exc}. Response body: {response_preview}"
-        ) from exc
+def canonical_platform_key(
+    value: Any,
+) -> str | None:
+    """Map common provider spellings to stable keys."""
+    normalized = normalize_platform_key(
+        value
+    )
 
-    try:
-        return response.json()
-    except requests.JSONDecodeError as exc:
-        raise RuntimeError(
-            f"The Odds API returned invalid JSON from {url}."
-        ) from exc
+    if normalized is None:
+        return None
+
+    aliases = {
+        "draftkings": "draftkings",
+        "fanduel": "fanduel",
+        "caesars": "caesars",
+        "betmgm": "betmgm",
+        "fanatics": "fanatics",
+        "pinnacle": "pinnacle",
+        "fliff": "fliff",
+        "bet365": "bet365",
+        "betrivers": "betrivers",
+        "hardrock": "hardrock",
+        "bovada": "bovada",
+        "novig": "novig",
+        "prophetx": "prophetx",
+        "kalshi": "kalshi",
+        "prizepicks": "prizepicks",
+        "underdog": "underdog",
+        "underdogfantasy": "underdog",
+        "betr": "betr",
+        "sleeper": "sleeper",
+        "pick6": "pick6",
+        "draftkingspick6": "pick6",
+        "parlayplay": "parlayplay",
+    }
+
+    return aliases.get(
+        normalized,
+        normalized,
+    )
+
+
+def get_platform_title(
+    key: str,
+    supplied_title: Any,
+) -> str:
+    """Return a clean user-facing platform title."""
+    supplied = clean_text(
+        supplied_title
+    )
+
+    if supplied:
+        return supplied
+
+    return PLATFORM_TITLE_MAP.get(
+        key,
+        key.replace(
+            "_",
+            " ",
+        ).title(),
+    )
+
+
+def normalize_market_key(
+    value: Any,
+) -> str | None:
+    """Normalize provider market aliases."""
+    cleaned = clean_text(value)
+
+    if cleaned is None:
+        return None
+
+    normalized = (
+        cleaned.casefold()
+        .replace("-", "_")
+        .replace(" ", "_")
+    )
+
+    aliases = {
+        "pitcher_strikeouts": "player_strikeouts",
+        "player_pitcher_strikeouts": "player_strikeouts",
+        "player_strikeouts": "player_strikeouts",
+        "pitcher_outs": "player_pitcher_outs",
+        "player_outs": "player_pitcher_outs",
+        "player_pitcher_outs": "player_pitcher_outs",
+        "batter_hits": "player_hits",
+        "player_hits": "player_hits",
+        "batter_total_bases": "player_total_bases",
+        "player_total_bases": "player_total_bases",
+        "batter_runs_scored": "player_runs",
+        "player_runs_scored": "player_runs",
+        "player_runs": "player_runs",
+        "batter_rbis": "player_rbis",
+        "player_rbi": "player_rbis",
+        "player_rbis": "player_rbis",
+        "batter_hits_runs_rbis": "player_hits_runs_rbis",
+        "player_hits_runs_rbis": "player_hits_runs_rbis",
+        "batter_fantasy_score": "player_fantasy_score",
+        "player_fantasy_points": "player_fantasy_score",
+        "player_fantasy_score": "player_fantasy_score",
+    }
+
+    return aliases.get(
+        normalized,
+        normalized,
+    )
 
 
 def empty_props_frame() -> pd.DataFrame:
-    """Return an empty frame using the production schema."""
-    return pd.DataFrame(columns=OUTPUT_COLUMNS)
+    """Return an empty production-schema frame."""
+    return pd.DataFrame(
+        columns=OUTPUT_COLUMNS
+    )
 
 
 def load_existing_props() -> pd.DataFrame:
-    """Read an existing platform-lines file without trusting stale rows."""
+    """Load a prior platform-lines file."""
     if not OUTPUT_PATH.exists():
         return empty_props_frame()
 
     try:
-        existing = pd.read_csv(OUTPUT_PATH)
-    except (pd.errors.EmptyDataError, pd.errors.ParserError):
+        existing = pd.read_csv(
+            OUTPUT_PATH
+        )
+    except (
+        pd.errors.EmptyDataError,
+        pd.errors.ParserError,
+    ):
         return empty_props_frame()
 
     for column in OUTPUT_COLUMNS:
         if column not in existing.columns:
             existing[column] = pd.NA
 
-    return existing[OUTPUT_COLUMNS].copy()
+    return existing[
+        OUTPUT_COLUMNS
+    ].copy()
 
 
 def existing_props_are_current(
     existing: pd.DataFrame,
     target_date: date,
 ) -> bool:
-    """Only preserve a recent file for the same requested slate."""
+    """Return True only for a recent same-slate file."""
     if existing.empty:
         return False
 
@@ -265,7 +473,9 @@ def existing_props_are_current(
         errors="coerce",
     ).dt.date
 
-    if not existing_dates.eq(target_date).any():
+    if not existing_dates.eq(
+        target_date
+    ).any():
         return False
 
     fetched_times = pd.to_datetime(
@@ -277,113 +487,221 @@ def existing_props_are_current(
     if fetched_times.empty:
         return False
 
-    newest_fetch = fetched_times.max().to_pydatetime()
-    age = datetime.now(timezone.utc) - newest_fetch
-
-    return age <= timedelta(minutes=MAX_EVENT_AGE_MINUTES)
-
-
-def save_props(props: pd.DataFrame) -> None:
-    """Save normalized platform lines atomically."""
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-    temporary_path = OUTPUT_PATH.with_suffix(".tmp.csv")
-    props.to_csv(temporary_path, index=False)
-    temporary_path.replace(OUTPUT_PATH)
-
-    print(f"\nSaved {len(props)} sportsbook rows to {OUTPUT_PATH}")
-
-    if not props.empty:
-        market_counts = (
-            props.groupby("market", dropna=False)
-            .size()
-            .sort_values(ascending=False)
-        )
-
-        platform_counts = (
-            props.groupby("platform", dropna=False)
-            .size()
-            .sort_values(ascending=False)
-        )
-
-        print("\nRows by market:")
-        print(market_counts.to_string())
-
-        print("\nRows by platform:")
-        print(platform_counts.to_string())
-
-
-def select_target_events(
-    events: list[dict[str, Any]],
-    target_date: date,
-) -> list[dict[str, Any]]:
-    """Keep only events belonging to the requested Central Time slate."""
-    selected: list[dict[str, Any]] = []
-
-    for event in events:
-        commence_time = event.get("commence_time")
-        local_date = event_local_date(commence_time)
-
-        if local_date == target_date:
-            selected.append(event)
-
-    selected.sort(
-        key=lambda item: str(item.get("commence_time", ""))
+    newest_fetch = (
+        fetched_times
+        .max()
+        .to_pydatetime()
     )
 
-    return selected
+    age = (
+        datetime.now(
+            timezone.utc
+        )
+        - newest_fetch
+    )
+
+    return age <= timedelta(
+        minutes=MAX_EVENT_AGE_MINUTES
+    )
 
 
-def outcome_to_row(
+def fetch_props(
+    session: requests.Session,
+) -> list[dict[str, Any]]:
+    """Fetch all supported MLB player props in one call."""
+    parameters = {
+        "markets": ",".join(
+            API_MARKETS
+        ),
+        "dfsOdds": "midpoint",
+        "limit": 10000,
+    }
+
+    response = session.get(
+        PROPS_URL,
+        params=parameters,
+        timeout=REQUEST_TIMEOUT_SECONDS,
+    )
+
+    print(
+        "ParlayAPI usage — "
+        f"used: {response.headers.get('x-requests-used')}, "
+        f"remaining: {response.headers.get('x-requests-remaining')}, "
+        f"last request cost: {response.headers.get('x-requests-last')}"
+    )
+
+    try:
+        response.raise_for_status()
+    except requests.HTTPError as exc:
+        response_preview = (
+            response.text[:1000]
+        )
+
+        raise requests.HTTPError(
+            f"{exc}. Response body: {response_preview}"
+        ) from exc
+
+    try:
+        payload = response.json()
+    except requests.JSONDecodeError as exc:
+        raise RuntimeError(
+            "ParlayAPI returned invalid JSON."
+        ) from exc
+
+    if isinstance(
+        payload,
+        list,
+    ):
+        return [
+            row
+            for row in payload
+            if isinstance(row, dict)
+        ]
+
+    if isinstance(
+        payload,
+        dict,
+    ):
+        for key in (
+            "data",
+            "props",
+            "results",
+            "rows",
+        ):
+            candidate = payload.get(
+                key
+            )
+
+            if isinstance(
+                candidate,
+                list,
+            ):
+                return [
+                    row
+                    for row in candidate
+                    if isinstance(
+                        row,
+                        dict,
+                    )
+                ]
+
+    raise RuntimeError(
+        "Unexpected ParlayAPI props response shape: "
+        f"{type(payload).__name__}"
+    )
+
+
+def build_side_row(
     *,
-    event_id: str,
-    commence_time: Any,
-    bookmaker: dict[str, Any],
-    market: dict[str, Any],
-    outcome: dict[str, Any],
-    home_team: Any,
-    away_team: Any,
+    raw: dict[str, Any],
+    direction: str,
+    price_field: str,
+    target_date: date,
     fetched_at: str,
 ) -> dict[str, Any] | None:
-    """Convert one provider outcome into the common platform schema."""
-    market_key = clean_text(market.get("key"))
-    normalized_market = MARKET_MAP.get(market_key or "")
+    """Convert one ParlayAPI prop side into the app schema."""
+    platform_key = canonical_platform_key(
+        raw.get("bookmaker")
+        or raw.get("bookmaker_key")
+        or raw.get("platform")
+    )
+
+    if platform_key is None:
+        return None
+
+    platform = get_platform_title(
+        key=platform_key,
+        supplied_title=(
+            raw.get("bookmaker_title")
+            or raw.get("platform_title")
+        ),
+    )
+
+    market_key = normalize_market_key(
+        raw.get("market_key")
+        or raw.get("market")
+    )
+
+    normalized_market = MARKET_MAP.get(
+        market_key or ""
+    )
 
     if normalized_market is None:
         return None
 
-    player = clean_text(outcome.get("description"))
-    platform = clean_text(bookmaker.get("title"))
-    platform_key = clean_text(bookmaker.get("key"))
-    direction = normalize_direction(outcome.get("name"))
-    line = pd.to_numeric(outcome.get("point"), errors="coerce")
-    odds = pd.to_numeric(outcome.get("price"), errors="coerce")
+    player = clean_text(
+        raw.get("player")
+        or raw.get("player_name")
+        or raw.get("description")
+    )
 
-    if not player or not platform or not platform_key:
+    if player is None:
         return None
 
-    if direction not in {"Over", "Under", "Yes", "No"}:
-        return None
+    line = pd.to_numeric(
+        raw.get("line"),
+        errors="coerce",
+    )
+
+    price = pd.to_numeric(
+        raw.get(price_field),
+        errors="coerce",
+    )
 
     if pd.isna(line):
         return None
 
-    if pd.isna(odds) or not american_odds_are_valid(odds):
+    if (
+        pd.isna(price)
+        or not american_odds_are_valid(
+            price
+        )
+    ):
         return None
 
-    parsed_commence_time = parse_utc_datetime(commence_time)
+    commence_time = parse_api_datetime(
+        raw.get("commence_time")
+        or raw.get("start_time")
+    )
 
-    if parsed_commence_time is None:
+    if commence_time is None:
         return None
 
-    local_event_date = parsed_commence_time.astimezone(
-        CENTRAL_TIME
-    ).date()
+    event_date = (
+        commence_time
+        .astimezone(
+            CENTRAL_TIME
+        )
+        .date()
+    )
+
+    if event_date != target_date:
+        return None
+
+    if commence_time <= datetime.now(
+        timezone.utc
+    ):
+        return None
+
+    event_id = clean_text(
+        raw.get("canonical_event_id")
+        or raw.get("event_id")
+        or raw.get("id")
+    )
+
+    if event_id is None:
+        event_id = (
+            f"{event_date.isoformat()}|"
+            f"{clean_text(raw.get('away_team'))}|"
+            f"{clean_text(raw.get('home_team'))}"
+        )
 
     return {
         "event_id": event_id,
-        "event_date": local_event_date.isoformat(),
-        "commence_time": parsed_commence_time.isoformat(),
+        "event_date": event_date.isoformat(),
+        "commence_time": commence_time.strftime(
+            "%Y-%m-%dT%H:%M:%SZ"
+        ),
         "platform": platform,
         "platform_key": platform_key,
         "player": player,
@@ -391,13 +709,64 @@ def outcome_to_row(
         "market_key": market_key,
         "direction": direction,
         "line": float(line),
-        "sportsbook_odds": int(float(odds)),
-        "home_team": clean_text(home_team),
-        "away_team": clean_text(away_team),
+        "sportsbook_odds": int(
+            round(
+                float(price)
+            )
+        ),
+        "home_team": clean_text(
+            raw.get("home_team")
+        ),
+        "away_team": clean_text(
+            raw.get("away_team")
+        ),
         "fetched_at": fetched_at,
-        "source": "the_odds_api",
+        "source": "parlay_api",
         "status": "open",
     }
+
+
+def normalize_props(
+    raw_rows: list[dict[str, Any]],
+    target_date: date,
+    fetched_at: str,
+) -> pd.DataFrame:
+    """Convert ParlayAPI rows into one row per available side."""
+    normalized_rows: list[
+        dict[str, Any]
+    ] = []
+
+    for raw in raw_rows:
+        over_row = build_side_row(
+            raw=raw,
+            direction="Over",
+            price_field="over_price",
+            target_date=target_date,
+            fetched_at=fetched_at,
+        )
+
+        if over_row is not None:
+            normalized_rows.append(
+                over_row
+            )
+
+        under_row = build_side_row(
+            raw=raw,
+            direction="Under",
+            price_field="under_price",
+            target_date=target_date,
+            fetched_at=fetched_at,
+        )
+
+        if under_row is not None:
+            normalized_rows.append(
+                under_row
+            )
+
+    return pd.DataFrame(
+        normalized_rows,
+        columns=OUTPUT_COLUMNS,
+    )
 
 
 def clean_props(
@@ -437,48 +806,61 @@ def clean_props(
         errors="coerce",
     )
 
-    required_columns = [
-        "event_id",
-        "event_date",
-        "commence_time",
-        "platform",
-        "platform_key",
-        "player",
-        "market",
-        "market_key",
-        "direction",
-        "line",
-        "sportsbook_odds",
-        "fetched_at",
-    ]
-
-    cleaned = cleaned.dropna(subset=required_columns)
+    cleaned = cleaned.dropna(
+        subset=[
+            "event_id",
+            "event_date",
+            "commence_time",
+            "platform",
+            "platform_key",
+            "player",
+            "market",
+            "market_key",
+            "direction",
+            "line",
+            "sportsbook_odds",
+            "fetched_at",
+        ]
+    )
 
     cleaned = cleaned.loc[
-        cleaned["event_date"].eq(target_date)
-    ].copy()
-
-    current_time = datetime.now(timezone.utc)
-
-    # Props for games that have already started are not actionable.
-    cleaned = cleaned.loc[
-        cleaned["commence_time"] > current_time
-    ].copy()
-
-    valid_markets = set(MARKET_MAP.values())
-    cleaned = cleaned.loc[
-        cleaned["market"].isin(valid_markets)
+        cleaned["event_date"].eq(
+            target_date
+        )
     ].copy()
 
     cleaned = cleaned.loc[
-        cleaned["direction"].isin({"Over", "Under", "Yes", "No"})
+        cleaned["commence_time"]
+        > datetime.now(
+            timezone.utc
+        )
     ].copy()
 
     cleaned = cleaned.loc[
-        cleaned["sportsbook_odds"].apply(american_odds_are_valid)
+        cleaned["market"].isin(
+            set(
+                MARKET_MAP.values()
+            )
+        )
     ].copy()
 
-    # Keep the newest copy of each exact market side.
+    cleaned = cleaned.loc[
+        cleaned["direction"].isin(
+            {
+                "Over",
+                "Under",
+            }
+        )
+    ].copy()
+
+    cleaned = cleaned.loc[
+        cleaned[
+            "sportsbook_odds"
+        ].apply(
+            american_odds_are_valid
+        )
+    ].copy()
+
     cleaned = cleaned.sort_values(
         "fetched_at",
         ascending=True,
@@ -504,212 +886,251 @@ def clean_props(
             "market",
             "line",
             "direction",
-        ],
-        ascending=[
-            True,
-            True,
-            True,
-            True,
-            True,
-            True,
-        ],
-    ).reset_index(drop=True)
+        ]
+    ).reset_index(
+        drop=True
+    )
 
-    cleaned["event_date"] = cleaned["event_date"].astype(str)
-    cleaned["commence_time"] = cleaned[
-        "commence_time"
-    ].dt.strftime("%Y-%m-%dT%H:%M:%SZ")
-    cleaned["fetched_at"] = cleaned[
-        "fetched_at"
-    ].dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+    cleaned["event_date"] = (
+        cleaned["event_date"]
+        .astype(str)
+    )
 
-    return cleaned[OUTPUT_COLUMNS]
+    cleaned["commence_time"] = (
+        cleaned["commence_time"]
+        .dt.strftime(
+            "%Y-%m-%dT%H:%M:%SZ"
+        )
+    )
+
+    cleaned["fetched_at"] = (
+        cleaned["fetched_at"]
+        .dt.strftime(
+            "%Y-%m-%dT%H:%M:%SZ"
+        )
+    )
+
+    return cleaned[
+        OUTPUT_COLUMNS
+    ]
+
+
+def save_props(
+    props: pd.DataFrame,
+) -> None:
+    """Save normalized platform lines atomically."""
+    OUTPUT_PATH.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    temporary_path = (
+        OUTPUT_PATH.with_suffix(
+            ".tmp.csv"
+        )
+    )
+
+    props.to_csv(
+        temporary_path,
+        index=False,
+    )
+
+    temporary_path.replace(
+        OUTPUT_PATH
+    )
+
+    print(
+        f"\nSaved {len(props):,} platform rows "
+        f"to {OUTPUT_PATH}"
+    )
+
+    if props.empty:
+        return
+
+    platform_counts = (
+        props.groupby(
+            [
+                "platform_key",
+                "platform",
+            ],
+            dropna=False,
+        )
+        .size()
+        .sort_values(
+            ascending=False
+        )
+    )
+
+    market_counts = (
+        props.groupby(
+            "market",
+            dropna=False,
+        )
+        .size()
+        .sort_values(
+            ascending=False
+        )
+    )
+
+    print(
+        "\nRows by platform:"
+    )
+
+    print(
+        platform_counts.to_string()
+    )
+
+    print(
+        "\nRows by market:"
+    )
+
+    print(
+        market_counts.to_string()
+    )
+
+    dfs_count = int(
+        props[
+            "platform_key"
+        ].isin(
+            DFS_PLATFORM_KEYS
+        ).sum()
+    )
+
+    exchange_count = int(
+        props[
+            "platform_key"
+        ].isin(
+            EXCHANGE_PLATFORM_KEYS
+        ).sum()
+    )
+
+    print(
+        f"\nDFS/pick'em rows: {dfs_count:,}"
+    )
+
+    print(
+        f"Exchange rows: {exchange_count:,}"
+    )
+
+    for platform_key in [
+        "prizepicks",
+        "underdog",
+        "fliff",
+        "kalshi",
+    ]:
+        count = int(
+            props[
+                "platform_key"
+            ].eq(
+                platform_key
+            ).sum()
+        )
+
+        print(
+            f"{platform_key}: {count:,} rows"
+        )
 
 
 def download_sportsbook_props() -> pd.DataFrame:
-    """Download current player props for the requested MLB slate."""
+    """Download all current MLB platform props from ParlayAPI."""
     if not API_KEY:
         raise RuntimeError(
-            "ODDS_API_KEY is missing from the environment."
+            "PARLAY_API_KEY is missing from the environment."
         )
 
     target_date = get_target_date()
-    fetched_at = datetime.now(timezone.utc).isoformat()
+
+    fetched_at = datetime.now(
+        timezone.utc
+    ).strftime(
+        "%Y-%m-%dT%H:%M:%SZ"
+    )
+
     existing_props = load_existing_props()
+
+    print("=" * 72)
+    print("DOWNLOADING CURRENT MLB PLATFORM PROPS")
+    print("=" * 72)
+    print(
+        f"Provider: ParlayAPI"
+    )
+    print(
+        f"Slate date: "
+        f"{target_date.isoformat()}"
+    )
+    print(
+        f"Endpoint: {PROPS_URL}"
+    )
+    print(
+        f"Requested markets: "
+        f"{len(API_MARKETS)}"
+    )
+    print("=" * 72)
+
     session = build_session()
 
-    print("=" * 70)
-    print("Downloading current MLB sportsbook props")
-    print(f"Slate date: {target_date.isoformat()}")
-    print(f"Regions: {REGIONS}")
-    print(f"Requested markets: {len(API_MARKETS)}")
-    print("=" * 70)
-
-    events_url = (
-        f"https://api.the-odds-api.com/v4/sports/{SPORT}/events"
+    raw_rows = fetch_props(
+        session
     )
 
-    events_response = fetch_json(
-        session,
-        events_url,
-        {
-            "apiKey": API_KEY,
-            "dateFormat": "iso",
-        },
+    print(
+        f"Raw ParlayAPI rows: "
+        f"{len(raw_rows):,}"
     )
 
-    if not isinstance(events_response, list):
-        raise RuntimeError(
-            "Unexpected events response type: "
-            f"{type(events_response).__name__}"
-        )
+    normalized = normalize_props(
+        raw_rows=raw_rows,
+        target_date=target_date,
+        fetched_at=fetched_at,
+    )
 
-    events = [
-        event
-        for event in events_response
-        if isinstance(event, dict)
-    ]
+    props = clean_props(
+        normalized,
+        target_date,
+    )
 
-    target_events = select_target_events(events, target_date)
+    print(
+        f"Normalized side rows: "
+        f"{len(normalized):,}"
+    )
 
-    print(f"Upcoming MLB events returned: {len(events)}")
-    print(f"Events on requested slate: {len(target_events)}")
-
-    rows: list[dict[str, Any]] = []
-    markets_parameter = ",".join(API_MARKETS)
-
-    for event_number, event in enumerate(target_events, start=1):
-        event_id = clean_text(event.get("id"))
-
-        if not event_id:
-            continue
-
-        away_team = clean_text(event.get("away_team"))
-        home_team = clean_text(event.get("home_team"))
-
-        print(
-            f"\n[{event_number}/{len(target_events)}] "
-            f"{away_team} at {home_team}"
-        )
-
-        odds_url = (
-            f"https://api.the-odds-api.com/v4/sports/"
-            f"{SPORT}/events/{event_id}/odds"
-        )
-
-        try:
-            odds_response = fetch_json(
-                session,
-                odds_url,
-                {
-                    "apiKey": API_KEY,
-                    "regions": REGIONS,
-                    "markets": markets_parameter,
-                    "oddsFormat": "american",
-                    "dateFormat": "iso",
-                },
-            )
-        except requests.RequestException as exc:
-            print(f"Skipped event {event_id}: {exc}")
-            continue
-
-        if not isinstance(odds_response, dict):
-            print(
-                f"Skipped event {event_id}: unexpected response "
-                f"type {type(odds_response).__name__}"
-            )
-            continue
-
-        commence_time = odds_response.get(
-            "commence_time",
-            event.get("commence_time"),
-        )
-
-        bookmakers = odds_response.get("bookmakers", [])
-
-        if not isinstance(bookmakers, list):
-            bookmakers = []
-
-        event_row_count = 0
-
-        for bookmaker in bookmakers:
-            if not isinstance(bookmaker, dict):
-                continue
-
-            markets = bookmaker.get("markets", [])
-
-            if not isinstance(markets, list):
-                continue
-
-            for market in markets:
-                if not isinstance(market, dict):
-                    continue
-
-                outcomes = market.get("outcomes", [])
-
-                if not isinstance(outcomes, list):
-                    continue
-
-                for outcome in outcomes:
-                    if not isinstance(outcome, dict):
-                        continue
-
-                    row = outcome_to_row(
-                        event_id=event_id,
-                        commence_time=commence_time,
-                        bookmaker=bookmaker,
-                        market=market,
-                        outcome=outcome,
-                        home_team=odds_response.get(
-                            "home_team",
-                            home_team,
-                        ),
-                        away_team=odds_response.get(
-                            "away_team",
-                            away_team,
-                        ),
-                        fetched_at=fetched_at,
-                    )
-
-                    if row is not None:
-                        rows.append(row)
-                        event_row_count += 1
-
-        print(
-            f"Bookmakers returned: {len(bookmakers)} | "
-            f"Valid prop rows: {event_row_count}"
-        )
-
-        time.sleep(REQUEST_PAUSE_SECONDS)
-
-    raw_props = pd.DataFrame(rows, columns=OUTPUT_COLUMNS)
-    props = clean_props(raw_props, target_date)
-
-    print(f"\nRaw rows collected: {len(raw_props)}")
-    print(f"Validated current rows: {len(props)}")
+    print(
+        f"Validated current rows: "
+        f"{len(props):,}"
+    )
 
     if not props.empty:
-        save_props(props)
+        save_props(
+            props
+        )
+
         return props
 
-    if existing_props_are_current(existing_props, target_date):
+    if existing_props_are_current(
+        existing_props,
+        target_date,
+    ):
         print(
-            "\nWARNING: The API returned no current props. "
-            "Preserving the existing file because it belongs to the "
-            "same slate and was fetched within the last "
-            f"{MAX_EVENT_AGE_MINUTES} minutes."
+            "\nWARNING: ParlayAPI returned no usable current props. "
+            "Preserving the existing same-slate file because it was "
+            f"fetched within {MAX_EVENT_AGE_MINUTES} minutes."
         )
+
         return existing_props
 
     print(
-        "\nWARNING: No valid current sportsbook props were available. "
-        "Writing an empty file so stale props cannot appear in the app."
+        "\nWARNING: No valid current platform props were available. "
+        "Writing an empty file so stale recommendations cannot remain "
+        "visible in the app."
     )
 
-    empty_props = empty_props_frame()
-    save_props(empty_props)
+    empty = empty_props_frame()
 
-    return empty_props
+    save_props(
+        empty
+    )
+
+    return empty
 
 
 if __name__ == "__main__":
