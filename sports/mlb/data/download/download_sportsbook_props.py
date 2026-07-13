@@ -17,6 +17,7 @@ platform, player, market, line, and price availability.
 
 from __future__ import annotations
 
+import json
 import os
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -1076,6 +1077,27 @@ def download_sportsbook_props() -> pd.DataFrame:
     print(
         f"Raw ParlayAPI rows: "
         f"{len(raw_rows):,}"
+    )
+
+    print("\n" + "=" * 72)
+    print("PARLAYAPI RAW RESPONSE SAMPLE")
+    print("=" * 72)
+
+    print(
+        json.dumps(
+            raw_rows[:2],
+            indent=2,
+            default=str,
+        )
+    )
+
+    print("=" * 72)
+    print("END RAW RESPONSE SAMPLE")
+    print("=" * 72)
+
+    # Stop this temporary debug run before platform_lines.csv is changed.
+    raise SystemExit(
+        "Temporary debug run completed after printing two raw rows."
     )
 
     normalized = normalize_props(
