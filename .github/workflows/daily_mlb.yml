@@ -9,16 +9,12 @@ on:
         type: string
 
   schedule:
-    # GitHub cron uses UTC.
-    # 13:15 UTC ≈ 8:15 AM Central during daylight saving time.
-    # 18:15 UTC ≈ 1:15 PM Central during daylight saving time.
     - cron: "15 13 * * *"
     - cron: "15 18 * * *"
 
 permissions:
   contents: write
 
-# Prevent overlapping runs from writing competing output files.
 concurrency:
   group: daily-mlb-model
   cancel-in-progress: false
@@ -72,9 +68,11 @@ jobs:
       - name: Download live sportsbook props
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          PARLAY_API_KEY: ${{ secrets.PARLAY_API_KEY }}
+          MLB_TARGET_DATE: ${{ env.MLB_TARGET_DATE }}
         run: |
-          if [ -z "$ODDS_API_KEY" ]; then
-            echo "ODDS_API_KEY is not configured in repository secrets."
+          if [ -z "$PARLAY_API_KEY" ]; then
+            echo "PARLAY_API_KEY is not configured."
             exit 1
           fi
 
@@ -84,6 +82,7 @@ jobs:
         env:
           MLB_TARGET_DATE: ${{ env.MLB_TARGET_DATE }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          PARLAY_API_KEY: ${{ secrets.PARLAY_API_KEY }}
         run: |
           python run_mlb_daily.py
 
@@ -113,7 +112,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Stage only generated MLB data, models, and outputs.
           git add data models outputs
 
           if git diff --cached --quiet; then
@@ -121,12 +119,9 @@ jobs:
           else
             git commit -m "Automatic MLB update for ${MLB_TARGET_DATE}"
 
-            # Remove every uncommitted cache or temporary change while
-            # preserving the generated-data commit created above.
             git reset --hard HEAD
             git clean -fd
 
-            # Update against the latest main branch and push.
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
