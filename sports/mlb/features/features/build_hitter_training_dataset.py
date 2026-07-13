@@ -7,6 +7,10 @@ Environment variables:
     MLB_TARGET_DATE=YYYY-MM-DD
     MLB_HITTER_LOG_PATH=/optional/custom/path.csv
 
+Inputs:
+    data/hitter_game_logs/<season>.csv
+    data/training/hitter_opponent_pitcher_features.csv
+
 Outputs:
     data/training/hitter_training_dataset.csv
     data/training/hitter_feature_manifest.csv
@@ -24,13 +28,35 @@ import pandas as pd
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[4]
-TRAINING_DIRECTORY = PROJECT_ROOT / "data" / "training"
-OUTPUT_PATH = TRAINING_DIRECTORY / "hitter_training_dataset.csv"
-FEATURE_MANIFEST_PATH = (
-    TRAINING_DIRECTORY / "hitter_feature_manifest.csv"
+
+TRAINING_DIRECTORY = (
+    PROJECT_ROOT
+    / "data"
+    / "training"
 )
 
-ROLLING_WINDOWS = (3, 5, 10, 20)
+OUTPUT_PATH = (
+    TRAINING_DIRECTORY
+    / "hitter_training_dataset.csv"
+)
+
+FEATURE_MANIFEST_PATH = (
+    TRAINING_DIRECTORY
+    / "hitter_feature_manifest.csv"
+)
+
+OPPONENT_PITCHER_FEATURES_PATH = (
+    TRAINING_DIRECTORY
+    / "hitter_opponent_pitcher_features.csv"
+)
+
+ROLLING_WINDOWS = (
+    3,
+    5,
+    10,
+    20,
+)
+
 MINIMUM_PRIOR_GAMES = 3
 
 # Update these values only if your target platform uses different scoring.
@@ -113,6 +139,7 @@ IDENTIFIER_COLUMNS = [
     "player_name",
     "team",
     "opponent",
+    "opponent_pitcher_name",
 ]
 
 
@@ -124,7 +151,10 @@ def get_target_date() -> date:
     )
 
     try:
-        return datetime.strptime(raw_value, "%Y-%m-%d").date()
+        return datetime.strptime(
+            raw_value,
+            "%Y-%m-%d",
+        ).date()
     except ValueError as exc:
         raise ValueError(
             "MLB_TARGET_DATE must use YYYY-MM-DD format. "
@@ -134,10 +164,16 @@ def get_target_date() -> date:
 
 def get_input_path() -> Path:
     """Return the hitter log path for the active MLB season."""
-    custom_path = os.getenv("MLB_HITTER_LOG_PATH")
+    custom_path = os.getenv(
+        "MLB_HITTER_LOG_PATH"
+    )
 
     if custom_path:
-        return Path(custom_path).expanduser().resolve()
+        return (
+            Path(custom_path)
+            .expanduser()
+            .resolve()
+        )
 
     season = get_target_date().year
 
@@ -184,14 +220,19 @@ def clean_numeric_columns(
         ).fillna(0.0)
 
         cleaned[column] = cleaned[column].replace(
-            [np.inf, -np.inf],
+            [
+                np.inf,
+                -np.inf,
+            ],
             0.0,
         )
 
     return cleaned
 
 
-def normalize_text_columns(frame: pd.DataFrame) -> pd.DataFrame:
+def normalize_text_columns(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
     """Standardize common identity and context columns."""
     normalized = frame.copy()
 
@@ -213,7 +254,9 @@ def normalize_text_columns(frame: pd.DataFrame) -> pd.DataFrame:
     return normalized
 
 
-def add_derived_targets(frame: pd.DataFrame) -> pd.DataFrame:
+def add_derived_targets(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
     """Create model targets and platform fantasy scoring."""
     derived = frame.copy()
 
@@ -243,31 +286,55 @@ def add_derived_targets(frame: pd.DataFrame) -> pd.DataFrame:
     )
 
     derived["target_hits"] = derived["hits"]
-    derived["target_total_bases"] = derived["total_bases"]
-    derived["target_home_runs"] = derived["home_runs"]
+
+    derived["target_total_bases"] = (
+        derived["total_bases"]
+    )
+
+    derived["target_home_runs"] = (
+        derived["home_runs"]
+    )
+
     derived["target_runs"] = derived["runs"]
+
     derived["target_rbi"] = derived["rbi"]
+
     derived["target_hits_runs_rbis"] = (
         derived["hits_runs_rbis"]
     )
-    derived["target_fantasy_score"] = derived["fantasy_score"]
+
+    derived["target_fantasy_score"] = (
+        derived["fantasy_score"]
+    )
 
     return derived
 
 
-def add_schedule_features(frame: pd.DataFrame) -> pd.DataFrame:
+def add_schedule_features(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
     """Add rest and calendar features known before the game."""
     featured = frame.copy()
-    grouped = featured.groupby("player_id", sort=False)
+
+    grouped = featured.groupby(
+        "player_id",
+        sort=False,
+    )
 
     featured["days_rest"] = (
         grouped["date"]
         .diff()
         .dt.days
-        .clip(lower=0, upper=14)
+        .clip(
+            lower=0,
+            upper=14,
+        )
     )
 
-    featured["days_rest"] = featured["days_rest"].fillna(7)
+    featured["days_rest"] = (
+        featured["days_rest"]
+        .fillna(7)
+    )
 
     featured["is_back_to_back"] = (
         featured["days_rest"] <= 1
@@ -277,34 +344,53 @@ def add_schedule_features(frame: pd.DataFrame) -> pd.DataFrame:
         featured["days_rest"] <= 2
     ).astype(int)
 
-    featured["month"] = featured["date"].dt.month
-    featured["day_of_week"] = featured["date"].dt.dayofweek
+    featured["month"] = (
+        featured["date"].dt.month
+    )
 
-    featured["prior_games"] = grouped.cumcount()
+    featured["day_of_week"] = (
+        featured["date"].dt.dayofweek
+    )
+
+    featured["prior_games"] = (
+        grouped.cumcount()
+    )
 
     return featured
 
 
-def add_previous_game_features(frame: pd.DataFrame) -> pd.DataFrame:
+def add_previous_game_features(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
     """Add previous-game results as pregame features."""
     featured = frame.copy()
-    grouped = featured.groupby("player_id", sort=False)
+
+    grouped = featured.groupby(
+        "player_id",
+        sort=False,
+    )
 
     for stat in ROLLING_STAT_COLUMNS:
         if stat not in featured.columns:
             continue
 
-        featured[f"previous_game_{stat}"] = (
-            grouped[stat].shift(1)
-        )
+        featured[
+            f"previous_game_{stat}"
+        ] = grouped[stat].shift(1)
 
     return featured
 
 
-def add_rolling_features(frame: pd.DataFrame) -> pd.DataFrame:
+def add_rolling_features(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
     """Add leakage-safe rolling form and volatility features."""
     featured = frame.copy()
-    grouped = featured.groupby("player_id", sort=False)
+
+    grouped = featured.groupby(
+        "player_id",
+        sort=False,
+    )
 
     for window in ROLLING_WINDOWS:
         for stat in ROLLING_STAT_COLUMNS:
@@ -321,32 +407,61 @@ def add_rolling_features(frame: pd.DataFrame) -> pd.DataFrame:
                 min_periods=1,
             )
 
-            prefix = f"last{window}_{stat}"
+            prefix = (
+                f"last{window}_{stat}"
+            )
 
-            featured[f"{prefix}_avg"] = (
+            featured[
+                f"{prefix}_avg"
+            ] = (
                 rolling.mean()
-                .reset_index(level=0, drop=True)
+                .reset_index(
+                    level=0,
+                    drop=True,
+                )
             )
 
-            featured[f"{prefix}_median"] = (
+            featured[
+                f"{prefix}_median"
+            ] = (
                 rolling.median()
-                .reset_index(level=0, drop=True)
+                .reset_index(
+                    level=0,
+                    drop=True,
+                )
             )
 
-            featured[f"{prefix}_std"] = (
-                rolling.std(ddof=0)
-                .reset_index(level=0, drop=True)
+            featured[
+                f"{prefix}_std"
+            ] = (
+                rolling.std(
+                    ddof=0
+                )
+                .reset_index(
+                    level=0,
+                    drop=True,
+                )
                 .fillna(0.0)
             )
 
-            featured[f"{prefix}_min"] = (
+            featured[
+                f"{prefix}_min"
+            ] = (
                 rolling.min()
-                .reset_index(level=0, drop=True)
+                .reset_index(
+                    level=0,
+                    drop=True,
+                )
             )
 
-            featured[f"{prefix}_max"] = (
+            featured[
+                f"{prefix}_max"
+            ] = (
                 rolling.max()
-                .reset_index(level=0, drop=True)
+                .reset_index(
+                    level=0,
+                    drop=True,
+                )
             )
 
     return featured
@@ -357,7 +472,11 @@ def add_season_to_date_features(
 ) -> pd.DataFrame:
     """Add expanding season averages using previous games only."""
     featured = frame.copy()
-    grouped = featured.groupby("player_id", sort=False)
+
+    grouped = featured.groupby(
+        "player_id",
+        sort=False,
+    )
 
     for stat in ROLLING_STAT_COLUMNS:
         if stat not in featured.columns:
@@ -368,16 +487,30 @@ def add_season_to_date_features(
         expanding = shifted.groupby(
             featured["player_id"],
             sort=False,
-        ).expanding(min_periods=1)
-
-        featured[f"season_avg_{stat}"] = (
-            expanding.mean()
-            .reset_index(level=0, drop=True)
+        ).expanding(
+            min_periods=1
         )
 
-        featured[f"season_std_{stat}"] = (
-            expanding.std(ddof=0)
-            .reset_index(level=0, drop=True)
+        featured[
+            f"season_avg_{stat}"
+        ] = (
+            expanding.mean()
+            .reset_index(
+                level=0,
+                drop=True,
+            )
+        )
+
+        featured[
+            f"season_std_{stat}"
+        ] = (
+            expanding.std(
+                ddof=0
+            )
+            .reset_index(
+                level=0,
+                drop=True,
+            )
             .fillna(0.0)
         )
 
@@ -389,24 +522,42 @@ def safe_divide(
     denominator: pd.Series,
 ) -> pd.Series:
     """Divide while replacing invalid results with missing values."""
-    denominator = denominator.replace(0, np.nan)
+    denominator = denominator.replace(
+        0,
+        np.nan,
+    )
 
     result = numerator / denominator
 
-    return result.replace([np.inf, -np.inf], np.nan)
+    return result.replace(
+        [
+            np.inf,
+            -np.inf,
+        ],
+        np.nan,
+    )
 
 
-def add_rate_features(frame: pd.DataFrame) -> pd.DataFrame:
+def add_rate_features(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
     """Add opportunity-adjusted production rates."""
     featured = frame.copy()
 
     for window in ROLLING_WINDOWS:
-        pa_column = f"last{window}_plate_appearances_avg"
-        ab_column = f"last{window}_at_bats_avg"
+        pa_column = (
+            f"last{window}_plate_appearances_avg"
+        )
+
+        ab_column = (
+            f"last{window}_at_bats_avg"
+        )
 
         if pa_column in featured.columns:
             for stat in RATE_STAT_COLUMNS:
-                stat_column = f"last{window}_{stat}_avg"
+                stat_column = (
+                    f"last{window}_{stat}_avg"
+                )
 
                 if stat_column not in featured.columns:
                     continue
@@ -428,7 +579,9 @@ def add_rate_features(frame: pd.DataFrame) -> pd.DataFrame:
                 "total_bases",
                 "strikeouts",
             ]:
-                stat_column = f"last{window}_{stat}_avg"
+                stat_column = (
+                    f"last{window}_{stat}_avg"
+                )
 
                 if stat_column not in featured.columns:
                     continue
@@ -441,14 +594,21 @@ def add_rate_features(frame: pd.DataFrame) -> pd.DataFrame:
                 )
 
     for stat in RATE_STAT_COLUMNS:
-        season_stat = f"season_avg_{stat}"
-        season_pa = "season_avg_plate_appearances"
+        season_stat = (
+            f"season_avg_{stat}"
+        )
+
+        season_pa = (
+            "season_avg_plate_appearances"
+        )
 
         if (
             season_stat in featured.columns
             and season_pa in featured.columns
         ):
-            featured[f"season_{stat}_per_pa"] = safe_divide(
+            featured[
+                f"season_{stat}_per_pa"
+            ] = safe_divide(
                 featured[season_stat],
                 featured[season_pa],
             )
@@ -456,36 +616,72 @@ def add_rate_features(frame: pd.DataFrame) -> pd.DataFrame:
     return featured
 
 
-def add_trend_features(frame: pd.DataFrame) -> pd.DataFrame:
+def add_trend_features(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
     """Measure short-term form relative to longer-term form."""
     featured = frame.copy()
 
     for stat in ROLLING_STAT_COLUMNS:
-        last3 = f"last3_{stat}_avg"
-        last5 = f"last5_{stat}_avg"
-        last10 = f"last10_{stat}_avg"
-        last20 = f"last20_{stat}_avg"
-        season = f"season_avg_{stat}"
+        last3 = (
+            f"last3_{stat}_avg"
+        )
 
-        if last3 in featured.columns and last10 in featured.columns:
-            featured[f"trend_last3_vs_last10_{stat}"] = (
-                featured[last3] - featured[last10]
+        last5 = (
+            f"last5_{stat}_avg"
+        )
+
+        last10 = (
+            f"last10_{stat}_avg"
+        )
+
+        last20 = (
+            f"last20_{stat}_avg"
+        )
+
+        season = (
+            f"season_avg_{stat}"
+        )
+
+        if (
+            last3 in featured.columns
+            and last10 in featured.columns
+        ):
+            featured[
+                f"trend_last3_vs_last10_{stat}"
+            ] = (
+                featured[last3]
+                - featured[last10]
             )
 
-        if last5 in featured.columns and last20 in featured.columns:
-            featured[f"trend_last5_vs_last20_{stat}"] = (
-                featured[last5] - featured[last20]
+        if (
+            last5 in featured.columns
+            and last20 in featured.columns
+        ):
+            featured[
+                f"trend_last5_vs_last20_{stat}"
+            ] = (
+                featured[last5]
+                - featured[last20]
             )
 
-        if last10 in featured.columns and season in featured.columns:
-            featured[f"trend_last10_vs_season_{stat}"] = (
-                featured[last10] - featured[season]
+        if (
+            last10 in featured.columns
+            and season in featured.columns
+        ):
+            featured[
+                f"trend_last10_vs_season_{stat}"
+            ] = (
+                featured[last10]
+                - featured[season]
             )
 
     return featured
 
 
-def add_consistency_features(frame: pd.DataFrame) -> pd.DataFrame:
+def add_consistency_features(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
     """Add coefficients of variation for volatile hitter markets."""
     featured = frame.copy()
 
@@ -498,76 +694,150 @@ def add_consistency_features(frame: pd.DataFrame) -> pd.DataFrame:
             "hits_runs_rbis",
             "fantasy_score",
         ]:
-            average_column = f"last{window}_{stat}_avg"
-            standard_deviation_column = f"last{window}_{stat}_std"
+            average_column = (
+                f"last{window}_{stat}_avg"
+            )
+
+            standard_deviation_column = (
+                f"last{window}_{stat}_std"
+            )
 
             if (
                 average_column not in featured.columns
-                or standard_deviation_column not in featured.columns
+                or standard_deviation_column
+                not in featured.columns
             ):
                 continue
 
             featured[
                 f"last{window}_{stat}_coefficient_variation"
             ] = safe_divide(
-                featured[standard_deviation_column],
-                featured[average_column].abs(),
+                featured[
+                    standard_deviation_column
+                ],
+                featured[
+                    average_column
+                ].abs(),
             )
 
     return featured
 
 
-def add_opportunity_features(frame: pd.DataFrame) -> pd.DataFrame:
+def add_opportunity_features(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
     """Add features representing expected hitter opportunities."""
     featured = frame.copy()
 
-    if "last5_plate_appearances_avg" in featured.columns:
-        featured["expected_plate_appearances"] = (
-            0.50 * featured["last5_plate_appearances_avg"]
-            + 0.30 * featured["last10_plate_appearances_avg"]
-            + 0.20 * featured["season_avg_plate_appearances"]
-        )
+    required_pa_columns = {
+        "last5_plate_appearances_avg",
+        "last10_plate_appearances_avg",
+        "season_avg_plate_appearances",
+    }
 
-    if "last5_at_bats_avg" in featured.columns:
-        featured["expected_at_bats"] = (
-            0.50 * featured["last5_at_bats_avg"]
-            + 0.30 * featured["last10_at_bats_avg"]
-            + 0.20 * featured["season_avg_at_bats"]
-        )
-
-    if (
-        "expected_plate_appearances" in featured.columns
-        and "season_hits_per_pa" in featured.columns
+    if required_pa_columns.issubset(
+        featured.columns
     ):
-        featured["expected_hits_from_opportunity"] = (
-            featured["expected_plate_appearances"]
-            * featured["season_hits_per_pa"]
+        featured[
+            "expected_plate_appearances"
+        ] = (
+            0.50
+            * featured[
+                "last5_plate_appearances_avg"
+            ]
+            + 0.30
+            * featured[
+                "last10_plate_appearances_avg"
+            ]
+            + 0.20
+            * featured[
+                "season_avg_plate_appearances"
+            ]
+        )
+
+    required_ab_columns = {
+        "last5_at_bats_avg",
+        "last10_at_bats_avg",
+        "season_avg_at_bats",
+    }
+
+    if required_ab_columns.issubset(
+        featured.columns
+    ):
+        featured[
+            "expected_at_bats"
+        ] = (
+            0.50
+            * featured[
+                "last5_at_bats_avg"
+            ]
+            + 0.30
+            * featured[
+                "last10_at_bats_avg"
+            ]
+            + 0.20
+            * featured[
+                "season_avg_at_bats"
+            ]
         )
 
     if (
-        "expected_plate_appearances" in featured.columns
-        and "season_hits_runs_rbis_per_pa" in featured.columns
+        "expected_plate_appearances"
+        in featured.columns
+        and "season_hits_per_pa"
+        in featured.columns
+    ):
+        featured[
+            "expected_hits_from_opportunity"
+        ] = (
+            featured[
+                "expected_plate_appearances"
+            ]
+            * featured[
+                "season_hits_per_pa"
+            ]
+        )
+
+    if (
+        "expected_plate_appearances"
+        in featured.columns
+        and "season_hits_runs_rbis_per_pa"
+        in featured.columns
     ):
         featured[
             "expected_hits_runs_rbis_from_opportunity"
         ] = (
-            featured["expected_plate_appearances"]
-            * featured["season_hits_runs_rbis_per_pa"]
+            featured[
+                "expected_plate_appearances"
+            ]
+            * featured[
+                "season_hits_runs_rbis_per_pa"
+            ]
         )
 
     if (
-        "expected_plate_appearances" in featured.columns
-        and "season_fantasy_score_per_pa" in featured.columns
+        "expected_plate_appearances"
+        in featured.columns
+        and "season_fantasy_score_per_pa"
+        in featured.columns
     ):
-        featured["expected_fantasy_from_opportunity"] = (
-            featured["expected_plate_appearances"]
-            * featured["season_fantasy_score_per_pa"]
+        featured[
+            "expected_fantasy_from_opportunity"
+        ] = (
+            featured[
+                "expected_plate_appearances"
+            ]
+            * featured[
+                "season_fantasy_score_per_pa"
+            ]
         )
 
     return featured
 
 
-def infer_home_indicator(frame: pd.DataFrame) -> pd.DataFrame:
+def infer_home_indicator(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
     """Add a home-game indicator when source context is available."""
     featured = frame.copy()
 
@@ -580,6 +850,7 @@ def infer_home_indicator(frame: pd.DataFrame) -> pd.DataFrame:
             .fillna(0)
             .astype(int)
         )
+
         return featured
 
     if {
@@ -587,8 +858,16 @@ def infer_home_indicator(frame: pd.DataFrame) -> pd.DataFrame:
         "home_team",
     }.issubset(featured.columns):
         featured["is_home"] = (
-            featured["team"].astype(str).str.casefold()
-            == featured["home_team"].astype(str).str.casefold()
+            featured[
+                "team"
+            ]
+            .astype(str)
+            .str.casefold()
+            == featured[
+                "home_team"
+            ]
+            .astype(str)
+            .str.casefold()
         ).astype(int)
 
     return featured
@@ -605,13 +884,23 @@ def add_split_features(
 
     featured = frame.copy()
 
-    valid_split = featured[split_column].notna()
+    valid_split = (
+        featured[split_column]
+        .notna()
+    )
 
     if not valid_split.any():
         return featured
 
-    group_columns = ["player_id", split_column]
-    grouped = featured.groupby(group_columns, sort=False)
+    group_columns = [
+        "player_id",
+        split_column,
+    ]
+
+    grouped = featured.groupby(
+        group_columns,
+        sort=False,
+    )
 
     for stat in [
         "hits",
@@ -625,7 +914,9 @@ def add_split_features(
         if stat not in featured.columns:
             continue
 
-        shifted = grouped[stat].shift(1)
+        shifted = grouped[
+            stat
+        ].shift(1)
 
         expanding = shifted.groupby(
             [
@@ -633,13 +924,21 @@ def add_split_features(
                 featured[split_column],
             ],
             sort=False,
-        ).expanding(min_periods=1)
+        ).expanding(
+            min_periods=1
+        )
 
         featured[
             f"{split_name}_avg_{stat}"
         ] = (
             expanding.mean()
-            .reset_index(level=[0, 1], drop=True)
+            .reset_index(
+                level=[
+                    0,
+                    1,
+                ],
+                drop=True,
+            )
         )
 
     return featured
@@ -649,7 +948,9 @@ def add_optional_context_features(
     frame: pd.DataFrame,
 ) -> pd.DataFrame:
     """Use matchup context when it already exists in the source logs."""
-    featured = infer_home_indicator(frame)
+    featured = infer_home_indicator(
+        frame
+    )
 
     if "is_home" in featured.columns:
         featured = add_split_features(
@@ -666,32 +967,375 @@ def add_optional_context_features(
         )
 
     if "batting_order" in featured.columns:
-        featured["batting_order"] = pd.to_numeric(
-            featured["batting_order"],
+        featured[
+            "batting_order"
+        ] = pd.to_numeric(
+            featured[
+                "batting_order"
+            ],
             errors="coerce",
         )
 
-        featured["top_of_order"] = (
-            featured["batting_order"].between(1, 3)
+        featured[
+            "top_of_order"
+        ] = (
+            featured[
+                "batting_order"
+            ].between(
+                1,
+                3,
+            )
         ).astype(int)
 
-        featured["middle_of_order"] = (
-            featured["batting_order"].between(4, 6)
+        featured[
+            "middle_of_order"
+        ] = (
+            featured[
+                "batting_order"
+            ].between(
+                4,
+                6,
+            )
         ).astype(int)
 
-        featured["bottom_of_order"] = (
-            featured["batting_order"].between(7, 9)
+        featured[
+            "bottom_of_order"
+        ] = (
+            featured[
+                "batting_order"
+            ].between(
+                7,
+                9,
+            )
         ).astype(int)
 
     return featured
 
 
-def finalize_dataset(frame: pd.DataFrame) -> pd.DataFrame:
+def merge_opponent_pitcher_features(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
+    """Merge leakage-safe opponent-pitcher features into hitter rows."""
+    featured = frame.copy()
+
+    if not OPPONENT_PITCHER_FEATURES_PATH.exists():
+        print(
+            "\nWARNING: Opponent-pitcher feature file "
+            "was not found."
+        )
+
+        print(
+            "Continuing without opponent-pitcher features:"
+        )
+
+        print(
+            OPPONENT_PITCHER_FEATURES_PATH
+        )
+
+        featured[
+            "opponent_pitcher_match_available"
+        ] = 0
+
+        featured[
+            "opponent_pitcher_history_available"
+        ] = 0
+
+        return featured
+
+    try:
+        opponent_features = pd.read_csv(
+            OPPONENT_PITCHER_FEATURES_PATH
+        )
+    except (
+        pd.errors.EmptyDataError,
+        pd.errors.ParserError,
+    ):
+        print(
+            "\nWARNING: Opponent-pitcher feature file "
+            "could not be read."
+        )
+
+        featured[
+            "opponent_pitcher_match_available"
+        ] = 0
+
+        featured[
+            "opponent_pitcher_history_available"
+        ] = 0
+
+        return featured
+
+    required_columns = {
+        "date",
+        "game_id",
+        "player_id",
+    }
+
+    missing_columns = (
+        required_columns
+        - set(
+            opponent_features.columns
+        )
+    )
+
+    if missing_columns:
+        raise ValueError(
+            "Opponent-pitcher feature file is missing columns: "
+            f"{sorted(missing_columns)}"
+        )
+
+    opponent_features[
+        "date"
+    ] = pd.to_datetime(
+        opponent_features[
+            "date"
+        ],
+        errors="coerce",
+    )
+
+    opponent_features[
+        "game_id"
+    ] = pd.to_numeric(
+        opponent_features[
+            "game_id"
+        ],
+        errors="coerce",
+    )
+
+    opponent_features[
+        "player_id"
+    ] = pd.to_numeric(
+        opponent_features[
+            "player_id"
+        ],
+        errors="coerce",
+    )
+
+    opponent_features = (
+        opponent_features.dropna(
+            subset=[
+                "date",
+                "game_id",
+                "player_id",
+            ]
+        ).copy()
+    )
+
+    opponent_features[
+        "game_id"
+    ] = (
+        opponent_features[
+            "game_id"
+        ].astype("int64")
+    )
+
+    opponent_features[
+        "player_id"
+    ] = (
+        opponent_features[
+            "player_id"
+        ].astype("int64")
+    )
+
+    featured["game_id"] = (
+        pd.to_numeric(
+            featured[
+                "game_id"
+            ],
+            errors="coerce",
+        )
+    )
+
+    featured["player_id"] = (
+        pd.to_numeric(
+            featured[
+                "player_id"
+            ],
+            errors="coerce",
+        )
+    )
+
+    featured = featured.dropna(
+        subset=[
+            "date",
+            "game_id",
+            "player_id",
+        ]
+    ).copy()
+
+    featured["game_id"] = (
+        featured[
+            "game_id"
+        ].astype("int64")
+    )
+
+    featured["player_id"] = (
+        featured[
+            "player_id"
+        ].astype("int64")
+    )
+
+    opponent_feature_columns = [
+        column
+        for column in opponent_features.columns
+        if (
+            column.startswith(
+                "opponent_pitcher_"
+            )
+            or column
+            in [
+                "opponent_pitcher_id",
+                "opponent_pitcher_name",
+            ]
+        )
+    ]
+
+    opponent_feature_columns = list(
+        dict.fromkeys(
+            opponent_feature_columns
+        )
+    )
+
+    merge_columns = [
+        "date",
+        "game_id",
+        "player_id",
+    ]
+
+    opponent_features = (
+        opponent_features[
+            merge_columns
+            + opponent_feature_columns
+        ].copy()
+    )
+
+    opponent_features = (
+        opponent_features.drop_duplicates(
+            subset=merge_columns,
+            keep="last",
+        )
+    )
+
+    duplicate_feature_columns = [
+        column
+        for column
+        in opponent_feature_columns
+        if column in featured.columns
+    ]
+
+    if duplicate_feature_columns:
+        featured = featured.drop(
+            columns=duplicate_feature_columns
+        )
+
+    featured = featured.merge(
+        opponent_features,
+        on=merge_columns,
+        how="left",
+        validate="one_to_one",
+    )
+
+    for indicator_column in [
+        "opponent_pitcher_match_available",
+        "opponent_pitcher_history_available",
+    ]:
+        if indicator_column not in featured.columns:
+            featured[
+                indicator_column
+            ] = 0
+
+        featured[
+            indicator_column
+        ] = (
+            pd.to_numeric(
+                featured[
+                    indicator_column
+                ],
+                errors="coerce",
+            )
+            .fillna(0)
+            .astype(int)
+        )
+
+    numeric_opponent_columns = [
+        column
+        for column in featured.columns
+        if (
+            column.startswith(
+                "opponent_pitcher_"
+            )
+            and column
+            not in [
+                "opponent_pitcher_name",
+            ]
+        )
+    ]
+
+    for column in numeric_opponent_columns:
+        featured[column] = (
+            pd.to_numeric(
+                featured[column],
+                errors="coerce",
+            )
+        )
+
+    matched_rows = int(
+        featured[
+            "opponent_pitcher_match_available"
+        ].sum()
+    )
+
+    history_rows = int(
+        featured[
+            "opponent_pitcher_history_available"
+        ].sum()
+    )
+
+    total_rows = len(
+        featured
+    )
+
+    match_rate = (
+        matched_rows
+        / total_rows
+        if total_rows
+        else 0.0
+    )
+
+    print(
+        "\nOpponent-pitcher feature integration:"
+    )
+
+    print(
+        f"Matched rows: {matched_rows:,} "
+        f"of {total_rows:,} "
+        f"({match_rate:.1%})"
+    )
+
+    print(
+        f"Rows with pitcher history: "
+        f"{history_rows:,}"
+    )
+
+    print(
+        "Opponent-pitcher columns added: "
+        f"{len(opponent_feature_columns):,}"
+    )
+
+    return featured
+
+
+def finalize_dataset(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
     """Remove invalid rows and normalize feature values."""
     finalized = frame.copy()
 
     finalized = finalized.loc[
-        finalized["prior_games"] >= MINIMUM_PRIOR_GAMES
+        finalized[
+            "prior_games"
+        ]
+        >= MINIMUM_PRIOR_GAMES
     ].copy()
 
     finalized = finalized.dropna(
@@ -702,28 +1346,52 @@ def finalize_dataset(frame: pd.DataFrame) -> pd.DataFrame:
         ]
     )
 
-    numeric_columns = finalized.select_dtypes(
-        include=[np.number]
-    ).columns
+    numeric_columns = (
+        finalized.select_dtypes(
+            include=[
+                np.number
+            ]
+        ).columns
+    )
 
-    finalized[numeric_columns] = finalized[
+    finalized[
         numeric_columns
-    ].replace([np.inf, -np.inf], np.nan)
+    ] = (
+        finalized[
+            numeric_columns
+        ].replace(
+            [
+                np.inf,
+                -np.inf,
+            ],
+            np.nan,
+        )
+    )
 
-    # Do not fill the current-game targets from other games.
     feature_numeric_columns = [
         column
         for column in numeric_columns
-        if column not in TARGET_COLUMNS
+        if column
+        not in TARGET_COLUMNS
     ]
 
-    finalized[feature_numeric_columns] = finalized[
+    finalized[
         feature_numeric_columns
-    ].fillna(0.0)
+    ] = (
+        finalized[
+            feature_numeric_columns
+        ].fillna(0.0)
+    )
 
     finalized = finalized.sort_values(
-        ["date", "game_id", "player_id"]
-    ).reset_index(drop=True)
+        [
+            "date",
+            "game_id",
+            "player_id",
+        ]
+    ).reset_index(
+        drop=True
+    )
 
     return finalized
 
@@ -743,18 +1411,26 @@ def identify_feature_columns(
         ]
     )
 
-    feature_columns: list[str] = []
+    feature_columns: list[
+        str
+    ] = []
 
     for column in frame.columns:
         if column in excluded_columns:
             continue
 
-        if not pd.api.types.is_numeric_dtype(frame[column]):
+        if not pd.api.types.is_numeric_dtype(
+            frame[column]
+        ):
             continue
 
-        feature_columns.append(column)
+        feature_columns.append(
+            column
+        )
 
-    return sorted(feature_columns)
+    return sorted(
+        feature_columns
+    )
 
 
 def save_feature_manifest(
@@ -764,22 +1440,33 @@ def save_feature_manifest(
     """Save exact model feature names and basic metadata."""
     manifest_rows = []
 
-    for position, column in enumerate(feature_columns):
+    for position, column in enumerate(
+        feature_columns
+    ):
         manifest_rows.append(
             {
                 "feature_order": position,
                 "feature_name": column,
-                "dtype": str(frame[column].dtype),
+                "dtype": str(
+                    frame[column].dtype
+                ),
                 "missing_rate": float(
-                    frame[column].isna().mean()
+                    frame[column]
+                    .isna()
+                    .mean()
                 ),
                 "unique_values": int(
-                    frame[column].nunique(dropna=True)
+                    frame[column]
+                    .nunique(
+                        dropna=True
+                    )
                 ),
             }
         )
 
-    manifest = pd.DataFrame(manifest_rows)
+    manifest = pd.DataFrame(
+        manifest_rows
+    )
 
     manifest.to_csv(
         FEATURE_MANIFEST_PATH,
@@ -789,11 +1476,14 @@ def save_feature_manifest(
 
 def build_hitter_training_dataset() -> pd.DataFrame:
     """Build and save the production hitter training dataset."""
-    input_path = get_input_path()
+    input_path = (
+        get_input_path()
+    )
 
     if not input_path.exists():
         raise FileNotFoundError(
-            f"Hitter game log was not found: {input_path}"
+            "Hitter game log was not found: "
+            f"{input_path}"
         )
 
     TRAINING_DIRECTORY.mkdir(
@@ -801,13 +1491,34 @@ def build_hitter_training_dataset() -> pd.DataFrame:
         exist_ok=True,
     )
 
-    print("=" * 72)
-    print("Building leakage-safe hitter training dataset")
-    print(f"Input: {input_path}")
-    print(f"Output: {OUTPUT_PATH}")
-    print("=" * 72)
+    print(
+        "=" * 72
+    )
 
-    frame = pd.read_csv(input_path)
+    print(
+        "Building leakage-safe hitter training dataset"
+    )
+
+    print(
+        f"Input: {input_path}"
+    )
+
+    print(
+        f"Opponent pitcher features: "
+        f"{OPPONENT_PITCHER_FEATURES_PATH}"
+    )
+
+    print(
+        f"Output: {OUTPUT_PATH}"
+    )
+
+    print(
+        "=" * 72
+    )
+
+    frame = pd.read_csv(
+        input_path
+    )
 
     require_columns(
         frame,
@@ -818,38 +1529,96 @@ def build_hitter_training_dataset() -> pd.DataFrame:
         ],
     )
 
-    frame["date"] = pd.to_datetime(
-        frame["date"],
-        errors="coerce",
+    frame["date"] = (
+        pd.to_datetime(
+            frame[
+                "date"
+            ],
+            errors="coerce",
+        )
     )
 
     frame = frame.dropna(
-        subset=["date", "game_id", "player_id"]
+        subset=[
+            "date",
+            "game_id",
+            "player_id",
+        ]
     ).copy()
 
-    frame = normalize_text_columns(frame)
+    frame = normalize_text_columns(
+        frame
+    )
+
     frame = clean_numeric_columns(
         frame,
         RAW_STAT_COLUMNS,
     )
 
     frame = frame.sort_values(
-        ["player_id", "date", "game_id"]
-    ).reset_index(drop=True)
+        [
+            "player_id",
+            "date",
+            "game_id",
+        ]
+    ).reset_index(
+        drop=True
+    )
 
-    frame = add_derived_targets(frame)
-    frame = add_schedule_features(frame)
-    frame = add_previous_game_features(frame)
-    frame = add_rolling_features(frame)
-    frame = add_season_to_date_features(frame)
-    frame = add_rate_features(frame)
-    frame = add_trend_features(frame)
-    frame = add_consistency_features(frame)
-    frame = add_opportunity_features(frame)
-    frame = add_optional_context_features(frame)
-    frame = finalize_dataset(frame)
+    frame = add_derived_targets(
+        frame
+    )
 
-    feature_columns = identify_feature_columns(frame)
+    frame = add_schedule_features(
+        frame
+    )
+
+    frame = add_previous_game_features(
+        frame
+    )
+
+    frame = add_rolling_features(
+        frame
+    )
+
+    frame = add_season_to_date_features(
+        frame
+    )
+
+    frame = add_rate_features(
+        frame
+    )
+
+    frame = add_trend_features(
+        frame
+    )
+
+    frame = add_consistency_features(
+        frame
+    )
+
+    frame = add_opportunity_features(
+        frame
+    )
+
+    frame = add_optional_context_features(
+        frame
+    )
+
+    # Attach prior-only opponent starting-pitcher statistics.
+    frame = merge_opponent_pitcher_features(
+        frame
+    )
+
+    frame = finalize_dataset(
+        frame
+    )
+
+    feature_columns = (
+        identify_feature_columns(
+            frame
+        )
+    )
 
     frame.to_csv(
         OUTPUT_PATH,
@@ -861,17 +1630,54 @@ def build_hitter_training_dataset() -> pd.DataFrame:
         feature_columns,
     )
 
-    print("\nHitter training dataset created successfully.")
-    print(f"Rows: {len(frame):,}")
-    print(f"Players: {frame['player_id'].nunique():,}")
+    print(
+        "\nHitter training dataset created successfully."
+    )
+
+    print(
+        f"Rows: {len(frame):,}"
+    )
+
+    print(
+        "Players: "
+        f"{frame['player_id'].nunique():,}"
+    )
+
     print(
         "Date range: "
-        f"{frame['date'].min().date()} to "
+        f"{frame['date'].min().date()} "
+        "to "
         f"{frame['date'].max().date()}"
     )
-    print(f"Feature count: {len(feature_columns):,}")
-    print(f"Saved dataset: {OUTPUT_PATH}")
-    print(f"Saved manifest: {FEATURE_MANIFEST_PATH}")
+
+    print(
+        f"Feature count: "
+        f"{len(feature_columns):,}"
+    )
+
+    opponent_feature_count = len(
+        [
+            column
+            for column in feature_columns
+            if column.startswith(
+                "opponent_pitcher_"
+            )
+        ]
+    )
+
+    print(
+        "Opponent-pitcher model features: "
+        f"{opponent_feature_count:,}"
+    )
+
+    print(
+        f"Saved dataset: {OUTPUT_PATH}"
+    )
+
+    print(
+        f"Saved manifest: "
+        f"{FEATURE_MANIFEST_PATH}"
+    )
 
     preview_columns = [
         "date",
@@ -882,6 +1688,15 @@ def build_hitter_training_dataset() -> pd.DataFrame:
         "last5_hits_avg",
         "last10_hits_avg",
         "season_avg_hits",
+        "opponent_pitcher_name",
+        "opponent_pitcher_match_available",
+        "opponent_pitcher_history_available",
+        "opponent_pitcher_last5_avg_era",
+        "opponent_pitcher_last5_avg_whip",
+        "opponent_pitcher_last5_avg_strikeout_rate_bf",
+        "opponent_pitcher_last5_avg_walk_rate_bf",
+        "opponent_pitcher_last5_avg_home_runs_per_9",
+        "opponent_pitcher_last5_avg_fip_component",
         "last5_hits_runs_rbis_avg",
         "last5_fantasy_score_avg",
         "target_hits",
@@ -892,16 +1707,24 @@ def build_hitter_training_dataset() -> pd.DataFrame:
 
     preview_columns = [
         column
-        for column in preview_columns
+        for column
+        in preview_columns
         if column in frame.columns
     ]
 
     if preview_columns:
-        print("\nPreview:")
         print(
-            frame[preview_columns]
+            "\nPreview:"
+        )
+
+        print(
+            frame[
+                preview_columns
+            ]
             .head(15)
-            .to_string(index=False)
+            .to_string(
+                index=False
+            )
         )
 
     return frame
