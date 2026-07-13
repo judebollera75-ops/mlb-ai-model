@@ -17,7 +17,6 @@ platform, player, market, line, and price availability.
 
 from __future__ import annotations
 
-import json
 import os
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -42,7 +41,6 @@ CENTRAL_TIME = ZoneInfo("America/Chicago")
 REQUEST_TIMEOUT_SECONDS = 45
 MAX_EVENT_AGE_MINUTES = 15
 
-# ParlayAPI supports one call for all books and requested prop markets.
 API_MARKETS = [
     "player_strikeouts",
     "player_pitcher_outs",
@@ -218,7 +216,6 @@ def parse_api_datetime(
     ):
         numeric = float(value)
 
-        # ParlayAPI last_update values may use epoch milliseconds.
         if numeric > 10_000_000_000:
             numeric /= 1000.0
 
@@ -973,21 +970,11 @@ def save_props(
         )
     )
 
-    print(
-        "\nRows by platform:"
-    )
+    print("\nRows by platform:")
+    print(platform_counts.to_string())
 
-    print(
-        platform_counts.to_string()
-    )
-
-    print(
-        "\nRows by market:"
-    )
-
-    print(
-        market_counts.to_string()
-    )
+    print("\nRows by market:")
+    print(market_counts.to_string())
 
     dfs_count = int(
         props[
@@ -1052,9 +1039,7 @@ def download_sportsbook_props() -> pd.DataFrame:
     print("=" * 72)
     print("DOWNLOADING CURRENT MLB PLATFORM PROPS")
     print("=" * 72)
-    print(
-        f"Provider: ParlayAPI"
-    )
+    print("Provider: ParlayAPI")
     print(
         f"Slate date: "
         f"{target_date.isoformat()}"
@@ -1077,26 +1062,6 @@ def download_sportsbook_props() -> pd.DataFrame:
     print(
         f"Raw ParlayAPI rows: "
         f"{len(raw_rows):,}"
-    )
-
-    print("\n" + "=" * 72)
-    print("=" * 72)
-
-    print(
-        json.dumps(
-            raw_rows[:2],
-            indent=2,
-            default=str,
-        )
-    )
-
-    print("=" * 72)
-    print("END RAW RESPONSE SAMPLE")
-    print("=" * 72)
-
-    # Stop this temporary debug run before platform_lines.csv is changed.
-    raise SystemExit(
-        "Temporary debug run completed after printing two raw rows."
     )
 
     normalized = normalize_props(
