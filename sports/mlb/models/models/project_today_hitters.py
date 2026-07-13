@@ -7,14 +7,17 @@ Environment variables:
 Inputs:
     data/hitters/<target-date>.csv
     data/hitter_game_logs/<season>.csv
+    data/pitchers/<target-date>.csv
+    data/game_logs/*.csv
     models/hitters/<market>_model.pkl
 
 Output:
     outputs/hitters/today_hitter_projections.csv
 
 The live feature matrix is created with the same feature-engineering functions
-used by build_hitter_training_dataset.py. This prevents training/inference
-feature drift.
+used by build_hitter_training_dataset.py. Current opponent-pitcher features are
+built from the active slate and only use pitching performances that occurred
+before the target date.
 """
 
 from __future__ import annotations
@@ -53,12 +56,40 @@ from sports.mlb.features.features.build_hitter_training_dataset import (
     normalize_text_columns,
 )
 
+from sports.mlb.features.features.add_opponent_pitcher_features import (
+    calculate_profile,
+    load_pitcher_game_logs,
+    normalize_team_name,
+)
 
-MODEL_DIRECTORY = PROJECT_ROOT / "models" / "hitters"
 
-OUTPUT_DIRECTORY = PROJECT_ROOT / "outputs" / "hitters"
-OUTPUT_PATH = OUTPUT_DIRECTORY / "today_hitter_projections.csv"
-LIVE_FEATURES_PATH = OUTPUT_DIRECTORY / "today_hitter_live_features.csv"
+MODEL_DIRECTORY = (
+    PROJECT_ROOT
+    / "models"
+    / "hitters"
+)
+
+OUTPUT_DIRECTORY = (
+    PROJECT_ROOT
+    / "outputs"
+    / "hitters"
+)
+
+OUTPUT_PATH = (
+    OUTPUT_DIRECTORY
+    / "today_hitter_projections.csv"
+)
+
+LIVE_FEATURES_PATH = (
+    OUTPUT_DIRECTORY
+    / "today_hitter_live_features.csv"
+)
+
+PITCHER_DIRECTORY = (
+    PROJECT_ROOT
+    / "data"
+    / "pitchers"
+)
 
 MODEL_MARKETS = {
     "hits": "projected_hits",
@@ -76,6 +107,8 @@ IDENTITY_COLUMNS = [
     "player_name",
     "team",
     "opponent",
+    "opponent_pitcher_id",
+    "opponent_pitcher_name",
     "side",
     "batting_order",
     "position",
@@ -93,7 +126,10 @@ def get_target_date() -> date:
     )
 
     try:
-        return datetime.strptime(raw_value, "%Y-%m-%d").date()
+        return datetime.strptime(
+            raw_value,
+            "%Y-%m-%d",
+        ).date()
     except ValueError as exc:
         raise ValueError(
             "MLB_TARGET_DATE must use YYYY-MM-DD format. "
@@ -112,12 +148,16 @@ def get_paths(
         / f"{target_date.isoformat()}.csv"
     )
 
-    custom_logs_path = os.getenv("MLB_HITTER_LOG_PATH")
+    custom_logs_path = os.getenv(
+        "MLB_HITTER_LOG_PATH"
+    )
 
     if custom_logs_path:
-        logs_path = Path(
-            custom_logs_path
-        ).expanduser().resolve()
+        logs_path = (
+            Path(custom_logs_path)
+            .expanduser()
+            .resolve()
+        )
     else:
         logs_path = (
             PROJECT_ROOT
@@ -144,7 +184,9 @@ def load_model_bundle(
             "Run train_hitter_models.py first."
         )
 
-    bundle = joblib.load(model_path)
+    bundle = joblib.load(
+        model_path
+    )
 
     required_keys = {
         "model",
@@ -153,7 +195,10 @@ def load_model_bundle(
         "market",
     }
 
-    missing_keys = required_keys - set(bundle)
+    missing_keys = (
+        required_keys
+        - set(bundle)
+    )
 
     if missing_keys:
         raise ValueError(
@@ -164,15 +209,22 @@ def load_model_bundle(
     if bundle["market"] != market:
         raise ValueError(
             f"Model bundle market mismatch for {model_path}. "
-            f"Expected {market!r}, found {bundle['market']!r}."
+            f"Expected {market!r}, "
+            f"found {bundle['market']!r}."
         )
 
-    if not isinstance(bundle["features"], list):
+    if not isinstance(
+        bundle["features"],
+        list,
+    ):
         raise TypeError(
             f"{model_path} contains an invalid feature list."
         )
 
-    if not isinstance(bundle["medians"], dict):
+    if not isinstance(
+        bundle["medians"],
+        dict,
+    ):
         raise TypeError(
             f"{model_path} contains invalid feature medians."
         )
@@ -192,10 +244,16 @@ def load_current_hitters(
         )
 
     try:
-        hitters = pd.read_csv(hitters_path)
-    except (pd.errors.EmptyDataError, pd.errors.ParserError) as exc:
+        hitters = pd.read_csv(
+            hitters_path
+        )
+    except (
+        pd.errors.EmptyDataError,
+        pd.errors.ParserError,
+    ) as exc:
         raise ValueError(
-            f"Could not read current hitter file: {hitters_path}"
+            f"Could not read current hitter file: "
+            f"{hitters_path}"
         ) from exc
 
     required_columns = {
@@ -204,13 +262,21 @@ def load_current_hitters(
         "player_name",
     }
 
-    missing_columns = required_columns - set(hitters.columns)
+    missing_columns = (
+        required_columns
+        - set(hitters.columns)
+    )
 
     if missing_columns:
         raise ValueError(
             "Current hitter file is missing required columns: "
             f"{sorted(missing_columns)}"
         )
+
+    hitters["game_id"] = pd.to_numeric(
+        hitters["game_id"],
+        errors="coerce",
+    )
 
     hitters["player_id"] = pd.to_numeric(
         hitters["player_id"],
@@ -225,11 +291,19 @@ def load_current_hitters(
         ]
     ).copy()
 
-    hitters["player_id"] = hitters[
-        "player_id"
-    ].astype("int64")
+    hitters["game_id"] = (
+        hitters["game_id"]
+        .astype("int64")
+    )
 
-    hitters["date"] = pd.Timestamp(target_date)
+    hitters["player_id"] = (
+        hitters["player_id"]
+        .astype("int64")
+    )
+
+    hitters["date"] = pd.Timestamp(
+        target_date
+    )
 
     if "batting_order" in hitters.columns:
         hitters["batting_order"] = pd.to_numeric(
@@ -237,12 +311,19 @@ def load_current_hitters(
             errors="coerce",
         )
 
-    hitters = normalize_text_columns(hitters)
+    hitters = normalize_text_columns(
+        hitters
+    )
 
     hitters = hitters.drop_duplicates(
-        subset=["game_id", "player_id"],
+        subset=[
+            "game_id",
+            "player_id",
+        ],
         keep="last",
-    ).reset_index(drop=True)
+    ).reset_index(
+        drop=True
+    )
 
     if hitters.empty:
         raise ValueError(
@@ -259,14 +340,21 @@ def load_historical_logs(
     """Load only games completed before the target slate."""
     if not logs_path.exists():
         raise FileNotFoundError(
-            f"Hitter game-log file was not found: {logs_path}"
+            f"Hitter game-log file was not found: "
+            f"{logs_path}"
         )
 
     try:
-        logs = pd.read_csv(logs_path)
-    except (pd.errors.EmptyDataError, pd.errors.ParserError) as exc:
+        logs = pd.read_csv(
+            logs_path
+        )
+    except (
+        pd.errors.EmptyDataError,
+        pd.errors.ParserError,
+    ) as exc:
         raise ValueError(
-            f"Could not read hitter game logs: {logs_path}"
+            f"Could not read hitter game logs: "
+            f"{logs_path}"
         ) from exc
 
     required_columns = {
@@ -275,7 +363,10 @@ def load_historical_logs(
         "player_id",
     }
 
-    missing_columns = required_columns - set(logs.columns)
+    missing_columns = (
+        required_columns
+        - set(logs.columns)
+    )
 
     if missing_columns:
         raise ValueError(
@@ -285,6 +376,11 @@ def load_historical_logs(
 
     logs["date"] = pd.to_datetime(
         logs["date"],
+        errors="coerce",
+    )
+
+    logs["game_id"] = pd.to_numeric(
+        logs["game_id"],
         errors="coerce",
     )
 
@@ -301,17 +397,27 @@ def load_historical_logs(
         ]
     ).copy()
 
-    logs["player_id"] = logs[
-        "player_id"
-    ].astype("int64")
+    logs["game_id"] = (
+        logs["game_id"]
+        .astype("int64")
+    )
 
-    target_timestamp = pd.Timestamp(target_date)
+    logs["player_id"] = (
+        logs["player_id"]
+        .astype("int64")
+    )
+
+    target_timestamp = pd.Timestamp(
+        target_date
+    )
 
     logs = logs.loc[
         logs["date"] < target_timestamp
     ].copy()
 
-    logs = normalize_text_columns(logs)
+    logs = normalize_text_columns(
+        logs
+    )
 
     logs = clean_numeric_columns(
         logs,
@@ -319,8 +425,14 @@ def load_historical_logs(
     )
 
     logs = logs.sort_values(
-        ["player_id", "date", "game_id"]
-    ).reset_index(drop=True)
+        [
+            "player_id",
+            "date",
+            "game_id",
+        ]
+    ).reset_index(
+        drop=True
+    )
 
     if logs.empty:
         raise ValueError(
@@ -354,13 +466,22 @@ def build_projection_rows(
     for column in RAW_STAT_COLUMNS:
         projection_rows[column] = 0.0
 
-    projection_rows["__is_projection_row"] = 1
-    historical_logs["__is_projection_row"] = 0
+    projection_rows[
+        "__is_projection_row"
+    ] = 1
+
+    historical_logs[
+        "__is_projection_row"
+    ] = 0
 
     combined_columns = list(
         dict.fromkeys(
-            list(historical_logs.columns)
-            + list(projection_rows.columns)
+            list(
+                historical_logs.columns
+            )
+            + list(
+                projection_rows.columns
+            )
         )
     )
 
@@ -373,7 +494,10 @@ def build_projection_rows(
     )
 
     combined = pd.concat(
-        [historical_logs, projection_rows],
+        [
+            historical_logs,
+            projection_rows,
+        ],
         ignore_index=True,
         sort=False,
     )
@@ -385,13 +509,379 @@ def build_projection_rows(
             "game_id",
             "__is_projection_row",
         ]
-    ).reset_index(drop=True)
+    ).reset_index(
+        drop=True
+    )
 
     return combined
 
 
+def load_current_pitcher_matchups(
+    target_date: date,
+) -> pd.DataFrame:
+    """Load current probable pitchers and build opposing-starter mappings."""
+    pitcher_path = (
+        PITCHER_DIRECTORY
+        / f"{target_date.isoformat()}.csv"
+    )
+
+    if not pitcher_path.exists():
+        print(
+            "\nWARNING: Current pitcher file was not found:"
+        )
+        print(
+            pitcher_path
+        )
+
+        return pd.DataFrame()
+
+    try:
+        pitchers = pd.read_csv(
+            pitcher_path
+        )
+    except (
+        pd.errors.EmptyDataError,
+        pd.errors.ParserError,
+    ):
+        print(
+            "\nWARNING: Current pitcher file could not be read:"
+        )
+        print(
+            pitcher_path
+        )
+
+        return pd.DataFrame()
+
+    required_columns = {
+        "game_id",
+        "pitcher_id",
+        "pitcher_name",
+        "team",
+    }
+
+    missing_columns = (
+        required_columns
+        - set(pitchers.columns)
+    )
+
+    if missing_columns:
+        print(
+            "\nWARNING: Current pitcher file is missing columns:"
+        )
+        print(
+            sorted(missing_columns)
+        )
+
+        return pd.DataFrame()
+
+    pitchers["game_id"] = pd.to_numeric(
+        pitchers["game_id"],
+        errors="coerce",
+    )
+
+    pitchers["pitcher_id"] = pd.to_numeric(
+        pitchers["pitcher_id"],
+        errors="coerce",
+    )
+
+    pitchers = pitchers.dropna(
+        subset=[
+            "game_id",
+            "pitcher_id",
+            "pitcher_name",
+            "team",
+        ]
+    ).copy()
+
+    pitchers["game_id"] = (
+        pitchers["game_id"]
+        .astype("int64")
+    )
+
+    pitchers["pitcher_id"] = (
+        pitchers["pitcher_id"]
+        .astype("int64")
+    )
+
+    pitchers["pitcher_team_key"] = (
+        pitchers["team"]
+        .apply(
+            normalize_team_name
+        )
+    )
+
+    matchup_map = pitchers[
+        [
+            "game_id",
+            "pitcher_team_key",
+            "pitcher_id",
+            "pitcher_name",
+        ]
+    ].copy()
+
+    matchup_map = matchup_map.rename(
+        columns={
+            "pitcher_team_key": "opponent_key",
+            "pitcher_id": "opponent_pitcher_id",
+            "pitcher_name": "opponent_pitcher_name",
+        }
+    )
+
+    matchup_map = matchup_map.drop_duplicates(
+        subset=[
+            "game_id",
+            "opponent_key",
+        ],
+        keep="last",
+    )
+
+    return matchup_map
+
+
+def add_current_opponent_pitcher_features(
+    frame: pd.DataFrame,
+    target_date: date,
+) -> pd.DataFrame:
+    """Add prior-only opponent-pitcher features for today's hitters."""
+    featured = frame.copy()
+
+    featured["game_id"] = pd.to_numeric(
+        featured["game_id"],
+        errors="coerce",
+    )
+
+    if "opponent" not in featured.columns:
+        featured["opponent"] = pd.NA
+
+    featured["opponent_key"] = (
+        featured["opponent"]
+        .apply(
+            normalize_team_name
+        )
+    )
+
+    matchup_map = load_current_pitcher_matchups(
+        target_date
+    )
+
+    if matchup_map.empty:
+        featured[
+            "opponent_pitcher_id"
+        ] = np.nan
+
+        featured[
+            "opponent_pitcher_name"
+        ] = pd.NA
+
+        featured[
+            "opponent_pitcher_match_available"
+        ] = 0
+
+        featured[
+            "opponent_pitcher_history_available"
+        ] = 0
+
+        return featured.drop(
+            columns=[
+                "opponent_key",
+            ],
+            errors="ignore",
+        )
+
+    for column in [
+        "opponent_pitcher_id",
+        "opponent_pitcher_name",
+    ]:
+        if column in featured.columns:
+            featured = featured.drop(
+                columns=[column]
+            )
+
+    featured = featured.merge(
+        matchup_map,
+        on=[
+            "game_id",
+            "opponent_key",
+        ],
+        how="left",
+        validate="many_to_one",
+    )
+
+    featured[
+        "opponent_pitcher_match_available"
+    ] = (
+        featured[
+            "opponent_pitcher_id"
+        ]
+        .notna()
+        .astype(int)
+    )
+
+    pitcher_logs = load_pitcher_game_logs()
+
+    if pitcher_logs.empty:
+        featured[
+            "opponent_pitcher_history_available"
+        ] = 0
+
+        print(
+            "\nWARNING: No pitcher game logs were available "
+            "for live opponent features."
+        )
+
+        return featured.drop(
+            columns=[
+                "opponent_key",
+            ],
+            errors="ignore",
+        )
+
+    pitcher_groups = {
+        int(pitcher_id): group.copy()
+        for pitcher_id, group
+        in pitcher_logs.groupby(
+            "pitcher_id",
+            sort=False,
+        )
+    }
+
+    valid_matchups = (
+        featured.loc[
+            featured[
+                "opponent_pitcher_id"
+            ].notna(),
+            [
+                "game_id",
+                "opponent_pitcher_id",
+            ],
+        ]
+        .drop_duplicates()
+    )
+
+    profile_rows: list[
+        dict[str, Any]
+    ] = []
+
+    for matchup in valid_matchups.itertuples(
+        index=False
+    ):
+        pitcher_id = int(
+            matchup.opponent_pitcher_id
+        )
+
+        pitcher_history = pitcher_groups.get(
+            pitcher_id,
+            pd.DataFrame(
+                columns=pitcher_logs.columns
+            ),
+        )
+
+        profile = calculate_profile(
+            pitcher_logs=pitcher_history,
+            game_date=pd.Timestamp(
+                target_date
+            ),
+        )
+
+        profile_rows.append(
+            {
+                "game_id": int(
+                    matchup.game_id
+                ),
+                "opponent_pitcher_id": pitcher_id,
+                **profile,
+            }
+        )
+
+    profiles = pd.DataFrame(
+        profile_rows
+    )
+
+    if not profiles.empty:
+        featured = featured.merge(
+            profiles,
+            on=[
+                "game_id",
+                "opponent_pitcher_id",
+            ],
+            how="left",
+            validate="many_to_one",
+        )
+
+    if (
+        "opponent_pitcher_history_games"
+        not in featured.columns
+    ):
+        featured[
+            "opponent_pitcher_history_games"
+        ] = 0.0
+
+    featured[
+        "opponent_pitcher_history_games"
+    ] = pd.to_numeric(
+        featured[
+            "opponent_pitcher_history_games"
+        ],
+        errors="coerce",
+    ).fillna(0.0)
+
+    featured[
+        "opponent_pitcher_history_available"
+    ] = (
+        featured[
+            "opponent_pitcher_history_games"
+        ]
+        .gt(0)
+        .astype(int)
+    )
+
+    matched_rows = int(
+        featured[
+            "opponent_pitcher_match_available"
+        ].sum()
+    )
+
+    history_rows = int(
+        featured[
+            "opponent_pitcher_history_available"
+        ].sum()
+    )
+
+    total_rows = len(
+        featured
+    )
+
+    print(
+        "\nLive opponent-pitcher feature coverage:"
+    )
+
+    print(
+        f"Matched hitters: {matched_rows:,} "
+        f"of {total_rows:,}"
+    )
+
+    print(
+        f"Hitters with pitcher history: "
+        f"{history_rows:,}"
+    )
+
+    if total_rows:
+        print(
+            f"Match rate: "
+            f"{matched_rows / total_rows:.1%}"
+        )
+
+    return featured.drop(
+        columns=[
+            "opponent_key",
+        ],
+        errors="ignore",
+    )
+
+
 def engineer_live_features(
     combined: pd.DataFrame,
+    target_date: date,
 ) -> pd.DataFrame:
     """Apply the exact training feature-engineering pipeline."""
     featured = clean_numeric_columns(
@@ -399,40 +889,98 @@ def engineer_live_features(
         RAW_STAT_COLUMNS,
     )
 
-    featured = add_derived_targets(featured)
-    featured = add_schedule_features(featured)
-    featured = add_previous_game_features(featured)
-    featured = add_rolling_features(featured)
-    featured = add_season_to_date_features(featured)
-    featured = add_rate_features(featured)
-    featured = add_trend_features(featured)
-    featured = add_consistency_features(featured)
-    featured = add_opportunity_features(featured)
-    featured = add_optional_context_features(featured)
+    featured = add_derived_targets(
+        featured
+    )
 
-    numeric_columns = featured.select_dtypes(
-        include=[np.number]
-    ).columns
+    featured = add_schedule_features(
+        featured
+    )
 
-    featured[numeric_columns] = featured[
+    featured = add_previous_game_features(
+        featured
+    )
+
+    featured = add_rolling_features(
+        featured
+    )
+
+    featured = add_season_to_date_features(
+        featured
+    )
+
+    featured = add_rate_features(
+        featured
+    )
+
+    featured = add_trend_features(
+        featured
+    )
+
+    featured = add_consistency_features(
+        featured
+    )
+
+    featured = add_opportunity_features(
+        featured
+    )
+
+    featured = add_optional_context_features(
+        featured
+    )
+
+    numeric_columns = (
+        featured.select_dtypes(
+            include=[
+                np.number
+            ]
+        ).columns
+    )
+
+    featured[
+        numeric_columns
+    ] = featured[
         numeric_columns
     ].replace(
-        [np.inf, -np.inf],
+        [
+            np.inf,
+            -np.inf,
+        ],
         np.nan,
     )
 
     today_features = featured.loc[
-        featured["__is_projection_row"].eq(1)
+        featured[
+            "__is_projection_row"
+        ].eq(1)
     ].copy()
 
     today_features = today_features.loc[
-        today_features["prior_games"] >= MINIMUM_PRIOR_GAMES
+        today_features[
+            "prior_games"
+        ]
+        >= MINIMUM_PRIOR_GAMES
     ].copy()
 
-    today_features = today_features.drop_duplicates(
-        subset=["game_id", "player_id"],
-        keep="last",
-    ).reset_index(drop=True)
+    today_features = (
+        today_features.drop_duplicates(
+            subset=[
+                "game_id",
+                "player_id",
+            ],
+            keep="last",
+        )
+        .reset_index(
+            drop=True
+        )
+    )
+
+    today_features = (
+        add_current_opponent_pitcher_features(
+            frame=today_features,
+            target_date=target_date,
+        )
+    )
 
     return today_features
 
@@ -443,8 +991,13 @@ def prepare_model_matrix(
     market: str,
 ) -> pd.DataFrame:
     """Build a finite feature matrix in saved training order."""
-    feature_columns = bundle["features"]
-    medians = bundle["medians"]
+    feature_columns = bundle[
+        "features"
+    ]
+
+    medians = bundle[
+        "medians"
+    ]
 
     missing_columns = [
         column
@@ -455,7 +1008,10 @@ def prepare_model_matrix(
     if missing_columns:
         missing_rate = (
             len(missing_columns)
-            / max(len(feature_columns), 1)
+            / max(
+                len(feature_columns),
+                1,
+            )
         )
 
         print(
@@ -478,7 +1034,7 @@ def prepare_model_matrix(
             )
 
     matrix = pd.DataFrame(
-        index=frame.index,
+        index=frame.index
     )
 
     for feature in feature_columns:
@@ -494,22 +1050,42 @@ def prepare_model_matrix(
                 dtype=float,
             )
 
-        median_value = medians.get(feature, 0.0)
+        median_value = medians.get(
+            feature,
+            0.0,
+        )
 
         try:
-            median_value = float(median_value)
-        except (TypeError, ValueError):
+            median_value = float(
+                median_value
+            )
+        except (
+            TypeError,
+            ValueError,
+        ):
             median_value = 0.0
 
-        if not np.isfinite(median_value):
+        if not np.isfinite(
+            median_value
+        ):
             median_value = 0.0
 
-        matrix[feature] = values.replace(
-            [np.inf, -np.inf],
-            np.nan,
-        ).fillna(median_value)
+        matrix[feature] = (
+            values.replace(
+                [
+                    np.inf,
+                    -np.inf,
+                ],
+                np.nan,
+            )
+            .fillna(
+                median_value
+            )
+        )
 
-    return matrix[feature_columns].astype(float)
+    return matrix[
+        feature_columns
+    ].astype(float)
 
 
 def residual_interval(
@@ -517,7 +1093,11 @@ def residual_interval(
     residuals: list[Any],
     lower_quantile: float = 0.10,
     upper_quantile: float = 0.90,
-) -> tuple[np.ndarray, np.ndarray, float]:
+) -> tuple[
+    np.ndarray,
+    np.ndarray,
+    float,
+]:
     """Create empirical prediction ranges from holdout residuals."""
     clean_residuals = pd.to_numeric(
         pd.Series(
@@ -528,7 +1108,9 @@ def residual_interval(
     ).dropna()
 
     clean_residuals = clean_residuals.loc[
-        np.isfinite(clean_residuals)
+        np.isfinite(
+            clean_residuals
+        )
     ]
 
     if len(clean_residuals) < 50:
@@ -563,13 +1145,15 @@ def residual_interval(
     )
 
     lower_bound = np.clip(
-        predictions + lower_residual,
+        predictions
+        + lower_residual,
         a_min=0.0,
         a_max=None,
     )
 
     upper_bound = np.clip(
-        predictions + upper_residual,
+        predictions
+        + upper_residual,
         a_min=0.0,
         a_max=None,
     )
@@ -587,7 +1171,9 @@ def add_market_prediction(
     output_column: str,
 ) -> pd.DataFrame:
     """Apply one market model and add uncertainty metadata."""
-    bundle = load_model_bundle(market)
+    bundle = load_model_bundle(
+        market
+    )
 
     matrix = prepare_model_matrix(
         frame,
@@ -596,7 +1182,9 @@ def add_market_prediction(
     )
 
     predictions = np.asarray(
-        bundle["model"].predict(matrix),
+        bundle["model"].predict(
+            matrix
+        ),
         dtype=float,
     )
 
@@ -606,7 +1194,11 @@ def add_market_prediction(
         a_max=None,
     )
 
-    lower_bound, upper_bound, residual_std = residual_interval(
+    (
+        lower_bound,
+        upper_bound,
+        residual_std,
+    ) = residual_interval(
         predictions,
         bundle.get(
             "holdout_residuals",
@@ -616,7 +1208,9 @@ def add_market_prediction(
 
     projected = frame.copy()
 
-    projected[output_column] = predictions
+    projected[
+        output_column
+    ] = predictions
 
     projected[
         f"{output_column}_lower_80"
@@ -634,7 +1228,9 @@ def add_market_prediction(
         f"{market}_model_name"
     ] = bundle.get(
         "model_name",
-        type(bundle["model"]).__name__,
+        type(
+            bundle["model"]
+        ).__name__,
     )
 
     projected[
@@ -655,7 +1251,9 @@ def select_output_columns(
 
     for column in IDENTITY_COLUMNS:
         if column in frame.columns:
-            columns.append(column)
+            columns.append(
+                column
+            )
 
     for column in [
         "prior_games",
@@ -664,11 +1262,25 @@ def select_output_columns(
         "is_short_rest",
         "expected_plate_appearances",
         "expected_at_bats",
+        "opponent_pitcher_match_available",
+        "opponent_pitcher_history_available",
+        "opponent_pitcher_history_games",
+        "opponent_pitcher_last5_avg_era",
+        "opponent_pitcher_last5_avg_whip",
+        "opponent_pitcher_last5_avg_strikeout_rate_bf",
+        "opponent_pitcher_last5_avg_walk_rate_bf",
+        "opponent_pitcher_last5_avg_home_runs_per_9",
+        "opponent_pitcher_last5_avg_fip_component",
     ]:
         if column in frame.columns:
-            columns.append(column)
+            columns.append(
+                column
+            )
 
-    for market, projection_column in MODEL_MARKETS.items():
+    for (
+        market,
+        projection_column,
+    ) in MODEL_MARKETS.items():
         columns.extend(
             [
                 projection_column,
@@ -691,7 +1303,10 @@ def project_today_hitters() -> pd.DataFrame:
     """Generate and save all current hitter-market projections."""
     target_date = get_target_date()
 
-    hitters_path, logs_path = get_paths(
+    (
+        hitters_path,
+        logs_path,
+    ) = get_paths(
         target_date
     )
 
@@ -700,12 +1315,32 @@ def project_today_hitters() -> pd.DataFrame:
         exist_ok=True,
     )
 
-    print("=" * 72)
-    print("Generating current MLB hitter projections")
-    print(f"Slate date: {target_date.isoformat()}")
-    print(f"Current hitters: {hitters_path}")
-    print(f"Historical logs: {logs_path}")
-    print("=" * 72)
+    print(
+        "=" * 72
+    )
+
+    print(
+        "Generating current MLB hitter projections"
+    )
+
+    print(
+        f"Slate date: "
+        f"{target_date.isoformat()}"
+    )
+
+    print(
+        f"Current hitters: "
+        f"{hitters_path}"
+    )
+
+    print(
+        f"Historical logs: "
+        f"{logs_path}"
+    )
+
+    print(
+        "=" * 72
+    )
 
     hitters = load_current_hitters(
         hitters_path,
@@ -723,15 +1358,20 @@ def project_today_hitters() -> pd.DataFrame:
     )
 
     today = engineer_live_features(
-        combined
+        combined=combined,
+        target_date=target_date,
     )
 
     projected_player_ids = set(
-        today["player_id"].astype(int)
+        today[
+            "player_id"
+        ].astype(int)
     )
 
     requested_player_ids = set(
-        hitters["player_id"].astype(int)
+        hitters[
+            "player_id"
+        ].astype(int)
     )
 
     skipped_player_ids = (
@@ -741,7 +1381,9 @@ def project_today_hitters() -> pd.DataFrame:
 
     if skipped_player_ids:
         skipped = hitters.loc[
-            hitters["player_id"].isin(
+            hitters[
+                "player_id"
+            ].isin(
                 skipped_player_ids
             ),
             [
@@ -766,8 +1408,14 @@ def project_today_hitters() -> pd.DataFrame:
             "No current hitters had enough history to project."
         )
 
-    for market, output_column in MODEL_MARKETS.items():
-        print(f"\nProjecting market: {market}")
+    for (
+        market,
+        output_column,
+    ) in MODEL_MARKETS.items():
+        print(
+            f"\nProjecting market: "
+            f"{market}"
+        )
 
         today = add_market_prediction(
             today,
@@ -804,13 +1452,17 @@ def project_today_hitters() -> pd.DataFrame:
                     errors="coerce",
                 ).round(3)
 
-    today["date"] = target_date.isoformat()
+    today["date"] = (
+        target_date.isoformat()
+    )
 
     live_feature_columns = sorted(
         {
             feature
-            for market in MODEL_MARKETS
-            for feature in load_model_bundle(
+            for market
+            in MODEL_MARKETS
+            for feature
+            in load_model_bundle(
                 market
             )["features"]
             if feature in today.columns
@@ -826,6 +1478,8 @@ def project_today_hitters() -> pd.DataFrame:
             "player_name",
             "team",
             "opponent",
+            "opponent_pitcher_id",
+            "opponent_pitcher_name",
         ]
         if column in today.columns
     ] + live_feature_columns
@@ -876,15 +1530,18 @@ def project_today_hitters() -> pd.DataFrame:
     )
 
     print(
-        f"Projected hitters: {len(output):,}"
+        f"Projected hitters: "
+        f"{len(output):,}"
     )
 
     print(
-        f"Saved projections: {OUTPUT_PATH}"
+        f"Saved projections: "
+        f"{OUTPUT_PATH}"
     )
 
     print(
-        f"Saved live features: {LIVE_FEATURES_PATH}"
+        f"Saved live features: "
+        f"{LIVE_FEATURES_PATH}"
     )
 
     preview_columns = [
@@ -893,6 +1550,8 @@ def project_today_hitters() -> pd.DataFrame:
             "player_name",
             "team",
             "opponent",
+            "opponent_pitcher_name",
+            "opponent_pitcher_history_games",
             "batting_order",
             "expected_plate_appearances",
             "projected_hits",
@@ -906,7 +1565,9 @@ def project_today_hitters() -> pd.DataFrame:
     ]
 
     if preview_columns:
-        print("\nTop projected hitters:")
+        print(
+            "\nTop projected hitters:"
+        )
 
         print(
             output[
