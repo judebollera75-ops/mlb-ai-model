@@ -1,0 +1,42 @@
+name: Backfill Historical Pitcher Game Logs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - run: |
+          echo "MLB_TARGET_DATE=$(TZ=America/Chicago date +%F)" >> $GITHUB_ENV
+
+      - run: |
+          python sports/mlb/data/download/download_historical_pitcher_game_logs.py
+
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add data/historical/pitcher_game_logs.csv
+
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Backfill historical pitcher game logs"
+            git push origin HEAD:main
+          fi
