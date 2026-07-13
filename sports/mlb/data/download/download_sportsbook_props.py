@@ -1080,7 +1080,6 @@ def download_sportsbook_props() -> pd.DataFrame:
     )
 
     print("\n" + "=" * 72)
-    print("PARLAYAPI RAW RESPONSE SAMPLE")
     print("=" * 72)
 
     print(
