@@ -1,18 +1,122 @@
-from datetime import date
+"""Build the current-slate MLB pitcher master dataset.
+
+Environment variables:
+    MLB_TARGET_DATE=YYYY-MM-DD
+
+Inputs:
+    data/pitchers/<target-date>.csv
+    data/pitcher_stats/<target-date>.csv
+    data/features/pitcher_features.csv
+
+Output:
+    data/final/master_dataset.csv
+"""
+
+from __future__ import annotations
+
+import os
+from datetime import date, datetime
 from pathlib import Path
 
 import pandas as pd
 
 
-PITCHERS_DIRECTORY = Path("data/pitchers")
-PITCHER_STATS_DIRECTORY = Path("data/pitcher_stats")
-FEATURES_PATH = Path("data/features/pitcher_features.csv")
-OUTPUT_PATH = Path("data/final/master_dataset.csv")
+PROJECT_ROOT = Path(__file__).resolve().parents[4]
+
+PITCHERS_DIRECTORY = (
+    PROJECT_ROOT
+    / "data"
+    / "pitchers"
+)
+
+PITCHER_STATS_DIRECTORY = (
+    PROJECT_ROOT
+    / "data"
+    / "pitcher_stats"
+)
+
+FEATURES_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "features"
+    / "pitcher_features.csv"
+)
+
+OUTPUT_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "final"
+    / "master_dataset.csv"
+)
 
 
-def build_master_dataset(target_date=None):
+def get_target_date() -> str:
+    """Return the workflow slate date instead of the runner's UTC date."""
+    raw_value = os.getenv(
+        "MLB_TARGET_DATE",
+        date.today().isoformat(),
+    )
+
+    try:
+        parsed = datetime.strptime(
+            raw_value,
+            "%Y-%m-%d",
+        ).date()
+    except ValueError as exc:
+        raise ValueError(
+            "MLB_TARGET_DATE must use YYYY-MM-DD format. "
+            f"Received: {raw_value!r}"
+        ) from exc
+
+    return parsed.isoformat()
+
+
+def normalize_pitcher_id(
+    frame: pd.DataFrame,
+    label: str,
+) -> pd.DataFrame:
+    """Validate and normalize pitcher IDs."""
+    normalized = frame.copy()
+
+    if "pitcher_id" not in normalized.columns:
+        raise KeyError(
+            f"{label} is missing pitcher_id"
+        )
+
+    normalized["pitcher_id"] = pd.to_numeric(
+        normalized["pitcher_id"],
+        errors="coerce",
+    )
+
+    normalized = normalized.dropna(
+        subset=["pitcher_id"]
+    ).copy()
+
+    normalized["pitcher_id"] = (
+        normalized["pitcher_id"]
+        .astype(int)
+    )
+
+    return normalized
+
+
+def build_master_dataset(
+    target_date: str | None = None,
+) -> pd.DataFrame:
+    """Merge slate, season, and recent-form pitcher data."""
     if target_date is None:
-        target_date = date.today().isoformat()
+        target_date = get_target_date()
+    else:
+        try:
+            target_date = datetime.strptime(
+                target_date,
+                "%Y-%m-%d",
+            ).date().isoformat()
+        except ValueError as exc:
+            raise ValueError(
+                "target_date must use YYYY-MM-DD format. "
+                f"Received: {target_date!r}"
+            ) from exc
 
     OUTPUT_PATH.parent.mkdir(
         parents=True,
@@ -44,9 +148,17 @@ def build_master_dataset(target_date=None):
             f"Missing pitcher features file: {FEATURES_PATH}"
         )
 
-    pitchers = pd.read_csv(pitchers_path)
-    stats = pd.read_csv(stats_path)
-    features = pd.read_csv(FEATURES_PATH)
+    pitchers = pd.read_csv(
+        pitchers_path
+    )
+
+    stats = pd.read_csv(
+        stats_path
+    )
+
+    features = pd.read_csv(
+        FEATURES_PATH
+    )
 
     required_pitcher_columns = {
         "pitcher_id",
@@ -67,49 +179,71 @@ def build_master_dataset(target_date=None):
             f"{sorted(missing_pitcher_columns)}"
         )
 
-    if "pitcher_id" not in stats.columns:
-        raise KeyError(
-            f"{stats_path} is missing pitcher_id"
-        )
-
-    if "pitcher_id" not in features.columns:
-        raise KeyError(
-            f"{FEATURES_PATH} is missing pitcher_id"
-        )
-
-    for dataframe in [
+    pitchers = normalize_pitcher_id(
         pitchers,
+        str(pitchers_path),
+    )
+
+    stats = normalize_pitcher_id(
         stats,
+        str(stats_path),
+    )
+
+    features = normalize_pitcher_id(
         features,
-    ]:
-        dataframe["pitcher_id"] = pd.to_numeric(
-            dataframe["pitcher_id"],
-            errors="coerce",
+        str(FEATURES_PATH),
+    )
+
+    if "date" in stats.columns:
+        stats["date"] = (
+            stats["date"]
+            .astype(str)
         )
 
-        dataframe.dropna(
-            subset=["pitcher_id"],
-            inplace=True,
+        stats = stats.loc[
+            stats["date"].eq(target_date)
+        ].copy()
+
+    if "date" in features.columns:
+        features["date"] = (
+            features["date"]
+            .astype(str)
         )
 
-        dataframe["pitcher_id"] = (
-            dataframe["pitcher_id"].astype(int)
-        )
+        features = features.loc[
+            features["date"].eq(target_date)
+        ].copy()
 
-    master = (
-        pitchers
-        .merge(
-            stats,
-            on="pitcher_id",
-            how="left",
-            suffixes=("", "_season"),
-        )
-        .merge(
-            features,
-            on="pitcher_id",
-            how="left",
-            suffixes=("", "_recent"),
-        )
+    stats = stats.drop_duplicates(
+        subset=["pitcher_id"],
+        keep="last",
+    )
+
+    features = features.drop_duplicates(
+        subset=["pitcher_id"],
+        keep="last",
+    )
+
+    master = pitchers.merge(
+        stats,
+        on="pitcher_id",
+        how="left",
+        suffixes=(
+            "",
+            "_season",
+        ),
+        validate="many_to_one",
+    )
+
+    master = master.merge(
+        features,
+        on="pitcher_id",
+        how="left",
+        suffixes=(
+            "",
+            "_recent",
+        ),
+        validate="many_to_one",
     )
 
     master = master.drop_duplicates(
@@ -120,11 +254,29 @@ def build_master_dataset(target_date=None):
         keep="first",
     ).reset_index(drop=True)
 
+    master.insert(
+        0,
+        "slate_date",
+        target_date,
+    )
+
+    temporary_path = OUTPUT_PATH.with_suffix(
+        ".tmp.csv"
+    )
+
     master.to_csv(
-        OUTPUT_PATH,
+        temporary_path,
         index=False,
     )
 
+    temporary_path.replace(
+        OUTPUT_PATH
+    )
+
+    print("=" * 72)
+    print("PITCHER MASTER DATASET COMPLETE")
+    print("=" * 72)
+    print(f"Slate date: {target_date}")
     print(
         f"Saved {len(master)} current-slate pitcher rows "
         f"to {OUTPUT_PATH}"
@@ -133,10 +285,14 @@ def build_master_dataset(target_date=None):
     display_columns = [
         "pitcher_name",
         "team",
+        "opponent",
         "games_started",
         "strikeouts",
         "season_k_per_start",
         "avg_k",
+        "avg_whip",
+        "avg_k_rate",
+        "avg_fip_component",
     ]
 
     display_columns = [
@@ -147,7 +303,9 @@ def build_master_dataset(target_date=None):
 
     if display_columns:
         print(
-            master[display_columns]
+            master[
+                display_columns
+            ]
             .head(30)
             .to_string(index=False)
         )
