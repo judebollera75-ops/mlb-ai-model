@@ -6,20 +6,15 @@ Environment variables:
 
 Inputs:
     data/hitter_game_logs/<season>.csv
+    data/historical/pitcher_starts.csv
     data/pitchers/*.csv
     data/game_logs/*.csv
 
 Output:
     data/training/hitter_opponent_pitcher_features.csv
 
-Important:
-    Pitcher statistics for a hitter game are calculated using only pitching
-    appearances that occurred before that hitter game. Current-game or future
-    pitcher results are never included.
-
-    Historical matchup coverage depends on having archived files in
-    data/pitchers/. Hitter rows without a known opposing starter are preserved
-    and receive missing opponent-pitcher features.
+Pitcher statistics for each hitter game are calculated using only pitching
+appearances that occurred before that hitter game.
 """
 
 from __future__ import annotations
@@ -45,6 +40,13 @@ PITCHER_SLATE_DIRECTORY = (
     PROJECT_ROOT
     / "data"
     / "pitchers"
+)
+
+HISTORICAL_PITCHER_STARTS_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "historical"
+    / "pitcher_starts.csv"
 )
 
 PITCHER_LOG_DIRECTORY = (
@@ -104,9 +106,9 @@ OUTPUT_IDENTIFIER_COLUMNS = [
 
 def get_target_date() -> date:
     """Return the active MLB slate date."""
-    raw_value = os.getenv(
-        "MLB_TARGET_DATE",
-        date.today().isoformat(),
+    raw_value = (
+        os.getenv("MLB_TARGET_DATE")
+        or date.today().isoformat()
     )
 
     try:
@@ -134,18 +136,16 @@ def get_hitter_log_path() -> Path:
             .resolve()
         )
 
-    season = get_target_date().year
-
     return (
         HITTER_LOG_DIRECTORY
-        / f"{season}.csv"
+        / f"{get_target_date().year}.csv"
     )
 
 
 def normalize_team_name(
     value: Any,
 ) -> str:
-    """Normalize team names for fallback matching."""
+    """Normalize team names for reliable matching."""
     if value is None or pd.isna(value):
         return ""
 
@@ -155,6 +155,7 @@ def normalize_team_name(
         .replace(".", "")
         .replace("-", " ")
         .replace("_", " ")
+        .replace("  ", " ")
         .strip()
     )
 
@@ -169,9 +170,9 @@ def safe_read_csv(
         pd.errors.EmptyDataError,
         pd.errors.ParserError,
         UnicodeDecodeError,
-    ):
+    ) as exc:
         print(
-            f"WARNING: Could not read {path}"
+            f"WARNING: Could not read {path}: {exc}"
         )
 
         return pd.DataFrame()
@@ -228,6 +229,7 @@ def load_hitter_logs() -> pd.DataFrame:
             "game_id",
             "player_id",
             "team",
+            "opponent",
         ]
     ).copy()
 
@@ -269,49 +271,176 @@ def load_hitter_logs() -> pd.DataFrame:
     ).reset_index(drop=True)
 
 
-def load_pitcher_slates() -> pd.DataFrame:
-    """Load all archived probable-pitcher slate files."""
-    if not PITCHER_SLATE_DIRECTORY.exists():
+def prepare_pitcher_slate(
+    frame: pd.DataFrame,
+    source_name: str,
+    source_priority: int,
+    fallback_date: str | None = None,
+) -> pd.DataFrame:
+    """Validate and normalize one pitcher-slate source."""
+    slate = frame.copy()
+
+    if slate.empty:
+        return pd.DataFrame()
+
+    required_columns = {
+        "game_id",
+        "pitcher_id",
+        "pitcher_name",
+        "team",
+    }
+
+    missing_columns = (
+        required_columns
+        - set(slate.columns)
+    )
+
+    if missing_columns:
         print(
-            "WARNING: Pitcher slate directory does not exist: "
-            f"{PITCHER_SLATE_DIRECTORY}"
+            f"WARNING: Skipping {source_name}; missing columns: "
+            f"{sorted(missing_columns)}"
         )
 
         return pd.DataFrame()
 
-    frames: list[pd.DataFrame] = []
+    if "date" not in slate.columns:
+        if fallback_date is None:
+            print(
+                f"WARNING: Skipping {source_name}; no date column."
+            )
 
-    for path in sorted(
-        PITCHER_SLATE_DIRECTORY.glob(
-            "*.csv"
-        )
-    ):
-        slate = safe_read_csv(path)
+            return pd.DataFrame()
 
-        if slate.empty:
-            continue
+        slate["date"] = fallback_date
 
-        required_columns = {
+    slate["date"] = pd.to_datetime(
+        slate["date"],
+        errors="coerce",
+    )
+
+    slate["game_id"] = pd.to_numeric(
+        slate["game_id"],
+        errors="coerce",
+    )
+
+    slate["pitcher_id"] = pd.to_numeric(
+        slate["pitcher_id"],
+        errors="coerce",
+    )
+
+    slate = slate.dropna(
+        subset=[
+            "date",
             "game_id",
             "pitcher_id",
             "pitcher_name",
             "team",
-        }
+        ]
+    ).copy()
 
-        if not required_columns.issubset(
-            slate.columns
-        ):
-            print(
-                f"WARNING: Skipping {path}; required "
-                "pitcher columns are missing."
+    slate["game_id"] = (
+        slate["game_id"]
+        .astype("int64")
+    )
+
+    slate["pitcher_id"] = (
+        slate["pitcher_id"]
+        .astype("int64")
+    )
+
+    slate["team_key"] = (
+        slate["team"]
+        .apply(normalize_team_name)
+    )
+
+    if "opponent" in slate.columns:
+        slate["opponent_key"] = (
+            slate["opponent"]
+            .apply(normalize_team_name)
+        )
+    else:
+        slate["opponent_key"] = ""
+
+    slate["_source_name"] = source_name
+    slate["_source_priority"] = source_priority
+
+    return slate
+
+
+def load_pitcher_slates() -> pd.DataFrame:
+    """Load historical and daily probable-pitcher files.
+
+    The historical archive provides full-season coverage. Daily pitcher files
+    receive higher priority when duplicate records are present.
+    """
+    frames: list[pd.DataFrame] = []
+
+    if HISTORICAL_PITCHER_STARTS_PATH.exists():
+        historical = safe_read_csv(
+            HISTORICAL_PITCHER_STARTS_PATH
+        )
+
+        historical = prepare_pitcher_slate(
+            frame=historical,
+            source_name=str(
+                HISTORICAL_PITCHER_STARTS_PATH
+            ),
+            source_priority=1,
+        )
+
+        if not historical.empty:
+            frames.append(
+                historical
             )
-            continue
 
-        if "date" not in slate.columns:
-            slate["date"] = path.stem
+            print(
+                "Loaded historical pitcher-start archive: "
+                f"{len(historical):,} rows"
+            )
+    else:
+        print(
+            "WARNING: Historical pitcher archive was not found: "
+            f"{HISTORICAL_PITCHER_STARTS_PATH}"
+        )
 
-        frames.append(
-            slate
+    if PITCHER_SLATE_DIRECTORY.exists():
+        daily_files = sorted(
+            PITCHER_SLATE_DIRECTORY.glob(
+                "*.csv"
+            )
+        )
+
+        daily_row_count = 0
+
+        for path in daily_files:
+            slate = safe_read_csv(path)
+
+            slate = prepare_pitcher_slate(
+                frame=slate,
+                source_name=str(path),
+                source_priority=2,
+                fallback_date=path.stem,
+            )
+
+            if slate.empty:
+                continue
+
+            frames.append(
+                slate
+            )
+
+            daily_row_count += len(
+                slate
+            )
+
+        print(
+            "Loaded daily pitcher-slate rows: "
+            f"{daily_row_count:,}"
+        )
+    else:
+        print(
+            "WARNING: Pitcher slate directory does not exist: "
+            f"{PITCHER_SLATE_DIRECTORY}"
         )
 
     if not frames:
@@ -323,56 +452,23 @@ def load_pitcher_slates() -> pd.DataFrame:
         sort=False,
     )
 
-    pitchers["date"] = pd.to_datetime(
-        pitchers["date"],
-        errors="coerce",
-    )
-
-    pitchers["game_id"] = pd.to_numeric(
-        pitchers["game_id"],
-        errors="coerce",
-    )
-
-    pitchers["pitcher_id"] = pd.to_numeric(
-        pitchers["pitcher_id"],
-        errors="coerce",
-    )
-
-    pitchers = pitchers.dropna(
-        subset=[
+    pitchers = pitchers.sort_values(
+        [
             "date",
             "game_id",
             "pitcher_id",
-            "pitcher_name",
-            "team",
-        ]
-    ).copy()
-
-    pitchers["game_id"] = (
-        pitchers["game_id"]
-        .astype("int64")
+            "_source_priority",
+        ],
+        ascending=[
+            True,
+            True,
+            True,
+            True,
+        ],
     )
 
-    pitchers["pitcher_id"] = (
-        pitchers["pitcher_id"]
-        .astype("int64")
-    )
-
-    pitchers["team_key"] = (
-        pitchers["team"]
-        .apply(normalize_team_name)
-    )
-
-    if "opponent" in pitchers.columns:
-        pitchers["opponent_key"] = (
-            pitchers["opponent"]
-            .apply(normalize_team_name)
-        )
-    else:
-        pitchers[
-            "opponent_key"
-        ] = ""
-
+    # Daily files have priority because they are appended after historical
+    # rows and use the greater source-priority value.
     pitchers = pitchers.drop_duplicates(
         subset=[
             "date",
@@ -382,7 +478,7 @@ def load_pitcher_slates() -> pd.DataFrame:
         keep="last",
     )
 
-    return pitchers.sort_values(
+    pitchers = pitchers.sort_values(
         [
             "date",
             "game_id",
@@ -390,32 +486,52 @@ def load_pitcher_slates() -> pd.DataFrame:
         ]
     ).reset_index(drop=True)
 
+    historical_dates = int(
+        pitchers["date"].nunique()
+    )
+
+    unique_games = int(
+        pitchers["game_id"].nunique()
+    )
+
+    print(
+        f"Total archived pitcher rows: "
+        f"{len(pitchers):,}"
+    )
+
+    print(
+        f"Pitcher dates represented: "
+        f"{historical_dates:,}"
+    )
+
+    print(
+        f"Games represented: "
+        f"{unique_games:,}"
+    )
+
+    return pitchers
+
 
 def build_hitter_pitcher_matchups(
     hitters: pd.DataFrame,
     pitchers: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Attach the opposing starter to every available hitter game."""
+    """Attach the correct opposing starter to each hitter game."""
     result = hitters.copy()
 
-    result[
-        "opponent_pitcher_id"
-    ] = pd.NA
-
-    result[
-        "opponent_pitcher_name"
-    ] = pd.NA
-
     if pitchers.empty:
+        result["opponent_pitcher_id"] = np.nan
+        result["opponent_pitcher_name"] = pd.NA
+
         print(
-            "WARNING: No archived pitcher slates were found. "
-            "Opponent-pitcher matchup coverage will be zero."
+            "WARNING: No pitcher slates were available. "
+            "Opponent-pitcher coverage will be zero."
         )
 
         return result
 
-    # Every pitcher row belongs to one team. Hitters on the pitcher's
-    # opponent team faced that pitcher.
+    # Each pitcher row identifies the team the pitcher played for.
+    # A hitter whose opponent matches that team faced that pitcher.
     matchup_map = pitchers[
         [
             "date",
@@ -423,6 +539,7 @@ def build_hitter_pitcher_matchups(
             "team_key",
             "pitcher_id",
             "pitcher_name",
+            "_source_priority",
         ]
     ].copy()
 
@@ -438,6 +555,10 @@ def build_hitter_pitcher_matchups(
         }
     )
 
+    matchup_map = matchup_map.sort_values(
+        "_source_priority"
+    )
+
     matchup_map = matchup_map.drop_duplicates(
         subset=[
             "date",
@@ -447,10 +568,9 @@ def build_hitter_pitcher_matchups(
         keep="last",
     )
 
-    result = result.drop(
+    matchup_map = matchup_map.drop(
         columns=[
-            "opponent_pitcher_id",
-            "opponent_pitcher_name",
+            "_source_priority",
         ]
     )
 
@@ -468,7 +588,9 @@ def build_hitter_pitcher_matchups(
     result[
         "opponent_pitcher_id"
     ] = pd.to_numeric(
-        result["opponent_pitcher_id"],
+        result[
+            "opponent_pitcher_id"
+        ],
         errors="coerce",
     )
 
@@ -478,7 +600,7 @@ def build_hitter_pitcher_matchups(
 def innings_to_outs(
     value: Any,
 ) -> float:
-    """Convert baseball innings notation to outs."""
+    """Convert baseball innings notation to recorded outs."""
     if value is None or pd.isna(value):
         return float("nan")
 
@@ -524,6 +646,141 @@ def innings_to_outs(
     )
 
 
+def safe_divide_series(
+    numerator: pd.Series,
+    denominator: pd.Series,
+) -> pd.Series:
+    """Divide two numeric series safely."""
+    denominator = denominator.replace(
+        0,
+        np.nan,
+    )
+
+    result = numerator / denominator
+
+    return result.replace(
+        [
+            np.inf,
+            -np.inf,
+        ],
+        np.nan,
+    )
+
+
+def add_missing_pitcher_rates(
+    logs: pd.DataFrame,
+) -> pd.DataFrame:
+    """Calculate pitcher rate columns when older files lack them."""
+    enriched = logs.copy()
+
+    innings_decimal = (
+        enriched["outs_recorded"]
+        / 3.0
+    )
+
+    enriched["whip"] = (
+        enriched["whip"]
+        .fillna(
+            safe_divide_series(
+                enriched["walks"]
+                + enriched["hits"],
+                innings_decimal,
+            )
+        )
+    )
+
+    enriched["strikeout_rate_bf"] = (
+        enriched["strikeout_rate_bf"]
+        .fillna(
+            safe_divide_series(
+                enriched["strikeouts"],
+                enriched["batters_faced"],
+            )
+        )
+    )
+
+    enriched["walk_rate_bf"] = (
+        enriched["walk_rate_bf"]
+        .fillna(
+            safe_divide_series(
+                enriched["walks"],
+                enriched["batters_faced"],
+            )
+        )
+    )
+
+    enriched["k_minus_bb_rate"] = (
+        enriched["k_minus_bb_rate"]
+        .fillna(
+            enriched["strikeout_rate_bf"]
+            - enriched["walk_rate_bf"]
+        )
+    )
+
+    enriched["home_runs_per_9"] = (
+        enriched["home_runs_per_9"]
+        .fillna(
+            safe_divide_series(
+                enriched["home_runs"]
+                * 9.0,
+                innings_decimal,
+            )
+        )
+    )
+
+    enriched["hits_per_9"] = (
+        enriched["hits_per_9"]
+        .fillna(
+            safe_divide_series(
+                enriched["hits"]
+                * 9.0,
+                innings_decimal,
+            )
+        )
+    )
+
+    enriched["walks_per_9"] = (
+        enriched["walks_per_9"]
+        .fillna(
+            safe_divide_series(
+                enriched["walks"]
+                * 9.0,
+                innings_decimal,
+            )
+        )
+    )
+
+    enriched["strikeouts_per_9"] = (
+        enriched["strikeouts_per_9"]
+        .fillna(
+            safe_divide_series(
+                enriched["strikeouts"]
+                * 9.0,
+                innings_decimal,
+            )
+        )
+    )
+
+    enriched["fip_component"] = (
+        enriched["fip_component"]
+        .fillna(
+            safe_divide_series(
+                (
+                    13.0
+                    * enriched["home_runs"]
+                    + 3.0
+                    * enriched["walks"]
+                    - 2.0
+                    * enriched["strikeouts"]
+                ),
+                innings_decimal,
+            )
+        )
+    )
+
+    return enriched
+
+
 def load_pitcher_game_logs() -> pd.DataFrame:
     """Combine and deduplicate all archived pitcher-log snapshots."""
     if not PITCHER_LOG_DIRECTORY.exists():
@@ -558,7 +815,12 @@ def load_pitcher_game_logs() -> pd.DataFrame:
                 f"WARNING: Skipping {path}; required "
                 "game-log columns are missing."
             )
+
             continue
+
+        logs["_source_file"] = str(
+            path
+        )
 
         frames.append(
             logs
@@ -589,34 +851,18 @@ def load_pitcher_game_logs() -> pd.DataFrame:
             errors="coerce",
         )
     else:
-        logs["game_id"] = pd.NA
+        logs["game_id"] = np.nan
 
-    if (
-        "outs_recorded"
-        not in logs.columns
-    ):
+    if "outs_recorded" not in logs.columns:
         if "innings" in logs.columns:
-            logs[
-                "outs_recorded"
-            ] = logs[
-                "innings"
-            ].apply(
-                innings_to_outs
+            logs["outs_recorded"] = (
+                logs["innings"]
+                .apply(innings_to_outs)
             )
         else:
-            logs[
-                "outs_recorded"
-            ] = np.nan
+            logs["outs_recorded"] = np.nan
 
-    numeric_columns = set(
-        PITCHER_STAT_COLUMNS
-        + [
-            "pitcher_id",
-            "game_id",
-        ]
-    )
-
-    for column in numeric_columns:
+    for column in PITCHER_STAT_COLUMNS:
         if column not in logs.columns:
             logs[column] = np.nan
 
@@ -637,16 +883,20 @@ def load_pitcher_game_logs() -> pd.DataFrame:
         .astype("int64")
     )
 
-    # Older snapshots may contain repeated copies of the same
-    # historical pitching performance.
-    logs["_game_identity"] = (
-        logs["game_id"]
-        .astype("string")
-        .fillna(
-            logs[
-                "game_date"
-            ].dt.strftime("%Y-%m-%d")
-        )
+    logs = add_missing_pitcher_rates(
+        logs
+    )
+
+    # Older rows may not have a game ID. In that case, pitcher and game date
+    # still provide a stable identity for one appearance.
+    logs["_game_identity"] = np.where(
+        logs["game_id"].notna(),
+        logs["game_id"].astype(
+            "Int64"
+        ).astype(str),
+        logs["game_date"].dt.strftime(
+            "%Y-%m-%d"
+        ),
     )
 
     logs = logs.drop_duplicates(
@@ -736,14 +986,22 @@ def calculate_profile(
         )
     }
 
-    if prior.empty:
-        for stat in PITCHER_STAT_COLUMNS:
+    for stat in PITCHER_STAT_COLUMNS:
+        season_average_name = (
+            f"opponent_pitcher_season_avg_{stat}"
+        )
+
+        season_std_name = (
+            f"opponent_pitcher_season_std_{stat}"
+        )
+
+        if prior.empty:
             features[
-                f"opponent_pitcher_season_avg_{stat}"
+                season_average_name
             ] = float("nan")
 
             features[
-                f"opponent_pitcher_season_std_{stat}"
+                season_std_name
             ] = float("nan")
 
             for window in ROLLING_WINDOWS:
@@ -751,37 +1009,25 @@ def calculate_profile(
                     f"opponent_pitcher_last{window}_avg_{stat}"
                 ] = float("nan")
 
-        return features
-
-    prior = prior.sort_values(
-        "game_date"
-    )
-
-    for stat in PITCHER_STAT_COLUMNS:
-        if stat not in prior.columns:
             continue
 
         features[
-            f"opponent_pitcher_season_avg_{stat}"
+            season_average_name
         ] = safe_mean(
             prior[stat]
         )
 
         features[
-            f"opponent_pitcher_season_std_{stat}"
+            season_std_name
         ] = safe_std(
             prior[stat]
         )
 
         for window in ROLLING_WINDOWS:
-            recent = prior.tail(
-                window
-            )
-
             features[
                 f"opponent_pitcher_last{window}_avg_{stat}"
             ] = safe_mean(
-                recent[stat]
+                prior.tail(window)[stat]
             )
 
     return features
@@ -791,22 +1037,25 @@ def add_pitcher_profiles(
     matchups: pd.DataFrame,
     pitcher_logs: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Calculate one pitcher profile per unique hitter matchup."""
+    """Calculate one prior-only pitcher profile per unique matchup."""
     result = matchups.copy()
 
-    valid_matchups = result.dropna(
-        subset=[
-            "date",
-            "game_id",
-            "opponent_pitcher_id",
+    valid_matchups = (
+        result.dropna(
+            subset=[
+                "date",
+                "game_id",
+                "opponent_pitcher_id",
+            ]
+        )[
+            [
+                "date",
+                "game_id",
+                "opponent_pitcher_id",
+            ]
         ]
-    )[
-        [
-            "date",
-            "game_id",
-            "opponent_pitcher_id",
-        ]
-    ].drop_duplicates()
+        .drop_duplicates()
+    )
 
     if valid_matchups.empty:
         print(
@@ -817,10 +1066,43 @@ def add_pitcher_profiles(
             "opponent_pitcher_match_available"
         ] = 0
 
+        result[
+            "opponent_pitcher_history_available"
+        ] = 0
+
+        result[
+            "opponent_pitcher_history_games"
+        ] = 0.0
+
+        return result
+
+    if pitcher_logs.empty:
+        print(
+            "WARNING: No pitcher game logs were available."
+        )
+
+        result[
+            "opponent_pitcher_match_available"
+        ] = (
+            result[
+                "opponent_pitcher_id"
+            ].notna()
+        ).astype(int)
+
+        result[
+            "opponent_pitcher_history_available"
+        ] = 0
+
+        result[
+            "opponent_pitcher_history_games"
+        ] = 0.0
+
         return result
 
     pitcher_log_groups = {
-        int(pitcher_id): group.copy()
+        int(pitcher_id): group.sort_values(
+            "game_date"
+        ).copy()
         for pitcher_id, group
         in pitcher_logs.groupby(
             "pitcher_id",
@@ -832,11 +1114,11 @@ def add_pitcher_profiles(
         dict[str, Any]
     ] = []
 
-    total = len(
+    total_matchups = len(
         valid_matchups
     )
 
-    for count, matchup in enumerate(
+    for position, matchup in enumerate(
         valid_matchups.itertuples(
             index=False
         ),
@@ -846,13 +1128,11 @@ def add_pitcher_profiles(
             matchup.opponent_pitcher_id
         )
 
-        pitcher_history = (
-            pitcher_log_groups.get(
-                pitcher_id,
-                pd.DataFrame(
-                    columns=pitcher_logs.columns
-                ),
-            )
+        pitcher_history = pitcher_log_groups.get(
+            pitcher_id,
+            pd.DataFrame(
+                columns=pitcher_logs.columns
+            ),
         )
 
         profile = calculate_profile(
@@ -864,7 +1144,9 @@ def add_pitcher_profiles(
 
         profile_rows.append(
             {
-                "date": matchup.date,
+                "date": pd.Timestamp(
+                    matchup.date
+                ),
                 "game_id": int(
                     matchup.game_id
                 ),
@@ -875,10 +1157,10 @@ def add_pitcher_profiles(
             }
         )
 
-        if count % 100 == 0:
+        if position % 100 == 0:
             print(
-                f"Built {count:,} of "
-                f"{total:,} pitcher matchup profiles."
+                f"Built {position:,} of "
+                f"{total_matchups:,} pitcher profiles."
             )
 
     profiles = pd.DataFrame(
@@ -905,16 +1187,21 @@ def add_pitcher_profiles(
     ).astype(int)
 
     result[
+        "opponent_pitcher_history_games"
+    ] = pd.to_numeric(
+        result.get(
+            "opponent_pitcher_history_games",
+            0,
+        ),
+        errors="coerce",
+    ).fillna(0.0)
+
+    result[
         "opponent_pitcher_history_available"
     ] = (
-        pd.to_numeric(
-            result.get(
-                "opponent_pitcher_history_games",
-                0,
-            ),
-            errors="coerce",
-        )
-        .fillna(0)
+        result[
+            "opponent_pitcher_history_games"
+        ]
         .gt(0)
         .astype(int)
     )
@@ -942,7 +1229,9 @@ def finalize_output(
     ).copy()
 
     numeric_columns = output.select_dtypes(
-        include=[np.number]
+        include=[
+            np.number,
+        ]
     ).columns
 
     output[numeric_columns] = (
@@ -1000,11 +1289,13 @@ def finalize_output(
     feature_columns = [
         column
         for column in output.columns
-        if column.startswith(
-            "opponent_pitcher_"
+        if (
+            column.startswith(
+                "opponent_pitcher_"
+            )
+            and column
+            not in identifier_columns
         )
-        and column
-        not in identifier_columns
     ]
 
     remaining_columns = [
@@ -1084,7 +1375,7 @@ def build_opponent_pitcher_features() -> pd.DataFrame:
     )
 
     print(
-        f"Hitter rows matched to an opposing starter: "
+        "Hitter rows matched to an opposing starter: "
         f"{matched_count:,} of {len(matchups):,}"
     )
 
@@ -1118,32 +1409,78 @@ def build_opponent_pitcher_features() -> pd.DataFrame:
     )
 
     history_available = int(
-        output.get(
-            "opponent_pitcher_history_available",
-            pd.Series(
-                dtype=float
+        pd.to_numeric(
+            output.get(
+                "opponent_pitcher_history_available",
+                pd.Series(
+                    0,
+                    index=output.index,
+                    dtype=float,
+                ),
             ),
+            errors="coerce",
         )
         .fillna(0)
         .sum()
     )
 
+    feature_columns = [
+        column
+        for column in output.columns
+        if column.startswith(
+            "opponent_pitcher_"
+        )
+    ]
+
+    populated_feature_columns = [
+        column
+        for column in feature_columns
+        if (
+            column
+            not in {
+                "opponent_pitcher_name",
+            }
+            and pd.to_numeric(
+                output[column],
+                errors="coerce",
+            )
+            .notna()
+            .any()
+        )
+    ]
+
     print("\n" + "=" * 72)
     print("OPPONENT-PITCHER FEATURES COMPLETE")
     print("=" * 72)
+
     print(
-        f"Output rows: {len(output):,}"
+        f"Output rows: "
+        f"{len(output):,}"
     )
+
     print(
         f"Starter matchup coverage: "
         f"{match_rate:.1%}"
     )
+
     print(
         "Rows with pitcher history available: "
         f"{history_available:,}"
     )
+
     print(
-        f"Saved to: {OUTPUT_PATH}"
+        "Opponent-pitcher columns created: "
+        f"{len(feature_columns):,}"
+    )
+
+    print(
+        "Populated opponent-pitcher columns: "
+        f"{len(populated_feature_columns):,}"
+    )
+
+    print(
+        f"Saved to: "
+        f"{OUTPUT_PATH}"
     )
 
     preview_columns = [
@@ -1168,17 +1505,24 @@ def build_opponent_pitcher_features() -> pd.DataFrame:
     ]
 
     if preview_columns:
+        preview = output[
+            preview_columns
+        ].copy()
+
+        if (
+            "opponent_pitcher_name"
+            in preview.columns
+        ):
+            preview = preview.dropna(
+                subset=[
+                    "opponent_pitcher_name",
+                ]
+            )
+
         print("\nPreview:")
 
         print(
-            output[
-                preview_columns
-            ]
-            .dropna(
-                subset=[
-                    "opponent_pitcher_name"
-                ]
-            )
+            preview
             .head(30)
             .to_string(index=False)
         )
