@@ -1,7 +1,7 @@
 market,selected_model,feature_count,training_rows,test_rows,validation_split_date,mae,rmse,median_absolute_error,p90_absolute_error,selection_score,baseline_last5_mae,model_vs_baseline_mae,residual_count,validation_fit_seconds,production_fit_seconds,market_total_seconds,model_path,xgboost_mae,xgboost_selection_score,extra_trees_mae,extra_trees_selection_score
-hits,extra_trees,547,22458,5296,2026-06-21,0.6834,0.8509,0.7066,1.1722,0.8006,0.7461,0.0627,5296,34.67,47.35,82.98,models/hitters/hits_model.pkl,0.6837,0.8022,0.6834,0.8006
-total_bases,extra_trees,547,22458,5296,2026-06-21,1.3537,1.7595,1.1783,2.5723,1.6109,1.4341,0.0804,5296,35.78,47.64,84.37,models/hitters/total_bases_model.pkl,1.3523,1.6111,1.3537,1.6109
-runs,xgboost,547,22458,5296,2026-06-21,0.5728,0.6753,0.4901,0.6799,0.6408,0.5831,0.0103,5296,34.81,2.42,37.98,models/hitters/runs_model.pkl,0.5728,0.6408,0.5749,0.6431
-rbi,extra_trees,547,22458,5296,2026-06-21,0.6293,0.8474,0.4834,1.3676,0.766,0.6337,0.0044,5296,35.41,45.72,82.03,models/hitters/rbi_model.pkl,0.6266,0.7672,0.6293,0.766
-hits_runs_rbis,xgboost,547,22458,5296,2026-06-21,1.515,1.9445,1.3504,2.6855,1.7836,1.6317,0.1167,5296,36.27,2.4,39.37,models/hitters/hits_runs_rbis_model.pkl,1.515,1.7836,1.5218,1.7876
-fantasy_score,xgboost,547,22458,5296,2026-06-21,5.5636,7.1889,4.8574,10.3131,6.5949,5.9429,0.3793,5296,36.56,2.43,39.7,models/hitters/fantasy_score_model.pkl,5.5636,6.5949,5.564,6.6022
+hits,extra_trees,547,22458,5296,2026-06-21,0.6834,0.8509,0.7066,1.1722,0.8006,0.7461,0.0627,5296,62.89,80.71,144.47,models/hitters/hits_model.pkl,0.6837,0.8022,0.6834,0.8006
+total_bases,extra_trees,547,22458,5296,2026-06-21,1.3537,1.7595,1.1783,2.5723,1.6109,1.4341,0.0804,5296,64.45,82.33,147.69,models/hitters/total_bases_model.pkl,1.3523,1.6111,1.3537,1.6109
+runs,xgboost,547,22458,5296,2026-06-21,0.5728,0.6753,0.4901,0.6799,0.6408,0.5831,0.0103,5296,62.41,2.62,65.7,models/hitters/runs_model.pkl,0.5728,0.6408,0.5749,0.6431
+rbi,extra_trees,547,22458,5296,2026-06-21,0.6293,0.8474,0.4834,1.3676,0.766,0.6337,0.0044,5296,62.14,79.83,142.79,models/hitters/rbi_model.pkl,0.6266,0.7672,0.6293,0.766
+hits_runs_rbis,xgboost,547,22458,5296,2026-06-21,1.515,1.9445,1.3504,2.6855,1.7836,1.6317,0.1167,5296,63.15,2.67,66.43,models/hitters/hits_runs_rbis_model.pkl,1.515,1.7836,1.5218,1.7876
+fantasy_score,xgboost,547,22458,5296,2026-06-21,5.5636,7.1889,4.8574,10.3131,6.5949,5.9429,0.3793,5296,64.34,2.89,67.9,models/hitters/fantasy_score_model.pkl,5.5636,6.5949,5.564,6.6022
