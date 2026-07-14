@@ -1,0 +1,3 @@
+date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_id,pitcher_name,opposing_pitcher_id,opposing_pitcher_name,side,is_home,home_team,away_team
+2026-07-14,823443,Pre-Game,P,2681,Citizens Bank Park,American League All-Stars,National League All-Stars,656302,Dylan Cease,650911,Cristopher Sánchez,away,0,National League All-Stars,American League All-Stars
+2026-07-14,823443,Pre-Game,P,2681,Citizens Bank Park,National League All-Stars,American League All-Stars,650911,Cristopher Sánchez,656302,Dylan Cease,home,1,National League All-Stars,American League All-Stars

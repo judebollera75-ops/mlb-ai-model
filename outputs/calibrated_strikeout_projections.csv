@@ -1,31 +1,3 @@
 pitcher_name,team,game_id,date,raw_projected_ks,calibrated_projected_ks,projected_ks_lower_80,projected_ks_upper_80,projected_ks_residual_std,calibration_method,calibration_status,calibration_sample_size,validation_mae,validation_rmse,calibration_intercept,calibration_slope,side,games_started,strikeouts,season_k_per_start,avg_k,projection_source,projection_confidence
-Ian Seymour,Tampa Bay Rays,822951,2026-07-13,8.51,8.51,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,6.0,75.0,12.5,6.8,RECENT_AND_SEASON,MEDIUM
-Zack Wheeler,Philadelphia Phillies,824250,2026-07-13,8.46,8.46,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,15.0,108.0,7.2,9.0,RECENT_AND_SEASON,HIGH
-Tarik Skubal,Detroit Tigers,824250,2026-07-13,7.514,7.514,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,13.0,89.0,6.846153846153846,7.8,RECENT_AND_SEASON,HIGH
-Taj Bradley,Minnesota Twins,823681,2026-07-13,7.427,7.427,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,18.0,118.0,6.555555555555555,7.8,RECENT_AND_SEASON,HIGH
-Paul Skenes,Pittsburgh Pirates,823358,2026-07-13,6.71,6.71,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,130.0,6.5,6.8,RECENT_AND_SEASON,HIGH
-MacKenzie Gore,Texas Rangers,822876,2026-07-13,6.625,6.625,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,115.0,5.75,7.0,RECENT_AND_SEASON,HIGH
-Joey Cantillo,Cleveland Guardians,823842,2026-07-13,6.195,6.195,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,20.0,105.0,5.25,6.6,RECENT_AND_SEASON,HIGH
-Kevin Gausman,Toronto Blue Jays,823274,2026-07-13,5.8,5.8,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,20.0,116.0,5.8,5.8,RECENT_AND_SEASON,HIGH
-Cade Cavalli,Washington Nationals,822708,2026-07-13,5.71,5.71,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,110.0,5.5,5.8,RECENT_AND_SEASON,HIGH
-José Soriano,Los Angeles Angels,823681,2026-07-13,5.645,5.645,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,20.0,115.0,5.75,5.6,RECENT_AND_SEASON,HIGH
-Payton Tolle,Boston Red Sox,823602,2026-07-13,5.38,5.38,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,15.0,87.0,5.8,5.2,RECENT_AND_SEASON,HIGH
-Robert Gasser,Milwaukee Brewers,823358,2026-07-13,5.353,5.353,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,9.0,43.0,4.777777777777778,5.6,RECENT_AND_SEASON,MEDIUM
-Andrew Abbott,Cincinnati Reds,824491,2026-07-13,5.18,5.18,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,84.0,4.2,5.6,RECENT_AND_SEASON,HIGH
-Emmet Sheehan,Los Angeles Dodgers,823925,2026-07-13,5.001,5.001,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,17.0,93.0,5.470588235294118,4.8,RECENT_AND_SEASON,HIGH
-Zach Thornton,New York Mets,823602,2026-07-13,5.0,5.0,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,3.0,15.0,5.0,5.0,RECENT_AND_SEASON,LOW
-Dustin May,St. Louis Cardinals,823029,2026-07-13,4.983,4.983,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,18.0,89.0,4.944444444444445,5.0,RECENT_AND_SEASON,HIGH
-Shane Baz,Baltimore Orioles,824814,2026-07-13,4.923,4.923,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,19.0,99.0,5.2105263157894735,4.8,RECENT_AND_SEASON,HIGH
-Matthew Boyd,Chicago Cubs,824491,2026-07-13,4.647,4.647,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,9.0,47.0,5.222222222222222,4.4,RECENT_AND_SEASON,MEDIUM
-Emerson Hancock,Seattle Mariners,822951,2026-07-13,4.647,4.647,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,94.0,5.222222222222222,4.4,RECENT_AND_SEASON,HIGH
-J.T. Ginn,Athletics,824574,2026-07-13,4.49,4.49,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,93.0,5.166666666666667,4.2,RECENT_AND_SEASON,HIGH
-Will Warren,New York Yankees,822708,2026-07-13,4.176,4.176,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,19.0,96.0,5.052631578947368,3.8,RECENT_AND_SEASON,HIGH
-Noah Schultz,Chicago White Sox,824574,2026-07-13,4.082,4.082,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,11.0,47.0,4.2727272727272725,4.0,RECENT_AND_SEASON,HIGH
-Tyler Phillips,Miami Marlins,823842,2026-07-13,3.827,3.827,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,9.0,56.0,6.222222222222222,2.8,RECENT_AND_SEASON,MEDIUM
-Seth Lugo,Kansas City Royals,824814,2026-07-13,3.598,3.598,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,19.0,86.0,4.526315789473684,3.2,RECENT_AND_SEASON,HIGH
-Michael Lorenzen,Colorado Rockies,823199,2026-07-13,3.475,3.475,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,20.0,73.0,3.65,3.4,RECENT_AND_SEASON,HIGH
-Trevor McDonald,San Francisco Giants,823199,2026-07-13,3.066,3.066,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,13.0,54.0,4.153846153846154,2.6,RECENT_AND_SEASON,HIGH
-Germán Márquez,San Diego Padres,823274,2026-07-13,3.01,3.01,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,8.0,28.0,3.5,2.8,RECENT_AND_SEASON,MEDIUM
-Mitch Bratt,Arizona Diamondbacks,823925,2026-07-13,2.55,2.55,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,2.0,3.0,1.5,3.0,RECENT_AND_SEASON,LOW
-Cristian Javier,Houston Astros,822876,2026-07-13,2.02,2.02,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,4.0,12.0,3.0,1.6,RECENT_AND_SEASON,LOW
-Danny Young,Atlanta Braves,823029,2026-07-13,1.725,1.725,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,1.0,4.0,4.0,0.75,RECENT_AND_SEASON,LOW
+Dylan Cease,American League All-Stars,823443,2026-07-14,8.912,8.912,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,17.0,148.0,8.705882352941176,9.0,RECENT_AND_SEASON,HIGH
+Cristopher Sánchez,National League All-Stars,823443,2026-07-14,6.08,6.08,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,144.0,7.2,5.6,RECENT_AND_SEASON,HIGH
