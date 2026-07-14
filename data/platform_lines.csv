@@ -1,223 +1,157 @@
 event_id,event_date,commence_time,platform,platform_key,player,market,market_key,direction,line,sportsbook_odds,home_team,away_team,fetched_at,source,status
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Brayan Rocchio,hitter_hits_runs_rbis,player_hits_runs_rbis,Over,1.5,-105,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Brayan Rocchio,hitter_hits_runs_rbis,player_hits_runs_rbis,Under,1.5,-130,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Brayan Rocchio,hitter_rbis,player_rbis,Over,0.5,223,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Brayan Rocchio,hitter_rbis,player_rbis,Under,0.5,-358,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Brayan Rocchio,hitter_runs,player_runs,Over,0.5,127,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Brayan Rocchio,hitter_runs,player_runs,Under,0.5,-189,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Chase DeLauter,hitter_hits,player_hits,Over,0.5,-239,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Chase DeLauter,hitter_hits,player_hits,Under,0.5,171,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Chase DeLauter,hitter_hits_runs_rbis,player_hits_runs_rbis,Over,1.5,-124,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Chase DeLauter,hitter_hits_runs_rbis,player_hits_runs_rbis,Under,1.5,-110,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Chase DeLauter,hitter_rbis,player_rbis,Over,0.5,141,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Chase DeLauter,hitter_rbis,player_rbis,Under,0.5,-223,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Chase DeLauter,hitter_runs,player_runs,Over,0.5,112,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Chase DeLauter,hitter_runs,player_runs,Under,0.5,-162,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Chase DeLauter,hitter_total_bases,player_total_bases,Over,1.5,117,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Chase DeLauter,hitter_total_bases,player_total_bases,Under,1.5,-159,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Gabriel Arias,hitter_hits,player_hits,Over,0.5,-139,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Gabriel Arias,hitter_hits,player_hits,Under,0.5,106,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Gabriel Arias,hitter_hits_runs_rbis,player_hits_runs_rbis,Over,0.5,-179,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Gabriel Arias,hitter_hits_runs_rbis,player_hits_runs_rbis,Under,0.5,133,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Gabriel Arias,hitter_runs,player_runs,Over,0.5,175,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Gabriel Arias,hitter_runs,player_runs,Under,0.5,-271,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kahlil Watson,hitter_hits,player_hits,Over,0.5,-137,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kahlil Watson,hitter_hits,player_hits,Under,0.5,101,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kahlil Watson,hitter_hits_runs_rbis,player_hits_runs_rbis,Over,0.5,-176,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kahlil Watson,hitter_hits_runs_rbis,player_hits_runs_rbis,Under,0.5,129,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kahlil Watson,hitter_rbis,player_rbis,Over,0.5,240,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kahlil Watson,hitter_rbis,player_rbis,Under,0.5,-400,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kahlil Watson,hitter_runs,player_runs,Over,0.5,179,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kahlil Watson,hitter_runs,player_runs,Under,0.5,-286,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kyle Manzardo,hitter_hits,player_hits,Over,0.5,-141,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kyle Manzardo,hitter_hits,player_hits,Under,0.5,104,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kyle Manzardo,hitter_hits_runs_rbis,player_hits_runs_rbis,Over,1.5,124,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kyle Manzardo,hitter_hits_runs_rbis,player_hits_runs_rbis,Under,1.5,-170,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kyle Manzardo,hitter_rbis,player_rbis,Over,0.5,187,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kyle Manzardo,hitter_rbis,player_rbis,Under,0.5,-295,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kyle Manzardo,hitter_runs,player_runs,Over,0.5,156,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Kyle Manzardo,hitter_runs,player_runs,Under,0.5,-228,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Patrick Bailey,hitter_hits,player_hits,Over,0.5,-114,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Patrick Bailey,hitter_hits,player_hits,Under,0.5,-120,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Patrick Bailey,hitter_hits_runs_rbis,player_hits_runs_rbis,Over,0.5,-154,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Patrick Bailey,hitter_hits_runs_rbis,player_hits_runs_rbis,Under,0.5,113,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Patrick Bailey,hitter_rbis,player_rbis,Over,0.5,279,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Patrick Bailey,hitter_rbis,player_rbis,Under,0.5,-477,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Patrick Bailey,hitter_runs,player_runs,Over,0.5,197,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Patrick Bailey,hitter_runs,player_runs,Under,0.5,-313,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Petey Halpin,hitter_hits,player_hits,Over,0.5,-132,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Petey Halpin,hitter_hits,player_hits,Under,0.5,-104,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Petey Halpin,hitter_hits_runs_rbis,player_hits_runs_rbis,Over,0.5,-167,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Petey Halpin,hitter_hits_runs_rbis,player_hits_runs_rbis,Under,0.5,123,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Petey Halpin,hitter_runs,player_runs,Over,0.5,199,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Petey Halpin,hitter_runs,player_runs,Under,0.5,-304,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Steven Kwan,hitter_hits,player_hits,Over,0.5,-152,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Steven Kwan,hitter_hits,player_hits,Under,0.5,112,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Steven Kwan,hitter_hits_runs_rbis,player_hits_runs_rbis,Over,1.5,138,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Steven Kwan,hitter_hits_runs_rbis,player_hits_runs_rbis,Under,1.5,-189,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Steven Kwan,hitter_rbis,player_rbis,Over,0.5,307,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Steven Kwan,hitter_rbis,player_rbis,Under,0.5,-527,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Steven Kwan,hitter_runs,player_runs,Over,0.5,186,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Steven Kwan,hitter_runs,player_runs,Under,0.5,-286,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Travis Bazzana,hitter_hits,player_hits,Over,0.5,-179,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Travis Bazzana,hitter_hits,player_hits,Under,0.5,133,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Travis Bazzana,hitter_hits_runs_rbis,player_hits_runs_rbis,Over,1.5,-102,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Travis Bazzana,hitter_hits_runs_rbis,player_hits_runs_rbis,Under,1.5,-134,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Travis Bazzana,hitter_rbis,player_rbis,Over,0.5,227,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Travis Bazzana,hitter_rbis,player_rbis,Under,0.5,-371,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Travis Bazzana,hitter_runs,player_runs,Over,0.5,108,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-2823931f8425a7fb,2026-07-14,2026-07-14T19:00:00Z,Underdog,underdog,Travis Bazzana,hitter_runs,player_runs,Under,0.5,-159,Cleveland Guardians,Pittsburgh Pirates,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cristopher Sánchez,pitcher_strikeouts,player_strikeouts,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cristopher Sánchez,pitcher_strikeouts,player_strikeouts,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Dylan Cease,pitcher_strikeouts,player_strikeouts,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Dylan Cease,pitcher_strikeouts,player_strikeouts,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Andy Pages,hitter_hits,player_hits,Over,0.5,125,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Andy Pages,hitter_runs,player_runs,Over,0.5,230,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ben Rice,hitter_hits,player_hits,Over,0.5,125,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ben Rice,hitter_runs,player_runs,Over,0.5,200,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Bobby Witt,hitter_hits,player_hits,Over,0.5,110,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Bobby Witt,hitter_runs,player_runs,Over,0.5,220,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Brandon Marsh,hitter_hits,player_hits,Over,0.5,135,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Brandon Marsh,hitter_runs,player_runs,Over,0.5,230,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,C.J. Abrams,hitter_hits,player_hits,Over,0.5,120,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,C.J. Abrams,hitter_runs,player_runs,Over,0.5,210,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Cody Bellinger,hitter_hits,player_hits,Over,0.5,120,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Cody Bellinger,hitter_runs,player_runs,Over,0.5,240,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Drake Baldwin,hitter_hits,player_hits,Over,0.5,120,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Drake Baldwin,hitter_runs,player_runs,Over,0.5,220,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ernie Clement,hitter_hits,player_hits,Over,0.5,135,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ernie Clement,hitter_runs,player_runs,Over,0.5,280,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Freddie Freeman,hitter_hits,player_hits,Over,0.5,130,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Freddie Freeman,hitter_runs,player_runs,Over,0.5,240,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Juan Soto,hitter_hits,player_hits,Over,0.5,130,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Juan Soto,hitter_runs,player_runs,Over,0.5,145,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Junior Caminero,hitter_hits,player_hits,Over,0.5,120,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Junior Caminero,hitter_runs,player_runs,Over,0.5,190,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Kyle Schwarber,hitter_hits,player_hits,Over,0.5,115,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Max Muncy,hitter_hits,player_hits,Over,0.5,165,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Mike Trout,hitter_hits,player_hits,Over,0.5,160,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Mike Trout,hitter_runs,player_runs,Over,0.5,185,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ozzie Albies,hitter_hits,player_hits,Over,0.5,115,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ozzie Albies,hitter_runs,player_runs,Over,0.5,230,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Riley Greene,hitter_hits,player_hits,Over,0.5,130,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Riley Greene,hitter_runs,player_runs,Over,0.5,240,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Shea Langeliers,hitter_hits,player_hits,Over,0.5,105,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Shea Langeliers,hitter_runs,player_runs,Over,0.5,210,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Yordan Alvarez,hitter_hits,player_hits,Over,0.5,120,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Yordan Alvarez,hitter_runs,player_runs,Over,0.5,180,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,AL: Team,hitter_runs,player_runs,Over,3.5,-160,National League All Stars,American League All Stars,2026-07-14T17:41:27Z,parlay_api,open
-69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,AL: Team,hitter_runs,player_runs,Under,3.5,-510,National League All Stars,American League All Stars,2026-07-14T17:41:27Z,parlay_api,open
-69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,NL: Team,hitter_runs,player_runs,Over,4.5,-160,National League All Stars,American League All Stars,2026-07-14T17:41:27Z,parlay_api,open
-69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,NL: Team,hitter_runs,player_runs,Under,4.5,-510,National League All Stars,American League All Stars,2026-07-14T17:41:27Z,parlay_api,open
-69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,Total,hitter_runs,player_runs,Over,8.5,980,National League All Stars,American League All Stars,2026-07-14T17:41:27Z,parlay_api,open
-69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,Total,hitter_runs,player_runs,Under,8.5,1750,National League All Stars,American League All Stars,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:01:00Z,FanDuel,fanduel,National League,hitter_runs,player_runs,Over,8.5,100,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
-4fc97005be92a4ea,2026-07-14,2026-07-15T00:01:00Z,FanDuel,fanduel,National League,hitter_runs,player_runs,Under,8.5,-122,National League,American League,2026-07-14T17:41:27Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Andy Pages,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ben Rice,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Bobby Witt Jr.,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Brandon Marsh,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,CJ Abrams,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cody Bellinger,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cristopher Sánchez,pitcher_strikeouts,player_strikeouts,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Cristopher Sánchez,pitcher_strikeouts,player_strikeouts,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Drake Baldwin,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Dylan Cease,pitcher_strikeouts,player_strikeouts,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Dylan Cease,pitcher_strikeouts,player_strikeouts,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ernie Clement,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Freddie Freeman,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Juan Soto,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Junior Caminero,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Kyle Schwarber,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Max Muncy,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Mike Trout,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Ozzie Albies,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Riley Greene,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Shea Langeliers,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_hits,player_hits,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_hits,player_hits,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_runs,player_runs,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_runs,player_runs,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_total_bases,player_total_bases,Over,0.5,100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+43ecdba993f30106,2026-07-14,2026-07-15T00:00:00Z,Betr,betr,Yordan Alvarez,hitter_total_bases,player_total_bases,Under,0.5,-100,NL,AL,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Andy Pages,hitter_hits,player_hits,Over,0.5,125,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Andy Pages,hitter_runs,player_runs,Over,0.5,210,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ben Rice,hitter_hits,player_hits,Over,0.5,130,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ben Rice,hitter_runs,player_runs,Over,0.5,200,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Bobby Witt,hitter_hits,player_hits,Over,0.5,110,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Bobby Witt,hitter_runs,player_runs,Over,0.5,220,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Brandon Marsh,hitter_hits,player_hits,Over,0.5,125,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Brandon Marsh,hitter_runs,player_runs,Over,0.5,210,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,C.J. Abrams,hitter_hits,player_hits,Over,0.5,110,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,C.J. Abrams,hitter_runs,player_runs,Over,0.5,200,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Cody Bellinger,hitter_hits,player_hits,Over,0.5,120,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Cody Bellinger,hitter_runs,player_runs,Over,0.5,240,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Drake Baldwin,hitter_hits,player_hits,Over,0.5,120,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Drake Baldwin,hitter_runs,player_runs,Over,0.5,195,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ernie Clement,hitter_hits,player_hits,Over,0.5,130,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ernie Clement,hitter_runs,player_runs,Over,0.5,280,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Freddie Freeman,hitter_hits,player_hits,Over,0.5,125,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Freddie Freeman,hitter_runs,player_runs,Over,0.5,220,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Juan Soto,hitter_hits,player_hits,Over,0.5,125,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Juan Soto,hitter_runs,player_runs,Over,0.5,140,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Junior Caminero,hitter_hits,player_hits,Over,0.5,115,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Junior Caminero,hitter_runs,player_runs,Over,0.5,190,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Kyle Schwarber,hitter_hits,player_hits,Over,0.5,110,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Kyle Schwarber,hitter_runs,player_runs,Over,0.5,110,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Max Muncy,hitter_hits,player_hits,Over,0.5,160,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Max Muncy,hitter_runs,player_runs,Over,0.5,195,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Mike Trout,hitter_hits,player_hits,Over,0.5,135,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Mike Trout,hitter_runs,player_runs,Over,0.5,165,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ozzie Albies,hitter_hits,player_hits,Over,0.5,115,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Ozzie Albies,hitter_runs,player_runs,Over,0.5,200,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Riley Greene,hitter_hits,player_hits,Over,0.5,130,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Riley Greene,hitter_runs,player_runs,Over,0.5,230,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Shea Langeliers,hitter_hits,player_hits,Over,0.5,105,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Shea Langeliers,hitter_runs,player_runs,Over,0.5,200,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Yordan Alvarez,hitter_hits,player_hits,Over,0.5,120,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:00:00Z,FanDuel,fanduel,Yordan Alvarez,hitter_runs,player_runs,Over,0.5,175,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,AL: Team,hitter_runs,player_runs,Over,3.5,-160,National League All Stars,American League All Stars,2026-07-14T21:35:03Z,parlay_api,open
+69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,AL: Team,hitter_runs,player_runs,Under,3.5,-510,National League All Stars,American League All Stars,2026-07-14T21:35:03Z,parlay_api,open
+69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,NL: Team,hitter_runs,player_runs,Over,4.5,-160,National League All Stars,American League All Stars,2026-07-14T21:35:03Z,parlay_api,open
+69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,NL: Team,hitter_runs,player_runs,Under,4.5,-510,National League All Stars,American League All Stars,2026-07-14T21:35:03Z,parlay_api,open
+69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,Total,hitter_runs,player_runs,Over,8.5,980,National League All Stars,American League All Stars,2026-07-14T21:35:03Z,parlay_api,open
+69f4c5e8da2e9c04,2026-07-14,2026-07-15T00:00:00Z,Prophetx,prophetx,Total,hitter_runs,player_runs,Under,8.5,1750,National League All Stars,American League All Stars,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:01:00Z,FanDuel,fanduel,National League,hitter_runs,player_runs,Over,8.5,-110,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
+4fc97005be92a4ea,2026-07-14,2026-07-15T00:01:00Z,FanDuel,fanduel,National League,hitter_runs,player_runs,Under,8.5,-110,National League,American League,2026-07-14T21:35:03Z,parlay_api,open
