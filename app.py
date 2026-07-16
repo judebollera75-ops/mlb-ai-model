@@ -909,7 +909,8 @@ else:
             "No props match the selected filters."
         )
 
-        max_props = 0
+        filtered = filtered.iloc[0:0]
+
     else:
         max_props = st.slider(
             "Number of props to display",
@@ -922,13 +923,15 @@ else:
                 10,
                 available_props,
             ),
+            step=1,
+            key="props_slider",
         )
 
         st.caption(
             f"{available_props} props match the selected filters."
         )
 
-    filtered = filtered.head(max_props)
+        filtered = filtered.head(max_props)
 
     for rank, (_, row) in enumerate(
         filtered.iterrows(),
