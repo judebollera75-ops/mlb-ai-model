@@ -956,6 +956,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,824494,547180,Bryce Harper,Philadelphia Phillies,Cincinnati Reds,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-10,824252,547180,Bryce Harper,Philadelphia Phillies,Detroit Tigers,4,3,0,0,0,0,0,1,0,1,0,0,0,0
 2026-07-11,824249,547180,Bryce Harper,Philadelphia Phillies,Detroit Tigers,4,4,2,1,0,0,3,0,0,0,0,0,1,0
+2026-07-12,824250,547180,Bryce Harper,Philadelphia Phillies,Detroit Tigers,5,5,1,0,0,0,1,1,0,0,1,0,0,0
 2026-04-19,823556,553869,Elias Díaz,Texas Rangers,New York Yankees,3,3,2,1,0,0,3,0,0,0,0,0,0,0
 2026-04-20,824125,553869,Elias Díaz,Texas Rangers,Baltimore Orioles,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-24,824124,553869,Elias Díaz,Texas Rangers,Los Angeles Angels,4,3,1,1,0,0,2,1,2,1,1,0,0,0
@@ -1578,6 +1579,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,824496,592663,J.T. Realmuto,Philadelphia Phillies,Cincinnati Reds,4,3,1,0,0,1,4,1,1,1,1,0,0,0
 2026-07-09,824494,592663,J.T. Realmuto,Philadelphia Phillies,Cincinnati Reds,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-11,824249,592663,J.T. Realmuto,Philadelphia Phillies,Detroit Tigers,4,4,1,1,0,0,2,1,2,0,1,0,0,0
+2026-07-12,824250,592663,J.T. Realmuto,Philadelphia Phillies,Detroit Tigers,4,3,2,1,0,0,3,2,3,0,0,0,0,1
 2026-03-26,823812,592885,Christian Yelich,Milwaukee Brewers,Chicago White Sox,5,4,2,0,0,0,2,2,1,1,0,0,0,0
 2026-03-28,823811,592885,Christian Yelich,Milwaukee Brewers,Chicago White Sox,5,5,3,0,0,0,3,1,1,0,2,1,0,0
 2026-03-29,823810,592885,Christian Yelich,Milwaukee Brewers,Chicago White Sox,1,1,1,0,0,1,4,1,3,0,0,0,0,0
@@ -1747,6 +1749,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,823605,593871,Jorge Polanco,New York Mets,Kansas City Royals,4,4,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-10,823604,593871,Jorge Polanco,New York Mets,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-11,823603,593871,Jorge Polanco,New York Mets,Boston Red Sox,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-12,823602,593871,Jorge Polanco,New York Mets,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-30,823972,595978,Austin Hedges,Cleveland Guardians,Los Angeles Dodgers,4,4,2,1,0,0,3,2,0,0,1,0,0,0
 2026-04-05,824460,595978,Austin Hedges,Cleveland Guardians,Chicago Cubs,4,4,2,1,0,0,3,0,1,0,0,0,0,0
 2026-04-07,824457,595978,Austin Hedges,Cleveland Guardians,Kansas City Royals,3,3,1,0,0,0,1,1,0,0,0,0,0,0
@@ -1832,6 +1835,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,823606,596019,Francisco Lindor,New York Mets,Kansas City Royals,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-10,823604,596019,Francisco Lindor,New York Mets,Boston Red Sox,4,4,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-11,823603,596019,Francisco Lindor,New York Mets,Boston Red Sox,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-12,823602,596019,Francisco Lindor,New York Mets,Boston Red Sox,4,4,2,1,0,1,6,1,2,0,0,0,0,0
 2026-03-29,823810,596142,Gary Sánchez,Milwaukee Brewers,Chicago White Sox,4,4,2,0,0,1,5,1,2,0,2,0,0,0
 2026-03-30,823809,596142,Gary Sánchez,Milwaukee Brewers,Tampa Bay Rays,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-31,823807,596142,Gary Sánchez,Milwaukee Brewers,Tampa Bay Rays,3,1,1,0,0,1,4,2,1,2,0,0,0,0
@@ -2480,6 +2484,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,824494,607208,Trea Turner,Philadelphia Phillies,Cincinnati Reds,4,3,0,0,0,0,0,0,0,1,0,0,0,0
 2026-07-10,824252,607208,Trea Turner,Philadelphia Phillies,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-11,824249,607208,Trea Turner,Philadelphia Phillies,Detroit Tigers,4,2,0,0,0,0,0,0,1,1,1,0,0,0
+2026-07-12,824250,607208,Trea Turner,Philadelphia Phillies,Detroit Tigers,5,4,1,0,0,0,1,0,0,1,1,0,0,0
 2026-03-26,824704,608324,Alex Bregman,Chicago Cubs,Washington Nationals,5,4,1,0,0,0,1,0,0,1,1,0,0,0
 2026-03-28,824701,608324,Alex Bregman,Chicago Cubs,Washington Nationals,5,5,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-29,824700,608324,Alex Bregman,Chicago Cubs,Washington Nationals,4,4,2,0,0,2,8,2,2,0,0,0,0,0
@@ -5727,99 +5732,99 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,823359,656811,Ryan O'Hearn,Pittsburgh Pirates,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-11,823357,656811,Ryan O'Hearn,Pittsburgh Pirates,Milwaukee Brewers,4,3,0,0,0,0,0,0,0,0,3,0,0,1
 2026-07-11,823356,656811,Ryan O'Hearn,Pittsburgh Pirates,Milwaukee Brewers,4,3,0,0,0,0,0,0,0,0,0,0,0,1
-2026-03-26,823486,656941,Kyle Schwarber,National League All-Stars,Texas Rangers,4,4,1,0,0,1,4,1,2,0,1,0,0,0
-2026-03-28,823488,656941,Kyle Schwarber,National League All-Stars,Texas Rangers,5,5,0,0,0,0,0,0,0,0,4,0,0,0
-2026-03-29,823487,656941,Kyle Schwarber,National League All-Stars,Texas Rangers,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-03-30,823484,656941,Kyle Schwarber,National League All-Stars,Washington Nationals,5,3,0,0,0,0,0,0,0,1,2,0,0,1
-2026-03-31,823485,656941,Kyle Schwarber,National League All-Stars,Washington Nationals,4,3,1,0,0,1,4,1,1,1,1,0,0,0
-2026-04-01,823483,656941,Kyle Schwarber,National League All-Stars,Washington Nationals,5,3,1,1,0,0,2,0,1,1,1,0,0,1
-2026-04-03,824377,656941,Kyle Schwarber,National League All-Stars,Colorado Rockies,5,3,1,0,0,1,4,2,1,2,1,0,0,0
-2026-04-04,824378,656941,Kyle Schwarber,National League All-Stars,Colorado Rockies,5,4,1,1,0,0,2,0,1,1,2,0,0,0
-2026-04-05,824379,656941,Kyle Schwarber,National League All-Stars,Colorado Rockies,4,3,0,0,0,0,0,0,0,1,1,0,0,0
-2026-04-06,823237,656941,Kyle Schwarber,National League All-Stars,San Francisco Giants,5,3,0,0,0,0,0,1,0,2,3,0,0,0
-2026-04-07,823235,656941,Kyle Schwarber,National League All-Stars,San Francisco Giants,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-08,823234,656941,Kyle Schwarber,National League All-Stars,San Francisco Giants,4,2,1,0,0,0,1,0,0,2,1,0,0,0
-2026-04-10,823482,656941,Kyle Schwarber,National League All-Stars,Arizona Diamondbacks,4,3,0,0,0,0,0,1,0,1,2,0,0,0
-2026-04-11,823480,656941,Kyle Schwarber,National League All-Stars,Arizona Diamondbacks,4,4,1,0,0,1,4,1,3,0,2,0,0,0
-2026-04-12,823479,656941,Kyle Schwarber,National League All-Stars,Arizona Diamondbacks,4,4,2,1,0,0,3,1,0,0,1,0,0,0
-2026-04-13,823481,656941,Kyle Schwarber,National League All-Stars,Chicago Cubs,5,3,2,0,0,2,8,4,3,1,0,0,0,1
-2026-04-14,823478,656941,Kyle Schwarber,National League All-Stars,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,2,0,0,0
-2026-04-15,823477,656941,Kyle Schwarber,National League All-Stars,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,3,0,0,0
-2026-04-17,823476,656941,Kyle Schwarber,National League All-Stars,Atlanta Braves,5,4,0,0,0,0,0,0,0,0,2,0,0,1
-2026-04-18,823474,656941,Kyle Schwarber,National League All-Stars,Atlanta Braves,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-04-19,823475,656941,Kyle Schwarber,National League All-Stars,Atlanta Braves,5,4,2,1,0,1,6,1,2,1,0,0,0,0
-2026-04-20,824692,656941,Kyle Schwarber,National League All-Stars,Chicago Cubs,5,5,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-21,824690,656941,Kyle Schwarber,National League All-Stars,Chicago Cubs,4,3,1,0,0,1,4,2,1,1,0,0,0,0
-2026-04-22,824688,656941,Kyle Schwarber,National League All-Stars,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-23,824689,656941,Kyle Schwarber,National League All-Stars,Chicago Cubs,5,4,0,0,0,0,0,0,0,1,2,0,0,0
-2026-04-24,824932,656941,Kyle Schwarber,National League All-Stars,Atlanta Braves,5,4,0,0,0,0,0,0,0,1,2,0,0,0
-2026-04-25,824933,656941,Kyle Schwarber,National League All-Stars,Atlanta Braves,5,4,1,0,1,0,3,1,0,1,0,0,0,0
-2026-04-26,824934,656941,Kyle Schwarber,National League All-Stars,Atlanta Braves,4,3,1,0,0,1,4,1,2,1,0,0,0,0
-2026-04-28,823473,656941,Kyle Schwarber,National League All-Stars,San Francisco Giants,5,3,0,0,0,0,0,1,0,2,0,0,0,0
-2026-04-30,823472,656941,Kyle Schwarber,National League All-Stars,San Francisco Giants,4,2,1,0,0,1,4,1,1,2,0,0,0,0
-2026-04-30,823471,656941,Kyle Schwarber,National League All-Stars,San Francisco Giants,5,4,4,2,0,1,9,2,2,1,0,0,0,0
-2026-05-01,823877,656941,Kyle Schwarber,National League All-Stars,Miami Marlins,5,5,0,0,0,0,0,0,0,0,5,0,0,0
-2026-05-02,823876,656941,Kyle Schwarber,National League All-Stars,Miami Marlins,3,3,0,0,0,0,0,0,0,0,3,0,0,0
-2026-05-03,823875,656941,Kyle Schwarber,National League All-Stars,Miami Marlins,5,4,2,0,0,0,2,1,0,1,0,0,0,0
-2026-05-04,823874,656941,Kyle Schwarber,National League All-Stars,Miami Marlins,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-05,823469,656941,Kyle Schwarber,National League All-Stars,Athletics,5,5,0,0,0,0,0,0,0,0,2,0,0,0
-2026-05-06,823470,656941,Kyle Schwarber,National League All-Stars,Athletics,4,3,1,1,0,0,2,1,0,1,1,0,0,0
-2026-05-07,823467,656941,Kyle Schwarber,National League All-Stars,Athletics,4,4,2,0,0,1,5,1,1,0,0,0,0,0
-2026-05-08,823466,656941,Kyle Schwarber,National League All-Stars,Colorado Rockies,6,6,1,0,0,1,4,1,1,0,4,0,0,0
-2026-05-09,823468,656941,Kyle Schwarber,National League All-Stars,Colorado Rockies,5,5,1,0,0,1,4,1,3,0,3,0,0,0
-2026-05-10,823463,656941,Kyle Schwarber,National League All-Stars,Colorado Rockies,4,4,3,0,0,2,9,2,2,0,0,0,0,0
-2026-05-12,824764,656941,Kyle Schwarber,National League All-Stars,Boston Red Sox,4,3,1,0,0,1,4,1,1,1,0,0,0,0
-2026-05-13,824763,656941,Kyle Schwarber,National League All-Stars,Boston Red Sox,4,2,0,0,0,0,0,0,0,2,1,1,0,0
-2026-05-14,824762,656941,Kyle Schwarber,National League All-Stars,Boston Red Sox,5,5,1,0,0,1,4,1,2,0,3,0,0,0
-2026-05-15,823384,656941,Kyle Schwarber,National League All-Stars,Pittsburgh Pirates,6,5,3,0,0,2,9,2,5,1,1,0,0,0
-2026-05-16,823382,656941,Kyle Schwarber,National League All-Stars,Pittsburgh Pirates,5,4,1,1,0,0,2,1,1,1,2,0,0,0
-2026-05-17,823381,656941,Kyle Schwarber,National League All-Stars,Pittsburgh Pirates,5,5,0,0,0,0,0,0,0,0,4,0,0,0
-2026-05-22,823461,656941,Kyle Schwarber,National League All-Stars,Cleveland Guardians,4,4,0,0,0,0,0,0,0,0,4,0,0,0
-2026-05-23,823458,656941,Kyle Schwarber,National League All-Stars,Cleveland Guardians,4,4,0,0,0,0,0,0,0,0,3,0,0,0
-2026-05-24,823459,656941,Kyle Schwarber,National League All-Stars,Cleveland Guardians,4,4,2,1,0,0,3,0,0,0,1,0,0,0
-2026-05-25,823296,656941,Kyle Schwarber,National League All-Stars,San Diego Padres,4,3,2,0,0,1,5,2,1,1,0,0,0,0
-2026-05-26,823294,656941,Kyle Schwarber,National League All-Stars,San Diego Padres,5,5,1,0,0,0,1,0,0,0,0,0,0,0
-2026-05-27,823295,656941,Kyle Schwarber,National League All-Stars,San Diego Padres,4,4,2,0,0,0,2,0,1,0,1,0,0,0
-2026-05-29,823946,656941,Kyle Schwarber,National League All-Stars,Los Angeles Dodgers,4,4,1,0,0,1,4,1,1,0,2,0,0,0
-2026-05-30,823945,656941,Kyle Schwarber,National League All-Stars,Los Angeles Dodgers,4,4,1,0,0,0,1,0,0,0,2,0,0,0
-2026-05-31,823944,656941,Kyle Schwarber,National League All-Stars,Los Angeles Dodgers,5,4,0,0,0,0,0,0,0,1,3,0,0,0
-2026-06-02,823460,656941,Kyle Schwarber,National League All-Stars,San Diego Padres,4,2,0,0,0,0,0,0,0,2,1,0,0,0
-2026-06-03,823456,656941,Kyle Schwarber,National League All-Stars,San Diego Padres,4,3,1,0,0,1,4,1,1,1,2,0,0,0
-2026-06-04,823457,656941,Kyle Schwarber,National League All-Stars,San Diego Padres,5,4,1,0,0,0,1,0,0,1,1,0,0,0
-2026-06-05,823455,656941,Kyle Schwarber,National League All-Stars,Chicago White Sox,5,5,4,0,0,0,4,2,0,0,1,0,0,0
-2026-06-06,823454,656941,Kyle Schwarber,National League All-Stars,Chicago White Sox,5,4,0,0,0,0,0,0,0,1,3,0,0,0
-2026-06-07,823453,656941,Kyle Schwarber,National League All-Stars,Chicago White Sox,5,3,0,0,0,0,0,1,0,2,1,0,0,0
-2026-06-08,822806,656941,Kyle Schwarber,National League All-Stars,Toronto Blue Jays,5,4,1,0,0,0,1,0,0,1,1,0,0,0
-2026-06-09,822805,656941,Kyle Schwarber,National League All-Stars,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-06-10,822804,656941,Kyle Schwarber,National League All-Stars,Toronto Blue Jays,5,4,2,0,0,1,5,2,2,1,2,0,0,0
-2026-06-12,823778,656941,Kyle Schwarber,National League All-Stars,Milwaukee Brewers,3,3,1,0,0,0,1,0,0,0,2,0,0,0
-2026-06-13,823776,656941,Kyle Schwarber,National League All-Stars,Milwaukee Brewers,6,5,3,0,0,0,3,0,0,1,2,0,0,0
-2026-06-14,823777,656941,Kyle Schwarber,National League All-Stars,Milwaukee Brewers,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-15,823452,656941,Kyle Schwarber,National League All-Stars,Miami Marlins,5,4,1,0,0,0,1,0,0,1,2,0,0,0
-2026-06-16,823451,656941,Kyle Schwarber,National League All-Stars,Miami Marlins,4,2,1,0,0,1,4,2,1,2,1,0,0,0
-2026-06-17,823450,656941,Kyle Schwarber,National League All-Stars,Miami Marlins,4,4,0,0,0,0,0,0,0,0,3,0,0,0
-2026-06-18,823448,656941,Kyle Schwarber,National League All-Stars,New York Mets,5,5,1,0,0,0,1,1,0,0,2,0,0,0
-2026-06-20,823447,656941,Kyle Schwarber,National League All-Stars,New York Mets,5,5,4,0,0,3,13,4,6,0,0,0,0,0
-2026-06-21,823449,656941,Kyle Schwarber,National League All-Stars,New York Mets,4,3,1,0,0,1,4,2,3,1,1,0,0,0
-2026-06-22,822720,656941,Kyle Schwarber,National League All-Stars,Washington Nationals,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-06-24,822719,656941,Kyle Schwarber,National League All-Stars,Washington Nationals,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-2026-06-25,822717,656941,Kyle Schwarber,National League All-Stars,Washington Nationals,5,4,2,0,0,0,2,1,0,1,2,0,0,0
-2026-06-26,823610,656941,Kyle Schwarber,National League All-Stars,New York Mets,4,3,1,0,0,0,1,0,0,1,0,0,0,0
-2026-06-27,823609,656941,Kyle Schwarber,National League All-Stars,New York Mets,4,3,0,0,0,0,0,0,0,1,2,0,0,0
-2026-06-28,823608,656941,Kyle Schwarber,National League All-Stars,New York Mets,5,5,2,0,0,1,5,2,2,0,2,1,0,0
-2026-06-29,823444,656941,Kyle Schwarber,National League All-Stars,Pittsburgh Pirates,5,3,0,0,0,0,0,0,1,1,1,0,0,0
-2026-06-30,823445,656941,Kyle Schwarber,National League All-Stars,Pittsburgh Pirates,5,5,2,0,0,0,2,1,0,0,2,0,0,0
-2026-07-01,823446,656941,Kyle Schwarber,National League All-Stars,Pittsburgh Pirates,5,4,0,0,0,0,0,0,0,1,3,0,0,0
-2026-07-02,823442,656941,Kyle Schwarber,National League All-Stars,Pittsburgh Pirates,4,3,0,0,0,0,0,0,0,1,2,0,0,0
-2026-07-04,824092,656941,Kyle Schwarber,National League All-Stars,Kansas City Royals,5,4,3,0,0,0,3,0,0,1,1,0,0,0
-2026-07-05,824091,656941,Kyle Schwarber,National League All-Stars,Kansas City Royals,4,3,0,0,0,0,0,0,0,1,1,0,0,0
-2026-07-06,824089,656941,Kyle Schwarber,National League All-Stars,Kansas City Royals,4,3,0,0,0,0,0,0,0,1,3,0,0,0
-2026-07-07,824495,656941,Kyle Schwarber,National League All-Stars,Cincinnati Reds,4,4,2,0,0,1,5,1,2,0,1,0,0,0
-2026-07-08,824496,656941,Kyle Schwarber,National League All-Stars,Cincinnati Reds,5,4,1,0,0,1,4,1,1,1,2,0,0,0
-2026-07-09,824494,656941,Kyle Schwarber,National League All-Stars,Cincinnati Reds,4,4,1,0,0,0,1,0,0,0,3,0,0,0
-2026-07-10,824252,656941,Kyle Schwarber,National League All-Stars,Detroit Tigers,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-07-11,824249,656941,Kyle Schwarber,National League All-Stars,Detroit Tigers,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-07-12,824250,656941,Kyle Schwarber,National League All-Stars,Detroit Tigers,5,5,2,0,0,0,2,0,1,0,3,0,0,0
+2026-03-26,823486,656941,Kyle Schwarber,Philadelphia Phillies,Texas Rangers,4,4,1,0,0,1,4,1,2,0,1,0,0,0
+2026-03-28,823488,656941,Kyle Schwarber,Philadelphia Phillies,Texas Rangers,5,5,0,0,0,0,0,0,0,0,4,0,0,0
+2026-03-29,823487,656941,Kyle Schwarber,Philadelphia Phillies,Texas Rangers,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-03-30,823484,656941,Kyle Schwarber,Philadelphia Phillies,Washington Nationals,5,3,0,0,0,0,0,0,0,1,2,0,0,1
+2026-03-31,823485,656941,Kyle Schwarber,Philadelphia Phillies,Washington Nationals,4,3,1,0,0,1,4,1,1,1,1,0,0,0
+2026-04-01,823483,656941,Kyle Schwarber,Philadelphia Phillies,Washington Nationals,5,3,1,1,0,0,2,0,1,1,1,0,0,1
+2026-04-03,824377,656941,Kyle Schwarber,Philadelphia Phillies,Colorado Rockies,5,3,1,0,0,1,4,2,1,2,1,0,0,0
+2026-04-04,824378,656941,Kyle Schwarber,Philadelphia Phillies,Colorado Rockies,5,4,1,1,0,0,2,0,1,1,2,0,0,0
+2026-04-05,824379,656941,Kyle Schwarber,Philadelphia Phillies,Colorado Rockies,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-04-06,823237,656941,Kyle Schwarber,Philadelphia Phillies,San Francisco Giants,5,3,0,0,0,0,0,1,0,2,3,0,0,0
+2026-04-07,823235,656941,Kyle Schwarber,Philadelphia Phillies,San Francisco Giants,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-04-08,823234,656941,Kyle Schwarber,Philadelphia Phillies,San Francisco Giants,4,2,1,0,0,0,1,0,0,2,1,0,0,0
+2026-04-10,823482,656941,Kyle Schwarber,Philadelphia Phillies,Arizona Diamondbacks,4,3,0,0,0,0,0,1,0,1,2,0,0,0
+2026-04-11,823480,656941,Kyle Schwarber,Philadelphia Phillies,Arizona Diamondbacks,4,4,1,0,0,1,4,1,3,0,2,0,0,0
+2026-04-12,823479,656941,Kyle Schwarber,Philadelphia Phillies,Arizona Diamondbacks,4,4,2,1,0,0,3,1,0,0,1,0,0,0
+2026-04-13,823481,656941,Kyle Schwarber,Philadelphia Phillies,Chicago Cubs,5,3,2,0,0,2,8,4,3,1,0,0,0,1
+2026-04-14,823478,656941,Kyle Schwarber,Philadelphia Phillies,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-04-15,823477,656941,Kyle Schwarber,Philadelphia Phillies,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-04-17,823476,656941,Kyle Schwarber,Philadelphia Phillies,Atlanta Braves,5,4,0,0,0,0,0,0,0,0,2,0,0,1
+2026-04-18,823474,656941,Kyle Schwarber,Philadelphia Phillies,Atlanta Braves,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-04-19,823475,656941,Kyle Schwarber,Philadelphia Phillies,Atlanta Braves,5,4,2,1,0,1,6,1,2,1,0,0,0,0
+2026-04-20,824692,656941,Kyle Schwarber,Philadelphia Phillies,Chicago Cubs,5,5,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-21,824690,656941,Kyle Schwarber,Philadelphia Phillies,Chicago Cubs,4,3,1,0,0,1,4,2,1,1,0,0,0,0
+2026-04-22,824688,656941,Kyle Schwarber,Philadelphia Phillies,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-23,824689,656941,Kyle Schwarber,Philadelphia Phillies,Chicago Cubs,5,4,0,0,0,0,0,0,0,1,2,0,0,0
+2026-04-24,824932,656941,Kyle Schwarber,Philadelphia Phillies,Atlanta Braves,5,4,0,0,0,0,0,0,0,1,2,0,0,0
+2026-04-25,824933,656941,Kyle Schwarber,Philadelphia Phillies,Atlanta Braves,5,4,1,0,1,0,3,1,0,1,0,0,0,0
+2026-04-26,824934,656941,Kyle Schwarber,Philadelphia Phillies,Atlanta Braves,4,3,1,0,0,1,4,1,2,1,0,0,0,0
+2026-04-28,823473,656941,Kyle Schwarber,Philadelphia Phillies,San Francisco Giants,5,3,0,0,0,0,0,1,0,2,0,0,0,0
+2026-04-30,823472,656941,Kyle Schwarber,Philadelphia Phillies,San Francisco Giants,4,2,1,0,0,1,4,1,1,2,0,0,0,0
+2026-04-30,823471,656941,Kyle Schwarber,Philadelphia Phillies,San Francisco Giants,5,4,4,2,0,1,9,2,2,1,0,0,0,0
+2026-05-01,823877,656941,Kyle Schwarber,Philadelphia Phillies,Miami Marlins,5,5,0,0,0,0,0,0,0,0,5,0,0,0
+2026-05-02,823876,656941,Kyle Schwarber,Philadelphia Phillies,Miami Marlins,3,3,0,0,0,0,0,0,0,0,3,0,0,0
+2026-05-03,823875,656941,Kyle Schwarber,Philadelphia Phillies,Miami Marlins,5,4,2,0,0,0,2,1,0,1,0,0,0,0
+2026-05-04,823874,656941,Kyle Schwarber,Philadelphia Phillies,Miami Marlins,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-05,823469,656941,Kyle Schwarber,Philadelphia Phillies,Athletics,5,5,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-06,823470,656941,Kyle Schwarber,Philadelphia Phillies,Athletics,4,3,1,1,0,0,2,1,0,1,1,0,0,0
+2026-05-07,823467,656941,Kyle Schwarber,Philadelphia Phillies,Athletics,4,4,2,0,0,1,5,1,1,0,0,0,0,0
+2026-05-08,823466,656941,Kyle Schwarber,Philadelphia Phillies,Colorado Rockies,6,6,1,0,0,1,4,1,1,0,4,0,0,0
+2026-05-09,823468,656941,Kyle Schwarber,Philadelphia Phillies,Colorado Rockies,5,5,1,0,0,1,4,1,3,0,3,0,0,0
+2026-05-10,823463,656941,Kyle Schwarber,Philadelphia Phillies,Colorado Rockies,4,4,3,0,0,2,9,2,2,0,0,0,0,0
+2026-05-12,824764,656941,Kyle Schwarber,Philadelphia Phillies,Boston Red Sox,4,3,1,0,0,1,4,1,1,1,0,0,0,0
+2026-05-13,824763,656941,Kyle Schwarber,Philadelphia Phillies,Boston Red Sox,4,2,0,0,0,0,0,0,0,2,1,1,0,0
+2026-05-14,824762,656941,Kyle Schwarber,Philadelphia Phillies,Boston Red Sox,5,5,1,0,0,1,4,1,2,0,3,0,0,0
+2026-05-15,823384,656941,Kyle Schwarber,Philadelphia Phillies,Pittsburgh Pirates,6,5,3,0,0,2,9,2,5,1,1,0,0,0
+2026-05-16,823382,656941,Kyle Schwarber,Philadelphia Phillies,Pittsburgh Pirates,5,4,1,1,0,0,2,1,1,1,2,0,0,0
+2026-05-17,823381,656941,Kyle Schwarber,Philadelphia Phillies,Pittsburgh Pirates,5,5,0,0,0,0,0,0,0,0,4,0,0,0
+2026-05-22,823461,656941,Kyle Schwarber,Philadelphia Phillies,Cleveland Guardians,4,4,0,0,0,0,0,0,0,0,4,0,0,0
+2026-05-23,823458,656941,Kyle Schwarber,Philadelphia Phillies,Cleveland Guardians,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-05-24,823459,656941,Kyle Schwarber,Philadelphia Phillies,Cleveland Guardians,4,4,2,1,0,0,3,0,0,0,1,0,0,0
+2026-05-25,823296,656941,Kyle Schwarber,Philadelphia Phillies,San Diego Padres,4,3,2,0,0,1,5,2,1,1,0,0,0,0
+2026-05-26,823294,656941,Kyle Schwarber,Philadelphia Phillies,San Diego Padres,5,5,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-27,823295,656941,Kyle Schwarber,Philadelphia Phillies,San Diego Padres,4,4,2,0,0,0,2,0,1,0,1,0,0,0
+2026-05-29,823946,656941,Kyle Schwarber,Philadelphia Phillies,Los Angeles Dodgers,4,4,1,0,0,1,4,1,1,0,2,0,0,0
+2026-05-30,823945,656941,Kyle Schwarber,Philadelphia Phillies,Los Angeles Dodgers,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-05-31,823944,656941,Kyle Schwarber,Philadelphia Phillies,Los Angeles Dodgers,5,4,0,0,0,0,0,0,0,1,3,0,0,0
+2026-06-02,823460,656941,Kyle Schwarber,Philadelphia Phillies,San Diego Padres,4,2,0,0,0,0,0,0,0,2,1,0,0,0
+2026-06-03,823456,656941,Kyle Schwarber,Philadelphia Phillies,San Diego Padres,4,3,1,0,0,1,4,1,1,1,2,0,0,0
+2026-06-04,823457,656941,Kyle Schwarber,Philadelphia Phillies,San Diego Padres,5,4,1,0,0,0,1,0,0,1,1,0,0,0
+2026-06-05,823455,656941,Kyle Schwarber,Philadelphia Phillies,Chicago White Sox,5,5,4,0,0,0,4,2,0,0,1,0,0,0
+2026-06-06,823454,656941,Kyle Schwarber,Philadelphia Phillies,Chicago White Sox,5,4,0,0,0,0,0,0,0,1,3,0,0,0
+2026-06-07,823453,656941,Kyle Schwarber,Philadelphia Phillies,Chicago White Sox,5,3,0,0,0,0,0,1,0,2,1,0,0,0
+2026-06-08,822806,656941,Kyle Schwarber,Philadelphia Phillies,Toronto Blue Jays,5,4,1,0,0,0,1,0,0,1,1,0,0,0
+2026-06-09,822805,656941,Kyle Schwarber,Philadelphia Phillies,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-10,822804,656941,Kyle Schwarber,Philadelphia Phillies,Toronto Blue Jays,5,4,2,0,0,1,5,2,2,1,2,0,0,0
+2026-06-12,823778,656941,Kyle Schwarber,Philadelphia Phillies,Milwaukee Brewers,3,3,1,0,0,0,1,0,0,0,2,0,0,0
+2026-06-13,823776,656941,Kyle Schwarber,Philadelphia Phillies,Milwaukee Brewers,6,5,3,0,0,0,3,0,0,1,2,0,0,0
+2026-06-14,823777,656941,Kyle Schwarber,Philadelphia Phillies,Milwaukee Brewers,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-15,823452,656941,Kyle Schwarber,Philadelphia Phillies,Miami Marlins,5,4,1,0,0,0,1,0,0,1,2,0,0,0
+2026-06-16,823451,656941,Kyle Schwarber,Philadelphia Phillies,Miami Marlins,4,2,1,0,0,1,4,2,1,2,1,0,0,0
+2026-06-17,823450,656941,Kyle Schwarber,Philadelphia Phillies,Miami Marlins,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-06-18,823448,656941,Kyle Schwarber,Philadelphia Phillies,New York Mets,5,5,1,0,0,0,1,1,0,0,2,0,0,0
+2026-06-20,823447,656941,Kyle Schwarber,Philadelphia Phillies,New York Mets,5,5,4,0,0,3,13,4,6,0,0,0,0,0
+2026-06-21,823449,656941,Kyle Schwarber,Philadelphia Phillies,New York Mets,4,3,1,0,0,1,4,2,3,1,1,0,0,0
+2026-06-22,822720,656941,Kyle Schwarber,Philadelphia Phillies,Washington Nationals,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-24,822719,656941,Kyle Schwarber,Philadelphia Phillies,Washington Nationals,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-25,822717,656941,Kyle Schwarber,Philadelphia Phillies,Washington Nationals,5,4,2,0,0,0,2,1,0,1,2,0,0,0
+2026-06-26,823610,656941,Kyle Schwarber,Philadelphia Phillies,New York Mets,4,3,1,0,0,0,1,0,0,1,0,0,0,0
+2026-06-27,823609,656941,Kyle Schwarber,Philadelphia Phillies,New York Mets,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-06-28,823608,656941,Kyle Schwarber,Philadelphia Phillies,New York Mets,5,5,2,0,0,1,5,2,2,0,2,1,0,0
+2026-06-29,823444,656941,Kyle Schwarber,Philadelphia Phillies,Pittsburgh Pirates,5,3,0,0,0,0,0,0,1,1,1,0,0,0
+2026-06-30,823445,656941,Kyle Schwarber,Philadelphia Phillies,Pittsburgh Pirates,5,5,2,0,0,0,2,1,0,0,2,0,0,0
+2026-07-01,823446,656941,Kyle Schwarber,Philadelphia Phillies,Pittsburgh Pirates,5,4,0,0,0,0,0,0,0,1,3,0,0,0
+2026-07-02,823442,656941,Kyle Schwarber,Philadelphia Phillies,Pittsburgh Pirates,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-07-04,824092,656941,Kyle Schwarber,Philadelphia Phillies,Kansas City Royals,5,4,3,0,0,0,3,0,0,1,1,0,0,0
+2026-07-05,824091,656941,Kyle Schwarber,Philadelphia Phillies,Kansas City Royals,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-07-06,824089,656941,Kyle Schwarber,Philadelphia Phillies,Kansas City Royals,4,3,0,0,0,0,0,0,0,1,3,0,0,0
+2026-07-07,824495,656941,Kyle Schwarber,Philadelphia Phillies,Cincinnati Reds,4,4,2,0,0,1,5,1,2,0,1,0,0,0
+2026-07-08,824496,656941,Kyle Schwarber,Philadelphia Phillies,Cincinnati Reds,5,4,1,0,0,1,4,1,1,1,2,0,0,0
+2026-07-09,824494,656941,Kyle Schwarber,Philadelphia Phillies,Cincinnati Reds,4,4,1,0,0,0,1,0,0,0,3,0,0,0
+2026-07-10,824252,656941,Kyle Schwarber,Philadelphia Phillies,Detroit Tigers,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-11,824249,656941,Kyle Schwarber,Philadelphia Phillies,Detroit Tigers,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-12,824250,656941,Kyle Schwarber,Philadelphia Phillies,Detroit Tigers,5,5,2,0,0,0,2,0,1,0,3,0,0,0
 2026-03-27,824946,657041,Lane Thomas,Kansas City Royals,Atlanta Braves,4,3,1,0,0,0,1,0,0,1,2,0,0,0
 2026-03-28,824945,657041,Lane Thomas,Kansas City Royals,Atlanta Braves,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-29,824944,657041,Lane Thomas,Kansas City Royals,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,2,0,0,0
@@ -7813,6 +7818,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,824494,664761,Alec Bohm,Philadelphia Phillies,Cincinnati Reds,4,3,0,0,0,0,0,0,0,0,1,0,0,1
 2026-07-10,824252,664761,Alec Bohm,Philadelphia Phillies,Detroit Tigers,4,3,0,0,0,0,0,0,0,0,0,0,0,1
 2026-07-11,824249,664761,Alec Bohm,Philadelphia Phillies,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-07-12,824250,664761,Alec Bohm,Philadelphia Phillies,Detroit Tigers,5,5,1,0,0,0,1,1,0,0,1,0,0,0
 2026-03-27,822839,664770,Nathan Lukes,Toronto Blue Jays,Athletics,4,3,0,0,0,0,0,0,0,1,0,0,0,0
 2026-03-28,822838,664770,Nathan Lukes,Toronto Blue Jays,Athletics,0,0,0,0,0,0,0,1,0,0,0,0,0,0
 2026-03-30,822834,664770,Nathan Lukes,Toronto Blue Jays,Colorado Rockies,1,1,0,0,0,0,0,0,0,0,0,0,0,0
@@ -8387,84 +8393,84 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-02,823442,665561,Rafael Marchán,Philadelphia Phillies,Pittsburgh Pirates,3,2,0,0,0,0,0,1,0,1,0,0,0,0
 2026-07-06,824089,665561,Rafael Marchán,Philadelphia Phillies,Kansas City Royals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-08,824496,665561,Rafael Marchán,Philadelphia Phillies,Cincinnati Reds,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-03-26,823649,665742,Juan Soto,National League All-Stars,Pittsburgh Pirates,5,4,2,0,0,0,2,1,1,1,0,0,0,0
-2026-03-28,823651,665742,Juan Soto,National League All-Stars,Pittsburgh Pirates,5,5,1,0,0,0,1,0,0,0,0,0,0,0
-2026-03-29,823647,665742,Juan Soto,National League All-Stars,Pittsburgh Pirates,5,5,2,1,0,0,3,0,2,0,3,0,0,0
-2026-03-30,823080,665742,Juan Soto,National League All-Stars,St. Louis Cardinals,5,3,1,0,0,0,1,0,1,2,0,0,0,0
-2026-03-31,823077,665742,Juan Soto,National League All-Stars,St. Louis Cardinals,4,4,2,1,0,0,3,0,0,0,1,0,0,0
-2026-04-01,823078,665742,Juan Soto,National League All-Stars,St. Louis Cardinals,5,5,1,0,0,1,4,1,1,0,1,0,0,0
-2026-04-02,823242,665742,Juan Soto,National League All-Stars,San Francisco Giants,4,4,1,0,0,0,1,1,0,0,1,0,0,0
-2026-04-03,823240,665742,Juan Soto,National League All-Stars,San Francisco Giants,1,1,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-22,823641,665742,Juan Soto,National League All-Stars,Minnesota Twins,4,3,1,0,0,0,1,0,0,1,0,0,1,0
-2026-04-23,823639,665742,Juan Soto,National League All-Stars,Minnesota Twins,5,3,0,0,0,0,0,0,0,2,0,0,0,0
-2026-04-24,823638,665742,Juan Soto,National League All-Stars,Colorado Rockies,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-26,823635,665742,Juan Soto,National League All-Stars,Colorado Rockies,4,3,0,0,0,0,0,0,0,1,1,0,0,0
-2026-04-26,823637,665742,Juan Soto,National League All-Stars,Colorado Rockies,4,2,1,0,0,0,1,0,0,2,1,0,0,0
-2026-04-28,823636,665742,Juan Soto,National League All-Stars,Washington Nationals,4,4,1,0,0,1,4,1,2,0,0,0,0,0
-2026-04-29,823633,665742,Juan Soto,National League All-Stars,Washington Nationals,5,5,3,1,0,1,7,1,1,0,0,0,0,0
-2026-04-30,823634,665742,Juan Soto,National League All-Stars,Washington Nationals,4,3,2,1,0,0,3,2,0,1,0,0,0,0
-2026-05-01,824041,665742,Juan Soto,National League All-Stars,Los Angeles Angels,4,3,1,0,0,0,1,1,0,1,1,0,0,0
-2026-05-02,824042,665742,Juan Soto,National League All-Stars,Los Angeles Angels,5,4,1,0,0,0,1,0,0,1,2,1,0,0
-2026-05-03,824043,665742,Juan Soto,National League All-Stars,Los Angeles Angels,5,5,0,0,0,0,0,0,0,0,2,0,0,0
-2026-05-04,824363,665742,Juan Soto,National League All-Stars,Colorado Rockies,4,3,0,0,0,0,0,1,0,1,1,0,0,0
-2026-05-06,824361,665742,Juan Soto,National League All-Stars,Colorado Rockies,5,4,1,0,0,1,4,1,2,0,0,0,0,0
-2026-05-07,824362,665742,Juan Soto,National League All-Stars,Colorado Rockies,4,4,1,0,1,0,3,0,0,0,0,0,0,0
-2026-05-08,825088,665742,Juan Soto,National League All-Stars,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-05-09,825089,665742,Juan Soto,National League All-Stars,Arizona Diamondbacks,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-05-10,825085,665742,Juan Soto,National League All-Stars,Arizona Diamondbacks,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-05-12,823632,665742,Juan Soto,National League All-Stars,Detroit Tigers,5,5,2,0,0,0,2,1,1,0,1,0,0,0
-2026-05-13,823631,665742,Juan Soto,National League All-Stars,Detroit Tigers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-05-14,823630,665742,Juan Soto,National League All-Stars,Detroit Tigers,5,5,2,0,0,1,5,2,2,0,0,0,0,0
-2026-05-15,823629,665742,Juan Soto,National League All-Stars,New York Yankees,4,3,1,0,0,1,4,1,1,1,2,0,0,0
-2026-05-16,823627,665742,Juan Soto,National League All-Stars,New York Yankees,4,2,2,0,0,0,2,1,0,2,0,2,0,0
-2026-05-17,823628,665742,Juan Soto,National League All-Stars,New York Yankees,5,5,1,0,0,0,1,1,0,0,1,1,0,0
-2026-05-18,822734,665742,Juan Soto,National League All-Stars,Washington Nationals,7,5,2,0,0,0,2,1,2,2,1,0,0,0
-2026-05-19,822736,665742,Juan Soto,National League All-Stars,Washington Nationals,4,4,2,0,0,1,5,2,1,0,1,0,0,0
-2026-05-20,822735,665742,Juan Soto,National League All-Stars,Washington Nationals,4,4,2,0,0,2,8,2,3,0,0,0,0,0
-2026-05-21,822733,665742,Juan Soto,National League All-Stars,Washington Nationals,4,3,0,0,0,0,0,0,0,1,1,1,0,0
-2026-05-22,823863,665742,Juan Soto,National League All-Stars,Miami Marlins,3,3,2,0,0,1,5,1,1,0,0,0,0,0
-2026-05-23,823862,665742,Juan Soto,National League All-Stars,Miami Marlins,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-05-26,823624,665742,Juan Soto,National League All-Stars,Cincinnati Reds,4,4,1,0,0,1,4,1,2,0,1,0,0,0
-2026-05-27,823626,665742,Juan Soto,National League All-Stars,Cincinnati Reds,4,3,2,0,0,1,5,1,1,0,0,0,1,0
-2026-05-29,823623,665742,Juan Soto,National League All-Stars,Miami Marlins,5,4,1,0,0,0,1,1,0,1,0,0,0,0
-2026-05-30,823622,665742,Juan Soto,National League All-Stars,Miami Marlins,4,3,1,0,0,0,1,1,1,1,0,0,0,0
-2026-05-31,823621,665742,Juan Soto,National League All-Stars,Miami Marlins,4,4,2,0,0,1,5,1,4,0,1,0,0,0
-2026-06-01,823131,665742,Juan Soto,National League All-Stars,Seattle Mariners,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-02,823129,665742,Juan Soto,National League All-Stars,Seattle Mariners,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-06-03,823130,665742,Juan Soto,National League All-Stars,Seattle Mariners,5,5,1,0,0,0,1,1,0,0,0,1,0,0
-2026-06-05,823293,665742,Juan Soto,National League All-Stars,San Diego Padres,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-06,823292,665742,Juan Soto,National League All-Stars,San Diego Padres,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-07,823291,665742,Juan Soto,National League All-Stars,San Diego Padres,5,3,0,0,0,0,0,0,1,2,0,0,0,0
-2026-06-09,823620,665742,Juan Soto,National League All-Stars,St. Louis Cardinals,4,3,1,0,0,0,1,0,0,1,0,0,0,0
-2026-06-10,823618,665742,Juan Soto,National League All-Stars,St. Louis Cardinals,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-06-11,823619,665742,Juan Soto,National League All-Stars,St. Louis Cardinals,4,4,2,1,0,1,6,2,1,0,0,0,0,0
-2026-06-12,823617,665742,Juan Soto,National League All-Stars,Atlanta Braves,4,3,2,0,0,1,5,1,1,1,0,0,0,0
-2026-06-13,823616,665742,Juan Soto,National League All-Stars,Atlanta Braves,4,4,2,1,0,0,3,0,0,0,0,0,0,0
-2026-06-14,823615,665742,Juan Soto,National League All-Stars,Atlanta Braves,5,3,2,0,0,0,2,1,2,2,0,0,1,0
-2026-06-15,824505,665742,Juan Soto,National League All-Stars,Cincinnati Reds,4,2,0,0,0,0,0,0,0,2,1,0,0,0
-2026-06-16,824504,665742,Juan Soto,National League All-Stars,Cincinnati Reds,5,4,1,0,0,0,1,0,0,1,2,0,0,0
-2026-06-17,824503,665742,Juan Soto,National League All-Stars,Cincinnati Reds,5,5,3,1,0,0,4,2,2,0,0,0,0,0
-2026-06-18,823448,665742,Juan Soto,National League All-Stars,Philadelphia Phillies,5,4,2,0,0,2,8,2,2,1,0,0,0,0
-2026-06-20,823447,665742,Juan Soto,National League All-Stars,Philadelphia Phillies,3,3,1,0,0,0,1,0,0,0,0,0,0,0
-2026-06-21,823449,665742,Juan Soto,National League All-Stars,Philadelphia Phillies,4,3,1,0,0,0,1,0,0,1,1,0,0,0
-2026-06-23,823614,665742,Juan Soto,National League All-Stars,Chicago Cubs,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-06-25,823612,665742,Juan Soto,National League All-Stars,Chicago Cubs,5,3,1,0,0,0,1,0,0,2,0,0,0,0
-2026-06-26,823610,665742,Juan Soto,National League All-Stars,Philadelphia Phillies,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-27,823609,665742,Juan Soto,National League All-Stars,Philadelphia Phillies,4,3,2,0,1,0,4,2,1,1,0,0,0,0
-2026-06-28,823608,665742,Juan Soto,National League All-Stars,Philadelphia Phillies,5,2,1,0,0,0,1,0,0,3,0,0,0,0
-2026-06-29,822792,665742,Juan Soto,National League All-Stars,Toronto Blue Jays,4,3,1,1,0,0,2,0,0,1,0,0,0,0
-2026-06-30,822793,665742,Juan Soto,National League All-Stars,Toronto Blue Jays,4,2,0,0,0,0,0,0,0,2,0,0,0,0
-2026-07-01,822791,665742,Juan Soto,National League All-Stars,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-03,824904,665742,Juan Soto,National League All-Stars,Atlanta Braves,5,4,2,0,0,1,5,1,2,1,1,0,0,0
-2026-07-04,824903,665742,Juan Soto,National League All-Stars,Atlanta Braves,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-07-05,824902,665742,Juan Soto,National League All-Stars,Atlanta Braves,5,4,2,0,0,0,2,1,2,1,0,0,0,0
-2026-07-06,824900,665742,Juan Soto,National League All-Stars,Atlanta Braves,5,2,1,0,0,1,4,1,3,3,0,1,0,0
-2026-07-07,823607,665742,Juan Soto,National League All-Stars,Kansas City Royals,5,5,1,0,0,1,4,1,3,0,1,0,0,0
-2026-07-08,823605,665742,Juan Soto,National League All-Stars,Kansas City Royals,5,3,0,0,0,0,0,0,0,2,1,0,0,0
-2026-07-09,823606,665742,Juan Soto,National League All-Stars,Kansas City Royals,4,2,1,0,0,1,4,2,1,2,1,0,0,0
-2026-07-10,823604,665742,Juan Soto,National League All-Stars,Boston Red Sox,4,3,1,0,0,0,1,0,1,0,1,0,0,0
-2026-07-11,823603,665742,Juan Soto,National League All-Stars,Boston Red Sox,4,3,0,0,0,0,0,0,0,1,0,0,0,0
-2026-07-12,823602,665742,Juan Soto,National League All-Stars,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-03-26,823649,665742,Juan Soto,New York Mets,Pittsburgh Pirates,5,4,2,0,0,0,2,1,1,1,0,0,0,0
+2026-03-28,823651,665742,Juan Soto,New York Mets,Pittsburgh Pirates,5,5,1,0,0,0,1,0,0,0,0,0,0,0
+2026-03-29,823647,665742,Juan Soto,New York Mets,Pittsburgh Pirates,5,5,2,1,0,0,3,0,2,0,3,0,0,0
+2026-03-30,823080,665742,Juan Soto,New York Mets,St. Louis Cardinals,5,3,1,0,0,0,1,0,1,2,0,0,0,0
+2026-03-31,823077,665742,Juan Soto,New York Mets,St. Louis Cardinals,4,4,2,1,0,0,3,0,0,0,1,0,0,0
+2026-04-01,823078,665742,Juan Soto,New York Mets,St. Louis Cardinals,5,5,1,0,0,1,4,1,1,0,1,0,0,0
+2026-04-02,823242,665742,Juan Soto,New York Mets,San Francisco Giants,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-04-03,823240,665742,Juan Soto,New York Mets,San Francisco Giants,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-22,823641,665742,Juan Soto,New York Mets,Minnesota Twins,4,3,1,0,0,0,1,0,0,1,0,0,1,0
+2026-04-23,823639,665742,Juan Soto,New York Mets,Minnesota Twins,5,3,0,0,0,0,0,0,0,2,0,0,0,0
+2026-04-24,823638,665742,Juan Soto,New York Mets,Colorado Rockies,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-26,823635,665742,Juan Soto,New York Mets,Colorado Rockies,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-04-26,823637,665742,Juan Soto,New York Mets,Colorado Rockies,4,2,1,0,0,0,1,0,0,2,1,0,0,0
+2026-04-28,823636,665742,Juan Soto,New York Mets,Washington Nationals,4,4,1,0,0,1,4,1,2,0,0,0,0,0
+2026-04-29,823633,665742,Juan Soto,New York Mets,Washington Nationals,5,5,3,1,0,1,7,1,1,0,0,0,0,0
+2026-04-30,823634,665742,Juan Soto,New York Mets,Washington Nationals,4,3,2,1,0,0,3,2,0,1,0,0,0,0
+2026-05-01,824041,665742,Juan Soto,New York Mets,Los Angeles Angels,4,3,1,0,0,0,1,1,0,1,1,0,0,0
+2026-05-02,824042,665742,Juan Soto,New York Mets,Los Angeles Angels,5,4,1,0,0,0,1,0,0,1,2,1,0,0
+2026-05-03,824043,665742,Juan Soto,New York Mets,Los Angeles Angels,5,5,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-04,824363,665742,Juan Soto,New York Mets,Colorado Rockies,4,3,0,0,0,0,0,1,0,1,1,0,0,0
+2026-05-06,824361,665742,Juan Soto,New York Mets,Colorado Rockies,5,4,1,0,0,1,4,1,2,0,0,0,0,0
+2026-05-07,824362,665742,Juan Soto,New York Mets,Colorado Rockies,4,4,1,0,1,0,3,0,0,0,0,0,0,0
+2026-05-08,825088,665742,Juan Soto,New York Mets,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-09,825089,665742,Juan Soto,New York Mets,Arizona Diamondbacks,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-10,825085,665742,Juan Soto,New York Mets,Arizona Diamondbacks,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-12,823632,665742,Juan Soto,New York Mets,Detroit Tigers,5,5,2,0,0,0,2,1,1,0,1,0,0,0
+2026-05-13,823631,665742,Juan Soto,New York Mets,Detroit Tigers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-14,823630,665742,Juan Soto,New York Mets,Detroit Tigers,5,5,2,0,0,1,5,2,2,0,0,0,0,0
+2026-05-15,823629,665742,Juan Soto,New York Mets,New York Yankees,4,3,1,0,0,1,4,1,1,1,2,0,0,0
+2026-05-16,823627,665742,Juan Soto,New York Mets,New York Yankees,4,2,2,0,0,0,2,1,0,2,0,2,0,0
+2026-05-17,823628,665742,Juan Soto,New York Mets,New York Yankees,5,5,1,0,0,0,1,1,0,0,1,1,0,0
+2026-05-18,822734,665742,Juan Soto,New York Mets,Washington Nationals,7,5,2,0,0,0,2,1,2,2,1,0,0,0
+2026-05-19,822736,665742,Juan Soto,New York Mets,Washington Nationals,4,4,2,0,0,1,5,2,1,0,1,0,0,0
+2026-05-20,822735,665742,Juan Soto,New York Mets,Washington Nationals,4,4,2,0,0,2,8,2,3,0,0,0,0,0
+2026-05-21,822733,665742,Juan Soto,New York Mets,Washington Nationals,4,3,0,0,0,0,0,0,0,1,1,1,0,0
+2026-05-22,823863,665742,Juan Soto,New York Mets,Miami Marlins,3,3,2,0,0,1,5,1,1,0,0,0,0,0
+2026-05-23,823862,665742,Juan Soto,New York Mets,Miami Marlins,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-26,823624,665742,Juan Soto,New York Mets,Cincinnati Reds,4,4,1,0,0,1,4,1,2,0,1,0,0,0
+2026-05-27,823626,665742,Juan Soto,New York Mets,Cincinnati Reds,4,3,2,0,0,1,5,1,1,0,0,0,1,0
+2026-05-29,823623,665742,Juan Soto,New York Mets,Miami Marlins,5,4,1,0,0,0,1,1,0,1,0,0,0,0
+2026-05-30,823622,665742,Juan Soto,New York Mets,Miami Marlins,4,3,1,0,0,0,1,1,1,1,0,0,0,0
+2026-05-31,823621,665742,Juan Soto,New York Mets,Miami Marlins,4,4,2,0,0,1,5,1,4,0,1,0,0,0
+2026-06-01,823131,665742,Juan Soto,New York Mets,Seattle Mariners,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-02,823129,665742,Juan Soto,New York Mets,Seattle Mariners,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-03,823130,665742,Juan Soto,New York Mets,Seattle Mariners,5,5,1,0,0,0,1,1,0,0,0,1,0,0
+2026-06-05,823293,665742,Juan Soto,New York Mets,San Diego Padres,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-06,823292,665742,Juan Soto,New York Mets,San Diego Padres,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-07,823291,665742,Juan Soto,New York Mets,San Diego Padres,5,3,0,0,0,0,0,0,1,2,0,0,0,0
+2026-06-09,823620,665742,Juan Soto,New York Mets,St. Louis Cardinals,4,3,1,0,0,0,1,0,0,1,0,0,0,0
+2026-06-10,823618,665742,Juan Soto,New York Mets,St. Louis Cardinals,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-11,823619,665742,Juan Soto,New York Mets,St. Louis Cardinals,4,4,2,1,0,1,6,2,1,0,0,0,0,0
+2026-06-12,823617,665742,Juan Soto,New York Mets,Atlanta Braves,4,3,2,0,0,1,5,1,1,1,0,0,0,0
+2026-06-13,823616,665742,Juan Soto,New York Mets,Atlanta Braves,4,4,2,1,0,0,3,0,0,0,0,0,0,0
+2026-06-14,823615,665742,Juan Soto,New York Mets,Atlanta Braves,5,3,2,0,0,0,2,1,2,2,0,0,1,0
+2026-06-15,824505,665742,Juan Soto,New York Mets,Cincinnati Reds,4,2,0,0,0,0,0,0,0,2,1,0,0,0
+2026-06-16,824504,665742,Juan Soto,New York Mets,Cincinnati Reds,5,4,1,0,0,0,1,0,0,1,2,0,0,0
+2026-06-17,824503,665742,Juan Soto,New York Mets,Cincinnati Reds,5,5,3,1,0,0,4,2,2,0,0,0,0,0
+2026-06-18,823448,665742,Juan Soto,New York Mets,Philadelphia Phillies,5,4,2,0,0,2,8,2,2,1,0,0,0,0
+2026-06-20,823447,665742,Juan Soto,New York Mets,Philadelphia Phillies,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-21,823449,665742,Juan Soto,New York Mets,Philadelphia Phillies,4,3,1,0,0,0,1,0,0,1,1,0,0,0
+2026-06-23,823614,665742,Juan Soto,New York Mets,Chicago Cubs,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-25,823612,665742,Juan Soto,New York Mets,Chicago Cubs,5,3,1,0,0,0,1,0,0,2,0,0,0,0
+2026-06-26,823610,665742,Juan Soto,New York Mets,Philadelphia Phillies,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-27,823609,665742,Juan Soto,New York Mets,Philadelphia Phillies,4,3,2,0,1,0,4,2,1,1,0,0,0,0
+2026-06-28,823608,665742,Juan Soto,New York Mets,Philadelphia Phillies,5,2,1,0,0,0,1,0,0,3,0,0,0,0
+2026-06-29,822792,665742,Juan Soto,New York Mets,Toronto Blue Jays,4,3,1,1,0,0,2,0,0,1,0,0,0,0
+2026-06-30,822793,665742,Juan Soto,New York Mets,Toronto Blue Jays,4,2,0,0,0,0,0,0,0,2,0,0,0,0
+2026-07-01,822791,665742,Juan Soto,New York Mets,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-03,824904,665742,Juan Soto,New York Mets,Atlanta Braves,5,4,2,0,0,1,5,1,2,1,1,0,0,0
+2026-07-04,824903,665742,Juan Soto,New York Mets,Atlanta Braves,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-05,824902,665742,Juan Soto,New York Mets,Atlanta Braves,5,4,2,0,0,0,2,1,2,1,0,0,0,0
+2026-07-06,824900,665742,Juan Soto,New York Mets,Atlanta Braves,5,2,1,0,0,1,4,1,3,3,0,1,0,0
+2026-07-07,823607,665742,Juan Soto,New York Mets,Kansas City Royals,5,5,1,0,0,1,4,1,3,0,1,0,0,0
+2026-07-08,823605,665742,Juan Soto,New York Mets,Kansas City Royals,5,3,0,0,0,0,0,0,0,2,1,0,0,0
+2026-07-09,823606,665742,Juan Soto,New York Mets,Kansas City Royals,4,2,1,0,0,1,4,2,1,2,1,0,0,0
+2026-07-10,823604,665742,Juan Soto,New York Mets,Boston Red Sox,4,3,1,0,0,0,1,0,1,0,1,0,0,0
+2026-07-11,823603,665742,Juan Soto,New York Mets,Boston Red Sox,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-12,823602,665742,Juan Soto,New York Mets,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-28,824862,665750,Leody Taveras,Baltimore Orioles,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-29,824864,665750,Leody Taveras,Baltimore Orioles,Minnesota Twins,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-01,824860,665750,Leody Taveras,Baltimore Orioles,Texas Rangers,4,2,2,1,0,0,3,1,2,2,0,0,0,0
@@ -9449,6 +9455,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,823605,666182,Bo Bichette,New York Mets,Kansas City Royals,5,5,1,0,0,0,1,0,0,0,1,0,0,0
 2026-07-09,823606,666182,Bo Bichette,New York Mets,Kansas City Royals,4,3,0,0,0,0,0,0,1,0,0,0,0,0
 2026-07-11,823603,666182,Bo Bichette,New York Mets,Boston Red Sox,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-12,823602,666182,Bo Bichette,New York Mets,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-10,823156,666211,Taylor Trammell,Houston Astros,Seattle Mariners,1,0,0,0,0,0,0,0,0,1,0,0,0,0
 2026-04-11,823155,666211,Taylor Trammell,Houston Astros,Seattle Mariners,5,4,2,1,0,0,3,1,3,1,2,0,0,0
 2026-04-12,823154,666211,Taylor Trammell,Houston Astros,Seattle Mariners,3,3,0,0,0,0,0,0,0,0,2,0,0,0
@@ -10433,98 +10440,98 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,823034,669003,Garrett Mitchell,Milwaukee Brewers,St. Louis Cardinals,5,5,1,0,0,0,1,1,0,0,2,0,0,0
 2026-07-11,823357,669003,Garrett Mitchell,Milwaukee Brewers,Pittsburgh Pirates,4,3,1,1,0,0,2,1,0,1,2,0,0,0
 2026-07-11,823356,669003,Garrett Mitchell,Milwaukee Brewers,Pittsburgh Pirates,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-03-26,823486,669016,Brandon Marsh,National League All-Stars,Texas Rangers,4,4,2,2,0,0,4,0,0,0,1,0,0,0
-2026-03-28,823488,669016,Brandon Marsh,National League All-Stars,Texas Rangers,4,4,1,0,0,0,1,0,2,0,1,0,0,0
-2026-03-29,823487,669016,Brandon Marsh,National League All-Stars,Texas Rangers,2,1,0,0,0,0,0,0,0,1,1,0,0,0
-2026-03-30,823484,669016,Brandon Marsh,National League All-Stars,Washington Nationals,4,3,2,0,0,0,2,1,0,1,0,0,0,0
-2026-03-31,823485,669016,Brandon Marsh,National League All-Stars,Washington Nationals,3,3,1,0,0,0,1,0,0,0,0,1,0,0
-2026-04-01,823483,669016,Brandon Marsh,National League All-Stars,Washington Nationals,5,5,1,0,0,0,1,1,0,0,0,0,0,0
-2026-04-03,824377,669016,Brandon Marsh,National League All-Stars,Colorado Rockies,5,5,1,0,0,1,4,1,3,0,1,0,0,0
-2026-04-04,824378,669016,Brandon Marsh,National League All-Stars,Colorado Rockies,4,4,1,0,0,0,1,1,0,0,1,0,0,0
-2026-04-05,824379,669016,Brandon Marsh,National League All-Stars,Colorado Rockies,4,4,1,1,0,0,2,0,0,0,2,0,0,0
-2026-04-06,823237,669016,Brandon Marsh,National League All-Stars,San Francisco Giants,5,4,1,0,0,0,1,0,1,0,1,0,0,0
-2026-04-08,823234,669016,Brandon Marsh,National League All-Stars,San Francisco Giants,3,3,0,0,0,0,0,0,0,0,2,0,0,0
-2026-04-10,823482,669016,Brandon Marsh,National League All-Stars,Arizona Diamondbacks,4,4,1,0,0,1,4,1,3,0,3,0,0,0
-2026-04-11,823480,669016,Brandon Marsh,National League All-Stars,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-12,823479,669016,Brandon Marsh,National League All-Stars,Arizona Diamondbacks,4,4,2,0,0,0,2,0,0,0,0,0,0,0
-2026-04-13,823481,669016,Brandon Marsh,National League All-Stars,Chicago Cubs,5,4,3,1,0,0,4,2,2,1,0,1,0,0
-2026-04-14,823478,669016,Brandon Marsh,National League All-Stars,Chicago Cubs,3,3,1,0,0,0,1,1,0,0,0,0,0,0
-2026-04-15,823477,669016,Brandon Marsh,National League All-Stars,Chicago Cubs,3,3,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-18,823474,669016,Brandon Marsh,National League All-Stars,Atlanta Braves,2,2,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-19,823475,669016,Brandon Marsh,National League All-Stars,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-20,824692,669016,Brandon Marsh,National League All-Stars,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-21,824690,669016,Brandon Marsh,National League All-Stars,Chicago Cubs,4,4,2,0,0,0,2,0,0,0,0,0,0,0
-2026-04-23,824689,669016,Brandon Marsh,National League All-Stars,Chicago Cubs,5,4,3,0,0,2,9,2,3,1,1,0,0,0
-2026-04-24,824932,669016,Brandon Marsh,National League All-Stars,Atlanta Braves,5,5,1,0,0,0,1,0,0,0,0,0,0,0
-2026-04-25,824933,669016,Brandon Marsh,National League All-Stars,Atlanta Braves,5,5,2,0,0,0,2,1,2,0,1,0,0,0
-2026-04-26,824934,669016,Brandon Marsh,National League All-Stars,Atlanta Braves,1,1,0,0,0,0,0,0,0,0,1,0,0,0
-2026-04-28,823473,669016,Brandon Marsh,National League All-Stars,San Francisco Giants,4,3,1,0,0,0,1,1,1,0,0,1,0,0
-2026-04-30,823472,669016,Brandon Marsh,National League All-Stars,San Francisco Giants,4,4,1,1,0,0,2,0,0,0,3,0,0,0
-2026-04-30,823471,669016,Brandon Marsh,National League All-Stars,San Francisco Giants,1,1,1,1,0,0,2,1,0,0,0,0,0,0
-2026-05-01,823877,669016,Brandon Marsh,National League All-Stars,Miami Marlins,4,3,1,0,0,0,1,2,0,0,0,0,0,1
-2026-05-03,823875,669016,Brandon Marsh,National League All-Stars,Miami Marlins,5,4,2,1,0,0,3,1,1,1,1,0,0,0
-2026-05-04,823874,669016,Brandon Marsh,National League All-Stars,Miami Marlins,4,4,1,0,0,0,1,0,0,0,0,0,0,0
-2026-05-05,823469,669016,Brandon Marsh,National League All-Stars,Athletics,5,5,3,0,0,0,3,1,0,0,1,0,0,0
-2026-05-06,823470,669016,Brandon Marsh,National League All-Stars,Athletics,4,4,3,0,1,0,5,1,1,0,0,0,0,0
-2026-05-07,823467,669016,Brandon Marsh,National League All-Stars,Athletics,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-05-08,823466,669016,Brandon Marsh,National League All-Stars,Colorado Rockies,5,3,1,0,0,0,1,2,1,2,0,0,0,0
-2026-05-09,823468,669016,Brandon Marsh,National League All-Stars,Colorado Rockies,4,3,1,0,0,0,1,1,1,0,2,0,0,0
-2026-05-10,823463,669016,Brandon Marsh,National League All-Stars,Colorado Rockies,4,4,4,0,0,0,4,1,0,0,0,0,0,0
-2026-05-12,824764,669016,Brandon Marsh,National League All-Stars,Boston Red Sox,4,4,1,0,0,0,1,1,0,0,0,0,0,0
-2026-05-13,824763,669016,Brandon Marsh,National League All-Stars,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-14,824762,669016,Brandon Marsh,National League All-Stars,Boston Red Sox,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-05-15,823384,669016,Brandon Marsh,National League All-Stars,Pittsburgh Pirates,5,5,1,1,0,0,2,1,1,0,0,0,0,0
-2026-05-16,823382,669016,Brandon Marsh,National League All-Stars,Pittsburgh Pirates,5,5,1,0,0,0,1,0,0,0,2,0,0,0
-2026-05-17,823381,669016,Brandon Marsh,National League All-Stars,Pittsburgh Pirates,4,4,1,1,0,0,2,1,0,0,2,0,0,0
-2026-05-18,823465,669016,Brandon Marsh,National League All-Stars,Cincinnati Reds,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-19,823464,669016,Brandon Marsh,National League All-Stars,Cincinnati Reds,3,3,0,0,0,0,0,0,0,0,3,0,0,0
-2026-05-20,823462,669016,Brandon Marsh,National League All-Stars,Cincinnati Reds,4,4,2,0,0,0,2,1,0,0,1,1,0,0
-2026-05-22,823461,669016,Brandon Marsh,National League All-Stars,Cleveland Guardians,3,3,1,0,0,0,1,0,0,0,2,0,1,0
-2026-05-23,823458,669016,Brandon Marsh,National League All-Stars,Cleveland Guardians,4,3,0,0,0,0,0,0,0,1,2,0,0,0
-2026-05-24,823459,669016,Brandon Marsh,National League All-Stars,Cleveland Guardians,4,3,1,0,1,0,3,1,0,1,0,0,0,0
-2026-05-25,823296,669016,Brandon Marsh,National League All-Stars,San Diego Padres,4,4,1,0,0,1,4,1,2,0,1,0,0,0
-2026-05-26,823294,669016,Brandon Marsh,National League All-Stars,San Diego Padres,2,2,2,0,0,0,2,0,0,0,0,0,0,0
-2026-05-29,823946,669016,Brandon Marsh,National League All-Stars,Los Angeles Dodgers,3,3,1,1,0,0,2,1,0,0,2,0,0,0
-2026-05-30,823945,669016,Brandon Marsh,National League All-Stars,Los Angeles Dodgers,2,2,0,0,0,0,0,0,0,0,0,0,0,0
-2026-05-31,823944,669016,Brandon Marsh,National League All-Stars,Los Angeles Dodgers,4,3,0,0,0,0,0,0,0,1,2,0,1,0
-2026-06-02,823460,669016,Brandon Marsh,National League All-Stars,San Diego Padres,4,4,4,0,0,0,4,0,0,0,0,1,0,0
-2026-06-03,823456,669016,Brandon Marsh,National League All-Stars,San Diego Padres,4,4,2,0,0,0,2,0,0,0,1,0,0,0
-2026-06-04,823457,669016,Brandon Marsh,National League All-Stars,San Diego Padres,4,4,1,0,0,0,1,0,1,0,2,0,0,0
-2026-06-05,823455,669016,Brandon Marsh,National League All-Stars,Chicago White Sox,4,4,1,0,0,1,4,1,2,0,2,0,0,0
-2026-06-06,823454,669016,Brandon Marsh,National League All-Stars,Chicago White Sox,4,4,2,1,0,1,6,1,1,0,0,0,0,0
-2026-06-07,823453,669016,Brandon Marsh,National League All-Stars,Chicago White Sox,5,4,2,0,0,1,5,2,2,1,1,0,0,0
-2026-06-08,822806,669016,Brandon Marsh,National League All-Stars,Toronto Blue Jays,4,3,0,0,0,0,0,1,0,0,1,0,0,1
-2026-06-09,822805,669016,Brandon Marsh,National League All-Stars,Toronto Blue Jays,4,4,1,1,0,0,2,0,1,0,3,0,0,0
-2026-06-10,822804,669016,Brandon Marsh,National League All-Stars,Toronto Blue Jays,5,4,0,0,0,0,0,0,0,1,1,0,0,0
-2026-06-12,823778,669016,Brandon Marsh,National League All-Stars,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,2,0,0,0
-2026-06-13,823776,669016,Brandon Marsh,National League All-Stars,Milwaukee Brewers,5,5,3,0,0,0,3,2,1,0,0,1,0,0
-2026-06-14,823777,669016,Brandon Marsh,National League All-Stars,Milwaukee Brewers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-06-15,823452,669016,Brandon Marsh,National League All-Stars,Miami Marlins,5,5,2,1,0,0,3,1,0,0,2,0,0,0
-2026-06-16,823451,669016,Brandon Marsh,National League All-Stars,Miami Marlins,4,3,1,0,0,1,4,2,2,1,1,1,0,0
-2026-06-17,823450,669016,Brandon Marsh,National League All-Stars,Miami Marlins,4,4,1,0,0,0,1,0,1,0,2,0,0,0
-2026-06-18,823448,669016,Brandon Marsh,National League All-Stars,New York Mets,4,4,0,0,0,0,0,0,0,0,3,0,0,0
-2026-06-20,823447,669016,Brandon Marsh,National League All-Stars,New York Mets,5,5,1,0,0,0,1,1,0,0,1,0,0,0
-2026-06-21,823449,669016,Brandon Marsh,National League All-Stars,New York Mets,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-06-22,822720,669016,Brandon Marsh,National League All-Stars,Washington Nationals,3,3,1,0,0,1,4,1,1,0,1,0,0,0
-2026-06-23,822718,669016,Brandon Marsh,National League All-Stars,Washington Nationals,6,6,3,1,0,1,7,2,2,0,1,0,0,0
-2026-06-24,822719,669016,Brandon Marsh,National League All-Stars,Washington Nationals,4,4,3,0,0,0,3,1,0,0,1,0,1,0
-2026-06-25,822717,669016,Brandon Marsh,National League All-Stars,Washington Nationals,5,4,2,0,0,1,5,2,3,1,0,1,0,0
-2026-06-26,823610,669016,Brandon Marsh,National League All-Stars,New York Mets,4,4,0,0,0,0,0,0,0,0,2,0,0,0
-2026-06-27,823609,669016,Brandon Marsh,National League All-Stars,New York Mets,4,4,1,0,0,0,1,0,0,0,2,0,0,0
-2026-06-28,823608,669016,Brandon Marsh,National League All-Stars,New York Mets,4,4,2,1,0,0,3,0,1,0,1,0,0,0
-2026-06-29,823444,669016,Brandon Marsh,National League All-Stars,Pittsburgh Pirates,5,5,2,0,0,2,8,2,2,0,3,0,0,0
-2026-06-30,823445,669016,Brandon Marsh,National League All-Stars,Pittsburgh Pirates,5,5,0,0,0,0,0,0,1,0,2,0,0,0
-2026-07-01,823446,669016,Brandon Marsh,National League All-Stars,Pittsburgh Pirates,5,4,2,0,0,1,5,2,1,1,1,0,0,0
-2026-07-02,823442,669016,Brandon Marsh,National League All-Stars,Pittsburgh Pirates,4,4,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-04,824092,669016,Brandon Marsh,National League All-Stars,Kansas City Royals,5,5,0,0,0,0,0,0,0,0,1,0,0,0
-2026-07-05,824091,669016,Brandon Marsh,National League All-Stars,Kansas City Royals,4,4,1,0,0,0,1,0,0,0,1,0,0,0
-2026-07-06,824089,669016,Brandon Marsh,National League All-Stars,Kansas City Royals,5,4,0,0,0,0,0,0,0,1,2,0,0,0
-2026-07-07,824495,669016,Brandon Marsh,National League All-Stars,Cincinnati Reds,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2026-07-08,824496,669016,Brandon Marsh,National League All-Stars,Cincinnati Reds,5,4,1,0,0,0,1,0,0,1,1,0,0,0
-2026-07-09,824494,669016,Brandon Marsh,National League All-Stars,Cincinnati Reds,4,4,2,0,0,0,2,0,0,0,0,0,0,0
-2026-07-10,824252,669016,Brandon Marsh,National League All-Stars,Detroit Tigers,4,4,1,0,0,0,1,0,0,0,3,0,0,0
-2026-07-11,824249,669016,Brandon Marsh,National League All-Stars,Detroit Tigers,4,3,0,0,0,0,0,1,0,1,1,0,0,0
-2026-07-12,824250,669016,Brandon Marsh,National League All-Stars,Detroit Tigers,4,3,0,0,0,0,0,1,0,1,1,0,0,0
+2026-03-26,823486,669016,Brandon Marsh,Philadelphia Phillies,Texas Rangers,4,4,2,2,0,0,4,0,0,0,1,0,0,0
+2026-03-28,823488,669016,Brandon Marsh,Philadelphia Phillies,Texas Rangers,4,4,1,0,0,0,1,0,2,0,1,0,0,0
+2026-03-29,823487,669016,Brandon Marsh,Philadelphia Phillies,Texas Rangers,2,1,0,0,0,0,0,0,0,1,1,0,0,0
+2026-03-30,823484,669016,Brandon Marsh,Philadelphia Phillies,Washington Nationals,4,3,2,0,0,0,2,1,0,1,0,0,0,0
+2026-03-31,823485,669016,Brandon Marsh,Philadelphia Phillies,Washington Nationals,3,3,1,0,0,0,1,0,0,0,0,1,0,0
+2026-04-01,823483,669016,Brandon Marsh,Philadelphia Phillies,Washington Nationals,5,5,1,0,0,0,1,1,0,0,0,0,0,0
+2026-04-03,824377,669016,Brandon Marsh,Philadelphia Phillies,Colorado Rockies,5,5,1,0,0,1,4,1,3,0,1,0,0,0
+2026-04-04,824378,669016,Brandon Marsh,Philadelphia Phillies,Colorado Rockies,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-04-05,824379,669016,Brandon Marsh,Philadelphia Phillies,Colorado Rockies,4,4,1,1,0,0,2,0,0,0,2,0,0,0
+2026-04-06,823237,669016,Brandon Marsh,Philadelphia Phillies,San Francisco Giants,5,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-04-08,823234,669016,Brandon Marsh,Philadelphia Phillies,San Francisco Giants,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-10,823482,669016,Brandon Marsh,Philadelphia Phillies,Arizona Diamondbacks,4,4,1,0,0,1,4,1,3,0,3,0,0,0
+2026-04-11,823480,669016,Brandon Marsh,Philadelphia Phillies,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-12,823479,669016,Brandon Marsh,Philadelphia Phillies,Arizona Diamondbacks,4,4,2,0,0,0,2,0,0,0,0,0,0,0
+2026-04-13,823481,669016,Brandon Marsh,Philadelphia Phillies,Chicago Cubs,5,4,3,1,0,0,4,2,2,1,0,1,0,0
+2026-04-14,823478,669016,Brandon Marsh,Philadelphia Phillies,Chicago Cubs,3,3,1,0,0,0,1,1,0,0,0,0,0,0
+2026-04-15,823477,669016,Brandon Marsh,Philadelphia Phillies,Chicago Cubs,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-18,823474,669016,Brandon Marsh,Philadelphia Phillies,Atlanta Braves,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-19,823475,669016,Brandon Marsh,Philadelphia Phillies,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-20,824692,669016,Brandon Marsh,Philadelphia Phillies,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-21,824690,669016,Brandon Marsh,Philadelphia Phillies,Chicago Cubs,4,4,2,0,0,0,2,0,0,0,0,0,0,0
+2026-04-23,824689,669016,Brandon Marsh,Philadelphia Phillies,Chicago Cubs,5,4,3,0,0,2,9,2,3,1,1,0,0,0
+2026-04-24,824932,669016,Brandon Marsh,Philadelphia Phillies,Atlanta Braves,5,5,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-25,824933,669016,Brandon Marsh,Philadelphia Phillies,Atlanta Braves,5,5,2,0,0,0,2,1,2,0,1,0,0,0
+2026-04-26,824934,669016,Brandon Marsh,Philadelphia Phillies,Atlanta Braves,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-28,823473,669016,Brandon Marsh,Philadelphia Phillies,San Francisco Giants,4,3,1,0,0,0,1,1,1,0,0,1,0,0
+2026-04-30,823472,669016,Brandon Marsh,Philadelphia Phillies,San Francisco Giants,4,4,1,1,0,0,2,0,0,0,3,0,0,0
+2026-04-30,823471,669016,Brandon Marsh,Philadelphia Phillies,San Francisco Giants,1,1,1,1,0,0,2,1,0,0,0,0,0,0
+2026-05-01,823877,669016,Brandon Marsh,Philadelphia Phillies,Miami Marlins,4,3,1,0,0,0,1,2,0,0,0,0,0,1
+2026-05-03,823875,669016,Brandon Marsh,Philadelphia Phillies,Miami Marlins,5,4,2,1,0,0,3,1,1,1,1,0,0,0
+2026-05-04,823874,669016,Brandon Marsh,Philadelphia Phillies,Miami Marlins,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-05,823469,669016,Brandon Marsh,Philadelphia Phillies,Athletics,5,5,3,0,0,0,3,1,0,0,1,0,0,0
+2026-05-06,823470,669016,Brandon Marsh,Philadelphia Phillies,Athletics,4,4,3,0,1,0,5,1,1,0,0,0,0,0
+2026-05-07,823467,669016,Brandon Marsh,Philadelphia Phillies,Athletics,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-08,823466,669016,Brandon Marsh,Philadelphia Phillies,Colorado Rockies,5,3,1,0,0,0,1,2,1,2,0,0,0,0
+2026-05-09,823468,669016,Brandon Marsh,Philadelphia Phillies,Colorado Rockies,4,3,1,0,0,0,1,1,1,0,2,0,0,0
+2026-05-10,823463,669016,Brandon Marsh,Philadelphia Phillies,Colorado Rockies,4,4,4,0,0,0,4,1,0,0,0,0,0,0
+2026-05-12,824764,669016,Brandon Marsh,Philadelphia Phillies,Boston Red Sox,4,4,1,0,0,0,1,1,0,0,0,0,0,0
+2026-05-13,824763,669016,Brandon Marsh,Philadelphia Phillies,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-14,824762,669016,Brandon Marsh,Philadelphia Phillies,Boston Red Sox,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-15,823384,669016,Brandon Marsh,Philadelphia Phillies,Pittsburgh Pirates,5,5,1,1,0,0,2,1,1,0,0,0,0,0
+2026-05-16,823382,669016,Brandon Marsh,Philadelphia Phillies,Pittsburgh Pirates,5,5,1,0,0,0,1,0,0,0,2,0,0,0
+2026-05-17,823381,669016,Brandon Marsh,Philadelphia Phillies,Pittsburgh Pirates,4,4,1,1,0,0,2,1,0,0,2,0,0,0
+2026-05-18,823465,669016,Brandon Marsh,Philadelphia Phillies,Cincinnati Reds,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-19,823464,669016,Brandon Marsh,Philadelphia Phillies,Cincinnati Reds,3,3,0,0,0,0,0,0,0,0,3,0,0,0
+2026-05-20,823462,669016,Brandon Marsh,Philadelphia Phillies,Cincinnati Reds,4,4,2,0,0,0,2,1,0,0,1,1,0,0
+2026-05-22,823461,669016,Brandon Marsh,Philadelphia Phillies,Cleveland Guardians,3,3,1,0,0,0,1,0,0,0,2,0,1,0
+2026-05-23,823458,669016,Brandon Marsh,Philadelphia Phillies,Cleveland Guardians,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-05-24,823459,669016,Brandon Marsh,Philadelphia Phillies,Cleveland Guardians,4,3,1,0,1,0,3,1,0,1,0,0,0,0
+2026-05-25,823296,669016,Brandon Marsh,Philadelphia Phillies,San Diego Padres,4,4,1,0,0,1,4,1,2,0,1,0,0,0
+2026-05-26,823294,669016,Brandon Marsh,Philadelphia Phillies,San Diego Padres,2,2,2,0,0,0,2,0,0,0,0,0,0,0
+2026-05-29,823946,669016,Brandon Marsh,Philadelphia Phillies,Los Angeles Dodgers,3,3,1,1,0,0,2,1,0,0,2,0,0,0
+2026-05-30,823945,669016,Brandon Marsh,Philadelphia Phillies,Los Angeles Dodgers,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-31,823944,669016,Brandon Marsh,Philadelphia Phillies,Los Angeles Dodgers,4,3,0,0,0,0,0,0,0,1,2,0,1,0
+2026-06-02,823460,669016,Brandon Marsh,Philadelphia Phillies,San Diego Padres,4,4,4,0,0,0,4,0,0,0,0,1,0,0
+2026-06-03,823456,669016,Brandon Marsh,Philadelphia Phillies,San Diego Padres,4,4,2,0,0,0,2,0,0,0,1,0,0,0
+2026-06-04,823457,669016,Brandon Marsh,Philadelphia Phillies,San Diego Padres,4,4,1,0,0,0,1,0,1,0,2,0,0,0
+2026-06-05,823455,669016,Brandon Marsh,Philadelphia Phillies,Chicago White Sox,4,4,1,0,0,1,4,1,2,0,2,0,0,0
+2026-06-06,823454,669016,Brandon Marsh,Philadelphia Phillies,Chicago White Sox,4,4,2,1,0,1,6,1,1,0,0,0,0,0
+2026-06-07,823453,669016,Brandon Marsh,Philadelphia Phillies,Chicago White Sox,5,4,2,0,0,1,5,2,2,1,1,0,0,0
+2026-06-08,822806,669016,Brandon Marsh,Philadelphia Phillies,Toronto Blue Jays,4,3,0,0,0,0,0,1,0,0,1,0,0,1
+2026-06-09,822805,669016,Brandon Marsh,Philadelphia Phillies,Toronto Blue Jays,4,4,1,1,0,0,2,0,1,0,3,0,0,0
+2026-06-10,822804,669016,Brandon Marsh,Philadelphia Phillies,Toronto Blue Jays,5,4,0,0,0,0,0,0,0,1,1,0,0,0
+2026-06-12,823778,669016,Brandon Marsh,Philadelphia Phillies,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-13,823776,669016,Brandon Marsh,Philadelphia Phillies,Milwaukee Brewers,5,5,3,0,0,0,3,2,1,0,0,1,0,0
+2026-06-14,823777,669016,Brandon Marsh,Philadelphia Phillies,Milwaukee Brewers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-15,823452,669016,Brandon Marsh,Philadelphia Phillies,Miami Marlins,5,5,2,1,0,0,3,1,0,0,2,0,0,0
+2026-06-16,823451,669016,Brandon Marsh,Philadelphia Phillies,Miami Marlins,4,3,1,0,0,1,4,2,2,1,1,1,0,0
+2026-06-17,823450,669016,Brandon Marsh,Philadelphia Phillies,Miami Marlins,4,4,1,0,0,0,1,0,1,0,2,0,0,0
+2026-06-18,823448,669016,Brandon Marsh,Philadelphia Phillies,New York Mets,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-06-20,823447,669016,Brandon Marsh,Philadelphia Phillies,New York Mets,5,5,1,0,0,0,1,1,0,0,1,0,0,0
+2026-06-21,823449,669016,Brandon Marsh,Philadelphia Phillies,New York Mets,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-22,822720,669016,Brandon Marsh,Philadelphia Phillies,Washington Nationals,3,3,1,0,0,1,4,1,1,0,1,0,0,0
+2026-06-23,822718,669016,Brandon Marsh,Philadelphia Phillies,Washington Nationals,6,6,3,1,0,1,7,2,2,0,1,0,0,0
+2026-06-24,822719,669016,Brandon Marsh,Philadelphia Phillies,Washington Nationals,4,4,3,0,0,0,3,1,0,0,1,0,1,0
+2026-06-25,822717,669016,Brandon Marsh,Philadelphia Phillies,Washington Nationals,5,4,2,0,0,1,5,2,3,1,0,1,0,0
+2026-06-26,823610,669016,Brandon Marsh,Philadelphia Phillies,New York Mets,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-27,823609,669016,Brandon Marsh,Philadelphia Phillies,New York Mets,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-06-28,823608,669016,Brandon Marsh,Philadelphia Phillies,New York Mets,4,4,2,1,0,0,3,0,1,0,1,0,0,0
+2026-06-29,823444,669016,Brandon Marsh,Philadelphia Phillies,Pittsburgh Pirates,5,5,2,0,0,2,8,2,2,0,3,0,0,0
+2026-06-30,823445,669016,Brandon Marsh,Philadelphia Phillies,Pittsburgh Pirates,5,5,0,0,0,0,0,0,1,0,2,0,0,0
+2026-07-01,823446,669016,Brandon Marsh,Philadelphia Phillies,Pittsburgh Pirates,5,4,2,0,0,1,5,2,1,1,1,0,0,0
+2026-07-02,823442,669016,Brandon Marsh,Philadelphia Phillies,Pittsburgh Pirates,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-04,824092,669016,Brandon Marsh,Philadelphia Phillies,Kansas City Royals,5,5,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-05,824091,669016,Brandon Marsh,Philadelphia Phillies,Kansas City Royals,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-06,824089,669016,Brandon Marsh,Philadelphia Phillies,Kansas City Royals,5,4,0,0,0,0,0,0,0,1,2,0,0,0
+2026-07-07,824495,669016,Brandon Marsh,Philadelphia Phillies,Cincinnati Reds,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-08,824496,669016,Brandon Marsh,Philadelphia Phillies,Cincinnati Reds,5,4,1,0,0,0,1,0,0,1,1,0,0,0
+2026-07-09,824494,669016,Brandon Marsh,Philadelphia Phillies,Cincinnati Reds,4,4,2,0,0,0,2,0,0,0,0,0,0,0
+2026-07-10,824252,669016,Brandon Marsh,Philadelphia Phillies,Detroit Tigers,4,4,1,0,0,0,1,0,0,0,3,0,0,0
+2026-07-11,824249,669016,Brandon Marsh,Philadelphia Phillies,Detroit Tigers,4,3,0,0,0,0,0,1,0,1,1,0,0,0
+2026-07-12,824250,669016,Brandon Marsh,Philadelphia Phillies,Detroit Tigers,4,3,0,0,0,0,0,1,0,1,1,0,0,0
 2026-04-19,823881,669065,Kyle Stowers,Miami Marlins,Milwaukee Brewers,4,3,2,1,0,0,3,0,0,0,1,0,0,1
 2026-04-20,823879,669065,Kyle Stowers,Miami Marlins,St. Louis Cardinals,4,3,1,0,0,0,1,2,0,1,0,0,0,0
 2026-04-21,823880,669065,Kyle Stowers,Miami Marlins,St. Louis Cardinals,5,4,0,0,0,0,0,0,0,1,1,0,1,0
@@ -13583,6 +13590,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,823605,676724,Jared Young,New York Mets,Kansas City Royals,4,2,0,0,0,0,0,1,1,1,0,0,0,1
 2026-07-09,823606,676724,Jared Young,New York Mets,Kansas City Royals,4,4,2,2,0,0,4,0,1,0,0,0,0,0
 2026-07-10,823604,676724,Jared Young,New York Mets,Boston Red Sox,4,4,2,1,0,0,3,0,0,0,1,0,0,0
+2026-07-12,823602,676724,Jared Young,New York Mets,Boston Red Sox,1,1,1,0,0,0,1,0,0,0,0,0,0,0
 2026-03-26,823163,677587,Brayan Rocchio,Cleveland Guardians,Seattle Mariners,4,3,2,1,0,0,3,1,2,0,1,0,0,1
 2026-03-27,823162,677587,Brayan Rocchio,Cleveland Guardians,Seattle Mariners,3,2,0,0,0,0,0,0,0,0,0,0,0,1
 2026-03-28,823161,677587,Brayan Rocchio,Cleveland Guardians,Seattle Mariners,4,2,0,0,0,0,0,2,0,2,0,0,0,0
@@ -15389,6 +15397,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,824494,681082,Bryson Stott,Philadelphia Phillies,Cincinnati Reds,4,4,1,1,0,0,2,0,0,0,0,0,0,0
 2026-07-10,824252,681082,Bryson Stott,Philadelphia Phillies,Detroit Tigers,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-07-11,824249,681082,Bryson Stott,Philadelphia Phillies,Detroit Tigers,4,4,2,0,0,0,2,1,0,0,1,1,0,0
+2026-07-12,824250,681082,Bryson Stott,Philadelphia Phillies,Detroit Tigers,4,4,2,1,0,0,3,0,1,0,0,0,0,0
 2026-03-27,823893,681198,TJ Rumfield,Colorado Rockies,Miami Marlins,4,3,1,0,0,0,1,0,0,1,0,0,0,0
 2026-03-28,823892,681198,TJ Rumfield,Colorado Rockies,Miami Marlins,4,4,1,0,0,1,4,1,1,0,1,0,0,0
 2026-03-29,823891,681198,TJ Rumfield,Colorado Rockies,Miami Marlins,3,2,0,0,0,0,0,1,0,1,2,0,0,0
@@ -16133,6 +16142,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,823605,682626,Francisco Alvarez,New York Mets,Kansas City Royals,4,3,1,0,0,0,1,0,1,1,1,0,0,0
 2026-07-09,823606,682626,Francisco Alvarez,New York Mets,Kansas City Royals,4,4,1,0,0,0,1,0,1,0,2,0,0,0
 2026-07-10,823604,682626,Francisco Alvarez,New York Mets,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-11,823603,682626,Francisco Alvarez,New York Mets,Boston Red Sox,4,3,2,0,0,0,2,0,0,1,1,0,0,0
 2026-05-23,824674,682634,Kevin Alcántara,Chicago Cubs,Houston Astros,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-05-24,824676,682634,Kevin Alcántara,Chicago Cubs,Houston Astros,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-05-26,823379,682634,Kevin Alcántara,Chicago Cubs,Pittsburgh Pirates,1,1,0,0,0,0,0,0,0,0,1,0,0,0
@@ -16922,6 +16932,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,823606,683146,Brett Baty,New York Mets,Kansas City Royals,4,4,1,0,0,0,1,1,0,0,1,1,0,0
 2026-07-10,823604,683146,Brett Baty,New York Mets,Boston Red Sox,4,4,3,0,0,1,6,2,1,0,0,1,0,0
 2026-07-11,823603,683146,Brett Baty,New York Mets,Boston Red Sox,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-07-12,823602,683146,Brett Baty,New York Mets,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-05-04,823228,683679,Jesus Rodriguez,San Francisco Giants,San Diego Padres,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-05-05,823227,683679,Jesus Rodriguez,San Francisco Giants,San Diego Padres,3,3,2,0,0,1,5,1,2,0,0,0,0,0
 2026-05-06,823226,683679,Jesus Rodriguez,San Francisco Giants,San Diego Padres,3,3,2,0,0,0,2,0,0,0,0,0,0,0
@@ -18109,6 +18120,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,824496,687282,Gabriel Rincones Jr.,Philadelphia Phillies,Cincinnati Reds,5,5,1,1,0,0,2,1,0,0,1,0,0,0
 2026-07-09,824494,687282,Gabriel Rincones Jr.,Philadelphia Phillies,Cincinnati Reds,3,2,0,0,0,0,0,0,0,0,0,0,0,1
 2026-07-10,824252,687282,Gabriel Rincones Jr.,Philadelphia Phillies,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-11,824249,687282,Gabriel Rincones Jr.,Philadelphia Phillies,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-26,823812,687401,Joey Ortiz,Milwaukee Brewers,Chicago White Sox,3,3,2,0,0,0,2,2,2,0,0,0,0,0
 2026-03-28,823811,687401,Joey Ortiz,Milwaukee Brewers,Chicago White Sox,4,4,2,0,0,0,2,0,1,0,1,2,0,0
 2026-03-29,823810,687401,Joey Ortiz,Milwaukee Brewers,Chicago White Sox,5,4,1,0,0,0,1,1,0,1,3,0,0,0
@@ -21981,6 +21993,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,823606,701807,Carson Benge,New York Mets,Kansas City Royals,4,3,2,0,0,0,2,2,1,1,0,1,0,0
 2026-07-10,823604,701807,Carson Benge,New York Mets,Boston Red Sox,4,4,1,0,0,0,1,0,0,0,0,1,0,0
 2026-07-11,823603,701807,Carson Benge,New York Mets,Boston Red Sox,4,3,0,0,0,0,0,0,0,1,2,1,0,0
+2026-07-12,823602,701807,Carson Benge,New York Mets,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,3,0,0,0
 2026-06-26,823206,701852,Drew Cavanaugh,San Francisco Giants,Atlanta Braves,4,3,1,0,0,0,1,0,0,1,1,0,0,0
 2026-06-27,823207,701852,Drew Cavanaugh,San Francisco Giants,Atlanta Braves,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-06-29,825065,701852,Drew Cavanaugh,San Francisco Giants,Arizona Diamondbacks,1,1,1,0,0,0,1,0,1,0,0,0,0,0
@@ -21996,6 +22009,94 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,823683,702176,Alan Roden,Minnesota Twins,Cleveland Guardians,3,2,0,0,0,0,0,0,0,1,1,0,0,0
 2026-07-10,823685,702176,Alan Roden,Minnesota Twins,Los Angeles Angels,2,2,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-11,823682,702176,Alan Roden,Minnesota Twins,Los Angeles Angels,3,2,1,0,0,0,1,0,1,1,0,0,0,0
+2026-03-26,823486,702222,Justin Crawford,Philadelphia Phillies,Texas Rangers,4,4,2,0,0,0,2,1,0,0,0,0,0,0
+2026-03-28,823488,702222,Justin Crawford,Philadelphia Phillies,Texas Rangers,3,2,0,0,0,0,0,0,0,1,1,0,0,0
+2026-03-29,823487,702222,Justin Crawford,Philadelphia Phillies,Texas Rangers,3,3,1,0,0,0,1,1,0,0,2,0,0,0
+2026-03-31,823485,702222,Justin Crawford,Philadelphia Phillies,Washington Nationals,3,3,1,0,0,0,1,1,0,0,0,0,0,0
+2026-04-01,823483,702222,Justin Crawford,Philadelphia Phillies,Washington Nationals,5,5,3,1,0,0,4,0,1,0,1,0,0,0
+2026-04-03,824377,702222,Justin Crawford,Philadelphia Phillies,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-04,824378,702222,Justin Crawford,Philadelphia Phillies,Colorado Rockies,4,4,1,0,0,0,1,0,0,0,0,1,0,0
+2026-04-05,824379,702222,Justin Crawford,Philadelphia Phillies,Colorado Rockies,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-06,823237,702222,Justin Crawford,Philadelphia Phillies,San Francisco Giants,4,3,2,1,0,0,3,2,0,1,1,0,0,0
+2026-04-07,823235,702222,Justin Crawford,Philadelphia Phillies,San Francisco Giants,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-08,823234,702222,Justin Crawford,Philadelphia Phillies,San Francisco Giants,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-10,823482,702222,Justin Crawford,Philadelphia Phillies,Arizona Diamondbacks,4,2,1,0,1,0,3,0,0,1,1,0,1,1
+2026-04-11,823480,702222,Justin Crawford,Philadelphia Phillies,Arizona Diamondbacks,3,2,2,1,0,0,3,1,0,1,0,0,0,0
+2026-04-12,823479,702222,Justin Crawford,Philadelphia Phillies,Arizona Diamondbacks,4,4,1,1,0,0,2,1,0,0,1,0,0,0
+2026-04-13,823481,702222,Justin Crawford,Philadelphia Phillies,Chicago Cubs,5,5,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-14,823478,702222,Justin Crawford,Philadelphia Phillies,Chicago Cubs,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-15,823477,702222,Justin Crawford,Philadelphia Phillies,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-17,823476,702222,Justin Crawford,Philadelphia Phillies,Atlanta Braves,3,2,0,0,0,0,0,0,0,0,0,0,0,1
+2026-04-19,823475,702222,Justin Crawford,Philadelphia Phillies,Atlanta Braves,4,3,1,0,0,0,1,0,0,1,0,0,0,0
+2026-04-20,824692,702222,Justin Crawford,Philadelphia Phillies,Chicago Cubs,4,2,1,1,0,0,2,0,1,2,0,0,0,0
+2026-04-22,824688,702222,Justin Crawford,Philadelphia Phillies,Chicago Cubs,4,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-04-23,824689,702222,Justin Crawford,Philadelphia Phillies,Chicago Cubs,5,5,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-24,824932,702222,Justin Crawford,Philadelphia Phillies,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-25,824933,702222,Justin Crawford,Philadelphia Phillies,Atlanta Braves,5,5,1,0,0,0,1,0,0,0,2,1,0,0
+2026-04-28,823473,702222,Justin Crawford,Philadelphia Phillies,San Francisco Giants,4,4,1,0,0,0,1,1,1,0,2,0,0,0
+2026-04-30,823472,702222,Justin Crawford,Philadelphia Phillies,San Francisco Giants,4,4,3,0,0,0,3,0,1,0,0,0,1,0
+2026-04-30,823471,702222,Justin Crawford,Philadelphia Phillies,San Francisco Giants,4,4,1,0,1,0,3,0,0,0,0,0,0,0
+2026-05-01,823877,702222,Justin Crawford,Philadelphia Phillies,Miami Marlins,4,3,1,1,0,0,2,0,1,1,0,0,0,0
+2026-05-03,823875,702222,Justin Crawford,Philadelphia Phillies,Miami Marlins,4,4,1,0,0,0,1,0,1,0,0,1,0,0
+2026-05-04,823874,702222,Justin Crawford,Philadelphia Phillies,Miami Marlins,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-05,823469,702222,Justin Crawford,Philadelphia Phillies,Athletics,4,4,2,1,0,0,3,1,0,0,1,0,0,0
+2026-05-06,823470,702222,Justin Crawford,Philadelphia Phillies,Athletics,2,2,0,0,0,0,0,0,1,0,1,0,0,0
+2026-05-07,823467,702222,Justin Crawford,Philadelphia Phillies,Athletics,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-08,823466,702222,Justin Crawford,Philadelphia Phillies,Colorado Rockies,5,4,3,0,0,1,6,1,2,1,1,0,0,0
+2026-05-09,823468,702222,Justin Crawford,Philadelphia Phillies,Colorado Rockies,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-10,823463,702222,Justin Crawford,Philadelphia Phillies,Colorado Rockies,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-12,824764,702222,Justin Crawford,Philadelphia Phillies,Boston Red Sox,3,2,0,0,0,0,0,0,0,1,2,1,0,0
+2026-05-13,824763,702222,Justin Crawford,Philadelphia Phillies,Boston Red Sox,3,3,1,0,0,1,4,1,1,0,1,0,0,0
+2026-05-14,824762,702222,Justin Crawford,Philadelphia Phillies,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-15,823384,702222,Justin Crawford,Philadelphia Phillies,Pittsburgh Pirates,5,5,2,0,0,0,2,0,0,0,0,1,0,0
+2026-05-16,823382,702222,Justin Crawford,Philadelphia Phillies,Pittsburgh Pirates,4,2,0,0,0,0,0,1,0,2,0,1,0,0
+2026-05-17,823381,702222,Justin Crawford,Philadelphia Phillies,Pittsburgh Pirates,4,4,0,0,0,0,0,0,1,0,0,0,0,0
+2026-05-18,823465,702222,Justin Crawford,Philadelphia Phillies,Cincinnati Reds,4,4,1,0,0,0,1,0,0,0,0,1,0,0
+2026-05-19,823464,702222,Justin Crawford,Philadelphia Phillies,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-20,823462,702222,Justin Crawford,Philadelphia Phillies,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-22,823461,702222,Justin Crawford,Philadelphia Phillies,Cleveland Guardians,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-23,823458,702222,Justin Crawford,Philadelphia Phillies,Cleveland Guardians,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-24,823459,702222,Justin Crawford,Philadelphia Phillies,Cleveland Guardians,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-25,823296,702222,Justin Crawford,Philadelphia Phillies,San Diego Padres,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-26,823294,702222,Justin Crawford,Philadelphia Phillies,San Diego Padres,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-27,823295,702222,Justin Crawford,Philadelphia Phillies,San Diego Padres,3,3,1,0,0,0,1,1,0,0,0,0,0,0
+2026-05-30,823945,702222,Justin Crawford,Philadelphia Phillies,Los Angeles Dodgers,3,3,1,0,0,0,1,1,0,0,1,0,0,0
+2026-05-31,823944,702222,Justin Crawford,Philadelphia Phillies,Los Angeles Dodgers,4,4,1,1,0,0,2,0,0,0,1,0,0,0
+2026-06-02,823460,702222,Justin Crawford,Philadelphia Phillies,San Diego Padres,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-03,823456,702222,Justin Crawford,Philadelphia Phillies,San Diego Padres,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-04,823457,702222,Justin Crawford,Philadelphia Phillies,San Diego Padres,4,3,1,1,0,0,2,2,0,1,0,1,0,0
+2026-06-05,823455,702222,Justin Crawford,Philadelphia Phillies,Chicago White Sox,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-06,823454,702222,Justin Crawford,Philadelphia Phillies,Chicago White Sox,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-07,823453,702222,Justin Crawford,Philadelphia Phillies,Chicago White Sox,4,4,1,0,0,0,1,1,1,0,1,0,0,0
+2026-06-08,822806,702222,Justin Crawford,Philadelphia Phillies,Toronto Blue Jays,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-09,822805,702222,Justin Crawford,Philadelphia Phillies,Toronto Blue Jays,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-10,822804,702222,Justin Crawford,Philadelphia Phillies,Toronto Blue Jays,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-06-12,823778,702222,Justin Crawford,Philadelphia Phillies,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,3,0,0,0
+2026-06-13,823776,702222,Justin Crawford,Philadelphia Phillies,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-14,823777,702222,Justin Crawford,Philadelphia Phillies,Milwaukee Brewers,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-15,823452,702222,Justin Crawford,Philadelphia Phillies,Miami Marlins,4,4,3,0,0,0,3,1,1,0,0,1,0,0
+2026-06-16,823451,702222,Justin Crawford,Philadelphia Phillies,Miami Marlins,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-17,823450,702222,Justin Crawford,Philadelphia Phillies,Miami Marlins,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-06-18,823448,702222,Justin Crawford,Philadelphia Phillies,New York Mets,4,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-06-20,823447,702222,Justin Crawford,Philadelphia Phillies,New York Mets,4,3,2,1,0,0,3,1,1,1,1,0,0,0
+2026-06-21,823449,702222,Justin Crawford,Philadelphia Phillies,New York Mets,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-22,822720,702222,Justin Crawford,Philadelphia Phillies,Washington Nationals,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-23,822718,702222,Justin Crawford,Philadelphia Phillies,Washington Nationals,5,4,1,1,0,0,2,0,0,1,2,0,0,0
+2026-06-24,822719,702222,Justin Crawford,Philadelphia Phillies,Washington Nationals,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-25,822717,702222,Justin Crawford,Philadelphia Phillies,Washington Nationals,5,5,2,0,0,0,2,1,0,0,1,0,1,0
+2026-06-26,823610,702222,Justin Crawford,Philadelphia Phillies,New York Mets,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-27,823609,702222,Justin Crawford,Philadelphia Phillies,New York Mets,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-28,823608,702222,Justin Crawford,Philadelphia Phillies,New York Mets,4,4,1,0,0,0,1,1,0,0,0,0,0,0
+2026-06-29,823444,702222,Justin Crawford,Philadelphia Phillies,Pittsburgh Pirates,4,4,2,0,0,0,2,1,0,0,1,1,0,0
+2026-06-30,823445,702222,Justin Crawford,Philadelphia Phillies,Pittsburgh Pirates,4,3,3,1,0,0,4,1,3,0,0,0,0,0
+2026-07-01,823446,702222,Justin Crawford,Philadelphia Phillies,Pittsburgh Pirates,4,4,1,0,0,0,1,1,0,0,0,0,0,0
+2026-07-02,823442,702222,Justin Crawford,Philadelphia Phillies,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-04,824092,702222,Justin Crawford,Philadelphia Phillies,Kansas City Royals,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-05,824091,702222,Justin Crawford,Philadelphia Phillies,Kansas City Royals,3,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-06,824089,702222,Justin Crawford,Philadelphia Phillies,Kansas City Royals,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-07,824495,702222,Justin Crawford,Philadelphia Phillies,Cincinnati Reds,4,4,2,0,0,0,2,1,0,0,1,1,0,0
+2026-07-08,824496,702222,Justin Crawford,Philadelphia Phillies,Cincinnati Reds,4,3,2,0,1,0,4,1,1,1,1,1,0,0
+2026-07-09,824494,702222,Justin Crawford,Philadelphia Phillies,Cincinnati Reds,3,3,1,0,0,0,1,0,1,0,0,0,0,0
 2026-03-26,823163,702284,Cole Young,Seattle Mariners,Cleveland Guardians,3,3,0,0,0,0,0,0,0,0,3,0,0,0
 2026-03-27,823162,702284,Cole Young,Seattle Mariners,Cleveland Guardians,3,3,1,0,0,1,4,1,3,0,1,0,0,0
 2026-03-28,823161,702284,Cole Young,Seattle Mariners,Cleveland Guardians,5,5,1,1,0,0,2,1,0,0,3,0,0,0
@@ -23062,6 +23163,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,823606,805999,A.J. Ewing,New York Mets,Kansas City Royals,5,5,1,0,0,0,1,1,0,0,2,0,0,0
 2026-07-10,823604,805999,A.J. Ewing,New York Mets,Boston Red Sox,4,4,2,0,0,0,2,0,0,0,0,0,0,0
 2026-07-11,823603,805999,A.J. Ewing,New York Mets,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-12,823602,805999,A.J. Ewing,New York Mets,Boston Red Sox,4,4,1,1,0,0,2,1,0,0,3,0,0,0
 2026-05-17,823138,806068,Colt Emerson,Seattle Mariners,San Diego Padres,3,2,0,0,0,0,0,1,0,1,0,0,0,0
 2026-05-18,823137,806068,Colt Emerson,Seattle Mariners,Chicago White Sox,4,4,1,0,0,1,4,1,3,0,1,0,0,0
 2026-05-19,823136,806068,Colt Emerson,Seattle Mariners,Chicago White Sox,3,2,0,0,0,0,0,0,0,0,2,0,0,1

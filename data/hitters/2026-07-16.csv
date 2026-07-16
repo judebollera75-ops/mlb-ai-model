@@ -1,1 +1,19 @@
 date,game_id,team,opponent,side,player_id,player_name,batting_order,position,status
+2026-07-16,823440,New York Mets,Philadelphia Phillies,away,805999,A.J. Ewing,1,CF,Warmup
+2026-07-16,823440,New York Mets,Philadelphia Phillies,away,665742,Juan Soto,2,LF,Warmup
+2026-07-16,823440,New York Mets,Philadelphia Phillies,away,666182,Bo Bichette,3,3B,Warmup
+2026-07-16,823440,New York Mets,Philadelphia Phillies,away,596019,Francisco Lindor,4,SS,Warmup
+2026-07-16,823440,New York Mets,Philadelphia Phillies,away,701807,Carson Benge,5,RF,Warmup
+2026-07-16,823440,New York Mets,Philadelphia Phillies,away,593871,Jorge Polanco,6,DH,Warmup
+2026-07-16,823440,New York Mets,Philadelphia Phillies,away,676724,Jared Young,7,1B,Warmup
+2026-07-16,823440,New York Mets,Philadelphia Phillies,away,683146,Brett Baty,8,2B,Warmup
+2026-07-16,823440,New York Mets,Philadelphia Phillies,away,682626,Francisco Alvarez,9,C,Warmup
+2026-07-16,823440,Philadelphia Phillies,New York Mets,home,607208,Trea Turner,1,SS,Warmup
+2026-07-16,823440,Philadelphia Phillies,New York Mets,home,656941,Kyle Schwarber,2,DH,Warmup
+2026-07-16,823440,Philadelphia Phillies,New York Mets,home,547180,Bryce Harper,3,1B,Warmup
+2026-07-16,823440,Philadelphia Phillies,New York Mets,home,669016,Brandon Marsh,4,LF,Warmup
+2026-07-16,823440,Philadelphia Phillies,New York Mets,home,664761,Alec Bohm,5,3B,Warmup
+2026-07-16,823440,Philadelphia Phillies,New York Mets,home,681082,Bryson Stott,6,2B,Warmup
+2026-07-16,823440,Philadelphia Phillies,New York Mets,home,592663,J.T. Realmuto,7,C,Warmup
+2026-07-16,823440,Philadelphia Phillies,New York Mets,home,687282,Gabriel Rincones Jr.,8,RF,Warmup
+2026-07-16,823440,Philadelphia Phillies,New York Mets,home,702222,Justin Crawford,9,CF,Warmup
