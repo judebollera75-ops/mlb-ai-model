@@ -903,28 +903,55 @@ else:
         )
 
     available_props = len(filtered)
+    slider_key = "props_slider"
 
     if available_props == 0:
         st.warning(
             "No props match the selected filters."
         )
 
+        # Remove any remembered slider value so it cannot become invalid
+        # when the user changes filters and matching props return later.
+        st.session_state.pop(
+            slider_key,
+            None,
+        )
+
         filtered = filtered.iloc[0:0]
 
     else:
+        slider_max = min(
+            50,
+            available_props,
+        )
+
+        default_slider_value = min(
+            10,
+            slider_max,
+        )
+
+        remembered_slider_value = st.session_state.get(
+            slider_key
+        )
+
+        # Streamlit preserves widget state between reruns. Reset the
+        # remembered value whenever the new filtered result has a smaller
+        # valid range than the previous result.
+        if (
+            remembered_slider_value is None
+            or remembered_slider_value < 1
+            or remembered_slider_value > slider_max
+        ):
+            st.session_state[
+                slider_key
+            ] = default_slider_value
+
         max_props = st.slider(
             "Number of props to display",
             min_value=1,
-            max_value=min(
-                50,
-                available_props,
-            ),
-            value=min(
-                10,
-                available_props,
-            ),
+            max_value=slider_max,
             step=1,
-            key="props_slider",
+            key=slider_key,
         )
 
         st.caption(
