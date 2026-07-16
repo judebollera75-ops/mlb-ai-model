@@ -47,6 +47,13 @@ AUDIT_PATH = (
     PROJECT_ROOT / "outputs" / "mlb_daily_card_audit.csv"
 )
 
+HISTORY_PATH = (
+    PROJECT_ROOT
+    / "outputs"
+    / "history"
+    / "mlb_bet_results.csv"
+)
+
 MINIMUM_WIN_PROBABILITY = 0.56
 MINIMUM_PROBABILITY_EDGE = 0.025
 MINIMUM_EXPECTED_VALUE = 0.015
@@ -713,6 +720,255 @@ def choose_best_platform_rows(
     )
 
 
+def event_date_from_commence_time(value: Any) -> str | None:
+    """Convert a UTC game timestamp into its Central Time calendar date."""
+    parsed = pd.to_datetime(
+        value,
+        errors="coerce",
+        utc=True,
+    )
+
+    if pd.isna(parsed):
+        return None
+
+    return parsed.tz_convert(
+        "America/Chicago"
+    ).date().isoformat()
+
+
+def load_existing_history() -> pd.DataFrame:
+    """Load the saved recommendation history without failing on a new file."""
+    if not HISTORY_PATH.exists():
+        return pd.DataFrame()
+
+    try:
+        return pd.read_csv(HISTORY_PATH)
+    except (
+        pd.errors.EmptyDataError,
+        pd.errors.ParserError,
+        UnicodeDecodeError,
+    ):
+        return pd.DataFrame()
+
+
+def build_history_rows(selected: pd.DataFrame) -> pd.DataFrame:
+    """Create unresolved history records from the current actionable card."""
+    if selected.empty:
+        return pd.DataFrame()
+
+    history = selected.copy()
+
+    history["event_date"] = history[
+        "commence_time"
+    ].apply(event_date_from_commence_time)
+
+    history["logged_at"] = datetime.now(
+        timezone.utc
+    ).isoformat()
+
+    history["actual_result"] = pd.NA
+    history["outcome"] = pd.NA
+    history["grading_status"] = "UNRESOLVED"
+    history["grading_note"] = pd.NA
+    history["matched_game_pk"] = pd.NA
+    history["graded_at"] = pd.NA
+
+    # A one-unit reference stake lets later reports calculate standardized ROI.
+    history["stake"] = 1.0
+    history["profit"] = pd.NA
+
+    history_columns = [
+        "event_date",
+        "event_id",
+        "platform",
+        "platform_key",
+        "player",
+        "market",
+        "direction",
+        "line",
+        "sportsbook_odds",
+        "projection",
+        "raw_projection_edge",
+        "probability",
+        "sportsbook_implied_probability",
+        "no_vig_implied_probability",
+        "probability_edge",
+        "expected_value",
+        "fair_odds",
+        "kelly_fraction",
+        "recommended_bankroll_fraction",
+        "distribution_method",
+        "calibration_sample_size",
+        "validation_mae",
+        "grade",
+        "confidence_tier",
+        "team",
+        "opponent",
+        "home_team",
+        "away_team",
+        "commence_time",
+        "fetched_at",
+        "logged_at",
+        "stake",
+        "profit",
+        "actual_result",
+        "outcome",
+        "grading_status",
+        "grading_note",
+        "matched_game_pk",
+        "graded_at",
+    ]
+
+    for column in history_columns:
+        if column not in history.columns:
+            history[column] = pd.NA
+
+    history = history.loc[
+        history["event_date"].notna()
+    ].copy()
+
+    return history[
+        history_columns
+    ].reset_index(drop=True)
+
+
+def append_card_to_history(selected: pd.DataFrame) -> int:
+    """Append only previously unseen actionable props to permanent history."""
+    new_rows = build_history_rows(selected)
+
+    if new_rows.empty:
+        print(
+            "History logger: no actionable recommendations "
+            "were available to save."
+        )
+        return 0
+
+    existing = load_existing_history()
+
+    all_columns = list(
+        dict.fromkeys(
+            list(existing.columns)
+            + list(new_rows.columns)
+        )
+    )
+
+    for column in all_columns:
+        if column not in existing.columns:
+            existing[column] = pd.NA
+
+        if column not in new_rows.columns:
+            new_rows[column] = pd.NA
+
+    existing = existing[
+        all_columns
+    ].copy()
+
+    new_rows = new_rows[
+        all_columns
+    ].copy()
+
+    dedupe_columns = [
+        "event_date",
+        "event_id",
+        "platform",
+        "player",
+        "market",
+        "direction",
+        "line",
+    ]
+
+    # Normalize dedupe fields so repeated morning/afternoon workflow runs do
+    # not save the same exact recommendation twice.
+    def build_keys(frame: pd.DataFrame) -> pd.Series:
+        key_frame = frame.copy()
+
+        for column in dedupe_columns:
+            if column not in key_frame.columns:
+                key_frame[column] = pd.NA
+
+        for column in [
+            "event_date",
+            "event_id",
+            "platform",
+            "player",
+            "market",
+            "direction",
+        ]:
+            key_frame[column] = (
+                key_frame[column]
+                .astype("string")
+                .fillna("")
+                .str.strip()
+                .str.casefold()
+            )
+
+        key_frame["line"] = pd.to_numeric(
+            key_frame["line"],
+            errors="coerce",
+        ).round(4)
+
+        return key_frame[
+            dedupe_columns
+        ].astype("string").agg(
+            "|".join,
+            axis=1,
+        )
+
+    existing_keys = set(
+        build_keys(existing).tolist()
+    ) if not existing.empty else set()
+
+    new_keys = build_keys(new_rows)
+
+    unseen_mask = ~new_keys.isin(
+        existing_keys
+    )
+
+    unseen = new_rows.loc[
+        unseen_mask
+    ].copy()
+
+    if unseen.empty:
+        print(
+            "History logger: every current recommendation "
+            "was already saved."
+        )
+        return 0
+
+    combined = pd.concat(
+        [
+            existing,
+            unseen,
+        ],
+        ignore_index=True,
+    )
+
+    HISTORY_PATH.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    temporary_path = HISTORY_PATH.with_suffix(
+        ".tmp.csv"
+    )
+
+    combined.to_csv(
+        temporary_path,
+        index=False,
+    )
+
+    temporary_path.replace(
+        HISTORY_PATH
+    )
+
+    print(
+        f"History logger: saved {len(unseen):,} new recommendations "
+        f"to {HISTORY_PATH}"
+    )
+
+    return len(unseen)
+
+
 def build_daily_card() -> pd.DataFrame:
     """Create the final production betting card."""
     OUTPUT_PATH.parent.mkdir(
@@ -972,11 +1228,16 @@ def build_daily_card() -> pd.DataFrame:
         index=False,
     )
 
+    newly_logged = append_card_to_history(
+        selected
+    )
+
     print("\n" + "=" * 72)
     print("MLB DAILY CARD COMPLETE")
     print(f"Accepted props: {len(output):,}")
     print(f"Final card: {OUTPUT_PATH}")
     print(f"Full audit: {AUDIT_PATH}")
+    print(f"New history rows logged: {newly_logged:,}")
     print("=" * 72)
 
     if output.empty:
