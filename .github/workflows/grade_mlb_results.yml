@@ -46,7 +46,7 @@ jobs:
           MLB_GRADE_DATE: ${{ github.event.inputs.grade_date }}
           MLB_RUN_BACKTEST_AFTER_GRADING: "1"
         run: |
-          python sports/mlb/backtesting/grade_daily_results.py
+          python sports/mlb/betting/grade_daily_results.py
 
       - name: Commit graded results
         shell: bash
