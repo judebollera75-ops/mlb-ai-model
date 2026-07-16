@@ -1,3 +1,3 @@
 date,pitcher_id,pitcher_name,team,recent_games,avg_ip,avg_outs,avg_k,avg_bb,avg_hits,avg_er,avg_hr,avg_era,avg_whip,avg_batters_faced,avg_k_rate,avg_bb_rate,avg_k_minus_bb_rate,avg_k_per_9,avg_bb_per_9,avg_hits_per_9,avg_hr_per_9,avg_fip_component
-2026-07-14,650911,Cristopher Sánchez,National League All-Stars,5,5.6667,17.0,5.6,1.2,7.4,3.4,1.2,2.234,1.7571,25.0,0.2167,0.0481,0.1686,8.3143,1.9714,13.8429,2.5371,2.5943
-2026-07-14,656302,Dylan Cease,American League All-Stars,5,6.0667,18.2,9.0,3.4,3.0,1.2,0.0,2.766,1.1671,24.2,0.371,0.1428,0.2282,13.7076,5.5713,4.9322,0.0,-1.189
+2026-07-16,605400,Aaron Nola,Philadelphia Phillies,5,5.2667,15.8,6.2,1.4,5.6,3.2,1.4,5.79,1.3815,23.2,0.2711,0.0648,0.2063,10.7169,2.6308,9.8031,2.6308,2.4154
+2026-07-16,681035,Christian Scott,New York Mets,5,4.7333,14.2,5.4,2.0,3.6,1.8,1.2,3.092,1.2101,19.6,0.2802,0.1053,0.1749,10.7095,4.0118,6.8791,2.4725,2.5288
