@@ -349,6 +349,7 @@ def canonical_platform_key(
         "prizepicks": "prizepicks",
         "prizepick": "prizepicks",
         "prizepicksfantasy": "prizepicks",
+        "prizepicksmobile": "prizepicks",
         "underdog": "underdog",
         "underdogfantasy": "underdog",
         "betr": "betr",
@@ -772,37 +773,22 @@ def fetch_props(
         url=PROPS_URL,
         parameters={
             **common_parameters,
-            "bookmakers": "prizepicks",
+            "bookmakers": "prizepicks_mobile",
         },
         label="PrizePicks-only /props",
         required=False,
     )
 
-    dfs_rows = request_prop_rows(
-        session,
-        url=DFS_PICKS_URL,
-        parameters={
-            "markets": ",".join(API_MARKETS),
-            "bookmakers": (
-                "prizepicks,underdog,betr,sleeper,pick6,parlayplay"
-            ),
-            "dfsOdds": "midpoint",
-            "limit": 10000,
-        },
-        label="DFS /dfs/picks",
-        required=False,
-    )
+    # PrizePicks is exposed through /props. ParlayAPI's current MLB
+    # coverage reports identify its live source key as prizepicks_mobile.
+    dfs_rows: list[dict[str, Any]] = []
 
     print_raw_diagnostics(
         prizepicks_rows,
         "PrizePicks-only /props",
     )
-    print_raw_diagnostics(
-        dfs_rows,
-        "DFS /dfs/picks",
-    )
 
-    combined = all_rows + prizepicks_rows + dfs_rows
+    combined = all_rows + prizepicks_rows
 
     # Keep duplicate removal conservative here; final side-level dedupe still
     # happens in clean_props().
@@ -1336,9 +1322,6 @@ def download_sportsbook_props() -> pd.DataFrame:
     )
     print(
         f"Props endpoint: {PROPS_URL}"
-    )
-    print(
-        f"DFS endpoint: {DFS_PICKS_URL}"
     )
     print(
         f"Requested markets: "
