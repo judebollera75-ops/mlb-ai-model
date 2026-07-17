@@ -48,6 +48,10 @@ jobs:
         run: |
           python sports/mlb/betting/grade_daily_results.py
 
+      - name: Build Backtesting Dashboard
+        run: |
+          python sports/mlb/analytics/build_backtesting_dashboard.py
+
       - name: Commit graded results
         shell: bash
         run: |
@@ -56,6 +60,7 @@ jobs:
 
           git add outputs/history/
           git add outputs/backtesting/
+          git add outputs/analytics/
 
           if git diff --cached --quiet; then
             echo "No grading changes to commit."
