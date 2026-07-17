@@ -153,9 +153,9 @@ def get_game_context(
 ) -> dict[str, Any]:
     """Load game metadata such as team IDs and venue."""
     url = (
-        f"{MLB_API_BASE_URL}/game/"
-        f"{game_id}/feed/live"
-    )
+    "https://statsapi.mlb.com/api/v1.1/"
+    f"game/{game_id}/feed/live"
+)
 
     data = request_json(
         session=session,
