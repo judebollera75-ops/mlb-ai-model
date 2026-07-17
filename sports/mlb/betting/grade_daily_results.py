@@ -428,15 +428,39 @@ def load_history() -> pd.DataFrame:
         errors="coerce",
     ).dt.date
 
-    history["line"] = pd.to_numeric(
-        history["line"],
+    # Numeric columns
+numeric_columns = [
+    "line",
+    "actual_result",
+    "sportsbook_odds",
+    "stake",
+    "profit",
+]
+
+for column in numeric_columns:
+    if column not in history.columns:
+        history[column] = pd.NA
+
+    history[column] = pd.to_numeric(
+        history[column],
         errors="coerce",
     )
 
-    history["actual_result"] = pd.to_numeric(
-        history["actual_result"],
-        errors="coerce",
-    )
+# Text columns
+text_columns = [
+    "outcome",
+    "grading_status",
+    "grading_note",
+    "graded_at",
+    "event_id",
+    "game_id",
+]
+
+for column in text_columns:
+    if column not in history.columns:
+        history[column] = pd.NA
+
+    history[column] = history[column].astype("object")
 
     history["market"] = history[
         "market"
