@@ -1,0 +1,28 @@
+date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_id,pitcher_name,opposing_pitcher_id,opposing_pitcher_name,side,is_home,home_team,away_team
+2026-07-17,822789,Scheduled,S,14,Rogers Centre,Chicago White Sox,Toronto Blue Jays,641743,Anthony Kay,693686.0,Spencer Miles,away,0,Toronto Blue Jays,Chicago White Sox
+2026-07-17,822789,Scheduled,S,14,Rogers Centre,Toronto Blue Jays,Chicago White Sox,693686,Spencer Miles,641743.0,Anthony Kay,home,1,Toronto Blue Jays,Chicago White Sox
+2026-07-17,823115,Scheduled,S,680,T-Mobile Park,San Francisco Giants,Seattle Mariners,694738,Landen Roupp,682243.0,Bryce Miller,away,0,Seattle Mariners,San Francisco Giants
+2026-07-17,823115,Scheduled,S,680,T-Mobile Park,Seattle Mariners,San Francisco Giants,682243,Bryce Miller,694738.0,Landen Roupp,home,1,Seattle Mariners,San Francisco Giants
+2026-07-17,823524,Scheduled,S,3313,Yankee Stadium,Los Angeles Dodgers,New York Yankees,808963,Roki Sasaki,543037.0,Gerrit Cole,away,0,New York Yankees,Los Angeles Dodgers
+2026-07-17,823524,Scheduled,S,3313,Yankee Stadium,New York Yankees,Los Angeles Dodgers,543037,Gerrit Cole,808963.0,Roki Sasaki,home,1,New York Yankees,Los Angeles Dodgers
+2026-07-17,823766,Scheduled,S,32,American Family Field,Miami Marlins,Milwaukee Brewers,645261,Sandy Alcantara,701656.0,Logan Henderson,away,0,Milwaukee Brewers,Miami Marlins
+2026-07-17,823766,Scheduled,S,32,American Family Field,Milwaukee Brewers,Miami Marlins,701656,Logan Henderson,645261.0,Sandy Alcantara,home,1,Milwaukee Brewers,Miami Marlins
+2026-07-17,824009,Scheduled,S,1,Angel Stadium,Detroit Tigers,Los Angeles Angels,675512,Troy Melton,672282.0,Reid Detmers,away,0,Los Angeles Angels,Detroit Tigers
+2026-07-17,824009,Scheduled,S,1,Angel Stadium,Los Angeles Angels,Detroit Tigers,672282,Reid Detmers,675512.0,Troy Melton,home,1,Los Angeles Angels,Detroit Tigers
+2026-07-17,824090,Scheduled,S,7,Kauffman Stadium,San Diego Padres,Kansas City Royals,650633,Michael King,607625.0,Seth Lugo,away,0,Kansas City Royals,San Diego Padres
+2026-07-17,824090,Scheduled,S,7,Kauffman Stadium,Kansas City Royals,San Diego Padres,607625,Seth Lugo,650633.0,Michael King,home,1,Kansas City Royals,San Diego Padres
+2026-07-17,824170,Scheduled,S,2392,Daikin Park,Baltimore Orioles,Houston Astros,665152,Dean Kremer,663567.0,Peter Lambert,away,0,Houston Astros,Baltimore Orioles
+2026-07-17,824170,Scheduled,S,2392,Daikin Park,Houston Astros,Baltimore Orioles,663567,Peter Lambert,665152.0,Dean Kremer,home,1,Houston Astros,Baltimore Orioles
+2026-07-17,824332,Scheduled,S,19,Coors Field,Cincinnati Reds,Colorado Rockies,663903,Brady Singer,687312.0,Gabriel Hughes,away,0,Colorado Rockies,Cincinnati Reds
+2026-07-17,824332,Scheduled,S,19,Coors Field,Colorado Rockies,Cincinnati Reds,687312,Gabriel Hughes,663903.0,Brady Singer,home,1,Colorado Rockies,Cincinnati Reds
+2026-07-17,824414,Scheduled,S,5,Progressive Field,Pittsburgh Pirates,Cleveland Guardians,683003,Jared Jones,668909.0,Gavin Williams,away,0,Cleveland Guardians,Pittsburgh Pirates
+2026-07-17,824414,Scheduled,S,5,Progressive Field,Cleveland Guardians,Pittsburgh Pirates,668909,Gavin Williams,683003.0,Jared Jones,home,1,Cleveland Guardians,Pittsburgh Pirates
+2026-07-17,824655,Scheduled,S,17,Wrigley Field,Minnesota Twins,Chicago Cubs,641927,Bailey Ober,607067.0,Colin Rea,away,0,Chicago Cubs,Minnesota Twins
+2026-07-17,824655,Scheduled,S,17,Wrigley Field,Chicago Cubs,Minnesota Twins,607067,Colin Rea,641927.0,Bailey Ober,home,1,Chicago Cubs,Minnesota Twins
+2026-07-17,824766,Scheduled,S,3,Fenway Park,Tampa Bay Rays,Boston Red Sox,643377,Griffin Jax,687562.0,Jake Bennett,away,0,Boston Red Sox,Tampa Bay Rays
+2026-07-17,824766,Scheduled,S,3,Fenway Park,Boston Red Sox,Tampa Bay Rays,687562,Jake Bennett,643377.0,Griffin Jax,home,1,Boston Red Sox,Tampa Bay Rays
+2026-07-17,824901,Scheduled,S,4705,Truist Park,Texas Rangers,Atlanta Braves,615698,Cal Quantrill,519242.0,Chris Sale,away,0,Atlanta Braves,Texas Rangers
+2026-07-17,824901,Scheduled,S,4705,Truist Park,Atlanta Braves,Texas Rangers,519242,Chris Sale,615698.0,Cal Quantrill,home,1,Atlanta Braves,Texas Rangers
+2026-07-17,824981,Scheduled,S,2529,Sutter Health Park,Washington Nationals,Athletics,676917,Cade Cavalli,695611.0,Gage Jump,away,0,Athletics,Washington Nationals
+2026-07-17,824981,Scheduled,S,2529,Sutter Health Park,Athletics,Washington Nationals,695611,Gage Jump,676917.0,Cade Cavalli,home,1,Athletics,Washington Nationals
+2026-07-17,825060,Scheduled,S,15,Chase Field,Arizona Diamondbacks,St. Louis Cardinals,518876,Merrill Kelly,,,home,1,Arizona Diamondbacks,St. Louis Cardinals
