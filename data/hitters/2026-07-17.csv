@@ -197,24 +197,24 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-17,824737,Boston Red Sox,Tampa Bay Rays,home,807799,Masataka Yoshida,7,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T23:10:00Z
 2026-07-17,824737,Boston Red Sox,Tampa Bay Rays,home,680776,Jarren Duran,8,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T23:10:00Z
 2026-07-17,824737,Boston Red Sox,Tampa Bay Rays,home,657136,Connor Wong,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T23:10:00Z
-2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,650490,Yandy Díaz,1,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,666018,Jonathan Aranda,2,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,691406,Junior Caminero,3,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,656775,Cedric Mullins,4,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,683748,Victor Mesa Jr.,5,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,802415,Chandler Simpson,6,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,680700,Richie Palacios,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,810938,Ben Williamson,8,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,670764,Taylor Walls,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,678011,Anthony Seigler,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,678882,Ceddanne Rafaela,2,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,677800,Wilyer Abreu,3,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,702332,Caleb Durbin,4,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,655316,Andruw Monasterio,5,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,663853,Romy Gonzalez,6,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,807799,Masataka Yoshida,7,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,680776,Jarren Duran,8,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
-2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,657136,Connor Wong,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,650490,Yandy Díaz,1,DH,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,666018,Jonathan Aranda,2,1B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,691406,Junior Caminero,3,3B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,668723,Ryan Vilade,4,RF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,676356,Jonny DeLuca,5,CF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,802415,Chandler Simpson,6,LF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,810938,Ben Williamson,7,2B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,670764,Taylor Walls,8,SS,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,away,663743,Nick Fortes,9,C,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,678011,Anthony Seigler,1,2B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,678882,Ceddanne Rafaela,2,CF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,677800,Wilyer Abreu,3,RF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,702332,Caleb Durbin,4,3B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,807799,Masataka Yoshida,5,DH,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,663853,Romy Gonzalez,6,1B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,680776,Jarren Duran,7,LF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,665966,Carlos Narváez,8,C,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
+2026-07-17,824766,Boston Red Sox,Tampa Bay Rays,home,691907,Tsung-Che Cheng,9,SS,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-17T17:35:00Z
 2026-07-17,824901,Texas Rangers,Atlanta Braves,away,673962,Josh Jung,1,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-17T23:15:00Z
 2026-07-17,824901,Texas Rangers,Atlanta Braves,away,607043,Brandon Nimmo,2,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-17T23:15:00Z
 2026-07-17,824901,Texas Rangers,Atlanta Braves,away,679822,Justin Foscue,3,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-17T23:15:00Z

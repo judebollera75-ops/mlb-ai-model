@@ -23,6 +23,7 @@ date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,
 2026-07-17,824766,Jake Bennett,Boston Red Sox,home,8.0,35.0,4.375,5.4,4.053,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 2026-07-17,824981,Gage Jump,Athletics,home,9.0,48.0,5.333333333333333,5.8,4.032,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 2026-07-17,824090,Michael King,San Diego Padres,away,19.0,92.0,4.842105263157895,4.0,3.604,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-17,825060,Michael McGreevy,St. Louis Cardinals,away,18.0,66.0,3.6666666666666665,3.4,3.521,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-17,824901,Cal Quantrill,Texas Rangers,away,4.0,28.0,7.0,2.0,3.218,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
 2026-07-17,824655,Colin Rea,Chicago Cubs,home,15.0,70.0,4.666666666666667,3.2,3.036,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-17,822789,Spencer Miles,Toronto Blue Jays,home,3.0,57.0,19.0,2.6,2.669,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15

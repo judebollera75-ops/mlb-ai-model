@@ -7076,6 +7076,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,822958,663743,Nick Fortes,Tampa Bay Rays,New York Yankees,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-08,822957,663743,Nick Fortes,Tampa Bay Rays,New York Yankees,3,3,1,0,0,0,1,1,0,0,1,0,0,0
 2026-07-09,822954,663743,Nick Fortes,Tampa Bay Rays,New York Yankees,4,3,1,0,0,0,1,1,0,1,0,0,0,0
+2026-07-11,822953,663743,Nick Fortes,Tampa Bay Rays,Seattle Mariners,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-03-25,823244,663757,Trent Grisham,New York Yankees,San Francisco Giants,5,5,1,0,1,0,3,0,2,0,1,0,0,0
 2026-03-27,823243,663757,Trent Grisham,New York Yankees,San Francisco Giants,2,1,0,0,0,0,0,0,0,1,0,0,0,0
 2026-03-28,823241,663757,Trent Grisham,New York Yankees,San Francisco Giants,4,3,1,0,0,0,1,1,0,1,0,1,0,0
@@ -9062,6 +9063,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-03,824013,665966,Carlos Narváez,Boston Red Sox,Los Angeles Angels,4,4,1,0,0,0,1,0,0,0,2,0,0,0
 2026-07-05,824010,665966,Carlos Narváez,Boston Red Sox,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-08,824578,665966,Carlos Narváez,Boston Red Sox,Chicago White Sox,4,3,1,0,0,0,1,0,1,0,0,0,0,0
+2026-07-11,823603,665966,Carlos Narváez,Boston Red Sox,New York Mets,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-03-26,823081,666018,Jonathan Aranda,Tampa Bay Rays,St. Louis Cardinals,6,4,2,0,0,1,5,1,2,1,1,0,0,0
 2026-03-28,823082,666018,Jonathan Aranda,Tampa Bay Rays,St. Louis Cardinals,5,3,1,0,0,0,1,1,0,2,1,0,0,0
 2026-03-29,823079,666018,Jonathan Aranda,Tampa Bay Rays,St. Louis Cardinals,6,6,3,1,0,0,4,1,2,0,1,0,0,0
@@ -9984,6 +9986,58 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-10,824493,668715,Spencer Steer,Cincinnati Reds,Chicago Cubs,4,4,3,0,0,0,3,1,0,0,0,0,0,0
 2026-07-11,824492,668715,Spencer Steer,Cincinnati Reds,Chicago Cubs,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-07-12,824491,668715,Spencer Steer,Cincinnati Reds,Chicago Cubs,5,5,2,0,0,0,2,0,1,0,0,0,0,0
+2026-03-26,823081,668723,Ryan Vilade,Tampa Bay Rays,St. Louis Cardinals,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-03-30,823809,668723,Ryan Vilade,Tampa Bay Rays,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,3,0,0,0
+2026-03-31,823807,668723,Ryan Vilade,Tampa Bay Rays,Milwaukee Brewers,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-04-01,823806,668723,Ryan Vilade,Tampa Bay Rays,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-03,823732,668723,Ryan Vilade,Tampa Bay Rays,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-07,822999,668723,Ryan Vilade,Tampa Bay Rays,Chicago Cubs,2,2,1,0,0,0,1,0,1,0,0,0,0,0
+2026-04-11,822996,668723,Ryan Vilade,Tampa Bay Rays,New York Yankees,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-14,824616,668723,Ryan Vilade,Tampa Bay Rays,Chicago White Sox,5,5,3,1,0,0,4,3,1,0,1,0,0,0
+2026-04-15,824615,668723,Ryan Vilade,Tampa Bay Rays,Chicago White Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-16,824614,668723,Ryan Vilade,Tampa Bay Rays,Chicago White Sox,2,1,0,0,0,0,0,0,0,1,0,1,0,0
+2026-04-17,823397,668723,Ryan Vilade,Tampa Bay Rays,Pittsburgh Pirates,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-18,823394,668723,Ryan Vilade,Tampa Bay Rays,Pittsburgh Pirates,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-21,822995,668723,Ryan Vilade,Tampa Bay Rays,Cincinnati Reds,3,3,1,1,0,0,2,0,0,0,0,0,0,0
+2026-04-22,822993,668723,Ryan Vilade,Tampa Bay Rays,Cincinnati Reds,3,2,2,0,0,0,2,1,1,1,0,0,0,0
+2026-04-27,824446,668723,Ryan Vilade,Tampa Bay Rays,Cleveland Guardians,4,4,3,0,0,0,3,0,2,0,1,0,0,0
+2026-05-01,822990,668723,Ryan Vilade,Tampa Bay Rays,San Francisco Giants,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-02,822988,668723,Ryan Vilade,Tampa Bay Rays,San Francisco Giants,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-03,822987,668723,Ryan Vilade,Tampa Bay Rays,San Francisco Giants,4,3,0,0,0,0,0,0,1,0,2,0,0,0
+2026-05-04,822984,668723,Ryan Vilade,Tampa Bay Rays,Toronto Blue Jays,2,2,1,0,0,1,4,1,3,0,0,0,0,0
+2026-05-05,822986,668723,Ryan Vilade,Tampa Bay Rays,Toronto Blue Jays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-06,822985,668723,Ryan Vilade,Tampa Bay Rays,Toronto Blue Jays,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-07,824767,668723,Ryan Vilade,Tampa Bay Rays,Boston Red Sox,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-08,824768,668723,Ryan Vilade,Tampa Bay Rays,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-10,824765,668723,Ryan Vilade,Tampa Bay Rays,Boston Red Sox,2,2,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-12,822817,668723,Ryan Vilade,Tampa Bay Rays,Toronto Blue Jays,5,4,2,1,0,1,6,1,1,1,1,0,0,0
+2026-05-18,822980,668723,Ryan Vilade,Tampa Bay Rays,Baltimore Orioles,5,3,3,0,1,0,5,1,3,1,0,0,0,0
+2026-05-20,822977,668723,Ryan Vilade,Tampa Bay Rays,Baltimore Orioles,4,2,0,0,0,0,0,1,0,2,0,1,0,0
+2026-05-22,823546,668723,Ryan Vilade,Tampa Bay Rays,New York Yankees,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+2026-05-24,823544,668723,Ryan Vilade,Tampa Bay Rays,New York Yankees,4,3,1,0,0,0,1,0,0,1,1,0,0,0
+2026-05-26,824837,668723,Ryan Vilade,Tampa Bay Rays,Baltimore Orioles,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-27,824836,668723,Ryan Vilade,Tampa Bay Rays,Baltimore Orioles,4,3,0,0,0,0,0,0,2,1,0,0,0,0
+2026-05-29,822978,668723,Ryan Vilade,Tampa Bay Rays,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-30,822975,668723,Ryan Vilade,Tampa Bay Rays,Los Angeles Angels,3,3,0,0,0,0,0,0,1,0,1,0,0,0
+2026-06-01,822974,668723,Ryan Vilade,Tampa Bay Rays,Detroit Tigers,3,3,1,0,0,1,4,1,3,0,1,0,0,0
+2026-06-02,822971,668723,Ryan Vilade,Tampa Bay Rays,Detroit Tigers,4,4,1,1,0,0,2,0,0,0,3,0,0,0
+2026-06-05,823860,668723,Ryan Vilade,Tampa Bay Rays,Miami Marlins,5,5,2,0,0,0,2,0,2,0,1,0,0,0
+2026-06-07,823857,668723,Ryan Vilade,Tampa Bay Rays,Miami Marlins,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-08,822972,668723,Ryan Vilade,Tampa Bay Rays,Boston Red Sox,3,2,1,0,0,0,1,0,0,1,0,1,0,0
+2026-06-09,822969,668723,Ryan Vilade,Tampa Bay Rays,Boston Red Sox,4,4,3,1,0,0,4,1,0,0,0,0,0,0
+2026-06-10,822970,668723,Ryan Vilade,Tampa Bay Rays,Boston Red Sox,4,3,0,0,0,0,0,0,1,0,0,0,0,0
+2026-06-12,824020,668723,Ryan Vilade,Tampa Bay Rays,Los Angeles Angels,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-06-15,823938,668723,Ryan Vilade,Tampa Bay Rays,Los Angeles Dodgers,4,4,2,0,0,1,5,1,2,0,0,0,0,0
+2026-06-16,823939,668723,Ryan Vilade,Tampa Bay Rays,Los Angeles Dodgers,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-17,823940,668723,Ryan Vilade,Tampa Bay Rays,Los Angeles Dodgers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-21,822968,668723,Ryan Vilade,Tampa Bay Rays,Washington Nationals,4,4,1,0,0,1,4,1,1,0,2,0,0,0
+2026-06-22,822964,668723,Ryan Vilade,Tampa Bay Rays,Kansas City Royals,4,4,1,1,0,0,2,0,0,0,2,0,0,0
+2026-06-24,822965,668723,Ryan Vilade,Tampa Bay Rays,Kansas City Royals,4,4,0,0,0,0,0,0,1,0,1,0,0,0
+2026-06-30,824096,668723,Ryan Vilade,Tampa Bay Rays,Kansas City Royals,5,3,1,0,0,1,4,2,1,1,1,0,0,1
+2026-07-04,824171,668723,Ryan Vilade,Tampa Bay Rays,Houston Astros,5,5,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-05,824172,668723,Ryan Vilade,Tampa Bay Rays,Houston Astros,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-09,822954,668723,Ryan Vilade,Tampa Bay Rays,New York Yankees,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-11,822953,668723,Ryan Vilade,Tampa Bay Rays,Seattle Mariners,1,1,1,0,0,1,4,1,3,0,0,0,0,0
 2026-03-26,823649,668804,Bryan Reynolds,Pittsburgh Pirates,New York Mets,4,4,1,0,0,0,1,0,0,0,2,0,0,0
 2026-03-28,823651,668804,Bryan Reynolds,Pittsburgh Pirates,New York Mets,6,5,2,0,0,0,2,1,1,1,2,0,0,0
 2026-03-29,823647,668804,Bryan Reynolds,Pittsburgh Pirates,New York Mets,5,5,0,0,0,0,0,1,0,0,3,0,0,0
@@ -13328,6 +13382,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-06,822958,676356,Jonny DeLuca,Tampa Bay Rays,New York Yankees,3,3,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-08,822957,676356,Jonny DeLuca,Tampa Bay Rays,New York Yankees,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-09,822954,676356,Jonny DeLuca,Tampa Bay Rays,New York Yankees,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-11,822953,676356,Jonny DeLuca,Tampa Bay Rays,Seattle Mariners,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-27,822839,676391,Ernie Clement,Toronto Blue Jays,Athletics,4,4,2,2,0,0,4,1,0,0,0,0,0,0
 2026-03-28,822838,676391,Ernie Clement,Toronto Blue Jays,Athletics,6,6,2,0,0,0,2,0,1,0,0,0,0,0
 2026-03-29,822837,676391,Ernie Clement,Toronto Blue Jays,Athletics,3,3,0,0,0,0,0,0,0,0,1,0,0,0
@@ -19791,6 +19846,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,824578,691907,Tsung-Che Cheng,Boston Red Sox,Chicago White Sox,4,3,2,0,0,0,2,1,2,1,1,0,1,0
 2026-07-10,823604,691907,Tsung-Che Cheng,Boston Red Sox,New York Mets,4,4,2,0,0,0,2,1,0,0,2,0,0,0
 2026-07-11,823603,691907,Tsung-Che Cheng,Boston Red Sox,New York Mets,2,1,0,0,0,0,0,0,0,1,1,0,0,0
+2026-07-12,823602,691907,Tsung-Che Cheng,Boston Red Sox,New York Mets,0,0,0,0,0,0,0,1,0,0,0,0,0,0
 2026-03-26,823649,693304,Nick Gonzales,Pittsburgh Pirates,New York Mets,4,4,2,1,0,0,3,1,2,0,1,0,0,0
 2026-03-28,823651,693304,Nick Gonzales,Pittsburgh Pirates,New York Mets,6,6,2,0,0,0,2,0,1,0,3,0,0,0
 2026-03-29,823647,693304,Nick Gonzales,Pittsburgh Pirates,New York Mets,5,4,0,0,0,0,0,0,0,1,1,0,0,0

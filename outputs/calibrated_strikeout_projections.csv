@@ -23,6 +23,7 @@ Merrill Kelly,Arizona Diamondbacks,825060,2026-07-17,4.061,4.061,,,,range_clip_o
 Jake Bennett,Boston Red Sox,824766,2026-07-17,4.053,4.053,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,8.0,35.0,4.375,5.4,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 Gage Jump,Athletics,824981,2026-07-17,4.032,4.032,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,9.0,48.0,5.333333333333333,5.8,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 Michael King,San Diego Padres,824090,2026-07-17,3.604,3.604,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,19.0,92.0,4.842105263157895,4.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Michael McGreevy,St. Louis Cardinals,825060,2026-07-17,3.521,3.521,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,66.0,3.6666666666666665,3.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Cal Quantrill,Texas Rangers,824901,2026-07-17,3.218,3.218,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,4.0,28.0,7.0,2.0,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
 Colin Rea,Chicago Cubs,824655,2026-07-17,3.036,3.036,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,15.0,70.0,4.666666666666667,3.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Spencer Miles,Toronto Blue Jays,822789,2026-07-17,2.669,2.669,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,3.0,57.0,19.0,2.6,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
