@@ -755,10 +755,8 @@ def fetch_props(
 ) -> list[dict[str, Any]]:
     """Fetch standard props plus explicit PrizePicks/DFS fallbacks."""
     common_parameters = {
-        "markets": ",".join(API_MARKETS),
-        "dfsOdds": "midpoint",
-        "limit": 10000,
-    }
+    "limit": 10,
+}
 
     all_rows = request_prop_rows(
         session,
