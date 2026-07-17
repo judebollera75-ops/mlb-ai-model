@@ -1,3 +1,3 @@
 date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_id,pitcher_name,opposing_pitcher_id,opposing_pitcher_name,side,is_home,home_team,away_team
-2026-07-16,823440,Warmup,PW,2681,Citizens Bank Park,New York Mets,Philadelphia Phillies,681035,Christian Scott,605400,Aaron Nola,away,0,Philadelphia Phillies,New York Mets
-2026-07-16,823440,Warmup,PW,2681,Citizens Bank Park,Philadelphia Phillies,New York Mets,605400,Aaron Nola,681035,Christian Scott,home,1,Philadelphia Phillies,New York Mets
+2026-07-16,823440,Final,F,2681,Citizens Bank Park,New York Mets,Philadelphia Phillies,681035,Christian Scott,605400,Aaron Nola,away,0,Philadelphia Phillies,New York Mets
+2026-07-16,823440,Final,F,2681,Citizens Bank Park,Philadelphia Phillies,New York Mets,605400,Aaron Nola,681035,Christian Scott,home,1,Philadelphia Phillies,New York Mets

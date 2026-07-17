@@ -107,9 +107,9 @@ MLB,2026-07-16,823440,592663,J.T. Realmuto,Philadelphia Phillies,New York Mets,h
 MLB,2026-07-16,823440,702222,Justin Crawford,Philadelphia Phillies,New York Mets,hitter_total_bases,1.11,0.0,3.706,1.758,xgboost,1.3495,9.0,CF,3.1723,7.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-16,823440,676724,Jared Young,New York Mets,Philadelphia Phillies,hitter_total_bases,1.086,0.0,3.682,1.758,xgboost,1.3495,7.0,1B,3.4057,4.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-16,823440,687282,Gabriel Rincones Jr.,Philadelphia Phillies,New York Mets,hitter_total_bases,1.085,0.0,3.681,1.758,xgboost,1.3495,8.0,RF,3.4262,5.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-16,823440,,Christian Scott,New York Mets,Philadelphia Phillies,pitcher_fantasy_score,15.309,10.3533,20.2647,3.8668,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-16,823440,,Aaron Nola,Philadelphia Phillies,New York Mets,pitcher_fantasy_score,12.4871,8.0108,16.9635,3.4928,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-16,823440,,Christian Scott,New York Mets,Philadelphia Phillies,pitcher_fantasy_score,15.383,10.4273,20.3387,3.8668,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-16,823440,,Aaron Nola,Philadelphia Phillies,New York Mets,pitcher_fantasy_score,12.5051,8.0288,16.9815,3.4928,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-16,823440,,Aaron Nola,Philadelphia Phillies,New York Mets,pitcher_outs,15.783,13.467,18.667,2.385,,,,,,6.0,outputs/pitcher_outs_projections.csv
 MLB,2026-07-16,823440,,Christian Scott,New York Mets,Philadelphia Phillies,pitcher_outs,13.82,12.32,17.12,3.253,,,,,,8.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-16,823440,,Aaron Nola,Philadelphia Phillies,,pitcher_strikeouts,5.951,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-16,823440,,Christian Scott,New York Mets,,pitcher_strikeouts,5.405,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-16,823440,,Aaron Nola,Philadelphia Phillies,,pitcher_strikeouts,5.96,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-16,823440,,Christian Scott,New York Mets,,pitcher_strikeouts,5.442,,,,,,,,,,outputs/calibrated_strikeout_projections.csv
