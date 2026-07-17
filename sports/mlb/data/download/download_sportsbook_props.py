@@ -754,9 +754,10 @@ def fetch_props(
     session: requests.Session,
 ) -> list[dict[str, Any]]:
     """Fetch standard props plus explicit PrizePicks/DFS fallbacks."""
-   common_parameters = {
-    "limit": 10000,
-}
+
+    common_parameters = {
+        "limit": 10000,
+    }
 
     all_rows = request_prop_rows(
         session,
