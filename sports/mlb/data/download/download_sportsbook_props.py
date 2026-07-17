@@ -34,6 +34,7 @@ SPORT = "baseball_mlb"
 
 BASE_URL = "https://parlay-api.com/v1"
 PROPS_URL = f"{BASE_URL}/sports/{SPORT}/props"
+DFS_PICKS_URL = f"{BASE_URL}/sports/{SPORT}/dfs/picks"
 
 OUTPUT_PATH = Path("data/platform_lines.csv")
 CENTRAL_TIME = ZoneInfo("America/Chicago")
@@ -346,6 +347,8 @@ def canonical_platform_key(
         "prophetx": "prophetx",
         "kalshi": "kalshi",
         "prizepicks": "prizepicks",
+        "prizepick": "prizepicks",
+        "prizepicksfantasy": "prizepicks",
         "underdog": "underdog",
         "underdogfantasy": "underdog",
         "betr": "betr",
@@ -503,90 +506,350 @@ def existing_props_are_current(
     )
 
 
-def fetch_props(
-    session: requests.Session,
+
+def extract_api_rows(
+    payload: Any,
 ) -> list[dict[str, Any]]:
-    """Fetch all supported MLB player props in one call."""
-    parameters = {
-        "markets": ",".join(
-            API_MARKETS
-        ),
-        "dfsOdds": "midpoint",
-        "limit": 10000,
-    }
+    """Extract prop-like dictionaries from common API response shapes."""
+    rows: list[dict[str, Any]] = []
 
-    response = session.get(
-        PROPS_URL,
-        params=parameters,
-        timeout=REQUEST_TIMEOUT_SECONDS,
-    )
+    def walk(
+        value: Any,
+        inherited: dict[str, Any] | None = None,
+    ) -> None:
+        inherited = dict(inherited or {})
 
-    print(
-        "ParlayAPI usage — "
-        f"used: {response.headers.get('x-requests-used')}, "
-        f"remaining: {response.headers.get('x-requests-remaining')}, "
-        f"last request cost: {response.headers.get('x-requests-last')}"
-    )
+        if isinstance(value, list):
+            for item in value:
+                walk(item, inherited)
+            return
 
-    try:
-        response.raise_for_status()
-    except requests.HTTPError as exc:
-        response_preview = (
-            response.text[:1000]
+        if not isinstance(value, dict):
+            return
+
+        local = dict(inherited)
+
+        # Carry useful parent metadata into nested rows.
+        for key in (
+            "bookmaker",
+            "bookmaker_key",
+            "bookmaker_title",
+            "platform",
+            "platform_key",
+            "platform_title",
+            "event_id",
+            "canonical_event_id",
+            "commence_time",
+            "start_time",
+            "home_team",
+            "away_team",
+            "market",
+            "market_key",
+        ):
+            if value.get(key) is not None:
+                local[key] = value.get(key)
+
+        candidate = dict(local)
+        candidate.update(value)
+
+        has_player = any(
+            candidate.get(key) is not None
+            for key in (
+                "player",
+                "player_name",
+                "description",
+                "participant_name",
+                "name",
+            )
         )
 
-        raise requests.HTTPError(
-            f"{exc}. Response body: {response_preview}"
-        ) from exc
+        has_market = any(
+            candidate.get(key) is not None
+            for key in (
+                "market",
+                "market_key",
+                "stat_type",
+                "stat",
+            )
+        )
 
+        has_line = any(
+            candidate.get(key) is not None
+            for key in (
+                "line",
+                "projection",
+                "stat_value",
+                "value",
+            )
+        )
+
+        if has_player and has_market and has_line:
+            rows.append(candidate)
+
+        for key, child in value.items():
+            if isinstance(child, (list, dict)):
+                walk(child, local)
+
+    walk(payload)
+
+    # Deduplicate exact dictionaries generated through nested traversal.
+    unique_rows: list[dict[str, Any]] = []
+    seen: set[str] = set()
+
+    for row in rows:
+        marker = repr(sorted(row.items(), key=lambda item: str(item[0])))
+
+        if marker in seen:
+            continue
+
+        seen.add(marker)
+        unique_rows.append(row)
+
+    return unique_rows
+
+
+def request_prop_rows(
+    session: requests.Session,
+    *,
+    url: str,
+    parameters: dict[str, Any],
+    label: str,
+    required: bool,
+) -> list[dict[str, Any]]:
+    """Request and decode one ParlayAPI prop source."""
     try:
-        payload = response.json()
-    except requests.JSONDecodeError as exc:
-        raise RuntimeError(
-            "ParlayAPI returned invalid JSON."
-        ) from exc
+        response = session.get(
+            url,
+            params=parameters,
+            timeout=REQUEST_TIMEOUT_SECONDS,
+        )
 
-    if isinstance(
-        payload,
-        list,
-    ):
-        return [
+        print(
+            f"{label} usage — "
+            f"used: {response.headers.get('x-requests-used')}, "
+            f"remaining: {response.headers.get('x-requests-remaining')}, "
+            f"last request cost: {response.headers.get('x-requests-last')}"
+        )
+
+        response.raise_for_status()
+        payload = response.json()
+
+    except (
+        requests.RequestException,
+        requests.JSONDecodeError,
+    ) as exc:
+        if required:
+            raise RuntimeError(
+                f"{label} request failed: {exc}"
+            ) from exc
+
+        print(
+            f"WARNING: {label} request failed and will be skipped: {exc}"
+        )
+        return []
+
+    rows = extract_api_rows(payload)
+
+    # The standard /props response is commonly already a flat list.
+    if not rows and isinstance(payload, list):
+        rows = [
             row
             for row in payload
             if isinstance(row, dict)
         ]
 
-    if isinstance(
-        payload,
-        dict,
-    ):
+    if not rows and isinstance(payload, dict):
         for key in (
             "data",
             "props",
             "results",
             "rows",
+            "picks",
+            "projections",
         ):
-            candidate = payload.get(
-                key
-            )
+            candidate = payload.get(key)
 
-            if isinstance(
-                candidate,
-                list,
-            ):
-                return [
+            if isinstance(candidate, list):
+                rows = [
                     row
                     for row in candidate
-                    if isinstance(
-                        row,
-                        dict,
-                    )
+                    if isinstance(row, dict)
                 ]
+                if rows:
+                    break
 
-    raise RuntimeError(
-        "Unexpected ParlayAPI props response shape: "
-        f"{type(payload).__name__}"
+    print(f"{label} raw rows: {len(rows):,}")
+
+    return rows
+
+
+def raw_platform_key(
+    raw: dict[str, Any],
+) -> str | None:
+    """Read a platform key from several possible provider fields."""
+    return canonical_platform_key(
+        raw.get("bookmaker")
+        or raw.get("bookmaker_key")
+        or raw.get("platform")
+        or raw.get("platform_key")
+        or raw.get("operator")
+        or raw.get("source")
+        or raw.get("platform_key")
+        or raw.get("operator")
+        or raw.get("source")
     )
+
+
+def print_raw_diagnostics(
+    rows: list[dict[str, Any]],
+    label: str,
+) -> None:
+    """Print raw platform and market counts before normalization."""
+    if not rows:
+        print(f"{label}: no rows returned")
+        return
+
+    platform_counts: dict[str, int] = {}
+    market_counts: dict[str, int] = {}
+
+    for row in rows:
+        platform = (
+            raw_platform_key(row)
+            or clean_text(
+                row.get("bookmaker")
+                or row.get("platform")
+                or row.get("operator")
+                or row.get("source")
+            )
+            or "<missing>"
+        )
+
+        market = clean_text(
+            row.get("market_key")
+            or row.get("market")
+            or row.get("stat_type")
+            or row.get("stat")
+        ) or "<missing>"
+
+        platform_counts[platform] = platform_counts.get(platform, 0) + 1
+        market_counts[market] = market_counts.get(market, 0) + 1
+
+    print(f"\n{label} raw rows by platform:")
+    for key, count in sorted(
+        platform_counts.items(),
+        key=lambda item: (-item[1], item[0]),
+    ):
+        print(f"{key}: {count:,}")
+
+    print(f"\n{label} raw rows by market:")
+    for key, count in sorted(
+        market_counts.items(),
+        key=lambda item: (-item[1], item[0]),
+    ):
+        print(f"{key}: {count:,}")
+
+
+def fetch_props(
+    session: requests.Session,
+) -> list[dict[str, Any]]:
+    """Fetch standard props plus explicit PrizePicks/DFS fallbacks."""
+    common_parameters = {
+        "markets": ",".join(API_MARKETS),
+        "dfsOdds": "midpoint",
+        "limit": 10000,
+    }
+
+    all_rows = request_prop_rows(
+        session,
+        url=PROPS_URL,
+        parameters=common_parameters,
+        label="All-platform /props",
+        required=True,
+    )
+
+    prizepicks_rows = request_prop_rows(
+        session,
+        url=PROPS_URL,
+        parameters={
+            **common_parameters,
+            "bookmakers": "prizepicks",
+        },
+        label="PrizePicks-only /props",
+        required=False,
+    )
+
+    dfs_rows = request_prop_rows(
+        session,
+        url=DFS_PICKS_URL,
+        parameters={
+            "markets": ",".join(API_MARKETS),
+            "bookmakers": (
+                "prizepicks,underdog,betr,sleeper,pick6,parlayplay"
+            ),
+            "dfsOdds": "midpoint",
+            "limit": 10000,
+        },
+        label="DFS /dfs/picks",
+        required=False,
+    )
+
+    print_raw_diagnostics(
+        prizepicks_rows,
+        "PrizePicks-only /props",
+    )
+    print_raw_diagnostics(
+        dfs_rows,
+        "DFS /dfs/picks",
+    )
+
+    combined = all_rows + prizepicks_rows + dfs_rows
+
+    # Keep duplicate removal conservative here; final side-level dedupe still
+    # happens in clean_props().
+    unique_rows: list[dict[str, Any]] = []
+    seen: set[tuple[Any, ...]] = set()
+
+    for row in combined:
+        marker = (
+            raw_platform_key(row),
+            clean_text(
+                row.get("player")
+                or row.get("player_name")
+                or row.get("description")
+                or row.get("participant_name")
+                or row.get("name")
+            ),
+            clean_text(
+                row.get("market_key")
+                or row.get("market")
+                or row.get("stat_type")
+                or row.get("stat")
+            ),
+            row.get("line")
+            if row.get("line") is not None
+            else row.get("projection")
+            if row.get("projection") is not None
+            else row.get("stat_value")
+            if row.get("stat_value") is not None
+            else row.get("value"),
+            row.get("over_price"),
+            row.get("under_price"),
+            row.get("canonical_event_id")
+            or row.get("event_id")
+            or row.get("id"),
+        )
+
+        if marker in seen:
+            continue
+
+        seen.add(marker)
+        unique_rows.append(row)
+
+    print(
+        f"Combined unique raw rows: {len(unique_rows):,}"
+    )
+
+    return unique_rows
 
 
 def build_side_row(
@@ -618,6 +881,8 @@ def build_side_row(
     market_key = normalize_market_key(
         raw.get("market_key")
         or raw.get("market")
+        or raw.get("stat_type")
+        or raw.get("stat")
     )
 
     normalized_market = MARKET_MAP.get(
@@ -631,13 +896,21 @@ def build_side_row(
         raw.get("player")
         or raw.get("player_name")
         or raw.get("description")
+        or raw.get("participant_name")
+        or raw.get("name")
     )
 
     if player is None:
         return None
 
     line = pd.to_numeric(
-        raw.get("line"),
+        raw.get("line")
+        if raw.get("line") is not None
+        else raw.get("projection")
+        if raw.get("projection") is not None
+        else raw.get("stat_value")
+        if raw.get("stat_value") is not None
+        else raw.get("value"),
         errors="coerce",
     )
 
@@ -648,6 +921,21 @@ def build_side_row(
 
     if pd.isna(line):
         return None
+
+    # DFS projection feeds do not always include side prices. With
+    # dfsOdds=midpoint, represent an available side as even-money so the
+    # downstream schema remains consistent.
+    if pd.isna(price) and platform_key in DFS_PLATFORM_KEYS:
+        side_available = raw.get(
+            "over_available"
+            if direction == "Over"
+            else "under_available"
+        )
+
+        if side_available is False:
+            return None
+
+        price = 100
 
     if (
         pd.isna(price)
@@ -660,6 +948,8 @@ def build_side_row(
     commence_time = parse_api_datetime(
         raw.get("commence_time")
         or raw.get("start_time")
+        or raw.get("game_time")
+        or raw.get("scheduled_at")
     )
 
     if commence_time is None:
@@ -1045,7 +1335,10 @@ def download_sportsbook_props() -> pd.DataFrame:
         f"{target_date.isoformat()}"
     )
     print(
-        f"Endpoint: {PROPS_URL}"
+        f"Props endpoint: {PROPS_URL}"
+    )
+    print(
+        f"DFS endpoint: {DFS_PICKS_URL}"
     )
     print(
         f"Requested markets: "
