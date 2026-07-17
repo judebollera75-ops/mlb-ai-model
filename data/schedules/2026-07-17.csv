@@ -1,16 +1,16 @@
 date,game_id,away_team,home_team,away_pitcher,home_pitcher,status
-2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,Griffin Jax,Jake Bennett,In Progress
-2026-07-17,824737,Tampa Bay Rays,Boston Red Sox,,,Scheduled
-2026-07-17,823524,Los Angeles Dodgers,New York Yankees,Roki Sasaki,Gerrit Cole,Scheduled
-2026-07-17,824414,Pittsburgh Pirates,Cleveland Guardians,Jared Jones,Gavin Williams,Scheduled
-2026-07-17,824901,Texas Rangers,Atlanta Braves,Cal Quantrill,Chris Sale,Scheduled
-2026-07-17,822789,Chicago White Sox,Toronto Blue Jays,Anthony Kay,Spencer Miles,Scheduled
-2026-07-17,823766,Miami Marlins,Milwaukee Brewers,Sandy Alcantara,Logan Henderson,Scheduled
-2026-07-17,824655,Minnesota Twins,Chicago Cubs,Bailey Ober,Colin Rea,Scheduled
-2026-07-17,824170,Baltimore Orioles,Houston Astros,Dean Kremer,Peter Lambert,Scheduled
-2026-07-17,824090,San Diego Padres,Kansas City Royals,Michael King,Seth Lugo,Scheduled
-2026-07-17,824332,Cincinnati Reds,Colorado Rockies,Brady Singer,Gabriel Hughes,Scheduled
-2026-07-17,824009,Detroit Tigers,Los Angeles Angels,Troy Melton,Reid Detmers,Scheduled
+2026-07-17,824766,Tampa Bay Rays,Boston Red Sox,Griffin Jax,Jake Bennett,Final
+2026-07-17,824737,Tampa Bay Rays,Boston Red Sox,Mason Englert,Eduardo Rivera,Pre-Game
+2026-07-17,823524,Los Angeles Dodgers,New York Yankees,Roki Sasaki,Gerrit Cole,Pre-Game
+2026-07-17,824901,Texas Rangers,Atlanta Braves,Cal Quantrill,Chris Sale,Pre-Game
+2026-07-17,822789,Chicago White Sox,Toronto Blue Jays,Anthony Kay,Spencer Miles,Pre-Game
+2026-07-17,823766,Miami Marlins,Milwaukee Brewers,Sandy Alcantara,Logan Henderson,Pre-Game
+2026-07-17,824655,Minnesota Twins,Chicago Cubs,Bailey Ober,Colin Rea,Pre-Game
+2026-07-17,824170,Baltimore Orioles,Houston Astros,Dean Kremer,Peter Lambert,Pre-Game
+2026-07-17,824090,San Diego Padres,Kansas City Royals,Michael King,Seth Lugo,Pre-Game
+2026-07-17,824332,Cincinnati Reds,Colorado Rockies,Brady Singer,Gabriel Hughes,Pre-Game
+2026-07-17,824009,Detroit Tigers,Los Angeles Angels,Troy Melton,Reid Detmers,Pre-Game
 2026-07-17,824981,Washington Nationals,Athletics,Cade Cavalli,Gage Jump,Scheduled
 2026-07-17,825060,St. Louis Cardinals,Arizona Diamondbacks,Michael McGreevy,Merrill Kelly,Scheduled
 2026-07-17,823115,San Francisco Giants,Seattle Mariners,Landen Roupp,Bryce Miller,Scheduled
+2026-07-17,824414,Pittsburgh Pirates,Cleveland Guardians,Jared Jones,Gavin Williams,Postponed

@@ -16,14 +16,16 @@ date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,
 2026-07-17,823115,Bryce Miller,Seattle Mariners,home,9.0,65.0,7.222222222222222,7.2,5.175,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 2026-07-17,824332,Brady Singer,Cincinnati Reds,away,18.0,76.0,4.222222222222222,5.8,5.11,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-17,824414,Jared Jones,Pittsburgh Pirates,away,8.0,39.0,4.875,5.0,4.805,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
-2026-07-17,824766,Griffin Jax,Tampa Bay Rays,away,14.0,71.0,5.071428571428571,6.0,4.803,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-17,824766,Griffin Jax,Tampa Bay Rays,away,15.0,77.0,5.133333333333334,6.0,4.803,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-17,822789,Anthony Kay,Chicago White Sox,away,17.0,71.0,4.176470588235294,3.6,4.316,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-17,824655,Bailey Ober,Minnesota Twins,away,13.0,51.0,3.923076923076923,3.8,4.091,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-17,825060,Merrill Kelly,Arizona Diamondbacks,home,16.0,59.0,3.6875,4.2,4.061,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,824766,Jake Bennett,Boston Red Sox,home,8.0,35.0,4.375,5.4,4.053,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+2026-07-17,824766,Jake Bennett,Boston Red Sox,home,9.0,38.0,4.222222222222222,5.4,4.053,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 2026-07-17,824981,Gage Jump,Athletics,home,9.0,48.0,5.333333333333333,5.8,4.032,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+2026-07-17,824737,Eduardo Rivera,Boston Red Sox,home,1.0,6.0,6.0,3.0,3.891,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
 2026-07-17,824090,Michael King,San Diego Padres,away,19.0,92.0,4.842105263157895,4.0,3.604,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-17,825060,Michael McGreevy,St. Louis Cardinals,away,18.0,66.0,3.6666666666666665,3.4,3.521,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-17,824901,Cal Quantrill,Texas Rangers,away,4.0,28.0,7.0,2.0,3.218,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
 2026-07-17,824655,Colin Rea,Chicago Cubs,home,15.0,70.0,4.666666666666667,3.2,3.036,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-17,822789,Spencer Miles,Toronto Blue Jays,home,3.0,57.0,19.0,2.6,2.669,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
+2026-07-17,824737,Mason Englert,Tampa Bay Rays,away,2.0,28.0,14.0,4.2,1.996,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
