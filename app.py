@@ -1354,30 +1354,29 @@ if history.empty:
     )
 
 else:
-   (
-    tab_overall,
-    tab_market,
-    tab_platform,
-    tab_confidence,
-    tab_probability,
-    tab_grade,
-    tab_market_analysis,
-    tab_history,
-) = st.tabs(
-    [
-        "Overall",
-        "By Market",
-        "By Platform",
-        "By Confidence",
-        "By Probability",
-        "📊 Grade Analysis",
-        "📈 Market Analysis",
-        "Pick History",
-    ]
-)
+    (
+        tab_overall,
+        tab_market,
+        tab_platform,
+        tab_confidence,
+        tab_probability,
+        tab_grade,
+        tab_market_analysis,
+        tab_history,
+    ) = st.tabs(
+        [
+            "Overall",
+            "By Market",
+            "By Platform",
+            "By Confidence",
+            "By Probability",
+            "📊 Grade Analysis",
+            "📈 Market Analysis",
+            "Pick History",
+        ]
+    )
 
     with tab_overall:
-        ...
         overall_summary = summarize_results(history)
         summary_1, summary_2, summary_3, summary_4 = st.columns(4)
         summary_1.metric("Verified Picks", int(overall_summary["Picks"]))
