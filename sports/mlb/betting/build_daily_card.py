@@ -84,6 +84,20 @@ VALID_LINE_RANGES = {
     "pitcher_outs": (8.5, 24.5),
 }
 
+# Data-quality guardrail: reject lines that are implausibly far from the
+# model projection. This removes malformed/extreme alternate lines without
+# changing the underlying projection model.
+MAXIMUM_ABSOLUTE_PROJECTION_GAP = {
+    "hitter_hits": 1.5,
+    "hitter_total_bases": 3.0,
+    "hitter_runs": 1.25,
+    "hitter_rbis": 1.75,
+    "hitter_hits_runs_rbis": 3.5,
+    "hitter_fantasy_score": 12.0,
+    "pitcher_strikeouts": 4.0,
+    "pitcher_outs": 7.0,
+}
+
 MARKET_MINIMUM_PROBABILITIES = {
     "hitter_hits": 0.58,
     "hitter_total_bases": 0.58,
@@ -627,6 +641,25 @@ def add_rejection_reason(
             "invalid_line",
         ),
         (
+            result.apply(
+                lambda row: (
+                    abs(
+                        float(row.get("projection"))
+                        - float(row.get("line"))
+                    )
+                    > MAXIMUM_ABSOLUTE_PROJECTION_GAP.get(
+                        str(row.get("market")).strip(),
+                        float("inf"),
+                    )
+                )
+                if pd.notna(row.get("projection"))
+                and pd.notna(row.get("line"))
+                else True,
+                axis=1,
+            ),
+            "line_too_far_from_projection",
+        ),
+        (
             ~result["line_is_fresh"],
             "stale_line",
         ),
@@ -699,8 +732,10 @@ def choose_consensus_market_lines(
 
     result = frame.copy()
 
+    # Do not group by event_id: provider-specific event IDs can differ across
+    # sportsbooks, which would make every book look like its own market and
+    # allow alternate lines to win. The daily pipeline is already slate-bound.
     group_columns = [
-        "event_id",
         "player_key",
         "market",
     ]
@@ -848,7 +883,6 @@ def choose_best_platform_rows(
         subset=[
             "player_key",
             "market",
-            "direction",
         ],
         keep="first",
     )
