@@ -1354,25 +1354,27 @@ if history.empty:
     )
 
 else:
-    (
-        tab_overall,
-        tab_market,
-        tab_platform,
-        tab_confidence,
-        tab_probability,
-        tab_grade,
-        tab_history,
-    ) = st.tabs(
-        [
-            "Overall",
-            "By Market",
-            "By Platform",
-            "By Confidence",
-            "By Probability",
-            "📊 Grade Analysis",
-            "Pick History",
-        ]
-    )
+   (
+    tab_overall,
+    tab_market,
+    tab_platform,
+    tab_confidence,
+    tab_probability,
+    tab_grade,
+    tab_market_analysis,
+    tab_history,
+) = st.tabs(
+    [
+        "Overall",
+        "By Market",
+        "By Platform",
+        "By Confidence",
+        "By Probability",
+        "📊 Grade Analysis",
+        "📈 Market Analysis",
+        "Pick History",
+    ]
+)
 
     with tab_overall:
         ...
