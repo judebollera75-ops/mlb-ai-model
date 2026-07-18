@@ -2046,7 +2046,7 @@ else:
                                 "Validation Wins", "Validation Losses", "Validation Pushes",
                             }:
                                 display_optimizer[column] = pd.to_numeric(
-                                    display_optimizer[column], errors="ignore"
+                                    display_optimizer[column], errors="coerce"
                                 )
 
                         st.subheader("Top Distinct Threshold Combinations")
