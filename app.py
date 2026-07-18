@@ -1748,33 +1748,49 @@ else:
             if optimizer_history.empty:
                 st.info("No settled picks remain for the selected markets.")
             else:
-                # Use chronological holdout when possible.
+                # Use a chronological holdout split by whole event dates.
+                # Keeping each date entirely in one side prevents same-day
+                # information from leaking across training and validation.
                 has_dates = "event_date" in optimizer_history.columns
+                validation_mode = False
+                validation_history = pd.DataFrame()
+
                 if has_dates:
                     optimizer_history["event_date"] = pd.to_datetime(
                         optimizer_history["event_date"], errors="coerce"
                     )
-                    optimizer_history = optimizer_history.sort_values(
-                        "event_date", na_position="last"
-                    ).reset_index(drop=True)
+                    dated_history = optimizer_history.dropna(
+                        subset=["event_date"]
+                    ).sort_values("event_date").reset_index(drop=True)
 
-                split_index = max(
-                    minimum_sample_size,
-                    int(len(optimizer_history) * 0.70),
-                )
-                split_index = min(split_index, len(optimizer_history))
+                    unique_dates = dated_history["event_date"].dt.normalize().unique()
+                    if len(unique_dates) >= 2:
+                        cutoff_position = max(
+                            1,
+                            min(len(unique_dates) - 1, int(len(unique_dates) * 0.70)),
+                        )
+                        cutoff_date = unique_dates[cutoff_position]
 
-                if (
-                    has_dates
-                    and len(optimizer_history) - split_index >= minimum_validation_size
-                ):
-                    training_history = optimizer_history.iloc[:split_index].copy()
-                    validation_history = optimizer_history.iloc[split_index:].copy()
-                    validation_mode = True
+                        training_candidate = dated_history.loc[
+                            dated_history["event_date"].dt.normalize() < cutoff_date
+                        ].copy()
+                        validation_candidate = dated_history.loc[
+                            dated_history["event_date"].dt.normalize() >= cutoff_date
+                        ].copy()
+
+                        if (
+                            len(training_candidate) >= minimum_sample_size
+                            and len(validation_candidate) >= minimum_validation_size
+                        ):
+                            training_history = training_candidate
+                            validation_history = validation_candidate
+                            validation_mode = True
+                        else:
+                            training_history = optimizer_history.copy()
+                    else:
+                        training_history = optimizer_history.copy()
                 else:
                     training_history = optimizer_history.copy()
-                    validation_history = pd.DataFrame()
-                    validation_mode = False
 
                 range_1, range_2, range_3 = st.columns(3)
                 range_1.metric(
@@ -1890,82 +1906,53 @@ else:
                         subset=dedupe_columns, keep="first"
                     ).copy()
 
-                    score_hit_rate = (
-                        optimizer_results["Validation Hit Rate"]
-                        if validation_mode
-                        else optimizer_results["Training Hit Rate"]
-                    )
-                    score_roi = (
-                        optimizer_results["Validation ROI"]
-                        if validation_mode
-                        else optimizer_results["Training ROI"]
-                    )
-                    score_profit = (
-                        optimizer_results["Validation Profit"]
-                        if validation_mode
-                        else optimizer_results["Training Profit"]
-                    )
-                    score_picks = (
-                        optimizer_results["Validation Picks"]
-                        if validation_mode
-                        else optimizer_results["Training Picks"]
-                    )
+                    # Select thresholds using TRAINING performance only.
+                    # Validation outcomes are never used to rank combinations.
+                    eligible = optimizer_results["Training Picks"] >= minimum_sample_size
+                    if validation_mode:
+                        # Validation pick count is only a sample-size constraint;
+                        # validation hit rate/ROI/profit are not used for selection.
+                        eligible &= (
+                            optimizer_results["Validation Picks"]
+                            >= minimum_validation_size
+                        )
 
-                    eligible = score_picks >= (
-                        minimum_validation_size if validation_mode else minimum_sample_size
-                    )
                     scored_results = optimizer_results.loc[eligible].copy()
 
                     if scored_results.empty:
                         st.info(
                             "Thresholds were found in training, but none produced "
-                            "enough unseen validation picks. Lower the validation "
-                            "minimum or collect more settled history."
+                            "enough validation picks. Lower the validation minimum "
+                            "or collect more settled history."
                         )
                     else:
-                        score_hit_rate = (
-                            scored_results["Validation Hit Rate"]
-                            if validation_mode
-                            else scored_results["Training Hit Rate"]
-                        )
-                        score_roi = (
-                            scored_results["Validation ROI"]
-                            if validation_mode
-                            else scored_results["Training ROI"]
-                        )
-                        score_profit = (
-                            scored_results["Validation Profit"]
-                            if validation_mode
-                            else scored_results["Training Profit"]
-                        )
-                        score_picks = (
-                            scored_results["Validation Picks"]
-                            if validation_mode
-                            else scored_results["Training Picks"]
-                        )
+                        training_hit_rate = scored_results["Training Hit Rate"]
+                        training_roi = scored_results["Training ROI"]
+                        training_profit = scored_results["Training Profit"]
+                        training_picks = scored_results["Training Picks"]
 
-                        max_profit = max(float(score_profit.max()), 1.0)
-                        max_picks = max(float(score_picks.max()), 1.0)
+                        max_profit = max(float(training_profit.max()), 1.0)
+                        max_picks = max(float(training_picks.max()), 1.0)
                         scored_results["Balanced Score"] = (
-                            score_hit_rate
-                            + 0.25 * score_roi.clip(lower=-100, upper=100)
-                            + 10.0 * score_profit / max_profit
-                            + 5.0 * score_picks / max_picks
+                            training_hit_rate
+                            + 0.25 * training_roi.clip(lower=-100, upper=100)
+                            + 10.0 * training_profit / max_profit
+                            + 5.0 * training_picks / max_picks
                         )
 
                         sort_map = {
                             "Balanced": ["Balanced Score", "Training Picks"],
                             "Highest Hit Rate": [
-                                "Validation Hit Rate" if validation_mode else "Training Hit Rate",
-                                "Validation Picks" if validation_mode else "Training Picks",
+                                "Training Hit Rate",
+                                "Training Picks",
                             ],
                             "Highest ROI": [
-                                "Validation ROI" if validation_mode else "Training ROI",
-                                "Validation Picks" if validation_mode else "Training Picks",
+                                "Training ROI",
+                                "Training Picks",
                             ],
                             "Highest Profit": [
-                                "Validation Profit" if validation_mode else "Training Profit",
-                                "Validation Picks" if validation_mode else "Training Picks",
+                                "Training Profit",
+                                "Training Picks",
                             ],
                         }
                         scored_results = scored_results.sort_values(
@@ -1991,6 +1978,26 @@ else:
                             "Chronological holdout" if validation_mode else "In-sample only",
                         )
 
+                        train_a, train_b, train_c, train_d = st.columns(4)
+                        train_a.metric(
+                            "Training Hit Rate",
+                            f"{best['Training Hit Rate']:.1f}%",
+                        )
+                        train_b.metric(
+                            "Training ROI",
+                            f"{best['Training ROI']:+.1f}%",
+                        )
+                        train_c.metric(
+                            "Training Profit",
+                            f"{best['Training Profit']:+.2f}u",
+                        )
+                        train_d.metric(
+                            "Training Record",
+                            f"{int(best['Training Wins'])}-"
+                            f"{int(best['Training Losses'])}-"
+                            f"{int(best['Training Pushes'])}",
+                        )
+
                         if validation_mode:
                             result_a, result_b, result_c, result_d = st.columns(4)
                             result_a.metric(
@@ -2012,28 +2019,16 @@ else:
                                 f"{int(best['Validation Pushes'])}",
                             )
                             st.caption(
-                                f"Thresholds were selected using {len(training_history)} older "
-                                f"picks and evaluated on {len(validation_history)} newer picks."
+                                f"Thresholds were chosen only from "
+                                f"{len(training_history)} older picks, then evaluated once "
+                                f"on {len(validation_history)} newer picks. Validation "
+                                f"outcomes did not influence the recommendation."
                             )
                         else:
-                            result_a, result_b, result_c, result_d = st.columns(4)
-                            result_a.metric(
-                                "Historical Hit Rate",
-                                f"{best['Training Hit Rate']:.1f}%",
-                            )
-                            result_b.metric(
-                                "Historical ROI",
-                                f"{best['Training ROI']:+.1f}%",
-                            )
-                            result_c.metric(
-                                "Historical Profit",
-                                f"{best['Training Profit']:+.2f}u",
-                            )
-                            result_d.metric(
-                                "Historical Record",
-                                f"{int(best['Training Wins'])}-"
-                                f"{int(best['Training Losses'])}-"
-                                f"{int(best['Training Pushes'])}",
+                            st.warning(
+                                "There is not enough dated history for a true holdout. "
+                                "These results are in-sample and should not be promoted "
+                                "to production thresholds yet."
                             )
 
                         display_optimizer = scored_results.head(show_top_n).copy()
