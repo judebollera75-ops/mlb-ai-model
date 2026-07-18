@@ -8,12 +8,12 @@ Emmet Sheehan,Los Angeles Dodgers,823523,2026-07-18,6.098,6.098,,,,range_clip_on
 Logan Webb,San Francisco Giants,823116,2026-07-18,5.916,5.916,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,16.0,80.0,5.0,4.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Davis Martin,Chicago White Sox,822790,2026-07-18,5.781,5.781,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,92.0,5.111111111111111,2.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Sean Manaea,New York Mets,823441,2026-07-18,5.691,5.691,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,6.0,74.0,12.333333333333334,4.6,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
-Gavin Williams,Cleveland Guardians,824414,2026-07-18,5.481,5.481,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,19.0,134.0,7.052631578947368,7.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Gavin Williams,Cleveland Guardians,824414,2026-07-18,5.481,5.481,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,139.0,6.95,7.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Taj Bradley,Minnesota Twins,824657,2026-07-18,5.347,5.347,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,118.0,6.555555555555555,7.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Grayson Rodriguez,Los Angeles Angels,824008,2026-07-18,5.347,5.347,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,7.0,24.0,3.4285714285714284,3.0,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 Ian Seymour,Tampa Bay Rays,824738,2026-07-18,4.916,4.916,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,6.0,75.0,12.5,6.8,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 Logan Allen,Cleveland Guardians,824412,2026-07-18,4.836,4.836,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,0.0,7.0,,7.0,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
-Jared Jones,Pittsburgh Pirates,824414,2026-07-18,4.805,4.805,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,8.0,39.0,4.875,5.0,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+Jared Jones,Pittsburgh Pirates,824414,2026-07-18,4.805,4.805,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,9.0,44.0,4.888888888888889,5.0,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 Max Meyer,Miami Marlins,823763,2026-07-18,4.781,4.781,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,19.0,116.0,6.105263157894737,6.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Randy Dobnak,Kansas City Royals,824088,2026-07-18,4.734,4.734,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,0.0,4.0,,2.0,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
 Zack Littell,Washington Nationals,824979,2026-07-18,4.546,4.546,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,12.0,57.0,4.75,3.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15

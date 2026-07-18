@@ -8,12 +8,12 @@ date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,
 2026-07-18,823116,Logan Webb,San Francisco Giants,away,16.0,80.0,5.0,4.4,5.916,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-18,822790,Davis Martin,Chicago White Sox,away,18.0,92.0,5.111111111111111,2.6,5.781,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-18,823441,Sean Manaea,New York Mets,away,6.0,74.0,12.333333333333334,4.6,5.691,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
-2026-07-18,824414,Gavin Williams,Cleveland Guardians,home,19.0,134.0,7.052631578947368,7.0,5.481,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824414,Gavin Williams,Cleveland Guardians,home,20.0,139.0,6.95,7.0,5.481,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-18,824657,Taj Bradley,Minnesota Twins,away,18.0,118.0,6.555555555555555,7.6,5.347,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-18,824008,Grayson Rodriguez,Los Angeles Angels,home,7.0,24.0,3.4285714285714284,3.0,5.347,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 2026-07-18,824738,Ian Seymour,Tampa Bay Rays,away,6.0,75.0,12.5,6.8,4.916,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 2026-07-18,824412,Logan Allen,Cleveland Guardians,home,0.0,7.0,,7.0,4.836,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
-2026-07-18,824414,Jared Jones,Pittsburgh Pirates,away,8.0,39.0,4.875,5.0,4.805,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+2026-07-18,824414,Jared Jones,Pittsburgh Pirates,away,9.0,44.0,4.888888888888889,5.0,4.805,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 2026-07-18,823763,Max Meyer,Miami Marlins,away,19.0,116.0,6.105263157894737,6.0,4.781,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-18,824088,Randy Dobnak,Kansas City Royals,home,0.0,4.0,,2.0,4.734,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
 2026-07-18,824979,Zack Littell,Washington Nationals,away,12.0,57.0,4.75,3.6,4.546,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
