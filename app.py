@@ -495,47 +495,105 @@ def prepare_props(
     return prepared.reset_index(drop=True)
 
 
+def american_odds_profit(
+    odds: Any,
+    stake: float = 1.0,
+) -> float:
+    """Return unit profit for a winning American-odds wager."""
+    numeric_odds = pd.to_numeric(odds, errors="coerce")
+    if pd.isna(numeric_odds):
+        return 0.0
+    numeric_odds = float(numeric_odds)
+    stake = float(stake)
+    if numeric_odds > 0:
+        return stake * numeric_odds / 100.0
+    return stake * 100.0 / abs(numeric_odds)
+
+
 def prepare_history(
     history: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Normalize settled history for dashboard metrics."""
+    """Normalize, settle, and deduplicate history for dashboard metrics."""
     if history.empty:
         return history
 
     prepared = history.copy()
-
     if "outcome" not in prepared.columns:
         return pd.DataFrame()
 
-    prepared["outcome"] = (
-        prepared["outcome"]
-        .astype("string")
-        .str.upper()
-        .str.strip()
-    )
+    for column in [
+        "outcome", "grade", "confidence_tier", "platform",
+        "player", "market", "direction",
+    ]:
+        if column in prepared.columns:
+            prepared[column] = prepared[column].astype("string").str.strip()
 
+    prepared["outcome"] = prepared["outcome"].str.upper()
     prepared = prepared.loc[
-        prepared["outcome"].isin(
-            {"WIN", "LOSS", "PUSH"}
-        )
+        prepared["outcome"].isin({"WIN", "LOSS", "PUSH"})
     ].copy()
 
     for column in [
-        "profit",
-        "stake",
-        "probability",
-        "expected_value",
-        "line",
-        "projection",
-        "actual_result",
+        "profit", "stake", "sportsbook_odds", "probability",
+        "expected_value", "probability_edge", "line",
+        "projection", "actual_result",
     ]:
         if column in prepared.columns:
-            prepared[column] = pd.to_numeric(
-                prepared[column],
-                errors="coerce",
-            )
+            prepared[column] = pd.to_numeric(prepared[column], errors="coerce")
 
-    return prepared
+    if "stake" not in prepared.columns:
+        prepared["stake"] = 1.0
+    else:
+        prepared["stake"] = prepared["stake"].fillna(1.0)
+
+    if "profit" not in prepared.columns:
+        prepared["profit"] = pd.NA
+
+    missing_profit = prepared["profit"].isna()
+    win_mask = missing_profit & prepared["outcome"].eq("WIN")
+    if "sportsbook_odds" in prepared.columns:
+        prepared.loc[win_mask, "profit"] = prepared.loc[win_mask].apply(
+            lambda row: american_odds_profit(
+                row.get("sportsbook_odds"), row.get("stake", 1.0)
+            ),
+            axis=1,
+        )
+
+    loss_mask = missing_profit & prepared["outcome"].eq("LOSS")
+    prepared.loc[loss_mask, "profit"] = -prepared.loc[loss_mask, "stake"]
+    push_mask = missing_profit & prepared["outcome"].eq("PUSH")
+    prepared.loc[push_mask, "profit"] = 0.0
+
+    duplicate_columns = [
+        c for c in ["event_date", "player", "market", "direction", "line"]
+        if c in prepared.columns
+    ]
+    if duplicate_columns:
+        sort_columns = [
+            c for c in ["expected_value", "probability_edge", "probability"]
+            if c in prepared.columns
+        ]
+        if sort_columns:
+            prepared = prepared.sort_values(
+                sort_columns, ascending=[False] * len(sort_columns),
+                na_position="last",
+            )
+        prepared = prepared.drop_duplicates(
+            subset=duplicate_columns, keep="first"
+        )
+
+    if "probability" in prepared.columns:
+        prepared["Probability Bucket"] = pd.cut(
+            prepared["probability"],
+            bins=[0.00, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 1.00],
+            labels=[
+                "Below 60%", "60–65%", "65–70%", "70–75%",
+                "75–80%", "80–85%", "85–90%", "90%+",
+            ],
+            include_lowest=True,
+        )
+
+    return prepared.reset_index(drop=True)
 
 
 def summarize_results(
@@ -1296,14 +1354,42 @@ if history.empty:
     )
 
 else:
-    tab_market, tab_platform, tab_confidence, tab_history = st.tabs(
+    (
+        tab_overall,
+        tab_market,
+        tab_platform,
+        tab_confidence,
+        tab_probability,
+        tab_history,
+    ) = st.tabs(
         [
+            "Overall",
             "By Market",
             "By Platform",
             "By Confidence",
+            "By Probability",
             "Pick History",
         ]
     )
+
+    with tab_overall:
+        overall_summary = summarize_results(history)
+        summary_1, summary_2, summary_3, summary_4 = st.columns(4)
+        summary_1.metric("Verified Picks", int(overall_summary["Picks"]))
+        summary_2.metric(
+            "Record",
+            f"{int(overall_summary['Wins'])}-{int(overall_summary['Losses'])}-{int(overall_summary['Pushes'])}",
+        )
+        summary_3.metric("Hit Rate", f"{float(overall_summary['Hit Rate']):.1f}%")
+        summary_4.metric("ROI", f"{float(overall_summary['ROI']):+.1f}%")
+        overall_table = pd.DataFrame([
+            {"Category": "All Verified Picks", **overall_summary.to_dict()}
+        ])
+        st.dataframe(overall_table, use_container_width=True, hide_index=True)
+        st.caption(
+            "Repeated copies of the same player, market, direction, line, "
+            "and event are counted once."
+        )
 
     with tab_market:
         market_rows = []
@@ -1386,6 +1472,62 @@ else:
                 confidence_summary,
                 use_container_width=True,
                 hide_index=True,
+            )
+
+    with tab_probability:
+        probability_rows = []
+        if "Probability Bucket" in history.columns:
+            for bucket_name, group in history.groupby(
+                "Probability Bucket", dropna=False, observed=False
+            ):
+                if group.empty:
+                    continue
+                summary = summarize_results(group).to_dict()
+                summary["Probability Bucket"] = clean_text(bucket_name) or "Unclassified"
+                average_probability = pd.to_numeric(
+                    group.get("probability", pd.Series(dtype=float)),
+                    errors="coerce",
+                ).mean()
+                summary["Average Model Probability"] = (
+                    round(float(average_probability) * 100.0, 1)
+                    if pd.notna(average_probability) else pd.NA
+                )
+                probability_rows.append(summary)
+
+        probability_summary = pd.DataFrame(probability_rows)
+        if probability_summary.empty:
+            st.info("No probability-bucket history is available yet.")
+        else:
+            probability_order = {
+                "Below 60%": 1, "60–65%": 2, "65–70%": 3,
+                "70–75%": 4, "75–80%": 5, "80–85%": 6,
+                "85–90%": 7, "90%+": 8, "Unclassified": 9,
+            }
+            probability_summary["_sort"] = (
+                probability_summary["Probability Bucket"]
+                .map(probability_order)
+                .fillna(99)
+            )
+            probability_summary = (
+                probability_summary.sort_values("_sort").drop(columns="_sort")
+            )
+            st.dataframe(
+                probability_summary, use_container_width=True, hide_index=True
+            )
+            if {"Average Model Probability", "Hit Rate"}.issubset(
+                probability_summary.columns
+            ):
+                st.subheader("Predicted Probability vs. Actual Hit Rate")
+                st.line_chart(
+                    probability_summary[[
+                        "Probability Bucket",
+                        "Average Model Probability",
+                        "Hit Rate",
+                    ]].set_index("Probability Bucket")
+                )
+            st.caption(
+                "A well-calibrated model should have actual hit rates that "
+                "roughly follow its predicted probability buckets."
             )
 
     with tab_history:
