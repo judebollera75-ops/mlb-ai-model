@@ -682,6 +682,140 @@ def add_rejection_reason(
     return result
 
 
+
+def choose_consensus_market_lines(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
+    """Keep only the consensus/main line for each event, player, and market.
+
+    The main line is the line offered by the greatest number of distinct
+    platforms. Ties are broken by choosing the line whose average market
+    implied probability is closest to 50%, then by choosing the line closest
+    to the median offered line. Alternate lines remain in the raw probability
+    table but are excluded from the production daily card.
+    """
+    if frame.empty:
+        return frame
+
+    result = frame.copy()
+
+    group_columns = [
+        "event_id",
+        "player_key",
+        "market",
+    ]
+
+    result["line"] = pd.to_numeric(
+        result["line"],
+        errors="coerce",
+    )
+
+    result["platform_key"] = (
+        result.get("platform_key", result.get("platform"))
+        .astype("string")
+        .fillna("")
+        .str.strip()
+        .str.casefold()
+    )
+
+    result["consensus_price_distance"] = (
+        result["market_implied_probability"] - 0.5
+    ).abs()
+
+    line_summary = (
+        result.dropna(subset=["line"])
+        .groupby(
+            group_columns + ["line"],
+            dropna=False,
+            sort=False,
+        )
+        .agg(
+            platform_count=("platform_key", "nunique"),
+            average_price_distance=(
+                "consensus_price_distance",
+                "mean",
+            ),
+        )
+        .reset_index()
+    )
+
+    if line_summary.empty:
+        return result.iloc[0:0].copy()
+
+    medians = (
+        line_summary.groupby(
+            group_columns,
+            dropna=False,
+        )["line"]
+        .median()
+        .rename("group_median_line")
+        .reset_index()
+    )
+
+    line_summary = line_summary.merge(
+        medians,
+        on=group_columns,
+        how="left",
+    )
+
+    line_summary["median_distance"] = (
+        line_summary["line"]
+        - line_summary["group_median_line"]
+    ).abs()
+
+    line_summary = line_summary.sort_values(
+        group_columns
+        + [
+            "platform_count",
+            "average_price_distance",
+            "median_distance",
+            "line",
+        ],
+        ascending=[
+            True,
+            True,
+            True,
+            False,
+            True,
+            True,
+            True,
+        ],
+        na_position="last",
+    )
+
+    selected_lines = line_summary.drop_duplicates(
+        subset=group_columns,
+        keep="first",
+    )[group_columns + ["line"]]
+
+    selected_lines = selected_lines.rename(
+        columns={"line": "consensus_line"}
+    )
+
+    result = result.merge(
+        selected_lines,
+        on=group_columns,
+        how="inner",
+    )
+
+    result = result.loc[
+        np.isclose(
+            result["line"],
+            result["consensus_line"],
+            equal_nan=False,
+        )
+    ].copy()
+
+    result = result.drop(
+        columns=[
+            "consensus_price_distance",
+            "consensus_line",
+        ],
+        errors="ignore",
+    )
+
+    return result
+
 def choose_best_platform_rows(
     frame: pd.DataFrame,
 ) -> pd.DataFrame:
@@ -1111,6 +1245,10 @@ def build_daily_card() -> pd.DataFrame:
     ] = probabilities["market"].map(
         MARKET_MINIMUM_PROBABILITIES
     ).fillna(MINIMUM_WIN_PROBABILITY)
+
+    probabilities = choose_consensus_market_lines(
+        probabilities
+    )
 
     probabilities["confidence_tier"] = (
         probabilities.apply(
