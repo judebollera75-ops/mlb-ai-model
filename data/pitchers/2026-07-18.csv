@@ -18,12 +18,12 @@ date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_i
 2026-07-18,824331,Pre-Game,P,19,Coors Field,Cincinnati Reds,Colorado Rockies,695076,Rhett Lowder,608372.0,Tomoyuki Sugano,away,0,Colorado Rockies,Cincinnati Reds
 2026-07-18,824331,Pre-Game,P,19,Coors Field,Colorado Rockies,Cincinnati Reds,608372,Tomoyuki Sugano,695076.0,Rhett Lowder,home,1,Colorado Rockies,Cincinnati Reds
 2026-07-18,824412,Scheduled,S,5,Progressive Field,Cleveland Guardians,Pittsburgh Pirates,671106,Logan Allen,,,home,1,Cleveland Guardians,Pittsburgh Pirates
-2026-07-18,824414,Pre-Game,P,5,Progressive Field,Pittsburgh Pirates,Cleveland Guardians,683003,Jared Jones,668909.0,Gavin Williams,away,0,Cleveland Guardians,Pittsburgh Pirates
-2026-07-18,824414,Pre-Game,P,5,Progressive Field,Cleveland Guardians,Pittsburgh Pirates,668909,Gavin Williams,683003.0,Jared Jones,home,1,Cleveland Guardians,Pittsburgh Pirates
+2026-07-18,824414,Warmup,PW,5,Progressive Field,Pittsburgh Pirates,Cleveland Guardians,683003,Jared Jones,668909.0,Gavin Williams,away,0,Cleveland Guardians,Pittsburgh Pirates
+2026-07-18,824414,Warmup,PW,5,Progressive Field,Cleveland Guardians,Pittsburgh Pirates,668909,Gavin Williams,683003.0,Jared Jones,home,1,Cleveland Guardians,Pittsburgh Pirates
 2026-07-18,824657,Pre-Game,P,17,Wrigley Field,Minnesota Twins,Chicago Cubs,671737,Taj Bradley,571510.0,Matthew Boyd,away,0,Chicago Cubs,Minnesota Twins
 2026-07-18,824657,Pre-Game,P,17,Wrigley Field,Chicago Cubs,Minnesota Twins,571510,Matthew Boyd,671737.0,Taj Bradley,home,1,Chicago Cubs,Minnesota Twins
-2026-07-18,824738,Scheduled,S,3,Fenway Park,Tampa Bay Rays,Boston Red Sox,693855,Ian Seymour,663776.0,Patrick Sandoval,away,0,Boston Red Sox,Tampa Bay Rays
-2026-07-18,824738,Scheduled,S,3,Fenway Park,Boston Red Sox,Tampa Bay Rays,663776,Patrick Sandoval,693855.0,Ian Seymour,home,1,Boston Red Sox,Tampa Bay Rays
+2026-07-18,824738,Pre-Game,P,3,Fenway Park,Tampa Bay Rays,Boston Red Sox,693855,Ian Seymour,663776.0,Patrick Sandoval,away,0,Boston Red Sox,Tampa Bay Rays
+2026-07-18,824738,Pre-Game,P,3,Fenway Park,Boston Red Sox,Tampa Bay Rays,663776,Patrick Sandoval,693855.0,Ian Seymour,home,1,Boston Red Sox,Tampa Bay Rays
 2026-07-18,824899,Pre-Game,P,4705,Truist Park,Texas Rangers,Atlanta Braves,669022,MacKenzie Gore,702566.0,Owen Murphy,away,0,Atlanta Braves,Texas Rangers
 2026-07-18,824899,Pre-Game,P,4705,Truist Park,Atlanta Braves,Texas Rangers,702566,Owen Murphy,669022.0,MacKenzie Gore,home,1,Atlanta Braves,Texas Rangers
 2026-07-18,824979,Scheduled,S,2529,Sutter Health Park,Washington Nationals,Athletics,641793,Zack Littell,669372.0,J.T. Ginn,away,0,Athletics,Washington Nationals

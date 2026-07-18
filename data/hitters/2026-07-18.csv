@@ -35,15 +35,15 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-18,823116,Seattle Mariners,San Francisco Giants,home,702284,Cole Young,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T00:08:00Z
 2026-07-18,823116,Seattle Mariners,San Francisco Giants,home,645302,Victor Robles,8,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T00:08:00Z
 2026-07-18,823116,Seattle Mariners,San Francisco Giants,home,806068,Colt Emerson,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T00:08:00Z
-2026-07-18,823441,New York Mets,Philadelphia Phillies,away,805999,A.J. Ewing,1,CF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
-2026-07-18,823441,New York Mets,Philadelphia Phillies,away,665742,Juan Soto,2,LF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
-2026-07-18,823441,New York Mets,Philadelphia Phillies,away,596019,Francisco Lindor,3,SS,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
-2026-07-18,823441,New York Mets,Philadelphia Phillies,away,701807,Carson Benge,4,RF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
-2026-07-18,823441,New York Mets,Philadelphia Phillies,away,593871,Jorge Polanco,5,DH,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
-2026-07-18,823441,New York Mets,Philadelphia Phillies,away,676724,Jared Young,6,1B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
-2026-07-18,823441,New York Mets,Philadelphia Phillies,away,621438,Tyrone Taylor,7,DH,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
-2026-07-18,823441,New York Mets,Philadelphia Phillies,away,682626,Francisco Alvarez,8,C,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
-2026-07-18,823441,New York Mets,Philadelphia Phillies,away,683146,Brett Baty,9,2B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
+2026-07-18,823441,New York Mets,Philadelphia Phillies,away,596019,Francisco Lindor,1,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
+2026-07-18,823441,New York Mets,Philadelphia Phillies,away,665742,Juan Soto,2,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
+2026-07-18,823441,New York Mets,Philadelphia Phillies,away,666182,Bo Bichette,3,3B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
+2026-07-18,823441,New York Mets,Philadelphia Phillies,away,682626,Francisco Alvarez,4,C,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
+2026-07-18,823441,New York Mets,Philadelphia Phillies,away,701807,Carson Benge,5,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
+2026-07-18,823441,New York Mets,Philadelphia Phillies,away,543760,Marcus Semien,6,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
+2026-07-18,823441,New York Mets,Philadelphia Phillies,away,621438,Tyrone Taylor,7,LF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
+2026-07-18,823441,New York Mets,Philadelphia Phillies,away,805999,A.J. Ewing,8,CF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
+2026-07-18,823441,New York Mets,Philadelphia Phillies,away,676572,Eric Wagaman,9,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
 2026-07-18,823441,Philadelphia Phillies,New York Mets,home,607208,Trea Turner,1,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
 2026-07-18,823441,Philadelphia Phillies,New York Mets,home,656941,Kyle Schwarber,2,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
 2026-07-18,823441,Philadelphia Phillies,New York Mets,home,547180,Bryce Harper,3,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-18T19:05:00Z
@@ -179,24 +179,24 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-18,824412,Cleveland Guardians,Pittsburgh Pirates,home,672356,Gabriel Arias,7,PH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T23:10:00Z
 2026-07-18,824412,Cleveland Guardians,Pittsburgh Pirates,home,672275,Patrick Bailey,8,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T23:10:00Z
 2026-07-18,824412,Cleveland Guardians,Pittsburgh Pirates,home,680757,Steven Kwan,9,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T23:10:00Z
-2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,663968,Jake Mangum,1,CF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,664040,Brandon Lowe,2,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,668804,Bryan Reynolds,3,LF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,699013,Esmerlyn Valdez,4,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,656811,Ryan O'Hearn,5,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,693304,Nick Gonzales,6,3B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,682997,Tyler Callihan,7,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,694378,Jacob Gonzalez,8,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,680779,Henry Davis,9,C,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,683953,Travis Bazzana,1,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,677587,Brayan Rocchio,2,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,800050,Chase DeLauter,3,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,700932,Kyle Manzardo,4,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,656555,Rhys Hoskins,5,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,696135,Kahlil Watson,6,CF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,672356,Gabriel Arias,7,3B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,672275,Patrick Bailey,8,C,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
-2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,680757,Steven Kwan,9,LF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,663968,Jake Mangum,1,CF,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,664040,Brandon Lowe,2,2B,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,668804,Bryan Reynolds,3,LF,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,699013,Esmerlyn Valdez,4,RF,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,656811,Ryan O'Hearn,5,DH,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,693304,Nick Gonzales,6,3B,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,682997,Tyler Callihan,7,1B,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,694378,Jacob Gonzalez,8,SS,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Pittsburgh Pirates,Cleveland Guardians,away,680779,Henry Davis,9,C,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,683953,Travis Bazzana,1,2B,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,677587,Brayan Rocchio,2,SS,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,800050,Chase DeLauter,3,RF,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,700932,Kyle Manzardo,4,1B,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,656555,Rhys Hoskins,5,DH,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,696135,Kahlil Watson,6,CF,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,672356,Gabriel Arias,7,3B,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,672275,Patrick Bailey,8,C,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
+2026-07-18,824414,Cleveland Guardians,Pittsburgh Pirates,home,680757,Steven Kwan,9,LF,Warmup,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-18T17:10:00Z
 2026-07-18,824657,Minnesota Twins,Chicago Cubs,away,668885,Austin Martin,1,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-18T18:20:00Z
 2026-07-18,824657,Minnesota Twins,Chicago Cubs,away,680777,Ryan Jeffers,2,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-18T18:20:00Z
 2026-07-18,824657,Minnesota Twins,Chicago Cubs,away,605137,Josh Bell,3,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-18T18:20:00Z
@@ -215,24 +215,24 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-18,824657,Chicago Cubs,Minnesota Twins,home,699393,Pedro Ramírez,7,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-18T18:20:00Z
 2026-07-18,824657,Chicago Cubs,Minnesota Twins,home,621020,Dansby Swanson,8,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-18T18:20:00Z
 2026-07-18,824657,Chicago Cubs,Minnesota Twins,home,665804,Miguel Amaya,9,C,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-18T18:20:00Z
-2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,650490,Yandy Díaz,1,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,666018,Jonathan Aranda,2,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,691406,Junior Caminero,3,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,683748,Victor Mesa Jr.,4,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,676356,Jonny DeLuca,5,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,802415,Chandler Simpson,6,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,810938,Ben Williamson,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,670764,Taylor Walls,8,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,663743,Nick Fortes,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,678011,Anthony Seigler,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,678882,Ceddanne Rafaela,2,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,677800,Wilyer Abreu,3,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,702332,Caleb Durbin,4,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,807799,Masataka Yoshida,5,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,663853,Romy Gonzalez,6,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,680776,Jarren Duran,7,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,691907,Tsung-Che Cheng,8,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
-2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,657136,Connor Wong,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,650490,Yandy Díaz,1,DH,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,666018,Jonathan Aranda,2,1B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,691406,Junior Caminero,3,3B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,683748,Victor Mesa Jr.,4,RF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,676356,Jonny DeLuca,5,RF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,802415,Chandler Simpson,6,LF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,810938,Ben Williamson,7,2B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,670764,Taylor Walls,8,SS,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Tampa Bay Rays,Boston Red Sox,away,663743,Nick Fortes,9,C,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,678011,Anthony Seigler,1,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,678882,Ceddanne Rafaela,2,CF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,677800,Wilyer Abreu,3,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,575929,Willson Contreras,4,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,663853,Romy Gonzalez,5,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,702332,Caleb Durbin,6,3B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,655316,Andruw Monasterio,7,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,663330,Jahmai Jones,8,LF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
+2026-07-18,824738,Boston Red Sox,Tampa Bay Rays,home,665966,Carlos Narváez,9,C,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-18T20:10:00Z
 2026-07-18,824899,Texas Rangers,Atlanta Braves,away,679822,Justin Foscue,1,2B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-18T20:10:00Z
 2026-07-18,824899,Texas Rangers,Atlanta Braves,away,673962,Josh Jung,2,3B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-18T20:10:00Z
 2026-07-18,824899,Texas Rangers,Atlanta Braves,away,669394,Jake Burger,3,1B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-18T20:10:00Z

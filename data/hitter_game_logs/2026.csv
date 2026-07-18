@@ -523,6 +523,86 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-05-16,824359,543510,James McCann,Arizona Diamondbacks,Colorado Rockies,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-05-18,825087,543510,James McCann,Arizona Diamondbacks,San Francisco Giants,1,1,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-07,823280,543510,James McCann,Arizona Diamondbacks,San Diego Padres,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-03-26,823649,543760,Marcus Semien,New York Mets,Pittsburgh Pirates,5,5,2,1,0,0,3,0,1,0,1,0,0,0
+2026-03-28,823651,543760,Marcus Semien,New York Mets,Pittsburgh Pirates,4,3,0,0,0,0,0,0,0,0,1,0,0,1
+2026-03-29,823647,543760,Marcus Semien,New York Mets,Pittsburgh Pirates,4,3,0,0,0,0,0,0,1,0,1,0,0,0
+2026-03-30,823080,543760,Marcus Semien,New York Mets,St. Louis Cardinals,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-03-31,823077,543760,Marcus Semien,New York Mets,St. Louis Cardinals,3,2,0,0,0,0,0,0,0,1,1,0,0,0
+2026-04-01,823078,543760,Marcus Semien,New York Mets,St. Louis Cardinals,5,4,0,0,0,0,0,0,0,1,2,0,0,0
+2026-04-02,823242,543760,Marcus Semien,New York Mets,San Francisco Giants,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-03,823240,543760,Marcus Semien,New York Mets,San Francisco Giants,5,5,3,0,0,1,6,1,3,0,1,0,0,0
+2026-04-04,823239,543760,Marcus Semien,New York Mets,San Francisco Giants,4,3,2,0,0,0,2,1,0,1,1,0,0,0
+2026-04-05,823238,543760,Marcus Semien,New York Mets,San Francisco Giants,4,4,1,1,0,0,2,0,1,0,1,0,0,0
+2026-04-07,823648,543760,Marcus Semien,New York Mets,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-08,823646,543760,Marcus Semien,New York Mets,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-09,823645,543760,Marcus Semien,New York Mets,Arizona Diamondbacks,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-04-10,823643,543760,Marcus Semien,New York Mets,Athletics,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-11,823644,543760,Marcus Semien,New York Mets,Athletics,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-04-12,823642,543760,Marcus Semien,New York Mets,Athletics,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-13,823964,543760,Marcus Semien,New York Mets,Los Angeles Dodgers,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-14,823965,543760,Marcus Semien,New York Mets,Los Angeles Dodgers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-15,823963,543760,Marcus Semien,New York Mets,Los Angeles Dodgers,4,3,1,0,0,0,1,0,1,1,1,0,0,0
+2026-04-17,824693,543760,Marcus Semien,New York Mets,Chicago Cubs,4,4,2,1,0,0,3,1,1,0,1,0,0,0
+2026-04-18,824694,543760,Marcus Semien,New York Mets,Chicago Cubs,4,3,1,0,0,0,1,0,0,1,1,0,0,0
+2026-04-19,824691,543760,Marcus Semien,New York Mets,Chicago Cubs,4,3,2,0,0,0,2,0,0,0,0,1,0,0
+2026-04-21,823640,543760,Marcus Semien,New York Mets,Minnesota Twins,4,3,0,0,0,0,0,1,0,1,1,0,0,0
+2026-04-22,823641,543760,Marcus Semien,New York Mets,Minnesota Twins,4,4,1,1,0,0,2,0,0,0,1,1,0,0
+2026-04-23,823639,543760,Marcus Semien,New York Mets,Minnesota Twins,4,4,2,1,0,0,3,2,0,0,1,1,0,0
+2026-04-24,823638,543760,Marcus Semien,New York Mets,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-26,823635,543760,Marcus Semien,New York Mets,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-26,823637,543760,Marcus Semien,New York Mets,Colorado Rockies,4,4,1,0,0,0,1,0,0,0,1,0,1,0
+2026-04-28,823636,543760,Marcus Semien,New York Mets,Washington Nationals,4,3,0,0,0,0,0,1,1,1,0,0,0,0
+2026-04-29,823633,543760,Marcus Semien,New York Mets,Washington Nationals,3,3,2,0,0,0,2,0,0,0,1,0,0,0
+2026-04-30,823634,543760,Marcus Semien,New York Mets,Washington Nationals,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-01,824041,543760,Marcus Semien,New York Mets,Los Angeles Angels,4,4,1,0,0,0,1,0,2,0,0,0,0,0
+2026-05-02,824042,543760,Marcus Semien,New York Mets,Los Angeles Angels,4,4,1,0,0,0,1,1,0,0,1,1,0,0
+2026-05-03,824043,543760,Marcus Semien,New York Mets,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-04,824363,543760,Marcus Semien,New York Mets,Colorado Rockies,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-06,824361,543760,Marcus Semien,New York Mets,Colorado Rockies,5,5,4,1,0,1,8,3,2,0,0,0,0,0
+2026-05-07,824362,543760,Marcus Semien,New York Mets,Colorado Rockies,4,2,0,0,0,0,0,1,0,2,0,0,0,0
+2026-05-08,825088,543760,Marcus Semien,New York Mets,Arizona Diamondbacks,4,4,1,0,0,0,1,0,0,0,1,1,0,0
+2026-05-09,825089,543760,Marcus Semien,New York Mets,Arizona Diamondbacks,3,3,1,0,0,0,1,1,0,0,1,0,0,0
+2026-05-10,825085,543760,Marcus Semien,New York Mets,Arizona Diamondbacks,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-05-12,823632,543760,Marcus Semien,New York Mets,Detroit Tigers,5,5,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-13,823631,543760,Marcus Semien,New York Mets,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-14,823630,543760,Marcus Semien,New York Mets,Detroit Tigers,4,3,2,0,0,1,5,2,1,1,0,0,0,0
+2026-05-15,823629,543760,Marcus Semien,New York Mets,New York Yankees,4,3,1,0,0,0,1,0,0,1,1,0,0,0
+2026-05-16,823627,543760,Marcus Semien,New York Mets,New York Yankees,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-17,823628,543760,Marcus Semien,New York Mets,New York Yankees,5,5,2,1,0,0,3,2,1,0,0,0,0,0
+2026-05-18,822734,543760,Marcus Semien,New York Mets,Washington Nationals,6,5,1,0,0,0,1,1,2,0,2,0,0,0
+2026-05-19,822736,543760,Marcus Semien,New York Mets,Washington Nationals,4,3,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-20,822735,543760,Marcus Semien,New York Mets,Washington Nationals,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-21,822733,543760,Marcus Semien,New York Mets,Washington Nationals,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-05-22,823863,543760,Marcus Semien,New York Mets,Miami Marlins,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-23,823862,543760,Marcus Semien,New York Mets,Miami Marlins,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-24,823861,543760,Marcus Semien,New York Mets,Miami Marlins,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-25,823625,543760,Marcus Semien,New York Mets,Cincinnati Reds,4,4,2,0,0,1,5,1,1,0,0,0,0,0
+2026-05-26,823624,543760,Marcus Semien,New York Mets,Cincinnati Reds,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-27,823626,543760,Marcus Semien,New York Mets,Cincinnati Reds,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-05-29,823623,543760,Marcus Semien,New York Mets,Miami Marlins,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-05-30,823622,543760,Marcus Semien,New York Mets,Miami Marlins,4,4,2,1,0,0,3,0,1,0,1,0,0,0
+2026-05-31,823621,543760,Marcus Semien,New York Mets,Miami Marlins,4,2,2,0,0,1,5,2,2,2,0,0,0,0
+2026-06-01,823131,543760,Marcus Semien,New York Mets,Seattle Mariners,3,3,1,0,0,1,4,1,1,0,1,0,0,0
+2026-06-02,823129,543760,Marcus Semien,New York Mets,Seattle Mariners,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-03,823130,543760,Marcus Semien,New York Mets,Seattle Mariners,5,5,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-05,823293,543760,Marcus Semien,New York Mets,San Diego Padres,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-06,823292,543760,Marcus Semien,New York Mets,San Diego Padres,4,3,2,0,0,1,5,2,1,1,0,0,1,0
+2026-06-07,823291,543760,Marcus Semien,New York Mets,San Diego Padres,5,5,2,0,0,1,5,1,1,0,0,0,0,0
+2026-06-09,823620,543760,Marcus Semien,New York Mets,St. Louis Cardinals,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-10,823618,543760,Marcus Semien,New York Mets,St. Louis Cardinals,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-11,823619,543760,Marcus Semien,New York Mets,St. Louis Cardinals,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-06-12,823617,543760,Marcus Semien,New York Mets,Atlanta Braves,4,3,1,0,0,0,1,0,0,1,2,1,0,0
+2026-06-13,823616,543760,Marcus Semien,New York Mets,Atlanta Braves,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-06-14,823615,543760,Marcus Semien,New York Mets,Atlanta Braves,5,5,1,0,0,1,4,1,1,0,2,0,0,0
+2026-06-15,824505,543760,Marcus Semien,New York Mets,Cincinnati Reds,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-06-16,824504,543760,Marcus Semien,New York Mets,Cincinnati Reds,4,3,1,0,0,0,1,1,0,1,1,0,0,0
+2026-06-17,824503,543760,Marcus Semien,New York Mets,Cincinnati Reds,5,4,2,0,0,0,2,1,1,1,0,0,0,0
+2026-06-18,823448,543760,Marcus Semien,New York Mets,Philadelphia Phillies,4,4,2,0,1,0,4,0,2,0,1,0,0,0
+2026-06-20,823447,543760,Marcus Semien,New York Mets,Philadelphia Phillies,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-21,823449,543760,Marcus Semien,New York Mets,Philadelphia Phillies,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-23,823614,543760,Marcus Semien,New York Mets,Chicago Cubs,4,3,0,0,0,0,0,1,0,1,2,0,0,0
+2026-06-24,823613,543760,Marcus Semien,New York Mets,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-24,823611,543760,Marcus Semien,New York Mets,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-03-27,822839,543807,George Springer,Toronto Blue Jays,Athletics,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-28,822838,543807,George Springer,Toronto Blue Jays,Athletics,6,6,1,1,0,0,2,0,1,0,3,0,0,0
 2026-03-29,822837,543807,George Springer,Toronto Blue Jays,Athletics,4,4,1,0,0,1,4,1,1,0,1,0,0,0
@@ -1447,6 +1527,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,824010,575929,Willson Contreras,Boston Red Sox,Los Angeles Angels,5,4,1,0,0,1,4,1,3,1,1,0,0,0
 2026-07-07,824579,575929,Willson Contreras,Boston Red Sox,Chicago White Sox,5,4,2,1,0,0,3,1,2,1,1,0,1,0
 2026-07-08,824578,575929,Willson Contreras,Boston Red Sox,Chicago White Sox,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-17,824737,575929,Willson Contreras,Boston Red Sox,Tampa Bay Rays,4,4,1,0,0,1,4,1,1,0,3,0,0,0
 2026-03-26,823325,592518,Manny Machado,San Diego Padres,Detroit Tigers,4,3,1,0,0,0,1,0,0,1,1,0,0,0
 2026-03-27,823324,592518,Manny Machado,San Diego Padres,Detroit Tigers,4,3,1,1,0,0,2,1,0,1,0,0,0,0
 2026-03-28,823323,592518,Manny Machado,San Diego Padres,Detroit Tigers,4,2,0,0,0,0,0,0,0,2,1,0,0,0
@@ -6684,6 +6765,64 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-11,823276,662139,Daulton Varsho,Toronto Blue Jays,San Diego Padres,4,3,0,0,0,0,0,1,0,1,0,0,0,0
 2026-07-12,823274,662139,Daulton Varsho,Toronto Blue Jays,San Diego Padres,4,4,1,0,0,0,1,1,0,0,1,1,0,0
 2026-07-17,822789,662139,Daulton Varsho,Toronto Blue Jays,Chicago White Sox,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-03-27,823324,663330,Jahmai Jones,Boston Red Sox,San Diego Padres,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-03-28,823323,663330,Jahmai Jones,Boston Red Sox,San Diego Padres,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-01,825106,663330,Jahmai Jones,Boston Red Sox,Arizona Diamondbacks,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-05,824296,663330,Jahmai Jones,Boston Red Sox,St. Louis Cardinals,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-06,823728,663330,Jahmai Jones,Boston Red Sox,Minnesota Twins,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-07,823727,663330,Jahmai Jones,Boston Red Sox,Minnesota Twins,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-08,823726,663330,Jahmai Jones,Boston Red Sox,Minnesota Twins,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-16,824289,663330,Jahmai Jones,Boston Red Sox,Kansas City Royals,3,3,1,0,0,0,1,1,1,0,1,0,0,0
+2026-04-17,824778,663330,Jahmai Jones,Boston Red Sox,Boston Red Sox,4,4,2,1,0,0,3,0,0,0,1,0,0,0
+2026-04-19,824777,663330,Jahmai Jones,Boston Red Sox,Boston Red Sox,3,3,1,0,0,1,4,1,1,0,0,0,0,0
+2026-04-20,824776,663330,Jahmai Jones,Boston Red Sox,Boston Red Sox,1,1,1,0,0,0,1,0,1,0,0,0,0,0
+2026-04-21,824290,663330,Jahmai Jones,Boston Red Sox,Milwaukee Brewers,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-22,824286,663330,Jahmai Jones,Boston Red Sox,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-23,824288,663330,Jahmai Jones,Boston Red Sox,Milwaukee Brewers,1,1,1,0,0,1,4,1,1,0,0,0,0,0
+2026-04-24,824529,663330,Jahmai Jones,Boston Red Sox,Cincinnati Reds,3,3,1,0,0,0,1,0,1,0,1,0,1,0
+2026-04-25,824527,663330,Jahmai Jones,Boston Red Sox,Cincinnati Reds,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-26,824528,663330,Jahmai Jones,Boston Red Sox,Cincinnati Reds,2,1,0,0,0,0,0,0,0,1,1,0,0,0
+2026-04-28,824931,663330,Jahmai Jones,Boston Red Sox,Atlanta Braves,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-29,824930,663330,Jahmai Jones,Boston Red Sox,Atlanta Braves,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-30,824929,663330,Jahmai Jones,Boston Red Sox,Atlanta Braves,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-01,824287,663330,Jahmai Jones,Boston Red Sox,Texas Rangers,2,2,1,1,0,0,2,1,0,0,0,0,0,0
+2026-05-04,824283,663330,Jahmai Jones,Boston Red Sox,Boston Red Sox,3,2,0,0,0,0,0,1,0,1,1,0,0,0
+2026-05-05,824281,663330,Jahmai Jones,Boston Red Sox,Boston Red Sox,1,1,1,0,0,0,1,1,0,0,0,0,0,0
+2026-05-06,824282,663330,Jahmai Jones,Boston Red Sox,Boston Red Sox,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-08,824116,663330,Jahmai Jones,Boston Red Sox,Kansas City Royals,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-10,824113,663330,Jahmai Jones,Boston Red Sox,Kansas City Royals,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-12,823632,663330,Jahmai Jones,Boston Red Sox,New York Mets,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-13,823631,663330,Jahmai Jones,Boston Red Sox,New York Mets,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-15,824280,663330,Jahmai Jones,Boston Red Sox,Toronto Blue Jays,1,1,1,0,0,0,1,0,0,0,0,0,1,0
+2026-05-17,824279,663330,Jahmai Jones,Boston Red Sox,Toronto Blue Jays,1,1,0,0,0,0,0,0,1,0,0,0,0,0
+2026-05-19,824276,663330,Jahmai Jones,Boston Red Sox,Cleveland Guardians,5,3,0,0,0,0,0,0,0,2,2,0,0,0
+2026-05-21,824274,663330,Jahmai Jones,Boston Red Sox,Cleveland Guardians,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-22,824842,663330,Jahmai Jones,Boston Red Sox,Baltimore Orioles,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-24,824839,663330,Jahmai Jones,Boston Red Sox,Baltimore Orioles,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-24,824840,663330,Jahmai Jones,Boston Red Sox,Baltimore Orioles,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-26,824275,663330,Jahmai Jones,Boston Red Sox,Los Angeles Angels,3,3,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-27,824270,663330,Jahmai Jones,Boston Red Sox,Los Angeles Angels,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-28,824272,663330,Jahmai Jones,Boston Red Sox,Los Angeles Angels,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-29,824594,663330,Jahmai Jones,Boston Red Sox,Chicago White Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-30,824593,663330,Jahmai Jones,Boston Red Sox,Chicago White Sox,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-31,824592,663330,Jahmai Jones,Boston Red Sox,Chicago White Sox,2,1,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-01,822974,663330,Jahmai Jones,Boston Red Sox,Tampa Bay Rays,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-02,822971,663330,Jahmai Jones,Boston Red Sox,Tampa Bay Rays,5,5,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-06,824269,663330,Jahmai Jones,Boston Red Sox,Seattle Mariners,2,1,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-07,824268,663330,Jahmai Jones,Boston Red Sox,Seattle Mariners,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-10,824266,663330,Jahmai Jones,Boston Red Sox,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-13,824426,663330,Jahmai Jones,Boston Red Sox,Cleveland Guardians,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-15,824181,663330,Jahmai Jones,Boston Red Sox,Houston Astros,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-16,824182,663330,Jahmai Jones,Boston Red Sox,Houston Astros,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-19,824264,663330,Jahmai Jones,Boston Red Sox,Chicago White Sox,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-20,824263,663330,Jahmai Jones,Boston Red Sox,Chicago White Sox,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-21,824260,663330,Jahmai Jones,Boston Red Sox,Chicago White Sox,2,2,1,0,0,0,1,1,0,0,1,0,0,0
+2026-06-23,824262,663330,Jahmai Jones,Boston Red Sox,New York Yankees,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-27,824257,663330,Jahmai Jones,Boston Red Sox,Houston Astros,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-28,824256,663330,Jahmai Jones,Boston Red Sox,Houston Astros,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-29,823529,663330,Jahmai Jones,Boston Red Sox,New York Yankees,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-08,824253,663330,Jahmai Jones,Boston Red Sox,Athletics,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-17,824737,663330,Jahmai Jones,Boston Red Sox,Tampa Bay Rays,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-06-05,823049,663457,Lars Nootbaar,St. Louis Cardinals,Cincinnati Reds,6,6,2,1,0,0,3,1,1,0,1,0,0,0
 2026-06-06,823048,663457,Lars Nootbaar,St. Louis Cardinals,Cincinnati Reds,2,1,1,0,0,1,4,1,2,1,0,0,0,0
 2026-06-07,823047,663457,Lars Nootbaar,St. Louis Cardinals,Cincinnati Reds,5,3,0,0,0,0,0,0,0,2,2,0,0,0
@@ -9341,6 +9480,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,824010,665966,Carlos Narváez,Boston Red Sox,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-08,824578,665966,Carlos Narváez,Boston Red Sox,Chicago White Sox,4,3,1,0,0,0,1,0,1,0,0,0,0,0
 2026-07-11,823603,665966,Carlos Narváez,Boston Red Sox,New York Mets,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-07-17,824766,665966,Carlos Narváez,Boston Red Sox,Tampa Bay Rays,4,4,3,0,0,1,6,2,3,0,0,0,0,0
 2026-03-26,823081,666018,Jonathan Aranda,Tampa Bay Rays,St. Louis Cardinals,6,4,2,0,0,1,5,1,2,1,1,0,0,0
 2026-03-28,823082,666018,Jonathan Aranda,Tampa Bay Rays,St. Louis Cardinals,5,3,1,0,0,0,1,1,0,2,1,0,0,0
 2026-03-29,823079,666018,Jonathan Aranda,Tampa Bay Rays,St. Louis Cardinals,6,6,3,1,0,0,4,1,2,0,1,0,0,0
@@ -9826,6 +9966,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,823606,666182,Bo Bichette,New York Mets,Kansas City Royals,4,3,0,0,0,0,0,0,1,0,0,0,0,0
 2026-07-11,823603,666182,Bo Bichette,New York Mets,Boston Red Sox,1,0,0,0,0,0,0,0,0,1,0,0,0,0
 2026-07-12,823602,666182,Bo Bichette,New York Mets,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-16,823440,666182,Bo Bichette,New York Mets,Philadelphia Phillies,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-04-10,823156,666211,Taylor Trammell,Houston Astros,Seattle Mariners,1,0,0,0,0,0,0,0,0,1,0,0,0,0
 2026-04-11,823155,666211,Taylor Trammell,Houston Astros,Seattle Mariners,5,4,2,1,0,0,3,1,3,1,2,0,0,0
 2026-04-12,823154,666211,Taylor Trammell,Houston Astros,Seattle Mariners,3,3,0,0,0,0,0,0,0,0,2,0,0,0
@@ -14083,6 +14224,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-06-29,822792,676572,Eric Wagaman,New York Mets,Toronto Blue Jays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-04,824903,676572,Eric Wagaman,New York Mets,Atlanta Braves,3,2,1,0,0,0,1,0,0,1,0,0,0,0
 2026-07-11,823603,676572,Eric Wagaman,New York Mets,Boston Red Sox,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-07-12,823602,676572,Eric Wagaman,New York Mets,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-25,823244,676609,José Caballero,New York Yankees,San Francisco Giants,4,4,1,0,0,0,1,1,1,0,0,0,0,0
 2026-03-27,823243,676609,José Caballero,New York Yankees,San Francisco Giants,4,4,2,0,0,0,2,0,0,0,0,1,0,0
 2026-03-28,823241,676609,José Caballero,New York Yankees,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,3,0,0,0
