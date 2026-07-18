@@ -1635,64 +1635,64 @@ Increase the minimum thresholds for A+.
                         )
     with tab_market_analysis:
 
-    if "market" not in history.columns:
-        st.info("No market history available.")
-    else:
+        if "market" not in history.columns:
+            st.info("No market history available.")
+        else:
 
-        market_rows = []
+            market_rows = []
 
-        for market_name, group in history.groupby("market"):
+            for market_name, group in history.groupby("market"):
 
-            summary = summarize_results(group).to_dict()
+                summary = summarize_results(group).to_dict()
 
-            summary["Market"] = format_market(market_name)
+                summary["Market"] = format_market(market_name)
 
-            if "expected_value" in group.columns:
-                summary["Average EV"] = round(
-                    pd.to_numeric(
-                        group["expected_value"],
-                        errors="coerce",
-                    ).mean() * 100,
-                    2,
-                )
+                if "expected_value" in group.columns:
+                    summary["Average EV"] = round(
+                        pd.to_numeric(
+                            group["expected_value"],
+                            errors="coerce",
+                        ).mean() * 100,
+                        2,
+                    )
 
-            if "probability" in group.columns:
-                summary["Average Probability"] = round(
-                    pd.to_numeric(
-                        group["probability"],
-                        errors="coerce",
-                    ).mean() * 100,
-                    1,
-                )
+                if "probability" in group.columns:
+                    summary["Average Probability"] = round(
+                        pd.to_numeric(
+                            group["probability"],
+                            errors="coerce",
+                        ).mean() * 100,
+                        1,
+                    )
 
-            market_rows.append(summary)
+                market_rows.append(summary)
 
-        market_df = pd.DataFrame(market_rows)
+            market_df = pd.DataFrame(market_rows)
 
-        market_df = market_df.sort_values(
-            "Profit",
-            ascending=False,
-        )
+            market_df = market_df.sort_values(
+                "Profit",
+                ascending=False,
+            )
 
-        st.subheader("Market Performance")
+            st.subheader("Market Performance")
 
-        st.dataframe(
-            market_df,
-            use_container_width=True,
-            hide_index=True,
-        )
+            st.dataframe(
+                market_df,
+                use_container_width=True,
+                hide_index=True,
+            )
 
-        st.subheader("Profit by Market")
+            st.subheader("Profit by Market")
 
-        st.bar_chart(
-            market_df.set_index("Market")["Profit"]
-        )
+            st.bar_chart(
+                market_df.set_index("Market")["Profit"]
+            )
 
-        st.subheader("Hit Rate by Market")
+            st.subheader("Hit Rate by Market")
 
-        st.bar_chart(
-            market_df.set_index("Market")["Hit Rate"]
-        )
+            st.bar_chart(
+                market_df.set_index("Market")["Hit Rate"]
+            )
 with tab_history:
         history_columns = [
             "event_date",
