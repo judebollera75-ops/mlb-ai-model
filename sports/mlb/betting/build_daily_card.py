@@ -798,25 +798,24 @@ def choose_consensus_market_lines(
         - line_summary["group_median_line"]
     ).abs()
 
-    line_summary = line_summary.sort_values(
-        group_columns
-        + [
-            "platform_count",
-            "average_price_distance",
-            "median_distance",
-            "line",
-        ],
-        ascending=[
-            True,
-            True,
-            True,
-            False,
-            True,
-            True,
-            True,
-        ],
-        na_position="last",
-    )
+   line_summary = line_summary.sort_values(
+    by=group_columns
+    + [
+        "platform_count",
+        "average_price_distance",
+        "median_distance",
+        "line",
+    ],
+    ascending=[
+        True,   # player_key
+        True,   # market
+        False,  # platform_count
+        True,   # average_price_distance
+        True,   # median_distance
+        True,   # line
+    ],
+    na_position="last",
+)
 
     selected_lines = line_summary.drop_duplicates(
         subset=group_columns,
