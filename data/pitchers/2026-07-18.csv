@@ -1,0 +1,32 @@
+date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_id,pitcher_name,opposing_pitcher_id,opposing_pitcher_name,side,is_home,home_team,away_team
+2026-07-18,822790,Pre-Game,P,14,Rogers Centre,Chicago White Sox,Toronto Blue Jays,663436,Davis Martin,669456.0,Shane Bieber,away,0,Toronto Blue Jays,Chicago White Sox
+2026-07-18,822790,Pre-Game,P,14,Rogers Centre,Toronto Blue Jays,Chicago White Sox,669456,Shane Bieber,663436.0,Davis Martin,home,1,Toronto Blue Jays,Chicago White Sox
+2026-07-18,823116,Scheduled,S,680,T-Mobile Park,San Francisco Giants,Seattle Mariners,657277,Logan Webb,693433.0,Bryan Woo,away,0,Seattle Mariners,San Francisco Giants
+2026-07-18,823116,Scheduled,S,680,T-Mobile Park,Seattle Mariners,San Francisco Giants,693433,Bryan Woo,657277.0,Logan Webb,home,1,Seattle Mariners,San Francisco Giants
+2026-07-18,823441,Pre-Game,P,2681,Citizens Bank Park,New York Mets,Philadelphia Phillies,640455,Sean Manaea,666200.0,Jesús Luzardo,away,0,Philadelphia Phillies,New York Mets
+2026-07-18,823441,Pre-Game,P,2681,Citizens Bank Park,Philadelphia Phillies,New York Mets,666200,Jesús Luzardo,640455.0,Sean Manaea,home,1,Philadelphia Phillies,New York Mets
+2026-07-18,823523,Scheduled,S,3313,Yankee Stadium,Los Angeles Dodgers,New York Yankees,686218,Emmet Sheehan,677960.0,Ryan Weathers,away,0,New York Yankees,Los Angeles Dodgers
+2026-07-18,823523,Scheduled,S,3313,Yankee Stadium,New York Yankees,Los Angeles Dodgers,677960,Ryan Weathers,686218.0,Emmet Sheehan,home,1,New York Yankees,Los Angeles Dodgers
+2026-07-18,823763,Scheduled,S,32,American Family Field,Miami Marlins,Milwaukee Brewers,676974,Max Meyer,675660.0,Shane Drohan,away,0,Milwaukee Brewers,Miami Marlins
+2026-07-18,823763,Scheduled,S,32,American Family Field,Milwaukee Brewers,Miami Marlins,675660,Shane Drohan,676974.0,Max Meyer,home,1,Milwaukee Brewers,Miami Marlins
+2026-07-18,824008,Scheduled,S,1,Angel Stadium,Detroit Tigers,Los Angeles Angels,669373,Tarik Skubal,680570.0,Grayson Rodriguez,away,0,Los Angeles Angels,Detroit Tigers
+2026-07-18,824008,Scheduled,S,1,Angel Stadium,Los Angeles Angels,Detroit Tigers,680570,Grayson Rodriguez,669373.0,Tarik Skubal,home,1,Los Angeles Angels,Detroit Tigers
+2026-07-18,824088,Pre-Game,P,7,Kauffman Stadium,San Diego Padres,Kansas City Royals,656288,Griffin Canning,677976.0,Randy Dobnak,away,0,Kansas City Royals,San Diego Padres
+2026-07-18,824088,Pre-Game,P,7,Kauffman Stadium,Kansas City Royals,San Diego Padres,677976,Randy Dobnak,656288.0,Griffin Canning,home,1,Kansas City Royals,San Diego Padres
+2026-07-18,824169,Scheduled,S,2392,Daikin Park,Baltimore Orioles,Houston Astros,669432,Trevor Rogers,681293.0,Spencer Arrighetti,away,0,Houston Astros,Baltimore Orioles
+2026-07-18,824169,Scheduled,S,2392,Daikin Park,Houston Astros,Baltimore Orioles,681293,Spencer Arrighetti,669432.0,Trevor Rogers,home,1,Houston Astros,Baltimore Orioles
+2026-07-18,824331,Pre-Game,P,19,Coors Field,Cincinnati Reds,Colorado Rockies,695076,Rhett Lowder,608372.0,Tomoyuki Sugano,away,0,Colorado Rockies,Cincinnati Reds
+2026-07-18,824331,Pre-Game,P,19,Coors Field,Colorado Rockies,Cincinnati Reds,608372,Tomoyuki Sugano,695076.0,Rhett Lowder,home,1,Colorado Rockies,Cincinnati Reds
+2026-07-18,824412,Scheduled,S,5,Progressive Field,Cleveland Guardians,Pittsburgh Pirates,671106,Logan Allen,,,home,1,Cleveland Guardians,Pittsburgh Pirates
+2026-07-18,824414,Pre-Game,P,5,Progressive Field,Pittsburgh Pirates,Cleveland Guardians,683003,Jared Jones,668909.0,Gavin Williams,away,0,Cleveland Guardians,Pittsburgh Pirates
+2026-07-18,824414,Pre-Game,P,5,Progressive Field,Cleveland Guardians,Pittsburgh Pirates,668909,Gavin Williams,683003.0,Jared Jones,home,1,Cleveland Guardians,Pittsburgh Pirates
+2026-07-18,824657,Pre-Game,P,17,Wrigley Field,Minnesota Twins,Chicago Cubs,671737,Taj Bradley,571510.0,Matthew Boyd,away,0,Chicago Cubs,Minnesota Twins
+2026-07-18,824657,Pre-Game,P,17,Wrigley Field,Chicago Cubs,Minnesota Twins,571510,Matthew Boyd,671737.0,Taj Bradley,home,1,Chicago Cubs,Minnesota Twins
+2026-07-18,824738,Scheduled,S,3,Fenway Park,Tampa Bay Rays,Boston Red Sox,693855,Ian Seymour,663776.0,Patrick Sandoval,away,0,Boston Red Sox,Tampa Bay Rays
+2026-07-18,824738,Scheduled,S,3,Fenway Park,Boston Red Sox,Tampa Bay Rays,663776,Patrick Sandoval,693855.0,Ian Seymour,home,1,Boston Red Sox,Tampa Bay Rays
+2026-07-18,824899,Pre-Game,P,4705,Truist Park,Texas Rangers,Atlanta Braves,669022,MacKenzie Gore,702566.0,Owen Murphy,away,0,Atlanta Braves,Texas Rangers
+2026-07-18,824899,Pre-Game,P,4705,Truist Park,Atlanta Braves,Texas Rangers,702566,Owen Murphy,669022.0,MacKenzie Gore,home,1,Atlanta Braves,Texas Rangers
+2026-07-18,824979,Scheduled,S,2529,Sutter Health Park,Washington Nationals,Athletics,641793,Zack Littell,669372.0,J.T. Ginn,away,0,Athletics,Washington Nationals
+2026-07-18,824979,Scheduled,S,2529,Sutter Health Park,Athletics,Washington Nationals,669372,J.T. Ginn,641793.0,Zack Littell,home,1,Athletics,Washington Nationals
+2026-07-18,825059,Scheduled,S,15,Chase Field,St. Louis Cardinals,Arizona Diamondbacks,669160,Dustin May,694297.0,Brandon Pfaadt,away,0,Arizona Diamondbacks,St. Louis Cardinals
+2026-07-18,825059,Scheduled,S,15,Chase Field,Arizona Diamondbacks,St. Louis Cardinals,694297,Brandon Pfaadt,669160.0,Dustin May,home,1,Arizona Diamondbacks,St. Louis Cardinals

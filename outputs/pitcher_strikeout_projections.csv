@@ -1,31 +1,32 @@
 date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,avg_k,projected_ks,projection_source,projection_confidence,model_name,model_feature_count,observed_model_features
-2026-07-17,824332,Gabriel Hughes,Colorado Rockies,home,2.0,14.0,7.0,4.0,7.236,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
-2026-07-17,824009,Troy Melton,Detroit Tigers,away,9.0,50.0,5.555555555555555,6.4,7.075,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
-2026-07-17,824981,Cade Cavalli,Washington Nationals,away,21.0,119.0,5.666666666666667,5.8,6.912,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,824170,Peter Lambert,Houston Astros,home,16.0,91.0,5.6875,5.6,6.883,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,823115,Landen Roupp,San Francisco Giants,away,19.0,106.0,5.578947368421052,5.4,6.536,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,824170,Dean Kremer,Baltimore Orioles,away,5.0,29.0,5.8,6.0,6.521,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
-2026-07-17,824009,Reid Detmers,Los Angeles Angels,home,20.0,130.0,6.5,5.2,6.096,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,823766,Logan Henderson,Milwaukee Brewers,home,7.0,38.0,5.428571428571429,6.2,5.905,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
-2026-07-17,824090,Seth Lugo,Kansas City Royals,home,20.0,89.0,4.45,4.0,5.597,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,823524,Gerrit Cole,New York Yankees,home,10.0,55.0,5.5,5.8,5.496,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,824414,Gavin Williams,Cleveland Guardians,home,19.0,134.0,7.052631578947368,7.0,5.481,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,823524,Roki Sasaki,Los Angeles Dodgers,away,17.0,85.0,5.0,4.0,5.361,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,823766,Sandy Alcantara,Miami Marlins,away,21.0,107.0,5.095238095238095,5.8,5.204,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,824901,Chris Sale,Atlanta Braves,home,18.0,123.0,6.833333333333333,6.2,5.198,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,823115,Bryce Miller,Seattle Mariners,home,10.0,71.0,7.1,7.2,5.175,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,824332,Brady Singer,Cincinnati Reds,away,19.0,82.0,4.315789473684211,5.8,5.11,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,824414,Jared Jones,Pittsburgh Pirates,away,8.0,39.0,4.875,5.0,4.805,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
-2026-07-17,824766,Griffin Jax,Tampa Bay Rays,away,15.0,77.0,5.133333333333334,6.0,4.803,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,822789,Anthony Kay,Chicago White Sox,away,18.0,76.0,4.222222222222222,3.6,4.316,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,824655,Bailey Ober,Minnesota Twins,away,14.0,58.0,4.142857142857143,3.8,4.091,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,825060,Merrill Kelly,Arizona Diamondbacks,home,17.0,62.0,3.647058823529412,4.2,4.061,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,824766,Jake Bennett,Boston Red Sox,home,9.0,38.0,4.222222222222222,5.4,4.053,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
-2026-07-17,824981,Gage Jump,Athletics,home,10.0,56.0,5.6,5.8,4.032,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,824737,Eduardo Rivera,Boston Red Sox,home,2.0,9.0,4.5,3.0,3.891,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
-2026-07-17,824090,Michael King,San Diego Padres,away,20.0,96.0,4.8,4.0,3.604,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,825060,Michael McGreevy,St. Louis Cardinals,away,19.0,71.0,3.736842105263158,3.4,3.521,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,824901,Cal Quantrill,Texas Rangers,away,5.0,31.0,6.2,2.0,3.218,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
-2026-07-17,824655,Colin Rea,Chicago Cubs,home,16.0,76.0,4.75,3.2,3.036,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-17,822789,Spencer Miles,Toronto Blue Jays,home,4.0,61.0,15.25,2.6,2.669,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
-2026-07-17,824737,Mason Englert,Tampa Bay Rays,away,3.0,32.0,10.666666666666666,4.2,1.996,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
+2026-07-18,824008,Tarik Skubal,Detroit Tigers,away,13.0,89.0,6.846153846153846,8.0,7.501,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,823116,Bryan Woo,Seattle Mariners,home,18.0,102.0,5.666666666666667,5.4,7.159,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824169,Spencer Arrighetti,Houston Astros,home,15.0,81.0,5.4,5.6,7.118,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824899,MacKenzie Gore,Texas Rangers,away,20.0,115.0,5.75,5.8,6.95,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824331,Tomoyuki Sugano,Colorado Rockies,home,16.0,48.0,3.0,3.4,6.368,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,823523,Emmet Sheehan,Los Angeles Dodgers,away,17.0,93.0,5.470588235294118,5.8,6.098,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,823116,Logan Webb,San Francisco Giants,away,16.0,80.0,5.0,4.4,5.916,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,822790,Davis Martin,Chicago White Sox,away,18.0,92.0,5.111111111111111,2.6,5.781,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,823441,Sean Manaea,New York Mets,away,6.0,74.0,12.333333333333334,4.6,5.691,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+2026-07-18,824414,Gavin Williams,Cleveland Guardians,home,19.0,134.0,7.052631578947368,7.0,5.481,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824657,Taj Bradley,Minnesota Twins,away,18.0,118.0,6.555555555555555,7.6,5.347,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824008,Grayson Rodriguez,Los Angeles Angels,home,7.0,24.0,3.4285714285714284,3.0,5.347,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+2026-07-18,824738,Ian Seymour,Tampa Bay Rays,away,6.0,75.0,12.5,6.8,4.916,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+2026-07-18,824412,Logan Allen,Cleveland Guardians,home,0.0,7.0,,7.0,4.836,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
+2026-07-18,824414,Jared Jones,Pittsburgh Pirates,away,8.0,39.0,4.875,5.0,4.805,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+2026-07-18,823763,Max Meyer,Miami Marlins,away,19.0,116.0,6.105263157894737,6.0,4.781,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824088,Randy Dobnak,Kansas City Royals,home,0.0,4.0,,2.0,4.734,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
+2026-07-18,824979,Zack Littell,Washington Nationals,away,12.0,57.0,4.75,3.6,4.546,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824169,Trevor Rogers,Baltimore Orioles,away,17.0,69.0,4.0588235294117645,5.0,4.502,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824979,J.T. Ginn,Athletics,home,18.0,93.0,5.166666666666667,5.0,4.32,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824738,Patrick Sandoval,Boston Red Sox,home,1.0,5.0,5.0,5.0,4.18,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
+2026-07-18,825059,Dustin May,St. Louis Cardinals,away,18.0,89.0,4.944444444444445,4.6,4.08,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,823763,Shane Drohan,Milwaukee Brewers,home,9.0,67.0,7.444444444444445,4.6,4.078,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+2026-07-18,823441,Jesús Luzardo,Philadelphia Phillies,home,19.0,136.0,7.157894736842105,9.6,4.05,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,822790,Shane Bieber,Toronto Blue Jays,home,4.0,13.0,3.25,3.25,3.681,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
+2026-07-18,824331,Rhett Lowder,Cincinnati Reds,away,13.0,59.0,4.538461538461538,3.4,3.673,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824657,Matthew Boyd,Chicago Cubs,home,9.0,47.0,5.222222222222222,4.2,3.588,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+2026-07-18,823523,Ryan Weathers,New York Yankees,home,18.0,110.0,6.111111111111111,5.8,3.564,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,824088,Griffin Canning,San Diego Padres,away,10.0,55.0,5.5,3.2,3.484,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-18,825059,Brandon Pfaadt,Arizona Diamondbacks,home,6.0,41.0,6.833333333333333,2.8,2.774,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+2026-07-18,824899,Owen Murphy,Atlanta Braves,home,0.0,4.0,,2.0,2.396,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
