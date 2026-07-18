@@ -1364,14 +1364,14 @@ else:
     tab_history,
 ) = st.tabs(
     [
-        "Overall",
-        "By Market",
-        "By Platform",
-        "By Confidence",
-        "By Probability",
-        "📊 Grade Analysis",
-        "Pick History",
-    ]
+    "Overall",
+    "By Market",
+    "By Platform",
+    "By Confidence",
+    "By Probability",
+    "📊 Grade Analysis",
+    "Pick History",
+]
 )
 
     with tab_overall:
