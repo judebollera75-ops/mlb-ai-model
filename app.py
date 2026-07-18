@@ -1633,7 +1633,7 @@ Recommendation:
 Increase the minimum thresholds for A+.
 """
                         )
-  with tab_market_analysis:
+    with tab_market_analysis:
 
     if "market" not in history.columns:
         st.info("No market history available.")
