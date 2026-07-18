@@ -1531,7 +1531,106 @@ else:
                 "A well-calibrated model should have actual hit rates that "
                 "roughly follow its predicted probability buckets."
             )
+    with tab_grade:
 
+        if "grade" not in history.columns:
+            st.info("No grade history available yet.")
+
+        else:
+
+            grade_rows = []
+
+            for grade_name, group in history.groupby(
+                "grade",
+                dropna=False,
+            ):
+
+                if group.empty:
+                    continue
+
+                summary = summarize_results(group).to_dict()
+
+                summary["Grade"] = grade_name
+
+                if "probability" in group.columns:
+                    summary["Average Probability"] = round(
+                        pd.to_numeric(
+                            group["probability"],
+                            errors="coerce",
+                        ).mean() * 100,
+                        1,
+                    )
+
+                if "probability_edge" in group.columns:
+                    summary["Average Edge"] = round(
+                        pd.to_numeric(
+                            group["probability_edge"],
+                            errors="coerce",
+                        ).mean() * 100,
+                        2,
+                    )
+
+                if "expected_value" in group.columns:
+                    summary["Average EV"] = round(
+                        pd.to_numeric(
+                            group["expected_value"],
+                            errors="coerce",
+                        ).mean() * 100,
+                        2,
+                    )
+
+                grade_rows.append(summary)
+
+            grade_summary = pd.DataFrame(grade_rows)
+
+            if not grade_summary.empty:
+
+                grade_summary = grade_summary.sort_values(
+                    "Hit Rate",
+                    ascending=False,
+                )
+
+                st.dataframe(
+                    grade_summary,
+                    use_container_width=True,
+                    hide_index=True,
+                )
+
+                st.subheader("Hit Rate by Grade")
+
+                st.bar_chart(
+                    grade_summary.set_index("Grade")["Hit Rate"]
+                )
+
+                if (
+                    "A+" in grade_summary["Grade"].values
+                    and "A" in grade_summary["Grade"].values
+                ):
+
+                    a_plus = grade_summary.loc[
+                        grade_summary["Grade"] == "A+",
+                        "Hit Rate",
+                    ].iloc[0]
+
+                    a = grade_summary.loc[
+                        grade_summary["Grade"] == "A",
+                        "Hit Rate",
+                    ].iloc[0]
+
+                    if a_plus < a:
+
+                        st.error(
+                            f"""
+⚠️ A+ is underperforming A
+
+A+ Hit Rate: {a_plus:.1f}%
+
+A Hit Rate: {a:.1f}%
+
+Recommendation:
+Increase the minimum thresholds for A+.
+"""
+                        )
     with tab_history:
         history_columns = [
             "event_date",
