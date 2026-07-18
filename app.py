@@ -1362,6 +1362,7 @@ else:
         tab_probability,
         tab_grade,
         tab_market_analysis,
+        tab_optimizer,
         tab_history,
     ) = st.tabs(
         [
@@ -1372,6 +1373,7 @@ else:
             "By Probability",
             "📊 Grade Analysis",
             "📈 Market Analysis",
+            "🧠 Threshold Optimizer",
             "Pick History",
         ]
     )
@@ -1533,167 +1535,338 @@ else:
                 "A well-calibrated model should have actual hit rates that "
                 "roughly follow its predicted probability buckets."
             )
+
     with tab_grade:
-
         if "grade" not in history.columns:
-            st.info("No grade history available yet.")
-
+            st.info("No grade history is available yet.")
         else:
-
             grade_rows = []
-
-            for grade_name, group in history.groupby(
-                "grade",
-                dropna=False,
-            ):
-
+            for grade_name, group in history.groupby("grade", dropna=False):
                 if group.empty:
                     continue
-
                 summary = summarize_results(group).to_dict()
+                summary["Grade"] = clean_text(grade_name) or "Unclassified"
 
-                summary["Grade"] = grade_name
-
-                if "probability" in group.columns:
-                    summary["Average Probability"] = round(
-                        pd.to_numeric(
-                            group["probability"],
-                            errors="coerce",
-                        ).mean() * 100,
-                        1,
+                for source, label in [
+                    ("probability", "Average Probability"),
+                    ("probability_edge", "Average Edge"),
+                    ("expected_value", "Average EV"),
+                ]:
+                    values = pd.to_numeric(
+                        group.get(source, pd.Series(dtype=float)),
+                        errors="coerce",
                     )
-
-                if "probability_edge" in group.columns:
-                    summary["Average Edge"] = round(
-                        pd.to_numeric(
-                            group["probability_edge"],
-                            errors="coerce",
-                        ).mean() * 100,
-                        2,
-                    )
-
-                if "expected_value" in group.columns:
-                    summary["Average EV"] = round(
-                        pd.to_numeric(
-                            group["expected_value"],
-                            errors="coerce",
-                        ).mean() * 100,
-                        2,
+                    average = values.mean()
+                    summary[label] = (
+                        round(float(average) * 100.0, 2)
+                        if pd.notna(average)
+                        else pd.NA
                     )
 
                 grade_rows.append(summary)
 
             grade_summary = pd.DataFrame(grade_rows)
-
-            if not grade_summary.empty:
-
-                grade_summary = grade_summary.sort_values(
-                    "Hit Rate",
-                    ascending=False,
+            if grade_summary.empty:
+                st.info("No grade history is available yet.")
+            else:
+                grade_order = {"A+": 1, "A": 2, "B+": 3, "B": 4}
+                grade_summary["_sort"] = (
+                    grade_summary["Grade"].map(grade_order).fillna(99)
                 )
-
+                grade_summary = grade_summary.sort_values("_sort").drop(
+                    columns="_sort"
+                )
                 st.dataframe(
                     grade_summary,
                     use_container_width=True,
                     hide_index=True,
                 )
-
                 st.subheader("Hit Rate by Grade")
+                st.bar_chart(grade_summary.set_index("Grade")[["Hit Rate"]])
 
-                st.bar_chart(
-                    grade_summary.set_index("Grade")["Hit Rate"]
-                )
-
-                if (
-                    "A+" in grade_summary["Grade"].values
-                    and "A" in grade_summary["Grade"].values
-                ):
-
-                    a_plus = grade_summary.loc[
-                        grade_summary["Grade"] == "A+",
-                        "Hit Rate",
-                    ].iloc[0]
-
-                    a = grade_summary.loc[
-                        grade_summary["Grade"] == "A",
-                        "Hit Rate",
-                    ].iloc[0]
-
-                    if a_plus < a:
-
-                        st.error(
-                            f"""
-⚠️ A+ is underperforming A
-
-A+ Hit Rate: {a_plus:.1f}%
-
-A Hit Rate: {a:.1f}%
-
-Recommendation:
-Increase the minimum thresholds for A+.
-"""
+                grade_rates = grade_summary.set_index("Grade")["Hit Rate"]
+                if "A+" in grade_rates.index and "A" in grade_rates.index:
+                    a_plus = float(grade_rates.loc["A+"])
+                    a_rate = float(grade_rates.loc["A"])
+                    if a_plus < a_rate:
+                        st.warning(
+                            "A+ is currently underperforming A. "
+                            f"A+: {a_plus:.1f}% vs. A: {a_rate:.1f}%. "
+                            "Review the A+ probability, edge, and EV cutoffs."
                         )
+
     with tab_market_analysis:
-
         if "market" not in history.columns:
-            st.info("No market history available.")
+            st.info("No market history is available.")
         else:
-
             market_rows = []
-
-            for market_name, group in history.groupby("market"):
-
+            for market_name, group in history.groupby("market", dropna=False):
                 summary = summarize_results(group).to_dict()
-
                 summary["Market"] = format_market(market_name)
 
-                if "expected_value" in group.columns:
-                    summary["Average EV"] = round(
-                        pd.to_numeric(
-                            group["expected_value"],
-                            errors="coerce",
-                        ).mean() * 100,
-                        2,
+                for source, label in [
+                    ("expected_value", "Average EV"),
+                    ("probability", "Average Probability"),
+                ]:
+                    values = pd.to_numeric(
+                        group.get(source, pd.Series(dtype=float)),
+                        errors="coerce",
                     )
-
-                if "probability" in group.columns:
-                    summary["Average Probability"] = round(
-                        pd.to_numeric(
-                            group["probability"],
-                            errors="coerce",
-                        ).mean() * 100,
-                        1,
+                    average = values.mean()
+                    summary[label] = (
+                        round(float(average) * 100.0, 2)
+                        if pd.notna(average)
+                        else pd.NA
                     )
 
                 market_rows.append(summary)
 
             market_df = pd.DataFrame(market_rows)
+            if market_df.empty:
+                st.info("No market history is available.")
+            else:
+                market_df = market_df.sort_values("Profit", ascending=False)
+                st.subheader("Market Performance")
+                st.dataframe(
+                    market_df,
+                    use_container_width=True,
+                    hide_index=True,
+                )
+                chart_df = market_df.set_index("Market")
+                st.subheader("Profit by Market")
+                st.bar_chart(chart_df[["Profit"]])
+                st.subheader("Hit Rate by Market")
+                st.bar_chart(chart_df[["Hit Rate"]])
 
-            market_df = market_df.sort_values(
-                "Profit",
-                ascending=False,
+    with tab_optimizer:
+        st.subheader("Historical Threshold Optimizer")
+        st.caption(
+            "This is an exploratory in-sample analysis of settled picks. "
+            "Use the results as a starting point, not as proof that a cutoff "
+            "will perform the same way in future games."
+        )
+
+        required_optimizer_columns = {
+            "probability",
+            "probability_edge",
+            "expected_value",
+            "outcome",
+            "profit",
+            "stake",
+        }
+        missing_optimizer_columns = sorted(
+            required_optimizer_columns - set(history.columns)
+        )
+
+        if missing_optimizer_columns:
+            st.info(
+                "The optimizer needs these history columns: "
+                + ", ".join(missing_optimizer_columns)
+            )
+        else:
+            optimizer_history = history.copy()
+            for column in [
+                "probability",
+                "probability_edge",
+                "expected_value",
+                "profit",
+                "stake",
+            ]:
+                optimizer_history[column] = pd.to_numeric(
+                    optimizer_history[column], errors="coerce"
+                )
+
+            optimizer_history = optimizer_history.dropna(
+                subset=[
+                    "probability",
+                    "probability_edge",
+                    "expected_value",
+                    "profit",
+                    "stake",
+                ]
+            ).copy()
+
+            available_markets = sorted(
+                optimizer_history.get(
+                    "market", pd.Series(dtype="string")
+                ).dropna().astype(str).unique().tolist()
+            )
+            selected_optimizer_markets = st.multiselect(
+                "Markets included in optimization",
+                options=available_markets,
+                default=available_markets,
+                format_func=format_market,
+                key="optimizer_markets",
             )
 
-            st.subheader("Market Performance")
+            if available_markets:
+                optimizer_history = optimizer_history.loc[
+                    optimizer_history["market"].isin(
+                        selected_optimizer_markets
+                    )
+                ].copy()
 
-            st.dataframe(
-                market_df,
-                use_container_width=True,
-                hide_index=True,
-            )
+            control_1, control_2, control_3 = st.columns(3)
+            with control_1:
+                minimum_sample_size = st.number_input(
+                    "Minimum picks per result",
+                    min_value=10,
+                    max_value=250,
+                    value=30,
+                    step=5,
+                    key="optimizer_min_sample",
+                )
+            with control_2:
+                objective = st.selectbox(
+                    "Primary objective",
+                    ["Balanced", "Highest Hit Rate", "Highest ROI", "Highest Profit"],
+                    key="optimizer_objective",
+                )
+            with control_3:
+                show_top_n = st.slider(
+                    "Results to display",
+                    min_value=5,
+                    max_value=50,
+                    value=15,
+                    step=5,
+                    key="optimizer_top_n",
+                )
 
-            st.subheader("Profit by Market")
+            probability_thresholds = [
+                value / 100.0 for value in range(55, 91, 2)
+            ]
+            edge_thresholds = [
+                value / 100.0 for value in range(0, 31, 2)
+            ]
+            ev_thresholds = [
+                value / 100.0 for value in range(0, 51, 5)
+            ]
 
-            st.bar_chart(
-                market_df.set_index("Market")["Profit"]
-            )
+            optimizer_rows = []
+            for probability_cutoff in probability_thresholds:
+                probability_frame = optimizer_history.loc[
+                    optimizer_history["probability"] >= probability_cutoff
+                ]
+                if len(probability_frame) < minimum_sample_size:
+                    continue
 
-            st.subheader("Hit Rate by Market")
+                for edge_cutoff in edge_thresholds:
+                    edge_frame = probability_frame.loc[
+                        probability_frame["probability_edge"] >= edge_cutoff
+                    ]
+                    if len(edge_frame) < minimum_sample_size:
+                        continue
 
-            st.bar_chart(
-                market_df.set_index("Market")["Hit Rate"]
-            )
-with tab_history:
+                    for ev_cutoff in ev_thresholds:
+                        filtered_history = edge_frame.loc[
+                            edge_frame["expected_value"] >= ev_cutoff
+                        ]
+                        if len(filtered_history) < minimum_sample_size:
+                            continue
+
+                        summary = summarize_results(filtered_history).to_dict()
+                        settled = int(summary["Wins"] + summary["Losses"])
+                        if settled < minimum_sample_size:
+                            continue
+
+                        optimizer_rows.append(
+                            {
+                                "Minimum Probability": probability_cutoff * 100.0,
+                                "Minimum Edge": edge_cutoff * 100.0,
+                                "Minimum EV": ev_cutoff * 100.0,
+                                **summary,
+                            }
+                        )
+
+            optimizer_results = pd.DataFrame(optimizer_rows)
+            if optimizer_results.empty:
+                st.info(
+                    "No threshold combination meets the selected minimum "
+                    "sample size. Lower the minimum picks or include more markets."
+                )
+            else:
+                max_profit = max(
+                    float(optimizer_results["Profit"].max()), 1.0
+                )
+                optimizer_results["Balanced Score"] = (
+                    optimizer_results["Hit Rate"]
+                    + 0.35 * optimizer_results["ROI"].clip(lower=-100, upper=100)
+                    + 10.0 * optimizer_results["Profit"] / max_profit
+                    + 5.0 * (
+                        optimizer_results["Picks"]
+                        / optimizer_results["Picks"].max()
+                    )
+                )
+
+                sort_map = {
+                    "Balanced": ["Balanced Score", "Picks"],
+                    "Highest Hit Rate": ["Hit Rate", "Picks"],
+                    "Highest ROI": ["ROI", "Picks"],
+                    "Highest Profit": ["Profit", "Picks"],
+                }
+                optimizer_results = optimizer_results.sort_values(
+                    sort_map[objective],
+                    ascending=[False, False],
+                ).reset_index(drop=True)
+
+                best = optimizer_results.iloc[0]
+                metric_a, metric_b, metric_c, metric_d = st.columns(4)
+                metric_a.metric(
+                    "Recommended Probability",
+                    f"{best['Minimum Probability']:.0f}%+",
+                )
+                metric_b.metric(
+                    "Recommended Edge",
+                    f"{best['Minimum Edge']:.0f}%+",
+                )
+                metric_c.metric(
+                    "Recommended EV",
+                    f"{best['Minimum EV']:.0f}%+",
+                )
+                metric_d.metric(
+                    "Historical Sample",
+                    f"{int(best['Picks'])} picks",
+                )
+
+                result_a, result_b, result_c, result_d = st.columns(4)
+                result_a.metric("Historical Hit Rate", f"{best['Hit Rate']:.1f}%")
+                result_b.metric("Historical ROI", f"{best['ROI']:+.1f}%")
+                result_c.metric("Historical Profit", f"{best['Profit']:+.2f}u")
+                result_d.metric(
+                    "Record",
+                    f"{int(best['Wins'])}-{int(best['Losses'])}-{int(best['Pushes'])}",
+                )
+
+                display_optimizer = optimizer_results.head(show_top_n).copy()
+                display_optimizer = display_optimizer.drop(
+                    columns=["Balanced Score"], errors="ignore"
+                )
+                for column in [
+                    "Minimum Probability",
+                    "Minimum Edge",
+                    "Minimum EV",
+                    "Hit Rate",
+                    "ROI",
+                ]:
+                    display_optimizer[column] = pd.to_numeric(
+                        display_optimizer[column], errors="coerce"
+                    ).round(1)
+
+                st.subheader("Top Historical Threshold Combinations")
+                st.dataframe(
+                    display_optimizer,
+                    use_container_width=True,
+                    hide_index=True,
+                )
+
+                st.warning(
+                    "Do not automatically replace production thresholds from "
+                    "this table alone. These results are optimized on the same "
+                    "historical sample being evaluated and may overfit. Validate "
+                    "the suggested cutoff on later, unseen picks first."
+                )
+
+    with tab_history:
         history_columns = [
             "event_date",
             "platform",
