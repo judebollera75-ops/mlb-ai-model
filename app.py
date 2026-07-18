@@ -1641,9 +1641,9 @@ else:
     with tab_optimizer:
         st.subheader("Historical Threshold Optimizer")
         st.caption(
-            "This is an exploratory in-sample analysis of settled picks. "
-            "Use the results as a starting point, not as proof that a cutoff "
-            "will perform the same way in future games."
+            "The optimizer now tunes cutoffs on older picks and checks them "
+            "on newer, unseen picks when dates are available. This reduces "
+            "the risk of choosing thresholds that only fit past noise."
         )
 
         required_optimizer_columns = {
@@ -1676,6 +1676,12 @@ else:
                     optimizer_history[column], errors="coerce"
                 )
 
+            # Accept either decimal values (0.26) or percentages (26.0).
+            for column in ["probability", "probability_edge", "expected_value"]:
+                non_null = optimizer_history[column].dropna()
+                if not non_null.empty and non_null.abs().median() > 1.5:
+                    optimizer_history[column] = optimizer_history[column] / 100.0
+
             optimizer_history = optimizer_history.dropna(
                 subset=[
                     "probability",
@@ -1701,15 +1707,13 @@ else:
 
             if available_markets:
                 optimizer_history = optimizer_history.loc[
-                    optimizer_history["market"].isin(
-                        selected_optimizer_markets
-                    )
+                    optimizer_history["market"].isin(selected_optimizer_markets)
                 ].copy()
 
-            control_1, control_2, control_3 = st.columns(3)
+            control_1, control_2, control_3, control_4 = st.columns(4)
             with control_1:
                 minimum_sample_size = st.number_input(
-                    "Minimum picks per result",
+                    "Minimum training picks",
                     min_value=10,
                     max_value=250,
                     value=30,
@@ -1717,154 +1721,388 @@ else:
                     key="optimizer_min_sample",
                 )
             with control_2:
+                minimum_validation_size = st.number_input(
+                    "Minimum validation picks",
+                    min_value=5,
+                    max_value=100,
+                    value=10,
+                    step=5,
+                    key="optimizer_min_validation",
+                )
+            with control_3:
                 objective = st.selectbox(
                     "Primary objective",
                     ["Balanced", "Highest Hit Rate", "Highest ROI", "Highest Profit"],
                     key="optimizer_objective",
                 )
-            with control_3:
+            with control_4:
                 show_top_n = st.slider(
                     "Results to display",
                     min_value=5,
-                    max_value=50,
+                    max_value=40,
                     value=15,
                     step=5,
                     key="optimizer_top_n",
                 )
 
-            probability_thresholds = [
-                value / 100.0 for value in range(55, 91, 2)
-            ]
-            edge_thresholds = [
-                value / 100.0 for value in range(0, 31, 2)
-            ]
-            ev_thresholds = [
-                value / 100.0 for value in range(0, 51, 5)
-            ]
+            if optimizer_history.empty:
+                st.info("No settled picks remain for the selected markets.")
+            else:
+                # Use chronological holdout when possible.
+                has_dates = "event_date" in optimizer_history.columns
+                if has_dates:
+                    optimizer_history["event_date"] = pd.to_datetime(
+                        optimizer_history["event_date"], errors="coerce"
+                    )
+                    optimizer_history = optimizer_history.sort_values(
+                        "event_date", na_position="last"
+                    ).reset_index(drop=True)
 
-            optimizer_rows = []
-            for probability_cutoff in probability_thresholds:
-                probability_frame = optimizer_history.loc[
-                    optimizer_history["probability"] >= probability_cutoff
-                ]
-                if len(probability_frame) < minimum_sample_size:
-                    continue
+                split_index = max(
+                    minimum_sample_size,
+                    int(len(optimizer_history) * 0.70),
+                )
+                split_index = min(split_index, len(optimizer_history))
 
-                for edge_cutoff in edge_thresholds:
-                    edge_frame = probability_frame.loc[
-                        probability_frame["probability_edge"] >= edge_cutoff
+                if (
+                    has_dates
+                    and len(optimizer_history) - split_index >= minimum_validation_size
+                ):
+                    training_history = optimizer_history.iloc[:split_index].copy()
+                    validation_history = optimizer_history.iloc[split_index:].copy()
+                    validation_mode = True
+                else:
+                    training_history = optimizer_history.copy()
+                    validation_history = pd.DataFrame()
+                    validation_mode = False
+
+                range_1, range_2, range_3 = st.columns(3)
+                range_1.metric(
+                    "Observed Probability Range",
+                    f"{training_history['probability'].min() * 100:.1f}%–"
+                    f"{training_history['probability'].max() * 100:.1f}%",
+                )
+                range_2.metric(
+                    "Observed Edge Range",
+                    f"{training_history['probability_edge'].min() * 100:.1f}%–"
+                    f"{training_history['probability_edge'].max() * 100:.1f}%",
+                )
+                range_3.metric(
+                    "Observed EV Range",
+                    f"{training_history['expected_value'].min() * 100:.1f}%–"
+                    f"{training_history['expected_value'].max() * 100:.1f}%",
+                )
+
+                probability_thresholds = [value / 100.0 for value in range(50, 91, 2)]
+                edge_thresholds = [value / 100.0 for value in range(0, 41, 2)]
+                ev_thresholds = [value / 100.0 for value in range(0, 61, 5)]
+
+                optimizer_rows = []
+                for probability_cutoff in probability_thresholds:
+                    probability_frame = training_history.loc[
+                        training_history["probability"] >= probability_cutoff
                     ]
-                    if len(edge_frame) < minimum_sample_size:
+                    if len(probability_frame) < minimum_sample_size:
                         continue
 
-                    for ev_cutoff in ev_thresholds:
-                        filtered_history = edge_frame.loc[
-                            edge_frame["expected_value"] >= ev_cutoff
+                    for edge_cutoff in edge_thresholds:
+                        edge_frame = probability_frame.loc[
+                            probability_frame["probability_edge"] >= edge_cutoff
                         ]
-                        if len(filtered_history) < minimum_sample_size:
+                        if len(edge_frame) < minimum_sample_size:
                             continue
 
-                        summary = summarize_results(filtered_history).to_dict()
-                        settled = int(summary["Wins"] + summary["Losses"])
-                        if settled < minimum_sample_size:
-                            continue
+                        for ev_cutoff in ev_thresholds:
+                            filtered_training = edge_frame.loc[
+                                edge_frame["expected_value"] >= ev_cutoff
+                            ]
+                            if len(filtered_training) < minimum_sample_size:
+                                continue
 
-                        optimizer_rows.append(
-                            {
+                            training_summary = summarize_results(
+                                filtered_training
+                            ).to_dict()
+                            settled = int(
+                                training_summary["Wins"] + training_summary["Losses"]
+                            )
+                            if settled < minimum_sample_size:
+                                continue
+
+                            row = {
                                 "Minimum Probability": probability_cutoff * 100.0,
                                 "Minimum Edge": edge_cutoff * 100.0,
                                 "Minimum EV": ev_cutoff * 100.0,
-                                **summary,
+                                "Training Picks": training_summary["Picks"],
+                                "Training Hit Rate": training_summary["Hit Rate"],
+                                "Training Profit": training_summary["Profit"],
+                                "Training ROI": training_summary["ROI"],
+                                "Training Wins": training_summary["Wins"],
+                                "Training Losses": training_summary["Losses"],
+                                "Training Pushes": training_summary["Pushes"],
                             }
+
+                            if validation_mode:
+                                filtered_validation = validation_history.loc[
+                                    (validation_history["probability"] >= probability_cutoff)
+                                    & (validation_history["probability_edge"] >= edge_cutoff)
+                                    & (validation_history["expected_value"] >= ev_cutoff)
+                                ]
+                                validation_summary = summarize_results(
+                                    filtered_validation
+                                ).to_dict()
+                                row.update(
+                                    {
+                                        "Validation Picks": validation_summary["Picks"],
+                                        "Validation Hit Rate": validation_summary["Hit Rate"],
+                                        "Validation Profit": validation_summary["Profit"],
+                                        "Validation ROI": validation_summary["ROI"],
+                                        "Validation Wins": validation_summary["Wins"],
+                                        "Validation Losses": validation_summary["Losses"],
+                                        "Validation Pushes": validation_summary["Pushes"],
+                                    }
+                                )
+                            optimizer_rows.append(row)
+
+                optimizer_results = pd.DataFrame(optimizer_rows)
+                if optimizer_results.empty:
+                    st.info(
+                        "No threshold combination meets the selected minimum "
+                        "sample size. Lower the minimums or include more markets."
+                    )
+                else:
+                    # Remove threshold rows that produce exactly the same pick set/results.
+                    dedupe_columns = [
+                        "Training Picks",
+                        "Training Wins",
+                        "Training Losses",
+                        "Training Pushes",
+                        "Training Profit",
+                    ]
+                    if validation_mode:
+                        dedupe_columns += [
+                            "Validation Picks",
+                            "Validation Wins",
+                            "Validation Losses",
+                            "Validation Pushes",
+                            "Validation Profit",
+                        ]
+                    optimizer_results = optimizer_results.drop_duplicates(
+                        subset=dedupe_columns, keep="first"
+                    ).copy()
+
+                    score_hit_rate = (
+                        optimizer_results["Validation Hit Rate"]
+                        if validation_mode
+                        else optimizer_results["Training Hit Rate"]
+                    )
+                    score_roi = (
+                        optimizer_results["Validation ROI"]
+                        if validation_mode
+                        else optimizer_results["Training ROI"]
+                    )
+                    score_profit = (
+                        optimizer_results["Validation Profit"]
+                        if validation_mode
+                        else optimizer_results["Training Profit"]
+                    )
+                    score_picks = (
+                        optimizer_results["Validation Picks"]
+                        if validation_mode
+                        else optimizer_results["Training Picks"]
+                    )
+
+                    eligible = score_picks >= (
+                        minimum_validation_size if validation_mode else minimum_sample_size
+                    )
+                    scored_results = optimizer_results.loc[eligible].copy()
+
+                    if scored_results.empty:
+                        st.info(
+                            "Thresholds were found in training, but none produced "
+                            "enough unseen validation picks. Lower the validation "
+                            "minimum or collect more settled history."
+                        )
+                    else:
+                        score_hit_rate = (
+                            scored_results["Validation Hit Rate"]
+                            if validation_mode
+                            else scored_results["Training Hit Rate"]
+                        )
+                        score_roi = (
+                            scored_results["Validation ROI"]
+                            if validation_mode
+                            else scored_results["Training ROI"]
+                        )
+                        score_profit = (
+                            scored_results["Validation Profit"]
+                            if validation_mode
+                            else scored_results["Training Profit"]
+                        )
+                        score_picks = (
+                            scored_results["Validation Picks"]
+                            if validation_mode
+                            else scored_results["Training Picks"]
                         )
 
-            optimizer_results = pd.DataFrame(optimizer_rows)
-            if optimizer_results.empty:
-                st.info(
-                    "No threshold combination meets the selected minimum "
-                    "sample size. Lower the minimum picks or include more markets."
-                )
-            else:
-                max_profit = max(
-                    float(optimizer_results["Profit"].max()), 1.0
-                )
-                optimizer_results["Balanced Score"] = (
-                    optimizer_results["Hit Rate"]
-                    + 0.35 * optimizer_results["ROI"].clip(lower=-100, upper=100)
-                    + 10.0 * optimizer_results["Profit"] / max_profit
-                    + 5.0 * (
-                        optimizer_results["Picks"]
-                        / optimizer_results["Picks"].max()
-                    )
-                )
+                        max_profit = max(float(score_profit.max()), 1.0)
+                        max_picks = max(float(score_picks.max()), 1.0)
+                        scored_results["Balanced Score"] = (
+                            score_hit_rate
+                            + 0.25 * score_roi.clip(lower=-100, upper=100)
+                            + 10.0 * score_profit / max_profit
+                            + 5.0 * score_picks / max_picks
+                        )
 
-                sort_map = {
-                    "Balanced": ["Balanced Score", "Picks"],
-                    "Highest Hit Rate": ["Hit Rate", "Picks"],
-                    "Highest ROI": ["ROI", "Picks"],
-                    "Highest Profit": ["Profit", "Picks"],
-                }
-                optimizer_results = optimizer_results.sort_values(
-                    sort_map[objective],
-                    ascending=[False, False],
-                ).reset_index(drop=True)
+                        sort_map = {
+                            "Balanced": ["Balanced Score", "Training Picks"],
+                            "Highest Hit Rate": [
+                                "Validation Hit Rate" if validation_mode else "Training Hit Rate",
+                                "Validation Picks" if validation_mode else "Training Picks",
+                            ],
+                            "Highest ROI": [
+                                "Validation ROI" if validation_mode else "Training ROI",
+                                "Validation Picks" if validation_mode else "Training Picks",
+                            ],
+                            "Highest Profit": [
+                                "Validation Profit" if validation_mode else "Training Profit",
+                                "Validation Picks" if validation_mode else "Training Picks",
+                            ],
+                        }
+                        scored_results = scored_results.sort_values(
+                            sort_map[objective], ascending=[False, False]
+                        ).reset_index(drop=True)
 
-                best = optimizer_results.iloc[0]
-                metric_a, metric_b, metric_c, metric_d = st.columns(4)
-                metric_a.metric(
-                    "Recommended Probability",
-                    f"{best['Minimum Probability']:.0f}%+",
-                )
-                metric_b.metric(
-                    "Recommended Edge",
-                    f"{best['Minimum Edge']:.0f}%+",
-                )
-                metric_c.metric(
-                    "Recommended EV",
-                    f"{best['Minimum EV']:.0f}%+",
-                )
-                metric_d.metric(
-                    "Historical Sample",
-                    f"{int(best['Picks'])} picks",
-                )
+                        best = scored_results.iloc[0]
+                        metric_a, metric_b, metric_c, metric_d = st.columns(4)
+                        metric_a.metric(
+                            "Recommended Probability",
+                            f"{best['Minimum Probability']:.0f}%+",
+                        )
+                        metric_b.metric(
+                            "Recommended Edge",
+                            f"{best['Minimum Edge']:.0f}%+",
+                        )
+                        metric_c.metric(
+                            "Recommended EV",
+                            f"{best['Minimum EV']:.0f}%+",
+                        )
+                        metric_d.metric(
+                            "Validation Mode",
+                            "Chronological holdout" if validation_mode else "In-sample only",
+                        )
 
-                result_a, result_b, result_c, result_d = st.columns(4)
-                result_a.metric("Historical Hit Rate", f"{best['Hit Rate']:.1f}%")
-                result_b.metric("Historical ROI", f"{best['ROI']:+.1f}%")
-                result_c.metric("Historical Profit", f"{best['Profit']:+.2f}u")
-                result_d.metric(
-                    "Record",
-                    f"{int(best['Wins'])}-{int(best['Losses'])}-{int(best['Pushes'])}",
-                )
+                        if validation_mode:
+                            result_a, result_b, result_c, result_d = st.columns(4)
+                            result_a.metric(
+                                "Unseen Hit Rate",
+                                f"{best['Validation Hit Rate']:.1f}%",
+                            )
+                            result_b.metric(
+                                "Unseen ROI",
+                                f"{best['Validation ROI']:+.1f}%",
+                            )
+                            result_c.metric(
+                                "Unseen Profit",
+                                f"{best['Validation Profit']:+.2f}u",
+                            )
+                            result_d.metric(
+                                "Unseen Record",
+                                f"{int(best['Validation Wins'])}-"
+                                f"{int(best['Validation Losses'])}-"
+                                f"{int(best['Validation Pushes'])}",
+                            )
+                            st.caption(
+                                f"Thresholds were selected using {len(training_history)} older "
+                                f"picks and evaluated on {len(validation_history)} newer picks."
+                            )
+                        else:
+                            result_a, result_b, result_c, result_d = st.columns(4)
+                            result_a.metric(
+                                "Historical Hit Rate",
+                                f"{best['Training Hit Rate']:.1f}%",
+                            )
+                            result_b.metric(
+                                "Historical ROI",
+                                f"{best['Training ROI']:+.1f}%",
+                            )
+                            result_c.metric(
+                                "Historical Profit",
+                                f"{best['Training Profit']:+.2f}u",
+                            )
+                            result_d.metric(
+                                "Historical Record",
+                                f"{int(best['Training Wins'])}-"
+                                f"{int(best['Training Losses'])}-"
+                                f"{int(best['Training Pushes'])}",
+                            )
 
-                display_optimizer = optimizer_results.head(show_top_n).copy()
-                display_optimizer = display_optimizer.drop(
-                    columns=["Balanced Score"], errors="ignore"
-                )
-                for column in [
-                    "Minimum Probability",
-                    "Minimum Edge",
-                    "Minimum EV",
-                    "Hit Rate",
-                    "ROI",
-                ]:
-                    display_optimizer[column] = pd.to_numeric(
-                        display_optimizer[column], errors="coerce"
-                    ).round(1)
+                        display_optimizer = scored_results.head(show_top_n).copy()
+                        display_optimizer = display_optimizer.drop(
+                            columns=["Balanced Score"], errors="ignore"
+                        )
+                        for column in display_optimizer.columns:
+                            if column not in {
+                                "Training Wins", "Training Losses", "Training Pushes",
+                                "Validation Wins", "Validation Losses", "Validation Pushes",
+                            }:
+                                display_optimizer[column] = pd.to_numeric(
+                                    display_optimizer[column], errors="ignore"
+                                )
 
-                st.subheader("Top Historical Threshold Combinations")
-                st.dataframe(
-                    display_optimizer,
-                    use_container_width=True,
-                    hide_index=True,
-                )
+                        st.subheader("Top Distinct Threshold Combinations")
+                        st.dataframe(
+                            display_optimizer,
+                            use_container_width=True,
+                            hide_index=True,
+                        )
 
-                st.warning(
-                    "Do not automatically replace production thresholds from "
-                    "this table alone. These results are optimized on the same "
-                    "historical sample being evaluated and may overfit. Validate "
-                    "the suggested cutoff on later, unseen picks first."
-                )
+                        # Market-by-market diagnostic using a conservative sample floor.
+                        if "market" in optimizer_history.columns:
+                            market_recommendations = []
+                            for market_name, market_group in optimizer_history.groupby("market"):
+                                if len(market_group) < 15:
+                                    continue
+                                market_best = None
+                                for probability_cutoff in probability_thresholds:
+                                    for edge_cutoff in edge_thresholds:
+                                        filtered = market_group.loc[
+                                            (market_group["probability"] >= probability_cutoff)
+                                            & (market_group["probability_edge"] >= edge_cutoff)
+                                        ]
+                                        if len(filtered) < 10:
+                                            continue
+                                        summary = summarize_results(filtered).to_dict()
+                                        candidate = {
+                                            "Market": format_market(market_name),
+                                            "Minimum Probability": probability_cutoff * 100.0,
+                                            "Minimum Edge": edge_cutoff * 100.0,
+                                            **summary,
+                                        }
+                                        if market_best is None or (
+                                            candidate["Hit Rate"], candidate["ROI"], candidate["Picks"]
+                                        ) > (
+                                            market_best["Hit Rate"], market_best["ROI"], market_best["Picks"]
+                                        ):
+                                            market_best = candidate
+                                if market_best is not None:
+                                    market_recommendations.append(market_best)
+
+                            if market_recommendations:
+                                st.subheader("Exploratory Market-Specific Cutoffs")
+                                st.dataframe(
+                                    pd.DataFrame(market_recommendations).sort_values(
+                                        ["Hit Rate", "ROI"], ascending=False
+                                    ),
+                                    use_container_width=True,
+                                    hide_index=True,
+                                )
+
+                        st.warning(
+                            "Do not automatically replace production thresholds from "
+                            "this screen alone. Even chronological validation can be noisy "
+                            "with small samples. Promote a cutoff only after it remains "
+                            "profitable across additional unseen picks."
+                        )
 
     with tab_history:
         history_columns = [
