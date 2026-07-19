@@ -1,0 +1,289 @@
+date,game_id,team,opponent,side,player_id,player_name,batting_order,position,status,lineup_status,lineup_source,home_team,away_team,venue,game_datetime
+2026-07-19,822786,Chicago White Sox,Toronto Blue Jays,away,803011,Sam Antonacci,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Chicago White Sox,Toronto Blue Jays,away,808959,Munetaka Murakami,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Chicago White Sox,Toronto Blue Jays,away,678246,Miguel Vargas,3,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Chicago White Sox,Toronto Blue Jays,away,695657,Colson Montgomery,4,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Chicago White Sox,Toronto Blue Jays,away,643217,Andrew Benintendi,5,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Chicago White Sox,Toronto Blue Jays,away,691019,Kyle Teel,6,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Chicago White Sox,Toronto Blue Jays,away,695731,Braden Montgomery,7,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Chicago White Sox,Toronto Blue Jays,away,805367,Chase Meidroth,8,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Chicago White Sox,Toronto Blue Jays,away,671976,Tristan Peters,9,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Toronto Blue Jays,Chicago White Sox,home,676391,Ernie Clement,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Toronto Blue Jays,Chicago White Sox,home,665489,Vladimir Guerrero Jr.,2,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Toronto Blue Jays,Chicago White Sox,home,543807,George Springer,3,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Toronto Blue Jays,Chicago White Sox,home,672960,Kazuma Okamoto,4,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Toronto Blue Jays,Chicago White Sox,home,662139,Daulton Varsho,5,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Toronto Blue Jays,Chicago White Sox,home,672386,Alejandro Kirk,6,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Toronto Blue Jays,Chicago White Sox,home,664702,Myles Straw,7,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Toronto Blue Jays,Chicago White Sox,home,682729,Jonatan Clase,8,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,822786,Toronto Blue Jays,Chicago White Sox,home,665926,Andrés Giménez,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Chicago White Sox,Rogers Centre,2026-07-19T16:15:00Z
+2026-07-19,823113,San Francisco Giants,Seattle Mariners,away,650333,Luis Arraez,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,San Francisco Giants,Seattle Mariners,away,671218,Heliot Ramos,2,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,San Francisco Giants,Seattle Mariners,away,669477,Casey Schmitt,3,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,San Francisco Giants,Seattle Mariners,away,805811,Bryce Eldridge,4,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,San Francisco Giants,Seattle Mariners,away,646240,Rafael Devers,5,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,San Francisco Giants,Seattle Mariners,away,808982,Jung Hoo Lee,6,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,San Francisco Giants,Seattle Mariners,away,642715,Willy Adames,7,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,San Francisco Giants,Seattle Mariners,away,687551,Drew Gilbert,8,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,San Francisco Giants,Seattle Mariners,away,701852,Drew Cavanaugh,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,Seattle Mariners,San Francisco Giants,home,641487,J.P. Crawford,1,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,Seattle Mariners,San Francisco Giants,home,668227,Randy Arozarena,2,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,Seattle Mariners,San Francisco Giants,home,686527,Dominic Canzone,3,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,Seattle Mariners,San Francisco Giants,home,663728,Cal Raleigh,4,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,Seattle Mariners,San Francisco Giants,home,647304,Josh Naylor,5,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,Seattle Mariners,San Francisco Giants,home,670042,Luke Raley,6,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,Seattle Mariners,San Francisco Giants,home,702284,Cole Young,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,Seattle Mariners,San Francisco Giants,home,645302,Victor Robles,8,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823113,Seattle Mariners,San Francisco Giants,home,806068,Colt Emerson,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Seattle Mariners,San Francisco Giants,T-Mobile Park,2026-07-19T20:10:00Z
+2026-07-19,823439,New York Mets,Philadelphia Phillies,away,665742,Juan Soto,1,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,New York Mets,Philadelphia Phillies,away,805999,A.J. Ewing,2,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,New York Mets,Philadelphia Phillies,away,596019,Francisco Lindor,3,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,New York Mets,Philadelphia Phillies,away,666182,Bo Bichette,4,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,New York Mets,Philadelphia Phillies,away,701807,Carson Benge,5,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,New York Mets,Philadelphia Phillies,away,593871,Jorge Polanco,6,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,New York Mets,Philadelphia Phillies,away,621438,Tyrone Taylor,7,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,New York Mets,Philadelphia Phillies,away,682626,Francisco Alvarez,8,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,New York Mets,Philadelphia Phillies,away,683146,Brett Baty,9,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,Philadelphia Phillies,New York Mets,home,607208,Trea Turner,1,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,Philadelphia Phillies,New York Mets,home,656941,Kyle Schwarber,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,Philadelphia Phillies,New York Mets,home,547180,Bryce Harper,3,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,Philadelphia Phillies,New York Mets,home,664761,Alec Bohm,4,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,Philadelphia Phillies,New York Mets,home,669016,Brandon Marsh,5,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,Philadelphia Phillies,New York Mets,home,702222,Justin Crawford,6,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,Philadelphia Phillies,New York Mets,home,681082,Bryson Stott,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,Philadelphia Phillies,New York Mets,home,592663,J.T. Realmuto,8,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823439,Philadelphia Phillies,New York Mets,home,656537,Derek Hill,9,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Philadelphia Phillies,New York Mets,Citizens Bank Park,2026-07-19T17:35:00Z
+2026-07-19,823521,Los Angeles Dodgers,New York Yankees,away,660271,Shohei Ohtani,1,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,Los Angeles Dodgers,New York Yankees,away,681624,Andy Pages,2,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,Los Angeles Dodgers,New York Yankees,away,518692,Freddie Freeman,3,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,Los Angeles Dodgers,New York Yankees,away,605141,Mookie Betts,4,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,Los Angeles Dodgers,New York Yankees,away,571970,Max Muncy,5,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,Los Angeles Dodgers,New York Yankees,away,669242,Tommy Edman,6,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,Los Angeles Dodgers,New York Yankees,away,663656,Kyle Tucker,7,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,Los Angeles Dodgers,New York Yankees,away,606192,Teoscar Hernández,8,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,Los Angeles Dodgers,New York Yankees,away,687221,Dalton Rushing,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,New York Yankees,Los Angeles Dodgers,home,663757,Trent Grisham,1,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,New York Yankees,Los Angeles Dodgers,home,700250,Ben Rice,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,New York Yankees,Los Angeles Dodgers,home,641355,Cody Bellinger,3,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,New York Yankees,Los Angeles Dodgers,home,691176,Jasson Domínguez,4,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,New York Yankees,Los Angeles Dodgers,home,502671,Paul Goldschmidt,5,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,New York Yankees,Los Angeles Dodgers,home,641857,Ryan McMahon,6,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,New York Yankees,Los Angeles Dodgers,home,676609,José Caballero,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,New York Yankees,Los Angeles Dodgers,home,665862,Jazz Chisholm Jr.,8,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823521,New York Yankees,Los Angeles Dodgers,home,683011,Anthony Volpe,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T23:20:00Z
+2026-07-19,823523,Los Angeles Dodgers,New York Yankees,away,660271,Shohei Ohtani,1,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,Los Angeles Dodgers,New York Yankees,away,681624,Andy Pages,2,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,Los Angeles Dodgers,New York Yankees,away,518692,Freddie Freeman,3,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,Los Angeles Dodgers,New York Yankees,away,605141,Mookie Betts,4,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,Los Angeles Dodgers,New York Yankees,away,571970,Max Muncy,5,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,Los Angeles Dodgers,New York Yankees,away,669242,Tommy Edman,6,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,Los Angeles Dodgers,New York Yankees,away,663656,Kyle Tucker,7,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,Los Angeles Dodgers,New York Yankees,away,606192,Teoscar Hernández,8,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,Los Angeles Dodgers,New York Yankees,away,687221,Dalton Rushing,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,New York Yankees,Los Angeles Dodgers,home,663757,Trent Grisham,1,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,New York Yankees,Los Angeles Dodgers,home,700250,Ben Rice,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,New York Yankees,Los Angeles Dodgers,home,641355,Cody Bellinger,3,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,New York Yankees,Los Angeles Dodgers,home,691176,Jasson Domínguez,4,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,New York Yankees,Los Angeles Dodgers,home,502671,Paul Goldschmidt,5,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,New York Yankees,Los Angeles Dodgers,home,641857,Ryan McMahon,6,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,New York Yankees,Los Angeles Dodgers,home,676609,José Caballero,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,New York Yankees,Los Angeles Dodgers,home,665862,Jazz Chisholm Jr.,8,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823523,New York Yankees,Los Angeles Dodgers,home,683011,Anthony Volpe,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Los Angeles Dodgers,Yankee Stadium,2026-07-19T16:35:00Z
+2026-07-19,823764,Miami Marlins,Milwaukee Brewers,away,672640,Otto Lopez,1,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Miami Marlins,Milwaukee Brewers,away,689414,Liam Hicks,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Miami Marlins,Milwaukee Brewers,away,681715,Heriberto Hernández,3,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Miami Marlins,Milwaukee Brewers,away,669364,Xavier Edwards,4,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Miami Marlins,Milwaukee Brewers,away,669065,Kyle Stowers,5,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Miami Marlins,Milwaukee Brewers,away,691594,Javier Sanoja,6,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Miami Marlins,Milwaukee Brewers,away,665052,Griffin Conine,7,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Miami Marlins,Milwaukee Brewers,away,805300,Jakob Marsee,8,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Miami Marlins,Milwaukee Brewers,away,691788,Joe Mack,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Milwaukee Brewers,Miami Marlins,home,592885,Christian Yelich,1,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Milwaukee Brewers,Miami Marlins,home,694192,Jackson Chourio,2,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Milwaukee Brewers,Miami Marlins,home,668930,Brice Turang,3,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Milwaukee Brewers,Miami Marlins,home,661388,William Contreras,4,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Milwaukee Brewers,Miami Marlins,home,641343,Jake Bauers,5,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Milwaukee Brewers,Miami Marlins,home,669003,Garrett Mitchell,6,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Milwaukee Brewers,Miami Marlins,home,800325,Luis Lara,7,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Milwaukee Brewers,Miami Marlins,home,806198,Cooper Pratt,8,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,823764,Milwaukee Brewers,Miami Marlins,home,687401,Joey Ortiz,9,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Miami Marlins,American Family Field,2026-07-19T18:10:00Z
+2026-07-19,824007,Detroit Tigers,Los Angeles Angels,away,805808,Kevin McGonigle,1,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Detroit Tigers,Los Angeles Angels,away,693307,Dillon Dingler,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Detroit Tigers,Los Angeles Angels,away,690993,Colt Keith,3,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Detroit Tigers,Los Angeles Angels,away,679529,Spencer Torkelson,4,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Detroit Tigers,Los Angeles Angels,away,663837,Matt Vierling,5,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Detroit Tigers,Los Angeles Angels,away,682985,Riley Greene,6,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Detroit Tigers,Los Angeles Angels,away,681481,Kerry Carpenter,7,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Detroit Tigers,Los Angeles Angels,away,681546,James Outman,8,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Detroit Tigers,Los Angeles Angels,away,656716,Zach McKinstry,9,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Los Angeles Angels,Detroit Tigers,home,687263,Zach Neto,1,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Los Angeles Angels,Detroit Tigers,home,545361,Mike Trout,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Los Angeles Angels,Detroit Tigers,home,694384,Nolan Schanuel,3,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Los Angeles Angels,Detroit Tigers,home,624585,Jorge Soler,4,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Los Angeles Angels,Detroit Tigers,home,666176,Jo Adell,5,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Los Angeles Angels,Detroit Tigers,home,642350,Jose Siri,6,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Los Angeles Angels,Detroit Tigers,home,685133,Wade Meckler,7,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Los Angeles Angels,Detroit Tigers,home,694203,Denzer Guzman,8,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824007,Los Angeles Angels,Detroit Tigers,home,681351,Logan O'Hoppe,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Los Angeles Angels,Detroit Tigers,Angel Stadium,2026-07-19T20:07:00Z
+2026-07-19,824086,San Diego Padres,Kansas City Royals,away,665487,Fernando Tatis Jr.,1,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,San Diego Padres,Kansas City Royals,away,701538,Jackson Merrill,2,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,San Diego Padres,Kansas City Royals,away,593428,Xander Bogaerts,3,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,San Diego Padres,Kansas City Royals,away,592518,Manny Machado,4,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,San Diego Padres,Kansas City Royals,away,687749,Jase Bowen,5,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,San Diego Padres,Kansas City Royals,away,657757,Gavin Sheets,6,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,San Diego Padres,Kansas City Royals,away,664034,Ty France,7,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,San Diego Padres,Kansas City Royals,away,630105,Jake Cronenworth,8,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,San Diego Padres,Kansas City Royals,away,609280,Miguel Andujar,9,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,Kansas City Royals,San Diego Padres,home,695600,Carter Jensen,1,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,Kansas City Royals,San Diego Padres,home,677951,Bobby Witt Jr.,2,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,Kansas City Royals,San Diego Padres,home,695506,Jac Caglianone,3,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,Kansas City Royals,San Diego Padres,home,657041,Lane Thomas,4,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,Kansas City Royals,San Diego Padres,home,686469,Vinnie Pasquantino,5,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,Kansas City Royals,San Diego Padres,home,521692,Salvador Perez,6,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,Kansas City Royals,San Diego Padres,home,686681,Michael Massey,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,Kansas City Royals,San Diego Padres,home,679845,Nick Loftin,8,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824086,Kansas City Royals,San Diego Padres,home,686555,Isaac Collins,9,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Kansas City Royals,San Diego Padres,Kauffman Stadium,2026-07-19T18:10:00Z
+2026-07-19,824168,Baltimore Orioles,Houston Astros,away,683002,Gunnar Henderson,1,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Baltimore Orioles,Houston Astros,away,668939,Adley Rutschman,2,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Baltimore Orioles,Houston Astros,away,621493,Taylor Ward,3,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Baltimore Orioles,Houston Astros,away,624413,Pete Alonso,4,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Baltimore Orioles,Houston Astros,away,694212,Samuel Basallo,5,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Baltimore Orioles,Houston Astros,away,641933,Tyler O'Neill,6,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Baltimore Orioles,Houston Astros,away,691723,Coby Mayo,7,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Baltimore Orioles,Houston Astros,away,665750,Leody Taveras,8,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Baltimore Orioles,Houston Astros,away,669236,Jeremiah Jackson,9,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Houston Astros,Baltimore Orioles,home,665161,Jeremy Peña,1,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Houston Astros,Baltimore Orioles,home,670541,Yordan Alvarez,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Houston Astros,Baltimore Orioles,home,670623,Isaac Paredes,3,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Houston Astros,Baltimore Orioles,home,669397,Nick Allen,4,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Houston Astros,Baltimore Orioles,home,572233,Christian Walker,5,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Houston Astros,Baltimore Orioles,home,514888,Jose Altuve,6,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Houston Astros,Baltimore Orioles,home,664774,LaMonte Wade Jr.,7,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Houston Astros,Baltimore Orioles,home,701358,Cam Smith,8,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824168,Houston Astros,Baltimore Orioles,home,673237,Yainer Diaz,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Houston Astros,Baltimore Orioles,Daikin Park,2026-07-19T18:10:00Z
+2026-07-19,824330,Cincinnati Reds,Colorado Rockies,away,682829,Elly De La Cruz,1,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Cincinnati Reds,Colorado Rockies,away,701398,Sal Stewart,2,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Cincinnati Reds,Colorado Rockies,away,668709,JJ Bleday,3,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Cincinnati Reds,Colorado Rockies,away,668715,Spencer Steer,4,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Cincinnati Reds,Colorado Rockies,away,553993,Eugenio Suárez,5,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Cincinnati Reds,Colorado Rockies,away,667472,Dane Myers,6,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Cincinnati Reds,Colorado Rockies,away,682622,Noelvi Marte,7,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Cincinnati Reds,Colorado Rockies,away,663886,Tyler Stephenson,8,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Cincinnati Reds,Colorado Rockies,away,695490,Edwin Arroyo,9,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Colorado Rockies,Cincinnati Reds,home,664983,Jake McCarthy,1,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Colorado Rockies,Cincinnati Reds,home,666160,Mickey Moniak,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Colorado Rockies,Cincinnati Reds,home,696100,Hunter Goodman,3,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Colorado Rockies,Cincinnati Reds,home,681198,TJ Rumfield,4,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Colorado Rockies,Cincinnati Reds,home,691720,Kyle Karros,5,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Colorado Rockies,Cincinnati Reds,home,694249,Cole Carrigg,6,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Colorado Rockies,Cincinnati Reds,home,650489,Willi Castro,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Colorado Rockies,Cincinnati Reds,home,687859,Troy Johnston,8,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824330,Colorado Rockies,Cincinnati Reds,home,678662,Ezequiel Tovar,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Colorado Rockies,Cincinnati Reds,Coors Field,2026-07-19T19:10:00Z
+2026-07-19,824411,Pittsburgh Pirates,Cleveland Guardians,away,663968,Jake Mangum,1,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Pittsburgh Pirates,Cleveland Guardians,away,668804,Bryan Reynolds,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Pittsburgh Pirates,Cleveland Guardians,away,664040,Brandon Lowe,3,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Pittsburgh Pirates,Cleveland Guardians,away,693304,Nick Gonzales,4,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Pittsburgh Pirates,Cleveland Guardians,away,656811,Ryan O'Hearn,5,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Pittsburgh Pirates,Cleveland Guardians,away,695257,Billy Cook,6,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Pittsburgh Pirates,Cleveland Guardians,away,682997,Tyler Callihan,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Pittsburgh Pirates,Cleveland Guardians,away,694378,Jacob Gonzalez,8,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Pittsburgh Pirates,Cleveland Guardians,away,680779,Henry Davis,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Cleveland Guardians,Pittsburgh Pirates,home,683953,Travis Bazzana,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Cleveland Guardians,Pittsburgh Pirates,home,677587,Brayan Rocchio,2,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Cleveland Guardians,Pittsburgh Pirates,home,800050,Chase DeLauter,3,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Cleveland Guardians,Pittsburgh Pirates,home,700932,Kyle Manzardo,4,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Cleveland Guardians,Pittsburgh Pirates,home,656555,Rhys Hoskins,5,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Cleveland Guardians,Pittsburgh Pirates,home,696135,Kahlil Watson,6,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Cleveland Guardians,Pittsburgh Pirates,home,672356,Gabriel Arias,7,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Cleveland Guardians,Pittsburgh Pirates,home,672275,Patrick Bailey,8,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824411,Cleveland Guardians,Pittsburgh Pirates,home,680757,Steven Kwan,9,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Pittsburgh Pirates,Progressive Field,2026-07-19T17:40:00Z
+2026-07-19,824653,Minnesota Twins,Chicago Cubs,away,680777,Ryan Jeffers,1,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Minnesota Twins,Chicago Cubs,away,605137,Josh Bell,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Minnesota Twins,Chicago Cubs,away,668885,Austin Martin,3,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Minnesota Twins,Chicago Cubs,away,665019,Kody Clemens,4,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Minnesota Twins,Chicago Cubs,away,702176,Alan Roden,5,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Minnesota Twins,Chicago Cubs,away,686797,Brooks Lee,6,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Minnesota Twins,Chicago Cubs,away,668904,Royce Lewis,7,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Minnesota Twins,Chicago Cubs,away,807712,Luke Keaschall,8,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Minnesota Twins,Chicago Cubs,away,668952,Ryan Kreidler,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Chicago Cubs,Minnesota Twins,home,691718,Pete Crow-Armstrong,1,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Chicago Cubs,Minnesota Twins,home,673548,Seiya Suzuki,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Chicago Cubs,Minnesota Twins,home,608324,Alex Bregman,3,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Chicago Cubs,Minnesota Twins,home,683737,Michael Busch,4,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Chicago Cubs,Minnesota Twins,home,664023,Ian Happ,5,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Chicago Cubs,Minnesota Twins,home,608348,Carson Kelly,6,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Chicago Cubs,Minnesota Twins,home,663538,Nico Hoerner,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Chicago Cubs,Minnesota Twins,home,699393,Pedro Ramírez,8,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824653,Chicago Cubs,Minnesota Twins,home,621020,Dansby Swanson,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Chicago Cubs,Minnesota Twins,Wrigley Field,2026-07-19T18:20:00Z
+2026-07-19,824739,Tampa Bay Rays,Boston Red Sox,away,666018,Jonathan Aranda,1,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Tampa Bay Rays,Boston Red Sox,away,691406,Junior Caminero,2,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Tampa Bay Rays,Boston Red Sox,away,656775,Cedric Mullins,3,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Tampa Bay Rays,Boston Red Sox,away,676356,Jonny DeLuca,4,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Tampa Bay Rays,Boston Red Sox,away,683748,Victor Mesa Jr.,5,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Tampa Bay Rays,Boston Red Sox,away,802415,Chandler Simpson,6,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Tampa Bay Rays,Boston Red Sox,away,810938,Ben Williamson,7,P,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Tampa Bay Rays,Boston Red Sox,away,670764,Taylor Walls,8,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Tampa Bay Rays,Boston Red Sox,away,663743,Nick Fortes,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Boston Red Sox,Tampa Bay Rays,home,678011,Anthony Seigler,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Boston Red Sox,Tampa Bay Rays,home,678882,Ceddanne Rafaela,2,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Boston Red Sox,Tampa Bay Rays,home,677800,Wilyer Abreu,3,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Boston Red Sox,Tampa Bay Rays,home,702332,Caleb Durbin,4,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Boston Red Sox,Tampa Bay Rays,home,663853,Romy Gonzalez,5,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Boston Red Sox,Tampa Bay Rays,home,807799,Masataka Yoshida,6,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Boston Red Sox,Tampa Bay Rays,home,680776,Jarren Duran,7,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Boston Red Sox,Tampa Bay Rays,home,691907,Tsung-Che Cheng,8,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824739,Boston Red Sox,Tampa Bay Rays,home,657136,Connor Wong,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Boston Red Sox,Tampa Bay Rays,Fenway Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Texas Rangers,Atlanta Braves,away,694671,Wyatt Langford,1,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Texas Rangers,Atlanta Braves,away,679822,Justin Foscue,2,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Texas Rangers,Atlanta Braves,away,673962,Josh Jung,3,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Texas Rangers,Atlanta Braves,away,669394,Jake Burger,4,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Texas Rangers,Atlanta Braves,away,696030,Alejandro Osuna,5,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Texas Rangers,Atlanta Braves,away,677649,Ezequiel Duran,6,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Texas Rangers,Atlanta Braves,away,694497,Evan Carter,7,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Texas Rangers,Atlanta Braves,away,553869,Elias Díaz,8,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Texas Rangers,Atlanta Braves,away,670032,Nicky Lopez,9,PH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Atlanta Braves,Texas Rangers,home,645277,Ozzie Albies,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Atlanta Braves,Texas Rangers,home,686948,Drake Baldwin,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Atlanta Braves,Texas Rangers,home,671739,Michael Harris II,3,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Atlanta Braves,Texas Rangers,home,621566,Matt Olson,4,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Atlanta Braves,Texas Rangers,home,643289,Mauricio Dubón,5,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Atlanta Braves,Texas Rangers,home,642201,Eli White,6,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Atlanta Braves,Texas Rangers,home,642086,Dominic Smith,7,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Atlanta Braves,Texas Rangers,home,663586,Austin Riley,8,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824897,Atlanta Braves,Texas Rangers,home,805347,Jim Jarvis,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,Texas Rangers,Truist Park,2026-07-19T17:35:00Z
+2026-07-19,824978,Washington Nationals,Athletics,away,695578,James Wood,1,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Washington Nationals,Athletics,away,671277,Luis García Jr.,2,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Washington Nationals,Athletics,away,678554,Curtis Mead,3,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Washington Nationals,Athletics,away,682928,CJ Abrams,4,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Washington Nationals,Athletics,away,677588,José Tena,5,PH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Washington Nationals,Athletics,away,695734,Daylen Lile,6,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Washington Nationals,Athletics,away,686611,Dylan Crews,7,PH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Washington Nationals,Athletics,away,660688,Keibert Ruiz,8,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Washington Nationals,Athletics,away,678391,Jorbit Vivas,9,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Athletics,Washington Nationals,home,805779,Jacob Wilson,1,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Athletics,Washington Nationals,home,691016,Tyler Soderstrom,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Athletics,Washington Nationals,home,669127,Shea Langeliers,3,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Athletics,Washington Nationals,home,666126,Carlos Cortes,4,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Athletics,Washington Nationals,home,811965,Joshua Kuroda-Grauer,5,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Athletics,Washington Nationals,home,641680,Jonah Heim,6,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Athletics,Washington Nationals,home,675961,Alika Williams,7,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Athletics,Washington Nationals,home,671732,Lawrence Butler,8,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,824978,Athletics,Washington Nationals,home,703607,Henry Bolte,9,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Athletics,Washington Nationals,Sutter Health Park,2026-07-19T20:05:00Z
+2026-07-19,825057,St. Louis Cardinals,Arizona Diamondbacks,away,802139,JJ Wetherholt,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,St. Louis Cardinals,Arizona Diamondbacks,away,671056,Iván Herrera,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,St. Louis Cardinals,Arizona Diamondbacks,away,676475,Alec Burleson,3,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,St. Louis Cardinals,Arizona Diamondbacks,away,691023,Jordan Walker,4,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,St. Louis Cardinals,Arizona Diamondbacks,away,663457,Lars Nootbaar,5,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,St. Louis Cardinals,Arizona Diamondbacks,away,691026,Masyn Winn,6,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,St. Louis Cardinals,Arizona Diamondbacks,away,701675,Nathan Church,7,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,St. Louis Cardinals,Arizona Diamondbacks,away,665877,José Fermín,8,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,St. Louis Cardinals,Arizona Diamondbacks,away,699625,Jimmy Crooks,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,Arizona Diamondbacks,St. Louis Cardinals,home,606466,Ketel Marte,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,Arizona Diamondbacks,St. Louis Cardinals,home,672695,Geraldo Perdomo,2,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,Arizona Diamondbacks,St. Louis Cardinals,home,682998,Corbin Carroll,3,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,Arizona Diamondbacks,St. Louis Cardinals,home,672515,Gabriel Moreno,4,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,Arizona Diamondbacks,St. Louis Cardinals,home,596146,Max Kepler,5,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,Arizona Diamondbacks,St. Louis Cardinals,home,571448,Nolan Arenado,6,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,Arizona Diamondbacks,St. Louis Cardinals,home,545121,Ildemaro Vargas,7,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,Arizona Diamondbacks,St. Louis Cardinals,home,678489,Jorge Barrosa,8,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
+2026-07-19,825057,Arizona Diamondbacks,St. Louis Cardinals,home,694374,Tim Tawa,9,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Arizona Diamondbacks,St. Louis Cardinals,Chase Field,2026-07-19T20:10:00Z
