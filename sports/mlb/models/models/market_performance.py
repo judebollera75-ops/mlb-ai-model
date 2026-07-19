@@ -263,24 +263,27 @@ def build_market_performance() -> pd.DataFrame:
 
     # Only completed bets are included.
     graded = history.loc[
-    history["market"].ne("")
-    & history["normalized_outcome"].isin(
-        {"WIN", "LOSS", "PUSH"}
+        history["market"].ne("")
+        & history["normalized_outcome"].isin(
+            {"WIN", "LOSS", "PUSH"}
+        )
+    ].copy()
+
+    if "sportsbook_odds" not in graded.columns:
+        graded["sportsbook_odds"] = np.nan
+
+    graded["sportsbook_odds"] = pd.to_numeric(
+        graded["sportsbook_odds"],
+        errors="coerce",
     )
-].copy()
 
-graded["sportsbook_odds"] = pd.to_numeric(
-    graded.get("sportsbook_odds"),
-    errors="coerce",
-)
-
-# Exclude extreme longshot prices from market-weight calculations.
-# These bets can remain in the full betting history, but they should not
-# dominate the confidence adjustment.
-graded = graded.loc[
-    graded["sportsbook_odds"].isna()
-    | graded["sportsbook_odds"].between(-300, 300)
-].copy()
+    # Exclude extreme longshot prices from market-weight calculations.
+    # These bets remain in the full history but do not dominate the
+    # confidence adjustment.
+    graded = graded.loc[
+        graded["sportsbook_odds"].isna()
+        | graded["sportsbook_odds"].between(-300, 300)
+    ].copy()
 
     if graded.empty:
         empty_output = pd.DataFrame(
