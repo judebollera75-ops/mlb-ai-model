@@ -3483,6 +3483,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-06-28,824011,623168,Tyler Heineman,Los Angeles Angels,Athletics,3,3,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-03,824013,623168,Tyler Heineman,Los Angeles Angels,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-04,824012,623168,Tyler Heineman,Los Angeles Angels,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-10,823685,623168,Tyler Heineman,Los Angeles Angels,Minnesota Twins,4,4,2,0,0,0,2,1,0,0,0,0,0,0
 2026-03-26,824865,624413,Pete Alonso,Baltimore Orioles,Minnesota Twins,4,3,0,0,0,0,0,0,0,1,2,0,0,0
 2026-03-28,824862,624413,Pete Alonso,Baltimore Orioles,Minnesota Twins,5,5,1,0,0,0,1,0,0,0,2,0,0,0
 2026-03-29,824864,624413,Pete Alonso,Baltimore Orioles,Minnesota Twins,4,3,2,0,0,0,2,1,1,1,0,0,0,0
@@ -3795,6 +3796,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,824495,624641,Edmundo Sosa,Philadelphia Phillies,Cincinnati Reds,4,3,1,0,0,0,1,0,1,0,0,1,0,0
 2026-07-08,824496,624641,Edmundo Sosa,Philadelphia Phillies,Cincinnati Reds,4,3,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-12,824250,624641,Edmundo Sosa,Philadelphia Phillies,Detroit Tigers,4,2,0,0,0,0,0,0,0,1,1,0,0,0
+2026-07-18,823441,624641,Edmundo Sosa,Philadelphia Phillies,New York Mets,4,4,2,0,0,0,2,0,0,0,1,0,0,0
 2026-03-26,823325,630105,Jake Cronenworth,San Diego Padres,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-27,823324,630105,Jake Cronenworth,San Diego Padres,Detroit Tigers,4,4,2,0,0,0,2,0,0,0,2,0,0,0
 2026-03-28,823323,630105,Jake Cronenworth,San Diego Padres,Detroit Tigers,4,3,1,0,0,0,1,2,0,1,0,0,0,0
@@ -4155,6 +4157,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,823117,641598,Mitch Garver,Seattle Mariners,Toronto Blue Jays,3,3,1,0,0,1,4,1,2,0,1,0,0,0
 2026-07-07,823847,641598,Mitch Garver,Seattle Mariners,Miami Marlins,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-11,822953,641598,Mitch Garver,Seattle Mariners,Tampa Bay Rays,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-12,822951,641598,Mitch Garver,Seattle Mariners,Tampa Bay Rays,5,4,0,0,0,0,0,1,0,1,1,0,0,0
+2026-07-18,823116,641598,Mitch Garver,Seattle Mariners,San Francisco Giants,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-27,824946,641680,Jonah Heim,Athletics,Kansas City Royals,4,2,0,0,0,0,0,1,0,2,0,0,0,0
 2026-03-30,824943,641680,Jonah Heim,Athletics,Athletics,4,3,0,0,0,0,0,0,0,1,2,0,0,0
 2026-04-03,825103,641680,Jonah Heim,Athletics,Arizona Diamondbacks,2,2,0,0,0,0,0,0,0,0,0,0,0,0
@@ -4511,6 +4515,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-04,823118,642215,Weston Wilson,Seattle Mariners,Toronto Blue Jays,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-07,823847,642215,Weston Wilson,Seattle Mariners,Miami Marlins,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-11,822953,642215,Weston Wilson,Seattle Mariners,Tampa Bay Rays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-12,822951,642215,Weston Wilson,Seattle Mariners,Tampa Bay Rays,4,4,1,0,0,1,4,1,1,0,2,0,0,0
 2026-05-16,824038,642350,Jose Siri,Los Angeles Angels,Los Angeles Dodgers,2,2,1,0,0,0,1,0,0,0,0,0,0,0
 2026-05-17,824034,642350,Jose Siri,Los Angeles Angels,Los Angeles Dodgers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-05-18,824035,642350,Jose Siri,Los Angeles Angels,Athletics,0,0,0,0,0,0,0,1,0,0,0,0,0,0
@@ -5327,6 +5332,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,823117,649966,Luis Urías,Toronto Blue Jays,Seattle Mariners,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-10,823278,649966,Luis Urías,Toronto Blue Jays,San Diego Padres,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-11,823276,649966,Luis Urías,Toronto Blue Jays,San Diego Padres,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-17,822789,649966,Luis Urías,Toronto Blue Jays,Chicago White Sox,4,4,1,0,0,1,4,1,1,0,0,0,0,0
 2026-03-25,823244,650333,Luis Arraez,San Francisco Giants,New York Yankees,4,3,1,0,0,0,1,0,0,1,0,0,0,0
 2026-03-27,823243,650333,Luis Arraez,San Francisco Giants,New York Yankees,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-28,823241,650333,Luis Arraez,San Francisco Giants,New York Yankees,4,4,2,0,0,0,2,0,0,0,1,1,0,0
@@ -5927,6 +5933,27 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-10,823845,656555,Rhys Hoskins,Cleveland Guardians,Miami Marlins,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-18,824414,656555,Rhys Hoskins,Cleveland Guardians,Pittsburgh Pirates,4,4,1,0,0,0,1,0,0,0,1,1,0,0
 2026-07-18,824412,656555,Rhys Hoskins,Cleveland Guardians,Pittsburgh Pirates,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-22,824761,656577,Alex Jackson,Minnesota Twins,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-05-25,824598,656577,Alex Jackson,Minnesota Twins,Chicago White Sox,3,3,2,1,0,0,3,0,0,0,1,0,0,0
+2026-05-27,824596,656577,Alex Jackson,Minnesota Twins,Chicago White Sox,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-31,823373,656577,Alex Jackson,Minnesota Twins,Pittsburgh Pirates,3,3,1,0,0,0,1,1,0,0,2,0,0,0
+2026-06-02,823700,656577,Alex Jackson,Minnesota Twins,Chicago White Sox,4,4,2,0,0,0,2,0,1,0,1,0,0,0
+2026-06-05,823699,656577,Alex Jackson,Minnesota Twins,Kansas City Royals,3,3,1,0,0,0,1,1,0,0,0,0,0,0
+2026-06-06,823697,656577,Alex Jackson,Minnesota Twins,Kansas City Royals,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-07,823696,656577,Alex Jackson,Minnesota Twins,Kansas City Royals,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-10,824266,656577,Alex Jackson,Minnesota Twins,Detroit Tigers,4,3,2,0,0,0,2,1,0,0,0,0,0,1
+2026-06-11,824265,656577,Alex Jackson,Minnesota Twins,Detroit Tigers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-13,823694,656577,Alex Jackson,Minnesota Twins,St. Louis Cardinals,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-15,822887,656577,Alex Jackson,Minnesota Twins,Texas Rangers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-16,822888,656577,Alex Jackson,Minnesota Twins,Texas Rangers,5,5,3,2,0,0,5,2,1,0,1,0,0,0
+2026-06-19,825069,656577,Alex Jackson,Minnesota Twins,Arizona Diamondbacks,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-21,825067,656577,Alex Jackson,Minnesota Twins,Arizona Diamondbacks,4,3,2,0,0,0,2,0,1,0,0,0,0,1
+2026-06-24,823691,656577,Alex Jackson,Minnesota Twins,Los Angeles Dodgers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-28,823686,656577,Alex Jackson,Minnesota Twins,Colorado Rockies,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-30,824175,656577,Alex Jackson,Minnesota Twins,Houston Astros,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-04,823526,656577,Alex Jackson,Minnesota Twins,New York Yankees,5,5,1,0,0,1,4,1,1,0,1,0,0,0
+2026-07-08,823684,656577,Alex Jackson,Minnesota Twins,Cleveland Guardians,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-09,823683,656577,Alex Jackson,Minnesota Twins,Cleveland Guardians,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-27,823324,656716,Zach McKinstry,Detroit Tigers,San Diego Padres,2,2,1,0,0,0,1,0,0,0,0,0,0,0
 2026-03-28,823323,656716,Zach McKinstry,Detroit Tigers,San Diego Padres,2,2,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-31,825107,656716,Zach McKinstry,Detroit Tigers,Arizona Diamondbacks,4,4,0,0,0,0,0,0,0,0,2,0,0,0
@@ -9884,6 +9911,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,822877,666139,Josh Lowe,Los Angeles Angels,Texas Rangers,3,3,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-10,823685,666139,Josh Lowe,Los Angeles Angels,Minnesota Twins,4,3,0,0,0,0,0,0,0,1,0,0,0,0
 2026-07-12,823681,666139,Josh Lowe,Los Angeles Angels,Minnesota Twins,4,4,1,0,0,1,4,1,1,0,0,0,0,0
+2026-07-17,824009,666139,Josh Lowe,Los Angeles Angels,Detroit Tigers,3,3,0,0,0,0,0,0,1,0,1,0,0,0
 2026-04-03,824377,666160,Mickey Moniak,Colorado Rockies,Philadelphia Phillies,4,4,1,0,0,0,1,1,0,0,1,0,0,0
 2026-04-04,824378,666160,Mickey Moniak,Colorado Rockies,Philadelphia Phillies,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-05,824379,666160,Mickey Moniak,Colorado Rockies,Philadelphia Phillies,4,4,2,0,0,2,8,2,2,0,1,0,0,0
@@ -11449,6 +11477,15 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-12,823842,669065,Kyle Stowers,Miami Marlins,Cleveland Guardians,2,2,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-17,823766,669065,Kyle Stowers,Miami Marlins,Milwaukee Brewers,4,4,0,0,0,0,0,0,0,0,3,0,0,0
 2026-07-18,823763,669065,Kyle Stowers,Miami Marlins,Milwaukee Brewers,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-15,824855,669087,Sam Huff,Baltimore Orioles,Arizona Diamondbacks,4,4,1,1,0,0,2,0,1,0,1,0,0,0
+2026-04-17,824454,669087,Sam Huff,Baltimore Orioles,Cleveland Guardians,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-19,824452,669087,Sam Huff,Baltimore Orioles,Cleveland Guardians,4,4,1,0,0,0,1,1,0,0,3,0,0,0
+2026-06-07,822807,669087,Sam Huff,Baltimore Orioles,Toronto Blue Jays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-08,824829,669087,Sam Huff,Baltimore Orioles,Seattle Mariners,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-09,824830,669087,Sam Huff,Baltimore Orioles,Seattle Mariners,2,2,1,1,0,0,2,0,0,0,0,0,0,0
+2026-06-10,824831,669087,Sam Huff,Baltimore Orioles,Seattle Mariners,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-06-21,823934,669087,Sam Huff,Baltimore Orioles,Los Angeles Dodgers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-22,824016,669087,Sam Huff,Baltimore Orioles,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,3,0,0,0
 2026-03-27,822839,669127,Shea Langeliers,Athletics,Toronto Blue Jays,4,4,3,0,0,2,9,2,2,0,1,0,0,0
 2026-03-28,822838,669127,Shea Langeliers,Athletics,Toronto Blue Jays,5,4,2,0,0,1,5,1,4,1,1,0,0,0
 2026-03-29,822837,669127,Shea Langeliers,Athletics,Toronto Blue Jays,4,4,1,0,0,0,1,0,0,0,2,0,0,0
@@ -12224,6 +12261,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-05,823931,669743,Alex Call,Los Angeles Dodgers,San Diego Padres,3,2,0,0,0,0,0,0,0,1,2,0,0,0
 2026-07-07,823929,669743,Alex Call,Los Angeles Dodgers,Colorado Rockies,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-08,823928,669743,Alex Call,Los Angeles Dodgers,Colorado Rockies,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-10,823927,669743,Alex Call,Los Angeles Dodgers,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-11,823926,669743,Alex Call,Los Angeles Dodgers,Arizona Diamondbacks,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-25,823960,670032,Nicky Lopez,Texas Rangers,Los Angeles Dodgers,2,2,0,0,0,0,0,0,0,0,2,0,0,0
 2026-04-28,823310,670032,Nicky Lopez,Texas Rangers,San Diego Padres,2,2,0,0,0,0,0,1,0,0,0,0,0,0
 2026-05-05,824682,670032,Nicky Lopez,Texas Rangers,Cincinnati Reds,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -14210,6 +14249,30 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-17,824766,676356,Jonny DeLuca,Tampa Bay Rays,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-17,824737,676356,Jonny DeLuca,Tampa Bay Rays,Boston Red Sox,4,4,2,0,0,0,2,0,2,0,1,0,0,0
 2026-07-18,824738,676356,Jonny DeLuca,Tampa Bay Rays,Boston Red Sox,5,5,2,1,0,1,6,1,1,0,1,0,0,0
+2026-05-29,823055,676369,Nelson Velázquez,St. Louis Cardinals,Chicago Cubs,4,3,2,0,0,1,5,2,3,0,0,0,0,1
+2026-05-31,823053,676369,Nelson Velázquez,St. Louis Cardinals,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-01,823050,676369,Nelson Velázquez,St. Louis Cardinals,Texas Rangers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-02,823052,676369,Nelson Velázquez,St. Louis Cardinals,Texas Rangers,2,2,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-03,823051,676369,Nelson Velázquez,St. Louis Cardinals,Texas Rangers,4,3,2,1,0,0,3,1,1,1,1,0,0,0
+2026-06-06,823048,676369,Nelson Velázquez,St. Louis Cardinals,Cincinnati Reds,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-07,823047,676369,Nelson Velázquez,St. Louis Cardinals,Cincinnati Reds,1,1,1,0,0,0,1,1,0,0,0,0,0,0
+2026-06-10,823618,676369,Nelson Velázquez,St. Louis Cardinals,New York Mets,4,4,1,0,0,1,4,1,2,0,1,0,0,0
+2026-06-12,823695,676369,Nelson Velázquez,St. Louis Cardinals,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-13,823694,676369,Nelson Velázquez,St. Louis Cardinals,Minnesota Twins,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-17,823044,676369,Nelson Velázquez,St. Louis Cardinals,San Diego Padres,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-18,824098,676369,Nelson Velázquez,St. Louis Cardinals,Kansas City Royals,5,4,1,1,0,0,2,0,0,1,1,0,0,0
+2026-06-19,824097,676369,Nelson Velázquez,St. Louis Cardinals,Kansas City Royals,1,0,0,0,0,0,0,1,0,1,0,0,0,0
+2026-06-23,823043,676369,Nelson Velázquez,St. Louis Cardinals,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-24,823041,676369,Nelson Velázquez,St. Louis Cardinals,Arizona Diamondbacks,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-30,824907,676369,Nelson Velázquez,St. Louis Cardinals,Atlanta Braves,3,2,2,0,0,1,5,1,1,1,0,0,0,0
+2026-07-01,824905,676369,Nelson Velázquez,St. Louis Cardinals,Atlanta Braves,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-03,824659,676369,Nelson Velázquez,St. Louis Cardinals,Chicago Cubs,6,3,0,0,0,0,0,1,2,2,0,0,0,0
+2026-07-05,824656,676369,Nelson Velázquez,St. Louis Cardinals,Chicago Cubs,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-06,823036,676369,Nelson Velázquez,St. Louis Cardinals,Milwaukee Brewers,3,3,1,1,0,0,2,1,1,0,0,0,0,0
+2026-07-07,823062,676369,Nelson Velázquez,St. Louis Cardinals,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-07,823035,676369,Nelson Velázquez,St. Louis Cardinals,Milwaukee Brewers,4,4,1,0,0,1,4,1,2,0,0,0,0,0
+2026-07-08,823032,676369,Nelson Velázquez,St. Louis Cardinals,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-10,823033,676369,Nelson Velázquez,St. Louis Cardinals,Atlanta Braves,2,2,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-27,822839,676391,Ernie Clement,Toronto Blue Jays,Athletics,4,4,2,2,0,0,4,1,0,0,0,0,0,0
 2026-03-28,822838,676391,Ernie Clement,Toronto Blue Jays,Athletics,6,6,2,0,0,0,2,0,1,0,0,0,0,0
 2026-03-29,822837,676391,Ernie Clement,Toronto Blue Jays,Athletics,3,3,0,0,0,0,0,0,0,0,1,0,0,0
@@ -14868,6 +14931,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-06-29,823121,677594,Julio Rodríguez,Seattle Mariners,Los Angeles Angels,4,3,1,0,0,0,1,0,0,1,0,0,0,0
 2026-06-30,823122,677594,Julio Rodríguez,Seattle Mariners,Los Angeles Angels,5,5,3,0,0,0,3,2,0,0,1,0,0,0
 2026-07-02,823119,677594,Julio Rodríguez,Seattle Mariners,Los Angeles Angels,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-18,823116,677594,Julio Rodríguez,Seattle Mariners,San Francisco Giants,5,4,0,0,0,0,0,0,1,0,2,0,0,0
 2026-03-26,823486,677649,Ezequiel Duran,Texas Rangers,Philadelphia Phillies,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-29,823487,677649,Ezequiel Duran,Texas Rangers,Philadelphia Phillies,4,4,1,1,0,0,2,1,1,0,1,0,0,0
 2026-03-31,824861,677649,Ezequiel Duran,Texas Rangers,Baltimore Orioles,4,4,1,0,0,1,4,1,1,0,1,0,0,0
@@ -15699,6 +15763,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,824578,678577,Junior Perez,Chicago White Sox,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-09,824577,678577,Junior Perez,Chicago White Sox,Boston Red Sox,2,2,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-10,824575,678577,Junior Perez,Chicago White Sox,Athletics,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-11,824576,678577,Junior Perez,Chicago White Sox,Athletics,2,2,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-27,823893,678662,Ezequiel Tovar,Colorado Rockies,Miami Marlins,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-03-28,823892,678662,Ezequiel Tovar,Colorado Rockies,Miami Marlins,4,4,1,0,0,1,4,1,2,0,1,0,0,0
 2026-03-29,823891,678662,Ezequiel Tovar,Colorado Rockies,Miami Marlins,4,4,1,0,0,0,1,0,0,0,2,0,0,0
@@ -16200,6 +16265,57 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-11,822953,680700,Richie Palacios,Tampa Bay Rays,Seattle Mariners,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-12,822951,680700,Richie Palacios,Tampa Bay Rays,Seattle Mariners,4,2,0,0,0,0,0,0,0,2,1,0,0,0
 2026-07-18,824738,680700,Richie Palacios,Tampa Bay Rays,Boston Red Sox,4,3,1,1,0,0,2,1,0,1,1,0,0,0
+2026-04-04,825104,680728,Adrian Del Castillo,Arizona Diamondbacks,Atlanta Braves,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-07,823648,680728,Adrian Del Castillo,Arizona Diamondbacks,New York Mets,5,5,1,0,0,0,1,0,2,0,2,0,0,0
+2026-04-09,823645,680728,Adrian Del Castillo,Arizona Diamondbacks,New York Mets,4,4,1,1,0,0,2,1,1,0,2,0,0,0
+2026-04-11,823480,680728,Adrian Del Castillo,Arizona Diamondbacks,Philadelphia Phillies,4,4,3,0,0,0,3,0,1,0,0,0,0,0
+2026-04-12,823479,680728,Adrian Del Castillo,Arizona Diamondbacks,Philadelphia Phillies,1,1,1,0,0,0,1,0,1,0,0,0,0,0
+2026-04-13,824856,680728,Adrian Del Castillo,Arizona Diamondbacks,Baltimore Orioles,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-04-15,824855,680728,Adrian Del Castillo,Arizona Diamondbacks,Baltimore Orioles,5,5,1,0,0,1,4,1,3,0,0,0,0,0
+2026-04-18,825098,680728,Adrian Del Castillo,Arizona Diamondbacks,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-19,825100,680728,Adrian Del Castillo,Arizona Diamondbacks,Toronto Blue Jays,4,3,2,1,0,0,3,1,1,1,0,0,0,0
+2026-04-21,825099,680728,Adrian Del Castillo,Arizona Diamondbacks,Chicago White Sox,5,5,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-23,825096,680728,Adrian Del Castillo,Arizona Diamondbacks,Chicago White Sox,4,4,1,1,0,0,2,0,1,0,2,0,0,0
+2026-04-25,825093,680728,Adrian Del Castillo,Arizona Diamondbacks,San Diego Padres,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-26,825094,680728,Adrian Del Castillo,Arizona Diamondbacks,San Diego Padres,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-28,823798,680728,Adrian Del Castillo,Arizona Diamondbacks,Milwaukee Brewers,4,2,0,0,0,0,0,1,0,2,1,0,0,0
+2026-04-29,823796,680728,Adrian Del Castillo,Arizona Diamondbacks,Milwaukee Brewers,5,5,1,0,0,1,4,1,1,0,2,0,0,0
+2026-04-30,823795,680728,Adrian Del Castillo,Arizona Diamondbacks,Milwaukee Brewers,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-05-01,824686,680728,Adrian Del Castillo,Arizona Diamondbacks,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-05-03,824687,680728,Adrian Del Castillo,Arizona Diamondbacks,Chicago Cubs,1,1,1,0,0,1,4,1,2,0,0,0,0,0
+2026-05-05,825092,680728,Adrian Del Castillo,Arizona Diamondbacks,Pittsburgh Pirates,5,4,1,0,0,0,1,0,2,0,1,0,0,0
+2026-05-06,825091,680728,Adrian Del Castillo,Arizona Diamondbacks,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-07,825090,680728,Adrian Del Castillo,Arizona Diamondbacks,Pittsburgh Pirates,3,3,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-08,825088,680728,Adrian Del Castillo,Arizona Diamondbacks,New York Mets,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-09,825089,680728,Adrian Del Castillo,Arizona Diamondbacks,New York Mets,4,2,1,1,0,0,2,0,0,2,1,0,0,0
+2026-05-10,825085,680728,Adrian Del Castillo,Arizona Diamondbacks,New York Mets,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-11,822901,680728,Adrian Del Castillo,Arizona Diamondbacks,Texas Rangers,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-13,822900,680728,Adrian Del Castillo,Arizona Diamondbacks,Texas Rangers,3,2,0,0,0,0,0,0,0,1,1,0,0,0
+2026-05-16,824359,680728,Adrian Del Castillo,Arizona Diamondbacks,Colorado Rockies,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-17,824358,680728,Adrian Del Castillo,Arizona Diamondbacks,Colorado Rockies,5,5,0,0,0,0,0,0,0,0,3,0,0,0
+2026-05-18,825087,680728,Adrian Del Castillo,Arizona Diamondbacks,San Francisco Giants,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-19,825086,680728,Adrian Del Castillo,Arizona Diamondbacks,San Francisco Giants,4,4,2,0,0,0,2,0,1,0,1,0,0,0
+2026-05-20,825084,680728,Adrian Del Castillo,Arizona Diamondbacks,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-21,825083,680728,Adrian Del Castillo,Arizona Diamondbacks,Colorado Rockies,3,1,0,0,0,0,0,0,0,2,1,0,0,0
+2026-05-22,825082,680728,Adrian Del Castillo,Arizona Diamondbacks,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-25,823219,680728,Adrian Del Castillo,Arizona Diamondbacks,San Francisco Giants,3,2,1,0,0,0,1,0,1,1,0,0,0,0
+2026-05-26,823216,680728,Adrian Del Castillo,Arizona Diamondbacks,San Francisco Giants,3,3,1,0,0,1,4,1,1,0,0,0,0,0
+2026-05-27,823217,680728,Adrian Del Castillo,Arizona Diamondbacks,San Francisco Giants,4,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-29,823135,680728,Adrian Del Castillo,Arizona Diamondbacks,Seattle Mariners,3,2,0,0,0,0,0,1,0,1,1,0,0,0
+2026-05-30,823132,680728,Adrian Del Castillo,Arizona Diamondbacks,Seattle Mariners,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-31,823133,680728,Adrian Del Castillo,Arizona Diamondbacks,Seattle Mariners,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-04,825076,680728,Adrian Del Castillo,Arizona Diamondbacks,Los Angeles Dodgers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-05,825073,680728,Adrian Del Castillo,Arizona Diamondbacks,Washington Nationals,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-11,823855,680728,Adrian Del Castillo,Arizona Diamondbacks,Miami Marlins,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-13,824508,680728,Adrian Del Castillo,Arizona Diamondbacks,Cincinnati Reds,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-06-16,825070,680728,Adrian Del Castillo,Arizona Diamondbacks,Los Angeles Angels,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-20,825068,680728,Adrian Del Castillo,Arizona Diamondbacks,Minnesota Twins,4,3,1,0,0,0,1,2,0,1,0,0,0,0
+2026-06-21,825067,680728,Adrian Del Castillo,Arizona Diamondbacks,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-22,823040,680728,Adrian Del Castillo,Arizona Diamondbacks,St. Louis Cardinals,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-27,822960,680728,Adrian Del Castillo,Arizona Diamondbacks,Tampa Bay Rays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-28,822959,680728,Adrian Del Castillo,Arizona Diamondbacks,Tampa Bay Rays,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-01,825064,680728,Adrian Del Castillo,Arizona Diamondbacks,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-04,825063,680728,Adrian Del Castillo,Arizona Diamondbacks,Milwaukee Brewers,3,3,1,0,0,1,4,1,3,0,1,0,0,0
 2026-03-26,823163,680757,Steven Kwan,Cleveland Guardians,Seattle Mariners,5,5,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-27,823162,680757,Steven Kwan,Cleveland Guardians,Seattle Mariners,4,4,2,0,0,0,2,0,0,0,0,0,0,0
 2026-03-28,823161,680757,Steven Kwan,Cleveland Guardians,Seattle Mariners,5,5,2,0,0,0,2,1,1,0,0,0,0,0
@@ -17147,6 +17263,16 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-12,823842,681715,Heriberto Hernández,Miami Marlins,Cleveland Guardians,4,4,1,1,0,0,2,1,0,0,3,0,0,0
 2026-07-17,823766,681715,Heriberto Hernández,Miami Marlins,Milwaukee Brewers,4,4,1,0,0,0,1,0,0,0,1,1,0,0
 2026-07-18,823763,681715,Heriberto Hernández,Miami Marlins,Milwaukee Brewers,5,4,0,0,0,0,0,0,0,1,3,0,0,0
+2026-06-19,824663,681909,Justin Dean,Chicago Cubs,Toronto Blue Jays,2,2,1,0,1,0,3,1,3,0,0,0,0,0
+2026-06-24,823613,681909,Justin Dean,Chicago Cubs,New York Mets,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-25,823612,681909,Justin Dean,Chicago Cubs,New York Mets,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-27,823770,681909,Justin Dean,Chicago Cubs,Milwaukee Brewers,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-28,823769,681909,Justin Dean,Chicago Cubs,Milwaukee Brewers,1,1,0,0,0,0,0,1,0,0,1,0,0,0
+2026-06-30,824661,681909,Justin Dean,Chicago Cubs,San Diego Padres,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-01,824660,681909,Justin Dean,Chicago Cubs,San Diego Padres,1,0,0,0,0,0,0,1,0,1,0,0,0,0
+2026-07-03,824659,681909,Justin Dean,Chicago Cubs,St. Louis Cardinals,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-08,824815,681909,Justin Dean,Chicago Cubs,Baltimore Orioles,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-09,824816,681909,Justin Dean,Chicago Cubs,Baltimore Orioles,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-06-10,822970,681987,Nate Eaton,Boston Red Sox,Tampa Bay Rays,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-06-17,824746,681987,Nate Eaton,Boston Red Sox,Toronto Blue Jays,2,2,0,0,0,0,0,0,0,0,0,0,0,0
 2026-06-18,824748,681987,Nate Eaton,Boston Red Sox,Toronto Blue Jays,0,0,0,0,0,0,0,0,0,0,0,1,0,0
@@ -17363,6 +17489,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-01,824660,682634,Kevin Alcántara,Chicago Cubs,San Diego Padres,1,1,1,0,0,0,1,1,1,0,0,0,0,0
 2026-07-03,824659,682634,Kevin Alcántara,Chicago Cubs,St. Louis Cardinals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-05,824656,682634,Kevin Alcántara,Chicago Cubs,St. Louis Cardinals,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-12,824491,682634,Kevin Alcántara,Chicago Cubs,Cincinnati Reds,2,2,1,0,0,0,1,0,2,0,0,0,0,0
 2026-03-26,823812,682668,Luisangel Acuña,Chicago White Sox,Milwaukee Brewers,3,3,1,0,0,0,1,0,0,0,0,0,0,0
 2026-03-28,823811,682668,Luisangel Acuña,Chicago White Sox,Milwaukee Brewers,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-30,823890,682668,Luisangel Acuña,Chicago White Sox,Miami Marlins,4,2,0,0,0,0,0,2,0,1,1,2,0,1
@@ -18065,6 +18192,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-11,822711,683083,Nasim Nuñez,Washington Nationals,New York Yankees,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-07-12,822708,683083,Nasim Nuñez,Washington Nationals,New York Yankees,1,1,0,0,0,0,0,1,0,0,0,1,0,0
 2026-07-17,824981,683083,Nasim Nuñez,Washington Nationals,Athletics,6,6,3,0,0,0,3,3,0,0,1,1,0,0
+2026-07-18,824979,683083,Nasim Nuñez,Washington Nationals,Athletics,2,1,0,0,0,0,0,0,0,1,0,0,0,0
 2026-03-26,823649,683146,Brett Baty,New York Mets,Pittsburgh Pirates,5,5,1,0,1,0,3,1,3,0,2,0,0,0
 2026-03-28,823651,683146,Brett Baty,New York Mets,Pittsburgh Pirates,4,4,1,0,0,0,1,1,0,0,1,1,0,0
 2026-03-29,823647,683146,Brett Baty,New York Mets,Pittsburgh Pirates,4,4,2,0,0,0,2,0,0,0,2,0,0,0
@@ -19298,6 +19426,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,822877,687093,Vaughn Grissom,Los Angeles Angels,Texas Rangers,5,4,1,0,0,0,1,0,0,1,2,0,0,0
 2026-07-10,823685,687093,Vaughn Grissom,Los Angeles Angels,Minnesota Twins,4,3,2,0,0,1,5,1,2,0,1,0,0,0
 2026-07-11,823682,687093,Vaughn Grissom,Los Angeles Angels,Minnesota Twins,5,5,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-17,824009,687093,Vaughn Grissom,Los Angeles Angels,Detroit Tigers,3,2,1,0,0,0,1,0,0,1,0,0,0,0
+2026-07-18,824008,687093,Vaughn Grissom,Los Angeles Angels,Detroit Tigers,4,4,1,0,0,0,1,0,0,0,0,0,0,0
 2026-03-30,823972,687221,Dalton Rushing,Los Angeles Dodgers,Cleveland Guardians,2,2,1,0,0,0,1,0,0,0,0,0,0,0
 2026-04-05,822756,687221,Dalton Rushing,Los Angeles Dodgers,Washington Nationals,3,3,1,0,0,1,4,1,2,0,1,0,0,0
 2026-04-06,822832,687221,Dalton Rushing,Los Angeles Dodgers,Toronto Blue Jays,5,4,4,0,0,2,10,3,2,0,0,0,0,1
@@ -19612,6 +19742,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-12,824574,687515,Colby Thomas,Athletics,Chicago White Sox,2,2,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-17,824981,687515,Colby Thomas,Athletics,Washington Nationals,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-10,823200,687529,Grant McCray,San Francisco Giants,Colorado Rockies,1,1,0,0,0,0,0,1,0,0,0,1,0,0
+2026-07-12,823199,687529,Grant McCray,San Francisco Giants,Colorado Rockies,0,0,0,0,0,0,0,1,0,0,0,1,0,0
+2026-07-18,823116,687529,Grant McCray,San Francisco Giants,Seattle Mariners,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-15,824532,687551,Drew Gilbert,San Francisco Giants,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-16,824530,687551,Drew Gilbert,San Francisco Giants,Cincinnati Reds,3,2,0,0,0,0,0,0,0,1,1,0,0,0
 2026-04-17,822752,687551,Drew Gilbert,San Francisco Giants,Washington Nationals,4,3,1,0,0,1,4,2,1,1,1,0,0,0
@@ -20607,6 +20739,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,823035,691458,Blaze Jordan,St. Louis Cardinals,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-08,823032,691458,Blaze Jordan,St. Louis Cardinals,Milwaukee Brewers,3,3,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-10,823033,691458,Blaze Jordan,St. Louis Cardinals,Atlanta Braves,3,3,1,1,0,0,2,0,0,0,2,0,0,0
+2026-07-11,823030,691458,Blaze Jordan,St. Louis Cardinals,Atlanta Braves,3,3,1,0,0,0,1,0,1,0,2,0,0,0
+2026-07-12,823029,691458,Blaze Jordan,St. Louis Cardinals,Atlanta Braves,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-27,823893,691594,Javier Sanoja,Miami Marlins,Colorado Rockies,3,3,3,0,0,0,3,0,1,0,0,0,0,0
 2026-03-29,823891,691594,Javier Sanoja,Miami Marlins,Colorado Rockies,4,4,2,1,0,0,3,1,0,0,1,0,0,0
 2026-03-30,823890,691594,Javier Sanoja,Miami Marlins,Chicago White Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
@@ -22330,6 +22464,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-12,824574,695657,Colson Montgomery,Chicago White Sox,Athletics,4,4,1,0,0,0,1,1,0,0,2,0,0,0
 2026-07-17,822789,695657,Colson Montgomery,Chicago White Sox,Toronto Blue Jays,5,4,2,1,0,0,3,2,3,1,1,0,0,0
 2026-07-18,822790,695657,Colson Montgomery,Chicago White Sox,Toronto Blue Jays,4,3,0,0,0,0,0,0,0,1,3,0,0,0
+2026-07-17,824981,695670,Harry Ford,Washington Nationals,Athletics,6,5,2,0,0,1,5,3,3,1,2,0,0,0
+2026-07-17,824981,695720,Tommy White,Athletics,Washington Nationals,4,4,1,1,0,0,2,0,0,0,0,0,0,0
 2026-06-09,824591,695731,Braden Montgomery,Chicago White Sox,Atlanta Braves,5,5,2,0,0,1,5,1,3,0,2,0,0,0
 2026-06-10,824590,695731,Braden Montgomery,Chicago White Sox,Atlanta Braves,4,4,2,2,0,0,4,1,0,0,0,0,0,0
 2026-06-12,824588,695731,Braden Montgomery,Chicago White Sox,Los Angeles Dodgers,4,3,0,0,0,0,0,1,1,1,1,0,0,0
@@ -22721,6 +22857,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-01,824740,696285,Jacob Young,Washington Nationals,Boston Red Sox,5,3,2,2,0,0,4,1,1,2,1,0,0,0
 2026-07-06,822712,696285,Jacob Young,Washington Nationals,Houston Astros,4,4,1,0,0,0,1,1,0,0,0,0,0,0
 2026-07-07,822713,696285,Jacob Young,Washington Nationals,Houston Astros,3,2,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-10,822709,696285,Jacob Young,Washington Nationals,New York Yankees,4,4,1,0,0,0,1,0,0,0,0,1,0,0
+2026-07-17,824981,696285,Jacob Young,Washington Nationals,Athletics,6,4,1,1,0,0,2,2,1,2,0,0,0,0
 2026-05-22,822816,699013,Esmerlyn Valdez,Pittsburgh Pirates,Toronto Blue Jays,4,3,0,0,0,0,0,0,0,1,2,0,0,0
 2026-05-23,822814,699013,Esmerlyn Valdez,Pittsburgh Pirates,Toronto Blue Jays,2,2,0,0,0,0,0,0,0,0,1,0,0,0
 2026-05-24,822813,699013,Esmerlyn Valdez,Pittsburgh Pirates,Toronto Blue Jays,3,3,1,0,0,1,4,1,2,0,2,0,0,0
@@ -23446,6 +23584,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,824254,701678,Hao-Yu Lee,Detroit Tigers,Athletics,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-08,824253,701678,Hao-Yu Lee,Detroit Tigers,Athletics,2,2,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-09,824251,701678,Hao-Yu Lee,Detroit Tigers,Athletics,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-11,824249,701678,Hao-Yu Lee,Detroit Tigers,Philadelphia Phillies,3,3,2,0,0,0,2,0,0,0,0,0,0,0
+2026-07-17,824009,701678,Hao-Yu Lee,Detroit Tigers,Los Angeles Angels,4,4,1,1,0,0,2,0,2,0,2,0,0,0
 2026-03-26,823649,701807,Carson Benge,New York Mets,Pittsburgh Pirates,5,3,1,0,0,1,4,2,1,2,2,1,0,0
 2026-03-28,823651,701807,Carson Benge,New York Mets,Pittsburgh Pirates,3,3,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-29,823647,701807,Carson Benge,New York Mets,Pittsburgh Pirates,4,4,0,0,0,0,0,0,0,0,1,0,0,0
@@ -25267,6 +25407,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-06-13,824508,814439,Ryan Waldschmidt,Arizona Diamondbacks,Cincinnati Reds,4,4,1,1,0,0,2,0,0,0,1,0,0,0
 2026-07-10,823927,814439,Ryan Waldschmidt,Arizona Diamondbacks,Los Angeles Dodgers,2,2,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-12,823925,814439,Ryan Waldschmidt,Arizona Diamondbacks,Los Angeles Dodgers,4,2,0,0,0,0,0,0,1,1,1,1,0,0
+2026-07-18,825059,814439,Ryan Waldschmidt,Arizona Diamondbacks,St. Louis Cardinals,3,3,1,1,0,0,2,1,0,0,2,0,0,0
 2026-06-27,822794,815873,Sean Keys,Toronto Blue Jays,Texas Rangers,4,4,1,0,0,0,1,1,0,0,1,0,0,0
 2026-06-30,822793,815873,Sean Keys,Toronto Blue Jays,New York Mets,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-01,822791,815873,Sean Keys,Toronto Blue Jays,New York Mets,4,4,1,0,0,1,4,1,3,0,2,0,0,0

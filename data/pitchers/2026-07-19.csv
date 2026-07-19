@@ -1,31 +1,32 @@
 date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_id,pitcher_name,opposing_pitcher_id,opposing_pitcher_name,side,is_home,home_team,away_team
-2026-07-19,822786,In Progress,I,14,Rogers Centre,Chicago White Sox,Toronto Blue Jays,680732,Sean Burke,702056,Trey Yesavage,away,0,Toronto Blue Jays,Chicago White Sox
-2026-07-19,822786,In Progress,I,14,Rogers Centre,Toronto Blue Jays,Chicago White Sox,702056,Trey Yesavage,680732,Sean Burke,home,1,Toronto Blue Jays,Chicago White Sox
-2026-07-19,823113,Scheduled,S,680,T-Mobile Park,San Francisco Giants,Seattle Mariners,592662,Robbie Ray,669302,Logan Gilbert,away,0,Seattle Mariners,San Francisco Giants
-2026-07-19,823113,Scheduled,S,680,T-Mobile Park,Seattle Mariners,San Francisco Giants,669302,Logan Gilbert,592662,Robbie Ray,home,1,Seattle Mariners,San Francisco Giants
-2026-07-19,823439,Pre-Game,P,2681,Citizens Bank Park,New York Mets,Philadelphia Phillies,690997,Nolan McLean,660604,Alan Rangel,away,0,Philadelphia Phillies,New York Mets
-2026-07-19,823439,Pre-Game,P,2681,Citizens Bank Park,Philadelphia Phillies,New York Mets,660604,Alan Rangel,690997,Nolan McLean,home,1,Philadelphia Phillies,New York Mets
-2026-07-19,823523,Warmup,PW,3313,Yankee Stadium,Los Angeles Dodgers,New York Yankees,808967,Yoshinobu Yamamoto,693645,Cam Schlittler,away,0,New York Yankees,Los Angeles Dodgers
-2026-07-19,823523,Warmup,PW,3313,Yankee Stadium,New York Yankees,Los Angeles Dodgers,693645,Cam Schlittler,808967,Yoshinobu Yamamoto,home,1,New York Yankees,Los Angeles Dodgers
-2026-07-19,823764,Pre-Game,P,32,American Family Field,Miami Marlins,Milwaukee Brewers,691587,Eury Pérez,688107,Robert Gasser,away,0,Milwaukee Brewers,Miami Marlins
-2026-07-19,823764,Pre-Game,P,32,American Family Field,Milwaukee Brewers,Miami Marlins,688107,Robert Gasser,691587,Eury Pérez,home,1,Milwaukee Brewers,Miami Marlins
-2026-07-19,824007,Scheduled,S,1,Angel Stadium,Detroit Tigers,Los Angeles Angels,663554,Casey Mize,696270,Ryan Johnson,away,0,Los Angeles Angels,Detroit Tigers
-2026-07-19,824007,Scheduled,S,1,Angel Stadium,Los Angeles Angels,Detroit Tigers,696270,Ryan Johnson,663554,Casey Mize,home,1,Los Angeles Angels,Detroit Tigers
-2026-07-19,824086,Pre-Game,P,7,Kauffman Stadium,San Diego Padres,Kansas City Royals,608566,Germán Márquez,702070,Noah Cameron,away,0,Kansas City Royals,San Diego Padres
-2026-07-19,824086,Pre-Game,P,7,Kauffman Stadium,Kansas City Royals,San Diego Padres,702070,Noah Cameron,608566,Germán Márquez,home,1,Kansas City Royals,San Diego Padres
-2026-07-19,824168,Pre-Game,P,2392,Daikin Park,Baltimore Orioles,Houston Astros,687064,Brandon Young,686613,Hunter Brown,away,0,Houston Astros,Baltimore Orioles
-2026-07-19,824168,Pre-Game,P,2392,Daikin Park,Houston Astros,Baltimore Orioles,686613,Hunter Brown,687064,Brandon Young,home,1,Houston Astros,Baltimore Orioles
-2026-07-19,824330,Pre-Game,P,19,Coors Field,Cincinnati Reds,Colorado Rockies,668881,Hunter Greene,663372,Ryan Feltner,away,0,Colorado Rockies,Cincinnati Reds
-2026-07-19,824330,Pre-Game,P,19,Coors Field,Colorado Rockies,Cincinnati Reds,663372,Ryan Feltner,668881,Hunter Greene,home,1,Colorado Rockies,Cincinnati Reds
-2026-07-19,824411,Pre-Game,P,5,Progressive Field,Pittsburgh Pirates,Cleveland Guardians,694973,Paul Skenes,676282,Joey Cantillo,away,0,Cleveland Guardians,Pittsburgh Pirates
-2026-07-19,824411,Pre-Game,P,5,Progressive Field,Cleveland Guardians,Pittsburgh Pirates,676282,Joey Cantillo,694973,Paul Skenes,home,1,Cleveland Guardians,Pittsburgh Pirates
-2026-07-19,824653,Pre-Game,P,17,Wrigley Field,Minnesota Twins,Chicago Cubs,805673,Zebby Matthews,684007,Shota Imanaga,away,0,Chicago Cubs,Minnesota Twins
-2026-07-19,824653,Pre-Game,P,17,Wrigley Field,Chicago Cubs,Minnesota Twins,684007,Shota Imanaga,805673,Zebby Matthews,home,1,Chicago Cubs,Minnesota Twins
-2026-07-19,824739,Pre-Game,P,3,Fenway Park,Tampa Bay Rays,Boston Red Sox,663556,Shane McClanahan,543243,Sonny Gray,away,0,Boston Red Sox,Tampa Bay Rays
-2026-07-19,824739,Pre-Game,P,3,Fenway Park,Boston Red Sox,Tampa Bay Rays,543243,Sonny Gray,663556,Shane McClanahan,home,1,Boston Red Sox,Tampa Bay Rays
-2026-07-19,824897,Pre-Game,P,4705,Truist Park,Texas Rangers,Atlanta Braves,543135,Nathan Eovaldi,656550,Grant Holmes,away,0,Atlanta Braves,Texas Rangers
-2026-07-19,824897,Pre-Game,P,4705,Truist Park,Atlanta Braves,Texas Rangers,656550,Grant Holmes,543135,Nathan Eovaldi,home,1,Atlanta Braves,Texas Rangers
-2026-07-19,824978,Scheduled,S,2529,Sutter Health Park,Washington Nationals,Athletics,656492,Foster Griffin,682052,Jacob Lopez,away,0,Athletics,Washington Nationals
-2026-07-19,824978,Scheduled,S,2529,Sutter Health Park,Athletics,Washington Nationals,682052,Jacob Lopez,656492,Foster Griffin,home,1,Athletics,Washington Nationals
-2026-07-19,825057,Scheduled,S,15,Chase Field,St. Louis Cardinals,Arizona Diamondbacks,669467,Andre Pallante,593958,Eduardo Rodriguez,away,0,Arizona Diamondbacks,St. Louis Cardinals
-2026-07-19,825057,Scheduled,S,15,Chase Field,Arizona Diamondbacks,St. Louis Cardinals,593958,Eduardo Rodriguez,669467,Andre Pallante,home,1,Arizona Diamondbacks,St. Louis Cardinals
+2026-07-19,822786,Final,F,14,Rogers Centre,Chicago White Sox,Toronto Blue Jays,680732,Sean Burke,702056.0,Trey Yesavage,away,0,Toronto Blue Jays,Chicago White Sox
+2026-07-19,822786,Final,F,14,Rogers Centre,Toronto Blue Jays,Chicago White Sox,702056,Trey Yesavage,680732.0,Sean Burke,home,1,Toronto Blue Jays,Chicago White Sox
+2026-07-19,823113,In Progress,I,680,T-Mobile Park,San Francisco Giants,Seattle Mariners,592662,Robbie Ray,669302.0,Logan Gilbert,away,0,Seattle Mariners,San Francisco Giants
+2026-07-19,823113,In Progress,I,680,T-Mobile Park,Seattle Mariners,San Francisco Giants,669302,Logan Gilbert,592662.0,Robbie Ray,home,1,Seattle Mariners,San Francisco Giants
+2026-07-19,823439,In Progress,I,2681,Citizens Bank Park,New York Mets,Philadelphia Phillies,690997,Nolan McLean,660604.0,Alan Rangel,away,0,Philadelphia Phillies,New York Mets
+2026-07-19,823439,In Progress,I,2681,Citizens Bank Park,Philadelphia Phillies,New York Mets,660604,Alan Rangel,690997.0,Nolan McLean,home,1,Philadelphia Phillies,New York Mets
+2026-07-19,823521,Scheduled,S,3313,Yankee Stadium,Los Angeles Dodgers,New York Yankees,694361,Will Klein,,,away,0,New York Yankees,Los Angeles Dodgers
+2026-07-19,823523,Final,F,3313,Yankee Stadium,Los Angeles Dodgers,New York Yankees,808967,Yoshinobu Yamamoto,693645.0,Cam Schlittler,away,0,New York Yankees,Los Angeles Dodgers
+2026-07-19,823523,Final,F,3313,Yankee Stadium,New York Yankees,Los Angeles Dodgers,693645,Cam Schlittler,808967.0,Yoshinobu Yamamoto,home,1,New York Yankees,Los Angeles Dodgers
+2026-07-19,823764,In Progress,I,32,American Family Field,Miami Marlins,Milwaukee Brewers,691587,Eury Pérez,688107.0,Robert Gasser,away,0,Milwaukee Brewers,Miami Marlins
+2026-07-19,823764,In Progress,I,32,American Family Field,Milwaukee Brewers,Miami Marlins,688107,Robert Gasser,691587.0,Eury Pérez,home,1,Milwaukee Brewers,Miami Marlins
+2026-07-19,824007,In Progress,I,1,Angel Stadium,Detroit Tigers,Los Angeles Angels,663554,Casey Mize,696270.0,Ryan Johnson,away,0,Los Angeles Angels,Detroit Tigers
+2026-07-19,824007,In Progress,I,1,Angel Stadium,Los Angeles Angels,Detroit Tigers,696270,Ryan Johnson,663554.0,Casey Mize,home,1,Los Angeles Angels,Detroit Tigers
+2026-07-19,824086,In Progress,I,7,Kauffman Stadium,San Diego Padres,Kansas City Royals,608566,Germán Márquez,702070.0,Noah Cameron,away,0,Kansas City Royals,San Diego Padres
+2026-07-19,824086,In Progress,I,7,Kauffman Stadium,Kansas City Royals,San Diego Padres,702070,Noah Cameron,608566.0,Germán Márquez,home,1,Kansas City Royals,San Diego Padres
+2026-07-19,824168,In Progress,I,2392,Daikin Park,Baltimore Orioles,Houston Astros,687064,Brandon Young,686613.0,Hunter Brown,away,0,Houston Astros,Baltimore Orioles
+2026-07-19,824168,In Progress,I,2392,Daikin Park,Houston Astros,Baltimore Orioles,686613,Hunter Brown,687064.0,Brandon Young,home,1,Houston Astros,Baltimore Orioles
+2026-07-19,824330,In Progress,I,19,Coors Field,Cincinnati Reds,Colorado Rockies,668881,Hunter Greene,663372.0,Ryan Feltner,away,0,Colorado Rockies,Cincinnati Reds
+2026-07-19,824330,In Progress,I,19,Coors Field,Colorado Rockies,Cincinnati Reds,663372,Ryan Feltner,668881.0,Hunter Greene,home,1,Colorado Rockies,Cincinnati Reds
+2026-07-19,824411,Final,F,5,Progressive Field,Pittsburgh Pirates,Cleveland Guardians,694973,Paul Skenes,676282.0,Joey Cantillo,away,0,Cleveland Guardians,Pittsburgh Pirates
+2026-07-19,824411,Final,F,5,Progressive Field,Cleveland Guardians,Pittsburgh Pirates,676282,Joey Cantillo,694973.0,Paul Skenes,home,1,Cleveland Guardians,Pittsburgh Pirates
+2026-07-19,824653,In Progress,I,17,Wrigley Field,Minnesota Twins,Chicago Cubs,805673,Zebby Matthews,684007.0,Shota Imanaga,away,0,Chicago Cubs,Minnesota Twins
+2026-07-19,824653,In Progress,I,17,Wrigley Field,Chicago Cubs,Minnesota Twins,684007,Shota Imanaga,805673.0,Zebby Matthews,home,1,Chicago Cubs,Minnesota Twins
+2026-07-19,824739,Final,F,3,Fenway Park,Tampa Bay Rays,Boston Red Sox,663556,Shane McClanahan,543243.0,Sonny Gray,away,0,Boston Red Sox,Tampa Bay Rays
+2026-07-19,824739,Final,F,3,Fenway Park,Boston Red Sox,Tampa Bay Rays,543243,Sonny Gray,663556.0,Shane McClanahan,home,1,Boston Red Sox,Tampa Bay Rays
+2026-07-19,824897,Game Over,O,4705,Truist Park,Texas Rangers,Atlanta Braves,543135,Nathan Eovaldi,656550.0,Grant Holmes,away,0,Atlanta Braves,Texas Rangers
+2026-07-19,824897,Game Over,O,4705,Truist Park,Atlanta Braves,Texas Rangers,656550,Grant Holmes,543135.0,Nathan Eovaldi,home,1,Atlanta Braves,Texas Rangers
+2026-07-19,824978,In Progress,I,2529,Sutter Health Park,Washington Nationals,Athletics,656492,Foster Griffin,682052.0,Jacob Lopez,away,0,Athletics,Washington Nationals
+2026-07-19,824978,In Progress,I,2529,Sutter Health Park,Athletics,Washington Nationals,682052,Jacob Lopez,656492.0,Foster Griffin,home,1,Athletics,Washington Nationals
+2026-07-19,825057,In Progress,I,15,Chase Field,St. Louis Cardinals,Arizona Diamondbacks,669467,Andre Pallante,593958.0,Eduardo Rodriguez,away,0,Arizona Diamondbacks,St. Louis Cardinals
+2026-07-19,825057,In Progress,I,15,Chase Field,Arizona Diamondbacks,St. Louis Cardinals,593958,Eduardo Rodriguez,669467.0,Andre Pallante,home,1,Arizona Diamondbacks,St. Louis Cardinals
