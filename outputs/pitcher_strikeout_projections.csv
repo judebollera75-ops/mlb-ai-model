@@ -14,7 +14,7 @@ date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,
 2026-07-19,824739,Sonny Gray,Boston Red Sox,home,17.0,85.0,5.0,6.8,5.482,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-19,823764,Eury Pérez,Miami Marlins,away,16.0,95.0,5.9375,6.4,5.481,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-19,824897,Nathan Eovaldi,Texas Rangers,away,18.0,120.0,6.666666666666667,8.6,5.386,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-19,822786,Sean Burke,Chicago White Sox,away,15.0,115.0,7.666666666666667,8.4,5.254,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-19,822786,Sean Burke,Chicago White Sox,away,16.0,115.0,7.1875,8.4,5.254,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-19,824168,Brandon Young,Baltimore Orioles,away,15.0,67.0,4.466666666666667,5.0,5.185,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-19,824168,Hunter Brown,Houston Astros,home,7.0,39.0,5.571428571428571,4.4,5.183,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 2026-07-19,824653,Shota Imanaga,Chicago Cubs,home,19.0,105.0,5.526315789473684,4.8,4.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
@@ -24,7 +24,7 @@ date,game_id,pitcher_name,team,side,games_started,strikeouts,season_k_per_start,
 2026-07-19,824978,Jacob Lopez,Athletics,home,11.0,43.0,3.909090909090909,2.6,3.964,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-19,824007,Ryan Johnson,Los Angeles Angels,home,6.0,25.0,4.166666666666667,4.0,3.772,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 2026-07-19,823523,Cam Schlittler,New York Yankees,home,20.0,137.0,6.85,8.2,3.498,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-2026-07-19,822786,Trey Yesavage,Toronto Blue Jays,home,14.0,69.0,4.928571428571429,4.4,3.321,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+2026-07-19,822786,Trey Yesavage,Toronto Blue Jays,home,15.0,72.0,4.8,4.4,3.321,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-19,824739,Shane McClanahan,Tampa Bay Rays,away,17.0,82.0,4.823529411764706,4.6,3.269,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-19,825057,Eduardo Rodriguez,Arizona Diamondbacks,home,19.0,79.0,4.157894736842105,3.8,3.126,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 2026-07-19,824897,Grant Holmes,Atlanta Braves,home,17.0,76.0,4.470588235294118,3.4,2.602,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15

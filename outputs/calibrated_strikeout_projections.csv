@@ -14,7 +14,7 @@ Robert Gasser,Milwaukee Brewers,823764,2026-07-19,5.616,5.616,,,,range_clip_only
 Sonny Gray,Boston Red Sox,824739,2026-07-19,5.482,5.482,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,17.0,85.0,5.0,6.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Eury Pérez,Miami Marlins,823764,2026-07-19,5.481,5.481,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,16.0,95.0,5.9375,6.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Nathan Eovaldi,Texas Rangers,824897,2026-07-19,5.386,5.386,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,120.0,6.666666666666667,8.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Sean Burke,Chicago White Sox,822786,2026-07-19,5.254,5.254,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,15.0,115.0,7.666666666666667,8.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Sean Burke,Chicago White Sox,822786,2026-07-19,5.254,5.254,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,16.0,115.0,7.1875,8.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Brandon Young,Baltimore Orioles,824168,2026-07-19,5.185,5.185,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,15.0,67.0,4.466666666666667,5.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Hunter Brown,Houston Astros,824168,2026-07-19,5.183,5.183,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,7.0,39.0,5.571428571428571,4.4,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 Shota Imanaga,Chicago Cubs,824653,2026-07-19,4.8,4.8,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,19.0,105.0,5.526315789473684,4.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
@@ -24,7 +24,7 @@ Zebby Matthews,Minnesota Twins,824653,2026-07-19,4.276,4.276,,,,range_clip_only,
 Jacob Lopez,Athletics,824978,2026-07-19,3.964,3.964,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,11.0,43.0,3.909090909090909,2.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Ryan Johnson,Los Angeles Angels,824007,2026-07-19,3.772,3.772,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,6.0,25.0,4.166666666666667,4.0,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
 Cam Schlittler,New York Yankees,823523,2026-07-19,3.498,3.498,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,137.0,6.85,8.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Trey Yesavage,Toronto Blue Jays,822786,2026-07-19,3.321,3.321,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,14.0,69.0,4.928571428571429,4.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Trey Yesavage,Toronto Blue Jays,822786,2026-07-19,3.321,3.321,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,15.0,72.0,4.8,4.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Shane McClanahan,Tampa Bay Rays,824739,2026-07-19,3.269,3.269,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,17.0,82.0,4.823529411764706,4.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Eduardo Rodriguez,Arizona Diamondbacks,825057,2026-07-19,3.126,3.126,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,19.0,79.0,4.157894736842105,3.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
 Grant Holmes,Atlanta Braves,824897,2026-07-19,2.602,2.602,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,17.0,76.0,4.470588235294118,3.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
