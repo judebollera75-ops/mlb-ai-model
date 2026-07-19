@@ -241,17 +241,20 @@ def run_hitter_pipeline() -> bool:
 
 
 def run_betting_pipeline() -> None:
-    """Build projections, probabilities, card, and history."""
+    """Build projections, probabilities, card, historical market analytics, and history."""
     scripts = [
         "sports/mlb/models/models/build_universal_mlb_projections.py",
         "sports/mlb/models/models/probability_engine.py",
+
+        # NEW: Build historical market performance report
+        "sports/mlb/models/models/market_performance.py",
+
         "sports/mlb/betting/build_daily_card.py",
         "sports/mlb/backtesting/log_daily_results.py",
     ]
 
     for script in scripts:
         run_script(script)
-
 
 def main() -> None:
     """Run the complete daily production pipeline."""
