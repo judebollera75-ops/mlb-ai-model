@@ -299,7 +299,30 @@ def apply_elite_filter(
             reasons.append("historical_segment_not_proven")
 
         elite = len(reasons) == 0
-        tier = "Elite" if elite else _base_tier(probability, edge, expected_value)
+
+serious_rejection_reasons = {
+    "missing_projection_or_line",
+    "projection_sanity_rejection",
+    "calibration_sample_too_small",
+    "distribution_not_elite_eligible",
+    "validation_error_too_high",
+}
+
+has_serious_rejection = any(
+    reason in serious_rejection_reasons
+    for reason in reasons
+)
+
+if elite:
+    tier = "Elite"
+elif has_serious_rejection:
+    tier = "Playable"
+else:
+    tier = _base_tier(
+        probability,
+        edge,
+        expected_value,
+    )
         grade = {
             "Elite": "A+",
             "Strong": "A",
