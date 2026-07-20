@@ -10,6 +10,8 @@ from typing import Any
 import pandas as pd
 import streamlit as st
 
+from performance_dashboard import render_performance_dashboard
+
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 
@@ -1344,6 +1346,9 @@ if not props.empty:
         hide_index=True,
     )
 
+
+st.divider()
+render_performance_dashboard(history)
 
 st.divider()
 st.header("📈 Verified Model Performance")
