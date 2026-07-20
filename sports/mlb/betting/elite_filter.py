@@ -38,6 +38,21 @@ TARGET_ELITE_HIT_RATE = 0.75
 MINIMUM_ELITE_HISTORY_SAMPLE = 30
 MINIMUM_ELITE_CALIBRATION_SAMPLE = 200
 
+# Market-specific history standards. Strikeouts are allowed to use their
+# established Poisson engine and are judged against their own graded history.
+MARKET_HISTORY_RULES: dict[str, dict[str, float]] = {
+    "pitcher_strikeouts": {
+        "minimum_sample": 30,
+        "target_hit_rate": 0.66,
+        "minimum_lower_bound": 0.55,
+    },
+}
+
+ELITE_DISTRIBUTION_METHODS: dict[str, set[str]] = {
+    "pitcher_strikeouts": {"poisson", "empirical_holdout_residuals"},
+    "pitcher_outs": {"normal_residual_std", "empirical_holdout_residuals"},
+}
+
 # These are intentionally strict starting requirements. The nightly
 # recalibration file may make a market stricter, but never looser than these.
 DEFAULT_MARKET_RULES: dict[str, dict[str, float]] = {
@@ -84,9 +99,9 @@ DEFAULT_MARKET_RULES: dict[str, dict[str, float]] = {
         "max_validation_mae": 6.25,
     },
     "pitcher_strikeouts": {
-        "probability": 0.77,
-        "probability_edge": 0.11,
-        "expected_value": 0.13,
+        "probability": 0.72,
+        "probability_edge": 0.09,
+        "expected_value": 0.10,
         "max_abs_projection_edge": 2.75,
         "max_validation_mae": 1.80,
     },
@@ -274,26 +289,38 @@ def apply_elite_filter(
             if absolute_projection_edge > rule["max_abs_projection_edge"]:
                 reasons.append("projection_sanity_rejection")
 
-        if distribution_method == "empirical_holdout_residuals":
+        allowed_methods = ELITE_DISTRIBUTION_METHODS.get(
+            market,
+            {"empirical_holdout_residuals"},
+        )
+
+        if distribution_method not in allowed_methods:
+            reasons.append("distribution_not_elite_eligible")
+        elif distribution_method == "empirical_holdout_residuals":
             if (
                 not np.isfinite(calibration_sample)
                 or calibration_sample < MINIMUM_ELITE_CALIBRATION_SAMPLE
             ):
                 reasons.append("calibration_sample_too_small")
-        else:
-            # Poisson/normal fallbacks can remain on the card, but are not Elite
-            # until they have a dedicated out-of-sample calibration layer.
-            reasons.append("distribution_not_elite_eligible")
 
         if np.isfinite(validation_mae) and validation_mae > rule["max_validation_mae"]:
             reasons.append("validation_error_too_high")
 
+        history_rule = MARKET_HISTORY_RULES.get(
+            market,
+            {
+                "minimum_sample": MINIMUM_ELITE_HISTORY_SAMPLE,
+                "target_hit_rate": TARGET_ELITE_HIT_RATE,
+                "minimum_lower_bound": 0.65,
+            },
+        )
+
         history_proven = (
-            sample >= MINIMUM_ELITE_HISTORY_SAMPLE
+            sample >= int(history_rule["minimum_sample"])
             and np.isfinite(historical_rate)
-            and historical_rate >= TARGET_ELITE_HIT_RATE
+            and historical_rate >= history_rule["target_hit_rate"]
             and np.isfinite(lower_bound)
-            and lower_bound >= 0.65
+            and lower_bound >= history_rule["minimum_lower_bound"]
         )
         if not history_proven:
             reasons.append("historical_segment_not_proven")
