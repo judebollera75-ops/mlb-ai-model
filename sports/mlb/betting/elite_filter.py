@@ -1,0 +1,351 @@
+"""Apply a conservative, history-aware Elite filter to MLB prop candidates.
+
+Place this file at:
+    sports/mlb/betting/elite_filter.py
+
+The filter does not promise a future hit rate. It makes the Elite label scarce,
+requires strong live-line evidence, and only trusts historical segments with
+enough graded observations.
+
+Inputs:
+    A pandas DataFrame of candidate daily-card rows
+    outputs/history/mlb_bet_results.csv
+    outputs/calibration/elite_thresholds.csv (optional)
+
+Output:
+    The input DataFrame with updated confidence_tier/grade and Elite audit fields
+"""
+
+from __future__ import annotations
+
+import math
+from pathlib import Path
+from typing import Any
+
+import numpy as np
+import pandas as pd
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+DEFAULT_HISTORY_PATH = (
+    PROJECT_ROOT / "outputs" / "history" / "mlb_bet_results.csv"
+)
+DEFAULT_THRESHOLDS_PATH = (
+    PROJECT_ROOT / "outputs" / "calibration" / "elite_thresholds.csv"
+)
+
+TARGET_ELITE_HIT_RATE = 0.75
+MINIMUM_ELITE_HISTORY_SAMPLE = 30
+MINIMUM_ELITE_CALIBRATION_SAMPLE = 200
+
+# These are intentionally strict starting requirements. The nightly
+# recalibration file may make a market stricter, but never looser than these.
+DEFAULT_MARKET_RULES: dict[str, dict[str, float]] = {
+    "hitter_hits": {
+        "probability": 0.76,
+        "probability_edge": 0.10,
+        "expected_value": 0.12,
+        "max_abs_projection_edge": 1.10,
+        "max_validation_mae": 0.95,
+    },
+    "hitter_total_bases": {
+        "probability": 0.77,
+        "probability_edge": 0.11,
+        "expected_value": 0.13,
+        "max_abs_projection_edge": 2.25,
+        "max_validation_mae": 1.65,
+    },
+    "hitter_runs": {
+        "probability": 0.78,
+        "probability_edge": 0.12,
+        "expected_value": 0.14,
+        "max_abs_projection_edge": 0.95,
+        "max_validation_mae": 0.65,
+    },
+    "hitter_rbis": {
+        "probability": 0.79,
+        "probability_edge": 0.13,
+        "expected_value": 0.15,
+        "max_abs_projection_edge": 1.10,
+        "max_validation_mae": 0.80,
+    },
+    "hitter_hits_runs_rbis": {
+        "probability": 0.78,
+        "probability_edge": 0.12,
+        "expected_value": 0.14,
+        "max_abs_projection_edge": 2.60,
+        "max_validation_mae": 2.10,
+    },
+    "hitter_fantasy_score": {
+        "probability": 0.78,
+        "probability_edge": 0.12,
+        "expected_value": 0.14,
+        "max_abs_projection_edge": 8.50,
+        "max_validation_mae": 6.25,
+    },
+    "pitcher_strikeouts": {
+        "probability": 0.77,
+        "probability_edge": 0.11,
+        "expected_value": 0.13,
+        "max_abs_projection_edge": 2.75,
+        "max_validation_mae": 1.80,
+    },
+    "pitcher_outs": {
+        "probability": 0.77,
+        "probability_edge": 0.11,
+        "expected_value": 0.13,
+        "max_abs_projection_edge": 4.50,
+        "max_validation_mae": 2.75,
+    },
+}
+
+
+def _numeric(value: Any) -> float:
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return float("nan")
+    return number if np.isfinite(number) else float("nan")
+
+
+def _wilson_lower_bound(wins: int, sample_size: int, z: float = 1.2815515655) -> float:
+    """Return an 80% one-sided Wilson lower confidence bound."""
+    if sample_size <= 0:
+        return float("nan")
+    p_hat = wins / sample_size
+    denominator = 1.0 + (z * z / sample_size)
+    center = p_hat + (z * z / (2.0 * sample_size))
+    margin = z * math.sqrt(
+        (p_hat * (1.0 - p_hat) / sample_size)
+        + (z * z / (4.0 * sample_size * sample_size))
+    )
+    return float((center - margin) / denominator)
+
+
+def load_history(path: Path = DEFAULT_HISTORY_PATH) -> pd.DataFrame:
+    if not path.exists():
+        return pd.DataFrame()
+    try:
+        history = pd.read_csv(path)
+    except (pd.errors.EmptyDataError, pd.errors.ParserError, UnicodeDecodeError):
+        return pd.DataFrame()
+
+    required = {"market", "direction", "outcome"}
+    if not required.issubset(history.columns):
+        return pd.DataFrame()
+
+    history["market"] = history["market"].astype("string").str.strip().str.lower()
+    history["direction"] = history["direction"].astype("string").str.strip().str.title()
+    history["outcome"] = history["outcome"].astype("string").str.strip().str.upper()
+    history = history.loc[history["outcome"].isin({"WIN", "LOSS"})].copy()
+
+    for column in ["probability", "probability_edge", "expected_value"]:
+        if column in history.columns:
+            history[column] = pd.to_numeric(history[column], errors="coerce")
+
+    return history
+
+
+def load_thresholds(path: Path = DEFAULT_THRESHOLDS_PATH) -> pd.DataFrame:
+    if not path.exists():
+        return pd.DataFrame()
+    try:
+        thresholds = pd.read_csv(path)
+    except (pd.errors.EmptyDataError, pd.errors.ParserError, UnicodeDecodeError):
+        return pd.DataFrame()
+    if "market" not in thresholds.columns:
+        return pd.DataFrame()
+    thresholds["market"] = thresholds["market"].astype("string").str.strip().str.lower()
+    return thresholds
+
+
+def _market_rule(market: str, thresholds: pd.DataFrame) -> dict[str, float]:
+    rule = dict(DEFAULT_MARKET_RULES.get(market, {
+        "probability": 0.80,
+        "probability_edge": 0.14,
+        "expected_value": 0.16,
+        "max_abs_projection_edge": 2.0,
+        "max_validation_mae": 1.5,
+    }))
+
+    if thresholds.empty:
+        return rule
+
+    row = thresholds.loc[thresholds["market"].eq(market)]
+    if row.empty:
+        return rule
+
+    record = row.iloc[-1]
+    # Recalibration is allowed to tighten thresholds, never weaken defaults.
+    for output_key, csv_key in [
+        ("probability", "recommended_probability_threshold"),
+        ("probability_edge", "recommended_probability_edge_threshold"),
+        ("expected_value", "recommended_expected_value_threshold"),
+    ]:
+        value = _numeric(record.get(csv_key))
+        if np.isfinite(value):
+            rule[output_key] = max(rule[output_key], value)
+
+    return rule
+
+
+def _segment_history(
+    history: pd.DataFrame,
+    market: str,
+    direction: str,
+    probability: float,
+) -> tuple[int, int, float, float]:
+    if history.empty:
+        return 0, 0, float("nan"), float("nan")
+
+    segment = history.loc[
+        history["market"].eq(market)
+        & history["direction"].eq(direction)
+    ].copy()
+
+    if "probability" in segment.columns and np.isfinite(probability):
+        # Compare the candidate with similarly strong or stronger historical plays.
+        minimum_probability = max(0.55, probability - 0.03)
+        segment = segment.loc[segment["probability"].ge(minimum_probability)]
+
+    sample_size = len(segment)
+    wins = int(segment["outcome"].eq("WIN").sum())
+    win_rate = wins / sample_size if sample_size else float("nan")
+    lower_bound = _wilson_lower_bound(wins, sample_size)
+    return sample_size, wins, win_rate, lower_bound
+
+
+def _base_tier(probability: float, edge: float, expected_value: float) -> str:
+    if probability >= 0.67 and edge >= 0.07 and expected_value >= 0.08:
+        return "Strong"
+    if probability >= 0.61 and edge >= 0.045 and expected_value >= 0.045:
+        return "Good"
+    if probability >= 0.56 and edge >= 0.025 and expected_value >= 0.015:
+        return "Playable"
+    return "PASS"
+
+
+def apply_elite_filter(
+    frame: pd.DataFrame,
+    history_path: Path = DEFAULT_HISTORY_PATH,
+    thresholds_path: Path = DEFAULT_THRESHOLDS_PATH,
+) -> pd.DataFrame:
+    """Return candidates with conservative Elite decisions and audit columns."""
+    if frame.empty:
+        return frame.copy()
+
+    result = frame.copy()
+    history = load_history(history_path)
+    thresholds = load_thresholds(thresholds_path)
+
+    audit_rows: list[dict[str, Any]] = []
+
+    for index, row in result.iterrows():
+        market = str(row.get("market", "")).strip().lower()
+        direction = str(row.get("direction", "")).strip().title()
+        probability = _numeric(row.get("probability"))
+        edge = _numeric(row.get("probability_edge"))
+        expected_value = _numeric(row.get("expected_value"))
+        projection = _numeric(row.get("projection"))
+        line = _numeric(row.get("line"))
+        calibration_sample = _numeric(row.get("calibration_sample_size"))
+        validation_mae = _numeric(row.get("validation_mae"))
+        distribution_method = str(row.get("distribution_method", "")).strip()
+
+        rule = _market_rule(market, thresholds)
+        sample, wins, historical_rate, lower_bound = _segment_history(
+            history, market, direction, probability
+        )
+
+        reasons: list[str] = []
+
+        if not np.isfinite(probability) or probability < rule["probability"]:
+            reasons.append("probability_below_elite_threshold")
+        if not np.isfinite(edge) or edge < rule["probability_edge"]:
+            reasons.append("edge_below_elite_threshold")
+        if not np.isfinite(expected_value) or expected_value < rule["expected_value"]:
+            reasons.append("ev_below_elite_threshold")
+
+        if not np.isfinite(projection) or not np.isfinite(line):
+            reasons.append("missing_projection_or_line")
+            absolute_projection_edge = float("nan")
+        else:
+            absolute_projection_edge = abs(projection - line)
+            if absolute_projection_edge > rule["max_abs_projection_edge"]:
+                reasons.append("projection_sanity_rejection")
+
+        if distribution_method == "empirical_holdout_residuals":
+            if (
+                not np.isfinite(calibration_sample)
+                or calibration_sample < MINIMUM_ELITE_CALIBRATION_SAMPLE
+            ):
+                reasons.append("calibration_sample_too_small")
+        else:
+            # Poisson/normal fallbacks can remain on the card, but are not Elite
+            # until they have a dedicated out-of-sample calibration layer.
+            reasons.append("distribution_not_elite_eligible")
+
+        if np.isfinite(validation_mae) and validation_mae > rule["max_validation_mae"]:
+            reasons.append("validation_error_too_high")
+
+        history_proven = (
+            sample >= MINIMUM_ELITE_HISTORY_SAMPLE
+            and np.isfinite(historical_rate)
+            and historical_rate >= TARGET_ELITE_HIT_RATE
+            and np.isfinite(lower_bound)
+            and lower_bound >= 0.65
+        )
+        if not history_proven:
+            reasons.append("historical_segment_not_proven")
+
+        elite = len(reasons) == 0
+        tier = "Elite" if elite else _base_tier(probability, edge, expected_value)
+        grade = {
+            "Elite": "A+",
+            "Strong": "A",
+            "Good": "B+",
+            "Playable": "B",
+            "PASS": "PASS",
+        }[tier]
+
+        # Transparent score for ranking, not a probability claim.
+        score_components = [
+            np.clip((probability - 0.50) / 0.35, 0.0, 1.0) if np.isfinite(probability) else 0.0,
+            np.clip(edge / 0.18, 0.0, 1.0) if np.isfinite(edge) else 0.0,
+            np.clip(expected_value / 0.22, 0.0, 1.0) if np.isfinite(expected_value) else 0.0,
+            np.clip((historical_rate - 0.50) / 0.30, 0.0, 1.0) if np.isfinite(historical_rate) else 0.0,
+            np.clip(sample / 100.0, 0.0, 1.0),
+        ]
+        elite_score = round(
+            100.0 * (
+                0.30 * score_components[0]
+                + 0.20 * score_components[1]
+                + 0.15 * score_components[2]
+                + 0.25 * score_components[3]
+                + 0.10 * score_components[4]
+            ),
+            2,
+        )
+
+        audit_rows.append({
+            "_index": index,
+            "confidence_tier": tier,
+            "grade": grade,
+            "elite_score": elite_score,
+            "elite_eligible": elite,
+            "elite_rejection_reasons": "" if elite else "|".join(reasons),
+            "elite_history_sample": sample,
+            "elite_history_wins": wins,
+            "elite_history_win_rate": historical_rate,
+            "elite_history_lower_bound": lower_bound,
+            "elite_probability_threshold": rule["probability"],
+            "elite_probability_edge_threshold": rule["probability_edge"],
+            "elite_expected_value_threshold": rule["expected_value"],
+            "elite_absolute_projection_edge": absolute_projection_edge,
+        })
+
+    audit = pd.DataFrame(audit_rows).set_index("_index")
+    for column in audit.columns:
+        result.loc[audit.index, column] = audit[column]
+
+    return result
