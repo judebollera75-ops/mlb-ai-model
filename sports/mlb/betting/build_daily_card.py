@@ -26,6 +26,8 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
+from elite_filter import apply_elite_filter
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
@@ -131,6 +133,12 @@ OUTPUT_COLUMNS = [
     "distribution_method",
     "calibration_sample_size",
     "validation_mae",
+    "elite_score",
+    "elite_eligible",
+    "elite_rejection_reasons",
+    "elite_history_sample",
+    "elite_history_win_rate",
+    "elite_history_lower_bound",
     "team",
     "opponent",
     "home_team",
@@ -1283,20 +1291,11 @@ def build_daily_card() -> pd.DataFrame:
         probabilities
     )
 
-    probabilities["confidence_tier"] = (
-        probabilities.apply(
-            lambda row: confidence_tier(
-                row.get("probability"),
-                row.get("probability_edge"),
-                row.get("expected_value"),
-            ),
-            axis=1,
-        )
+    # v7: assign Elite only after strict historical and sanity validation.
+    probabilities = apply_elite_filter(
+        probabilities,
+        history_path=HISTORY_PATH,
     )
-
-    probabilities["grade"] = probabilities[
-        "confidence_tier"
-    ].apply(grade_from_tier)
 
     probabilities = add_rejection_reason(
         probabilities
@@ -1318,11 +1317,13 @@ def build_daily_card() -> pd.DataFrame:
 
     accepted = accepted.sort_values(
         [
+            "elite_score",
             "expected_value",
             "probability_edge",
             "probability",
         ],
         ascending=[
+            False,
             False,
             False,
             False,
@@ -1357,11 +1358,13 @@ def build_daily_card() -> pd.DataFrame:
 
     selected = selected.sort_values(
         [
+            "elite_score",
             "expected_value",
             "probability_edge",
             "probability",
         ],
         ascending=[
+            False,
             False,
             False,
             False,
