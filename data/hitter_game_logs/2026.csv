@@ -2378,6 +2378,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-10,823685,605170,Victor Caratini,Minnesota Twins,Los Angeles Angels,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-11,823682,605170,Victor Caratini,Minnesota Twins,Los Angeles Angels,3,2,1,1,0,0,2,2,1,1,0,0,0,0
 2026-07-18,824657,605170,Victor Caratini,Minnesota Twins,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-19,824653,605170,Victor Caratini,Minnesota Twins,Chicago Cubs,4,4,1,0,0,0,1,0,0,0,0,0,0,0
 2026-03-26,823974,606192,Teoscar Hernández,Los Angeles Dodgers,Arizona Diamondbacks,4,4,1,0,0,0,1,1,0,0,0,0,0,0
 2026-03-27,823971,606192,Teoscar Hernández,Los Angeles Dodgers,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-28,823973,606192,Teoscar Hernández,Los Angeles Dodgers,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,2,0,0,0
@@ -3220,6 +3221,81 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-16,823440,621438,Tyrone Taylor,New York Mets,Philadelphia Phillies,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-18,823441,621438,Tyrone Taylor,New York Mets,Philadelphia Phillies,3,3,2,0,0,1,5,1,1,0,0,0,0,0
 2026-07-19,823439,621438,Tyrone Taylor,New York Mets,Philadelphia Phillies,3,2,1,1,0,0,2,0,0,1,0,0,1,0
+2026-03-26,824865,621439,Byron Buxton,Minnesota Twins,Baltimore Orioles,4,4,1,0,1,0,3,1,0,0,1,0,0,0
+2026-03-28,824862,621439,Byron Buxton,Minnesota Twins,Baltimore Orioles,4,4,2,0,0,0,2,1,0,0,1,0,0,0
+2026-03-29,824864,621439,Byron Buxton,Minnesota Twins,Baltimore Orioles,5,4,1,1,0,0,2,0,0,1,2,0,0,0
+2026-03-30,824135,621439,Byron Buxton,Minnesota Twins,Kansas City Royals,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-01,824136,621439,Byron Buxton,Minnesota Twins,Kansas City Royals,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-02,824133,621439,Byron Buxton,Minnesota Twins,Kansas City Royals,4,3,0,0,0,0,0,0,1,0,1,0,0,0
+2026-04-03,823732,621439,Byron Buxton,Minnesota Twins,Tampa Bay Rays,4,3,0,0,0,0,0,0,0,0,1,0,0,1
+2026-04-05,823729,621439,Byron Buxton,Minnesota Twins,Tampa Bay Rays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-06,823728,621439,Byron Buxton,Minnesota Twins,Detroit Tigers,5,4,1,1,0,0,2,2,0,1,0,0,0,0
+2026-04-07,823727,621439,Byron Buxton,Minnesota Twins,Detroit Tigers,5,4,1,0,0,0,1,1,0,1,1,0,0,0
+2026-04-08,823726,621439,Byron Buxton,Minnesota Twins,Detroit Tigers,5,4,3,1,0,0,4,3,0,1,0,0,0,0
+2026-04-09,823724,621439,Byron Buxton,Minnesota Twins,Detroit Tigers,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-04-10,822829,621439,Byron Buxton,Minnesota Twins,Toronto Blue Jays,5,5,0,0,0,0,0,0,0,0,3,0,0,0
+2026-04-11,822830,621439,Byron Buxton,Minnesota Twins,Toronto Blue Jays,5,5,1,0,0,0,1,1,0,0,1,0,0,0
+2026-04-13,823725,621439,Byron Buxton,Minnesota Twins,Boston Red Sox,5,5,2,0,0,1,5,2,1,0,1,0,0,0
+2026-04-14,823723,621439,Byron Buxton,Minnesota Twins,Boston Red Sox,5,5,4,0,0,2,10,4,2,0,1,0,0,0
+2026-04-15,823722,621439,Byron Buxton,Minnesota Twins,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-17,823720,621439,Byron Buxton,Minnesota Twins,Cincinnati Reds,5,4,1,0,0,0,1,0,0,1,0,0,0,0
+2026-04-18,823721,621439,Byron Buxton,Minnesota Twins,Cincinnati Reds,5,5,1,0,0,0,1,0,0,0,2,0,0,0
+2026-04-19,823718,621439,Byron Buxton,Minnesota Twins,Cincinnati Reds,5,4,1,0,0,0,1,2,0,1,1,0,0,0
+2026-04-21,823640,621439,Byron Buxton,Minnesota Twins,New York Mets,5,5,1,0,0,1,4,1,2,0,3,0,0,0
+2026-04-22,823641,621439,Byron Buxton,Minnesota Twins,New York Mets,5,5,1,0,0,1,4,1,1,0,2,0,0,0
+2026-04-23,823639,621439,Byron Buxton,Minnesota Twins,New York Mets,6,5,1,1,0,0,2,0,0,0,2,0,0,1
+2026-04-24,822992,621439,Byron Buxton,Minnesota Twins,Tampa Bay Rays,5,5,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-25,822989,621439,Byron Buxton,Minnesota Twins,Tampa Bay Rays,4,4,2,0,0,0,2,0,0,0,1,0,0,0
+2026-04-27,823719,621439,Byron Buxton,Minnesota Twins,Seattle Mariners,5,4,1,0,0,1,4,1,2,1,1,0,0,0
+2026-04-28,823716,621439,Byron Buxton,Minnesota Twins,Seattle Mariners,5,5,2,0,0,1,5,1,1,0,1,1,0,0
+2026-04-29,823717,621439,Byron Buxton,Minnesota Twins,Seattle Mariners,5,5,1,0,0,0,1,0,0,0,1,0,0,0
+2026-04-30,823714,621439,Byron Buxton,Minnesota Twins,Toronto Blue Jays,4,4,3,1,0,1,7,2,1,0,0,0,0,0
+2026-05-01,823713,621439,Byron Buxton,Minnesota Twins,Toronto Blue Jays,5,4,2,0,0,1,5,1,2,1,0,0,0,0
+2026-05-02,823715,621439,Byron Buxton,Minnesota Twins,Toronto Blue Jays,4,4,1,0,0,1,4,1,1,0,0,0,0,0
+2026-05-03,823711,621439,Byron Buxton,Minnesota Twins,Toronto Blue Jays,4,3,0,0,0,0,0,0,0,1,1,1,0,0
+2026-05-05,822743,621439,Byron Buxton,Minnesota Twins,Washington Nationals,6,6,1,0,0,1,4,1,3,0,1,0,0,0
+2026-05-06,822740,621439,Byron Buxton,Minnesota Twins,Washington Nationals,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-07,822741,621439,Byron Buxton,Minnesota Twins,Washington Nationals,5,5,1,0,0,0,1,0,0,0,2,0,0,0
+2026-05-08,824443,621439,Byron Buxton,Minnesota Twins,Cleveland Guardians,5,5,3,1,0,1,7,2,2,0,1,0,0,0
+2026-05-09,824444,621439,Byron Buxton,Minnesota Twins,Cleveland Guardians,5,5,2,1,0,1,6,1,2,0,2,0,0,0
+2026-05-10,824440,621439,Byron Buxton,Minnesota Twins,Cleveland Guardians,5,4,1,0,0,0,1,1,0,1,2,1,0,0
+2026-05-12,823712,621439,Byron Buxton,Minnesota Twins,Miami Marlins,4,3,0,0,0,0,0,1,0,1,0,1,0,0
+2026-05-13,823710,621439,Byron Buxton,Minnesota Twins,Miami Marlins,5,4,2,0,0,2,8,2,2,1,1,0,0,0
+2026-05-19,823704,621439,Byron Buxton,Minnesota Twins,Houston Astros,5,5,2,2,0,0,4,1,0,0,1,0,0,0
+2026-05-20,823703,621439,Byron Buxton,Minnesota Twins,Houston Astros,4,3,0,0,0,0,0,0,0,0,0,0,0,1
+2026-05-22,824761,621439,Byron Buxton,Minnesota Twins,Boston Red Sox,5,5,2,0,0,1,5,1,3,0,2,0,0,0
+2026-05-23,824760,621439,Byron Buxton,Minnesota Twins,Boston Red Sox,5,5,1,0,0,0,1,1,0,0,3,0,0,0
+2026-05-25,824598,621439,Byron Buxton,Minnesota Twins,Chicago White Sox,4,3,1,1,0,0,2,0,0,1,1,0,0,0
+2026-05-26,824597,621439,Byron Buxton,Minnesota Twins,Chicago White Sox,5,4,0,0,0,0,0,1,0,1,1,0,0,0
+2026-05-27,824596,621439,Byron Buxton,Minnesota Twins,Chicago White Sox,3,3,1,0,0,1,4,1,1,0,0,0,0,0
+2026-05-28,824595,621439,Byron Buxton,Minnesota Twins,Chicago White Sox,4,3,1,0,0,0,1,0,0,1,2,0,0,0
+2026-05-29,823377,621439,Byron Buxton,Minnesota Twins,Pittsburgh Pirates,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-30,823375,621439,Byron Buxton,Minnesota Twins,Pittsburgh Pirates,5,4,2,0,0,0,2,2,0,1,2,0,0,0
+2026-06-01,823702,621439,Byron Buxton,Minnesota Twins,Chicago White Sox,5,5,1,0,0,0,1,0,0,0,2,1,0,0
+2026-06-02,823700,621439,Byron Buxton,Minnesota Twins,Chicago White Sox,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-03,823701,621439,Byron Buxton,Minnesota Twins,Chicago White Sox,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-04,823698,621439,Byron Buxton,Minnesota Twins,Kansas City Royals,5,4,2,0,0,1,5,1,1,1,0,0,0,0
+2026-06-05,823699,621439,Byron Buxton,Minnesota Twins,Kansas City Royals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-09,824267,621439,Byron Buxton,Minnesota Twins,Detroit Tigers,5,5,1,0,0,1,4,1,1,0,4,0,0,0
+2026-06-10,824266,621439,Byron Buxton,Minnesota Twins,Detroit Tigers,5,4,2,0,0,1,5,1,3,1,0,1,0,0
+2026-06-11,824265,621439,Byron Buxton,Minnesota Twins,Detroit Tigers,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-12,823695,621439,Byron Buxton,Minnesota Twins,St. Louis Cardinals,4,3,3,2,0,1,8,3,1,1,0,0,0,0
+2026-06-13,823694,621439,Byron Buxton,Minnesota Twins,St. Louis Cardinals,4,4,2,0,0,1,5,1,1,0,2,0,0,0
+2026-06-14,823693,621439,Byron Buxton,Minnesota Twins,St. Louis Cardinals,5,5,3,1,0,0,4,0,1,0,2,0,0,0
+2026-06-15,822887,621439,Byron Buxton,Minnesota Twins,Texas Rangers,4,4,1,0,0,1,4,1,1,0,2,0,0,0
+2026-06-16,822888,621439,Byron Buxton,Minnesota Twins,Texas Rangers,5,4,1,0,0,0,1,3,0,1,0,1,0,0
+2026-06-18,822889,621439,Byron Buxton,Minnesota Twins,Texas Rangers,5,5,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-19,825069,621439,Byron Buxton,Minnesota Twins,Arizona Diamondbacks,5,4,2,0,0,0,2,0,0,1,1,0,0,0
+2026-06-20,825068,621439,Byron Buxton,Minnesota Twins,Arizona Diamondbacks,4,4,1,0,0,1,4,1,4,0,0,0,0,0
+2026-06-21,825067,621439,Byron Buxton,Minnesota Twins,Arizona Diamondbacks,5,5,2,0,0,0,2,0,0,0,1,0,0,0
+2026-06-22,823692,621439,Byron Buxton,Minnesota Twins,Los Angeles Dodgers,4,4,1,0,0,1,4,1,1,0,1,0,0,0
+2026-06-23,823690,621439,Byron Buxton,Minnesota Twins,Los Angeles Dodgers,4,4,1,1,0,0,2,1,0,0,0,0,0,0
+2026-06-24,823691,621439,Byron Buxton,Minnesota Twins,Los Angeles Dodgers,5,5,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-26,823688,621439,Byron Buxton,Minnesota Twins,Colorado Rockies,5,5,3,1,0,0,4,2,2,0,0,0,0,0
+2026-06-27,823689,621439,Byron Buxton,Minnesota Twins,Colorado Rockies,5,4,0,0,0,0,0,0,0,0,0,0,0,1
+2026-06-28,823686,621439,Byron Buxton,Minnesota Twins,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-04,823526,621439,Byron Buxton,Minnesota Twins,New York Yankees,5,3,1,1,0,0,2,1,2,1,2,0,0,0
+2026-07-05,823525,621439,Byron Buxton,Minnesota Twins,New York Yankees,1,1,1,0,0,0,1,0,0,0,0,0,1,0
 2026-03-26,824865,621493,Taylor Ward,Baltimore Orioles,Minnesota Twins,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-28,824862,621493,Taylor Ward,Baltimore Orioles,Minnesota Twins,5,3,0,0,0,0,0,0,0,2,2,0,0,0
 2026-03-29,824864,621493,Taylor Ward,Baltimore Orioles,Minnesota Twins,5,4,1,0,0,0,1,1,0,1,1,0,0,0
@@ -7375,6 +7451,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-11,823682,663616,Trevor Larnach,Minnesota Twins,Los Angeles Angels,3,3,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-12,823681,663616,Trevor Larnach,Minnesota Twins,Los Angeles Angels,4,4,2,0,0,1,5,2,2,0,0,0,0,0
 2026-07-17,824655,663616,Trevor Larnach,Minnesota Twins,Chicago Cubs,4,3,1,0,0,0,1,1,1,1,1,0,0,0
+2026-07-18,824657,663616,Trevor Larnach,Minnesota Twins,Chicago Cubs,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-26,824541,663647,Ke'Bryan Hayes,Cincinnati Reds,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-28,824540,663647,Ke'Bryan Hayes,Cincinnati Reds,Boston Red Sox,4,4,0,0,0,0,0,1,0,0,0,0,0,0
 2026-03-29,824538,663647,Ke'Bryan Hayes,Cincinnati Reds,Boston Red Sox,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -7548,6 +7625,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-10,823033,663698,Joey Bart,Atlanta Braves,St. Louis Cardinals,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-11,823030,663698,Joey Bart,Atlanta Braves,St. Louis Cardinals,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-17,824901,663698,Joey Bart,Atlanta Braves,Texas Rangers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-18,824899,663698,Joey Bart,Atlanta Braves,Texas Rangers,3,1,0,0,0,0,0,0,0,1,0,0,0,1
 2026-03-26,823163,663728,Cal Raleigh,Seattle Mariners,Cleveland Guardians,4,3,0,0,0,0,0,0,0,1,3,0,0,0
 2026-03-27,823162,663728,Cal Raleigh,Seattle Mariners,Cleveland Guardians,4,4,0,0,0,0,0,0,0,0,4,0,0,0
 2026-03-28,823161,663728,Cal Raleigh,Seattle Mariners,Cleveland Guardians,5,4,1,0,0,0,1,0,0,1,2,1,0,0
@@ -17470,6 +17548,70 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-17,823766,681715,Heriberto Hernández,Miami Marlins,Milwaukee Brewers,4,4,1,0,0,0,1,0,0,0,1,1,0,0
 2026-07-18,823763,681715,Heriberto Hernández,Miami Marlins,Milwaukee Brewers,5,4,0,0,0,0,0,0,0,1,3,0,0,0
 2026-07-19,823764,681715,Heriberto Hernández,Miami Marlins,Milwaukee Brewers,4,4,2,0,0,0,2,0,0,0,1,0,0,0
+2026-03-28,823161,681807,David Fry,Cleveland Guardians,Seattle Mariners,5,5,2,1,0,0,3,0,0,0,3,0,0,0
+2026-03-29,823160,681807,David Fry,Cleveland Guardians,Seattle Mariners,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-03-31,823969,681807,David Fry,Cleveland Guardians,Los Angeles Dodgers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-05,824459,681807,David Fry,Cleveland Guardians,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-05,824460,681807,David Fry,Cleveland Guardians,Chicago Cubs,2,1,1,0,0,0,1,0,0,1,0,0,0,0
+2026-04-06,824456,681807,David Fry,Cleveland Guardians,Kansas City Royals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-07,824457,681807,David Fry,Cleveland Guardians,Kansas City Royals,3,2,0,0,0,0,0,0,0,1,1,0,0,0
+2026-04-08,824455,681807,David Fry,Cleveland Guardians,Kansas City Royals,3,2,0,0,0,0,0,1,0,1,1,0,0,0
+2026-04-10,824941,681807,David Fry,Cleveland Guardians,Atlanta Braves,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-04-11,824939,681807,David Fry,Cleveland Guardians,Atlanta Braves,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-12,824938,681807,David Fry,Cleveland Guardians,Atlanta Braves,4,4,1,0,0,0,1,0,0,0,3,0,0,0
+2026-04-13,823073,681807,David Fry,Cleveland Guardians,St. Louis Cardinals,5,4,1,0,0,0,1,2,0,1,1,0,0,0
+2026-04-14,823072,681807,David Fry,Cleveland Guardians,St. Louis Cardinals,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-19,824452,681807,David Fry,Cleveland Guardians,Baltimore Orioles,4,3,2,0,0,0,2,2,0,1,1,0,0,0
+2026-04-25,822826,681807,David Fry,Cleveland Guardians,Toronto Blue Jays,3,3,1,0,0,1,4,1,1,0,1,0,0,0
+2026-04-26,822824,681807,David Fry,Cleveland Guardians,Toronto Blue Jays,3,2,0,0,0,0,0,0,0,1,1,0,0,0
+2026-04-27,824446,681807,David Fry,Cleveland Guardians,Tampa Bay Rays,3,2,0,0,0,0,0,1,0,1,1,0,0,0
+2026-05-02,825014,681807,David Fry,Cleveland Guardians,Athletics,4,3,1,0,0,1,4,1,2,1,1,0,0,0
+2026-05-03,825013,681807,David Fry,Cleveland Guardians,Athletics,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-04,824120,681807,David Fry,Cleveland Guardians,Kansas City Royals,3,3,2,0,0,1,5,1,2,0,0,0,0,0
+2026-05-05,824119,681807,David Fry,Cleveland Guardians,Kansas City Royals,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-06,824118,681807,David Fry,Cleveland Guardians,Kansas City Royals,4,4,0,0,0,0,0,0,1,0,1,0,0,0
+2026-05-08,824443,681807,David Fry,Cleveland Guardians,Minnesota Twins,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-09,824444,681807,David Fry,Cleveland Guardians,Minnesota Twins,2,1,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-10,824440,681807,David Fry,Cleveland Guardians,Minnesota Twins,1,1,1,0,0,0,1,1,0,0,0,0,0,0
+2026-05-11,824441,681807,David Fry,Cleveland Guardians,Los Angeles Angels,4,3,2,1,0,0,3,1,1,1,0,0,0,0
+2026-05-12,824442,681807,David Fry,Cleveland Guardians,Los Angeles Angels,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-13,824438,681807,David Fry,Cleveland Guardians,Los Angeles Angels,3,3,0,0,0,0,0,0,1,0,1,0,0,0
+2026-05-15,824439,681807,David Fry,Cleveland Guardians,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-18,824277,681807,David Fry,Cleveland Guardians,Detroit Tigers,5,5,0,0,0,0,0,0,0,0,3,0,0,0
+2026-05-20,824273,681807,David Fry,Cleveland Guardians,Detroit Tigers,2,1,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-22,823461,681807,David Fry,Cleveland Guardians,Philadelphia Phillies,3,3,2,0,0,0,2,0,0,0,0,0,0,0
+2026-05-24,823459,681807,David Fry,Cleveland Guardians,Philadelphia Phillies,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-25,824437,681807,David Fry,Cleveland Guardians,Washington Nationals,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-26,824434,681807,David Fry,Cleveland Guardians,Washington Nationals,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-30,824431,681807,David Fry,Cleveland Guardians,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-31,824430,681807,David Fry,Cleveland Guardians,Boston Red Sox,5,4,3,1,0,0,4,1,0,1,1,0,0,0
+2026-06-04,823542,681807,David Fry,Cleveland Guardians,New York Yankees,3,3,0,0,0,0,0,0,0,0,3,0,0,0
+2026-06-05,822892,681807,David Fry,Cleveland Guardians,Texas Rangers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-07,822890,681807,David Fry,Cleveland Guardians,Texas Rangers,1,1,1,1,0,0,2,0,0,0,0,0,0,0
+2026-06-08,824427,681807,David Fry,Cleveland Guardians,New York Yankees,1,0,0,0,0,0,0,1,0,1,0,0,0,0
+2026-06-10,824428,681807,David Fry,Cleveland Guardians,New York Yankees,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-06-13,824426,681807,David Fry,Cleveland Guardians,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-16,823775,681807,David Fry,Cleveland Guardians,Milwaukee Brewers,2,1,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-17,823774,681807,David Fry,Cleveland Guardians,Milwaukee Brewers,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-18,823772,681807,David Fry,Cleveland Guardians,Milwaukee Brewers,3,2,1,0,0,1,4,1,1,1,0,0,0,0
+2026-06-19,824179,681807,David Fry,Cleveland Guardians,Houston Astros,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-21,824177,681807,David Fry,Cleveland Guardians,Houston Astros,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-22,824585,681807,David Fry,Cleveland Guardians,Chicago White Sox,3,2,0,0,0,0,0,0,0,1,1,0,0,0
+2026-06-23,824584,681807,David Fry,Cleveland Guardians,Chicago White Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-24,824583,681807,David Fry,Cleveland Guardians,Chicago White Sox,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-26,824423,681807,David Fry,Cleveland Guardians,Seattle Mariners,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-28,824422,681807,David Fry,Cleveland Guardians,Seattle Mariners,2,1,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-29,824420,681807,David Fry,Cleveland Guardians,Texas Rangers,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-30,824418,681807,David Fry,Cleveland Guardians,Texas Rangers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-01,824419,681807,David Fry,Cleveland Guardians,Texas Rangers,3,3,1,0,0,1,4,1,3,0,1,0,0,0
+2026-07-02,824416,681807,David Fry,Cleveland Guardians,Chicago White Sox,1,1,1,0,0,1,4,1,1,0,0,0,0,0
+2026-07-03,824417,681807,David Fry,Cleveland Guardians,Chicago White Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-04,824415,681807,David Fry,Cleveland Guardians,Chicago White Sox,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-05,824413,681807,David Fry,Cleveland Guardians,Chicago White Sox,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-07,823687,681807,David Fry,Cleveland Guardians,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-08,823684,681807,David Fry,Cleveland Guardians,Minnesota Twins,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-09,823683,681807,David Fry,Cleveland Guardians,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-18,824412,681807,David Fry,Cleveland Guardians,Pittsburgh Pirates,2,1,0,0,0,0,0,0,0,1,1,0,0,0
 2026-06-19,824663,681909,Justin Dean,Chicago Cubs,Toronto Blue Jays,2,2,1,0,1,0,3,1,3,0,0,0,0,0
 2026-06-24,823613,681909,Justin Dean,Chicago Cubs,New York Mets,1,1,1,0,0,0,1,0,0,0,0,0,0,0
 2026-06-25,823612,681909,Justin Dean,Chicago Cubs,New York Mets,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -17571,6 +17713,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,823687,682177,Daniel Schneemann,Cleveland Guardians,Minnesota Twins,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-08,823684,682177,Daniel Schneemann,Cleveland Guardians,Minnesota Twins,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-09,823683,682177,Daniel Schneemann,Cleveland Guardians,Minnesota Twins,4,4,1,1,0,0,2,0,0,0,0,0,0,0
+2026-07-10,823845,682177,Daniel Schneemann,Cleveland Guardians,Miami Marlins,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-07-18,824412,682177,Daniel Schneemann,Cleveland Guardians,Pittsburgh Pirates,4,3,1,0,0,0,1,0,0,1,2,0,0,0
 2026-03-26,824541,682622,Noelvi Marte,Cincinnati Reds,Boston Red Sox,2,2,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-28,824540,682622,Noelvi Marte,Cincinnati Reds,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-29,824538,682622,Noelvi Marte,Cincinnati Reds,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0

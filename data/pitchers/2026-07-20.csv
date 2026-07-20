@@ -19,13 +19,13 @@ date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_i
 2026-07-20,824167,Scheduled,S,2392,Daikin Park,Houston Astros,Miami Marlins,669854,Ronel Blanco,676083,Janson Junk,home,1,Houston Astros,Miami Marlins
 2026-07-20,824328,Scheduled,S,19,Coors Field,Washington Nationals,Colorado Rockies,674841,Andrew Alvarez,607536,Kyle Freeland,away,0,Colorado Rockies,Washington Nationals
 2026-07-20,824328,Scheduled,S,19,Coors Field,Colorado Rockies,Washington Nationals,607536,Kyle Freeland,674841,Andrew Alvarez,home,1,Colorado Rockies,Washington Nationals
-2026-07-20,824410,Scheduled,S,5,Progressive Field,Minnesota Twins,Cleveland Guardians,657746,Joe Ryan,676440,Tanner Bibee,away,0,Cleveland Guardians,Minnesota Twins
-2026-07-20,824410,Scheduled,S,5,Progressive Field,Cleveland Guardians,Minnesota Twins,676440,Tanner Bibee,657746,Joe Ryan,home,1,Cleveland Guardians,Minnesota Twins
+2026-07-20,824410,Pre-Game,P,5,Progressive Field,Minnesota Twins,Cleveland Guardians,657746,Joe Ryan,676440,Tanner Bibee,away,0,Cleveland Guardians,Minnesota Twins
+2026-07-20,824410,Pre-Game,P,5,Progressive Field,Cleveland Guardians,Minnesota Twins,676440,Tanner Bibee,657746,Joe Ryan,home,1,Cleveland Guardians,Minnesota Twins
 2026-07-20,824654,Scheduled,S,17,Wrigley Field,Detroit Tigers,Chicago Cubs,656427,Jack Flaherty,592791,Jameson Taillon,away,0,Chicago Cubs,Detroit Tigers
 2026-07-20,824654,Scheduled,S,17,Wrigley Field,Chicago Cubs,Detroit Tigers,592791,Jameson Taillon,656427,Jack Flaherty,home,1,Chicago Cubs,Detroit Tigers
-2026-07-20,824736,Scheduled,S,3,Fenway Park,Baltimore Orioles,Boston Red Sox,669358,Shane Baz,801139,Payton Tolle,away,0,Boston Red Sox,Baltimore Orioles
-2026-07-20,824736,Scheduled,S,3,Fenway Park,Boston Red Sox,Baltimore Orioles,801139,Payton Tolle,669358,Shane Baz,home,1,Boston Red Sox,Baltimore Orioles
-2026-07-20,824898,Scheduled,S,4705,Truist Park,San Diego Padres,Atlanta Braves,676664,JP Sears,693821,Bryce Elder,away,0,Atlanta Braves,San Diego Padres
-2026-07-20,824898,Scheduled,S,4705,Truist Park,Atlanta Braves,San Diego Padres,693821,Bryce Elder,676664,JP Sears,home,1,Atlanta Braves,San Diego Padres
+2026-07-20,824736,Pre-Game,P,3,Fenway Park,Baltimore Orioles,Boston Red Sox,669358,Shane Baz,801139,Payton Tolle,away,0,Boston Red Sox,Baltimore Orioles
+2026-07-20,824736,Pre-Game,P,3,Fenway Park,Boston Red Sox,Baltimore Orioles,801139,Payton Tolle,669358,Shane Baz,home,1,Boston Red Sox,Baltimore Orioles
+2026-07-20,824898,Pre-Game,P,4705,Truist Park,San Diego Padres,Atlanta Braves,676664,JP Sears,693821,Bryce Elder,away,0,Atlanta Braves,San Diego Padres
+2026-07-20,824898,Pre-Game,P,4705,Truist Park,Atlanta Braves,San Diego Padres,693821,Bryce Elder,676664,JP Sears,home,1,Atlanta Braves,San Diego Padres
 2026-07-20,825058,Scheduled,S,15,Chase Field,Athletics,Arizona Diamondbacks,605488,Jeffrey Springs,683352,Mitch Bratt,away,0,Arizona Diamondbacks,Athletics
 2026-07-20,825058,Scheduled,S,15,Chase Field,Arizona Diamondbacks,Athletics,683352,Mitch Bratt,605488,Jeffrey Springs,home,1,Arizona Diamondbacks,Athletics
