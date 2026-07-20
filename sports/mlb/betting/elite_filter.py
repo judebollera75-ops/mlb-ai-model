@@ -42,7 +42,7 @@ MINIMUM_ELITE_CALIBRATION_SAMPLE = 200
 # established Poisson engine and are judged against their own graded history.
 MARKET_HISTORY_RULES: dict[str, dict[str, float]] = {
     "pitcher_strikeouts": {
-        "minimum_sample": 30,
+        "minimum_sample": 20,
         "target_hit_rate": 0.66,
         "minimum_lower_bound": 0.55,
     },
