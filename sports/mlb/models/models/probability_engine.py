@@ -1107,19 +1107,60 @@ def build_probability_table() -> pd.DataFrame:
         - output["sportsbook_implied_probability"]
     )
 
-    output = output.sort_values(
-        [
-            "probability_status",
-            "raw_probability_edge",
-            "probability",
-        ],
-        ascending=[
-            True,
-            False,
-            False,
-        ],
-        na_position="last",
-    ).reset_index(drop=True)
+   # ------------------------------------------------------------------
+# Composite ranking score
+# ------------------------------------------------------------------
+
+output["ranking_score"] = (
+    output["raw_probability_edge"].clip(lower=0).fillna(0) * 0.45
+    + output["probability"].fillna(0) * 0.25
+    + (
+        output["calibration_sample_size"]
+        .fillna(0)
+        .clip(upper=300)
+        / 300
+    ) * 0.20
+    + (
+        1
+        - (
+            output["validation_mae"]
+            / output["validation_mae"].fillna(1).max()
+        ).fillna(1)
+    ) * 0.10
+)
+
+# Penalize extreme alternate-line favorites
+extreme_probability = output["probability"] > 0.92
+
+pickem_platform = (
+    output["platform"]
+    .astype(str)
+    .str.lower()
+    .isin([
+        "prizepicks",
+        "sleeper",
+        "underdog",
+    ])
+)
+
+output.loc[
+    extreme_probability & pickem_platform,
+    "ranking_score",
+] *= 0.60
+
+output = output.sort_values(
+    [
+        "probability_status",
+        "ranking_score",
+        "probability",
+    ],
+    ascending=[
+        True,
+        False,
+        False,
+    ],
+    na_position="last",
+).reset_index(drop=True)
 
     OUTPUT_PATH.parent.mkdir(
         parents=True,
