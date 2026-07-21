@@ -1,31 +1,31 @@
 pitcher_name,team,game_id,date,raw_projected_ks,calibrated_projected_ks,projected_ks_lower_80,projected_ks_upper_80,projected_ks_residual_std,calibration_method,calibration_status,calibration_sample_size,validation_mae,validation_rmse,calibration_intercept,calibration_slope,side,games_started,strikeouts,season_k_per_start,avg_k,projection_source,projection_confidence,model_name,model_feature_count,observed_model_features
-George Kirby,Seattle Mariners,823112,2026-07-20,7.149,7.149,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,18.0,98.0,5.444444444444445,6.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Michael Wacha,Kansas City Royals,824087,2026-07-20,6.851,6.851,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,19.0,96.0,5.052631578947368,5.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Emmet Sheehan,Los Angeles Dodgers,823436,2026-07-20,6.707,6.707,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,17.0,93.0,5.470588235294118,5.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Janson Junk,Miami Marlins,824167,2026-07-20,6.459,6.459,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,12.0,48.0,4.0,4.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Braxton Ashcraft,Pittsburgh Pirates,823522,2026-07-20,6.127,6.127,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,19.0,128.0,6.7368421052631575,7.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Bryce Elder,Atlanta Braves,824898,2026-07-20,5.96,5.96,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,18.0,86.0,4.777777777777778,3.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Jacob deGrom,Texas Rangers,822874,2026-07-20,5.938,5.938,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,18.0,122.0,6.777777777777778,7.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Shane Baz,Baltimore Orioles,824736,2026-07-20,5.888,5.888,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,19.0,99.0,5.2105263157894735,6.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Joe Ryan,Minnesota Twins,824410,2026-07-20,5.751,5.751,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,20.0,128.0,6.4,7.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Trevor McDonald,San Francisco Giants,824087,2026-07-20,5.739,5.739,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,13.0,54.0,4.153846153846154,2.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Payton Tolle,Boston Red Sox,824736,2026-07-20,5.734,5.734,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,15.0,87.0,5.8,5.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Kyle Leahy,St. Louis Cardinals,824006,2026-07-20,5.627,5.627,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,75.0,4.166666666666667,4.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Jameson Taillon,Chicago Cubs,824654,2026-07-20,5.371,5.371,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,13.0,59.0,4.538461538461538,3.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Dylan Cease,Toronto Blue Jays,822788,2026-07-20,5.342,5.342,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,17.0,148.0,8.705882352941176,9.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Kyle Freeland,Colorado Rockies,824328,2026-07-20,5.283,5.283,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,17.0,79.0,4.647058823529412,6.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Cristopher Sánchez,Philadelphia Phillies,823436,2026-07-20,5.271,5.271,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,144.0,7.2,5.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Jack Flaherty,Detroit Tigers,824654,2026-07-20,5.064,5.064,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,98.0,5.444444444444445,5.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Andrew Abbott,Cincinnati Reds,823112,2026-07-20,4.985,4.985,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,20.0,84.0,4.2,5.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Ryan Weathers,New York Yankees,823522,2026-07-20,4.89,4.89,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,18.0,110.0,6.111111111111111,5.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Freddy Peralta,New York Mets,823762,2026-07-20,4.831,4.831,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,20.0,104.0,5.2,4.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Jeffrey Springs,Athletics,825058,2026-07-20,4.685,4.685,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,19.0,84.0,4.421052631578948,4.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Mitch Bratt,Arizona Diamondbacks,825058,2026-07-20,4.675,4.675,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,2.0,3.0,1.5,1.5,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
-Ronel Blanco,Houston Astros,824167,2026-07-20,4.66,4.66,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,,,,,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,8
-Nick Martinez,Tampa Bay Rays,822788,2026-07-20,4.346,4.346,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,62.0,3.4444444444444446,3.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Jacob Misiorowski,Milwaukee Brewers,823762,2026-07-20,4.304,4.304,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,18.0,167.0,9.27777777777778,10.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-José Soriano,Los Angeles Angels,824006,2026-07-20,4.078,4.078,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,115.0,5.75,4.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Andrew Alvarez,Washington Nationals,824328,2026-07-20,3.929,3.929,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,6.0,53.0,8.833333333333334,4.4,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
-JP Sears,San Diego Padres,824898,2026-07-20,3.504,3.504,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,4.0,17.0,4.25,4.25,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
-Tanner Bibee,Cleveland Guardians,824410,2026-07-20,3.346,3.346,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,87.0,4.35,3.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
-Erick Fedde,Chicago White Sox,822874,2026-07-20,2.594,2.594,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,9.0,60.0,6.666666666666667,3.2,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+Ranger Suarez,Boston Red Sox,824735,2026-07-21,7.45,7.45,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,17.0,97.0,5.705882352941177,6.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Chase Burns,Cincinnati Reds,823114,2026-07-21,7.116,7.116,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,118.0,6.555555555555555,6.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Justin Wrobleski,Los Angeles Dodgers,823437,2026-07-21,7.003,7.003,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,15.0,73.0,4.866666666666666,5.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Jack Perkins,Athletics,825056,2026-07-21,6.364,6.364,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,6.0,72.0,12.0,5.8,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+Kevin Gausman,Toronto Blue Jays,822787,2026-07-21,6.321,6.321,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,116.0,5.8,6.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Luis Castillo,Seattle Mariners,823114,2026-07-21,6.107,6.107,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,15.0,81.0,5.4,4.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Matthew Liberatore,St. Louis Cardinals,824005,2026-07-21,5.925,5.925,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,19.0,88.0,4.631578947368421,4.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Kohl Drake,Arizona Diamondbacks,825056,2026-07-21,5.867,5.867,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,,,,,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,8
+Bubba Chandler,Pittsburgh Pirates,823519,2026-07-21,5.709,5.709,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,85.0,4.722222222222222,3.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Drew Rasmussen,Tampa Bay Rays,822787,2026-07-21,5.514,5.514,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,18.0,98.0,5.444444444444445,4.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Tatsuya Imai,Houston Astros,824165,2026-07-21,5.447,5.447,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,13.0,63.0,4.846153846153846,5.4,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+David Peterson,Chicago Cubs,824652,2026-07-21,5.281,5.281,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,11.0,70.0,6.363636363636363,2.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Walker Buehler,San Diego Padres,824895,2026-07-21,5.26,5.26,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,19.0,81.0,4.2631578947368425,4.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Kumar Rocker,Texas Rangers,822871,2026-07-21,5.224,5.224,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,16.0,80.0,5.0,5.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Parker Messick,Cleveland Guardians,824409,2026-07-21,5.151,5.151,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,19.0,110.0,5.789473684210527,5.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Luinder Avila,Kansas City Royals,824085,2026-07-21,5.099,5.099,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,9.0,50.0,5.555555555555555,4.4,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+Reynaldo López,Atlanta Braves,824895,2026-07-21,5.071,5.071,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,9.0,54.0,6.0,3.6,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+Noah Schultz,Chicago White Sox,822871,2026-07-21,4.886,4.886,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,11.0,47.0,4.2727272727272725,4.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Framber Valdez,Detroit Tigers,824652,2026-07-21,4.431,4.431,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,19.0,87.0,4.578947368421052,5.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Miles Mikolas,Washington Nationals,824329,2026-07-21,4.327,4.327,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,8.0,50.0,6.25,1.8,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+Tyler Phillips,Miami Marlins,824165,2026-07-21,4.233,4.233,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,9.0,56.0,6.222222222222222,2.2,LEAKAGE_FREE_XGBOOST,MEDIUM,leakage_free_strikeout_model,15,15
+Will Warren,New York Yankees,823519,2026-07-21,4.161,4.161,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,19.0,96.0,5.052631578947368,4.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Walbert Ureña,Los Angeles Angels,824005,2026-07-21,3.945,3.945,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,15.0,78.0,5.2,4.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Kyle Bradish,Baltimore Orioles,824735,2026-07-21,3.89,3.89,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,19.0,106.0,5.578947368421052,6.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Tyler Mahle,San Francisco Giants,824085,2026-07-21,3.768,3.768,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,15.0,73.0,4.866666666666666,3.8,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Brandon Sproat,Milwaukee Brewers,823760,2026-07-21,3.689,3.689,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,16.0,87.0,5.4375,6.0,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Zac Thornton,New York Mets,823760,2026-07-21,3.614,3.614,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,3.0,15.0,5.0,5.0,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
+Zack Wheeler,Philadelphia Phillies,823437,2026-07-21,3.498,3.498,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,15.0,108.0,7.2,9.2,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15
+Kendry Rojas,Minnesota Twins,824409,2026-07-21,3.426,3.426,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,away,2.0,22.0,11.0,2.8,LEAKAGE_FREE_XGBOOST,LOW,leakage_free_strikeout_model,15,15
+Michael Lorenzen,Colorado Rockies,824329,2026-07-21,2.397,2.397,,,,range_clip_only,UNCALIBRATED,0,,,0.0,1.0,home,20.0,73.0,3.65,2.6,LEAKAGE_FREE_XGBOOST,HIGH,leakage_free_strikeout_model,15,15

@@ -1,0 +1,31 @@
+date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_id,pitcher_name,opposing_pitcher_id,opposing_pitcher_name,side,is_home,home_team,away_team
+2026-07-21,822787,Scheduled,S,14,Rogers Centre,Tampa Bay Rays,Toronto Blue Jays,656876,Drew Rasmussen,592332,Kevin Gausman,away,0,Toronto Blue Jays,Tampa Bay Rays
+2026-07-21,822787,Scheduled,S,14,Rogers Centre,Toronto Blue Jays,Tampa Bay Rays,592332,Kevin Gausman,656876,Drew Rasmussen,home,1,Toronto Blue Jays,Tampa Bay Rays
+2026-07-21,822871,Scheduled,S,5325,Globe Life Field,Chicago White Sox,Texas Rangers,702273,Noah Schultz,677958,Kumar Rocker,away,0,Texas Rangers,Chicago White Sox
+2026-07-21,822871,Scheduled,S,5325,Globe Life Field,Texas Rangers,Chicago White Sox,677958,Kumar Rocker,702273,Noah Schultz,home,1,Texas Rangers,Chicago White Sox
+2026-07-21,823114,Scheduled,S,680,T-Mobile Park,Cincinnati Reds,Seattle Mariners,695505,Chase Burns,622491,Luis Castillo,away,0,Seattle Mariners,Cincinnati Reds
+2026-07-21,823114,Scheduled,S,680,T-Mobile Park,Seattle Mariners,Cincinnati Reds,622491,Luis Castillo,695505,Chase Burns,home,1,Seattle Mariners,Cincinnati Reds
+2026-07-21,823437,Scheduled,S,2681,Citizens Bank Park,Los Angeles Dodgers,Philadelphia Phillies,680736,Justin Wrobleski,554430,Zack Wheeler,away,0,Philadelphia Phillies,Los Angeles Dodgers
+2026-07-21,823437,Scheduled,S,2681,Citizens Bank Park,Philadelphia Phillies,Los Angeles Dodgers,554430,Zack Wheeler,680736,Justin Wrobleski,home,1,Philadelphia Phillies,Los Angeles Dodgers
+2026-07-21,823519,Scheduled,S,3313,Yankee Stadium,Pittsburgh Pirates,New York Yankees,696149,Bubba Chandler,701542,Will Warren,away,0,New York Yankees,Pittsburgh Pirates
+2026-07-21,823519,Scheduled,S,3313,Yankee Stadium,New York Yankees,Pittsburgh Pirates,701542,Will Warren,696149,Bubba Chandler,home,1,New York Yankees,Pittsburgh Pirates
+2026-07-21,823760,Scheduled,S,32,American Family Field,New York Mets,Milwaukee Brewers,804267,Zac Thornton,687075,Brandon Sproat,away,0,Milwaukee Brewers,New York Mets
+2026-07-21,823760,Scheduled,S,32,American Family Field,Milwaukee Brewers,New York Mets,687075,Brandon Sproat,804267,Zac Thornton,home,1,Milwaukee Brewers,New York Mets
+2026-07-21,824005,Scheduled,S,1,Angel Stadium,St. Louis Cardinals,Los Angeles Angels,669461,Matthew Liberatore,700712,Walbert Ureña,away,0,Los Angeles Angels,St. Louis Cardinals
+2026-07-21,824005,Scheduled,S,1,Angel Stadium,Los Angeles Angels,St. Louis Cardinals,700712,Walbert Ureña,669461,Matthew Liberatore,home,1,Los Angeles Angels,St. Louis Cardinals
+2026-07-21,824085,Scheduled,S,7,Kauffman Stadium,San Francisco Giants,Kansas City Royals,641816,Tyler Mahle,679883,Luinder Avila,away,0,Kansas City Royals,San Francisco Giants
+2026-07-21,824085,Scheduled,S,7,Kauffman Stadium,Kansas City Royals,San Francisco Giants,679883,Luinder Avila,641816,Tyler Mahle,home,1,Kansas City Royals,San Francisco Giants
+2026-07-21,824165,Scheduled,S,2392,Daikin Park,Miami Marlins,Houston Astros,663969,Tyler Phillips,837227,Tatsuya Imai,away,0,Houston Astros,Miami Marlins
+2026-07-21,824165,Scheduled,S,2392,Daikin Park,Houston Astros,Miami Marlins,837227,Tatsuya Imai,663969,Tyler Phillips,home,1,Houston Astros,Miami Marlins
+2026-07-21,824329,Scheduled,S,19,Coors Field,Washington Nationals,Colorado Rockies,571945,Miles Mikolas,547179,Michael Lorenzen,away,0,Colorado Rockies,Washington Nationals
+2026-07-21,824329,Scheduled,S,19,Coors Field,Colorado Rockies,Washington Nationals,547179,Michael Lorenzen,571945,Miles Mikolas,home,1,Colorado Rockies,Washington Nationals
+2026-07-21,824409,Scheduled,S,5,Progressive Field,Minnesota Twins,Cleveland Guardians,696070,Kendry Rojas,800048,Parker Messick,away,0,Cleveland Guardians,Minnesota Twins
+2026-07-21,824409,Scheduled,S,5,Progressive Field,Cleveland Guardians,Minnesota Twins,800048,Parker Messick,696070,Kendry Rojas,home,1,Cleveland Guardians,Minnesota Twins
+2026-07-21,824652,Scheduled,S,17,Wrigley Field,Detroit Tigers,Chicago Cubs,664285,Framber Valdez,656849,David Peterson,away,0,Chicago Cubs,Detroit Tigers
+2026-07-21,824652,Scheduled,S,17,Wrigley Field,Chicago Cubs,Detroit Tigers,656849,David Peterson,664285,Framber Valdez,home,1,Chicago Cubs,Detroit Tigers
+2026-07-21,824735,Scheduled,S,3,Fenway Park,Baltimore Orioles,Boston Red Sox,680694,Kyle Bradish,624133,Ranger Suarez,away,0,Boston Red Sox,Baltimore Orioles
+2026-07-21,824735,Scheduled,S,3,Fenway Park,Boston Red Sox,Baltimore Orioles,624133,Ranger Suarez,680694,Kyle Bradish,home,1,Boston Red Sox,Baltimore Orioles
+2026-07-21,824895,Scheduled,S,4705,Truist Park,San Diego Padres,Atlanta Braves,621111,Walker Buehler,625643,Reynaldo López,away,0,Atlanta Braves,San Diego Padres
+2026-07-21,824895,Scheduled,S,4705,Truist Park,Atlanta Braves,San Diego Padres,625643,Reynaldo López,621111,Walker Buehler,home,1,Atlanta Braves,San Diego Padres
+2026-07-21,825056,Scheduled,S,15,Chase Field,Athletics,Arizona Diamondbacks,678022,Jack Perkins,684442,Kohl Drake,away,0,Arizona Diamondbacks,Athletics
+2026-07-21,825056,Scheduled,S,15,Chase Field,Arizona Diamondbacks,Athletics,684442,Kohl Drake,678022,Jack Perkins,home,1,Arizona Diamondbacks,Athletics
