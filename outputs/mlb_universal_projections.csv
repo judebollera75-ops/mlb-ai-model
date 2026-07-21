@@ -1619,35 +1619,35 @@ MLB,2026-07-21,822871,695508,Cam Cauley,Texas Rangers,Chicago White Sox,hitter_t
 MLB,2026-07-21,823519,695257,Billy Cook,Pittsburgh Pirates,New York Yankees,hitter_total_bases,0.715,0.0,3.311,1.758,xgboost,1.3495,7.0,CF,1.1714,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-21,823114,645302,Victor Robles,Seattle Mariners,Cincinnati Reds,hitter_total_bases,0.674,0.0,3.27,1.758,xgboost,1.3495,8.0,CF,2.3822,1.0,outputs/hitters/today_hitter_projections.csv
 MLB,2026-07-21,824005,642350,Jose Siri,Los Angeles Angels,St. Louis Cardinals,hitter_total_bases,0.665,0.0,3.261,1.758,xgboost,1.3495,6.0,CF,1.2367,1.0,outputs/hitters/today_hitter_projections.csv
-MLB,2026-07-21,823437,,Justin Wrobleski,Los Angeles Dodgers,Philadelphia Phillies,pitcher_fantasy_score,21.7872,16.94,26.6345,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,823114,,Chase Burns,Cincinnati Reds,Seattle Mariners,pitcher_fantasy_score,20.0356,15.1884,24.8829,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824735,,Ranger Suarez,Boston Red Sox,Baltimore Orioles,pitcher_fantasy_score,19.986,15.1387,24.8332,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824409,,Parker Messick,Cleveland Guardians,Minnesota Twins,pitcher_fantasy_score,16.5323,11.685,21.3795,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,823437,,Zack Wheeler,Philadelphia Phillies,Los Angeles Dodgers,pitcher_fantasy_score,16.4918,11.6446,21.3391,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824005,,Matthew Liberatore,St. Louis Cardinals,Los Angeles Angels,pitcher_fantasy_score,16.2643,11.417,21.1115,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824895,,Reynaldo López,Atlanta Braves,San Diego Padres,pitcher_fantasy_score,15.6185,10.7712,20.4657,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,823114,,Luis Castillo,Seattle Mariners,Cincinnati Reds,pitcher_fantasy_score,15.2079,10.3607,20.0552,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824735,,Kyle Bradish,Baltimore Orioles,Boston Red Sox,pitcher_fantasy_score,14.6553,9.808,19.5026,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824085,,Luinder Avila,Kansas City Royals,San Francisco Giants,pitcher_fantasy_score,14.0532,9.2059,18.9004,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,822787,,Kevin Gausman,Toronto Blue Jays,Tampa Bay Rays,pitcher_fantasy_score,14.0455,9.1982,18.8928,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,822787,,Drew Rasmussen,Tampa Bay Rays,Toronto Blue Jays,pitcher_fantasy_score,13.9655,9.1183,18.8128,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824165,,Tatsuya Imai,Houston Astros,Miami Marlins,pitcher_fantasy_score,13.797,8.9498,18.6443,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,823760,,Zac Thornton,New York Mets,Milwaukee Brewers,pitcher_fantasy_score,13.6634,8.8162,18.5107,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824652,,Framber Valdez,Detroit Tigers,Chicago Cubs,pitcher_fantasy_score,12.3152,7.468,17.1625,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,823519,,Bubba Chandler,Pittsburgh Pirates,New York Yankees,pitcher_fantasy_score,12.1962,7.3489,17.0434,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,823760,,Brandon Sproat,Milwaukee Brewers,New York Mets,pitcher_fantasy_score,11.9152,7.068,16.7625,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824005,,Walbert Ureña,Los Angeles Angels,St. Louis Cardinals,pitcher_fantasy_score,11.6725,6.8252,16.5197,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,825056,,Jack Perkins,Athletics,Arizona Diamondbacks,pitcher_fantasy_score,11.5174,6.6702,16.3647,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,822871,,Kumar Rocker,Texas Rangers,Chicago White Sox,pitcher_fantasy_score,11.4512,6.604,16.2985,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,822871,,Noah Schultz,Chicago White Sox,Texas Rangers,pitcher_fantasy_score,11.4211,6.5739,16.2684,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824165,,Tyler Phillips,Miami Marlins,Houston Astros,pitcher_fantasy_score,10.4933,5.646,15.3406,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824085,,Tyler Mahle,San Francisco Giants,Kansas City Royals,pitcher_fantasy_score,9.9475,5.1002,14.7948,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,823519,,Will Warren,New York Yankees,Pittsburgh Pirates,pitcher_fantasy_score,9.6184,4.7712,14.4657,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824652,,David Peterson,Chicago Cubs,Detroit Tigers,pitcher_fantasy_score,9.365,4.5177,14.2123,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824329,,Miles Mikolas,Washington Nationals,Colorado Rockies,pitcher_fantasy_score,8.3973,3.55,13.2445,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824329,,Michael Lorenzen,Colorado Rockies,Washington Nationals,pitcher_fantasy_score,7.547,2.6997,12.3942,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824409,,Kendry Rojas,Minnesota Twins,Cleveland Guardians,pitcher_fantasy_score,7.3995,2.5522,12.2468,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-21,824895,,Walker Buehler,San Diego Padres,Atlanta Braves,pitcher_fantasy_score,5.1127,0.2655,9.96,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,823437,,Zack Wheeler,Philadelphia Phillies,Los Angeles Dodgers,pitcher_fantasy_score,23.1858,18.3386,28.0331,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,823437,,Justin Wrobleski,Los Angeles Dodgers,Philadelphia Phillies,pitcher_fantasy_score,21.1352,16.288,25.9825,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,823114,,Chase Burns,Cincinnati Reds,Seattle Mariners,pitcher_fantasy_score,19.6176,14.7704,24.4649,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824735,,Ranger Suarez,Boston Red Sox,Baltimore Orioles,pitcher_fantasy_score,19.556,14.7087,24.4032,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824409,,Parker Messick,Cleveland Guardians,Minnesota Twins,pitcher_fantasy_score,16.7543,11.907,21.6015,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824735,,Kyle Bradish,Baltimore Orioles,Boston Red Sox,pitcher_fantasy_score,15.9533,11.106,20.8006,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824005,,Matthew Liberatore,St. Louis Cardinals,Los Angeles Angels,pitcher_fantasy_score,15.6863,10.839,20.5335,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,823760,,Zac Thornton,New York Mets,Milwaukee Brewers,pitcher_fantasy_score,15.4654,10.6182,20.3127,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824895,,Reynaldo López,Atlanta Braves,San Diego Padres,pitcher_fantasy_score,15.0185,10.1712,19.8657,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,823114,,Luis Castillo,Seattle Mariners,Cincinnati Reds,pitcher_fantasy_score,14.4659,9.6187,19.3132,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,822787,,Kevin Gausman,Toronto Blue Jays,Tampa Bay Rays,pitcher_fantasy_score,13.8775,9.0302,18.7248,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824085,,Luinder Avila,Kansas City Royals,San Francisco Giants,pitcher_fantasy_score,13.7712,8.9239,18.6184,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824165,,Tatsuya Imai,Houston Astros,Miami Marlins,pitcher_fantasy_score,13.703,8.8558,18.5503,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,822787,,Drew Rasmussen,Tampa Bay Rays,Toronto Blue Jays,pitcher_fantasy_score,13.5515,8.7043,18.3988,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,823760,,Brandon Sproat,Milwaukee Brewers,New York Mets,pitcher_fantasy_score,12.8592,8.012,17.7065,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824652,,Framber Valdez,Detroit Tigers,Chicago Cubs,pitcher_fantasy_score,12.5712,7.724,17.4185,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,825056,,Jack Perkins,Athletics,Arizona Diamondbacks,pitcher_fantasy_score,12.5554,7.7082,17.4027,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824005,,Walbert Ureña,Los Angeles Angels,St. Louis Cardinals,pitcher_fantasy_score,12.0385,7.1912,16.8857,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,822871,,Kumar Rocker,Texas Rangers,Chicago White Sox,pitcher_fantasy_score,11.5372,6.69,16.3845,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,823519,,Bubba Chandler,Pittsburgh Pirates,New York Yankees,pitcher_fantasy_score,11.3542,6.5069,16.2014,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,822871,,Noah Schultz,Chicago White Sox,Texas Rangers,pitcher_fantasy_score,11.1291,6.2819,15.9764,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824409,,Kendry Rojas,Minnesota Twins,Cleveland Guardians,pitcher_fantasy_score,11.0675,6.2202,15.9148,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824085,,Tyler Mahle,San Francisco Giants,Kansas City Royals,pitcher_fantasy_score,10.1015,5.2542,14.9488,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824165,,Tyler Phillips,Miami Marlins,Houston Astros,pitcher_fantasy_score,9.8333,4.986,14.6806,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,823519,,Will Warren,New York Yankees,Pittsburgh Pirates,pitcher_fantasy_score,9.6864,4.8392,14.5337,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824652,,David Peterson,Chicago Cubs,Detroit Tigers,pitcher_fantasy_score,8.681,3.8337,13.5283,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824329,,Michael Lorenzen,Colorado Rockies,Washington Nationals,pitcher_fantasy_score,7.775,2.9277,12.6222,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824329,,Miles Mikolas,Washington Nationals,Colorado Rockies,pitcher_fantasy_score,7.4433,2.596,12.2905,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-21,824895,,Walker Buehler,San Diego Padres,Atlanta Braves,pitcher_fantasy_score,4.7767,0.0,9.624,3.7822,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-21,823437,,Justin Wrobleski,Los Angeles Dodgers,Philadelphia Phillies,pitcher_outs,17.903,13.968,21.838,3.071,,,,,,14.0,outputs/pitcher_outs_projections.csv
 MLB,2026-07-21,823437,,Zack Wheeler,Philadelphia Phillies,Los Angeles Dodgers,pitcher_outs,17.662,13.726,21.597,3.071,,,,,,9.0,outputs/pitcher_outs_projections.csv
 MLB,2026-07-21,823760,,Zac Thornton,New York Mets,Milwaukee Brewers,pitcher_outs,17.025,13.09,20.961,3.071,,,,,,9.0,outputs/pitcher_outs_projections.csv
@@ -1677,33 +1677,33 @@ MLB,2026-07-21,825056,,Jack Perkins,Athletics,Arizona Diamondbacks,pitcher_outs,
 MLB,2026-07-21,824165,,Tyler Phillips,Miami Marlins,Houston Astros,pitcher_outs,11.95,8.015,15.886,3.071,,,,,,9.0,outputs/pitcher_outs_projections.csv
 MLB,2026-07-21,824895,,Walker Buehler,San Diego Padres,Atlanta Braves,pitcher_outs,11.526,7.59,15.461,3.071,,,,,,10.0,outputs/pitcher_outs_projections.csv
 MLB,2026-07-21,824409,,Kendry Rojas,Minnesota Twins,Cleveland Guardians,pitcher_outs,5.87,1.934,9.805,3.071,,,,,,3.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-21,824735,,Ranger Suarez,Boston Red Sox,,pitcher_strikeouts,7.45,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,823114,,Chase Burns,Cincinnati Reds,,pitcher_strikeouts,7.116,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,823437,,Justin Wrobleski,Los Angeles Dodgers,,pitcher_strikeouts,7.003,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,825056,,Jack Perkins,Athletics,,pitcher_strikeouts,6.364,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,822787,,Kevin Gausman,Toronto Blue Jays,,pitcher_strikeouts,6.321,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,823114,,Luis Castillo,Seattle Mariners,,pitcher_strikeouts,6.107,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824005,,Matthew Liberatore,St. Louis Cardinals,,pitcher_strikeouts,5.925,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,825056,,Kohl Drake,Arizona Diamondbacks,,pitcher_strikeouts,5.867,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,823519,,Bubba Chandler,Pittsburgh Pirates,,pitcher_strikeouts,5.709,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,822787,,Drew Rasmussen,Tampa Bay Rays,,pitcher_strikeouts,5.514,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824165,,Tatsuya Imai,Houston Astros,,pitcher_strikeouts,5.447,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824652,,David Peterson,Chicago Cubs,,pitcher_strikeouts,5.281,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824895,,Walker Buehler,San Diego Padres,,pitcher_strikeouts,5.26,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,822871,,Kumar Rocker,Texas Rangers,,pitcher_strikeouts,5.224,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824409,,Parker Messick,Cleveland Guardians,,pitcher_strikeouts,5.151,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824085,,Luinder Avila,Kansas City Royals,,pitcher_strikeouts,5.099,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824895,,Reynaldo López,Atlanta Braves,,pitcher_strikeouts,5.071,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,822871,,Noah Schultz,Chicago White Sox,,pitcher_strikeouts,4.886,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824652,,Framber Valdez,Detroit Tigers,,pitcher_strikeouts,4.431,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824329,,Miles Mikolas,Washington Nationals,,pitcher_strikeouts,4.327,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824165,,Tyler Phillips,Miami Marlins,,pitcher_strikeouts,4.233,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,823519,,Will Warren,New York Yankees,,pitcher_strikeouts,4.161,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824005,,Walbert Ureña,Los Angeles Angels,,pitcher_strikeouts,3.945,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824735,,Kyle Bradish,Baltimore Orioles,,pitcher_strikeouts,3.89,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824085,,Tyler Mahle,San Francisco Giants,,pitcher_strikeouts,3.768,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,823760,,Brandon Sproat,Milwaukee Brewers,,pitcher_strikeouts,3.689,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,823760,,Zac Thornton,New York Mets,,pitcher_strikeouts,3.614,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,823437,,Zack Wheeler,Philadelphia Phillies,,pitcher_strikeouts,3.498,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824409,,Kendry Rojas,Minnesota Twins,,pitcher_strikeouts,3.426,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-21,824329,,Michael Lorenzen,Colorado Rockies,,pitcher_strikeouts,2.397,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824735,,Ranger Suarez,Boston Red Sox,Baltimore Orioles,pitcher_strikeouts,7.235,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,823114,,Chase Burns,Cincinnati Reds,Seattle Mariners,pitcher_strikeouts,6.907,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,825056,,Jack Perkins,Athletics,Arizona Diamondbacks,pitcher_strikeouts,6.883,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,823437,,Zack Wheeler,Philadelphia Phillies,Los Angeles Dodgers,pitcher_strikeouts,6.845,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,823437,,Justin Wrobleski,Los Angeles Dodgers,Philadelphia Phillies,pitcher_strikeouts,6.677,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,822787,,Kevin Gausman,Toronto Blue Jays,Tampa Bay Rays,pitcher_strikeouts,6.237,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,823114,,Luis Castillo,Seattle Mariners,Cincinnati Reds,pitcher_strikeouts,5.736,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824005,,Matthew Liberatore,St. Louis Cardinals,Los Angeles Angels,pitcher_strikeouts,5.636,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824165,,Tatsuya Imai,Houston Astros,Miami Marlins,pitcher_strikeouts,5.4,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,822787,,Drew Rasmussen,Tampa Bay Rays,Toronto Blue Jays,pitcher_strikeouts,5.307,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,823519,,Bubba Chandler,Pittsburgh Pirates,New York Yankees,pitcher_strikeouts,5.288,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,822871,,Kumar Rocker,Texas Rangers,Chicago White Sox,pitcher_strikeouts,5.267,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824409,,Parker Messick,Cleveland Guardians,Minnesota Twins,pitcher_strikeouts,5.262,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824409,,Kendry Rojas,Minnesota Twins,Cleveland Guardians,pitcher_strikeouts,5.26,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824895,,Walker Buehler,San Diego Padres,Atlanta Braves,pitcher_strikeouts,5.092,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824085,,Luinder Avila,Kansas City Royals,San Francisco Giants,pitcher_strikeouts,4.958,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824652,,David Peterson,Chicago Cubs,Detroit Tigers,pitcher_strikeouts,4.939,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,825056,,Kohl Drake,Arizona Diamondbacks,Athletics,pitcher_strikeouts,4.78,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824895,,Reynaldo López,Atlanta Braves,San Diego Padres,pitcher_strikeouts,4.771,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,822871,,Noah Schultz,Chicago White Sox,Texas Rangers,pitcher_strikeouts,4.74,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824652,,Framber Valdez,Detroit Tigers,Chicago Cubs,pitcher_strikeouts,4.559,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824735,,Kyle Bradish,Baltimore Orioles,Boston Red Sox,pitcher_strikeouts,4.539,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,823760,,Zac Thornton,New York Mets,Milwaukee Brewers,pitcher_strikeouts,4.515,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,823519,,Will Warren,New York Yankees,Pittsburgh Pirates,pitcher_strikeouts,4.195,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,823760,,Brandon Sproat,Milwaukee Brewers,New York Mets,pitcher_strikeouts,4.161,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824005,,Walbert Ureña,Los Angeles Angels,St. Louis Cardinals,pitcher_strikeouts,4.128,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824165,,Tyler Phillips,Miami Marlins,Houston Astros,pitcher_strikeouts,3.903,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824329,,Miles Mikolas,Washington Nationals,Colorado Rockies,pitcher_strikeouts,3.85,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824085,,Tyler Mahle,San Francisco Giants,Kansas City Royals,pitcher_strikeouts,3.845,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-21,824329,,Michael Lorenzen,Colorado Rockies,Washington Nationals,pitcher_strikeouts,2.511,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
