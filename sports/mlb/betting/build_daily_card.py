@@ -564,8 +564,6 @@ def load_probability_table() -> pd.DataFrame:
         "market",
         "direction",
         "line",
-        "platform_priority",
-        "ranking_score",
         "projection",
         "probability",
         "probability_status",
