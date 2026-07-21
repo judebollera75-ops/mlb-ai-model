@@ -49,6 +49,37 @@ AUDIT_PATH = (
     PROJECT_ROOT / "outputs" / "mlb_daily_card_audit.csv"
 )
 
+ALL_LIVE_PROPS_PATH = (
+    PROJECT_ROOT / "outputs" / "all_live_props.csv"
+)
+
+USE_PLATFORM_FILTER = True
+
+ALLOWED_PLATFORMS = {
+    "prizepicks",
+    "sleeper",
+    "underdog",
+    "fanatics",
+    "draftkings",
+    "fanduel",
+    "betmgm",
+}
+
+PLATFORM_PRIORITY = {
+    "prizepicks": 100,
+    "sleeper": 95,
+    "underdog": 90,
+    "fanatics": 85,
+    "draftkings": 80,
+    "fanduel": 80,
+    "betmgm": 75,
+    "caesars": 70,
+    "bet365": 65,
+    "espn bet": 60,
+    "hard rock": 40,
+    "prophetx": 10,
+}
+
 HISTORY_PATH = (
     PROJECT_ROOT
     / "outputs"
@@ -115,6 +146,9 @@ OUTPUT_COLUMNS = [
     "grade",
     "confidence_tier",
     "platform",
+    "platform_priority",
+    "ranking_score",
+    "selection_reason",
     "player",
     "market",
     "direction",
@@ -530,6 +564,8 @@ def load_probability_table() -> pd.DataFrame:
         "market",
         "direction",
         "line",
+        "platform_priority",
+        "ranking_score",
         "projection",
         "probability",
         "probability_status",
@@ -865,7 +901,7 @@ def choose_consensus_market_lines(
 def choose_best_platform_rows(
     frame: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Keep the best priced exact side for each player and market."""
+    """Keep the best available platform row for each player and market."""
     if frame.empty:
         return frame
 
@@ -873,7 +909,8 @@ def choose_best_platform_rows(
         [
             "player_key",
             "market",
-            "direction",
+            "platform_priority",
+            "ranking_score",
             "expected_value",
             "probability_edge",
             "probability",
@@ -882,7 +919,8 @@ def choose_best_platform_rows(
         ascending=[
             True,
             True,
-            True,
+            False,
+            False,
             False,
             False,
             False,
@@ -896,6 +934,82 @@ def choose_best_platform_rows(
             "market",
         ],
         keep="first",
+    )
+
+
+def choose_best_player_rows(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
+    """Keep only the single best recommendation for each player."""
+    if frame.empty:
+        return frame
+
+    ranked = frame.sort_values(
+        [
+            "player_key",
+            "ranking_score",
+            "platform_priority",
+            "elite_score",
+            "expected_value",
+            "probability_edge",
+            "probability",
+        ],
+        ascending=[
+            True,
+            False,
+            False,
+            False,
+            False,
+            False,
+            False,
+        ],
+    )
+
+    return ranked.drop_duplicates(
+        subset=["player_key"],
+        keep="first",
+    )
+
+
+def apply_dynamic_quality_limits(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
+    """Keep only the strongest quality tiers without forcing market quotas."""
+    if frame.empty:
+        return frame
+
+    selected_parts: list[pd.DataFrame] = []
+
+    elite = frame.loc[
+        frame["confidence_tier"].eq("Elite")
+    ].copy()
+    if not elite.empty:
+        selected_parts.append(elite)
+
+    strong = frame.loc[
+        frame["confidence_tier"].eq("Strong")
+    ].sort_values(
+        "ranking_score",
+        ascending=False,
+    ).head(5)
+    if not strong.empty:
+        selected_parts.append(strong)
+
+    good = frame.loc[
+        frame["confidence_tier"].eq("Good")
+    ].sort_values(
+        "ranking_score",
+        ascending=False,
+    ).head(3)
+    if not good.empty:
+        selected_parts.append(good)
+
+    if not selected_parts:
+        return frame.iloc[0:0].copy()
+
+    return pd.concat(
+        selected_parts,
+        ignore_index=True,
     )
 
 
@@ -1209,6 +1323,32 @@ def build_daily_card() -> pd.DataFrame:
         "direction"
     ].apply(normalize_direction)
 
+    probabilities["platform_key"] = probabilities[
+        "platform"
+    ].apply(normalize_text)
+
+    probabilities["platform_priority"] = (
+        probabilities["platform_key"]
+        .map(PLATFORM_PRIORITY)
+        .fillna(0)
+        .astype(int)
+    )
+
+    if USE_PLATFORM_FILTER:
+        before_platform_filter = len(probabilities)
+
+        probabilities = probabilities.loc[
+            probabilities["platform_key"].isin(
+                ALLOWED_PLATFORMS
+            )
+        ].copy()
+
+        print(
+            "Platform filter: kept "
+            f"{len(probabilities):,} of "
+            f"{before_platform_filter:,} rows"
+        )
+
     for column in [
         "line",
         "sportsbook_odds",
@@ -1302,6 +1442,78 @@ def build_daily_card() -> pd.DataFrame:
         MARKET_MINIMUM_PROBABILITIES
     ).fillna(MINIMUM_WIN_PROBABILITY)
 
+    max_elite_score = pd.to_numeric(
+        probabilities.get("elite_score"),
+        errors="coerce",
+    ).max()
+
+    if not np.isfinite(max_elite_score) or max_elite_score <= 0:
+        max_elite_score = 1.0
+
+    calibration_component = (
+        pd.to_numeric(
+            probabilities.get("calibration_sample_size"),
+            errors="coerce",
+        )
+        .fillna(0)
+        .clip(upper=750)
+        / 750.0
+    )
+
+    probabilities["ranking_score"] = (
+        probabilities["probability"].fillna(0) * 35.0
+        + probabilities["expected_value"].clip(
+            lower=0,
+            upper=1,
+        ).fillna(0) * 25.0
+        + (
+            pd.to_numeric(
+                probabilities.get("elite_score"),
+                errors="coerce",
+            ).fillna(0)
+            / max_elite_score
+        ) * 20.0
+        + calibration_component * 10.0
+        + (
+            probabilities["platform_priority"]
+            / 100.0
+        ) * 10.0
+    )
+
+    probabilities["selection_reason"] = (
+        "live_allowed_platform"
+    )
+
+    live_prop_mask = (
+        probabilities["line_is_fresh"]
+        & probabilities["game_not_started"]
+        & probabilities["probability_status"].eq(
+            "calculated"
+        )
+    )
+
+    all_live_props = probabilities.loc[
+        live_prop_mask
+    ].copy()
+
+    all_live_props = all_live_props.sort_values(
+        [
+            "platform_priority",
+            "ranking_score",
+            "probability",
+        ],
+        ascending=[
+            False,
+            False,
+            False,
+        ],
+    )
+
+    all_live_props.to_csv(
+        ALL_LIVE_PROPS_PATH,
+        index=False,
+    )
+
     probabilities = choose_consensus_market_lines(
         probabilities
     )
@@ -1330,61 +1542,52 @@ def build_daily_card() -> pd.DataFrame:
         accepted
     )
 
-    accepted = accepted.sort_values(
-        [
-            "elite_score",
-            "expected_value",
-            "probability_edge",
-            "probability",
-        ],
-        ascending=[
-            False,
-            False,
-            False,
-            False,
-        ],
+    accepted = choose_best_player_rows(
+        accepted
     )
 
-    market_sections: list[pd.DataFrame] = []
+    accepted["confidence_tier"] = accepted.apply(
+        lambda row: confidence_tier(
+            row.get("probability"),
+            row.get("probability_edge"),
+            row.get("expected_value"),
+        ),
+        axis=1,
+    )
 
-    for market, limit in MARKET_LIMITS.items():
-        market_rows = accepted.loc[
-            accepted["market"].eq(market)
-        ].head(limit)
+    accepted["grade"] = accepted[
+        "confidence_tier"
+    ].apply(grade_from_tier)
 
-        print(
-            f"{market}: selected "
-            f"{len(market_rows)} of "
-            f"{int(accepted['market'].eq(market).sum())} "
-            "accepted rows"
-        )
-
-        market_sections.append(market_rows)
-
-    if market_sections:
-        selected = pd.concat(
-            market_sections,
-            ignore_index=True,
-        )
-    else:
-        selected = pd.DataFrame(
-            columns=accepted.columns
-        )
+    selected = apply_dynamic_quality_limits(
+        accepted
+    )
 
     selected = selected.sort_values(
         [
+            "ranking_score",
+            "platform_priority",
             "elite_score",
             "expected_value",
             "probability_edge",
             "probability",
         ],
         ascending=[
+            False,
+            False,
             False,
             False,
             False,
             False,
         ],
     ).reset_index(drop=True)
+
+    selected["selection_reason"] = (
+        selected["confidence_tier"]
+        .astype(str)
+        .str.lower()
+        + "_best_player_platform"
+    )
 
     for column in OUTPUT_COLUMNS:
         if column not in selected.columns:
@@ -1396,6 +1599,8 @@ def build_daily_card() -> pd.DataFrame:
 
     for column in [
         "line",
+        "platform_priority",
+        "ranking_score",
         "projection",
         "raw_projection_edge",
         "probability",
@@ -1433,6 +1638,7 @@ def build_daily_card() -> pd.DataFrame:
     print(f"Accepted props: {len(output):,}")
     print(f"Final card: {OUTPUT_PATH}")
     print(f"Full audit: {AUDIT_PATH}")
+    print(f"All live props: {ALL_LIVE_PROPS_PATH}")
     print(f"New history rows logged: {newly_logged:,}")
     print("=" * 72)
 
