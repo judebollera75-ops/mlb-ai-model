@@ -7,8 +7,8 @@ date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_i
 2026-07-21,823114,Scheduled,S,680,T-Mobile Park,Seattle Mariners,Cincinnati Reds,622491,Luis Castillo,695505,Chase Burns,home,1,Seattle Mariners,Cincinnati Reds
 2026-07-21,823437,Scheduled,S,2681,Citizens Bank Park,Los Angeles Dodgers,Philadelphia Phillies,680736,Justin Wrobleski,554430,Zack Wheeler,away,0,Philadelphia Phillies,Los Angeles Dodgers
 2026-07-21,823437,Scheduled,S,2681,Citizens Bank Park,Philadelphia Phillies,Los Angeles Dodgers,554430,Zack Wheeler,680736,Justin Wrobleski,home,1,Philadelphia Phillies,Los Angeles Dodgers
-2026-07-21,823519,Scheduled,S,3313,Yankee Stadium,Pittsburgh Pirates,New York Yankees,696149,Bubba Chandler,701542,Will Warren,away,0,New York Yankees,Pittsburgh Pirates
-2026-07-21,823519,Scheduled,S,3313,Yankee Stadium,New York Yankees,Pittsburgh Pirates,701542,Will Warren,696149,Bubba Chandler,home,1,New York Yankees,Pittsburgh Pirates
+2026-07-21,823519,Postponed,DR,3313,Yankee Stadium,Pittsburgh Pirates,New York Yankees,696149,Bubba Chandler,701542,Will Warren,away,0,New York Yankees,Pittsburgh Pirates
+2026-07-21,823519,Postponed,DR,3313,Yankee Stadium,New York Yankees,Pittsburgh Pirates,701542,Will Warren,696149,Bubba Chandler,home,1,New York Yankees,Pittsburgh Pirates
 2026-07-21,823760,Scheduled,S,32,American Family Field,New York Mets,Milwaukee Brewers,804267,Zac Thornton,687075,Brandon Sproat,away,0,Milwaukee Brewers,New York Mets
 2026-07-21,823760,Scheduled,S,32,American Family Field,Milwaukee Brewers,New York Mets,687075,Brandon Sproat,804267,Zac Thornton,home,1,Milwaukee Brewers,New York Mets
 2026-07-21,824005,Scheduled,S,1,Angel Stadium,St. Louis Cardinals,Los Angeles Angels,669461,Matthew Liberatore,700712,Walbert Ureña,away,0,Los Angeles Angels,St. Louis Cardinals

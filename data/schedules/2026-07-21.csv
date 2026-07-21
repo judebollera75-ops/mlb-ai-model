@@ -1,7 +1,6 @@
 date,game_id,away_team,home_team,away_pitcher,home_pitcher,status
 2026-07-21,824409,Minnesota Twins,Cleveland Guardians,Kendry Rojas,Parker Messick,Scheduled
 2026-07-21,823437,Los Angeles Dodgers,Philadelphia Phillies,Justin Wrobleski,Zack Wheeler,Scheduled
-2026-07-21,823519,Pittsburgh Pirates,New York Yankees,Bubba Chandler,Will Warren,Scheduled
 2026-07-21,822787,Tampa Bay Rays,Toronto Blue Jays,Drew Rasmussen,Kevin Gausman,Scheduled
 2026-07-21,824735,Baltimore Orioles,Boston Red Sox,Kyle Bradish,Eduardo Rivera,Scheduled
 2026-07-21,824895,San Diego Padres,Atlanta Braves,Walker Buehler,Reynaldo López,Scheduled
@@ -14,3 +13,4 @@ date,game_id,away_team,home_team,away_pitcher,home_pitcher,status
 2026-07-21,824005,St. Louis Cardinals,Los Angeles Angels,Matthew Liberatore,Walbert Ureña,Scheduled
 2026-07-21,825056,Athletics,Arizona Diamondbacks,Jack Perkins,Kohl Drake,Scheduled
 2026-07-21,823114,Cincinnati Reds,Seattle Mariners,Chase Burns,Luis Castillo,Scheduled
+2026-07-21,823519,Pittsburgh Pirates,New York Yankees,Bubba Chandler,Will Warren,Postponed
