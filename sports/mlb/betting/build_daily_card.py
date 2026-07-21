@@ -117,6 +117,22 @@ VALID_LINE_RANGES = {
     "pitcher_outs": (8.5, 24.5),
 }
 
+# Keep the production card focused on normal/main lines rather than inflated
+# alternate lines that naturally create misleading 80%+ Under probabilities.
+STANDARD_CARD_LINE_RANGES = {
+    "hitter_hits": (0.5, 1.5),
+    "hitter_total_bases": (0.5, 1.5),
+    "hitter_runs": (0.5, 0.5),
+    "hitter_rbis": (0.5, 0.5),
+    "hitter_hits_runs_rbis": (1.5, 3.5),
+    "hitter_fantasy_score": (4.5, 14.5),
+    "pitcher_strikeouts": (2.5, 9.5),
+    "pitcher_outs": (14.5, 20.5),
+}
+
+MAX_RECOMMENDATIONS_PER_PLAYER = 2
+MAX_FINAL_CARD_SIZE = 60
+
 # Data-quality guardrail: reject lines that are implausibly far from the
 # model projection. This removes malformed/extreme alternate lines without
 # changing the underlying projection model.
@@ -373,6 +389,29 @@ def line_is_valid(
         <= numeric_line
         <= maximum_line
     )
+
+
+def line_is_standard_for_card(
+    market: Any,
+    line: Any,
+) -> bool:
+    """Allow only normal/main-line ranges on the actionable card."""
+    market = str(market).strip()
+
+    if market not in STANDARD_CARD_LINE_RANGES:
+        return False
+
+    try:
+        numeric_line = float(line)
+    except (TypeError, ValueError):
+        return False
+
+    if not np.isfinite(numeric_line):
+        return False
+
+    minimum_line, maximum_line = STANDARD_CARD_LINE_RANGES[market]
+
+    return minimum_line <= numeric_line <= maximum_line
 
 
 def line_is_fresh(
@@ -687,6 +726,16 @@ def add_rejection_reason(
             "invalid_line",
         ),
         (
+            ~result.apply(
+                lambda row: line_is_standard_for_card(
+                    row.get("market"),
+                    row.get("line"),
+                ),
+                axis=1,
+            ),
+            "alternate_or_nonstandard_line",
+        ),
+        (
             result.apply(
                 lambda row: (
                     abs(
@@ -938,7 +987,7 @@ def choose_best_platform_rows(
 def choose_best_player_rows(
     frame: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Keep only the single best recommendation for each player."""
+    """Keep up to two strong, distinct recommendations per player."""
     if frame.empty:
         return frame
 
@@ -963,51 +1012,63 @@ def choose_best_player_rows(
         ],
     )
 
-    return ranked.drop_duplicates(
-        subset=["player_key"],
-        keep="first",
+    return (
+        ranked.groupby(
+            "player_key",
+            group_keys=False,
+            sort=False,
+        )
+        .head(MAX_RECOMMENDATIONS_PER_PLAYER)
+        .reset_index(drop=True)
     )
 
 
 def apply_dynamic_quality_limits(
     frame: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Keep only the strongest quality tiers without forcing market quotas."""
+    """Return a broader card while retaining minimum model-quality checks."""
     if frame.empty:
         return frame
 
+    tier_limits = {
+        "Elite": 25,
+        "Strong": 20,
+        "Good": 15,
+        "Playable": 10,
+    }
+
     selected_parts: list[pd.DataFrame] = []
 
-    elite = frame.loc[
-        frame["confidence_tier"].eq("Elite")
-    ].copy()
-    if not elite.empty:
-        selected_parts.append(elite)
+    for tier, limit in tier_limits.items():
+        tier_rows = (
+            frame.loc[
+                frame["confidence_tier"].eq(tier)
+            ]
+            .sort_values(
+                "ranking_score",
+                ascending=False,
+            )
+            .head(limit)
+        )
 
-    strong = frame.loc[
-        frame["confidence_tier"].eq("Strong")
-    ].sort_values(
-        "ranking_score",
-        ascending=False,
-    ).head(5)
-    if not strong.empty:
-        selected_parts.append(strong)
-
-    good = frame.loc[
-        frame["confidence_tier"].eq("Good")
-    ].sort_values(
-        "ranking_score",
-        ascending=False,
-    ).head(3)
-    if not good.empty:
-        selected_parts.append(good)
+        if not tier_rows.empty:
+            selected_parts.append(tier_rows)
 
     if not selected_parts:
         return frame.iloc[0:0].copy()
 
-    return pd.concat(
+    selected = pd.concat(
         selected_parts,
         ignore_index=True,
+    )
+
+    return (
+        selected.sort_values(
+            "ranking_score",
+            ascending=False,
+        )
+        .head(MAX_FINAL_CARD_SIZE)
+        .reset_index(drop=True)
     )
 
 
