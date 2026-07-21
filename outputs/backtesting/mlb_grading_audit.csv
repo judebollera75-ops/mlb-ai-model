@@ -1,413 +1,443 @@
 event_date,history_index,player,market,direction,line,event_id,matched_game_pk,actual_result,grading_status,grading_note,graded_at
-2026-07-17,134,Anthony Seigler,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,135,Ben Williamson,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,136,Ben Williamson,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,137,Ceddanne Rafaela,hitter_hits,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,138,Ceddanne Rafaela,hitter_total_bases,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,143,Junior Caminero,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,144,Junior Caminero,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,145,Junior Caminero,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,146,Junior Caminero,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,147,Masataka Yoshida,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,148,Masataka Yoshida,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,149,Masataka Yoshida,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,150,Masataka Yoshida,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,151,Wilyer Abreu,hitter_hits,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,152,Yandy Diaz,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,153,Yandy Diaz,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,154,Yandy Diaz,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,155,Yandy Díaz,hitter_hits,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,156,Yandy Díaz,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,157,Yandy Díaz,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,159,Bryan Torres,hitter_hits_runs_rbis,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,161,Caleb Durbin,hitter_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,162,Caleb Durbin,hitter_total_bases,Under,3.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,165,Ceddanne Rafaela,hitter_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,185,Jarren Duran,hitter_hits_runs_rbis,Under,5.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,186,Jarren Duran,hitter_total_bases,Under,3.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,192,Masataka Yoshida,hitter_hits,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,193,Masataka Yoshida,hitter_hits_runs_rbis,Under,4.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,194,Masataka Yoshida,hitter_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,195,Masataka Yoshida,hitter_runs,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,196,Nick Fortes,hitter_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,200,Ryan Vilade,hitter_hits_runs_rbis,Under,4.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,204,Taylor Walls,hitter_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,205,Taylor Walls,hitter_total_bases,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,214,Brandon Lowe,hitter_hits,Over,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,215,Brandon Lowe,hitter_total_bases,Over,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,216,Bryan Reynolds,hitter_total_bases,Over,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,217,Chase DeLauter,hitter_fantasy_score,Under,6.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,218,Gavin Williams,pitcher_outs,Under,17.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,219,Gavin Williams,pitcher_outs,Under,17.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,220,Gavin Williams,pitcher_outs,Under,17.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,221,Gavin Williams,pitcher_outs,Under,17.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,222,Gavin Williams,pitcher_strikeouts,Under,7.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,223,Gavin Williams,pitcher_strikeouts,Under,6.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,224,Gavin Williams,pitcher_strikeouts,Under,6.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,225,Gavin Williams,pitcher_strikeouts,Under,6.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,226,Henry Davis,hitter_runs,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,227,Jake Mangum,hitter_hits,Under,1.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,228,Jared Jones,pitcher_outs,Under,15.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,229,Jared Jones,pitcher_strikeouts,Under,5.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,230,Jonathan Aranda,hitter_hits,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,231,Jonny DeLuca,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,232,Junior Caminero,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,233,Junior Caminero,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,234,Junior Caminero,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,236,Yandy Diaz,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-17,316,Jase Bowen,hitter_hits,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,364,Brandon Lowe,hitter_total_bases,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,420,Hunter Goodman,hitter_hits,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,421,Hunter Goodman,hitter_hits,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,422,Hunter Goodman,hitter_hits_runs_rbis,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,423,Hunter Goodman,hitter_hits_runs_rbis,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,424,Hunter Goodman,hitter_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,425,Hunter Goodman,hitter_runs,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,426,Hunter Goodman,hitter_runs,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,427,Hunter Goodman,hitter_total_bases,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,528,Billy Cook,hitter_hits,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,529,Billy Cook,hitter_hits_runs_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,530,Billy Cook,hitter_total_bases,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,531,Bryan Reynolds,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,532,Esmerlyn Valdez,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,533,Esmerlyn Valdez,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,535,Jake Mangum,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,536,Jake Mangum,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,537,Kyle Manzardo,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,538,Ben Rice,hitter_rbis,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,539,Ben Rice,hitter_runs,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,544,Jose Caballero,hitter_hits_runs_rbis,Over,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,545,Max Muncy,hitter_hits_runs_rbis,Over,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,546,Ryan Weathers,pitcher_strikeouts,Under,5.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,547,Shohei Ohtani,hitter_rbis,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,548,Trent Grisham,hitter_runs,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-18,556,Henry Bolte,hitter_runs,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,595,Chase Meidroth,hitter_hits_runs_rbis,Under,3.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,596,Chase Meidroth,hitter_total_bases,Under,3.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,605,Cody Bellinger,hitter_total_bases,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,606,Kyle Tucker,hitter_total_bases,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,662,Brandon Lowe,hitter_total_bases,Over,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,673,Adley Rutschman,hitter_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,674,Adley Rutschman,hitter_runs,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,675,Bobby Witt Jr.,hitter_hits,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,676,Bobby Witt Jr.,hitter_hits_runs_rbis,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,698,Cooper Pratt,hitter_hits,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,699,Cooper Pratt,hitter_hits_runs_rbis,Under,3.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,700,Cooper Pratt,hitter_hits_runs_rbis,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,701,Cooper Pratt,hitter_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,724,Cole Carrigg,hitter_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,725,Cole Carrigg,hitter_total_bases,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,732,Noelvi Marte,hitter_hits_runs_rbis,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,770,Denzer Guzman,hitter_hits,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,771,Denzer Guzman,hitter_hits_runs_rbis,Over,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,772,Denzer Guzman,hitter_rbis,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,803,Andy Pages,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,804,Andy Pages,hitter_hits_runs_rbis,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,805,Andy Pages,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,806,Andy Pages,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,807,Andy Pages,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,808,Andy Pages,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,809,Ben Rice,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,810,Ben Rice,hitter_hits_runs_rbis,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,811,Ben Rice,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,812,Ben Rice,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,813,Ben Rice,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,814,Ben Rice,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,815,Cody Bellinger,hitter_hits_runs_rbis,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,816,Cody Bellinger,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,817,Cody Bellinger,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,818,Freddie Freeman,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,819,Freddie Freeman,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,820,Freddie Freeman,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,821,Jazz Chisholm,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,823,Kyle Tucker,hitter_total_bases,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,824,Max Muncy,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,825,Mookie Betts,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,826,Mookie Betts,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,827,Shohei Ohtani,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-19,828,Shohei Ohtani,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,829,Carson Benge,hitter_total_bases,Over,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,830,Curtis Mead,hitter_hits,Under,1.5,,824328,3.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,831,Curtis Mead,hitter_hits_runs_rbis,Under,2.5,,824328,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,832,Ildemaro Vargas,hitter_total_bases,Under,1.5,,825058,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,833,Jacob Wilson,hitter_hits,Under,1.5,,825058,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,834,Jake McCarthy,hitter_hits,Under,1.5,,824328,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,835,Jeffrey Springs,pitcher_strikeouts,Over,3.5,,825058,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,836,Jeffrey Springs,pitcher_strikeouts,Over,3.5,,825058,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,837,Kerry Carpenter,hitter_total_bases,Under,1.5,,824654,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,838,Ketel Marte,hitter_hits,Under,1.5,,825058,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,839,Ketel Marte,hitter_hits_runs_rbis,Under,2.5,,825058,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,840,Ketel Marte,hitter_runs,Under,0.5,,825058,1.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,841,Kevin McGonigle,hitter_runs,Under,0.5,,824654,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,842,Mitch Bratt,pitcher_strikeouts,Over,3.5,,825058,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,843,Alan Roden,hitter_hits_runs_rbis,Under,4.5,,824410,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,844,Alan Roden,hitter_hits_runs_rbis,Under,3.5,,824410,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,845,Alan Roden,hitter_rbis,Under,0.5,,824410,1.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,846,Alan Roden,hitter_runs,Under,1.5,,824410,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,847,Brayan Rocchio,hitter_rbis,Under,0.5,,824410,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,848,Brooks Lee,hitter_hits_runs_rbis,Under,2.5,,824410,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,849,Brooks Lee,hitter_hits_runs_rbis,Over,0.5,,824410,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,850,Brooks Lee,hitter_rbis,Under,0.5,,824410,1.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,851,Brooks Lee,hitter_total_bases,Over,0.5,,824410,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,852,Brooks Lee,hitter_total_bases,Over,0.5,,824410,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,853,Chase DeLauter,hitter_hits_runs_rbis,Under,4.5,,824410,7.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,854,Chase DeLauter,hitter_hits_runs_rbis,Under,3.5,,824410,7.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,855,Joe Ryan,pitcher_outs,Under,18.5,,824410,12.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,856,Royce Lewis,hitter_total_bases,Over,0.5,,824410,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,857,Royce Lewis,hitter_total_bases,Over,0.5,,824410,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,858,Royce Lewis,hitter_total_bases,Over,0.5,,824410,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,859,Tanner Bibee,pitcher_outs,Under,17.5,,824410,18.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,860,Tanner Bibee,pitcher_outs,Under,17.5,,824410,18.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,861,Tanner Bibee,pitcher_strikeouts,Under,4.5,,824410,5.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,862,Tanner Bibee,pitcher_strikeouts,Under,4.5,,824410,5.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,863,Austin Wells,hitter_hits_runs_rbis,Under,4.5,,823522,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,864,Ben Rice,hitter_hits_runs_rbis,Under,4.5,,823522,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,865,Billy Cook,hitter_hits_runs_rbis,Under,2.5,,823522,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,866,Billy Cook,hitter_rbis,Under,1.5,,823522,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,867,Brandon Lowe,hitter_hits_runs_rbis,Under,4.5,,823522,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,868,Bryan Reynolds,hitter_hits,Under,1.5,,823522,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,869,Bryan Reynolds,hitter_runs,Under,1.5,,823522,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,870,Cody Bellinger,hitter_hits_runs_rbis,Under,5.5,,823522,3.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,871,Cody Bellinger,hitter_hits_runs_rbis,Under,2.5,,823522,3.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,872,Esmerlyn Valdez,hitter_total_bases,Over,0.5,,823522,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,873,Jake Mangum,hitter_hits,Under,1.5,,823522,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,874,Ryan Weathers,pitcher_outs,Under,17.5,,823522,14.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,875,Ryan Weathers,pitcher_outs,Under,16.5,,823522,14.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,876,Ryan Weathers,pitcher_outs,Under,17.5,,823522,14.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,877,Ryan Weathers,pitcher_strikeouts,Under,6.5,,823522,5.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,878,Ryan Weathers,pitcher_strikeouts,Under,6.5,,823522,5.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,879,Ryan Weathers,pitcher_strikeouts,Under,6.5,,823522,5.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,880,Trent Grisham,hitter_total_bases,Over,0.5,,823522,0.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,881,Alejandro Kirk,hitter_hits_runs_rbis,Under,2.5,,822788,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,882,Alejandro Kirk,hitter_rbis,Under,1.5,,822788,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,883,Alejandro Kirk,hitter_rbis,Under,0.5,,822788,1.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,884,Alejandro Kirk,hitter_runs,Under,1.5,,822788,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,885,Alejandro Kirk,hitter_total_bases,Under,1.5,,822788,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,886,Cedric Mullins,hitter_hits,Under,1.5,,822788,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,887,Cedric Mullins,hitter_runs,Under,1.5,,822788,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,888,Chandler Simpson,hitter_hits,Under,2.5,,822788,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,889,Chandler Simpson,hitter_hits_runs_rbis,Under,3.5,,822788,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,890,Chandler Simpson,hitter_hits_runs_rbis,Under,4.5,,822788,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,891,Chandler Simpson,hitter_rbis,Under,0.5,,822788,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,892,Chandler Simpson,hitter_runs,Under,1.5,,822788,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,893,Daulton Varsho,hitter_hits_runs_rbis,Under,3.5,,822788,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,894,Daulton Varsho,hitter_hits_runs_rbis,Under,2.5,,822788,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,895,Dylan Cease,pitcher_strikeouts,Under,7.5,,822788,7.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,896,Dylan Cease,pitcher_strikeouts,Under,7.5,,822788,7.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,897,Dylan Cease,pitcher_strikeouts,Under,7.5,,822788,7.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,898,Dylan Cease,pitcher_strikeouts,Under,7.5,,822788,7.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,899,Nick Martinez,pitcher_outs,Under,17.5,,822788,18.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,900,Nick Martinez,pitcher_strikeouts,Over,2.5,,822788,0.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,901,Adley Rutschman,hitter_rbis,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,902,Alec Bohm,hitter_hits_runs_rbis,Under,3.5,,823436,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,903,Alex Call,hitter_hits_runs_rbis,Under,3.5,,823436,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,904,Alex Call,hitter_rbis,Under,1.5,,823436,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,905,Alex Call,hitter_runs,Under,1.5,,823436,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,906,Alex Call,hitter_total_bases,Under,1.5,,823436,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,907,Andy Pages,hitter_hits_runs_rbis,Under,4.5,,823436,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,908,Andy Pages,hitter_hits_runs_rbis,Under,3.5,,823436,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,909,Andy Pages,hitter_rbis,Under,0.5,,823436,1.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,910,Andy Pages,hitter_runs,Under,1.5,,823436,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,911,Anthony Seigler,hitter_rbis,Under,0.5,,824736,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,912,Brandon Marsh,hitter_runs,Under,1.5,,823436,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,913,Brandon Marsh,hitter_total_bases,Over,0.5,,823436,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,914,Bryce Harper,hitter_hits_runs_rbis,Under,3.5,,823436,3.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,915,Bryson Stott,hitter_hits,Under,1.5,,823436,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,916,Bryson Stott,hitter_hits_runs_rbis,Under,4.5,,823436,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,917,Bryson Stott,hitter_hits_runs_rbis,Under,3.5,,823436,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,918,Bryson Stott,hitter_hits_runs_rbis,Under,2.5,,823436,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,919,Bryson Stott,hitter_rbis,Under,0.5,,823436,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,920,Bryson Stott,hitter_runs,Under,1.5,,823436,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,921,Caleb Durbin,hitter_rbis,Under,0.5,,824736,1.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,922,Ceddanne Rafaela,hitter_hits,Under,1.5,,824736,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,923,Ceddanne Rafaela,hitter_hits,Under,1.5,,824736,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,924,Cristopher Sanchez,pitcher_outs,Under,18.5,,823436,16.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,925,Cristopher Sanchez,pitcher_strikeouts,Under,6.5,,823436,7.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,926,Cristopher Sánchez,pitcher_outs,Under,18.5,,823436,16.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,927,Dalton Rushing,hitter_hits_runs_rbis,Under,4.5,,823436,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,928,Dalton Rushing,hitter_hits_runs_rbis,Under,2.5,,823436,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,929,Dalton Rushing,hitter_hits_runs_rbis,Under,3.5,,823436,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,930,Dalton Rushing,hitter_runs,Under,1.5,,823436,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,931,Kyle Schwarber,hitter_runs,Under,0.5,,823436,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,932,Taylor Ward,hitter_total_bases,Over,0.5,,824736,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,933,Willson Contreras,hitter_runs,Under,0.5,,824736,1.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,934,Austin Riley,hitter_rbis,Under,0.5,,824898,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,935,Bryce Elder,pitcher_strikeouts,Over,3.5,,824898,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,936,Bryce Elder,pitcher_strikeouts,Over,3.5,,824898,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,937,Bryce Elder,pitcher_strikeouts,Over,3.5,,824898,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,938,Bryce Elder,pitcher_strikeouts,Over,3.5,,824898,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,940,Drake Baldwin,hitter_fantasy_score,Under,6.5,,824898,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,941,Drake Baldwin,hitter_hits,Under,1.5,,824898,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,942,Drake Baldwin,hitter_hits,Under,1.5,,824898,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,943,Eli White,hitter_hits_runs_rbis,Under,4.5,,824898,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,944,Fernando Tatis,hitter_hits,Under,1.5,,824898,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,945,Fernando Tatis,hitter_hits,Under,1.5,,824898,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,946,Fernando Tatis Jr.,hitter_fantasy_score,Under,7.5,,824898,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,947,Fernando Tatis Jr.,hitter_hits,Under,1.5,,824898,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,948,Jackson Merrill,hitter_fantasy_score,Under,6.5,,824898,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,949,Ozzie Albies,hitter_hits,Under,1.5,,824898,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,950,A.J. Ewing,hitter_hits_runs_rbis,Under,2.5,,823762,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,951,A.J. Ewing,hitter_hits_runs_rbis,Under,3.5,,823762,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,952,A.J. Ewing,hitter_rbis,Under,0.5,,823762,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,953,A.J. Ewing,hitter_total_bases,Under,4.5,,823762,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,954,A.J. Ewing,hitter_total_bases,Over,0.5,,823762,0.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,955,Bo Bichette,hitter_hits_runs_rbis,Under,4.5,,823762,3.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,956,Bo Bichette,hitter_runs,Under,1.5,,823762,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,957,Bobby Witt,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,958,Bobby Witt Jr.,hitter_hits,Under,2.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,959,Bobby Witt Jr.,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,960,Bobby Witt Jr.,hitter_runs,Under,0.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,961,Brice Turang,hitter_runs,Under,1.5,,823762,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,962,Brice Turang,hitter_total_bases,Over,0.5,,823762,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,963,Bryce Eldridge,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,964,Bryce Eldridge,hitter_hits_runs_rbis,Under,4.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,965,Bryce Eldridge,hitter_rbis,Under,0.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,966,Bryce Eldridge,hitter_runs,Under,0.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,967,Carson Benge,hitter_hits_runs_rbis,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,968,Carson Benge,hitter_hits_runs_rbis,Under,3.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,969,Carson Benge,hitter_hits_runs_rbis,Under,4.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,970,Carson Benge,hitter_total_bases,Over,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,971,Carter Jensen,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,972,Carter Jensen,hitter_runs,Under,0.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,973,Casey Schmitt,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,974,Casey Schmitt,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,975,Casey Schmitt,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,976,Casey Schmitt,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,977,Casey Schmitt,hitter_hits_runs_rbis,Under,4.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,978,Christian Yelich,hitter_hits,Under,1.5,,823762,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,979,Christian Yelich,hitter_hits_runs_rbis,Over,0.5,,823762,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,980,Christian Yelich,hitter_rbis,Under,1.5,,823762,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,981,Christian Yelich,hitter_total_bases,Under,3.5,,823762,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,982,Cooper Pratt,hitter_hits_runs_rbis,Under,2.5,,823762,6.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,983,Cooper Pratt,hitter_rbis,Under,1.5,,823762,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,984,Cooper Pratt,hitter_rbis,Under,0.5,,823762,1.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,985,Cooper Pratt,hitter_runs,Under,1.5,,823762,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,986,Drew Cavanaugh,hitter_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,987,Drew Cavanaugh,hitter_rbis,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,988,Drew Cavanaugh,hitter_runs,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,989,Drew Cavanaugh,hitter_total_bases,Under,3.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,990,Drew Gilbert,hitter_hits_runs_rbis,Under,4.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,991,Drew Gilbert,hitter_hits_runs_rbis,Under,2.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,992,Drew Gilbert,hitter_rbis,Under,0.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,993,Drew Gilbert,hitter_runs,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,994,Heliot Ramos,hitter_hits,Under,1.5,,824087,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,995,Heliot Ramos,hitter_hits,Under,1.5,,824087,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,996,Jac Caglianone,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,997,Jake Bauers,hitter_total_bases,Over,0.5,,823762,0.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,998,Jung Hoo Lee,hitter_hits,Under,1.5,,824087,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,999,Luis Arraez,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1000,Luis Arraez,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1001,Luis Arraez,hitter_hits,Under,1.5,,824087,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1002,Michael Wacha,pitcher_strikeouts,Over,4.5,,824087,5.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1003,Michael Wacha,pitcher_strikeouts,Over,4.5,,824087,5.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1004,Trevor McDonald,pitcher_strikeouts,Over,3.5,,824087,3.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1005,Trevor McDonald,pitcher_strikeouts,Over,3.5,,824087,3.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1006,Trevor McDonald,pitcher_strikeouts,Over,3.5,,824087,3.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1007,Alex Bregman,hitter_hits,Under,1.5,,824654,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1008,Alex Bregman,hitter_hits_runs_rbis,Under,4.5,,824654,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1009,Alex Bregman,hitter_hits_runs_rbis,Under,2.5,,824654,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1010,Alex Bregman,hitter_rbis,Under,0.5,,824654,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1011,Alex Bregman,hitter_runs,Under,1.5,,824654,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1012,Alex Bregman,hitter_total_bases,Under,2.5,,824654,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1013,Andrew Benintendi,hitter_hits_runs_rbis,Under,4.5,,822874,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1014,Andrew Benintendi,hitter_hits_runs_rbis,Under,3.5,,822874,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1015,Andrew Benintendi,hitter_rbis,Under,1.5,,822874,3.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1016,Braden Montgomery,hitter_hits_runs_rbis,Under,2.5,,822874,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1017,Braden Montgomery,hitter_rbis,Under,0.5,,822874,1.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1018,Braden Montgomery,hitter_total_bases,Under,3.5,,822874,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1019,Brandon Nimmo,hitter_hits,Under,1.5,,822874,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1020,Brandon Nimmo,hitter_hits_runs_rbis,Under,4.5,,822874,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1021,Brandon Nimmo,hitter_rbis,Under,0.5,,822874,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1022,Brandon Nimmo,hitter_runs,Under,1.5,,822874,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1023,Brandon Nimmo,hitter_total_bases,Under,3.5,,822874,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1024,Carson Kelly,hitter_hits,Under,1.5,,824654,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1025,Carson Kelly,hitter_runs,Under,1.5,,824654,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1026,Carson Kelly,hitter_total_bases,Under,2.5,,824654,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1027,Chase Meidroth,hitter_hits,Under,1.5,,822874,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1028,Chase Meidroth,hitter_hits_runs_rbis,Under,4.5,,822874,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1029,Chase Meidroth,hitter_hits_runs_rbis,Under,2.5,,822874,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1030,Chase Meidroth,hitter_rbis,Under,1.5,,822874,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1031,Colson Montgomery,hitter_hits,Under,1.5,,822874,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1032,Colson Montgomery,hitter_runs,Under,1.5,,822874,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1033,Colson Montgomery,hitter_total_bases,Under,3.5,,822874,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1034,Dansby Swanson,hitter_total_bases,Under,2.5,,824654,3.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1035,Dillon Dingler,hitter_hits,Under,1.5,,824654,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1036,Dillon Dingler,hitter_hits_runs_rbis,Under,4.5,,824654,10.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1037,Dillon Dingler,hitter_total_bases,Under,2.5,,824654,10.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1038,Erick Fedde,pitcher_strikeouts,Under,3.5,,822874,6.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1039,Erick Fedde,pitcher_strikeouts,Under,3.5,,822874,6.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1040,Jameson Taillon,pitcher_strikeouts,Over,3.5,,824654,6.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1041,Jameson Taillon,pitcher_strikeouts,Over,3.5,,824654,6.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1042,Kerry Carpenter,hitter_total_bases,Under,1.5,,824654,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1043,Kerry Carpenter,hitter_total_bases,Under,1.5,,824654,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1044,Miguel Vargas,hitter_total_bases,Over,0.5,,822874,5.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1045,Munetaka Murakami,hitter_total_bases,Over,0.5,,822874,2.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1046,Pete Crow-Armstrong,hitter_total_bases,Under,2.5,,824654,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1047,Cam Smith,hitter_rbis,Under,1.5,,824167,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1048,Cam Smith,hitter_runs,Under,1.5,,824167,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1049,Janson Junk,pitcher_strikeouts,Over,3.5,,824167,3.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1050,Janson Junk,pitcher_strikeouts,Over,3.5,,824167,3.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1051,Ronel Blanco,pitcher_strikeouts,Over,3.5,,824167,8.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1052,Andrew Alvarez,pitcher_outs,Under,14.5,,824328,13.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1053,Andrew Alvarez,pitcher_strikeouts,Over,2.5,,824328,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1054,Andrés Chaparro,hitter_hits_runs_rbis,Under,3.5,,824328,5.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1055,Andrés Chaparro,hitter_runs,Under,1.5,,824328,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1056,Braxton Fulford,hitter_hits,Under,1.5,,824328,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1057,Braxton Fulford,hitter_hits_runs_rbis,Under,3.5,,824328,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1058,Braxton Fulford,hitter_rbis,Under,0.5,,824328,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1059,Braxton Fulford,hitter_runs,Under,1.5,,824328,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1060,CJ Abrams,hitter_hits,Under,1.5,,824328,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1061,CJ Abrams,hitter_hits,Under,1.5,,824328,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1062,CJ Abrams,hitter_hits_runs_rbis,Under,3.5,,824328,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1063,CJ Abrams,hitter_rbis,Under,0.5,,824328,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1064,CJ Abrams,hitter_runs,Under,1.5,,824328,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1065,CJ Abrams,hitter_total_bases,Over,0.5,,824328,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1066,Cole Carrigg,hitter_runs,Under,1.5,,824328,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1067,Cole Carrigg,hitter_total_bases,Under,3.5,,824328,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1068,Curtis Mead,hitter_hits,Under,1.5,,824328,3.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1069,Curtis Mead,hitter_hits,Under,1.5,,824328,3.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1070,Curtis Mead,hitter_hits_runs_rbis,Under,2.5,,824328,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1071,Curtis Mead,hitter_runs,Under,1.5,,824328,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1072,Curtis Mead,hitter_total_bases,Under,4.5,,824328,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1073,Daylen Lile,hitter_hits,Under,1.5,,824328,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1074,Daylen Lile,hitter_total_bases,Under,4.5,,824328,3.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1075,Jake McCarthy,hitter_hits,Under,1.5,,824328,2.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1076,Andrew Abbott,pitcher_strikeouts,Over,2.5,,823112,6.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1077,Andrew Abbott,pitcher_strikeouts,Over,3.5,,823112,6.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1078,Cal Raleigh,hitter_hits,Under,1.5,,823112,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1079,Cal Raleigh,hitter_hits_runs_rbis,Under,3.5,,823112,7.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1080,Cal Raleigh,hitter_hits_runs_rbis,Under,2.5,,823112,7.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1081,Cal Raleigh,hitter_runs,Under,1.5,,823112,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1082,Cal Raleigh,hitter_total_bases,Under,3.5,,823112,4.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1083,Cole Young,hitter_hits,Under,1.5,,823112,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1084,Cole Young,hitter_hits_runs_rbis,Under,2.5,,823112,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1085,Cole Young,hitter_runs,Under,1.5,,823112,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1086,Cole Young,hitter_total_bases,Under,3.5,,823112,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1087,Colt Emerson,hitter_hits,Under,1.5,,823112,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1088,Colt Emerson,hitter_hits_runs_rbis,Under,3.5,,823112,3.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1089,Colt Emerson,hitter_hits_runs_rbis,Under,4.5,,823112,3.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1090,Colt Emerson,hitter_rbis,Under,1.5,,823112,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1091,Colt Emerson,hitter_runs,Under,1.5,,823112,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1092,Colt Emerson,hitter_total_bases,Under,3.5,,823112,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1093,Corbin Carroll,hitter_runs,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1094,Corbin Carroll,hitter_total_bases,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1095,Dane Myers,hitter_hits,Under,1.5,,823112,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1096,Dane Myers,hitter_hits_runs_rbis,Under,3.5,,823112,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1097,Dane Myers,hitter_rbis,Under,0.5,,823112,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1098,Dane Myers,hitter_rbis,Under,1.5,,823112,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1099,Dane Myers,hitter_runs,Under,1.5,,823112,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1100,Dane Myers,hitter_total_bases,Under,3.5,,823112,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1101,Edwin Arroyo,hitter_hits,Under,1.5,,823112,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1102,Edwin Arroyo,hitter_rbis,Under,1.5,,823112,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1103,Edwin Arroyo,hitter_total_bases,Under,2.5,,823112,1.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1104,Elly De La Cruz,hitter_hits,Under,1.5,,823112,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1105,Elly De La Cruz,hitter_runs,Under,1.5,,823112,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1106,Ketel Marte,hitter_runs,Under,0.5,,825058,1.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1107,Mitch Bratt,pitcher_outs,Under,13.5,,825058,14.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1108,Mitch Bratt,pitcher_outs,Under,14.5,,825058,14.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1109,Mitch Bratt,pitcher_strikeouts,Over,3.5,,825058,4.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1110,Alec Burleson,hitter_hits,Under,1.5,,824006,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1111,Alec Burleson,hitter_hits_runs_rbis,Under,4.5,,824006,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1112,Alec Burleson,hitter_rbis,Under,0.5,,824006,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1113,Alec Burleson,hitter_total_bases,Under,2.5,,824006,0.0,GRADED,WIN,2026-07-21T05:01:58.117480+00:00
-2026-07-20,1114,José Soriano,pitcher_outs,Under,16.5,,824006,21.0,GRADED,LOSS,2026-07-21T05:01:58.117480+00:00
+2026-07-17,134,Anthony Seigler,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,135,Ben Williamson,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,136,Ben Williamson,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,137,Ceddanne Rafaela,hitter_hits,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,138,Ceddanne Rafaela,hitter_total_bases,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,143,Junior Caminero,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,144,Junior Caminero,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,145,Junior Caminero,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,146,Junior Caminero,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,147,Masataka Yoshida,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,148,Masataka Yoshida,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,149,Masataka Yoshida,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,150,Masataka Yoshida,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,151,Wilyer Abreu,hitter_hits,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,152,Yandy Diaz,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,153,Yandy Diaz,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,154,Yandy Diaz,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,155,Yandy Díaz,hitter_hits,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,156,Yandy Díaz,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,157,Yandy Díaz,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,159,Bryan Torres,hitter_hits_runs_rbis,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,161,Caleb Durbin,hitter_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,162,Caleb Durbin,hitter_total_bases,Under,3.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,165,Ceddanne Rafaela,hitter_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,185,Jarren Duran,hitter_hits_runs_rbis,Under,5.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,186,Jarren Duran,hitter_total_bases,Under,3.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,192,Masataka Yoshida,hitter_hits,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,193,Masataka Yoshida,hitter_hits_runs_rbis,Under,4.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,194,Masataka Yoshida,hitter_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,195,Masataka Yoshida,hitter_runs,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,196,Nick Fortes,hitter_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,200,Ryan Vilade,hitter_hits_runs_rbis,Under,4.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,204,Taylor Walls,hitter_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,205,Taylor Walls,hitter_total_bases,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,214,Brandon Lowe,hitter_hits,Over,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,215,Brandon Lowe,hitter_total_bases,Over,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,216,Bryan Reynolds,hitter_total_bases,Over,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,217,Chase DeLauter,hitter_fantasy_score,Under,6.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,218,Gavin Williams,pitcher_outs,Under,17.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,219,Gavin Williams,pitcher_outs,Under,17.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,220,Gavin Williams,pitcher_outs,Under,17.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,221,Gavin Williams,pitcher_outs,Under,17.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,222,Gavin Williams,pitcher_strikeouts,Under,7.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,223,Gavin Williams,pitcher_strikeouts,Under,6.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,224,Gavin Williams,pitcher_strikeouts,Under,6.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,225,Gavin Williams,pitcher_strikeouts,Under,6.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,226,Henry Davis,hitter_runs,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,227,Jake Mangum,hitter_hits,Under,1.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,228,Jared Jones,pitcher_outs,Under,15.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,229,Jared Jones,pitcher_strikeouts,Under,5.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,230,Jonathan Aranda,hitter_hits,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,231,Jonny DeLuca,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,232,Junior Caminero,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,233,Junior Caminero,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,234,Junior Caminero,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,236,Yandy Diaz,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-17,316,Jase Bowen,hitter_hits,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,364,Brandon Lowe,hitter_total_bases,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,420,Hunter Goodman,hitter_hits,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,421,Hunter Goodman,hitter_hits,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,422,Hunter Goodman,hitter_hits_runs_rbis,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,423,Hunter Goodman,hitter_hits_runs_rbis,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,424,Hunter Goodman,hitter_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,425,Hunter Goodman,hitter_runs,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,426,Hunter Goodman,hitter_runs,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,427,Hunter Goodman,hitter_total_bases,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,528,Billy Cook,hitter_hits,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,529,Billy Cook,hitter_hits_runs_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,530,Billy Cook,hitter_total_bases,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,531,Bryan Reynolds,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,532,Esmerlyn Valdez,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,533,Esmerlyn Valdez,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,535,Jake Mangum,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,536,Jake Mangum,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,537,Kyle Manzardo,hitter_hits_runs_rbis,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,538,Ben Rice,hitter_rbis,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,539,Ben Rice,hitter_runs,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,544,Jose Caballero,hitter_hits_runs_rbis,Over,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,545,Max Muncy,hitter_hits_runs_rbis,Over,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,546,Ryan Weathers,pitcher_strikeouts,Under,5.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,547,Shohei Ohtani,hitter_rbis,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,548,Trent Grisham,hitter_runs,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-18,556,Henry Bolte,hitter_runs,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,595,Chase Meidroth,hitter_hits_runs_rbis,Under,3.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,596,Chase Meidroth,hitter_total_bases,Under,3.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,605,Cody Bellinger,hitter_total_bases,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,606,Kyle Tucker,hitter_total_bases,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,662,Brandon Lowe,hitter_total_bases,Over,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,673,Adley Rutschman,hitter_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,674,Adley Rutschman,hitter_runs,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,675,Bobby Witt Jr.,hitter_hits,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,676,Bobby Witt Jr.,hitter_hits_runs_rbis,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,698,Cooper Pratt,hitter_hits,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,699,Cooper Pratt,hitter_hits_runs_rbis,Under,3.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,700,Cooper Pratt,hitter_hits_runs_rbis,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,701,Cooper Pratt,hitter_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,724,Cole Carrigg,hitter_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,725,Cole Carrigg,hitter_total_bases,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,732,Noelvi Marte,hitter_hits_runs_rbis,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,770,Denzer Guzman,hitter_hits,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,771,Denzer Guzman,hitter_hits_runs_rbis,Over,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,772,Denzer Guzman,hitter_rbis,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,803,Andy Pages,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,804,Andy Pages,hitter_hits_runs_rbis,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,805,Andy Pages,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,806,Andy Pages,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,807,Andy Pages,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,808,Andy Pages,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,809,Ben Rice,hitter_hits,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,810,Ben Rice,hitter_hits_runs_rbis,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,811,Ben Rice,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,812,Ben Rice,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,813,Ben Rice,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,814,Ben Rice,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,815,Cody Bellinger,hitter_hits_runs_rbis,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,816,Cody Bellinger,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,817,Cody Bellinger,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,818,Freddie Freeman,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,819,Freddie Freeman,hitter_runs,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,820,Freddie Freeman,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,821,Jazz Chisholm,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,823,Kyle Tucker,hitter_total_bases,Over,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,824,Max Muncy,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,825,Mookie Betts,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,826,Mookie Betts,hitter_total_bases,Under,1.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,827,Shohei Ohtani,hitter_hits_runs_rbis,Under,2.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-19,828,Shohei Ohtani,hitter_rbis,Under,0.5,,,,AMBIGUOUS_DOUBLEHEADER,Player appeared in multiple games and history lacks a game ID.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,829,Carson Benge,hitter_total_bases,Over,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,901,Adley Rutschman,hitter_rbis,Under,0.5,,,,UNMATCHED_PLAYER,Player was not found in any final box score.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,966,Carson Benge,hitter_hits_runs_rbis,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,967,Carson Benge,hitter_hits_runs_rbis,Under,3.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,968,Carson Benge,hitter_hits_runs_rbis,Under,4.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,969,Carson Benge,hitter_total_bases,Over,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,985,Drew Cavanaugh,hitter_rbis,Under,0.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,986,Drew Cavanaugh,hitter_rbis,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,987,Drew Cavanaugh,hitter_runs,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,988,Drew Cavanaugh,hitter_total_bases,Under,3.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,1092,Corbin Carroll,hitter_runs,Under,1.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-20,1093,Corbin Carroll,hitter_total_bases,Under,2.5,,,,DID_NOT_APPEAR,Player was listed but did not record the required appearance.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1114,Alec Burleson,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1115,Bo Bichette,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1116,Brandon Marsh,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1117,CJ Abrams,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1118,CJ Abrams,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1119,CJ Abrams,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1120,Cole Carrigg,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1121,Curtis Mead,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1122,David Peterson,pitcher_strikeouts,Over,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1123,Daylen Lile,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1124,Daylen Lile,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1125,Drake Baldwin,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1126,Gabriel Moreno,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1127,Hunter Goodman,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1128,Hunter Goodman,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1129,Jack Perkins,pitcher_strikeouts,Over,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1130,Jack Perkins,pitcher_strikeouts,Over,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1131,Jacob Wilson,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1132,Jacob Wilson,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1133,Jacob Wilson,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1134,Jake McCarthy,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1135,Jake McCarthy,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1136,Keibert Ruiz,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1137,Ketel Marte,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1138,Ketel Marte,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1139,Kohl Drake,pitcher_strikeouts,Over,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1140,Kyle Bradish,pitcher_strikeouts,Under,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1141,Shea Langeliers,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1142,Walker Buehler,pitcher_strikeouts,Over,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1143,Alec Bohm,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1144,Alec Bohm,hitter_hits_runs_rbis,Under,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1145,Alec Bohm,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1146,Alec Bohm,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1147,Alec Bohm,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1148,Andy Pages,hitter_hits,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1149,Andy Pages,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1150,Andy Pages,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1151,Austin Martin,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1152,Austin Martin,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1153,Brandon Marsh,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1154,Brandon Marsh,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1155,Brandon Marsh,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1156,Brandon Marsh,hitter_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1157,Brandon Marsh,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1158,Brandon Marsh,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1159,Brandon Marsh,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1160,Brandon Marsh,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1161,Brayan Rocchio,hitter_hits,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1162,Brayan Rocchio,hitter_hits_runs_rbis,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1163,Brayan Rocchio,hitter_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1164,Brayan Rocchio,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1165,Brayan Rocchio,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1166,Brooks Lee,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1167,Brooks Lee,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1168,Brooks Lee,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1169,Brooks Lee,hitter_total_bases,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1170,Bryce Harper,hitter_hits_runs_rbis,Under,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1171,Bryce Harper,hitter_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1172,Bryce Harper,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1173,Bryson Stott,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1174,Bryson Stott,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1175,Bryson Stott,hitter_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1176,Bryson Stott,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1177,Bryson Stott,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1178,Chase DeLauter,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1179,Dalton Rushing,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1180,Justin Wrobleski,pitcher_strikeouts,Over,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1181,Justin Wrobleski,pitcher_strikeouts,Over,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1182,Kendry Rojas,pitcher_strikeouts,Over,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1183,Kendry Rojas,pitcher_strikeouts,Over,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1184,Kyle Schwarber,hitter_fantasy_score,Over,5.0,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1185,Kyle Schwarber,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1186,Kyle Tucker,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1187,Max Muncy,hitter_fantasy_score,Under,5.0,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1188,Royce Lewis,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1189,Shohei Ohtani,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1190,Shohei Ohtani,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1191,Trea Turner,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1192,Ben Rice,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1193,Ben Rice,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1194,Ben Rice,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1195,Brandon Lowe,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1196,Brandon Lowe,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1197,Brandon Lowe,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1198,Bryan Reynolds,hitter_hits_runs_rbis,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1199,Bryan Reynolds,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1200,Bryan Reynolds,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1202,Bubba Chandler,pitcher_strikeouts,Over,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1203,Cody Bellinger,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1204,Cody Bellinger,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1205,Cody Bellinger,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1206,Jake Mangum,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1207,Jake Mangum,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1208,Jazz Chisholm Jr.,hitter_total_bases,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1209,Trent Grisham,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1210,Trent Grisham,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1211,Will Warren,pitcher_strikeouts,Under,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1212,Alejandro Kirk,hitter_hits_runs_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1213,Alejandro Kirk,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1214,Chandler Simpson,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1215,Daulton Varsho,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1216,Drew Rasmussen,pitcher_outs,Under,16.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1217,Drew Rasmussen,pitcher_outs,Under,17.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1218,Drew Rasmussen,pitcher_strikeouts,Over,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1219,Ernie Clement,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1220,Kazuma Okamoto,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1221,Kazuma Okamoto,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1222,Kevin Gausman,pitcher_outs,Under,17.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1223,Kevin Gausman,pitcher_strikeouts,Over,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1224,Anthony Seigler,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1225,Caleb Durbin,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1226,Gunnar Henderson,hitter_fantasy_score,Under,6.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1227,Kyle Bradish,pitcher_strikeouts,Under,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1228,Kyle Bradish,pitcher_strikeouts,Under,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1229,Ranger Suarez,pitcher_strikeouts,Over,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1230,Ranger Suarez,pitcher_strikeouts,Over,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1231,Taylor Ward,hitter_hits,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1232,Willson Contreras,hitter_total_bases,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1233,Austin Riley,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1234,Drake Baldwin,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1235,Drake Baldwin,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1236,Fernando Tatis,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1237,Fernando Tatis,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1238,Fernando Tatis Jr.,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1239,Fernando Tatis Jr.,hitter_total_bases,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1240,Jackson Merrill,hitter_fantasy_score,Under,6.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1241,Michael Harris,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1242,Michael Harris,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1243,Michael Harris,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1244,Michael Harris II,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1245,Ozzie Albies,hitter_hits,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1246,Reynaldo Lopez,pitcher_strikeouts,Over,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1247,Walker Buehler,pitcher_outs,Under,14.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1248,Walker Buehler,pitcher_strikeouts,Over,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1249,Walker Buehler,pitcher_strikeouts,Over,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1250,Walker Buehler,pitcher_strikeouts,Over,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1251,Walker Buehler,pitcher_strikeouts,Over,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1252,Xander Bogaerts,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1253,Xander Bogaerts,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1254,Andrew Vaughn,hitter_hits_runs_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1255,Andrew Vaughn,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1256,Andrew Vaughn,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1257,Bo Bichette,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1258,Brandon Sproat,pitcher_outs,Under,14.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1259,Brandon Sproat,pitcher_outs,Under,14.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1260,Brett Baty,hitter_hits_runs_rbis,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1261,Brett Baty,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1262,Brice Turang,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1263,Bryce Eldridge,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1264,Bryce Eldridge,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1265,Bryce Eldridge,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1266,Bryce Eldridge,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1267,Carson Benge,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1268,Carson Benge,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1269,Carson Benge,hitter_total_bases,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1270,Casey Schmitt,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1271,Casey Schmitt,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1272,Casey Schmitt,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1273,Casey Schmitt,hitter_total_bases,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1274,Christian Yelich,hitter_hits_runs_rbis,Under,5.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1275,Christian Yelich,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1276,Christian Yelich,hitter_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1277,Cooper Pratt,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1278,Cooper Pratt,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1279,Cooper Pratt,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1280,Cooper Pratt,hitter_total_bases,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1281,Jackson Chourio,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1282,Jackson Chourio,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1283,Jackson Chourio,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1284,Jackson Chourio,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1285,Jackson Chourio,hitter_total_bases,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1286,Juan Soto,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1287,Juan Soto,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1288,Jung Hoo Lee,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1289,Luinder Avila,pitcher_strikeouts,Over,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1290,Luinder Avila,pitcher_strikeouts,Over,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1291,Luinder Avila,pitcher_strikeouts,Over,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1292,Luinder Avila,pitcher_strikeouts,Over,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1293,Luis Arraez,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1294,Luis Arraez,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1295,Rafael Devers,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1296,Alex Bregman,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1297,Alex Bregman,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1298,Andrew Benintendi,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1299,Andrew Benintendi,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1300,Andrew Benintendi,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1301,Andrew Benintendi,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1302,Andrew Benintendi,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1303,Andrew Benintendi,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1304,Andrew Benintendi,hitter_total_bases,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1305,Braden Montgomery,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1306,Braden Montgomery,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1307,Braden Montgomery,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1308,Braden Montgomery,hitter_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1309,Braden Montgomery,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1310,Braden Montgomery,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1311,Braden Montgomery,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1312,Braden Montgomery,hitter_total_bases,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1313,Braden Montgomery,hitter_total_bases,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1314,Braden Montgomery,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1315,Brandon Nimmo,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1316,Brandon Nimmo,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1317,Brandon Nimmo,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1318,Brandon Nimmo,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1319,Brandon Nimmo,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1320,Brandon Nimmo,hitter_total_bases,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1321,Brandon Nimmo,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1322,Brandon Nimmo,hitter_total_bases,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1323,Cam Cauley,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1324,Cam Cauley,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1325,Cam Cauley,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1326,Cam Cauley,hitter_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1327,Cam Cauley,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1328,Cam Cauley,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1329,Cam Cauley,hitter_total_bases,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1330,Cam Cauley,hitter_total_bases,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1331,Carson Kelly,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1332,Chase Meidroth,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1333,Chase Meidroth,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1334,Chase Meidroth,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1335,Chase Meidroth,hitter_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1336,Chase Meidroth,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1337,Chase Meidroth,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1338,Chase Meidroth,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1339,Chase Meidroth,hitter_total_bases,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1340,Colson Montgomery,hitter_hits_runs_rbis,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1341,Colson Montgomery,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1342,Colson Montgomery,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1343,Colson Montgomery,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1344,Colson Montgomery,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1345,Colson Montgomery,hitter_total_bases,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1346,Dansby Swanson,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1347,Dansby Swanson,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1348,Dansby Swanson,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1349,Dansby Swanson,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1350,Dansby Swanson,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1351,David Peterson,pitcher_outs,Under,15.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1352,Dillon Dingler,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1353,Dillon Dingler,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1354,Framber Valdez,pitcher_outs,Under,17.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1355,Ian Happ,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1356,Riley Greene,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1357,Riley Greene,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1358,Cam Smith,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1359,Cam Smith,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1360,Tatsuya Imai,pitcher_outs,Under,14.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1361,Tyler Phillips,pitcher_outs,Under,14.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1362,CJ Abrams,hitter_hits_runs_rbis,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1363,CJ Abrams,hitter_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1364,CJ Abrams,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1365,CJ Abrams,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1366,Carson Palmquist,pitcher_strikeouts,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1367,Cole Carrigg,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1368,Cole Carrigg,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1369,Cole Carrigg,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1370,Cole Carrigg,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1371,Cole Carrigg,hitter_total_bases,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1372,Curtis Mead,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1373,Curtis Mead,hitter_hits_runs_rbis,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1374,Curtis Mead,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1375,Curtis Mead,hitter_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1376,Curtis Mead,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1377,Curtis Mead,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1378,Curtis Mead,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1379,Daylen Lile,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1380,Hunter Goodman,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1381,Keibert Ruiz,hitter_total_bases,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1382,Michael Lorenzen,pitcher_strikeouts,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1383,Miles Mikolas,pitcher_strikeouts,Over,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1384,Miles Mikolas,pitcher_strikeouts,Over,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1385,Troy Johnston,hitter_total_bases,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1386,Alec Burleson,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1387,Alec Burleson,hitter_hits_runs_rbis,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1388,Alec Burleson,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1389,Alec Burleson,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1390,Alec Burleson,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1391,Alec Burleson,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1392,Alec Burleson,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1393,Blaze Jordan,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1394,Blaze Jordan,hitter_hits_runs_rbis,Under,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1395,Blaze Jordan,hitter_hits_runs_rbis,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1396,Blaze Jordan,hitter_hits_runs_rbis,Under,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1397,Blaze Jordan,hitter_rbis,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1398,Blaze Jordan,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1399,Blaze Jordan,hitter_total_bases,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1400,Denzer Guzman,hitter_rbis,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1401,Cal Raleigh,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1402,Cal Raleigh,hitter_total_bases,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1403,Chase Burns,pitcher_strikeouts,Over,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1404,Chase Burns,pitcher_strikeouts,Under,10.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1405,Cole Young,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1406,Colt Emerson,hitter_hits_runs_rbis,Under,2.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1407,Colt Emerson,hitter_runs,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1408,Eugenio Suárez,hitter_total_bases,Over,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1409,Gabriel Moreno,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1410,Geraldo Perdomo,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1411,Jack Perkins,pitcher_outs,Under,14.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1412,Jack Perkins,pitcher_strikeouts,Over,4.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1413,Jacob Wilson,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1414,Ketel Marte,hitter_hits,Under,1.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1415,Ketel Marte,hitter_runs,Under,0.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1416,Kohl Drake,pitcher_strikeouts,Over,3.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
+2026-07-21,1417,Luis Castillo,pitcher_outs,Under,17.5,,,,UNRESOLVED,No completed game box scores were available.,2026-07-21T16:51:20.211358+00:00
