@@ -67,6 +67,21 @@ FALLBACK_FEATURES = [
 ]
 
 
+# Conservative production controls.
+MIN_MODEL_FEATURE_COVERAGE = 0.55
+FULL_MODEL_FEATURE_COVERAGE = 0.85
+MIN_GAMES_FOR_FULL_TRUST = 10
+MIN_GAMES_FOR_MODEL_USE = 3
+
+MODEL_WEIGHT_LOW = 0.35
+MODEL_WEIGHT_MEDIUM = 0.60
+MODEL_WEIGHT_HIGH = 0.78
+
+MIN_PROJECTED_KS = 1.5
+MAX_PROJECTED_KS = 11.0
+MAX_DEVIATION_FROM_BASELINE = 2.25
+
+
 def get_target_date() -> str:
     """Return and validate the slate date."""
     raw_value = os.getenv("MLB_TARGET_DATE", date.today().isoformat())
@@ -212,25 +227,78 @@ def fallback_projection(master: pd.DataFrame) -> pd.Series:
     return fallback.fillna(float(median_value))
 
 
-def confidence_label(
-    games_started: float,
+def calculate_feature_coverage(
     observed_features: int,
     total_features: int,
+) -> float:
+    """Return the fraction of trained features available for this row."""
+    return float(
+        np.clip(
+            observed_features / max(total_features, 1),
+            0.0,
+            1.0,
+        )
+    )
+
+
+def calculate_reliability_score(
+    games_started: float,
+    feature_coverage: float,
+    used_model: bool,
+) -> float:
+    """Return a 0-100 data reliability score, not a win probability."""
+    if not used_model:
+        return 20.0
+
+    games_value = 0.0 if pd.isna(games_started) else float(games_started)
+    experience_score = min(games_value / MIN_GAMES_FOR_FULL_TRUST, 1.0)
+
+    score = (
+        0.65 * feature_coverage
+        + 0.35 * experience_score
+    ) * 100.0
+
+    return float(np.clip(score, 0.0, 100.0))
+
+
+def confidence_label(
+    reliability_score: float,
     used_model: bool,
 ) -> str:
-    """Assign a data-availability confidence label, not a win probability."""
-    if not used_model:
+    """Map the numerical reliability score to an audit-friendly label."""
+    if not used_model or reliability_score < 50:
         return "LOW"
 
-    coverage = observed_features / max(total_features, 1)
-
-    if pd.notna(games_started) and games_started >= 10 and coverage >= 0.80:
+    if reliability_score >= 80:
         return "HIGH"
 
-    if pd.notna(games_started) and games_started >= 5 and coverage >= 0.55:
-        return "MEDIUM"
+    return "MEDIUM"
 
-    return "LOW"
+
+def model_blend_weight(
+    games_started: float,
+    feature_coverage: float,
+    used_model: bool,
+) -> float:
+    """Choose how much of the raw model projection to trust."""
+    if not used_model:
+        return 0.0
+
+    games_value = 0.0 if pd.isna(games_started) else float(games_started)
+
+    if (
+        games_value >= MIN_GAMES_FOR_FULL_TRUST
+        and feature_coverage >= FULL_MODEL_FEATURE_COVERAGE
+    ):
+        return MODEL_WEIGHT_HIGH
+
+    if (
+        games_value >= 5
+        and feature_coverage >= MIN_MODEL_FEATURE_COVERAGE
+    ):
+        return MODEL_WEIGHT_MEDIUM
+
+    return MODEL_WEIGHT_LOW
 
 
 def project_strikeouts(target_date: str | None = None) -> pd.DataFrame:
@@ -265,32 +333,105 @@ def project_strikeouts(target_date: str | None = None) -> pd.DataFrame:
             f"expected {len(master)}, received {predictions.shape[0]}."
         )
 
-    valid_model_prediction = np.isfinite(predictions) & (predictions >= 0)
     fallback = fallback_projection(master).to_numpy(dtype="float64")
 
-    master["projected_ks"] = np.where(
-        valid_model_prediction,
+    feature_coverage = (
+        observed_counts.astype(float)
+        / max(len(feature_columns), 1)
+    ).clip(lower=0.0, upper=1.0)
+
+    games_started = pd.to_numeric(
+        master["games_started"],
+        errors="coerce",
+    ).fillna(0.0)
+
+    raw_model_valid = np.isfinite(predictions) & (predictions >= 0)
+
+    sufficient_inputs = (
+        feature_coverage.ge(MIN_MODEL_FEATURE_COVERAGE)
+        & games_started.ge(MIN_GAMES_FOR_MODEL_USE)
+    )
+
+    use_model = raw_model_valid & sufficient_inputs.to_numpy(dtype=bool)
+
+    blend_weights = np.array(
+        [
+            model_blend_weight(
+                games_started=float(row_games),
+                feature_coverage=float(row_coverage),
+                used_model=bool(row_used_model),
+            )
+            for row_games, row_coverage, row_used_model in zip(
+                games_started,
+                feature_coverage,
+                use_model,
+            )
+        ],
+        dtype="float64",
+    )
+
+    conservative_model_projection = np.clip(
         predictions,
+        fallback - MAX_DEVIATION_FROM_BASELINE,
+        fallback + MAX_DEVIATION_FROM_BASELINE,
+    )
+
+    blended_projection = (
+        blend_weights * conservative_model_projection
+        + (1.0 - blend_weights) * fallback
+    )
+
+    final_projection = np.where(
+        use_model,
+        blended_projection,
         fallback,
     )
 
-    master["projection_source"] = np.where(
-        valid_model_prediction,
-        "LEAKAGE_FREE_XGBOOST",
-        "RECENT_SEASON_FALLBACK",
+    final_projection = np.clip(
+        final_projection,
+        MIN_PROJECTED_KS,
+        MAX_PROJECTED_KS,
     )
+
+    master["raw_model_projected_ks"] = predictions
+    master["baseline_projected_ks"] = fallback
+    master["model_blend_weight"] = blend_weights
+    master["feature_coverage"] = feature_coverage
+    master["projected_ks"] = final_projection
+
+    master["projection_source"] = np.select(
+        [
+            use_model & (blend_weights >= MODEL_WEIGHT_HIGH),
+            use_model,
+        ],
+        [
+            "BLENDED_MODEL_HIGH_TRUST",
+            "BLENDED_MODEL_CONSERVATIVE",
+        ],
+        default="RECENT_SEASON_FALLBACK",
+    )
+
+    master["projection_reliability_score"] = [
+        calculate_reliability_score(
+            games_started=float(row_games),
+            feature_coverage=float(row_coverage),
+            used_model=bool(row_used_model),
+        )
+        for row_games, row_coverage, row_used_model in zip(
+            games_started,
+            feature_coverage,
+            use_model,
+        )
+    ]
 
     master["projection_confidence"] = [
         confidence_label(
-            games_started=row_games,
-            observed_features=int(row_observed),
-            total_features=len(feature_columns),
+            reliability_score=float(row_score),
             used_model=bool(row_used_model),
         )
-        for row_games, row_observed, row_used_model in zip(
-            master["games_started"],
-            observed_counts,
-            valid_model_prediction,
+        for row_score, row_used_model in zip(
+            master["projection_reliability_score"],
+            use_model,
         )
     ]
 
@@ -309,19 +450,55 @@ def project_strikeouts(target_date: str | None = None) -> pd.DataFrame:
         "strikeouts",
         "season_k_per_start",
         "avg_k",
+        "raw_model_projected_ks",
+        "baseline_projected_ks",
+        "model_blend_weight",
+        "feature_coverage",
         "projected_ks",
         "projection_source",
+        "projection_reliability_score",
         "projection_confidence",
         "model_name",
         "model_feature_count",
         "observed_model_features",
     ]
 
+    audit_columns = [
+        "opponent",
+        "opp_k_per_game",
+        "opp_runs_per_game",
+        "opp_hits_per_game",
+        "opp_walks_per_game",
+        "opp_avg",
+        "opp_obp",
+        "opp_slg",
+        "opp_ops",
+        "last3_avg_ks",
+        "last3_avg_ip",
+        "last5_avg_ks",
+        "last5_avg_ip",
+        "days_rest",
+        "park_factor",
+    ]
+
+    for column in audit_columns:
+        if column in master.columns and column not in output_columns:
+            output_columns.append(column)
+
     output = master[output_columns].copy()
-    output["projected_ks"] = pd.to_numeric(
-        output["projected_ks"],
-        errors="coerce",
-    ).round(3)
+    for column in [
+        "raw_model_projected_ks",
+        "baseline_projected_ks",
+        "model_blend_weight",
+        "feature_coverage",
+        "projected_ks",
+        "projection_reliability_score",
+    ]:
+        if column in output.columns:
+            output[column] = pd.to_numeric(
+                output[column],
+                errors="coerce",
+            ).round(3)
 
     output = (
         output.drop_duplicates(
@@ -351,7 +528,12 @@ def project_strikeouts(target_date: str | None = None) -> pd.DataFrame:
                 "team",
                 "season_k_per_start",
                 "avg_k",
+                "raw_model_projected_ks",
+                "baseline_projected_ks",
                 "projected_ks",
+                "model_blend_weight",
+                "feature_coverage",
+                "projection_reliability_score",
                 "projection_source",
                 "projection_confidence",
                 "observed_model_features",
