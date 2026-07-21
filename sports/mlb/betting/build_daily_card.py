@@ -133,6 +133,22 @@ STANDARD_CARD_LINE_RANGES = {
 MAX_RECOMMENDATIONS_PER_PLAYER = 2
 MAX_FINAL_CARD_SIZE = 60
 
+# Reserve room for pitching markets so the app is not hitter-dominated.
+MARKET_MINIMUM_TARGETS = {
+    "pitcher_strikeouts": 12,
+    "pitcher_outs": 10,
+}
+
+MARKET_MAXIMUM_TARGETS = {
+    "pitcher_strikeouts": 18,
+    "pitcher_outs": 14,
+}
+
+MARKET_RANKING_BONUS = {
+    "pitcher_strikeouts": 8.0,
+    "pitcher_outs": 6.0,
+}
+
 # Data-quality guardrail: reject lines that are implausibly far from the
 # model projection. This removes malformed/extreme alternate lines without
 # changing the underlying projection model.
@@ -1026,41 +1042,114 @@ def choose_best_player_rows(
 def apply_dynamic_quality_limits(
     frame: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Return a broader card while retaining minimum model-quality checks."""
+    """Build a broader card with guaranteed pitching-market representation."""
     if frame.empty:
         return frame
 
-    tier_limits = {
-        "Elite": 25,
-        "Strong": 20,
-        "Good": 15,
-        "Playable": 10,
-    }
+    eligible = frame.loc[
+        frame["confidence_tier"].isin(
+            {"Elite", "Strong", "Good", "Playable"}
+        )
+    ].copy()
+
+    if eligible.empty:
+        return eligible
+
+    eligible = eligible.sort_values(
+        "ranking_score",
+        ascending=False,
+    )
 
     selected_parts: list[pd.DataFrame] = []
+    selected_indices: set[int] = set()
 
-    for tier, limit in tier_limits.items():
-        tier_rows = (
-            frame.loc[
-                frame["confidence_tier"].eq(tier)
+    # First reserve pitching slots. These are targets, not forced bad picks:
+    # fewer rows are used when fewer pitcher props passed all filters.
+    for market, target in MARKET_MINIMUM_TARGETS.items():
+        market_rows = (
+            eligible.loc[
+                eligible["market"].eq(market)
             ]
-            .sort_values(
-                "ranking_score",
-                ascending=False,
-            )
-            .head(limit)
+            .head(target)
         )
 
-        if not tier_rows.empty:
-            selected_parts.append(tier_rows)
+        if not market_rows.empty:
+            selected_parts.append(market_rows)
+            selected_indices.update(market_rows.index.tolist())
 
-    if not selected_parts:
-        return frame.iloc[0:0].copy()
+    remaining = eligible.loc[
+        ~eligible.index.isin(selected_indices)
+    ].copy()
+
+    # Respect market maximums while filling the rest of the card.
+    current_market_counts: dict[str, int] = {}
+
+    if selected_parts:
+        reserved = pd.concat(
+            selected_parts,
+            axis=0,
+        )
+        current_market_counts = (
+            reserved["market"]
+            .value_counts()
+            .astype(int)
+            .to_dict()
+        )
+
+    filler_rows: list[pd.Series] = []
+
+    for _, row in remaining.iterrows():
+        market = str(row.get("market", ""))
+        market_cap = MARKET_MAXIMUM_TARGETS.get(
+            market,
+            MAX_FINAL_CARD_SIZE,
+        )
+
+        current_count = current_market_counts.get(
+            market,
+            0,
+        )
+
+        if current_count >= market_cap:
+            continue
+
+        filler_rows.append(row)
+        current_market_counts[market] = current_count + 1
+
+        reserved_count = sum(
+            len(part)
+            for part in selected_parts
+        )
+
+        if reserved_count + len(filler_rows) >= MAX_FINAL_CARD_SIZE:
+            break
+
+    combined_parts: list[pd.DataFrame] = []
+
+    if selected_parts:
+        combined_parts.append(
+            pd.concat(
+                selected_parts,
+                axis=0,
+            )
+        )
+
+    if filler_rows:
+        combined_parts.append(
+            pd.DataFrame(filler_rows)
+        )
+
+    if not combined_parts:
+        return eligible.iloc[0:0].copy()
 
     selected = pd.concat(
-        selected_parts,
-        ignore_index=True,
+        combined_parts,
+        axis=0,
     )
+
+    selected = selected.loc[
+        ~selected.index.duplicated(keep="first")
+    ].copy()
 
     return (
         selected.sort_values(
@@ -1605,6 +1694,13 @@ def build_daily_card() -> pd.DataFrame:
             probabilities["platform_priority"]
             / 100.0
         ) * 10.0
+    )
+
+    probabilities["ranking_score"] = (
+        probabilities["ranking_score"]
+        + probabilities["market"]
+        .map(MARKET_RANKING_BONUS)
+        .fillna(0.0)
     )
 
     probabilities = add_rejection_reason(
