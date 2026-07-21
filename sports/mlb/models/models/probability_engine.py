@@ -59,10 +59,24 @@ HITTER_MODEL_DIRECTORY = (
 OUTPUT_PATH = PROJECT_ROOT / "outputs" / "probability_table.csv"
 
 MINIMUM_EMPIRICAL_RESIDUALS = 100
-EMPIRICAL_PRIOR_STRENGTH = 10.0
-PROBABILITY_FLOOR = 0.01
-PROBABILITY_CEILING = 0.99
+EMPIRICAL_PRIOR_STRENGTH = 40.0
+PROBABILITY_FLOOR = 0.08
+PROBABILITY_CEILING = 0.92
 PUSH_TOLERANCE = 1e-9
+
+PICKEM_PLATFORMS = {
+    "prizepicks",
+    "sleeper",
+    "underdog",
+}
+
+# Shrink raw distribution probabilities toward 50% until historical
+# calibration proves the model deserves full confidence.
+METHOD_SHRINKAGE = {
+    "empirical_holdout_residuals": 0.84,
+    "poisson": 0.70,
+    "normal_residual_std": 0.74,
+}
 
 HITTER_MARKET_CONFIG = {
     "hitter_hits": {
@@ -103,7 +117,9 @@ OUTPUT_COLUMNS = [
     "line",
     "sportsbook_odds",
     "projection",
+    "raw_probability",
     "probability",
+    "calibration_shrinkage",
     "push_probability",
     "opposite_probability",
     "fair_odds",
@@ -149,6 +165,54 @@ def clamp_probability(probability: float) -> float:
             PROBABILITY_CEILING,
         )
     )
+
+
+
+def is_pickem_platform(value: Any) -> bool:
+    """Return True for DFS/pick'em operators without standard bet odds."""
+    return str(value).strip().casefold() in PICKEM_PLATFORMS
+
+
+def calibrate_probability(
+    raw_probability: float,
+    distribution_method: str,
+    calibration_sample_size: Any,
+) -> tuple[float, float]:
+    """Shrink unproven probabilities toward 50% to reduce overconfidence."""
+    if not np.isfinite(raw_probability):
+        return float("nan"), float("nan")
+
+    base_shrinkage = METHOD_SHRINKAGE.get(
+        distribution_method,
+        0.65,
+    )
+
+    sample_size = pd.to_numeric(
+        calibration_sample_size,
+        errors="coerce",
+    )
+
+    # Empirical hitter models earn slightly more trust with large holdouts.
+    if (
+        distribution_method == "empirical_holdout_residuals"
+        and pd.notna(sample_size)
+    ):
+        sample_factor = float(
+            np.clip(
+                float(sample_size) / 750.0,
+                0.70,
+                1.0,
+            )
+        )
+        shrinkage = base_shrinkage * sample_factor
+    else:
+        shrinkage = base_shrinkage
+
+    calibrated = 0.5 + (
+        float(raw_probability) - 0.5
+    ) * shrinkage
+
+    return clamp_probability(calibrated), float(shrinkage)
 
 
 def fair_odds(probability: float) -> int | None:
@@ -1014,7 +1078,9 @@ def build_probability_table() -> pd.DataFrame:
         if pd.isna(projection):
             base_output.update(
                 {
+                    "raw_probability": np.nan,
                     "probability": np.nan,
+                    "calibration_shrinkage": np.nan,
                     "push_probability": np.nan,
                     "opposite_probability": np.nan,
                     "fair_odds": None,
@@ -1055,19 +1121,46 @@ def build_probability_table() -> pd.DataFrame:
             )
         )
 
-        if np.isfinite(side_probability):
-            side_probability = clamp_probability(
-                side_probability
+        raw_side_probability = side_probability
+
+        if np.isfinite(raw_side_probability):
+            (
+                side_probability,
+                calibration_shrinkage,
+            ) = calibrate_probability(
+                raw_probability=raw_side_probability,
+                distribution_method=probability_result[
+                    "distribution_method"
+                ],
+                calibration_sample_size=probability_result[
+                    "calibration_sample_size"
+                ],
             )
+        else:
+            calibration_shrinkage = np.nan
 
         if np.isfinite(opposite_probability):
             opposite_probability = clamp_probability(
-                opposite_probability
+                1.0
+                - side_probability
+                - float(
+                    probability_result[
+                        "push_probability"
+                    ]
+                    if np.isfinite(
+                        probability_result[
+                            "push_probability"
+                        ]
+                    )
+                    else 0.0
+                )
             )
 
         base_output.update(
             {
+                "raw_probability": raw_side_probability,
                 "probability": side_probability,
+                "calibration_shrinkage": calibration_shrinkage,
                 "push_probability": probability_result[
                     "push_probability"
                 ],
@@ -1098,9 +1191,20 @@ def build_probability_table() -> pd.DataFrame:
         columns=OUTPUT_COLUMNS,
     )
 
+    output["is_pickem_platform"] = output[
+        "platform"
+    ].apply(is_pickem_platform)
+
     output["sportsbook_implied_probability"] = output[
         "sportsbook_odds"
     ].apply(american_odds_to_probability)
+
+    # Pick'em operators do not provide normal American odds. Treat their
+    # selection threshold as 50% instead of pretending -100 is a real price.
+    output.loc[
+        output["is_pickem_platform"],
+        "sportsbook_implied_probability",
+    ] = 0.50
 
     output["raw_probability_edge"] = (
         output["probability"]
@@ -1112,25 +1216,19 @@ def build_probability_table() -> pd.DataFrame:
     # ------------------------------------------------------------------
 
     output["ranking_score"] = (
-        output["raw_probability_edge"].clip(lower=0).fillna(0) * 0.45
-        + output["probability"].fillna(0) * 0.25
+        output["raw_probability_edge"].clip(lower=0).fillna(0) * 0.50
+        + output["probability"].fillna(0) * 0.20
         + (
             output["calibration_sample_size"]
             .fillna(0)
-            .clip(upper=300)
-            / 300
+            .clip(upper=750)
+            / 750
         ) * 0.20
-        + (
-            1
-            - (
-                output["validation_mae"]
-                / output["validation_mae"].fillna(1).max()
-            ).fillna(1)
-        ) * 0.10
+        + output["calibration_shrinkage"].fillna(0) * 0.10
     )
 
     # Penalize extreme alternate-line favorites
-    extreme_probability = output["probability"] > 0.92
+    extreme_probability = output["probability"] > 0.85
 
     pickem_platform = (
         output["platform"]
@@ -1199,7 +1297,9 @@ def build_probability_table() -> pd.DataFrame:
         "direction",
         "line",
         "projection",
+        "raw_probability",
         "probability",
+        "calibration_shrinkage",
         "fair_odds",
         "distribution_method",
         "probability_status",
