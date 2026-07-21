@@ -1440,17 +1440,9 @@ def build_daily_card() -> pd.DataFrame:
         MARKET_MINIMUM_PROBABILITIES
     ).fillna(MINIMUM_WIN_PROBABILITY)
 
-    max_elite_score = pd.to_numeric(
-        probabilities.get("elite_score"),
-        errors="coerce",
-    ).max()
-
-    if not np.isfinite(max_elite_score) or max_elite_score <= 0:
-        max_elite_score = 1.0
-
     calibration_component = (
         pd.to_numeric(
-            probabilities.get("calibration_sample_size"),
+            probabilities["calibration_sample_size"],
             errors="coerce",
         )
         .fillna(0)
@@ -1458,20 +1450,15 @@ def build_daily_card() -> pd.DataFrame:
         / 750.0
     )
 
+    # Build an initial ranking score before the Elite filter runs.
+    # elite_score does not exist yet at this point.
     probabilities["ranking_score"] = (
-        probabilities["probability"].fillna(0) * 35.0
+        probabilities["probability"].fillna(0) * 45.0
         + probabilities["expected_value"].clip(
             lower=0,
             upper=1,
-        ).fillna(0) * 25.0
-        + (
-            pd.to_numeric(
-                probabilities.get("elite_score"),
-                errors="coerce",
-            ).fillna(0)
-            / max_elite_score
-        ) * 20.0
-        + calibration_component * 10.0
+        ).fillna(0) * 30.0
+        + calibration_component * 15.0
         + (
             probabilities["platform_priority"]
             / 100.0
@@ -1520,6 +1507,43 @@ def build_daily_card() -> pd.DataFrame:
     probabilities = apply_elite_filter(
         probabilities,
         history_path=HISTORY_PATH,
+    )
+
+    # Recalculate the final ranking score now that elite_score exists.
+    elite_values = pd.to_numeric(
+        probabilities["elite_score"],
+        errors="coerce",
+    ).fillna(0)
+
+    max_elite_score = elite_values.max()
+
+    if not np.isfinite(max_elite_score) or max_elite_score <= 0:
+        max_elite_score = 1.0
+
+    calibration_component = (
+        pd.to_numeric(
+            probabilities["calibration_sample_size"],
+            errors="coerce",
+        )
+        .fillna(0)
+        .clip(upper=750)
+        / 750.0
+    )
+
+    probabilities["ranking_score"] = (
+        probabilities["probability"].fillna(0) * 35.0
+        + probabilities["expected_value"].clip(
+            lower=0,
+            upper=1,
+        ).fillna(0) * 25.0
+        + (
+            elite_values / max_elite_score
+        ) * 20.0
+        + calibration_component * 10.0
+        + (
+            probabilities["platform_priority"]
+            / 100.0
+        ) * 10.0
     )
 
     probabilities = add_rejection_reason(
