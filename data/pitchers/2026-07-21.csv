@@ -23,8 +23,8 @@ date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_i
 2026-07-21,824409,Scheduled,S,5,Progressive Field,Cleveland Guardians,Minnesota Twins,800048,Parker Messick,696070,Kendry Rojas,home,1,Cleveland Guardians,Minnesota Twins
 2026-07-21,824652,Scheduled,S,17,Wrigley Field,Detroit Tigers,Chicago Cubs,664285,Framber Valdez,656849,David Peterson,away,0,Chicago Cubs,Detroit Tigers
 2026-07-21,824652,Scheduled,S,17,Wrigley Field,Chicago Cubs,Detroit Tigers,656849,David Peterson,664285,Framber Valdez,home,1,Chicago Cubs,Detroit Tigers
-2026-07-21,824735,Scheduled,S,3,Fenway Park,Baltimore Orioles,Boston Red Sox,680694,Kyle Bradish,624133,Ranger Suarez,away,0,Boston Red Sox,Baltimore Orioles
-2026-07-21,824735,Scheduled,S,3,Fenway Park,Boston Red Sox,Baltimore Orioles,624133,Ranger Suarez,680694,Kyle Bradish,home,1,Boston Red Sox,Baltimore Orioles
+2026-07-21,824735,Scheduled,S,3,Fenway Park,Baltimore Orioles,Boston Red Sox,680694,Kyle Bradish,700842,Eduardo Rivera,away,0,Boston Red Sox,Baltimore Orioles
+2026-07-21,824735,Scheduled,S,3,Fenway Park,Boston Red Sox,Baltimore Orioles,700842,Eduardo Rivera,680694,Kyle Bradish,home,1,Boston Red Sox,Baltimore Orioles
 2026-07-21,824895,Scheduled,S,4705,Truist Park,San Diego Padres,Atlanta Braves,621111,Walker Buehler,625643,Reynaldo López,away,0,Atlanta Braves,San Diego Padres
 2026-07-21,824895,Scheduled,S,4705,Truist Park,Atlanta Braves,San Diego Padres,625643,Reynaldo López,621111,Walker Buehler,home,1,Atlanta Braves,San Diego Padres
 2026-07-21,825056,Scheduled,S,15,Chase Field,Athletics,Arizona Diamondbacks,678022,Jack Perkins,684442,Kohl Drake,away,0,Arizona Diamondbacks,Athletics
