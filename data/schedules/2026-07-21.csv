@@ -1,16 +1,16 @@
 date,game_id,away_team,home_team,away_pitcher,home_pitcher,status
-2026-07-21,824409,Minnesota Twins,Cleveland Guardians,Kendry Rojas,Parker Messick,Scheduled
-2026-07-21,823437,Los Angeles Dodgers,Philadelphia Phillies,Justin Wrobleski,Zack Wheeler,Scheduled
-2026-07-21,822787,Tampa Bay Rays,Toronto Blue Jays,Drew Rasmussen,Kevin Gausman,Scheduled
-2026-07-21,824735,Baltimore Orioles,Boston Red Sox,Kyle Bradish,Eduardo Rivera,Scheduled
-2026-07-21,824895,San Diego Padres,Atlanta Braves,Walker Buehler,Reynaldo López,Scheduled
-2026-07-21,824085,San Francisco Giants,Kansas City Royals,Tyler Mahle,Luinder Avila,Scheduled
-2026-07-21,823760,New York Mets,Milwaukee Brewers,Zac Thornton,Brandon Sproat,Scheduled
-2026-07-21,824652,Detroit Tigers,Chicago Cubs,Framber Valdez,David Peterson,Scheduled
-2026-07-21,822871,Chicago White Sox,Texas Rangers,Noah Schultz,Kumar Rocker,Scheduled
-2026-07-21,824165,Miami Marlins,Houston Astros,Tyler Phillips,Tatsuya Imai,Scheduled
-2026-07-21,824329,Washington Nationals,Colorado Rockies,Carson Palmquist,Michael Lorenzen,Scheduled
-2026-07-21,824005,St. Louis Cardinals,Los Angeles Angels,Matthew Liberatore,Walbert Ureña,Scheduled
+2026-07-21,824409,Minnesota Twins,Cleveland Guardians,Kendry Rojas,Parker Messick,Pre-Game
+2026-07-21,823437,Los Angeles Dodgers,Philadelphia Phillies,Justin Wrobleski,Zack Wheeler,Pre-Game
+2026-07-21,822787,Tampa Bay Rays,Toronto Blue Jays,Drew Rasmussen,Kevin Gausman,Pre-Game
+2026-07-21,824895,San Diego Padres,Atlanta Braves,Walker Buehler,Reynaldo López,Pre-Game
+2026-07-21,824085,San Francisco Giants,Kansas City Royals,Tyler Mahle,Luinder Avila,Pre-Game
+2026-07-21,823760,New York Mets,Milwaukee Brewers,Zac Thornton,Brandon Sproat,Pre-Game
+2026-07-21,824652,Detroit Tigers,Chicago Cubs,Framber Valdez,David Peterson,Pre-Game
+2026-07-21,822871,Chicago White Sox,Texas Rangers,Noah Schultz,Kumar Rocker,Pre-Game
+2026-07-21,824165,Miami Marlins,Houston Astros,Tyler Phillips,Tatsuya Imai,Pre-Game
+2026-07-21,824329,Washington Nationals,Colorado Rockies,Carson Palmquist,Michael Lorenzen,Pre-Game
+2026-07-21,824005,St. Louis Cardinals,Los Angeles Angels,Matthew Liberatore,Walbert Ureña,Pre-Game
 2026-07-21,825056,Athletics,Arizona Diamondbacks,Jack Perkins,Kohl Drake,Scheduled
-2026-07-21,823114,Cincinnati Reds,Seattle Mariners,Chase Burns,Luis Castillo,Scheduled
+2026-07-21,823114,Cincinnati Reds,Seattle Mariners,Chase Burns,Luis Castillo,Pre-Game
 2026-07-21,823519,Pittsburgh Pirates,New York Yankees,Bubba Chandler,Will Warren,Postponed
+2026-07-21,824735,Baltimore Orioles,Boston Red Sox,Kyle Bradish,Eduardo Rivera,Postponed
