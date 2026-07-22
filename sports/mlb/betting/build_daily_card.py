@@ -837,9 +837,7 @@ def choose_consensus_market_lines(
     # Use a temporary name because Probability Engine V2 may already provide
 # its own consensus_line column.
 selected_lines = selected_lines.rename(
-    columns={
-        "line": "selected_consensus_line",
-    }
+    columns={"line": "selected_consensus_line"}
 )
 
 result = result.merge(
@@ -850,14 +848,8 @@ result = result.merge(
 
 result = result.loc[
     np.isclose(
-        pd.to_numeric(
-            result["line"],
-            errors="coerce",
-        ),
-        pd.to_numeric(
-            result["selected_consensus_line"],
-            errors="coerce",
-        ),
+        result["line"],
+        result["selected_consensus_line"],
         equal_nan=False,
     )
 ].copy()
