@@ -63,6 +63,9 @@ EMPIRICAL_PRIOR_STRENGTH = 40.0
 PROBABILITY_FLOOR = 0.08
 PROBABILITY_CEILING = 0.92
 PUSH_TOLERANCE = 1e-9
+MODEL_VERSION = "2.1.0"
+INTERVAL_Z_80 = 1.2815515655446004
+
 
 PICKEM_PLATFORMS = {
     "prizepicks",
@@ -128,6 +131,19 @@ OUTPUT_COLUMNS = [
     "validation_mae",
     "probability_status",
     "probability_note",
+    "projection_std",
+    "projection_floor",
+    "projection_ceiling",
+    "consensus_line",
+    "consensus_difference",
+    "sportsbook_count",
+    "line_type",
+    "market_quality_score",
+    "volatility_score",
+    "projection_quality_score",
+    "confidence_score",
+    "risk_score",
+    "model_version",
     "fetched_at",
 ]
 
@@ -877,6 +893,7 @@ def calculate_hitter_line_probability(
             "probability_note": (
                 "Insufficient chronological holdout residuals."
             ),
+            "projection_std": float(np.std(residuals, ddof=1)) if sample_size > 1 else np.nan,
         }
 
     (
@@ -901,6 +918,7 @@ def calculate_hitter_line_probability(
         ),
         "probability_status": "calculated",
         "probability_note": "",
+        "projection_std": float(np.std(residuals, ddof=1)),
     }
 
 
@@ -932,6 +950,7 @@ def calculate_pitcher_line_probability(
                 "Poisson fallback; dedicated pitcher residual "
                 "calibration is still recommended."
             ),
+            "projection_std": float(math.sqrt(max(float(row["projection"]), 0.0))),
         }
 
     if market == "pitcher_outs":
@@ -952,6 +971,7 @@ def calculate_pitcher_line_probability(
                 "probability_note": (
                     "Pitcher-outs uncertainty data is unavailable."
                 ),
+                "projection_std": np.nan,
             }
 
         (
@@ -973,6 +993,7 @@ def calculate_pitcher_line_probability(
             "validation_mae": np.nan,
             "probability_status": "calculated",
             "probability_note": "",
+            "projection_std": float(standard_deviation),
         }
 
     return {
@@ -984,6 +1005,7 @@ def calculate_pitcher_line_probability(
         "validation_mae": np.nan,
         "probability_status": "rejected",
         "probability_note": "Unsupported pitcher market.",
+        "projection_std": np.nan,
     }
 
 
@@ -1091,6 +1113,19 @@ def build_probability_table() -> pd.DataFrame:
                     "probability_note": (
                         "No projection matched this player and market."
                     ),
+                    "projection_std": np.nan,
+                    "projection_floor": np.nan,
+                    "projection_ceiling": np.nan,
+                    "consensus_line": np.nan,
+                    "consensus_difference": np.nan,
+                    "sportsbook_count": 0,
+                    "line_type": "unmatched",
+                    "market_quality_score": 0.0,
+                    "volatility_score": 0.0,
+                    "projection_quality_score": 0.0,
+                    "confidence_score": 0.0,
+                    "risk_score": 100.0,
+                    "model_version": MODEL_VERSION,
                 }
             )
 
@@ -1181,6 +1216,8 @@ def build_probability_table() -> pd.DataFrame:
                 "probability_note": probability_result[
                     "probability_note"
                 ],
+                "projection_std": probability_result.get("projection_std", np.nan),
+                "model_version": MODEL_VERSION,
             }
         )
 
@@ -1190,6 +1227,91 @@ def build_probability_table() -> pd.DataFrame:
         output_rows,
         columns=OUTPUT_COLUMNS,
     )
+
+    # ------------------------------------------------------------------
+    # V2.1 uncertainty, line intelligence, confidence, and risk metadata
+    # ------------------------------------------------------------------
+    output["projection_std"] = pd.to_numeric(
+        output.get("projection_std"), errors="coerce"
+    )
+    output["projection_floor"] = (
+        output["projection"] - INTERVAL_Z_80 * output["projection_std"]
+    ).clip(lower=0)
+    output["projection_ceiling"] = (
+        output["projection"] + INTERVAL_Z_80 * output["projection_std"]
+    ).clip(lower=0)
+
+    output["_normalized_player_v2"] = output["player"].apply(normalize_player_name)
+    consensus_group = ["_normalized_player_v2", "market", "direction"]
+    output["consensus_line"] = output.groupby(consensus_group, dropna=False)["line"].transform("median")
+    output["sportsbook_count"] = output.groupby(consensus_group, dropna=False)["platform"].transform("nunique")
+    output["consensus_difference"] = output["line"] - output["consensus_line"]
+
+    # A difference of at least one full unit is usually an alternate/stale line.
+    output["line_type"] = np.select(
+        [
+            output["consensus_difference"].abs() >= 1.0,
+            output["consensus_difference"].abs() >= 0.5,
+        ],
+        ["alternate", "off_consensus"],
+        default="standard",
+    )
+
+    output["market_quality_score"] = (
+        55.0
+        + output["sportsbook_count"].clip(lower=0, upper=6) * 6.0
+        - output["consensus_difference"].abs().clip(upper=2.0) * 18.0
+    ).clip(lower=0, upper=100)
+
+    relative_volatility = output["projection_std"] / output["projection"].replace(0, np.nan)
+    output["volatility_score"] = (
+        100.0 - relative_volatility.fillna(1.0).clip(lower=0, upper=1.5) * 55.0
+    ).clip(lower=0, upper=100)
+
+    projection_gap = (output["projection"] - output["line"]).abs()
+    market_gap_scale = output["market"].map({
+        "hitter_hits": 1.25,
+        "hitter_total_bases": 2.5,
+        "hitter_runs": 1.25,
+        "hitter_rbis": 1.25,
+        "hitter_hits_runs_rbis": 3.5,
+        "hitter_fantasy_score": 12.0,
+        "pitcher_strikeouts": 4.0,
+        "pitcher_outs": 7.0,
+    }).fillna(4.0)
+    output["projection_quality_score"] = (
+        100.0 - (projection_gap / market_gap_scale).clip(lower=0, upper=1.5) * 35.0
+    ).clip(lower=0, upper=100)
+
+    method_trust = output["distribution_method"].map({
+        "empirical_holdout_residuals": 92.0,
+        "normal_residual_std": 78.0,
+        "poisson": 68.0,
+    }).fillna(25.0)
+    sample_score = (
+        pd.to_numeric(output["calibration_sample_size"], errors="coerce")
+        .fillna(0)
+        .clip(lower=0, upper=750)
+        / 750.0
+        * 100.0
+    )
+    # Pitcher fallbacks have no residual sample size, so method trust carries them.
+    sample_score = np.where(
+        output["distribution_method"].isin(["poisson", "normal_residual_std"]),
+        method_trust,
+        sample_score,
+    )
+    output["confidence_score"] = (
+        method_trust * 0.30
+        + pd.Series(sample_score, index=output.index) * 0.20
+        + output["market_quality_score"] * 0.20
+        + output["volatility_score"] * 0.15
+        + output["projection_quality_score"] * 0.15
+    ).clip(lower=0, upper=100)
+    output.loc[output["probability_status"].ne("calculated"), "confidence_score"] = 0.0
+    output["risk_score"] = (100.0 - output["confidence_score"]).clip(lower=0, upper=100)
+    output["model_version"] = MODEL_VERSION
+    output = output.drop(columns=["_normalized_player_v2"])
 
     output["is_pickem_platform"] = output[
         "platform"
@@ -1216,15 +1338,12 @@ def build_probability_table() -> pd.DataFrame:
     # ------------------------------------------------------------------
 
     output["ranking_score"] = (
-        output["raw_probability_edge"].clip(lower=0).fillna(0) * 0.50
-        + output["probability"].fillna(0) * 0.20
-        + (
-            output["calibration_sample_size"]
-            .fillna(0)
-            .clip(upper=750)
-            / 750
-        ) * 0.20
-        + output["calibration_shrinkage"].fillna(0) * 0.10
+        output["raw_probability_edge"].clip(lower=0).fillna(0) * 0.38
+        + output["probability"].fillna(0) * 0.18
+        + (output["confidence_score"].fillna(0) / 100.0) * 0.20
+        + (output["market_quality_score"].fillna(0) / 100.0) * 0.12
+        + (output["projection_quality_score"].fillna(0) / 100.0) * 0.07
+        + output["calibration_shrinkage"].fillna(0) * 0.05
     )
 
     # Penalize extreme alternate-line favorites
