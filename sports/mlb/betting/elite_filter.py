@@ -7,8 +7,9 @@ The filter does not promise a future hit rate. It makes the Elite label scarce,
 requires strong live-line evidence, and only trusts historical segments with
 enough graded observations.
 
-Pitcher strikeouts use an additional strict gate designed to improve hit rate
-by rejecting marginal plays before they reach the displayed card.
+Pitcher strikeouts use an additional strict gate. Version 2.2 also requires
+strong confidence, low risk, acceptable market quality, acceptable projection
+quality, and a standard consensus line before a candidate can be Elite.
 
 Inputs:
     A pandas DataFrame of candidate daily-card rows
@@ -43,6 +44,16 @@ DEFAULT_THRESHOLDS_PATH = (
 TARGET_ELITE_HIT_RATE = 0.75
 MINIMUM_ELITE_HISTORY_SAMPLE = 30
 MINIMUM_ELITE_CALIBRATION_SAMPLE = 200
+
+# V2.2 metadata requirements. These fields are produced by probability_engine.py.
+# They apply only to Elite eligibility; a candidate that misses one of these
+# gates may still receive Strong, Good, Playable, or PASS based on probability,
+# edge, and expected value.
+ELITE_MINIMUM_CONFIDENCE_SCORE = 75.0
+ELITE_MAXIMUM_RISK_SCORE = 25.0
+ELITE_MINIMUM_MARKET_QUALITY_SCORE = 65.0
+ELITE_MINIMUM_PROJECTION_QUALITY_SCORE = 70.0
+ELITE_ALLOWED_LINE_TYPES = {"standard"}
 
 
 # ---------------------------------------------------------------------------
@@ -617,6 +628,26 @@ def apply_elite_filter(
             row.get("distribution_method", "")
         ).strip()
 
+        confidence_score = _numeric(
+            row.get("confidence_score")
+        )
+
+        risk_score = _numeric(
+            row.get("risk_score")
+        )
+
+        market_quality_score = _numeric(
+            row.get("market_quality_score")
+        )
+
+        projection_quality_score = _numeric(
+            row.get("projection_quality_score")
+        )
+
+        line_type = str(
+            row.get("line_type", "")
+        ).strip().lower()
+
         rule = _market_rule(
             market,
             thresholds,
@@ -668,6 +699,50 @@ def apply_elite_filter(
                 absolute_projection_edge = abs(
                     projection - line
                 )
+
+        # ------------------------------------------------------------------
+        # V2.2 confidence, risk, line-quality, and projection-quality gates
+        # ------------------------------------------------------------------
+        if (
+            not np.isfinite(confidence_score)
+            or confidence_score
+            < ELITE_MINIMUM_CONFIDENCE_SCORE
+        ):
+            reasons.append(
+                "confidence_score_below_elite_threshold"
+            )
+
+        if (
+            not np.isfinite(risk_score)
+            or risk_score
+            > ELITE_MAXIMUM_RISK_SCORE
+        ):
+            reasons.append(
+                "risk_score_above_elite_threshold"
+            )
+
+        if (
+            not np.isfinite(market_quality_score)
+            or market_quality_score
+            < ELITE_MINIMUM_MARKET_QUALITY_SCORE
+        ):
+            reasons.append(
+                "market_quality_below_elite_threshold"
+            )
+
+        if (
+            not np.isfinite(projection_quality_score)
+            or projection_quality_score
+            < ELITE_MINIMUM_PROJECTION_QUALITY_SCORE
+        ):
+            reasons.append(
+                "projection_quality_below_elite_threshold"
+            )
+
+        if line_type not in ELITE_ALLOWED_LINE_TYPES:
+            reasons.append(
+                "line_type_not_elite_eligible"
+            )
 
         # ------------------------------------------------------------------
         # Standard Elite thresholds
@@ -920,6 +995,27 @@ def apply_elite_filter(
                 ),
                 "elite_absolute_projection_edge": (
                     absolute_projection_edge
+                ),
+                "elite_confidence_score": confidence_score,
+                "elite_risk_score": risk_score,
+                "elite_market_quality_score": (
+                    market_quality_score
+                ),
+                "elite_projection_quality_score": (
+                    projection_quality_score
+                ),
+                "elite_line_type": line_type,
+                "elite_confidence_score_threshold": (
+                    ELITE_MINIMUM_CONFIDENCE_SCORE
+                ),
+                "elite_risk_score_threshold": (
+                    ELITE_MAXIMUM_RISK_SCORE
+                ),
+                "elite_market_quality_threshold": (
+                    ELITE_MINIMUM_MARKET_QUALITY_SCORE
+                ),
+                "elite_projection_quality_threshold": (
+                    ELITE_MINIMUM_PROJECTION_QUALITY_SCORE
                 ),
                 "strikeout_hard_gate_passed": (
                     strikeout_gate_passed
