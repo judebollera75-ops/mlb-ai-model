@@ -512,6 +512,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-11,823356,542303,Marcell Ozuna,Pittsburgh Pirates,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-12,823358,542303,Marcell Ozuna,Pittsburgh Pirates,Milwaukee Brewers,5,5,2,0,0,1,5,2,2,0,2,0,0,0
 2026-07-18,824412,542303,Marcell Ozuna,Pittsburgh Pirates,Cleveland Guardians,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-20,823522,542303,Marcell Ozuna,Pittsburgh Pirates,New York Yankees,4,3,1,1,0,0,2,1,0,1,0,0,0,0
 2026-03-26,823486,543309,Kyle Higashioka,Texas Rangers,Philadelphia Phillies,1,1,1,0,0,0,1,1,0,0,0,0,0,0
 2026-03-29,823487,543309,Kyle Higashioka,Texas Rangers,Philadelphia Phillies,4,4,1,0,0,0,1,0,1,0,0,0,0,0
 2026-03-30,824863,543309,Kyle Higashioka,Texas Rangers,Baltimore Orioles,4,3,0,0,0,0,0,1,0,1,2,0,0,0
@@ -10310,6 +10311,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-08,824578,665966,Carlos Narváez,Boston Red Sox,Chicago White Sox,4,3,1,0,0,0,1,0,1,0,0,0,0,0
 2026-07-11,823603,665966,Carlos Narváez,Boston Red Sox,New York Mets,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-07-17,824766,665966,Carlos Narváez,Boston Red Sox,Tampa Bay Rays,4,4,3,0,0,1,6,2,3,0,0,0,0,0
+2026-07-18,824738,665966,Carlos Narváez,Boston Red Sox,Tampa Bay Rays,2,2,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-26,823081,666018,Jonathan Aranda,Tampa Bay Rays,St. Louis Cardinals,6,4,2,0,0,1,5,1,2,1,1,0,0,0
 2026-03-28,823082,666018,Jonathan Aranda,Tampa Bay Rays,St. Louis Cardinals,5,3,1,0,0,0,1,1,0,2,1,0,0,0
 2026-03-29,823079,666018,Jonathan Aranda,Tampa Bay Rays,St. Louis Cardinals,6,6,3,1,0,0,4,1,2,0,1,0,0,0
@@ -18966,6 +18968,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-06-29,823529,682987,Spencer Jones,New York Yankees,Detroit Tigers,3,3,2,2,0,0,4,1,0,0,0,0,0,0
 2026-06-30,823528,682987,Spencer Jones,New York Yankees,Detroit Tigers,3,3,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-01,823530,682987,Spencer Jones,New York Yankees,Detroit Tigers,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-19,825057,682988,Tyler Locklear,Arizona Diamondbacks,St. Louis Cardinals,4,3,1,0,0,0,1,1,1,1,0,0,0,0
+2026-07-20,825058,682988,Tyler Locklear,Arizona Diamondbacks,Athletics,4,3,0,0,0,0,0,0,0,1,0,0,0,0
 2026-05-28,823378,682997,Tyler Callihan,Pittsburgh Pirates,Chicago Cubs,3,2,1,1,0,0,2,0,1,1,0,0,0,0
 2026-05-29,823377,682997,Tyler Callihan,Pittsburgh Pirates,Minnesota Twins,0,0,0,0,0,0,0,1,0,0,0,0,0,0
 2026-05-30,823375,682997,Tyler Callihan,Pittsburgh Pirates,Minnesota Twins,2,1,0,0,0,0,0,0,0,1,0,0,0,0
@@ -24260,6 +24264,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-17,824981,696285,Jacob Young,Washington Nationals,Athletics,6,4,1,1,0,0,2,2,1,2,0,0,0,0
 2026-07-19,824978,696285,Jacob Young,Washington Nationals,Athletics,4,3,1,0,0,0,1,0,0,0,0,2,0,1
 2026-07-20,824328,696285,Jacob Young,Washington Nationals,Colorado Rockies,4,4,3,0,0,1,6,1,1,0,0,0,1,0
+2026-07-21,824329,696285,Jacob Young,Washington Nationals,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-05-22,822816,699013,Esmerlyn Valdez,Pittsburgh Pirates,Toronto Blue Jays,4,3,0,0,0,0,0,0,0,1,2,0,0,0
 2026-05-23,822814,699013,Esmerlyn Valdez,Pittsburgh Pirates,Toronto Blue Jays,2,2,0,0,0,0,0,0,0,0,1,0,0,0
 2026-05-24,822813,699013,Esmerlyn Valdez,Pittsburgh Pirates,Toronto Blue Jays,3,3,1,0,0,1,4,1,2,0,2,0,0,0

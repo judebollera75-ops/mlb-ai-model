@@ -9,8 +9,8 @@ date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_i
 2026-07-22,823438,Pre-Game,P,2681,Citizens Bank Park,Philadelphia Phillies,Los Angeles Dodgers,605400,Aaron Nola,641778,Eric Lauer,home,1,Philadelphia Phillies,Los Angeles Dodgers
 2026-07-22,823518,Final,F,3313,Yankee Stadium,Pittsburgh Pirates,New York Yankees,656605,Mitch Keller,543037,Gerrit Cole,away,0,New York Yankees,Pittsburgh Pirates
 2026-07-22,823518,Final,F,3313,Yankee Stadium,New York Yankees,Pittsburgh Pirates,543037,Gerrit Cole,656605,Mitch Keller,home,1,New York Yankees,Pittsburgh Pirates
-2026-07-22,823519,Scheduled,S,3313,Yankee Stadium,Pittsburgh Pirates,New York Yankees,696149,Bubba Chandler,608331,Max Fried,away,0,New York Yankees,Pittsburgh Pirates
-2026-07-22,823519,Scheduled,S,3313,Yankee Stadium,New York Yankees,Pittsburgh Pirates,608331,Max Fried,696149,Bubba Chandler,home,1,New York Yankees,Pittsburgh Pirates
+2026-07-22,823519,Pre-Game,P,3313,Yankee Stadium,Pittsburgh Pirates,New York Yankees,696149,Bubba Chandler,608331,Max Fried,away,0,New York Yankees,Pittsburgh Pirates
+2026-07-22,823519,Pre-Game,P,3313,Yankee Stadium,New York Yankees,Pittsburgh Pirates,608331,Max Fried,696149,Bubba Chandler,home,1,New York Yankees,Pittsburgh Pirates
 2026-07-22,823761,Final,F,32,American Family Field,New York Mets,Milwaukee Brewers,681035,Christian Scott,701656,Logan Henderson,away,0,Milwaukee Brewers,New York Mets
 2026-07-22,823761,Final,F,32,American Family Field,Milwaukee Brewers,New York Mets,701656,Logan Henderson,681035,Christian Scott,home,1,Milwaukee Brewers,New York Mets
 2026-07-22,824004,In Progress,I,1,Angel Stadium,St. Louis Cardinals,Los Angeles Angels,690928,Hunter Dobbins,672282,Reid Detmers,away,0,Los Angeles Angels,St. Louis Cardinals
