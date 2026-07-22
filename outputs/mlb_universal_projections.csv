@@ -1820,7 +1820,7 @@ MLB,2026-07-22,823518,695257,Billy Cook,Pittsburgh Pirates,New York Yankees,hitt
 MLB,2026-07-22,824735,,Jake Bennett,Boston Red Sox,Baltimore Orioles,pitcher_fantasy_score,22.9919,18.0771,27.9066,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-22,824166,,Peter Lambert,Houston Astros,Miami Marlins,pitcher_fantasy_score,20.7332,15.8185,25.648,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-22,824166,,Sandy Alcantara,Miami Marlins,Houston Astros,pitcher_fantasy_score,19.6606,14.7458,24.5753,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-22,823110,,Brady Singer,Cincinnati Reds,Seattle Mariners,pitcher_fantasy_score,19.028,14.1132,23.9427,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-22,823110,,Brady Singer,Cincinnati Reds,Seattle Mariners,pitcher_fantasy_score,19.056,14.1412,23.9707,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-22,824327,,Cade Cavalli,Washington Nationals,Colorado Rockies,pitcher_fantasy_score,18.3255,13.4108,23.2403,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-22,824732,,Kyle Bradish,Baltimore Orioles,Boston Red Sox,pitcher_fantasy_score,17.8781,12.9633,22.7928,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-22,823761,,Logan Henderson,Milwaukee Brewers,New York Mets,pitcher_fantasy_score,17.5508,12.636,22.4655,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
@@ -1836,7 +1836,7 @@ MLB,2026-07-22,823438,,Eric Lauer,Los Angeles Dodgers,Philadelphia Phillies,pitc
 MLB,2026-07-22,823519,,Max Fried,New York Yankees,Pittsburgh Pirates,pitcher_fantasy_score,14.1308,9.216,19.0455,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-22,825055,,Merrill Kelly,Arizona Diamondbacks,Athletics,pitcher_fantasy_score,14.0324,9.1176,18.9471,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-22,824004,,Hunter Dobbins,St. Louis Cardinals,Los Angeles Angels,pitcher_fantasy_score,13.979,9.0642,18.8938,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
-MLB,2026-07-22,824004,,Reid Detmers,Los Angeles Angels,St. Louis Cardinals,pitcher_fantasy_score,13.7405,8.8257,18.6553,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
+MLB,2026-07-22,824004,,Reid Detmers,Los Angeles Angels,St. Louis Cardinals,pitcher_fantasy_score,13.7525,8.8377,18.6673,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-22,823438,,Aaron Nola,Philadelphia Phillies,Los Angeles Dodgers,pitcher_fantasy_score,12.7723,7.8575,17.687,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-22,825055,,Gage Jump,Athletics,Arizona Diamondbacks,pitcher_fantasy_score,12.5317,7.617,17.4465,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
 MLB,2026-07-22,824650,,Colin Rea,Chicago Cubs,Detroit Tigers,pitcher_fantasy_score,12.4927,7.578,17.4075,3.8349,,,,,,,outputs/pitcher_fantasy_projections.csv
@@ -1885,12 +1885,12 @@ MLB,2026-07-22,824732,,Eduardo Rivera,Boston Red Sox,Baltimore Orioles,pitcher_o
 MLB,2026-07-22,824650,,Keider Montero,Detroit Tigers,Chicago Cubs,pitcher_outs,9.077,5.114,12.691,3.185,,,,,,5.0,outputs/pitcher_outs_projections.csv
 MLB,2026-07-22,822873,,Tyler Alexander,Texas Rangers,Chicago White Sox,pitcher_outs,3.129,0.0,6.742,3.185,,,,,,3.0,outputs/pitcher_outs_projections.csv
 MLB,2026-07-22,822784,,Braydon Fisher,Toronto Blue Jays,Tampa Bay Rays,pitcher_outs,3.06,0.0,6.674,3.185,,,,,,2.0,outputs/pitcher_outs_projections.csv
-MLB,2026-07-22,823110,,Brady Singer,Cincinnati Reds,Seattle Mariners,pitcher_strikeouts,6.652,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-22,823110,,Brady Singer,Cincinnati Reds,Seattle Mariners,pitcher_strikeouts,6.666,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
 MLB,2026-07-22,824327,,Cade Cavalli,Washington Nationals,Colorado Rockies,pitcher_strikeouts,6.32,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
 MLB,2026-07-22,822784,,Griffin Jax,Tampa Bay Rays,Toronto Blue Jays,pitcher_strikeouts,6.1,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
 MLB,2026-07-22,824166,,Sandy Alcantara,Miami Marlins,Houston Astros,pitcher_strikeouts,6.068,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
+MLB,2026-07-22,824004,,Reid Detmers,Los Angeles Angels,St. Louis Cardinals,pitcher_strikeouts,6.053,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
 MLB,2026-07-22,824166,,Peter Lambert,Houston Astros,Miami Marlins,pitcher_strikeouts,6.048,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
-MLB,2026-07-22,824004,,Reid Detmers,Los Angeles Angels,St. Louis Cardinals,pitcher_strikeouts,6.047,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
 MLB,2026-07-22,823518,,Gerrit Cole,New York Yankees,Pittsburgh Pirates,pitcher_strikeouts,5.979,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
 MLB,2026-07-22,825055,,Gage Jump,Athletics,Arizona Diamondbacks,pitcher_strikeouts,5.749,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv
 MLB,2026-07-22,823438,,Aaron Nola,Philadelphia Phillies,Los Angeles Dodgers,pitcher_strikeouts,5.531,,,,leakage_free_strikeout_model,,,,,,outputs/calibrated_strikeout_projections.csv

@@ -107,24 +107,24 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-22,823519,New York Yankees,Pittsburgh Pirates,home,645305,Ali Sánchez,7,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Pittsburgh Pirates,Yankee Stadium,2026-07-22T23:05:00Z
 2026-07-22,823519,New York Yankees,Pittsburgh Pirates,home,641857,Ryan McMahon,8,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Pittsburgh Pirates,Yankee Stadium,2026-07-22T23:05:00Z
 2026-07-22,823519,New York Yankees,Pittsburgh Pirates,home,676609,José Caballero,9,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,New York Yankees,Pittsburgh Pirates,Yankee Stadium,2026-07-22T23:05:00Z
-2026-07-22,823761,New York Mets,Milwaukee Brewers,away,805999,A.J. Ewing,1,CF,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,New York Mets,Milwaukee Brewers,away,596019,Francisco Lindor,2,SS,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,New York Mets,Milwaukee Brewers,away,666182,Bo Bichette,3,3B,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,New York Mets,Milwaukee Brewers,away,701807,Carson Benge,4,RF,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,New York Mets,Milwaukee Brewers,away,593871,Jorge Polanco,5,DH,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,New York Mets,Milwaukee Brewers,away,621438,Tyrone Taylor,6,LF,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,New York Mets,Milwaukee Brewers,away,543760,Marcus Semien,7,2B,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,New York Mets,Milwaukee Brewers,away,620443,Luis Torrens,8,1B,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,New York Mets,Milwaukee Brewers,away,682626,Francisco Alvarez,9,C,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,Milwaukee Brewers,New York Mets,home,592885,Christian Yelich,1,DH,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,Milwaukee Brewers,New York Mets,home,694192,Jackson Chourio,2,LF,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,Milwaukee Brewers,New York Mets,home,668930,Brice Turang,3,2B,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,Milwaukee Brewers,New York Mets,home,661388,William Contreras,4,C,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,Milwaukee Brewers,New York Mets,home,669003,Garrett Mitchell,5,CF,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,Milwaukee Brewers,New York Mets,home,800325,Luis Lara,6,RF,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,Milwaukee Brewers,New York Mets,home,641343,Jake Bauers,7,1B,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,Milwaukee Brewers,New York Mets,home,806198,Cooper Pratt,8,SS,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
-2026-07-22,823761,Milwaukee Brewers,New York Mets,home,687401,Joey Ortiz,9,3B,Game Over,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,New York Mets,Milwaukee Brewers,away,805999,A.J. Ewing,1,CF,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,New York Mets,Milwaukee Brewers,away,596019,Francisco Lindor,2,SS,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,New York Mets,Milwaukee Brewers,away,666182,Bo Bichette,3,3B,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,New York Mets,Milwaukee Brewers,away,701807,Carson Benge,4,RF,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,New York Mets,Milwaukee Brewers,away,593871,Jorge Polanco,5,DH,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,New York Mets,Milwaukee Brewers,away,621438,Tyrone Taylor,6,LF,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,New York Mets,Milwaukee Brewers,away,543760,Marcus Semien,7,2B,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,New York Mets,Milwaukee Brewers,away,620443,Luis Torrens,8,1B,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,New York Mets,Milwaukee Brewers,away,682626,Francisco Alvarez,9,C,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,Milwaukee Brewers,New York Mets,home,592885,Christian Yelich,1,DH,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,Milwaukee Brewers,New York Mets,home,694192,Jackson Chourio,2,LF,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,Milwaukee Brewers,New York Mets,home,668930,Brice Turang,3,2B,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,Milwaukee Brewers,New York Mets,home,661388,William Contreras,4,C,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,Milwaukee Brewers,New York Mets,home,669003,Garrett Mitchell,5,CF,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,Milwaukee Brewers,New York Mets,home,800325,Luis Lara,6,RF,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,Milwaukee Brewers,New York Mets,home,641343,Jake Bauers,7,1B,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,Milwaukee Brewers,New York Mets,home,806198,Cooper Pratt,8,SS,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
+2026-07-22,823761,Milwaukee Brewers,New York Mets,home,687401,Joey Ortiz,9,3B,Final,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,New York Mets,American Family Field,2026-07-22T18:10:00Z
 2026-07-22,824004,St. Louis Cardinals,Los Angeles Angels,away,802139,JJ Wetherholt,1,2B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Los Angeles Angels,St. Louis Cardinals,Angel Stadium,2026-07-22T20:07:00Z
 2026-07-22,824004,St. Louis Cardinals,Los Angeles Angels,away,671056,Iván Herrera,2,DH,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Los Angeles Angels,St. Louis Cardinals,Angel Stadium,2026-07-22T20:07:00Z
 2026-07-22,824004,St. Louis Cardinals,Los Angeles Angels,away,691023,Jordan Walker,3,RF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Los Angeles Angels,St. Louis Cardinals,Angel Stadium,2026-07-22T20:07:00Z
