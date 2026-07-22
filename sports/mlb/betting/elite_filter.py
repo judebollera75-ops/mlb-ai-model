@@ -49,24 +49,25 @@ MINIMUM_ELITE_CALIBRATION_SAMPLE = 200
 # PITCHER STRIKEOUT FILTERS
 # ---------------------------------------------------------------------------
 
-# These are hard minimums. Strikeout candidates that fail these checks receive
-# a PASS grade instead of merely being downgraded.
-STRIKEOUT_MINIMUM_OVER_PROBABILITY = 0.80
-STRIKEOUT_MINIMUM_UNDER_PROBABILITY = 0.85
-STRIKEOUT_MINIMUM_PROBABILITY_EDGE = 0.25
-STRIKEOUT_MINIMUM_ABS_PROJECTION_EDGE = 1.25
+# These are minimums for strikeout Elite consideration. Candidates that fail
+# these checks can still receive Strong, Good, or Playable tiers when their
+# calibrated probability, edge, and expected value justify it.
+STRIKEOUT_MINIMUM_OVER_PROBABILITY = 0.70
+STRIKEOUT_MINIMUM_UNDER_PROBABILITY = 0.72
+STRIKEOUT_MINIMUM_PROBABILITY_EDGE = 0.08
+STRIKEOUT_MINIMUM_ABS_PROJECTION_EDGE = 0.65
 
 # A 3.5 strikeout line has performed less reliably in the current sample, so it
 # requires stronger evidence.
-STRIKEOUT_35_MINIMUM_PROBABILITY = 0.85
-STRIKEOUT_35_MINIMUM_PROBABILITY_EDGE = 0.30
-STRIKEOUT_35_MINIMUM_ABS_PROJECTION_EDGE = 1.50
+STRIKEOUT_35_MINIMUM_PROBABILITY = 0.74
+STRIKEOUT_35_MINIMUM_PROBABILITY_EDGE = 0.12
+STRIKEOUT_35_MINIMUM_ABS_PROJECTION_EDGE = 0.90
 
 # Elite strikeouts must be even more selective.
-STRIKEOUT_ELITE_OVER_PROBABILITY = 0.85
-STRIKEOUT_ELITE_UNDER_PROBABILITY = 0.88
-STRIKEOUT_ELITE_PROBABILITY_EDGE = 0.28
-STRIKEOUT_ELITE_MINIMUM_ABS_PROJECTION_EDGE = 1.50
+STRIKEOUT_ELITE_OVER_PROBABILITY = 0.76
+STRIKEOUT_ELITE_UNDER_PROBABILITY = 0.78
+STRIKEOUT_ELITE_PROBABILITY_EDGE = 0.14
+STRIKEOUT_ELITE_MINIMUM_ABS_PROJECTION_EDGE = 0.90
 
 
 # Market-specific history standards.
@@ -142,8 +143,8 @@ DEFAULT_MARKET_RULES: dict[str, dict[str, float]] = {
     "pitcher_strikeouts": {
         "probability": STRIKEOUT_ELITE_OVER_PROBABILITY,
         "probability_edge": STRIKEOUT_ELITE_PROBABILITY_EDGE,
-        "expected_value": 0.10,
-        "max_abs_projection_edge": 2.75,
+        "expected_value": 0.08,
+        "max_abs_projection_edge": 4.50,
         "max_validation_mae": 1.80,
     },
 
@@ -423,9 +424,8 @@ def _strikeout_hard_gate(
 ) -> tuple[bool, list[str], float]:
     """Apply strict minimum requirements to pitcher strikeout candidates.
 
-    A candidate that fails this gate is assigned PASS regardless of its normal
-    tier score. This reduces volume in exchange for a potentially higher hit
-    rate.
+    A candidate that fails this gate cannot receive Elite status, but it may
+    still receive a normal tier from calibrated probability, edge, and EV.
     """
     reasons: list[str] = []
 
@@ -811,21 +811,15 @@ def apply_elite_filter(
         # ------------------------------------------------------------------
         # Final tier decision
         # ------------------------------------------------------------------
-        if (
-            market == "pitcher_strikeouts"
-            and not strikeout_gate_passed
-        ):
-            # Hard reject weak strikeout candidates so downstream code can
-            # remove PASS rows from the daily card.
-            tier = "PASS"
-
-        elif elite:
+        if elite:
             tier = "Elite"
 
         elif has_serious_rejection:
             tier = "Playable"
 
         else:
+            # A failed strikeout hard gate now blocks only Elite status.
+            # It no longer forces an otherwise positive-EV candidate to PASS.
             tier = _base_tier(
                 probability,
                 edge,
