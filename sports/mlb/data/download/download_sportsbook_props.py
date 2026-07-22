@@ -43,6 +43,24 @@ CENTRAL_TIME = ZoneInfo("America/Chicago")
 REQUEST_TIMEOUT_SECONDS = 45
 MAX_EVENT_AGE_MINUTES = 15
 
+ALLOWED_PLATFORM_KEYS = {
+    "novig",
+    "underdog",
+    "prizepicks",
+    "bet365",
+    "prophetx",
+    "parx",
+    "fanatics",
+}
+
+ALLOWED_EXACT_LINES = {
+    "hitter_hits": {0.5, 1.5},
+    "hitter_total_bases": {0.5, 1.5},
+    "hitter_runs": {0.5},
+    "hitter_rbis": {0.5},
+    "hitter_hits_runs_rbis": {1.5, 2.5, 3.5},
+}
+
 API_MARKETS = [
     "player_strikeouts",
     "player_pitcher_outs",
@@ -86,6 +104,7 @@ PLATFORM_TITLE_MAP = {
     "sleeper": "Sleeper",
     "pick6": "Pick6",
     "parlayplay": "ParlayPlay",
+    "parx": "Parx",
 }
 
 DFS_PLATFORM_KEYS = {
@@ -358,6 +377,8 @@ def canonical_platform_key(
         "pick6": "pick6",
         "draftkingspick6": "pick6",
         "parlayplay": "parlayplay",
+        "parx": "parx",
+        "parxsportsbook": "parx",
     }
 
     return aliases.get(
@@ -429,6 +450,130 @@ def normalize_market_key(
     return aliases.get(
         normalized,
         normalized,
+    )
+
+
+
+def line_is_allowed_for_production(
+    market: str,
+    line: Any,
+) -> bool:
+    """Reject hitter alternate lines that are not realistically useful."""
+    try:
+        numeric_line = float(line)
+    except (TypeError, ValueError):
+        return False
+
+    if not pd.notna(numeric_line):
+        return False
+
+    allowed = ALLOWED_EXACT_LINES.get(market)
+
+    if allowed is None:
+        return True
+
+    return any(
+        abs(numeric_line - allowed_line) < 1e-9
+        for allowed_line in allowed
+    )
+
+
+def select_main_lines(
+    props: pd.DataFrame,
+) -> pd.DataFrame:
+    """Keep one main line per platform, player, and market."""
+    if props.empty:
+        return props
+
+    result = props.copy()
+    result["line"] = pd.to_numeric(result["line"], errors="coerce")
+    result["sportsbook_odds"] = pd.to_numeric(
+        result["sportsbook_odds"],
+        errors="coerce",
+    )
+
+    def implied_probability(odds: Any) -> float:
+        try:
+            numeric = float(odds)
+        except (TypeError, ValueError):
+            return float("nan")
+
+        if not pd.notna(numeric) or numeric == 0:
+            return float("nan")
+
+        if numeric > 0:
+            return 100.0 / (numeric + 100.0)
+
+        return abs(numeric) / (abs(numeric) + 100.0)
+
+    result["implied_probability"] = result[
+        "sportsbook_odds"
+    ].apply(implied_probability)
+
+    group_columns = ["platform_key", "player", "market"]
+
+    summary = (
+        result.groupby(
+            group_columns + ["line"],
+            dropna=False,
+            sort=False,
+        )
+        .agg(
+            side_count=("direction", "nunique"),
+            mean_implied_probability=("implied_probability", "mean"),
+        )
+        .reset_index()
+    )
+
+    medians = (
+        result.groupby(["player", "market"], dropna=False)["line"]
+        .median()
+        .rename("cross_platform_median")
+        .reset_index()
+    )
+
+    summary = summary.merge(
+        medians,
+        on=["player", "market"],
+        how="left",
+    )
+
+    summary["price_distance"] = (
+        summary["mean_implied_probability"] - 0.5
+    ).abs()
+
+    summary["median_distance"] = (
+        summary["line"] - summary["cross_platform_median"]
+    ).abs()
+
+    summary = summary.sort_values(
+        group_columns
+        + ["side_count", "price_distance", "median_distance", "line"],
+        ascending=[True, True, True, False, True, True, True],
+        na_position="last",
+    )
+
+    chosen = (
+        summary.drop_duplicates(
+            subset=group_columns,
+            keep="first",
+        )[group_columns + ["line"]]
+        .rename(columns={"line": "selected_line"})
+    )
+
+    result = result.merge(
+        chosen,
+        on=group_columns,
+        how="inner",
+    )
+
+    result = result.loc[
+        (result["line"] - result["selected_line"]).abs() < 1e-9
+    ].copy()
+
+    return result.drop(
+        columns=["implied_probability", "selected_line"],
+        errors="ignore",
     )
 
 
@@ -856,6 +1001,9 @@ def build_side_row(
     if platform_key is None:
         return None
 
+    if platform_key not in ALLOWED_PLATFORM_KEYS:
+        return None
+
     platform = get_platform_title(
         key=platform_key,
         supplied_title=(
@@ -906,6 +1054,12 @@ def build_side_row(
     )
 
     if pd.isna(line):
+        return None
+
+    if not line_is_allowed_for_production(
+        normalized_market,
+        line,
+    ):
         return None
 
     # DFS projection feeds do not always include side prices. With
@@ -1119,6 +1273,22 @@ def clean_props(
     ].copy()
 
     cleaned = cleaned.loc[
+        cleaned["platform_key"].isin(
+            ALLOWED_PLATFORM_KEYS
+        )
+    ].copy()
+
+    cleaned = cleaned.loc[
+        cleaned.apply(
+            lambda row: line_is_allowed_for_production(
+                str(row.get("market")),
+                row.get("line"),
+            ),
+            axis=1,
+        )
+    ].copy()
+
+    cleaned = cleaned.loc[
         cleaned["direction"].isin(
             {
                 "Over",
@@ -1151,6 +1321,8 @@ def clean_props(
         ],
         keep="last",
     )
+
+    cleaned = select_main_lines(cleaned)
 
     cleaned = cleaned.sort_values(
         [
