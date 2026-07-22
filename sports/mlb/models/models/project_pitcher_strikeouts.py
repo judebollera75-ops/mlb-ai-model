@@ -68,18 +68,18 @@ FALLBACK_FEATURES = [
 
 
 # Conservative production controls.
-MIN_MODEL_FEATURE_COVERAGE = 0.55
-FULL_MODEL_FEATURE_COVERAGE = 0.85
+MIN_MODEL_FEATURE_COVERAGE = 0.70
+FULL_MODEL_FEATURE_COVERAGE = 0.90
 MIN_GAMES_FOR_FULL_TRUST = 10
-MIN_GAMES_FOR_MODEL_USE = 3
+MIN_GAMES_FOR_MODEL_USE = 5
 
-MODEL_WEIGHT_LOW = 0.35
-MODEL_WEIGHT_MEDIUM = 0.60
-MODEL_WEIGHT_HIGH = 0.78
+MODEL_WEIGHT_LOW = 0.25
+MODEL_WEIGHT_MEDIUM = 0.52
+MODEL_WEIGHT_HIGH = 0.70
 
 MIN_PROJECTED_KS = 1.5
-MAX_PROJECTED_KS = 11.0
-MAX_DEVIATION_FROM_BASELINE = 2.25
+MAX_PROJECTED_KS = 10.5
+MAX_DEVIATION_FROM_BASELINE = 1.75
 
 
 def get_target_date() -> str:
@@ -399,6 +399,119 @@ def project_strikeouts(target_date: str | None = None) -> pd.DataFrame:
     master["feature_coverage"] = feature_coverage
     master["projected_ks"] = final_projection
 
+    # Matchup and workload adjustments are capped so one noisy feature cannot
+    # dominate the projection.
+    opponent_k = pd.to_numeric(
+        master.get("opp_k_per_game", pd.Series(np.nan, index=master.index)),
+        errors="coerce",
+    )
+    opponent_median = float(opponent_k.median()) if opponent_k.notna().any() else np.nan
+    opponent_multiplier = np.ones(len(master), dtype="float64")
+    if np.isfinite(opponent_median) and opponent_median > 0:
+        opponent_multiplier = np.clip(
+            (opponent_k.fillna(opponent_median) / opponent_median).to_numpy(),
+            0.90,
+            1.10,
+        )
+
+    recent_ip = pd.to_numeric(
+        master.get("last5_avg_ip", pd.Series(np.nan, index=master.index)),
+        errors="coerce",
+    )
+    typical_ip = float(recent_ip.median()) if recent_ip.notna().any() else np.nan
+    workload_multiplier = np.ones(len(master), dtype="float64")
+    if np.isfinite(typical_ip) and typical_ip > 0:
+        workload_multiplier = np.clip(
+            (recent_ip.fillna(typical_ip) / typical_ip).to_numpy(),
+            0.92,
+            1.08,
+        )
+
+    adjustment_multiplier = np.sqrt(
+        opponent_multiplier * workload_multiplier
+    )
+    adjusted_projection = np.clip(
+        final_projection * adjustment_multiplier,
+        MIN_PROJECTED_KS,
+        MAX_PROJECTED_KS,
+    )
+
+    # Preserve conservative shrinkage after matchup adjustment.
+    adjusted_projection = (
+        0.80 * adjusted_projection
+        + 0.20 * fallback
+    )
+    master["opponent_k_multiplier"] = opponent_multiplier
+    master["workload_multiplier"] = workload_multiplier
+    master["projected_ks"] = np.clip(
+        adjusted_projection,
+        MIN_PROJECTED_KS,
+        MAX_PROJECTED_KS,
+    )
+
+    model_disagreement = np.abs(
+        conservative_model_projection - fallback
+    )
+    training_residual_std = np.nan
+    if TRAINING_PATH.exists():
+        try:
+            training_for_error = pd.read_csv(TRAINING_PATH)
+            target_candidates = [
+                "target_strikeouts",
+                "target_ks",
+                "strikeouts",
+                "actual_strikeouts",
+            ]
+            target_column = next(
+                (
+                    column
+                    for column in target_candidates
+                    if column in training_for_error.columns
+                ),
+                None,
+            )
+            if target_column is not None:
+                target_values = pd.to_numeric(
+                    training_for_error[target_column],
+                    errors="coerce",
+                )
+                baseline_values = pd.to_numeric(
+                    training_for_error.get(
+                        "season_k_per_start",
+                        pd.Series(np.nan, index=training_for_error.index),
+                    ),
+                    errors="coerce",
+                )
+                residual_values = (target_values - baseline_values).dropna()
+                if len(residual_values) >= 100:
+                    training_residual_std = float(
+                        residual_values.std(ddof=0)
+                    )
+        except (pd.errors.ParserError, pd.errors.EmptyDataError):
+            training_residual_std = np.nan
+
+    if not np.isfinite(training_residual_std):
+        training_residual_std = 2.0
+
+    uncertainty_scale = (
+        training_residual_std
+        * (1.15 - 0.35 * feature_coverage.to_numpy(dtype=float))
+        * (1.0 + 0.10 * np.clip(model_disagreement, 0.0, 3.0))
+    )
+    interval_radius = 1.2815515655446004 * uncertainty_scale
+    master["projected_ks_lower_80"] = np.clip(
+        master["projected_ks"].to_numpy(dtype=float) - interval_radius,
+        0.0,
+        MAX_PROJECTED_KS,
+    )
+    master["projected_ks_upper_80"] = np.clip(
+        master["projected_ks"].to_numpy(dtype=float) + interval_radius,
+        0.0,
+        MAX_PROJECTED_KS,
+    )
+    master["projected_ks_residual_std"] = uncertainty_scale
+    master["model_baseline_disagreement"] = model_disagreement
+
     master["projection_source"] = np.select(
         [
             use_model & (blend_weights >= MODEL_WEIGHT_HIGH),
@@ -411,18 +524,31 @@ def project_strikeouts(target_date: str | None = None) -> pd.DataFrame:
         default="RECENT_SEASON_FALLBACK",
     )
 
-    master["projection_reliability_score"] = [
-        calculate_reliability_score(
-            games_started=float(row_games),
-            feature_coverage=float(row_coverage),
-            used_model=bool(row_used_model),
-        )
-        for row_games, row_coverage, row_used_model in zip(
-            games_started,
-            feature_coverage,
-            use_model,
-        )
-    ]
+    base_reliability = np.array(
+        [
+            calculate_reliability_score(
+                games_started=float(row_games),
+                feature_coverage=float(row_coverage),
+                used_model=bool(row_used_model),
+            )
+            for row_games, row_coverage, row_used_model in zip(
+                games_started,
+                feature_coverage,
+                use_model,
+            )
+        ],
+        dtype="float64",
+    )
+    agreement_penalty = np.clip(
+        model_disagreement / MAX_DEVIATION_FROM_BASELINE,
+        0.0,
+        1.0,
+    ) * 18.0
+    master["projection_reliability_score"] = np.clip(
+        base_reliability - agreement_penalty,
+        0.0,
+        100.0,
+    )
 
     master["projection_confidence"] = [
         confidence_label(
@@ -455,6 +581,12 @@ def project_strikeouts(target_date: str | None = None) -> pd.DataFrame:
         "model_blend_weight",
         "feature_coverage",
         "projected_ks",
+        "projected_ks_lower_80",
+        "projected_ks_upper_80",
+        "projected_ks_residual_std",
+        "opponent_k_multiplier",
+        "workload_multiplier",
+        "model_baseline_disagreement",
         "projection_source",
         "projection_reliability_score",
         "projection_confidence",
@@ -493,6 +625,12 @@ def project_strikeouts(target_date: str | None = None) -> pd.DataFrame:
         "feature_coverage",
         "projected_ks",
         "projection_reliability_score",
+        "projected_ks_lower_80",
+        "projected_ks_upper_80",
+        "projected_ks_residual_std",
+        "opponent_k_multiplier",
+        "workload_multiplier",
+        "model_baseline_disagreement",
     ]:
         if column in output.columns:
             output[column] = pd.to_numeric(
