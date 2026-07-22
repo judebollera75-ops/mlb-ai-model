@@ -744,6 +744,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-17,822789,543807,George Springer,Toronto Blue Jays,Chicago White Sox,4,4,1,0,0,1,4,1,2,0,0,0,0,0
 2026-07-18,822790,543807,George Springer,Toronto Blue Jays,Chicago White Sox,4,4,1,0,0,0,1,0,1,0,1,0,0,0
 2026-07-20,822788,543807,George Springer,Toronto Blue Jays,Tampa Bay Rays,4,3,2,0,0,0,2,1,0,1,0,1,0,0
+2026-07-21,822787,543807,George Springer,Toronto Blue Jays,Tampa Bay Rays,4,4,2,1,0,0,3,1,0,0,0,0,0,0
 2026-03-29,824215,543877,Christian Vázquez,Houston Astros,Los Angeles Angels,4,2,1,0,0,0,1,1,2,1,0,0,0,0
 2026-03-31,824212,543877,Christian Vázquez,Houston Astros,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-04-01,824211,543877,Christian Vázquez,Houston Astros,Boston Red Sox,4,4,1,0,0,1,4,1,1,0,1,0,0,0
@@ -805,6 +806,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-11,822875,543877,Christian Vázquez,Houston Astros,Texas Rangers,4,3,1,0,0,1,4,1,1,1,0,0,0,0
 2026-07-12,822876,543877,Christian Vázquez,Houston Astros,Texas Rangers,2,2,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-17,824170,543877,Christian Vázquez,Houston Astros,Baltimore Orioles,3,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-21,824165,543877,Christian Vázquez,Houston Astros,Miami Marlins,3,3,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-30,825108,545121,Ildemaro Vargas,Arizona Diamondbacks,Detroit Tigers,4,4,2,0,0,1,5,2,1,0,0,0,0,0
 2026-04-01,825106,545121,Ildemaro Vargas,Arizona Diamondbacks,Detroit Tigers,3,3,1,0,0,0,1,0,0,0,0,0,0,0
 2026-04-02,825105,545121,Ildemaro Vargas,Arizona Diamondbacks,Atlanta Braves,2,2,2,1,0,0,3,0,1,0,0,0,0,0
@@ -2852,6 +2854,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-18,824899,607043,Brandon Nimmo,Texas Rangers,Atlanta Braves,5,5,2,0,0,0,2,0,3,0,2,0,0,0
 2026-07-19,824897,607043,Brandon Nimmo,Texas Rangers,Atlanta Braves,5,3,0,0,0,0,0,0,0,2,1,0,0,0
 2026-07-20,822874,607043,Brandon Nimmo,Texas Rangers,Chicago White Sox,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-07-21,822871,607043,Brandon Nimmo,Texas Rangers,Chicago White Sox,4,4,4,0,0,1,7,2,2,0,0,0,0,0
 2026-03-26,823486,607208,Trea Turner,Philadelphia Phillies,Texas Rangers,4,4,2,0,0,0,2,2,0,0,0,0,0,0
 2026-03-28,823488,607208,Trea Turner,Philadelphia Phillies,Texas Rangers,5,5,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-29,823487,607208,Trea Turner,Philadelphia Phillies,Texas Rangers,5,4,0,0,0,0,0,1,0,1,1,0,0,0
@@ -3338,6 +3341,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,823606,620443,Luis Torrens,New York Mets,Kansas City Royals,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-07-12,823602,620443,Luis Torrens,New York Mets,Boston Red Sox,3,3,1,0,0,0,1,0,0,0,2,0,0,0
 2026-07-19,823439,620443,Luis Torrens,New York Mets,Philadelphia Phillies,5,4,2,1,0,0,3,2,1,1,0,0,0,0
+2026-07-21,823760,620443,Luis Torrens,New York Mets,Milwaukee Brewers,4,4,2,0,0,0,2,0,0,0,0,0,0,0
 2026-03-26,824704,621020,Dansby Swanson,Chicago Cubs,Washington Nationals,4,2,0,0,0,0,0,1,1,2,0,0,0,0
 2026-03-28,824701,621020,Dansby Swanson,Chicago Cubs,Washington Nationals,4,3,1,0,0,0,1,1,0,1,0,0,0,0
 2026-03-29,824700,621020,Dansby Swanson,Chicago Cubs,Washington Nationals,3,3,0,0,0,0,0,0,0,0,2,0,0,0
@@ -4070,6 +4074,9 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-09,824816,624424,Michael Conforto,Chicago Cubs,Baltimore Orioles,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-10,824493,624424,Michael Conforto,Chicago Cubs,Cincinnati Reds,3,3,0,0,0,0,0,0,0,0,3,0,0,0
 2026-07-17,824655,624424,Michael Conforto,Chicago Cubs,Minnesota Twins,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-19,824653,624424,Michael Conforto,Chicago Cubs,Minnesota Twins,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-20,824654,624424,Michael Conforto,Chicago Cubs,Detroit Tigers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-21,824652,624424,Michael Conforto,Chicago Cubs,Detroit Tigers,3,2,1,0,0,1,4,1,2,1,0,0,0,0
 2026-03-28,824540,624431,Jose Trevino,Cincinnati Reds,Boston Red Sox,5,5,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-31,824537,624431,Jose Trevino,Cincinnati Reds,Pittsburgh Pirates,3,2,1,0,0,0,1,0,0,1,0,0,0,0
 2026-04-04,822920,624431,Jose Trevino,Cincinnati Reds,Texas Rangers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
@@ -5254,6 +5261,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-18,822790,643217,Andrew Benintendi,Chicago White Sox,Toronto Blue Jays,4,3,0,0,0,0,0,0,0,1,0,0,0,0
 2026-07-19,822786,643217,Andrew Benintendi,Chicago White Sox,Toronto Blue Jays,4,2,1,1,0,0,2,1,1,1,0,0,0,0
 2026-07-20,822874,643217,Andrew Benintendi,Chicago White Sox,Texas Rangers,3,3,1,1,0,0,2,0,3,0,0,0,0,0
+2026-07-21,822871,643217,Andrew Benintendi,Chicago White Sox,Texas Rangers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-27,824946,643289,Mauricio Dubón,Atlanta Braves,Kansas City Royals,4,4,1,1,0,0,2,0,2,0,2,0,0,0
 2026-03-28,824945,643289,Mauricio Dubón,Atlanta Braves,Kansas City Royals,3,2,0,0,0,0,0,0,0,1,0,0,0,0
 2026-03-30,824943,643289,Mauricio Dubón,Atlanta Braves,Athletics,4,4,3,0,0,0,3,0,3,0,1,0,1,0
@@ -9134,6 +9142,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-18,824169,664774,LaMonte Wade Jr.,Houston Astros,Baltimore Orioles,4,3,0,0,0,0,0,0,0,1,0,0,0,0
 2026-07-19,824168,664774,LaMonte Wade Jr.,Houston Astros,Baltimore Orioles,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-07-20,824167,664774,LaMonte Wade Jr.,Houston Astros,Miami Marlins,3,2,0,0,0,0,0,1,0,1,0,0,0,0
+2026-07-21,824165,664774,LaMonte Wade Jr.,Houston Astros,Miami Marlins,3,2,0,0,0,0,0,1,0,1,0,0,0,0
 2026-03-27,823893,664954,Brett Sullivan,Colorado Rockies,Miami Marlins,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-29,823891,664954,Brett Sullivan,Colorado Rockies,Miami Marlins,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-30,822834,664954,Brett Sullivan,Colorado Rockies,Toronto Blue Jays,1,0,0,0,0,0,0,0,0,1,0,0,0,0
@@ -10116,6 +10125,9 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-10,823845,665923,Esteury Ruiz,Miami Marlins,Cleveland Guardians,3,0,0,0,0,0,0,0,0,3,0,1,0,0
 2026-07-12,823842,665923,Esteury Ruiz,Miami Marlins,Cleveland Guardians,2,2,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-18,823763,665923,Esteury Ruiz,Miami Marlins,Milwaukee Brewers,2,2,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-19,823764,665923,Esteury Ruiz,Miami Marlins,Milwaukee Brewers,3,3,1,0,0,1,4,1,1,0,1,0,0,0
+2026-07-20,824167,665923,Esteury Ruiz,Miami Marlins,Houston Astros,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-21,824165,665923,Esteury Ruiz,Miami Marlins,Houston Astros,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-03-27,822839,665926,Andrés Giménez,Toronto Blue Jays,Athletics,4,3,2,0,1,0,4,0,3,1,0,0,0,0
 2026-03-28,822838,665926,Andrés Giménez,Toronto Blue Jays,Athletics,5,5,4,0,0,0,4,0,1,0,0,1,0,0
 2026-03-29,822837,665926,Andrés Giménez,Toronto Blue Jays,Athletics,3,3,0,0,0,0,0,0,0,0,1,0,0,0
@@ -13816,6 +13828,11 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-19,824978,671277,Luis García Jr.,Washington Nationals,Athletics,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-20,824328,671277,Luis García Jr.,Washington Nationals,Colorado Rockies,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-07-21,824329,671277,Luis García Jr.,Washington Nationals,Colorado Rockies,5,5,2,0,1,0,4,0,0,0,1,0,0,0
+2026-04-12,824859,671286,Johnathan Rodríguez,Baltimore Orioles,San Francisco Giants,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-04-15,824855,671286,Johnathan Rodríguez,Baltimore Orioles,Arizona Diamondbacks,3,2,0,0,0,0,0,0,0,1,1,0,0,0
+2026-04-16,824453,671286,Johnathan Rodríguez,Baltimore Orioles,Cleveland Guardians,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-17,824454,671286,Johnathan Rodríguez,Baltimore Orioles,Cleveland Guardians,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+2026-04-19,824452,671286,Johnathan Rodríguez,Baltimore Orioles,Cleveland Guardians,3,2,0,0,0,0,0,0,0,1,1,0,0,0
 2026-04-01,822835,671289,Tyler Freeman,Colorado Rockies,Toronto Blue Jays,1,1,1,0,0,0,1,0,1,0,0,0,0,0
 2026-04-04,824378,671289,Tyler Freeman,Colorado Rockies,Philadelphia Phillies,4,4,1,0,0,0,1,0,0,0,0,1,0,0
 2026-04-08,824374,671289,Tyler Freeman,Colorado Rockies,Houston Astros,5,3,1,0,0,0,1,1,1,0,1,1,0,1
@@ -15287,6 +15304,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-10,822955,676439,Hunter Feduccia,Tampa Bay Rays,Seattle Mariners,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-07-12,822951,676439,Hunter Feduccia,Tampa Bay Rays,Seattle Mariners,4,4,1,0,0,0,1,0,0,0,2,0,0,0
 2026-07-17,824737,676439,Hunter Feduccia,Tampa Bay Rays,Boston Red Sox,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-19,824739,676439,Hunter Feduccia,Tampa Bay Rays,Boston Red Sox,4,3,1,1,0,0,2,0,0,1,1,0,0,0
 2026-03-26,823081,676475,Alec Burleson,St. Louis Cardinals,Tampa Bay Rays,5,4,3,0,0,1,6,2,2,1,0,0,0,0
 2026-03-28,823082,676475,Alec Burleson,St. Louis Cardinals,Tampa Bay Rays,4,3,1,0,0,0,1,1,2,0,0,1,0,0
 2026-03-29,823079,676475,Alec Burleson,St. Louis Cardinals,Tampa Bay Rays,5,4,0,0,0,0,0,0,0,1,0,0,0,0
@@ -18588,6 +18606,57 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-17,822789,682729,Jonatan Clase,Toronto Blue Jays,Chicago White Sox,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-18,822790,682729,Jonatan Clase,Toronto Blue Jays,Chicago White Sox,2,1,0,0,0,0,0,0,0,1,0,0,0,0
 2026-07-19,822786,682729,Jonatan Clase,Toronto Blue Jays,Chicago White Sox,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-26,822824,682818,Yohendrick Piñango,Toronto Blue Jays,Cleveland Guardians,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-27,822825,682818,Yohendrick Piñango,Toronto Blue Jays,Boston Red Sox,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-29,822821,682818,Yohendrick Piñango,Toronto Blue Jays,Boston Red Sox,2,2,1,0,0,0,1,0,1,0,0,0,0,0
+2026-04-30,823714,682818,Yohendrick Piñango,Toronto Blue Jays,Minnesota Twins,2,1,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-01,823713,682818,Yohendrick Piñango,Toronto Blue Jays,Minnesota Twins,4,4,3,0,0,0,3,0,2,0,0,0,0,0
+2026-05-03,823711,682818,Yohendrick Piñango,Toronto Blue Jays,Minnesota Twins,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-04,822984,682818,Yohendrick Piñango,Toronto Blue Jays,Tampa Bay Rays,5,5,3,1,0,0,4,1,0,0,0,0,0,0
+2026-05-05,822986,682818,Yohendrick Piñango,Toronto Blue Jays,Tampa Bay Rays,4,4,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-06,822985,682818,Yohendrick Piñango,Toronto Blue Jays,Tampa Bay Rays,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-08,822822,682818,Yohendrick Piñango,Toronto Blue Jays,Los Angeles Angels,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-11,822818,682818,Yohendrick Piñango,Toronto Blue Jays,Tampa Bay Rays,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-05-12,822817,682818,Yohendrick Piñango,Toronto Blue Jays,Tampa Bay Rays,3,3,1,1,0,0,2,1,2,0,1,0,0,0
+2026-05-13,822815,682818,Yohendrick Piñango,Toronto Blue Jays,Tampa Bay Rays,5,4,1,0,0,0,1,0,0,1,0,0,0,0
+2026-05-15,824280,682818,Yohendrick Piñango,Toronto Blue Jays,Detroit Tigers,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-16,824278,682818,Yohendrick Piñango,Toronto Blue Jays,Detroit Tigers,4,4,2,0,0,1,5,1,1,0,1,0,0,0
+2026-05-17,824279,682818,Yohendrick Piñango,Toronto Blue Jays,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-18,823549,682818,Yohendrick Piñango,Toronto Blue Jays,New York Yankees,2,1,0,0,0,0,0,0,0,1,1,0,0,0
+2026-05-19,823548,682818,Yohendrick Piñango,Toronto Blue Jays,New York Yankees,3,3,1,0,0,0,1,1,1,0,1,0,0,0
+2026-05-20,823547,682818,Yohendrick Piñango,Toronto Blue Jays,New York Yankees,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-21,823545,682818,Yohendrick Piñango,Toronto Blue Jays,New York Yankees,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-22,822816,682818,Yohendrick Piñango,Toronto Blue Jays,Pittsburgh Pirates,4,4,1,1,0,0,2,0,2,0,1,0,0,0
+2026-05-23,822814,682818,Yohendrick Piñango,Toronto Blue Jays,Pittsburgh Pirates,3,3,2,1,0,0,3,1,0,0,0,0,0,0
+2026-05-24,822813,682818,Yohendrick Piñango,Toronto Blue Jays,Pittsburgh Pirates,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-25,822812,682818,Yohendrick Piñango,Toronto Blue Jays,Miami Marlins,5,5,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-26,822811,682818,Yohendrick Piñango,Toronto Blue Jays,Miami Marlins,4,4,1,0,0,1,4,1,1,0,1,0,0,0
+2026-05-27,822809,682818,Yohendrick Piñango,Toronto Blue Jays,Miami Marlins,3,3,0,0,0,0,0,0,0,0,3,0,0,0
+2026-05-28,824834,682818,Yohendrick Piñango,Toronto Blue Jays,Baltimore Orioles,1,0,0,0,0,0,0,0,1,1,0,0,0,0
+2026-05-29,824835,682818,Yohendrick Piñango,Toronto Blue Jays,Baltimore Orioles,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-31,824832,682818,Yohendrick Piñango,Toronto Blue Jays,Baltimore Orioles,2,2,2,0,0,1,5,1,3,0,0,0,0,0
+2026-06-02,824918,682818,Yohendrick Piñango,Toronto Blue Jays,Atlanta Braves,4,4,2,0,0,0,2,1,0,0,1,0,0,0
+2026-06-03,824917,682818,Yohendrick Piñango,Toronto Blue Jays,Atlanta Braves,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-06-04,824919,682818,Yohendrick Piñango,Toronto Blue Jays,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-06-05,822810,682818,Yohendrick Piñango,Toronto Blue Jays,Baltimore Orioles,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-07,822807,682818,Yohendrick Piñango,Toronto Blue Jays,Baltimore Orioles,4,4,2,0,0,1,5,1,1,0,0,0,0,0
+2026-06-08,822806,682818,Yohendrick Piñango,Toronto Blue Jays,Philadelphia Phillies,3,2,1,1,0,0,2,0,1,1,0,0,0,0
+2026-06-09,822805,682818,Yohendrick Piñango,Toronto Blue Jays,Philadelphia Phillies,4,4,2,0,0,0,2,0,0,0,1,0,0,0
+2026-06-10,822804,682818,Yohendrick Piñango,Toronto Blue Jays,Philadelphia Phillies,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-12,822803,682818,Yohendrick Piñango,Toronto Blue Jays,New York Yankees,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-13,822802,682818,Yohendrick Piñango,Toronto Blue Jays,New York Yankees,4,2,1,1,0,0,2,0,0,2,0,0,0,0
+2026-06-14,822801,682818,Yohendrick Piñango,Toronto Blue Jays,New York Yankees,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-18,824748,682818,Yohendrick Piñango,Toronto Blue Jays,Boston Red Sox,4,3,1,1,0,0,2,0,0,1,0,0,0,0
+2026-06-19,824663,682818,Yohendrick Piñango,Toronto Blue Jays,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-20,824665,682818,Yohendrick Piñango,Toronto Blue Jays,Chicago Cubs,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-06-27,822794,682818,Yohendrick Piñango,Toronto Blue Jays,Texas Rangers,4,4,1,0,0,1,4,1,2,0,1,0,0,0
+2026-06-28,822795,682818,Yohendrick Piñango,Toronto Blue Jays,Texas Rangers,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-29,822792,682818,Yohendrick Piñango,Toronto Blue Jays,New York Mets,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-30,822793,682818,Yohendrick Piñango,Toronto Blue Jays,New York Mets,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-01,822791,682818,Yohendrick Piñango,Toronto Blue Jays,New York Mets,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-03,823120,682818,Yohendrick Piñango,Toronto Blue Jays,Seattle Mariners,4,4,1,0,0,0,1,0,0,0,2,0,0,0
+2026-07-04,823118,682818,Yohendrick Piñango,Toronto Blue Jays,Seattle Mariners,3,3,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-05,823117,682818,Yohendrick Piñango,Toronto Blue Jays,Seattle Mariners,2,1,0,0,0,0,0,0,0,1,0,0,0,0
 2026-03-26,824541,682829,Elly De La Cruz,Cincinnati Reds,Boston Red Sox,4,4,1,0,0,0,1,0,0,0,2,0,0,0
 2026-03-28,824540,682829,Elly De La Cruz,Cincinnati Reds,Boston Red Sox,6,4,1,0,0,1,4,1,1,2,2,0,0,0
 2026-03-29,824538,682829,Elly De La Cruz,Cincinnati Reds,Boston Red Sox,4,4,0,0,0,0,0,0,0,0,3,0,0,0
@@ -19949,6 +20018,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-17,824090,686475,Tyler Tolbert,Kansas City Royals,San Diego Padres,0,0,0,0,0,0,0,0,0,0,0,1,0,0
 2026-07-19,824086,686475,Tyler Tolbert,Kansas City Royals,San Diego Padres,4,4,0,0,0,0,0,0,0,0,0,0,0,0
 2026-07-20,824087,686475,Tyler Tolbert,Kansas City Royals,San Francisco Giants,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-21,824085,686475,Tyler Tolbert,Kansas City Royals,San Francisco Giants,4,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-26,823163,686527,Dominic Canzone,Seattle Mariners,Cleveland Guardians,4,4,2,0,0,2,8,2,2,0,0,0,0,0
 2026-03-27,823162,686527,Dominic Canzone,Seattle Mariners,Cleveland Guardians,3,2,0,0,0,0,0,1,0,1,0,0,0,0
 2026-03-28,823161,686527,Dominic Canzone,Seattle Mariners,Cleveland Guardians,1,1,0,0,0,0,0,0,0,0,0,0,0,0
@@ -21487,6 +21557,8 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-17,824009,690993,Colt Keith,Detroit Tigers,Los Angeles Angels,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-18,824008,690993,Colt Keith,Detroit Tigers,Los Angeles Angels,5,4,4,0,0,0,4,1,2,0,0,0,0,0
 2026-07-19,824007,690993,Colt Keith,Detroit Tigers,Los Angeles Angels,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-20,824654,690993,Colt Keith,Detroit Tigers,Chicago Cubs,2,2,1,1,0,0,2,1,0,0,0,0,0,0
+2026-07-21,824652,690993,Colt Keith,Detroit Tigers,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-25,824613,691011,Drew Romo,Chicago White Sox,Washington Nationals,1,0,0,0,0,0,0,0,0,1,0,0,0,0
 2026-04-26,824612,691011,Drew Romo,Chicago White Sox,Washington Nationals,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-04-28,824610,691011,Drew Romo,Chicago White Sox,Los Angeles Angels,4,3,2,0,0,2,8,2,3,0,0,0,0,1
@@ -22387,6 +22459,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-06-24,823208,691740,Daniel Susac,San Francisco Giants,Athletics,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-06-25,823209,691740,Daniel Susac,San Francisco Giants,Athletics,2,2,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-18,823116,691740,Daniel Susac,San Francisco Giants,Seattle Mariners,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-07-20,824087,691740,Daniel Susac,San Francisco Giants,Kansas City Royals,3,3,2,1,0,0,3,0,0,0,0,1,0,0
 2026-05-04,823874,691788,Joe Mack,Miami Marlins,Philadelphia Phillies,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-05-05,823873,691788,Joe Mack,Miami Marlins,Baltimore Orioles,4,4,2,0,0,0,2,0,1,0,1,0,0,0
 2026-05-06,823872,691788,Joe Mack,Miami Marlins,Baltimore Orioles,2,2,0,0,0,0,0,0,0,0,0,0,0,0
@@ -23195,6 +23268,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-18,824899,694671,Wyatt Langford,Texas Rangers,Atlanta Braves,5,5,2,0,0,0,2,1,1,0,2,0,0,0
 2026-07-19,824897,694671,Wyatt Langford,Texas Rangers,Atlanta Braves,5,5,3,1,0,1,7,2,2,0,0,0,0,0
 2026-07-20,822874,694671,Wyatt Langford,Texas Rangers,Chicago White Sox,4,4,1,0,0,0,1,0,0,0,1,1,1,0
+2026-07-21,822871,694671,Wyatt Langford,Texas Rangers,Chicago White Sox,4,4,2,0,0,1,5,2,2,0,0,0,0,0
 2026-03-27,824216,694728,Brice Matthews,Houston Astros,Los Angeles Angels,3,3,1,1,0,0,2,0,0,0,2,0,0,0
 2026-03-28,824213,694728,Brice Matthews,Houston Astros,Los Angeles Angels,2,2,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-30,824214,694728,Brice Matthews,Houston Astros,Boston Red Sox,4,4,1,0,0,1,4,1,1,0,2,0,0,0
@@ -24371,6 +24445,61 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-19,823523,700250,Ben Rice,New York Yankees,Los Angeles Dodgers,4,4,1,1,0,0,2,0,0,0,1,0,0,0
 2026-07-19,823521,700250,Ben Rice,New York Yankees,Los Angeles Dodgers,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-07-20,823522,700250,Ben Rice,New York Yankees,Pittsburgh Pirates,4,3,1,0,0,0,1,1,0,1,1,0,0,0
+2026-03-26,823812,700337,Edgar Quero,Chicago White Sox,Milwaukee Brewers,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-03-28,823811,700337,Edgar Quero,Chicago White Sox,Milwaukee Brewers,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-03-29,823810,700337,Edgar Quero,Chicago White Sox,Milwaukee Brewers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-03-30,823890,700337,Edgar Quero,Chicago White Sox,Miami Marlins,4,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-03-31,823888,700337,Edgar Quero,Chicago White Sox,Miami Marlins,3,2,1,0,0,0,1,1,0,1,0,0,0,0
+2026-04-03,824621,700337,Edgar Quero,Chicago White Sox,Toronto Blue Jays,4,4,2,0,0,0,2,0,0,0,0,0,0,0
+2026-04-05,824620,700337,Edgar Quero,Chicago White Sox,Toronto Blue Jays,4,2,1,0,0,0,1,0,0,2,0,0,0,0
+2026-04-06,824619,700337,Edgar Quero,Chicago White Sox,Baltimore Orioles,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-07,824618,700337,Edgar Quero,Chicago White Sox,Baltimore Orioles,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-09,824130,700337,Edgar Quero,Chicago White Sox,Kansas City Royals,4,4,2,0,0,0,2,0,0,0,0,0,0,0
+2026-04-10,824128,700337,Edgar Quero,Chicago White Sox,Kansas City Royals,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-12,824126,700337,Edgar Quero,Chicago White Sox,Kansas City Royals,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-04-14,824616,700337,Edgar Quero,Chicago White Sox,Tampa Bay Rays,5,4,0,0,0,0,0,0,0,1,1,1,0,0
+2026-04-15,824615,700337,Edgar Quero,Chicago White Sox,Tampa Bay Rays,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-16,824614,700337,Edgar Quero,Chicago White Sox,Tampa Bay Rays,4,3,1,1,0,0,2,0,1,1,1,0,0,0
+2026-04-17,825019,700337,Edgar Quero,Chicago White Sox,Athletics,5,5,2,0,0,0,2,0,1,0,2,0,0,0
+2026-04-18,825020,700337,Edgar Quero,Chicago White Sox,Athletics,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+2026-04-19,825018,700337,Edgar Quero,Chicago White Sox,Athletics,5,4,0,0,0,0,0,0,1,0,1,0,0,0
+2026-04-22,825097,700337,Edgar Quero,Chicago White Sox,Arizona Diamondbacks,5,3,0,0,0,0,0,0,1,2,1,0,0,0
+2026-04-23,825096,700337,Edgar Quero,Chicago White Sox,Arizona Diamondbacks,1,0,0,0,0,0,0,1,0,1,0,0,0,0
+2026-04-24,824611,700337,Edgar Quero,Chicago White Sox,Washington Nationals,4,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-25,824613,700337,Edgar Quero,Chicago White Sox,Washington Nationals,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-27,824609,700337,Edgar Quero,Chicago White Sox,Los Angeles Angels,4,3,1,0,0,0,1,1,0,0,1,0,0,1
+2026-04-29,824608,700337,Edgar Quero,Chicago White Sox,Los Angeles Angels,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-02,823308,700337,Edgar Quero,Chicago White Sox,San Diego Padres,4,4,1,0,0,0,1,0,1,0,2,0,0,0
+2026-05-03,823307,700337,Edgar Quero,Chicago White Sox,San Diego Padres,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-05,824040,700337,Edgar Quero,Chicago White Sox,Los Angeles Angels,5,4,0,0,0,0,0,0,1,0,2,0,0,0
+2026-05-09,824606,700337,Edgar Quero,Chicago White Sox,Seattle Mariners,4,3,1,0,0,0,1,0,1,0,1,0,0,0
+2026-05-10,824605,700337,Edgar Quero,Chicago White Sox,Seattle Mariners,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+2026-05-12,824604,700337,Edgar Quero,Chicago White Sox,Kansas City Royals,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-14,824602,700337,Edgar Quero,Chicago White Sox,Kansas City Royals,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-05-17,824599,700337,Edgar Quero,Chicago White Sox,Chicago Cubs,5,5,3,0,0,1,6,2,3,0,2,0,0,0
+2026-05-18,823137,700337,Edgar Quero,Chicago White Sox,Seattle Mariners,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-19,823136,700337,Edgar Quero,Chicago White Sox,Seattle Mariners,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-20,823134,700337,Edgar Quero,Chicago White Sox,Seattle Mariners,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-22,823223,700337,Edgar Quero,Chicago White Sox,San Francisco Giants,4,3,0,0,0,0,0,1,1,1,0,0,0,0
+2026-05-24,823220,700337,Edgar Quero,Chicago White Sox,San Francisco Giants,4,3,1,0,0,0,1,1,1,1,1,0,0,0
+2026-05-26,824597,700337,Edgar Quero,Chicago White Sox,Minnesota Twins,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-27,824596,700337,Edgar Quero,Chicago White Sox,Minnesota Twins,5,3,2,0,0,0,2,3,1,1,0,0,0,0
+2026-05-28,824595,700337,Edgar Quero,Chicago White Sox,Minnesota Twins,3,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-29,824594,700337,Edgar Quero,Chicago White Sox,Detroit Tigers,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-05-30,824593,700337,Edgar Quero,Chicago White Sox,Detroit Tigers,4,3,2,0,0,1,5,2,2,0,0,0,0,0
+2026-06-01,823702,700337,Edgar Quero,Chicago White Sox,Minnesota Twins,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-02,823700,700337,Edgar Quero,Chicago White Sox,Minnesota Twins,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-05,823455,700337,Edgar Quero,Chicago White Sox,Philadelphia Phillies,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-07,823453,700337,Edgar Quero,Chicago White Sox,Philadelphia Phillies,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-09,824591,700337,Edgar Quero,Chicago White Sox,Atlanta Braves,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-10,824590,700337,Edgar Quero,Chicago White Sox,Atlanta Braves,4,4,0,0,0,0,0,0,0,0,3,0,0,0
+2026-06-13,824587,700337,Edgar Quero,Chicago White Sox,Los Angeles Dodgers,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-16,823535,700337,Edgar Quero,Chicago White Sox,New York Yankees,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-17,823536,700337,Edgar Quero,Chicago White Sox,New York Yankees,4,4,3,0,0,0,3,0,0,0,0,0,0,0
+2026-06-18,823533,700337,Edgar Quero,Chicago White Sox,New York Yankees,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-19,824264,700337,Edgar Quero,Chicago White Sox,Detroit Tigers,4,4,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-20,824263,700337,Edgar Quero,Chicago White Sox,Detroit Tigers,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-21,824260,700337,Edgar Quero,Chicago White Sox,Detroit Tigers,4,4,1,0,0,0,1,0,0,0,1,0,0,0
 2026-03-26,823163,700932,Kyle Manzardo,Cleveland Guardians,Seattle Mariners,5,4,1,0,0,0,1,0,0,1,1,0,0,0
 2026-03-27,823162,700932,Kyle Manzardo,Cleveland Guardians,Seattle Mariners,4,4,0,0,0,0,0,0,0,0,4,0,0,0
 2026-03-28,823161,700932,Kyle Manzardo,Cleveland Guardians,Seattle Mariners,5,5,1,0,0,0,1,0,1,0,3,0,0,0
@@ -25554,6 +25683,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-17,823766,800325,Luis Lara,Milwaukee Brewers,Miami Marlins,3,3,1,0,0,0,1,0,0,0,1,0,0,0
 2026-07-18,823763,800325,Luis Lara,Milwaukee Brewers,Miami Marlins,5,4,1,0,0,0,1,0,0,1,1,1,0,0
 2026-07-19,823764,800325,Luis Lara,Milwaukee Brewers,Miami Marlins,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-21,823760,800325,Luis Lara,Milwaukee Brewers,New York Mets,3,3,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-26,823081,802139,JJ Wetherholt,St. Louis Cardinals,Tampa Bay Rays,5,4,1,0,0,1,4,1,2,0,1,0,0,0
 2026-03-28,823082,802139,JJ Wetherholt,St. Louis Cardinals,Tampa Bay Rays,5,5,2,0,0,0,2,1,2,0,0,1,0,0
 2026-03-29,823079,802139,JJ Wetherholt,St. Louis Cardinals,Tampa Bay Rays,5,4,1,0,0,0,1,0,0,1,0,0,0,0
@@ -25826,6 +25956,9 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-06-10,823372,804668,Rafael Flores Jr.,Pittsburgh Pirates,Los Angeles Dodgers,1,0,0,0,0,0,0,1,0,1,0,0,0,0
 2026-06-11,823371,804668,Rafael Flores Jr.,Pittsburgh Pirates,Los Angeles Dodgers,4,3,2,1,0,1,6,1,2,1,0,0,0,0
 2026-07-09,823359,804668,Rafael Flores Jr.,Pittsburgh Pirates,Atlanta Braves,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-07-11,823356,804668,Rafael Flores Jr.,Pittsburgh Pirates,Milwaukee Brewers,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-07-18,824412,804668,Rafael Flores Jr.,Pittsburgh Pirates,Cleveland Guardians,4,2,0,0,0,0,0,0,0,2,1,0,0,0
+2026-07-20,823522,804668,Rafael Flores Jr.,Pittsburgh Pirates,New York Yankees,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-03-27,823893,805300,Jakob Marsee,Miami Marlins,Colorado Rockies,4,4,1,1,0,0,2,0,0,0,0,1,0,0
 2026-03-28,823892,805300,Jakob Marsee,Miami Marlins,Colorado Rockies,4,4,0,0,0,0,0,0,0,0,3,0,0,0
 2026-03-29,823891,805300,Jakob Marsee,Miami Marlins,Colorado Rockies,4,3,0,0,0,0,0,1,0,1,2,0,0,0
@@ -26846,6 +26979,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-07,823203,815873,Sean Keys,Toronto Blue Jays,San Francisco Giants,4,4,2,0,0,0,2,2,2,0,1,0,0,0
 2026-07-12,823274,815873,Sean Keys,Toronto Blue Jays,San Diego Padres,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-17,822789,815873,Sean Keys,Toronto Blue Jays,Chicago White Sox,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-19,822786,815873,Sean Keys,Toronto Blue Jays,Chicago White Sox,2,2,0,0,0,0,0,0,0,0,1,0,0,0
 2026-04-26,825094,823550,Sung-Mun Song,San Diego Padres,Arizona Diamondbacks,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 2026-05-05,823227,823550,Sung-Mun Song,San Diego Padres,San Francisco Giants,4,4,2,1,0,0,3,2,2,0,0,1,0,0
 2026-05-06,823226,823550,Sung-Mun Song,San Diego Padres,San Francisco Giants,2,2,0,0,0,0,0,0,0,0,1,0,0,0
