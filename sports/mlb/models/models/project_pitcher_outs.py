@@ -24,6 +24,8 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Any
 
+import joblib
+
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import ExtraTreesRegressor, RandomForestRegressor
@@ -36,6 +38,7 @@ PITCHERS_DIRECTORY = PROJECT_ROOT / "data" / "pitchers"
 GAME_LOGS_DIRECTORY = PROJECT_ROOT / "data" / "game_logs"
 HISTORICAL_LOGS_PATH = PROJECT_ROOT / "data" / "historical" / "pitcher_game_logs.csv"
 OUTPUT_PATH = PROJECT_ROOT / "outputs" / "pitcher_outs_projections.csv"
+CALIBRATION_PATH = PROJECT_ROOT / "models" / "pitcher_outs_calibration.pkl"
 
 MINIMUM_HISTORY_GAMES = 3
 MINIMUM_TRAINING_HISTORY_GAMES = 5
@@ -741,6 +744,60 @@ def save_output(projections: pd.DataFrame) -> None:
     temporary_path.replace(OUTPUT_PATH)
 
 
+
+def save_calibration_bundle(
+    residuals: np.ndarray,
+    holdout_mae: float,
+    holdout_size: int,
+    training_rows: int,
+    target_date: date,
+) -> None:
+    """Persist empirical holdout error data for the probability engine."""
+    clean_residuals = np.asarray(residuals, dtype=float)
+    clean_residuals = clean_residuals[np.isfinite(clean_residuals)]
+
+    if clean_residuals.size == 0 or holdout_size <= 0:
+        print(
+            "Calibration bundle was not saved because no valid chronological "
+            "holdout residuals were available."
+        )
+        return
+
+    quantiles = {
+        "q05": float(np.quantile(clean_residuals, 0.05)),
+        "q10": float(np.quantile(clean_residuals, 0.10)),
+        "q25": float(np.quantile(clean_residuals, 0.25)),
+        "q50": float(np.quantile(clean_residuals, 0.50)),
+        "q75": float(np.quantile(clean_residuals, 0.75)),
+        "q90": float(np.quantile(clean_residuals, 0.90)),
+        "q95": float(np.quantile(clean_residuals, 0.95)),
+    }
+
+    bundle = {
+        "market": "pitcher_outs",
+        "target_column": "target_outs",
+        "holdout_residuals": clean_residuals.astype(float),
+        "validation_mae": float(holdout_mae),
+        "residual_std": float(np.std(clean_residuals, ddof=0)),
+        "residual_mean": float(np.mean(clean_residuals)),
+        "residual_median": float(np.median(clean_residuals)),
+        "residual_quantiles": quantiles,
+        "holdout_size": int(holdout_size),
+        "training_rows": int(training_rows),
+        "feature_columns": FEATURE_COLUMNS.copy(),
+        "generated_before_slate": target_date.isoformat(),
+        "model_version": "pitcher_outs_empirical_residuals_v1",
+        "uncertainty_method": "chronological_holdout_residuals",
+    }
+
+    CALIBRATION_PATH.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path = CALIBRATION_PATH.with_suffix(".tmp.pkl")
+    joblib.dump(bundle, temporary_path)
+    temporary_path.replace(CALIBRATION_PATH)
+
+    print(f"Saved pitcher-outs calibration bundle to {CALIBRATION_PATH}")
+
+
 def project_pitcher_outs() -> pd.DataFrame:
     target_date = get_target_date()
 
@@ -759,6 +816,14 @@ def project_pitcher_outs() -> pd.DataFrame:
     print(f"Leakage-safe feature rows created: {len(training):,}")
 
     model, holdout_mae, residuals, holdout_size = fit_leakage_safe_model(training)
+
+    save_calibration_bundle(
+        residuals=residuals,
+        holdout_mae=holdout_mae,
+        holdout_size=holdout_size,
+        training_rows=len(training),
+        target_date=target_date,
+    )
 
     current_features = create_current_feature_table(pitchers, current_logs, target_date)
     print(f"Current pitchers with sufficient history: {len(current_features):,}")
