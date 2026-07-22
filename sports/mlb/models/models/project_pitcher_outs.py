@@ -26,7 +26,8 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import ExtraTreesRegressor, RandomForestRegressor
+from sklearn.impute import SimpleImputer
 from sklearn.metrics import mean_absolute_error
 
 
@@ -36,11 +37,11 @@ GAME_LOGS_DIRECTORY = PROJECT_ROOT / "data" / "game_logs"
 HISTORICAL_LOGS_PATH = PROJECT_ROOT / "data" / "historical" / "pitcher_game_logs.csv"
 OUTPUT_PATH = PROJECT_ROOT / "outputs" / "pitcher_outs_projections.csv"
 
-MINIMUM_HISTORY_GAMES = 2
-MINIMUM_TRAINING_HISTORY_GAMES = 3
-MINIMUM_TRAINING_ROWS = 250
+MINIMUM_HISTORY_GAMES = 3
+MINIMUM_TRAINING_HISTORY_GAMES = 5
+MINIMUM_TRAINING_ROWS = 400
 MINIMUM_PROJECTED_OUTS = 3.0
-MAXIMUM_PROJECTED_OUTS = 27.0
+MAXIMUM_PROJECTED_OUTS = 24.0
 HOLDOUT_FRACTION = 0.20
 RANDOM_STATE = 42
 
@@ -93,6 +94,12 @@ OUTPUT_COLUMNS = [
     "projected_outs_lower_80",
     "projected_outs_upper_80",
     "projected_outs_residual_std",
+    "baseline_projected_outs",
+    "model_projected_outs",
+    "projected_pitch_count",
+    "projected_pitches_per_out",
+    "model_blend_weight",
+    "projection_reliability_score",
     "projection_confidence",
     "projection_method",
     "calibration_status",
@@ -337,94 +344,171 @@ def build_training_dataset(logs: pd.DataFrame) -> pd.DataFrame:
     return training[["pitcher_id", "game_date", "target_outs", *FEATURE_COLUMNS]].sort_values("game_date").reset_index(drop=True)
 
 
+
 def fit_leakage_safe_model(
     training: pd.DataFrame,
-) -> tuple[RandomForestRegressor | None, float, float, int]:
+) -> tuple[dict[str, Any] | None, float, np.ndarray, int]:
+    """Fit a chronological two-model ensemble and retain empirical residuals."""
     if len(training) < MINIMUM_TRAINING_ROWS:
         print(
             "Not enough chronological training rows for the outs model; "
-            "using the historical fallback."
+            "using the workload-based historical fallback."
         )
-        return None, float("nan"), float("nan"), 0
+        return None, float("nan"), np.array([], dtype=float), 0
 
     split_index = int(len(training) * (1.0 - HOLDOUT_FRACTION))
     split_index = min(max(split_index, 1), len(training) - 1)
 
-    train = training.iloc[:split_index]
-    holdout = training.iloc[split_index:]
+    train = training.iloc[:split_index].copy()
+    holdout = training.iloc[split_index:].copy()
 
-    model_params = {
-        "n_estimators": 180,
-        "max_depth": 8,
-        "min_samples_leaf": 12,
-        "max_features": 0.75,
-        "random_state": RANDOM_STATE,
-        "n_jobs": -1,
+    imputer = SimpleImputer(strategy="median")
+    x_train = imputer.fit_transform(train[FEATURE_COLUMNS])
+    x_holdout = imputer.transform(holdout[FEATURE_COLUMNS])
+
+    rf = RandomForestRegressor(
+        n_estimators=350,
+        max_depth=9,
+        min_samples_leaf=10,
+        max_features=0.70,
+        random_state=RANDOM_STATE,
+        n_jobs=-1,
+    )
+    et = ExtraTreesRegressor(
+        n_estimators=350,
+        max_depth=10,
+        min_samples_leaf=8,
+        max_features=0.80,
+        random_state=RANDOM_STATE + 1,
+        n_jobs=-1,
+    )
+
+    rf.fit(x_train, train["target_outs"])
+    et.fit(x_train, train["target_outs"])
+
+    holdout_predictions = (
+        0.55 * rf.predict(x_holdout)
+        + 0.45 * et.predict(x_holdout)
+    )
+    residuals = (
+        holdout["target_outs"].to_numpy(dtype=float)
+        - holdout_predictions
+    )
+    holdout_mae = float(
+        mean_absolute_error(
+            holdout["target_outs"],
+            holdout_predictions,
+        )
+    )
+
+    x_all = imputer.fit_transform(training[FEATURE_COLUMNS])
+    rf.fit(x_all, training["target_outs"])
+    et.fit(x_all, training["target_outs"])
+
+    bundle = {
+        "imputer": imputer,
+        "rf": rf,
+        "et": et,
     }
-
-    validation_model = RandomForestRegressor(**model_params)
-    validation_model.fit(train[FEATURE_COLUMNS], train["target_outs"])
-    holdout_predictions = validation_model.predict(holdout[FEATURE_COLUMNS])
-    residuals = holdout["target_outs"].to_numpy(dtype=float) - holdout_predictions
-
-    holdout_mae = float(mean_absolute_error(holdout["target_outs"], holdout_predictions))
-    residual_std = float(np.std(residuals, ddof=0))
-
-    final_model = RandomForestRegressor(**model_params)
-    final_model.fit(training[FEATURE_COLUMNS], training["target_outs"])
 
     print(f"Chronological training rows: {len(train):,}")
     print(f"Chronological holdout rows: {len(holdout):,}")
-    print(f"Holdout MAE: {holdout_mae:.3f} outs")
-    print(f"Holdout residual std: {residual_std:.3f} outs")
+    print(f"Ensemble holdout MAE: {holdout_mae:.3f} outs")
+    print(
+        "Empirical 80% residual interval: "
+        f"[{np.quantile(residuals, 0.10):.3f}, "
+        f"{np.quantile(residuals, 0.90):.3f}]"
+    )
 
-    return final_model, holdout_mae, residual_std, len(holdout)
+    return bundle, holdout_mae, residuals, len(holdout)
 
 
 def stable_historical_projection(features: dict[str, float]) -> float:
+    """Estimate expected outs from workload, efficiency, and recent results."""
     history_games = int(features["history_games"])
-    if history_games >= 10:
+
+    recent_result_projection = np.nanmean(
+        [
+            features["last3_avg_outs"],
+            features["last5_avg_outs"],
+            features["last10_avg_outs"],
+            features["season_avg_outs"],
+            features["season_median_outs"],
+        ]
+    )
+
+    projected_pitch_count = np.nanmean(
+        [
+            features["last3_avg_pitches"],
+            features["last5_avg_pitches"],
+        ]
+    )
+
+    recent_outs = np.nanmean(
+        [
+            features["last3_avg_outs"],
+            features["last5_avg_outs"],
+        ]
+    )
+
+    pitches_per_out = (
+        projected_pitch_count / recent_outs
+        if np.isfinite(projected_pitch_count)
+        and np.isfinite(recent_outs)
+        and recent_outs > 0
+        else np.nan
+    )
+
+    workload_projection = (
+        projected_pitch_count / pitches_per_out
+        if np.isfinite(projected_pitch_count)
+        and np.isfinite(pitches_per_out)
+        and pitches_per_out > 0
+        else np.nan
+    )
+
+    if np.isfinite(workload_projection):
         projection = (
-            0.25 * features["last3_avg_outs"]
-            + 0.25 * features["last5_avg_outs"]
-            + 0.20 * features["last10_avg_outs"]
-            + 0.20 * features["season_avg_outs"]
-            + 0.10 * features["season_median_outs"]
-        )
-    elif history_games >= 5:
-        projection = (
-            0.35 * features["last3_avg_outs"]
-            + 0.30 * features["last5_avg_outs"]
-            + 0.20 * features["season_avg_outs"]
-            + 0.15 * features["season_median_outs"]
+            0.55 * recent_result_projection
+            + 0.45 * workload_projection
         )
     else:
-        projection = (
-            0.45 * features["last3_avg_outs"]
-            + 0.35 * features["season_avg_outs"]
-            + 0.20 * features["season_median_outs"]
+        projection = recent_result_projection
+
+    # Reduce trust for pitchers with very little history.
+    if history_games < 5:
+        projection = 0.75 * projection + 0.25 * 15.0
+
+    return float(
+        np.clip(
+            projection,
+            MINIMUM_PROJECTED_OUTS,
+            MAXIMUM_PROJECTED_OUTS,
         )
-
-    return float(np.clip(projection, MINIMUM_PROJECTED_OUTS, MAXIMUM_PROJECTED_OUTS))
-
-
-def model_blend_weight(history_games: int) -> float:
-    if history_games >= 12:
-        return 0.80
-    if history_games >= 8:
-        return 0.70
-    if history_games >= 5:
-        return 0.60
-    return 0.40
+    )
 
 
-def confidence_label(history_games: int, calibrated: bool) -> str:
-    if calibrated and history_games >= 10:
+def model_blend_weight(history_games: int, disagreement: float = 0.0) -> float:
+    """Trust the model less when history is limited or models disagree."""
+    if history_games >= 15:
+        base = 0.78
+    elif history_games >= 10:
+        base = 0.70
+    elif history_games >= 6:
+        base = 0.58
+    else:
+        base = 0.40
+
+    disagreement_penalty = min(max(disagreement, 0.0) / 4.0, 0.25)
+    return float(np.clip(base - disagreement_penalty, 0.30, 0.78))
+
+
+def confidence_label(reliability_score: float, calibrated: bool) -> str:
+    if not calibrated or reliability_score < 55:
+        return "LOW"
+    if reliability_score >= 78:
         return "HIGH"
-    if history_games >= 5:
-        return "MEDIUM"
-    return "LOW"
-
+    return "MEDIUM"
 
 def create_current_feature_table(
     pitchers: pd.DataFrame,
@@ -451,37 +535,102 @@ def create_current_feature_table(
     return pd.DataFrame(rows)
 
 
+
 def generate_summaries(
     current_features: pd.DataFrame,
-    model: RandomForestRegressor | None,
-    residual_std: float,
+    model: dict[str, Any] | None,
+    residuals: np.ndarray,
     holdout_size: int,
 ) -> pd.DataFrame:
     summaries: list[dict[str, Any]] = []
-    calibrated = model is not None and np.isfinite(residual_std) and holdout_size > 0
+    calibrated = model is not None and residuals.size >= 50 and holdout_size > 0
+
+    if calibrated:
+        residual_q10 = float(np.quantile(residuals, 0.10))
+        residual_q90 = float(np.quantile(residuals, 0.90))
+        residual_std = float(np.std(residuals, ddof=0))
+    else:
+        residual_q10 = float("nan")
+        residual_q90 = float("nan")
+        residual_std = float("nan")
 
     for _, row in current_features.iterrows():
         features = {column: float(row[column]) for column in FEATURE_COLUMNS}
         history_games = int(features["history_games"])
         historical_projection = stable_historical_projection(features)
 
+        projected_pitch_count = float(
+            np.nanmean(
+                [
+                    features["last3_avg_pitches"],
+                    features["last5_avg_pitches"],
+                ]
+            )
+        )
+        recent_outs = float(
+            np.nanmean(
+                [
+                    features["last3_avg_outs"],
+                    features["last5_avg_outs"],
+                ]
+            )
+        )
+        pitches_per_out = (
+            projected_pitch_count / recent_outs
+            if np.isfinite(projected_pitch_count)
+            and np.isfinite(recent_outs)
+            and recent_outs > 0
+            else float("nan")
+        )
+
         if model is not None:
             feature_frame = pd.DataFrame([features], columns=FEATURE_COLUMNS)
-            ml_projection = float(model.predict(feature_frame)[0])
-            weight = model_blend_weight(history_games)
-            projection = weight * ml_projection + (1.0 - weight) * historical_projection
-            method = "leakage_safe_hgb_plus_historical_blend"
+            x = model["imputer"].transform(feature_frame)
+            rf_projection = float(model["rf"].predict(x)[0])
+            et_projection = float(model["et"].predict(x)[0])
+            ml_projection = 0.55 * rf_projection + 0.45 * et_projection
+            disagreement = abs(rf_projection - et_projection)
+            weight = model_blend_weight(history_games, disagreement)
+            projection = (
+                weight * ml_projection
+                + (1.0 - weight) * historical_projection
+            )
+            method = "chronological_rf_extratrees_workload_blend"
         else:
+            ml_projection = float("nan")
+            disagreement = 3.0
+            weight = 0.0
             projection = historical_projection
-            method = "weighted_historical_fallback"
+            method = "workload_historical_fallback"
 
-        projection = float(np.clip(projection, MINIMUM_PROJECTED_OUTS, MAXIMUM_PROJECTED_OUTS))
+        projection = float(
+            np.clip(
+                projection,
+                MINIMUM_PROJECTED_OUTS,
+                MAXIMUM_PROJECTED_OUTS,
+            )
+        )
+
+        history_score = min(history_games / 15.0, 1.0)
+        stability = features["recent_std_outs"]
+        stability_score = (
+            float(np.clip(1.0 - stability / 7.0, 0.0, 1.0))
+            if np.isfinite(stability)
+            else 0.35
+        )
+        agreement_score = float(
+            np.clip(1.0 - disagreement / 4.0, 0.0, 1.0)
+        )
+        reliability_score = 100.0 * (
+            0.45 * history_score
+            + 0.30 * stability_score
+            + 0.25 * agreement_score
+        )
 
         if calibrated:
-            interval_radius = 1.2815515655446004 * residual_std
-            lower = float(np.clip(projection - interval_radius, 0.0, 27.0))
-            upper = float(np.clip(projection + interval_radius, 0.0, 27.0))
-            uncertainty_method = "chronological_holdout_residuals"
+            lower = float(np.clip(projection + residual_q10, 0.0, 27.0))
+            upper = float(np.clip(projection + residual_q90, 0.0, 27.0))
+            uncertainty_method = "empirical_chronological_holdout_quantiles"
             calibration_status = "CHRONOLOGICAL_HOLDOUT"
             output_residual_std = residual_std
         else:
@@ -508,7 +657,16 @@ def generate_summaries(
                 "projected_outs_lower_80": lower,
                 "projected_outs_upper_80": upper,
                 "projected_outs_residual_std": output_residual_std,
-                "projection_confidence": confidence_label(history_games, calibrated),
+                "baseline_projected_outs": historical_projection,
+                "model_projected_outs": ml_projection,
+                "projected_pitch_count": projected_pitch_count,
+                "projected_pitches_per_out": pitches_per_out,
+                "model_blend_weight": weight,
+                "projection_reliability_score": reliability_score,
+                "projection_confidence": confidence_label(
+                    reliability_score,
+                    calibrated,
+                ),
                 "projection_method": method,
                 "calibration_status": calibration_status,
                 "uncertainty_method": uncertainty_method,
@@ -516,7 +674,6 @@ def generate_summaries(
         )
 
     return pd.DataFrame(summaries)
-
 
 def build_output(
     pitchers: pd.DataFrame,
@@ -559,6 +716,12 @@ def build_output(
         "projected_outs_lower_80",
         "projected_outs_upper_80",
         "projected_outs_residual_std",
+    "baseline_projected_outs",
+    "model_projected_outs",
+    "projected_pitch_count",
+    "projected_pitches_per_out",
+    "model_blend_weight",
+    "projection_reliability_score",
     ]
     for column in numeric_columns:
         projections[column] = pd.to_numeric(projections[column], errors="coerce").round(3)
@@ -595,12 +758,12 @@ def project_pitcher_outs() -> pd.DataFrame:
     training = build_training_dataset(historical_logs)
     print(f"Leakage-safe feature rows created: {len(training):,}")
 
-    model, holdout_mae, residual_std, holdout_size = fit_leakage_safe_model(training)
+    model, holdout_mae, residuals, holdout_size = fit_leakage_safe_model(training)
 
     current_features = create_current_feature_table(pitchers, current_logs, target_date)
     print(f"Current pitchers with sufficient history: {len(current_features):,}")
 
-    summaries = generate_summaries(current_features, model, residual_std, holdout_size)
+    summaries = generate_summaries(current_features, model, residuals, holdout_size)
     projections = build_output(pitchers, summaries, target_date)
     save_output(projections)
 
