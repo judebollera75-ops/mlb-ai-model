@@ -21,6 +21,12 @@ PROP_PATH = (
     / "mlb_daily_card.csv"
 )
 
+PROBABILITY_PATH = (
+    PROJECT_ROOT
+    / "outputs"
+    / "probability_table.csv"
+)
+
 AUDIT_PATH = (
     PROJECT_ROOT
     / "outputs"
@@ -404,6 +410,12 @@ def prepare_props(
         "probability_edge": pd.NA,
         "expected_value": pd.NA,
         "recommended_bankroll_fraction": pd.NA,
+        "confidence_score": pd.NA,
+        "risk_score": pd.NA,
+        "market_quality_score": pd.NA,
+        "projection_quality_score": pd.NA,
+        "ranking_score": pd.NA,
+        "line_type": pd.NA,
     }
 
     for column, default_value in required_defaults.items():
@@ -425,6 +437,11 @@ def prepare_props(
         "recommended_bankroll_fraction",
         "validation_mae",
         "calibration_sample_size",
+        "confidence_score",
+        "risk_score",
+        "market_quality_score",
+        "projection_quality_score",
+        "ranking_score",
     ]
 
     for column in numeric_columns:
@@ -783,6 +800,103 @@ st.caption(
 
 st.divider()
 
+if not props.empty:
+    st.header("⭐ Top 10 Best Bets")
+    st.caption(
+        "Highest-ranked current recommendations based on confidence tier, "
+        "ranking score, expected value, probability edge, and win probability."
+    )
+
+    top_picks = props.copy()
+
+    if "ranking_score" in top_picks.columns:
+        top_picks = top_picks.sort_values(
+            [
+                "confidence_rank",
+                "ranking_score",
+                "expected_value",
+                "probability_edge",
+                "probability",
+            ],
+            ascending=[True, False, False, False, False],
+            na_position="last",
+        )
+    else:
+        top_picks = top_picks.sort_values(
+            [
+                "confidence_rank",
+                "expected_value",
+                "probability_edge",
+                "probability",
+            ],
+            ascending=[True, False, False, False],
+            na_position="last",
+        )
+
+    top_picks = top_picks.drop_duplicates(
+        subset=["player_key"],
+        keep="first",
+    ).head(10)
+
+    top_columns = [
+        "confidence_tier",
+        "platform",
+        "player",
+        "market_display",
+        "direction",
+        "line",
+        "projection",
+        "probability",
+        "expected_value",
+        "confidence_score",
+        "risk_score",
+        "ranking_score",
+    ]
+    top_columns = [column for column in top_columns if column in top_picks.columns]
+
+    top_table = top_picks[top_columns].copy().rename(
+        columns={
+            "confidence_tier": "Confidence",
+            "platform": "Platform",
+            "player": "Player",
+            "market_display": "Market",
+            "direction": "Direction",
+            "line": "Line",
+            "projection": "Projection",
+            "probability": "Win Probability",
+            "expected_value": "Expected Value",
+            "confidence_score": "Confidence Score",
+            "risk_score": "Risk Score",
+            "ranking_score": "Ranking Score",
+        }
+    )
+
+    for column in ["Win Probability", "Expected Value"]:
+        if column in top_table.columns:
+            top_table[column] = (
+                pd.to_numeric(top_table[column], errors="coerce") * 100.0
+            ).round(2)
+
+    for column in [
+        "Line",
+        "Projection",
+        "Confidence Score",
+        "Risk Score",
+        "Ranking Score",
+    ]:
+        if column in top_table.columns:
+            top_table[column] = pd.to_numeric(
+                top_table[column], errors="coerce"
+            ).round(2)
+
+    st.dataframe(
+        top_table,
+        use_container_width=True,
+        hide_index=True,
+    )
+
+st.divider()
+
 
 header_left, header_right = st.columns(
     [4, 1]
@@ -969,56 +1083,46 @@ else:
         st.warning(
             "No props match the selected filters."
         )
-
-        # Remove any remembered slider value so it cannot become invalid
-        # when the user changes filters and matching props return later.
-        st.session_state.pop(
-            slider_key,
-            None,
-        )
-
+        st.session_state.pop(slider_key, None)
         filtered = filtered.iloc[0:0]
 
     else:
-        slider_max = min(
-            50,
-            available_props,
-        )
+        control_left, control_right = st.columns([1, 3])
 
-        default_slider_value = min(
-            10,
-            slider_max,
-        )
+        with control_left:
+            show_all_props = st.checkbox(
+                "Show all matching props",
+                value=True,
+                key="show_all_props",
+            )
 
-        remembered_slider_value = st.session_state.get(
-            slider_key
-        )
+        with control_right:
+            st.caption(
+                f"{available_props} props match the selected filters."
+            )
 
-        # Streamlit preserves widget state between reruns. Reset the
-        # remembered value whenever the new filtered result has a smaller
-        # valid range than the previous result.
-        if (
-            remembered_slider_value is None
-            or remembered_slider_value < 1
-            or remembered_slider_value > slider_max
-        ):
-            st.session_state[
-                slider_key
-            ] = default_slider_value
+        if not show_all_props:
+            slider_max = available_props
+            default_slider_value = min(10, slider_max)
 
-        max_props = st.slider(
-            "Number of props to display",
-            min_value=1,
-            max_value=slider_max,
-            step=1,
-            key=slider_key,
-        )
+            remembered_slider_value = st.session_state.get(slider_key)
 
-        st.caption(
-            f"{available_props} props match the selected filters."
-        )
+            if (
+                remembered_slider_value is None
+                or remembered_slider_value < 1
+                or remembered_slider_value > slider_max
+            ):
+                st.session_state[slider_key] = default_slider_value
 
-        filtered = filtered.head(max_props)
+            max_props = st.slider(
+                "Number of props to display",
+                min_value=1,
+                max_value=slider_max,
+                step=1,
+                key=slider_key,
+            )
+
+            filtered = filtered.head(max_props)
 
     for rank, (_, row) in enumerate(
         filtered.iterrows(),
@@ -1240,6 +1344,19 @@ else:
                     f"{safe_number(row.get('validation_mae'), 3)}"
                 )
 
+                st.write(
+                    f"**Confidence score:** "
+                    f"{safe_number(row.get('confidence_score'), 1)}"
+                )
+                st.write(
+                    f"**Risk score:** "
+                    f"{safe_number(row.get('risk_score'), 1)}"
+                )
+                st.write(
+                    f"**Ranking score:** "
+                    f"{safe_number(row.get('ranking_score'), 1)}"
+                )
+
             distribution_method = clean_text(
                 row.get("distribution_method")
             )
@@ -1279,6 +1396,12 @@ if not props.empty:
         "probability_edge",
         "expected_value",
         "recommended_bankroll_fraction",
+        "confidence_score",
+        "risk_score",
+        "market_quality_score",
+        "projection_quality_score",
+        "ranking_score",
+        "line_type",
         "team",
         "opponent",
     ]
@@ -1310,6 +1433,12 @@ if not props.empty:
             "recommended_bankroll_fraction": (
                 "Suggested Bankroll Fraction"
             ),
+            "confidence_score": "Confidence Score",
+            "risk_score": "Risk Score",
+            "market_quality_score": "Market Quality",
+            "projection_quality_score": "Projection Quality",
+            "ranking_score": "Ranking Score",
+            "line_type": "Line Type",
             "team": "Team",
             "opponent": "Opponent",
         }
@@ -1318,6 +1447,11 @@ if not props.empty:
     for column in [
         "Line",
         "Projection",
+        "Confidence Score",
+        "Risk Score",
+        "Market Quality",
+        "Projection Quality",
+        "Ranking Score",
     ]:
         if column in display_table.columns:
             display_table[column] = pd.to_numeric(
@@ -1345,6 +1479,38 @@ if not props.empty:
         use_container_width=True,
         hide_index=True,
     )
+
+    st.subheader("⚾ Quick Market Views")
+    hitter_tab, pitcher_tab = st.tabs(
+        ["Hitter Props", "Pitcher Props"]
+    )
+
+    with hitter_tab:
+        hitter_props = display_table.loc[
+            display_table["Market"].astype(str).str.startswith("Hitter")
+            | display_table["Market"].astype(str).eq("Hits + Runs + RBIs")
+        ].copy()
+        if hitter_props.empty:
+            st.info("No hitter props are available on the current card.")
+        else:
+            st.dataframe(
+                hitter_props,
+                use_container_width=True,
+                hide_index=True,
+            )
+
+    with pitcher_tab:
+        pitcher_props = display_table.loc[
+            display_table["Market"].astype(str).str.startswith("Pitcher")
+        ].copy()
+        if pitcher_props.empty:
+            st.info("No pitcher props are available on the current card.")
+        else:
+            st.dataframe(
+                pitcher_props,
+                use_container_width=True,
+                hide_index=True,
+            )
 
 
 st.divider()
