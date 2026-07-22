@@ -834,35 +834,31 @@ def choose_consensus_market_lines(
         keep="first",
     )[group_columns + ["line"]]
 
-    # Use a temporary name because Probability Engine V2 may already provide
-# its own consensus_line column.
-selected_lines = selected_lines.rename(
-    columns={"line": "selected_consensus_line"}
-)
-
-result = result.merge(
-    selected_lines,
-    on=group_columns,
-    how="inner",
-)
-
-result = result.loc[
-    np.isclose(
-        result["line"],
-        result["selected_consensus_line"],
-        equal_nan=False,
+    selected_lines = selected_lines.rename(
+        columns={"line": "selected_consensus_line"}
     )
-].copy()
 
-result = result.drop(
-    columns=[
-        "consensus_price_distance",
-        "selected_consensus_line",
-    ],
-    errors="ignore",
-)
+    result = result.merge(
+        selected_lines,
+        on=group_columns,
+        how="inner",
+    )
 
-return result
+    result = result.loc[
+        np.isclose(
+            result["line"],
+            result["selected_consensus_line"],
+            equal_nan=False,
+        )
+    ].copy()
+
+    result = result.drop(
+        columns=[
+            "consensus_price_distance",
+            "selected_consensus_line",
+        ],
+        errors="ignore",
+    )
 
     return result
 
