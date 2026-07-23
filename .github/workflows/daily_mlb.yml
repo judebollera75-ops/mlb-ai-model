@@ -61,11 +61,11 @@ jobs:
           echo "MLB_TARGET_DATE=$TARGET_DATE" >> "$GITHUB_ENV"
           echo "Using MLB slate date: $TARGET_DATE"
 
-      - name: Validate Python files
+            - name: Validate Python files
         run: |
           python -m compileall daily_run.py run_mlb_daily.py sports shared src
 
-         - name: Download live sportsbook props
+      - name: Download live sportsbook props
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           PARLAY_API_KEY: ${{ secrets.PARLAY_API_KEY }}
