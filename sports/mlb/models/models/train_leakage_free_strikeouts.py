@@ -28,7 +28,6 @@ Poisson distribution.
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
 from typing import Any
 
@@ -137,9 +136,6 @@ def chronological_split(
         raise RuntimeError("Chronological train/holdout split produced an empty set.")
 
     if train["date"].max() >= holdout["date"].min():
-        # Equal dates can appear on both sides when several games share a date.
-        # Move the split to the first row of the holdout date so one slate does
-        # not appear in both training and validation.
         holdout_start_date = holdout["date"].min()
         train = frame.loc[frame["date"] < holdout_start_date].copy()
         holdout = frame.loc[frame["date"] >= holdout_start_date].copy()
@@ -157,7 +153,6 @@ def fit_feature_medians(
     train: pd.DataFrame,
     feature_columns: list[str],
 ) -> pd.Series:
-    """Calculate imputations from training rows only."""
     medians = train[feature_columns].median(numeric_only=True)
     medians = medians.reindex(feature_columns)
 
@@ -279,7 +274,6 @@ def train_model() -> dict[str, Any]:
         )
     )
 
-    # Train the production estimator on every historical row after validation.
     all_medians = fit_feature_medians(frame, feature_columns)
     x_all = prepare_matrix(frame, feature_columns, all_medians)
     y_all = frame["actual_strikeouts"].astype(float)
