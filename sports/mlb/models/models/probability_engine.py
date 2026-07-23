@@ -9,9 +9,9 @@ Inputs:
 Output:
     outputs/probability_table.csv
 
-Hitter probabilities are estimated from chronological holdout residuals saved
-during model training. Pitcher strikeouts retain a Poisson fallback until a
-dedicated leakage-safe pitcher residual model is available.
+Hitter and pitcher-strikeout probabilities are estimated from chronological
+holdout residuals saved during model training. Poisson remains available only
+as a safety fallback when the strikeout residual sample is too small.
 """
 
 from __future__ import annotations
@@ -56,6 +56,12 @@ HITTER_MODEL_DIRECTORY = (
     / "hitters"
 )
 
+PITCHER_STRIKEOUT_MODEL_PATH = (
+    PROJECT_ROOT
+    / "models"
+    / "leakage_free_strikeout_model.pkl"
+)
+
 OUTPUT_PATH = PROJECT_ROOT / "outputs" / "probability_table.csv"
 
 MINIMUM_EMPIRICAL_RESIDUALS = 100
@@ -63,7 +69,7 @@ EMPIRICAL_PRIOR_STRENGTH = 40.0
 PROBABILITY_FLOOR = 0.08
 PROBABILITY_CEILING = 0.92
 PUSH_TOLERANCE = 1e-9
-MODEL_VERSION = "2.1.0"
+MODEL_VERSION = "2.2.0"
 INTERVAL_Z_80 = 1.2815515655446004
 
 
@@ -77,7 +83,9 @@ PICKEM_PLATFORMS = {
 # calibration proves the model deserves full confidence.
 METHOD_SHRINKAGE = {
     "empirical_holdout_residuals": 0.84,
+    "empirical_pitcher_holdout_residuals": 0.88,
     "poisson": 0.70,
+    "poisson_fallback": 0.68,
     "normal_residual_std": 0.74,
 }
 
@@ -210,7 +218,7 @@ def calibrate_probability(
 
     # Empirical hitter models earn slightly more trust with large holdouts.
     if (
-        distribution_method == "empirical_holdout_residuals"
+        distribution_method in {"empirical_holdout_residuals", "empirical_pitcher_holdout_residuals"}
         and pd.notna(sample_size)
     ):
         sample_factor = float(
@@ -485,6 +493,30 @@ def load_hitter_bundle(
         raise ValueError(
             f"{path} does not contain holdout residuals. "
             "Retrain hitter models before calculating probabilities."
+        )
+
+    return bundle
+
+
+def load_pitcher_strikeout_bundle() -> dict[str, Any]:
+    """Load the trained leakage-safe pitcher strikeout bundle."""
+    if not PITCHER_STRIKEOUT_MODEL_PATH.exists():
+        raise FileNotFoundError(
+            "Pitcher strikeout model bundle was not found: "
+            f"{PITCHER_STRIKEOUT_MODEL_PATH}"
+        )
+
+    bundle = joblib.load(PITCHER_STRIKEOUT_MODEL_PATH)
+
+    if not isinstance(bundle, dict):
+        raise TypeError(
+            "Pitcher strikeout model file does not contain a model bundle."
+        )
+
+    if "holdout_residuals" not in bundle:
+        raise ValueError(
+            "Pitcher strikeout model bundle does not contain "
+            "holdout_residuals. Retrain the leakage-safe strikeout model."
         )
 
     return bundle
@@ -929,28 +961,98 @@ def calculate_pitcher_line_probability(
     market = row["market"]
 
     if market == "pitcher_strikeouts":
+        bundle = load_pitcher_strikeout_bundle()
+
+        residuals = pd.to_numeric(
+            pd.Series(
+                bundle.get("holdout_residuals", []),
+                dtype="object",
+            ),
+            errors="coerce",
+        ).dropna()
+
+        residuals = residuals.loc[
+            np.isfinite(residuals)
+        ].to_numpy(dtype=float)
+
+        sample_size = len(residuals)
+        validation_mae = pd.to_numeric(
+            bundle.get("validation_mae"),
+            errors="coerce",
+        )
+
+        if sample_size < MINIMUM_EMPIRICAL_RESIDUALS:
+            (
+                over_probability,
+                under_probability,
+                push_probability,
+            ) = poisson_probabilities(
+                float(row["projection"]),
+                float(row["line"]),
+            )
+
+            return {
+                "over_probability": over_probability,
+                "under_probability": under_probability,
+                "push_probability": push_probability,
+                "distribution_method": "poisson_fallback",
+                "calibration_sample_size": sample_size,
+                "validation_mae": (
+                    float(validation_mae)
+                    if pd.notna(validation_mae)
+                    else np.nan
+                ),
+                "probability_status": "calculated",
+                "probability_note": (
+                    "Poisson safety fallback because the pitcher "
+                    "strikeout holdout residual sample is too small."
+                ),
+                "projection_std": float(
+                    math.sqrt(
+                        max(float(row["projection"]), 0.0)
+                    )
+                ),
+            }
+
         (
             over_probability,
             under_probability,
             push_probability,
-        ) = poisson_probabilities(
-            float(row["projection"]),
-            float(row["line"]),
+        ) = empirical_probabilities(
+            projection=float(row["projection"]),
+            line=float(row["line"]),
+            residuals=residuals,
+        )
+
+        projection_std = (
+            float(np.std(residuals, ddof=1))
+            if sample_size > 1
+            else pd.to_numeric(
+                bundle.get("residual_std"),
+                errors="coerce",
+            )
         )
 
         return {
             "over_probability": over_probability,
             "under_probability": under_probability,
             "push_probability": push_probability,
-            "distribution_method": "poisson",
-            "calibration_sample_size": np.nan,
-            "validation_mae": np.nan,
-            "probability_status": "calculated",
-            "probability_note": (
-                "Poisson fallback; dedicated pitcher residual "
-                "calibration is still recommended."
+            "distribution_method": (
+                "empirical_pitcher_holdout_residuals"
             ),
-            "projection_std": float(math.sqrt(max(float(row["projection"]), 0.0))),
+            "calibration_sample_size": sample_size,
+            "validation_mae": (
+                float(validation_mae)
+                if pd.notna(validation_mae)
+                else np.nan
+            ),
+            "probability_status": "calculated",
+            "probability_note": "",
+            "projection_std": (
+                float(projection_std)
+                if pd.notna(projection_std)
+                else np.nan
+            ),
         }
 
     if market == "pitcher_outs":
@@ -1285,8 +1387,10 @@ def build_probability_table() -> pd.DataFrame:
 
     method_trust = output["distribution_method"].map({
         "empirical_holdout_residuals": 92.0,
+        "empirical_pitcher_holdout_residuals": 95.0,
         "normal_residual_std": 78.0,
         "poisson": 68.0,
+        "poisson_fallback": 62.0,
     }).fillna(25.0)
     sample_score = (
         pd.to_numeric(output["calibration_sample_size"], errors="coerce")
@@ -1297,7 +1401,7 @@ def build_probability_table() -> pd.DataFrame:
     )
     # Pitcher fallbacks have no residual sample size, so method trust carries them.
     sample_score = np.where(
-        output["distribution_method"].isin(["poisson", "normal_residual_std"]),
+        output["distribution_method"].isin(["poisson", "poisson_fallback", "normal_residual_std"]),
         method_trust,
         sample_score,
     )
