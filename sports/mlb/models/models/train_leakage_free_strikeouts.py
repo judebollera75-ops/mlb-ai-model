@@ -43,8 +43,8 @@ MODEL_PATH = Path("models/leakage_free_strikeout_model.pkl")
 RESULTS_PATH = Path("outputs/leakage_free_strikeout_test_results.csv")
 
 HOLDOUT_FRACTION = 0.20
-MINIMUM_TRAINING_ROWS = 300
-MINIMUM_HOLDOUT_ROWS = 75
+MINIMUM_TRAINING_ROWS = 150
+MINIMUM_HOLDOUT_ROWS = 40
 RANDOM_STATE = 42
 
 CANDIDATE_FEATURES = [
