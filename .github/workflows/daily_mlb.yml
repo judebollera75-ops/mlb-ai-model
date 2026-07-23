@@ -77,7 +77,9 @@ jobs:
           fi
 
           python sports/mlb/data/download/download_sportsbook_props.py
-
+      - name: Retrain leakage-free strikeout model
+        run: |
+          python sports/mlb/models/models/train_leakage_free_strikeouts.py
       - name: Run production MLB pipeline
         env:
           MLB_TARGET_DATE: ${{ env.MLB_TARGET_DATE }}
