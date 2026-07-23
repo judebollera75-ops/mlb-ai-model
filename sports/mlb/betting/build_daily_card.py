@@ -138,6 +138,9 @@ OUTPUT_COLUMNS = [
     "market_quality_score",
     "projection_quality_score",
     "ranking_score",
+    "historical_market_sample",
+    "historical_market_win_rate",
+    "model_score",
     "line_type",
     "elite_score",
     "elite_eligible",
@@ -695,6 +698,201 @@ def add_dashboard_quality_scores(
     return result
 
 
+
+def add_weighted_model_score(
+    frame: pd.DataFrame,
+    history_path: Path,
+) -> pd.DataFrame:
+    """Add a 0-100 weighted score using current and settled performance."""
+    result = frame.copy()
+
+    settled_history = pd.DataFrame()
+
+    if history_path.exists():
+        try:
+            settled_history = pd.read_csv(
+                history_path,
+                low_memory=False,
+            )
+        except (
+            pd.errors.EmptyDataError,
+            pd.errors.ParserError,
+            UnicodeDecodeError,
+        ):
+            settled_history = pd.DataFrame()
+
+    market_stats = pd.DataFrame(
+        columns=[
+            "market",
+            "historical_market_sample",
+            "historical_market_win_rate",
+        ]
+    )
+
+    overall_win_rate = 0.50
+
+    if (
+        not settled_history.empty
+        and {"market", "outcome"}.issubset(
+            settled_history.columns
+        )
+    ):
+        settled_history["market"] = (
+            settled_history["market"]
+            .astype(str)
+            .str.strip()
+            .str.lower()
+        )
+
+        settled_history["outcome"] = (
+            settled_history["outcome"]
+            .astype(str)
+            .str.strip()
+            .str.upper()
+        )
+
+        settled_history = settled_history.loc[
+            settled_history["outcome"].isin(
+                {"WIN", "LOSS"}
+            )
+        ].copy()
+
+        if not settled_history.empty:
+            overall_win_rate = float(
+                settled_history["outcome"]
+                .eq("WIN")
+                .mean()
+            )
+
+            market_stats = (
+                settled_history.groupby(
+                    "market",
+                    dropna=False,
+                )["outcome"]
+                .agg(
+                    historical_market_sample="size",
+                    historical_market_wins=(
+                        lambda values: int(
+                            values.eq("WIN").sum()
+                        )
+                    ),
+                )
+                .reset_index()
+            )
+
+            # Shrink each market toward the full-history rate so tiny
+            # samples cannot dominate today's score.
+            prior_strength = 50.0
+
+            market_stats[
+                "historical_market_win_rate"
+            ] = (
+                market_stats[
+                    "historical_market_wins"
+                ]
+                + prior_strength * overall_win_rate
+            ) / (
+                market_stats[
+                    "historical_market_sample"
+                ]
+                + prior_strength
+            )
+
+            market_stats = market_stats[
+                [
+                    "market",
+                    "historical_market_sample",
+                    "historical_market_win_rate",
+                ]
+            ]
+
+    result = result.merge(
+        market_stats,
+        on="market",
+        how="left",
+    )
+
+    result["historical_market_sample"] = (
+        pd.to_numeric(
+            result["historical_market_sample"],
+            errors="coerce",
+        )
+        .fillna(0)
+    )
+
+    result["historical_market_win_rate"] = (
+        pd.to_numeric(
+            result["historical_market_win_rate"],
+            errors="coerce",
+        )
+        .fillna(overall_win_rate)
+        .clip(0.0, 1.0)
+    )
+
+    probability_component = (
+        pd.to_numeric(
+            result.get("probability"),
+            errors="coerce",
+        )
+        .fillna(0.50)
+        .clip(0.0, 1.0)
+        * 100.0
+    )
+
+    confidence_component = (
+        pd.to_numeric(
+            result.get("confidence_score"),
+            errors="coerce",
+        )
+        .fillna(50.0)
+        .clip(0.0, 100.0)
+    )
+
+    projection_quality_component = (
+        pd.to_numeric(
+            result.get("projection_quality_score"),
+            errors="coerce",
+        )
+        .fillna(50.0)
+        .clip(0.0, 100.0)
+    )
+
+    market_quality_component = (
+        pd.to_numeric(
+            result.get("market_quality_score"),
+            errors="coerce",
+        )
+        .fillna(50.0)
+        .clip(0.0, 100.0)
+    )
+
+    inverse_risk_component = (
+        100.0
+        - pd.to_numeric(
+            result.get("risk_score"),
+            errors="coerce",
+        )
+        .fillna(50.0)
+        .clip(0.0, 100.0)
+    )
+
+    historical_component = (
+        result["historical_market_win_rate"]
+        * 100.0
+    )
+
+    result["model_score"] = (
+        0.25 * probability_component
+        + 0.20 * confidence_component
+        + 0.15 * projection_quality_component
+        + 0.15 * market_quality_component
+        + 0.15 * historical_component
+        + 0.10 * inverse_risk_component
+    ).clip(0.0, 100.0).round(2)
+
+    return result
+
+
 def load_probability_table() -> pd.DataFrame:
     """Load exact live-line probabilities."""
     if not PROBABILITY_PATH.exists():
@@ -1174,6 +1372,9 @@ def build_history_rows(selected: pd.DataFrame) -> pd.DataFrame:
         "market_quality_score",
         "projection_quality_score",
         "ranking_score",
+        "historical_market_sample",
+        "historical_market_win_rate",
+        "model_score",
         "line_type",
         "elite_score",
         "elite_eligible",
@@ -1488,6 +1689,11 @@ def build_daily_card() -> pd.DataFrame:
         probabilities
     )
 
+    probabilities = add_weighted_model_score(
+        probabilities,
+        history_path=HISTORY_PATH,
+    )
+
     probabilities["line_is_fresh"] = probabilities[
         "fetched_at"
     ].apply(line_is_fresh)
@@ -1532,12 +1738,14 @@ def build_daily_card() -> pd.DataFrame:
 
     accepted = accepted.sort_values(
         [
+            "model_score",
             "elite_score",
             "expected_value",
             "probability_edge",
             "probability",
         ],
         ascending=[
+            False,
             False,
             False,
             False,
@@ -1573,12 +1781,14 @@ def build_daily_card() -> pd.DataFrame:
 
     selected = selected.sort_values(
         [
+            "model_score",
             "elite_score",
             "expected_value",
             "probability_edge",
             "probability",
         ],
         ascending=[
+            False,
             False,
             False,
             False,
@@ -1611,6 +1821,9 @@ def build_daily_card() -> pd.DataFrame:
         "market_quality_score",
         "projection_quality_score",
         "ranking_score",
+        "historical_market_sample",
+        "historical_market_win_rate",
+        "model_score",
         "elite_score",
         "elite_history_win_rate",
         "elite_history_lower_bound",
@@ -1669,6 +1882,8 @@ def build_daily_card() -> pd.DataFrame:
             "confidence_score",
             "risk_score",
             "ranking_score",
+            "model_score",
+            "historical_market_win_rate",
             "elite_score",
             "elite_eligible",
             "elite_rejection_reasons",
