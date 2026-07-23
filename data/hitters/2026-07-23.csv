@@ -17,15 +17,15 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,676914,Davis Schneider,7,LF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
 2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,649966,Luis Urías,8,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
 2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,664702,Myles Straw,9,CF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,606466,Ketel Marte,1,DH,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,672695,Geraldo Perdomo,2,SS,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,672515,Gabriel Moreno,3,C,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,596146,Max Kepler,4,LF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,571448,Nolan Arenado,5,3B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,678489,Jorge Barrosa,6,CF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,545121,Ildemaro Vargas,7,2B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,694374,Tim Tawa,8,1B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,814439,Ryan Waldschmidt,9,LF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,606466,Ketel Marte,1,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,682998,Corbin Carroll,2,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,672695,Geraldo Perdomo,3,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,672515,Gabriel Moreno,4,C,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,596146,Max Kepler,5,LF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,694374,Tim Tawa,6,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,680728,Adrian Del Castillo,7,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,545121,Ildemaro Vargas,8,3B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,814439,Ryan Waldschmidt,9,CF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
 2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,802139,JJ Wetherholt,1,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
 2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,691023,Jordan Walker,2,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
 2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,676475,Alec Burleson,3,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
@@ -77,8 +77,8 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-23,824893,San Diego Padres,Atlanta Braves,away,664034,Ty France,4,1B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
 2026-07-23,824893,San Diego Padres,Atlanta Braves,away,593428,Xander Bogaerts,5,SS,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
 2026-07-23,824893,San Diego Padres,Atlanta Braves,away,657757,Gavin Sheets,6,DH,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,San Diego Padres,Atlanta Braves,away,666023,Freddy Fermin,7,C,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,San Diego Padres,Atlanta Braves,away,687749,Jase Bowen,8,CF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,San Diego Padres,Atlanta Braves,away,823550,Sung-Mun Song,7,PH,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,San Diego Padres,Atlanta Braves,away,701538,Jackson Merrill,8,PH,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
 2026-07-23,824893,San Diego Padres,Atlanta Braves,away,630105,Jake Cronenworth,9,2B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
 2026-07-23,824893,Atlanta Braves,San Diego Padres,home,686948,Drake Baldwin,1,C,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
 2026-07-23,824893,Atlanta Braves,San Diego Padres,home,645277,Ozzie Albies,2,2B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
@@ -87,5 +87,5 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-23,824893,Atlanta Braves,San Diego Padres,home,643289,Mauricio Dubón,5,LF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
 2026-07-23,824893,Atlanta Braves,San Diego Padres,home,663586,Austin Riley,6,3B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
 2026-07-23,824893,Atlanta Braves,San Diego Padres,home,642086,Dominic Smith,7,DH,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,Atlanta Braves,San Diego Padres,home,573262,Mike Yastrzemski,8,RF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,Atlanta Braves,San Diego Padres,home,642201,Eli White,8,RF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
 2026-07-23,824893,Atlanta Braves,San Diego Padres,home,805347,Jim Jarvis,9,SS,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z

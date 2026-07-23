@@ -4959,6 +4959,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-18,824899,642201,Eli White,Atlanta Braves,Texas Rangers,4,4,1,0,0,1,4,1,2,0,2,0,0,0
 2026-07-19,824897,642201,Eli White,Atlanta Braves,Texas Rangers,1,1,0,0,0,0,0,1,0,0,0,0,0,0
 2026-07-20,824898,642201,Eli White,Atlanta Braves,San Diego Padres,3,2,0,0,0,0,0,0,0,1,2,0,0,0
+2026-07-22,824896,642201,Eli White,Atlanta Braves,San Diego Padres,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-15,824855,642215,Weston Wilson,Seattle Mariners,Arizona Diamondbacks,3,3,1,0,0,0,1,1,0,0,1,0,0,0
 2026-04-17,824454,642215,Weston Wilson,Seattle Mariners,Cleveland Guardians,1,1,1,1,0,0,2,1,2,0,0,0,0,0
 2026-04-19,824452,642215,Weston Wilson,Seattle Mariners,Cleveland Guardians,2,1,0,0,0,0,0,0,0,0,1,1,0,1
@@ -17370,6 +17371,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-06-28,822959,680728,Adrian Del Castillo,Arizona Diamondbacks,Tampa Bay Rays,3,3,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-01,825064,680728,Adrian Del Castillo,Arizona Diamondbacks,San Francisco Giants,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-07-04,825063,680728,Adrian Del Castillo,Arizona Diamondbacks,Milwaukee Brewers,3,3,1,0,0,1,4,1,3,0,1,0,0,0
+2026-07-19,825057,680728,Adrian Del Castillo,Arizona Diamondbacks,St. Louis Cardinals,4,3,2,1,0,0,3,2,0,1,0,0,0,0
 2026-03-26,823163,680757,Steven Kwan,Cleveland Guardians,Seattle Mariners,5,5,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-27,823162,680757,Steven Kwan,Cleveland Guardians,Seattle Mariners,4,4,2,0,0,0,2,0,0,0,0,0,0,0
 2026-03-28,823161,680757,Steven Kwan,Cleveland Guardians,Seattle Mariners,5,5,2,0,0,0,2,1,1,0,0,0,0,0
@@ -19221,6 +19223,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-18,825059,682998,Corbin Carroll,Arizona Diamondbacks,St. Louis Cardinals,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-07-19,825057,682998,Corbin Carroll,Arizona Diamondbacks,St. Louis Cardinals,4,4,1,1,0,0,2,0,0,0,2,0,0,0
 2026-07-21,825056,682998,Corbin Carroll,Arizona Diamondbacks,Athletics,5,5,1,0,0,0,1,1,0,0,2,1,0,0
+2026-07-22,825055,682998,Corbin Carroll,Arizona Diamondbacks,Athletics,4,4,2,0,1,1,7,2,1,0,0,0,0,0
 2026-03-26,824865,683002,Gunnar Henderson,Baltimore Orioles,Minnesota Twins,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-28,824862,683002,Gunnar Henderson,Baltimore Orioles,Minnesota Twins,5,4,0,0,0,0,0,0,0,0,3,1,0,1
 2026-03-29,824864,683002,Gunnar Henderson,Baltimore Orioles,Minnesota Twins,5,4,1,0,0,0,1,1,0,1,1,0,1,0
