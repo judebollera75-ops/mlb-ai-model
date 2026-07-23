@@ -133,6 +133,12 @@ OUTPUT_COLUMNS = [
     "distribution_method",
     "calibration_sample_size",
     "validation_mae",
+    "confidence_score",
+    "risk_score",
+    "market_quality_score",
+    "projection_quality_score",
+    "ranking_score",
+    "line_type",
     "elite_score",
     "elite_eligible",
     "elite_rejection_reasons",
@@ -503,6 +509,190 @@ def grade_from_tier(tier: str) -> str:
         "Playable": "B",
         "PASS": "PASS",
     }.get(tier, "PASS")
+
+
+
+def add_dashboard_quality_scores(
+    frame: pd.DataFrame,
+) -> pd.DataFrame:
+    """Create stable 0-100 dashboard quality scores."""
+    result = frame.copy()
+
+    def numeric(
+        name: str,
+        default: float = 0.0,
+    ) -> pd.Series:
+        if name not in result.columns:
+            return pd.Series(
+                default,
+                index=result.index,
+                dtype=float,
+            )
+
+        return pd.to_numeric(
+            result[name],
+            errors="coerce",
+        ).fillna(default)
+
+    probability = numeric(
+        "probability"
+    ).clip(0.0, 1.0)
+
+    probability_edge = numeric(
+        "probability_edge"
+    ).clip(-0.25, 0.25)
+
+    expected_value = numeric(
+        "expected_value"
+    ).clip(-0.50, 1.00)
+
+    calibration_sample = numeric(
+        "calibration_sample_size"
+    ).clip(lower=0.0)
+
+    validation_mae = pd.to_numeric(
+        result.get(
+            "validation_mae",
+            pd.Series(
+                np.nan,
+                index=result.index,
+            ),
+        ),
+        errors="coerce",
+    )
+
+    probability_component = (
+        (probability - 0.50) / 0.35
+    ).clip(0.0, 1.0) * 100.0
+
+    edge_component = (
+        probability_edge / 0.15
+    ).clip(0.0, 1.0) * 100.0
+
+    expected_value_component = (
+        expected_value / 0.25
+    ).clip(0.0, 1.0) * 100.0
+
+    sample_component = (
+        calibration_sample / 1000.0
+    ).clip(0.0, 1.0) * 100.0
+
+    line_scale = numeric(
+        "line"
+    ).abs().clip(lower=1.0)
+
+    relative_mae = (
+        validation_mae / line_scale
+    )
+
+    mae_component = (
+        100.0
+        - relative_mae.fillna(0.50)
+        .clip(0.0, 1.0)
+        * 100.0
+    ).clip(0.0, 100.0)
+
+    no_vig_values = pd.to_numeric(
+        result.get(
+            "no_vig_implied_probability",
+            pd.Series(
+                np.nan,
+                index=result.index,
+            ),
+        ),
+        errors="coerce",
+    )
+
+    has_no_vig = (
+        no_vig_values.notna().astype(float)
+    )
+
+    sportsbook_probability = numeric(
+        "sportsbook_implied_probability",
+        default=0.50,
+    )
+
+    price_quality = (
+        100.0
+        - (
+            sportsbook_probability
+            - probability
+        ).abs().clip(0.0, 0.35)
+        / 0.35
+        * 100.0
+    ).clip(0.0, 100.0)
+
+    result["projection_quality_score"] = (
+        0.55 * mae_component
+        + 0.45 * sample_component
+    ).clip(0.0, 100.0)
+
+    result["market_quality_score"] = (
+        0.55 * price_quality
+        + 0.30 * sample_component
+        + 0.15 * has_no_vig * 100.0
+    ).clip(0.0, 100.0)
+
+    result["confidence_score"] = (
+        0.45 * probability_component
+        + 0.20 * edge_component
+        + 0.15 * expected_value_component
+        + 0.10 * result[
+            "projection_quality_score"
+        ]
+        + 0.10 * result[
+            "market_quality_score"
+        ]
+    ).clip(0.0, 100.0)
+
+    result["risk_score"] = (
+        100.0
+        - (
+            0.55 * result[
+                "confidence_score"
+            ]
+            + 0.25 * result[
+                "projection_quality_score"
+            ]
+            + 0.20 * result[
+                "market_quality_score"
+            ]
+        )
+    ).clip(0.0, 100.0)
+
+    result["ranking_score"] = (
+        0.50 * result[
+            "confidence_score"
+        ]
+        + 0.20 * (
+            100.0
+            - result["risk_score"]
+        )
+        + 0.15 * result[
+            "market_quality_score"
+        ]
+        + 0.15 * result[
+            "projection_quality_score"
+        ]
+    ).clip(0.0, 100.0)
+
+    result["line_type"] = "standard"
+
+    numeric_score_columns = [
+        "confidence_score",
+        "risk_score",
+        "market_quality_score",
+        "projection_quality_score",
+        "ranking_score",
+    ]
+
+    for column in numeric_score_columns:
+        result[column] = pd.to_numeric(
+            result[column],
+            errors="coerce",
+        ).round(1)
+
+    return result
 
 
 def load_probability_table() -> pd.DataFrame:
@@ -979,6 +1169,12 @@ def build_history_rows(selected: pd.DataFrame) -> pd.DataFrame:
         "distribution_method",
         "calibration_sample_size",
         "validation_mae",
+        "confidence_score",
+        "risk_score",
+        "market_quality_score",
+        "projection_quality_score",
+        "ranking_score",
+        "line_type",
         "elite_score",
         "elite_eligible",
         "elite_rejection_reasons",
@@ -1288,6 +1484,10 @@ def build_daily_card() -> pd.DataFrame:
         axis=1,
     )
 
+    probabilities = add_dashboard_quality_scores(
+        probabilities
+    )
+
     probabilities["line_is_fresh"] = probabilities[
         "fetched_at"
     ].apply(line_is_fresh)
@@ -1406,6 +1606,11 @@ def build_daily_card() -> pd.DataFrame:
         "kelly_fraction",
         "recommended_bankroll_fraction",
         "validation_mae",
+        "confidence_score",
+        "risk_score",
+        "market_quality_score",
+        "projection_quality_score",
+        "ranking_score",
         "elite_score",
         "elite_history_win_rate",
         "elite_history_lower_bound",
@@ -1461,6 +1666,9 @@ def build_daily_card() -> pd.DataFrame:
             "probability",
             "probability_edge",
             "expected_value",
+            "confidence_score",
+            "risk_score",
+            "ranking_score",
             "elite_score",
             "elite_eligible",
             "elite_rejection_reasons",
