@@ -207,6 +207,8 @@ def save_tables(
     overall: pd.DataFrame,
     market: pd.DataFrame,
     confidence: pd.DataFrame,
+    calibration: pd.DataFrame,
+    sportsbook: pd.DataFrame,
 ):
 
     OUTPUT_DIRECTORY.mkdir(
@@ -231,7 +233,17 @@ def save_tables(
         / "confidence_summary.csv",
         index=False,
     )
+calibration.to_csv(
+    OUTPUT_DIRECTORY
+    / "probability_calibration.csv",
+    index=False,
+)
 
+sportsbook.to_csv(
+    OUTPUT_DIRECTORY
+    / "sportsbook_summary.csv",
+    index=False,
+)
 
 def main():
 
