@@ -1,52 +1,36 @@
-"""Build the production MLB daily prop card.
-
-Inputs:
-    outputs/probability_table.csv
-    outputs/mlb_universal_projections.csv
-    data/platform_lines.csv
-
-Outputs:
-    outputs/mlb_daily_card.csv
-    outputs/mlb_daily_card_audit.csv
-
-The final card contains only exact platform/player/market/line combinations
-that pass probability, expected-value, freshness, calibration, and matchup
-quality checks.
-"""
+"""Streamlit dashboard for the production MLB prop model."""
 
 from __future__ import annotations
 
-import math
-import re
-import unicodedata
-from datetime import datetime, timezone
+from datetime import datetime
+from html import escape
 from pathlib import Path
 from typing import Any
 
-import numpy as np
 import pandas as pd
+import streamlit as st
+
+from performance_dashboard import render_performance_dashboard
 
 
+PROJECT_ROOT = Path(__file__).resolve().parent
 
-
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
-
-PROJECTIONS_PATH = (
-    PROJECT_ROOT / "outputs" / "mlb_universal_projections.csv"
+PROP_PATH = (
+    PROJECT_ROOT
+    / "outputs"
+    / "mlb_daily_card.csv"
 )
-
-LINES_PATH = PROJECT_ROOT / "data" / "platform_lines.csv"
 
 PROBABILITY_PATH = (
-    PROJECT_ROOT / "outputs" / "probability_table.csv"
-)
-
-OUTPUT_PATH = (
-    PROJECT_ROOT / "outputs" / "mlb_daily_card.csv"
+    PROJECT_ROOT
+    / "outputs"
+    / "probability_table.csv"
 )
 
 AUDIT_PATH = (
-    PROJECT_ROOT / "outputs" / "mlb_daily_card_audit.csv"
+    PROJECT_ROOT
+    / "outputs"
+    / "mlb_daily_card_audit.csv"
 )
 
 HISTORY_PATH = (
@@ -56,1260 +40,157 @@ HISTORY_PATH = (
     / "mlb_bet_results.csv"
 )
 
-MINIMUM_WIN_PROBABILITY = 0.56
-MINIMUM_PROBABILITY_EDGE = 0.025
-MINIMUM_EXPECTED_VALUE = 0.015
-MINIMUM_CALIBRATION_SAMPLE = 100
-MAXIMUM_LINE_AGE_MINUTES = 30
-MAXIMUM_KELLY_FRACTION = 0.025
-KELLY_MULTIPLIER = 0.25
-
-MARKET_LIMITS = {
-    "hitter_hits": 12,
-    "hitter_total_bases": 12,
-    "hitter_runs": 8,
-    "hitter_rbis": 8,
-    "hitter_hits_runs_rbis": 12,
-    "hitter_fantasy_score": 10,
-    "pitcher_strikeouts": 10,
-    "pitcher_outs": 8,
-}
-
-VALID_LINE_RANGES = {
-    "hitter_hits": (0.5, 2.5),
-    "hitter_total_bases": (0.5, 5.5),
-    "hitter_runs": (0.5, 1.5),
-    "hitter_rbis": (0.5, 2.5),
-    "hitter_hits_runs_rbis": (0.5, 5.5),
-    "hitter_fantasy_score": (0.5, 30.5),
-    "pitcher_strikeouts": (1.5, 12.5),
-    "pitcher_outs": (8.5, 24.5),
-}
-
-# Data-quality guardrail: reject lines that are implausibly far from the
-# model projection. This removes malformed/extreme alternate lines without
-# changing the underlying projection model.
-MAXIMUM_ABSOLUTE_PROJECTION_GAP = {
-    "hitter_hits": 1.5,
-    "hitter_total_bases": 3.0,
-    "hitter_runs": 1.25,
-    "hitter_rbis": 1.75,
-    "hitter_hits_runs_rbis": 3.5,
-    "hitter_fantasy_score": 12.0,
-    "pitcher_strikeouts": 4.0,
-    "pitcher_outs": 7.0,
-}
-
-MARKET_MINIMUM_PROBABILITIES = {
-    "hitter_hits": 0.58,
-    "hitter_total_bases": 0.58,
-    "hitter_runs": 0.59,
-    "hitter_rbis": 0.59,
-    "hitter_hits_runs_rbis": 0.58,
-    "hitter_fantasy_score": 0.58,
-    "pitcher_strikeouts": 0.57,
-    "pitcher_outs": 0.58,
-}
-
-OUTPUT_COLUMNS = [
-    "grade",
-    "confidence_tier",
-    "platform",
-    "player",
-    "market",
-    "direction",
-    "line",
-    "sportsbook_odds",
-    "projection",
-    "raw_projection_edge",
-    "probability",
-    "sportsbook_implied_probability",
-    "no_vig_implied_probability",
-    "probability_edge",
-    "expected_value",
-    "fair_odds",
-    "kelly_fraction",
-    "recommended_bankroll_fraction",
-    "distribution_method",
-    "calibration_sample_size",
-    "validation_mae",
-    "confidence_score",
-    "risk_score",
-    "market_quality_score",
-    "projection_quality_score",
-    "ranking_score",
-    "historical_market_sample",
-    "historical_market_win_rate",
-    "model_score",
-    "line_type",
-    "elite_score",
-    "elite_eligible",
-    "elite_rejection_reasons",
-    "elite_history_sample",
-    "elite_history_win_rate",
-    "elite_history_lower_bound",
-    "elite_probability_threshold",
-    "elite_probability_edge_threshold",
-    "elite_expected_value_threshold",
-    "elite_absolute_projection_edge",
-    "team",
-    "opponent",
-    "home_team",
-    "away_team",
-    "commence_time",
-    "fetched_at",
-]
-
-
-def normalize_text(value: Any) -> str:
-    """Normalize text for safe cross-source matching."""
-    if value is None or pd.isna(value):
-        return ""
-
-    text = unicodedata.normalize(
-        "NFKD",
-        str(value),
-    )
-
-    text = "".join(
-        character
-        for character in text
-        if not unicodedata.combining(character)
-    )
-
-    text = text.casefold()
-    text = text.replace("&", " and ")
-    text = re.sub(r"\b(jr|sr|ii|iii|iv)\b", " ", text)
-    text = re.sub(r"[^a-z0-9\s]", " ", text)
-    text = re.sub(r"\s+", " ", text).strip()
-
-    return text
-
-
-def normalize_direction(value: Any) -> str:
-    """Normalize platform direction names."""
-    normalized = normalize_text(value)
-
-    if normalized in {
-        "over",
-        "more",
-        "yes",
-        "higher",
-    }:
-        return "Over"
-
-    if normalized in {
-        "under",
-        "less",
-        "no",
-        "lower",
-    }:
-        return "Under"
-
-    return ""
-
-
-def american_odds_to_probability(odds: Any) -> float:
-    """Convert American odds to raw implied probability."""
-    try:
-        numeric_odds = float(odds)
-    except (TypeError, ValueError):
-        return float("nan")
-
-    if not np.isfinite(numeric_odds) or numeric_odds == 0:
-        return float("nan")
-
-    if numeric_odds > 0:
-        return 100.0 / (numeric_odds + 100.0)
-
-    return abs(numeric_odds) / (
-        abs(numeric_odds) + 100.0
-    )
-
-
-def american_odds_decimal_return(odds: Any) -> float:
-    """Return decimal profit per unit risked."""
-    try:
-        numeric_odds = float(odds)
-    except (TypeError, ValueError):
-        return float("nan")
-
-    if not np.isfinite(numeric_odds) or numeric_odds == 0:
-        return float("nan")
-
-    if numeric_odds > 0:
-        return numeric_odds / 100.0
-
-    return 100.0 / abs(numeric_odds)
-
-
-def expected_value_per_unit(
-    probability: Any,
-    odds: Any,
-) -> float:
-    """Calculate expected profit per unit staked."""
-    try:
-        probability = float(probability)
-    except (TypeError, ValueError):
-        return float("nan")
-
-    profit_multiple = american_odds_decimal_return(odds)
-
-    if (
-        not np.isfinite(probability)
-        or not np.isfinite(profit_multiple)
-    ):
-        return float("nan")
-
-    loss_probability = 1.0 - probability
-
-    return (
-        probability * profit_multiple
-        - loss_probability
-    )
-
-
-def full_kelly_fraction(
-    probability: Any,
-    odds: Any,
-) -> float:
-    """Calculate the full Kelly bankroll fraction."""
-    try:
-        probability = float(probability)
-    except (TypeError, ValueError):
-        return float("nan")
-
-    profit_multiple = american_odds_decimal_return(odds)
-
-    if (
-        not np.isfinite(probability)
-        or not np.isfinite(profit_multiple)
-        or profit_multiple <= 0
-    ):
-        return float("nan")
-
-    loss_probability = 1.0 - probability
-
-    kelly = (
-        profit_multiple * probability
-        - loss_probability
-    ) / profit_multiple
-
-    return max(0.0, float(kelly))
-
-
-def recommended_bankroll_fraction(
-    probability: Any,
-    odds: Any,
-) -> float:
-    """Return capped quarter-Kelly sizing."""
-    full_kelly = full_kelly_fraction(
-        probability,
-        odds,
-    )
-
-    if not np.isfinite(full_kelly):
-        return 0.0
-
-    fractional_kelly = (
-        full_kelly * KELLY_MULTIPLIER
-    )
-
-    return min(
-        MAXIMUM_KELLY_FRACTION,
-        max(0.0, fractional_kelly),
-    )
-
-
-def line_is_valid(
-    market: Any,
-    line: Any,
-) -> bool:
-    """Validate market-specific line ranges."""
-    market = str(market).strip()
-
-    if market not in VALID_LINE_RANGES:
-        return False
-
-    try:
-        numeric_line = float(line)
-    except (TypeError, ValueError):
-        return False
-
-    if not np.isfinite(numeric_line):
-        return False
-
-    minimum_line, maximum_line = (
-        VALID_LINE_RANGES[market]
-    )
-
-    return (
-        minimum_line
-        <= numeric_line
-        <= maximum_line
-    )
-
-
-def line_is_fresh(
-    fetched_at: Any,
-) -> bool:
-    """Reject stale platform prices."""
-    parsed = pd.to_datetime(
-        fetched_at,
-        errors="coerce",
-        utc=True,
-    )
-
-    if pd.isna(parsed):
-        return False
-
-    age = (
-        datetime.now(timezone.utc)
-        - parsed.to_pydatetime()
-    )
-
-    return age.total_seconds() <= (
-        MAXIMUM_LINE_AGE_MINUTES * 60
-    )
-
-
-def game_has_not_started(
-    commence_time: Any,
-) -> bool:
-    """Reject markets for games that have begun."""
-    parsed = pd.to_datetime(
-        commence_time,
-        errors="coerce",
-        utc=True,
-    )
-
-    if pd.isna(parsed):
-        return False
-
-    return (
-        parsed.to_pydatetime()
-        > datetime.now(timezone.utc)
-    )
-
-
-def calculate_no_vig_probabilities(
-    frame: pd.DataFrame,
-) -> pd.DataFrame:
-    """Remove sportsbook margin when both sides are present."""
-    result = frame.copy()
-
-    result["sportsbook_implied_probability"] = (
-        result["sportsbook_odds"]
-        .apply(american_odds_to_probability)
-    )
-
-    result["no_vig_implied_probability"] = np.nan
-
-    grouping_columns = [
-        "event_id",
-        "platform_key",
-        "player_key",
-        "market",
-        "line",
-    ]
-
-    for _, group in result.groupby(
-        grouping_columns,
-        dropna=False,
-        sort=False,
-    ):
-        directions = set(
-            group["direction"].dropna()
-        )
-
-        if not {"Over", "Under"}.issubset(directions):
-            continue
-
-        implied_sum = float(
-            group[
-                "sportsbook_implied_probability"
-            ].sum()
-        )
-
-        if (
-            not np.isfinite(implied_sum)
-            or implied_sum <= 0
-        ):
-            continue
-
-        result.loc[
-            group.index,
-            "no_vig_implied_probability",
-        ] = (
-            group[
-                "sportsbook_implied_probability"
-            ]
-            / implied_sum
-        )
-
-    result["market_implied_probability"] = (
-        result["no_vig_implied_probability"]
-        .fillna(
-            result[
-                "sportsbook_implied_probability"
-            ]
-        )
-    )
-
-    return result
-
-
-def confidence_tier(
-    probability: Any,
-    probability_edge: Any,
-    expected_value: Any,
-) -> str:
-    """Convert model quality into an interpretable tier."""
-    try:
-        probability = float(probability)
-        probability_edge = float(probability_edge)
-        expected_value = float(expected_value)
-    except (TypeError, ValueError):
-        return "PASS"
-
-    if (
-        probability >= 0.70
-        and probability_edge >= 0.08
-        and expected_value >= 0.10
-    ):
-        return "Elite"
-
-    if (
-        probability >= 0.65
-        and probability_edge >= 0.06
-        and expected_value >= 0.07
-    ):
-        return "Strong"
-
-    if (
-        probability >= 0.60
-        and probability_edge >= 0.04
-        and expected_value >= 0.04
-    ):
-        return "Good"
-
-    if (
-        probability >= MINIMUM_WIN_PROBABILITY
-        and probability_edge >= MINIMUM_PROBABILITY_EDGE
-        and expected_value >= MINIMUM_EXPECTED_VALUE
-    ):
-        return "Playable"
-
-    return "PASS"
-
-
-def grade_from_tier(tier: str) -> str:
-    """Map confidence tiers to card grades."""
-    return {
-        "Elite": "A+",
-        "Strong": "A",
-        "Good": "B+",
-        "Playable": "B",
-        "PASS": "PASS",
-    }.get(tier, "PASS")
-
-
-
-def add_dashboard_quality_scores(
-    frame: pd.DataFrame,
-) -> pd.DataFrame:
-    """Create stable 0-100 dashboard quality scores."""
-    result = frame.copy()
-
-    def numeric(
-        name: str,
-        default: float = 0.0,
-    ) -> pd.Series:
-        if name not in result.columns:
-            return pd.Series(
-                default,
-                index=result.index,
-                dtype=float,
-            )
-
-        return pd.to_numeric(
-            result[name],
-            errors="coerce",
-        ).fillna(default)
-
-    probability = numeric(
-        "probability"
-    ).clip(0.0, 1.0)
-
-    probability_edge = numeric(
-        "probability_edge"
-    ).clip(-0.25, 0.25)
-
-    expected_value = numeric(
-        "expected_value"
-    ).clip(-0.50, 1.00)
-
-    calibration_sample = numeric(
-        "calibration_sample_size"
-    ).clip(lower=0.0)
-
-    validation_mae = pd.to_numeric(
-        result.get(
-            "validation_mae",
-            pd.Series(
-                np.nan,
-                index=result.index,
-            ),
-        ),
-        errors="coerce",
-    )
-
-    probability_component = (
-        (probability - 0.50) / 0.35
-    ).clip(0.0, 1.0) * 100.0
-
-    edge_component = (
-        probability_edge / 0.15
-    ).clip(0.0, 1.0) * 100.0
-
-    expected_value_component = (
-        expected_value / 0.25
-    ).clip(0.0, 1.0) * 100.0
-
-    sample_component = (
-        calibration_sample / 1000.0
-    ).clip(0.0, 1.0) * 100.0
-
-    line_scale = numeric(
-        "line"
-    ).abs().clip(lower=1.0)
-
-    relative_mae = (
-        validation_mae / line_scale
-    )
-
-    mae_component = (
-        100.0
-        - relative_mae.fillna(0.50)
-        .clip(0.0, 1.0)
-        * 100.0
-    ).clip(0.0, 100.0)
-
-    no_vig_values = pd.to_numeric(
-        result.get(
-            "no_vig_implied_probability",
-            pd.Series(
-                np.nan,
-                index=result.index,
-            ),
-        ),
-        errors="coerce",
-    )
-
-    has_no_vig = (
-        no_vig_values.notna().astype(float)
-    )
-
-    sportsbook_probability = numeric(
-        "sportsbook_implied_probability",
-        default=0.50,
-    )
-
-    price_quality = (
-        100.0
-        - (
-            sportsbook_probability
-            - probability
-        ).abs().clip(0.0, 0.35)
-        / 0.35
-        * 100.0
-    ).clip(0.0, 100.0)
-
-    result["projection_quality_score"] = (
-        0.55 * mae_component
-        + 0.45 * sample_component
-    ).clip(0.0, 100.0)
-
-    result["market_quality_score"] = (
-        0.55 * price_quality
-        + 0.30 * sample_component
-        + 0.15 * has_no_vig * 100.0
-    ).clip(0.0, 100.0)
-
-    result["confidence_score"] = (
-        0.45 * probability_component
-        + 0.20 * edge_component
-        + 0.15 * expected_value_component
-        + 0.10 * result[
-            "projection_quality_score"
-        ]
-        + 0.10 * result[
-            "market_quality_score"
-        ]
-    ).clip(0.0, 100.0)
-
-    result["risk_score"] = (
-        100.0
-        - (
-            0.55 * result[
-                "confidence_score"
-            ]
-            + 0.25 * result[
-                "projection_quality_score"
-            ]
-            + 0.20 * result[
-                "market_quality_score"
-            ]
-        )
-    ).clip(0.0, 100.0)
-
-    result["ranking_score"] = (
-        0.50 * result[
-            "confidence_score"
-        ]
-        + 0.20 * (
-            100.0
-            - result["risk_score"]
-        )
-        + 0.15 * result[
-            "market_quality_score"
-        ]
-        + 0.15 * result[
-            "projection_quality_score"
-        ]
-    ).clip(0.0, 100.0)
-
-    result["line_type"] = "standard"
-
-    numeric_score_columns = [
-        "confidence_score",
-        "risk_score",
-        "market_quality_score",
-        "projection_quality_score",
-        "ranking_score",
-    ]
-
-    for column in numeric_score_columns:
-        result[column] = pd.to_numeric(
-            result[column],
-            errors="coerce",
-        ).round(1)
-
-    return result
-
-
-
-def add_weighted_model_score(
-    frame: pd.DataFrame,
-    history_path: Path,
-) -> pd.DataFrame:
-    """Add a 0-100 weighted score using current and settled performance."""
-    result = frame.copy()
-
-    settled_history = pd.DataFrame()
-
-    if history_path.exists():
-        try:
-            settled_history = pd.read_csv(
-                history_path,
-                low_memory=False,
-            )
-        except (
-            pd.errors.EmptyDataError,
-            pd.errors.ParserError,
-            UnicodeDecodeError,
-        ):
-            settled_history = pd.DataFrame()
-
-    market_stats = pd.DataFrame(
-        columns=[
-            "market",
-            "historical_market_sample",
-            "historical_market_win_rate",
-        ]
-    )
-
-    overall_win_rate = 0.50
-
-    if (
-        not settled_history.empty
-        and {"market", "outcome"}.issubset(
-            settled_history.columns
-        )
-    ):
-        settled_history["market"] = (
-            settled_history["market"]
-            .astype(str)
-            .str.strip()
-            .str.lower()
-        )
-
-        settled_history["outcome"] = (
-            settled_history["outcome"]
-            .astype(str)
-            .str.strip()
-            .str.upper()
-        )
-
-        settled_history = settled_history.loc[
-            settled_history["outcome"].isin(
-                {"WIN", "LOSS"}
-            )
-        ].copy()
-
-        if not settled_history.empty:
-            overall_win_rate = float(
-                settled_history["outcome"]
-                .eq("WIN")
-                .mean()
-            )
-
-            market_stats = (
-                settled_history.groupby(
-                    "market",
-                    dropna=False,
-                )["outcome"]
-                .agg(
-                    historical_market_sample="size",
-                    historical_market_wins=(
-                        lambda values: int(
-                            values.eq("WIN").sum()
-                        )
-                    ),
-                )
-                .reset_index()
-            )
-
-            # Shrink each market toward the full-history rate so tiny
-            # samples cannot dominate today's score.
-            prior_strength = 50.0
-
-            market_stats[
-                "historical_market_win_rate"
-            ] = (
-                market_stats[
-                    "historical_market_wins"
-                ]
-                + prior_strength * overall_win_rate
-            ) / (
-                market_stats[
-                    "historical_market_sample"
-                ]
-                + prior_strength
-            )
-
-            market_stats = market_stats[
-                [
-                    "market",
-                    "historical_market_sample",
-                    "historical_market_win_rate",
-                ]
-            ]
-
-    result = result.merge(
-        market_stats,
-        on="market",
-        how="left",
-    )
-
-    result["historical_market_sample"] = (
-        pd.to_numeric(
-            result["historical_market_sample"],
-            errors="coerce",
-        )
-        .fillna(0)
-    )
-
-    result["historical_market_win_rate"] = (
-        pd.to_numeric(
-            result["historical_market_win_rate"],
-            errors="coerce",
-        )
-        .fillna(overall_win_rate)
-        .clip(0.0, 1.0)
-    )
-
-    probability_component = (
-        pd.to_numeric(
-            result.get("probability"),
-            errors="coerce",
-        )
-        .fillna(0.50)
-        .clip(0.0, 1.0)
-        * 100.0
-    )
-
-    confidence_component = (
-        pd.to_numeric(
-            result.get("confidence_score"),
-            errors="coerce",
-        )
-        .fillna(50.0)
-        .clip(0.0, 100.0)
-    )
-
-    projection_quality_component = (
-        pd.to_numeric(
-            result.get("projection_quality_score"),
-            errors="coerce",
-        )
-        .fillna(50.0)
-        .clip(0.0, 100.0)
-    )
-
-    market_quality_component = (
-        pd.to_numeric(
-            result.get("market_quality_score"),
-            errors="coerce",
-        )
-        .fillna(50.0)
-        .clip(0.0, 100.0)
-    )
-
-    inverse_risk_component = (
-        100.0
-        - pd.to_numeric(
-            result.get("risk_score"),
-            errors="coerce",
-        )
-        .fillna(50.0)
-        .clip(0.0, 100.0)
-    )
-
-    historical_component = (
-        result["historical_market_win_rate"]
-        * 100.0
-    )
-
-    result["model_score"] = (
-        0.25 * probability_component
-        + 0.20 * confidence_component
-        + 0.15 * projection_quality_component
-        + 0.15 * market_quality_component
-        + 0.15 * historical_component
-        + 0.10 * inverse_risk_component
-    ).clip(0.0, 100.0).round(2)
-
-    return result
-
-
-def load_probability_table() -> pd.DataFrame:
-    """Load exact live-line probabilities."""
-    if not PROBABILITY_PATH.exists():
-        raise FileNotFoundError(
-            f"Missing probability table: {PROBABILITY_PATH}"
-        )
-
-    try:
-        probabilities = pd.read_csv(
-            PROBABILITY_PATH
-        )
-    except (
-        pd.errors.EmptyDataError,
-        pd.errors.ParserError,
-    ) as exc:
-        raise ValueError(
-            f"Could not read probability table: {PROBABILITY_PATH}"
-        ) from exc
-
-    required_columns = {
-        "platform",
-        "player",
-        "market",
-        "direction",
-        "line",
-        "projection",
-        "probability",
-        "probability_status",
-    }
-
-    missing_columns = (
-        required_columns - set(probabilities.columns)
-    )
-
-    if missing_columns:
-        raise ValueError(
-            "Probability table is missing columns: "
-            f"{sorted(missing_columns)}"
-        )
-
-    return probabilities
-
-
-def load_projection_context() -> pd.DataFrame:
-    """Load team and opponent context from universal projections."""
-    if not PROJECTIONS_PATH.exists():
-        return pd.DataFrame(
-            columns=[
-                "player_key",
-                "market",
-                "team",
-                "opponent",
-            ]
-        )
-
-    try:
-        projections = pd.read_csv(
-            PROJECTIONS_PATH
-        )
-    except (
-        pd.errors.EmptyDataError,
-        pd.errors.ParserError,
-    ):
-        return pd.DataFrame(
-            columns=[
-                "player_key",
-                "market",
-                "team",
-                "opponent",
-            ]
-        )
-
-    required_columns = {
-        "player",
-        "market",
-    }
-
-    if not required_columns.issubset(
-        projections.columns
-    ):
-        return pd.DataFrame(
-            columns=[
-                "player_key",
-                "market",
-                "team",
-                "opponent",
-            ]
-        )
-
-    projections["player_key"] = projections[
-        "player"
-    ].apply(normalize_text)
-
-    projections["market"] = (
-        projections["market"]
-        .astype(str)
-        .str.strip()
-        .str.lower()
-    )
-
-    for column in ["team", "opponent"]:
-        if column not in projections.columns:
-            projections[column] = pd.NA
-
-    projections = projections[
-        [
-            "player_key",
-            "market",
-            "team",
-            "opponent",
-        ]
-    ].drop_duplicates(
-        subset=["player_key", "market"],
-        keep="last",
-    )
-
-    return projections
-
-
-def add_rejection_reason(
-    frame: pd.DataFrame,
-) -> pd.DataFrame:
-    """Record the first major reason each row is rejected."""
-    result = frame.copy()
-    result["rejection_reason"] = ""
-
-    checks = [
-        (
-            ~result["probability_status"].eq(
-                "calculated"
-            ),
-            "probability_not_calculated",
-        ),
-        (
-            result["probability"].isna(),
-            "missing_probability",
-        ),
-        (
-            ~result.apply(
-                lambda row: line_is_valid(
-                    row.get("market"),
-                    row.get("line"),
-                ),
-                axis=1,
-            ),
-            "invalid_line",
-        ),
-        (
-            result.apply(
-                lambda row: (
-                    abs(
-                        float(row.get("projection"))
-                        - float(row.get("line"))
-                    )
-                    > MAXIMUM_ABSOLUTE_PROJECTION_GAP.get(
-                        str(row.get("market")).strip(),
-                        float("inf"),
-                    )
-                )
-                if pd.notna(row.get("projection"))
-                and pd.notna(row.get("line"))
-                else True,
-                axis=1,
-            ),
-            "line_too_far_from_projection",
-        ),
-        (
-            ~result["line_is_fresh"],
-            "stale_line",
-        ),
-        (
-            ~result["game_not_started"],
-            "game_started",
-        ),
-        (
-            result["calibration_sample_size"]
-            .fillna(0)
-            .lt(MINIMUM_CALIBRATION_SAMPLE)
-            & result["distribution_method"]
-            .eq("empirical_holdout_residuals"),
-            "insufficient_calibration_sample",
-        ),
-        (
-            result["probability"]
-            .lt(result["minimum_market_probability"]),
-            "probability_below_threshold",
-        ),
-        (
-            result["probability_edge"]
-            .lt(MINIMUM_PROBABILITY_EDGE),
-            "probability_edge_below_threshold",
-        ),
-        (
-            result["expected_value"]
-            .lt(MINIMUM_EXPECTED_VALUE),
-            "expected_value_below_threshold",
-        ),
-        (
-            result["sportsbook_odds"].isna(),
-            "missing_price",
-        ),
-    ]
-
-    for mask, reason in checks:
-        apply_mask = (
-            result["rejection_reason"].eq("")
-            & mask.fillna(True)
-        )
-
-        result.loc[
-            apply_mask,
-            "rejection_reason",
-        ] = reason
-
-    result.loc[
-        result["rejection_reason"].eq(""),
-        "rejection_reason",
-    ] = "accepted"
-
-    return result
-
-
-
-def choose_consensus_market_lines(
-    frame: pd.DataFrame,
-) -> pd.DataFrame:
-    """Keep only the consensus/main line for each event, player, and market.
-
-    The main line is the line offered by the greatest number of distinct
-    platforms. Ties are broken by choosing the line whose average market
-    implied probability is closest to 50%, then by choosing the line closest
-    to the median offered line. Alternate lines remain in the raw probability
-    table but are excluded from the production daily card.
+BACKTEST_SUMMARY_PATH = (
+    PROJECT_ROOT
+    / "outputs"
+    / "backtesting"
+    / "mlb_backtest_summary.csv"
+)
+
+BACKTEST_MARKET_PATH = (
+    PROJECT_ROOT
+    / "outputs"
+    / "backtesting"
+    / "mlb_backtest_by_market.csv"
+)
+
+BACKTEST_PLATFORM_PATH = (
+    PROJECT_ROOT
+    / "outputs"
+    / "backtesting"
+    / "mlb_backtest_by_platform.csv"
+)
+
+BACKTEST_CONFIDENCE_PATH = (
+    PROJECT_ROOT
+    / "outputs"
+    / "backtesting"
+    / "mlb_backtest_by_confidence.csv"
+)
+
+BACKTEST_CALIBRATION_PATH = (
+    PROJECT_ROOT
+    / "outputs"
+    / "backtesting"
+    / "mlb_backtest_by_probability_bucket.csv"
+)
+
+BANKROLL_CURVE_PATH = (
+    PROJECT_ROOT
+    / "outputs"
+    / "backtesting"
+    / "mlb_backtest_bankroll_curve.csv"
+)
+
+
+st.set_page_config(
+    page_title="Jude's Sports Model",
+    page_icon="📊",
+    layout="wide",
+)
+
+
+st.markdown(
     """
-    if frame.empty:
-        return frame
+    <style>
+        .block-container {
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+            max-width: 1500px;
+        }
 
-    result = frame.copy()
+        .main-title {
+            font-size: 2.6rem;
+            font-weight: 800;
+            margin-bottom: 0;
+        }
 
-    # Do not group by event_id: provider-specific event IDs can differ across
-    # sportsbooks, which would make every book look like its own market and
-    # allow alternate lines to win. The daily pipeline is already slate-bound.
-    group_columns = [
-        "player_key",
-        "market",
-    ]
+        .subtitle {
+            color: #6b7280;
+            margin-top: 0.2rem;
+            margin-bottom: 0.5rem;
+        }
 
-    result["line"] = pd.to_numeric(
-        result["line"],
-        errors="coerce",
-    )
+        .updated-time {
+            color: #9ca3af;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
 
-    result["platform_key"] = (
-        result.get("platform_key", result.get("platform"))
-        .astype("string")
-        .fillna("")
-        .str.strip()
-        .str.casefold()
-    )
+        .prop-card {
+            border: 1px solid rgba(128, 128, 128, 0.25);
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
 
-    result["consensus_price_distance"] = (
-        result["market_implied_probability"] - 0.5
-    ).abs()
+        .elite {
+            border-left: 7px solid #16a34a;
+        }
 
-    line_summary = (
-        result.dropna(subset=["line"])
-        .groupby(
-            group_columns + ["line"],
-            dropna=False,
-            sort=False,
-        )
-        .agg(
-            platform_count=("platform_key", "nunique"),
-            average_price_distance=(
-                "consensus_price_distance",
-                "mean",
-            ),
-        )
-        .reset_index()
-    )
+        .strong {
+            border-left: 7px solid #2563eb;
+        }
 
-    if line_summary.empty:
-        return result.iloc[0:0].copy()
+        .good {
+            border-left: 7px solid #eab308;
+        }
 
-    medians = (
-        line_summary.groupby(
-            group_columns,
-            dropna=False,
-        )["line"]
-        .median()
-        .rename("group_median_line")
-        .reset_index()
-    )
+        .playable {
+            border-left: 7px solid #f97316;
+        }
 
-    line_summary = line_summary.merge(
-        medians,
-        on=group_columns,
-        how="left",
-    )
+        .tier-label {
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.08rem;
+        }
 
-    line_summary["median_distance"] = (
-        line_summary["line"]
-        - line_summary["group_median_line"]
-    ).abs()
+        .player-name {
+            font-size: 1.45rem;
+            font-weight: 800;
+            margin-top: 4px;
+        }
 
-    line_summary = line_summary.sort_values(
-        by=group_columns
-        + [
-            "platform_count",
-            "average_price_distance",
-            "median_distance",
-            "line",
-        ],
-        ascending=[
-            True,
-            True,
-            False,
-            True,
-            True,
-            True,
-        ],
-        na_position="last",
-    )
+        .prop-detail {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
 
-    selected_lines = line_summary.drop_duplicates(
-        subset=group_columns,
-        keep="first",
-    )[group_columns + ["line"]]
+        .pick-over {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #16a34a;
+        }
 
-    selected_lines = selected_lines.rename(
-        columns={"line": "selected_consensus_line"}
-    )
+        .pick-under {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #dc2626;
+        }
 
-    result = result.merge(
-        selected_lines,
-        on=group_columns,
-        how="inner",
-    )
-
-    result = result.loc[
-        np.isclose(
-            result["line"],
-            result["selected_consensus_line"],
-            equal_nan=False,
-        )
-    ].copy()
-
-    result = result.drop(
-        columns=[
-            "consensus_price_distance",
-            "selected_consensus_line",
-        ],
-        errors="ignore",
-    )
-
-    return result
-
-def choose_best_platform_rows(
-    frame: pd.DataFrame,
-) -> pd.DataFrame:
-    """Keep the best priced exact side for each player and market."""
-    if frame.empty:
-        return frame
-
-    ranked = frame.sort_values(
-        [
-            "player_key",
-            "market",
-            "direction",
-            "expected_value",
-            "probability_edge",
-            "probability",
-            "sportsbook_odds",
-        ],
-        ascending=[
-            True,
-            True,
-            True,
-            False,
-            False,
-            False,
-            False,
-        ],
-    )
-
-    return ranked.drop_duplicates(
-        subset=[
-            "player_key",
-            "market",
-        ],
-        keep="first",
-    )
+        .empty-board {
+            border: 1px dashed rgba(128, 128, 128, 0.35);
+            border-radius: 14px;
+            padding: 30px;
+            text-align: center;
+            color: #6b7280;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 
-def event_date_from_commence_time(value: Any) -> str | None:
-    """Convert a UTC game timestamp into its Central Time calendar date."""
-    parsed = pd.to_datetime(
-        value,
-        errors="coerce",
-        utc=True,
-    )
-
-    if pd.isna(parsed):
-        return None
-
-    return parsed.tz_convert(
-        "America/Chicago"
-    ).date().isoformat()
-
-
-def load_existing_history() -> pd.DataFrame:
-    """Load the saved recommendation history without failing on a new file."""
-    if not HISTORY_PATH.exists():
+@st.cache_data(ttl=60)
+def load_csv(path: Path) -> pd.DataFrame:
+    """Load a CSV safely."""
+    if not path.exists():
         return pd.DataFrame()
 
     try:
-        return pd.read_csv(HISTORY_PATH)
+        return pd.read_csv(path)
     except (
         pd.errors.EmptyDataError,
         pd.errors.ParserError,
@@ -1318,40 +199,233 @@ def load_existing_history() -> pd.DataFrame:
         return pd.DataFrame()
 
 
-def build_history_rows(selected: pd.DataFrame) -> pd.DataFrame:
-    """Create unresolved history records from the current actionable card."""
-    if selected.empty:
-        return pd.DataFrame()
+def get_file_updated_time(path: Path) -> str:
+    """Return a readable local file modification time."""
+    if not path.exists():
+        return "Not available"
 
-    history = selected.copy()
+    updated_datetime = datetime.fromtimestamp(
+        path.stat().st_mtime
+    )
 
-    history["event_date"] = history[
-        "commence_time"
-    ].apply(event_date_from_commence_time)
+    return updated_datetime.strftime(
+        "%B %d, %Y at %I:%M %p"
+    )
 
-    history["logged_at"] = datetime.now(
-        timezone.utc
-    ).isoformat()
 
-    history["actual_result"] = pd.NA
-    history["outcome"] = pd.NA
-    history["grading_status"] = "UNRESOLVED"
-    history["grading_note"] = pd.NA
-    history["matched_game_pk"] = pd.NA
-    history["graded_at"] = pd.NA
+def clean_text(value: Any) -> str:
+    """Return clean display text."""
+    if value is None or pd.isna(value):
+        return ""
 
-    # A one-unit reference stake lets later reports calculate standardized ROI.
-    history["stake"] = 1.0
-    history["profit"] = pd.NA
+    text = str(value).strip()
 
-    history_columns = [
-        "event_date",
-        "event_id",
-        "platform",
-        "platform_key",
-        "player",
-        "market",
-        "direction",
+    if text.casefold() == "nan":
+        return ""
+
+    return text
+
+
+def safe_number(
+    value: Any,
+    decimals: int = 2,
+) -> str:
+    """Format a numeric value safely."""
+    number = pd.to_numeric(
+        value,
+        errors="coerce",
+    )
+
+    if pd.isna(number):
+        return "N/A"
+
+    return f"{float(number):.{decimals}f}"
+
+
+def safe_percentage(
+    value: Any,
+    decimals: int = 1,
+) -> str:
+    """Format decimal probability as a percentage."""
+    number = pd.to_numeric(
+        value,
+        errors="coerce",
+    )
+
+    if pd.isna(number):
+        return "N/A"
+
+    number = float(number)
+
+    if abs(number) <= 1.5:
+        number *= 100.0
+
+    return f"{number:.{decimals}f}%"
+
+
+def safe_odds(value: Any) -> str:
+    """Format American odds."""
+    odds = pd.to_numeric(
+        value,
+        errors="coerce",
+    )
+
+    if pd.isna(odds):
+        return "N/A"
+
+    odds = int(round(float(odds)))
+
+    return f"+{odds}" if odds > 0 else str(odds)
+
+
+def format_market(value: Any) -> str:
+    """Convert normalized market key to display text."""
+    market_map = {
+        "hitter_hits": "Hitter Hits",
+        "hitter_total_bases": "Hitter Total Bases",
+        "hitter_runs": "Hitter Runs",
+        "hitter_rbis": "Hitter RBIs",
+        "hitter_hits_runs_rbis": "Hits + Runs + RBIs",
+        "hitter_fantasy_score": "Hitter Fantasy Score",
+        "pitcher_strikeouts": "Pitcher Strikeouts",
+        "pitcher_outs": "Pitcher Outs",
+        "pitcher_fantasy_score": "Pitcher Fantasy Score",
+    }
+
+    cleaned = clean_text(value)
+
+    return market_map.get(
+        cleaned,
+        cleaned.replace("_", " ").title(),
+    )
+
+
+def normalize_direction(value: Any) -> str:
+    """Normalize pick direction for display."""
+    cleaned = clean_text(value).casefold()
+
+    if cleaned in {
+        "over",
+        "more",
+        "yes",
+        "higher",
+        "more/yes",
+    }:
+        return "Over"
+
+    if cleaned in {
+        "under",
+        "less",
+        "no",
+        "lower",
+        "less/no",
+    }:
+        return "Under"
+
+    return clean_text(value).title()
+
+
+def confidence_rank(value: Any) -> int:
+    """Return sort order for confidence tiers."""
+    return {
+        "Elite": 1,
+        "Strong": 2,
+        "Good": 3,
+        "Playable": 4,
+    }.get(clean_text(value).title(), 99)
+
+
+def confidence_css(value: Any) -> str:
+    """Return card CSS class."""
+    return {
+        "Elite": "elite",
+        "Strong": "strong",
+        "Good": "good",
+        "Playable": "playable",
+    }.get(
+        clean_text(value).title(),
+        "playable",
+    )
+
+
+def build_matchup_text(row: pd.Series) -> str:
+    """Build readable matchup text."""
+    team = clean_text(row.get("team"))
+    opponent = clean_text(row.get("opponent"))
+
+    if team and opponent:
+        return f"{team} vs. {opponent}"
+
+    home_team = clean_text(row.get("home_team"))
+    away_team = clean_text(row.get("away_team"))
+
+    if away_team and home_team:
+        return f"{away_team} at {home_team}"
+
+    return team or opponent
+
+
+def format_commence_time(value: Any) -> str:
+    """Convert UTC event time to Central Time."""
+    if value is None or pd.isna(value):
+        return ""
+
+    parsed = pd.to_datetime(
+        value,
+        errors="coerce",
+        utc=True,
+    )
+
+    if pd.isna(parsed):
+        return clean_text(value)
+
+    return parsed.tz_convert(
+        "America/Chicago"
+    ).strftime(
+        "%b %d at %I:%M %p CT"
+    )
+
+
+def prepare_props(
+    props: pd.DataFrame,
+) -> pd.DataFrame:
+    """Normalize the production daily-card schema."""
+    if props.empty:
+        return props
+
+    prepared = props.copy()
+
+    required_defaults = {
+        "grade": pd.NA,
+        "confidence_tier": pd.NA,
+        "platform": pd.NA,
+        "player": pd.NA,
+        "market": pd.NA,
+        "direction": pd.NA,
+        "line": pd.NA,
+        "sportsbook_odds": pd.NA,
+        "projection": pd.NA,
+        "raw_projection_edge": pd.NA,
+        "probability": pd.NA,
+        "probability_edge": pd.NA,
+        "expected_value": pd.NA,
+        "recommended_bankroll_fraction": pd.NA,
+        "confidence_score": pd.NA,
+        "risk_score": pd.NA,
+        "market_quality_score": pd.NA,
+        "projection_quality_score": pd.NA,
+        "ranking_score": pd.NA,
+        "historical_market_sample": pd.NA,
+        "historical_market_win_rate": pd.NA,
+        "model_score": pd.NA,
+        "line_type": pd.NA,
+    }
+
+    for column, default_value in required_defaults.items():
+        if column not in prepared.columns:
+            prepared[column] = default_value
+
+    numeric_columns = [
         "line",
         "sportsbook_odds",
         "projection",
@@ -1364,9 +438,1004 @@ def build_history_rows(selected: pd.DataFrame) -> pd.DataFrame:
         "fair_odds",
         "kelly_fraction",
         "recommended_bankroll_fraction",
-        "distribution_method",
-        "calibration_sample_size",
         "validation_mae",
+        "calibration_sample_size",
+        "confidence_score",
+        "risk_score",
+        "market_quality_score",
+        "projection_quality_score",
+        "ranking_score",
+        "historical_market_sample",
+        "historical_market_win_rate",
+        "model_score",
+    ]
+
+    for column in numeric_columns:
+        if column in prepared.columns:
+            prepared[column] = pd.to_numeric(
+                prepared[column],
+                errors="coerce",
+            )
+
+    prepared["direction"] = prepared[
+        "direction"
+    ].apply(normalize_direction)
+
+    prepared["confidence_tier"] = prepared[
+        "confidence_tier"
+    ].astype("string").str.title()
+
+    prepared["confidence_rank"] = prepared[
+        "confidence_tier"
+    ].apply(confidence_rank)
+
+    prepared["market_display"] = prepared[
+        "market"
+    ].apply(format_market)
+
+    prepared["player_key"] = (
+        prepared["player"]
+        .astype("string")
+        .str.casefold()
+        .str.strip()
+    )
+
+    prepared = prepared.dropna(
+        subset=[
+            "player",
+            "market",
+            "platform",
+            "line",
+            "projection",
+            "probability",
+        ]
+    ).copy()
+
+    prepared = prepared.loc[
+        prepared["confidence_tier"].isin(
+            {
+                "Elite",
+                "Strong",
+                "Good",
+                "Playable",
+            }
+        )
+    ].copy()
+
+    prepared = prepared.sort_values(
+        [
+            "confidence_rank",
+            "expected_value",
+            "probability_edge",
+            "probability",
+        ],
+        ascending=[
+            True,
+            False,
+            False,
+            False,
+        ],
+    )
+
+    return prepared.reset_index(drop=True)
+
+
+def american_odds_profit(
+    odds: Any,
+    stake: float = 1.0,
+) -> float:
+    """Return unit profit for a winning American-odds wager."""
+    numeric_odds = pd.to_numeric(odds, errors="coerce")
+    if pd.isna(numeric_odds):
+        return 0.0
+    numeric_odds = float(numeric_odds)
+    stake = float(stake)
+    if numeric_odds > 0:
+        return stake * numeric_odds / 100.0
+    return stake * 100.0 / abs(numeric_odds)
+
+
+def prepare_history(
+    history: pd.DataFrame,
+) -> pd.DataFrame:
+    """Normalize, settle, and deduplicate history for dashboard metrics."""
+    if history.empty:
+        return history
+
+    prepared = history.copy()
+    if "outcome" not in prepared.columns:
+        return pd.DataFrame()
+
+    for column in [
+        "outcome", "grade", "confidence_tier", "platform",
+        "player", "market", "direction",
+    ]:
+        if column in prepared.columns:
+            prepared[column] = prepared[column].astype("string").str.strip()
+
+    prepared["outcome"] = prepared["outcome"].str.upper()
+    prepared = prepared.loc[
+        prepared["outcome"].isin({"WIN", "LOSS", "PUSH"})
+    ].copy()
+
+    for column in [
+        "profit", "stake", "sportsbook_odds", "probability",
+        "expected_value", "probability_edge", "line",
+        "projection", "actual_result",
+    ]:
+        if column in prepared.columns:
+            prepared[column] = pd.to_numeric(prepared[column], errors="coerce")
+
+    if "stake" not in prepared.columns:
+        prepared["stake"] = 1.0
+    else:
+        prepared["stake"] = prepared["stake"].fillna(1.0)
+
+    if "profit" not in prepared.columns:
+        prepared["profit"] = pd.NA
+
+    missing_profit = prepared["profit"].isna()
+    win_mask = missing_profit & prepared["outcome"].eq("WIN")
+    if "sportsbook_odds" in prepared.columns:
+        prepared.loc[win_mask, "profit"] = prepared.loc[win_mask].apply(
+            lambda row: american_odds_profit(
+                row.get("sportsbook_odds"), row.get("stake", 1.0)
+            ),
+            axis=1,
+        )
+
+    loss_mask = missing_profit & prepared["outcome"].eq("LOSS")
+    prepared.loc[loss_mask, "profit"] = -prepared.loc[loss_mask, "stake"]
+    push_mask = missing_profit & prepared["outcome"].eq("PUSH")
+    prepared.loc[push_mask, "profit"] = 0.0
+
+    duplicate_columns = [
+        c for c in ["event_date", "player", "market", "direction", "line"]
+        if c in prepared.columns
+    ]
+    if duplicate_columns:
+        sort_columns = [
+            c for c in ["expected_value", "probability_edge", "probability"]
+            if c in prepared.columns
+        ]
+        if sort_columns:
+            prepared = prepared.sort_values(
+                sort_columns, ascending=[False] * len(sort_columns),
+                na_position="last",
+            )
+        prepared = prepared.drop_duplicates(
+            subset=duplicate_columns, keep="first"
+        )
+
+    if "probability" in prepared.columns:
+        prepared["Probability Bucket"] = pd.cut(
+            prepared["probability"],
+            bins=[0.00, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 1.00],
+            labels=[
+                "Below 60%", "60–65%", "65–70%", "70–75%",
+                "75–80%", "80–85%", "85–90%", "90%+",
+            ],
+            include_lowest=True,
+        )
+
+    return prepared.reset_index(drop=True)
+
+
+def summarize_results(
+    group: pd.DataFrame,
+) -> pd.Series:
+    """Calculate simple dashboard performance metrics."""
+    wins = int(
+        group["outcome"].eq("WIN").sum()
+    )
+
+    losses = int(
+        group["outcome"].eq("LOSS").sum()
+    )
+
+    pushes = int(
+        group["outcome"].eq("PUSH").sum()
+    )
+
+    settled = wins + losses
+
+    hit_rate = (
+        wins / settled * 100.0
+        if settled
+        else 0.0
+    )
+
+    total_profit = (
+        pd.to_numeric(
+            group.get(
+                "profit",
+                pd.Series(dtype=float),
+            ),
+            errors="coerce",
+        )
+        .fillna(0.0)
+        .sum()
+    )
+
+    total_staked = (
+        pd.to_numeric(
+            group.get(
+                "stake",
+                pd.Series(dtype=float),
+            ),
+            errors="coerce",
+        )
+        .fillna(1.0)
+        .sum()
+    )
+
+    roi = (
+        total_profit / total_staked * 100.0
+        if total_staked > 0
+        else 0.0
+    )
+
+    return pd.Series(
+        {
+            "Picks": len(group),
+            "Wins": wins,
+            "Losses": losses,
+            "Pushes": pushes,
+            "Hit Rate": round(hit_rate, 1),
+            "Profit": round(float(total_profit), 2),
+            "ROI": round(float(roi), 1),
+        }
+    )
+
+
+props = prepare_props(
+    load_csv(PROP_PATH)
+)
+
+history = prepare_history(
+    load_csv(HISTORY_PATH)
+)
+
+backtest_summary = load_csv(
+    BACKTEST_SUMMARY_PATH
+)
+
+
+st.markdown(
+    '<div class="main-title">📊 Jude’s Sports Model</div>',
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    '<div class="subtitle">'
+    "Platform-specific MLB projections, calibrated probabilities, "
+    "expected value, and verified historical performance."
+    "</div>",
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    f'<div class="updated-time">'
+    f"Card last updated: "
+    f"{escape(get_file_updated_time(PROP_PATH))}"
+    "</div>",
+    unsafe_allow_html=True,
+)
+
+
+wins = (
+    int(history["outcome"].eq("WIN").sum())
+    if not history.empty
+    else 0
+)
+
+losses = (
+    int(history["outcome"].eq("LOSS").sum())
+    if not history.empty
+    else 0
+)
+
+pushes = (
+    int(history["outcome"].eq("PUSH").sum())
+    if not history.empty
+    else 0
+)
+
+settled_bets = wins + losses
+
+hit_rate = (
+    wins / settled_bets * 100.0
+    if settled_bets
+    else 0.0
+)
+
+total_profit = 0.0
+
+if not history.empty and "profit" in history.columns:
+    total_profit = float(
+        pd.to_numeric(
+            history["profit"],
+            errors="coerce",
+        )
+        .fillna(0.0)
+        .sum()
+    )
+
+roi = 0.0
+
+if not backtest_summary.empty and "roi" in backtest_summary.columns:
+    roi_value = pd.to_numeric(
+        backtest_summary.iloc[0].get("roi"),
+        errors="coerce",
+    )
+
+    if pd.notna(roi_value):
+        roi = float(roi_value) * 100.0
+
+metric_1, metric_2, metric_3, metric_4, metric_5 = st.columns(5)
+
+metric_1.metric(
+    "Current Plays",
+    len(props),
+)
+
+metric_2.metric(
+    "Settled Record",
+    f"{wins}-{losses}-{pushes}",
+)
+
+metric_3.metric(
+    "Hit Rate",
+    f"{hit_rate:.1f}%",
+)
+
+metric_4.metric(
+    "Tracked Profit",
+    f"{total_profit:+.2f} units",
+)
+
+metric_5.metric(
+    "Backtest ROI",
+    f"{roi:+.1f}%",
+)
+
+st.caption(
+    "Only picks logged before game time and graded from official "
+    "box scores should count toward the verified record."
+)
+
+st.divider()
+
+if not props.empty:
+    st.header("⭐ Top 10 Best Bets")
+    st.caption(
+        "Highest-ranked current recommendations using the weighted Model Score, "
+        "which combines probability, confidence, risk, projection quality, "
+        "market quality, and historical market performance."
+    )
+
+    top_picks = props.copy()
+
+    if "model_score" in top_picks.columns:
+        top_picks = top_picks.sort_values(
+            [
+                "model_score",
+                "ranking_score",
+                "expected_value",
+                "probability_edge",
+                "probability",
+            ],
+            ascending=[False, False, False, False, False],
+            na_position="last",
+        )
+    elif "ranking_score" in top_picks.columns:
+        top_picks = top_picks.sort_values(
+            [
+                "confidence_rank",
+                "ranking_score",
+                "expected_value",
+                "probability_edge",
+                "probability",
+            ],
+            ascending=[True, False, False, False, False],
+            na_position="last",
+        )
+    else:
+        top_picks = top_picks.sort_values(
+            [
+                "confidence_rank",
+                "expected_value",
+                "probability_edge",
+                "probability",
+            ],
+            ascending=[True, False, False, False],
+            na_position="last",
+        )
+
+    top_picks = top_picks.drop_duplicates(
+        subset=["player_key"],
+        keep="first",
+    ).head(10)
+
+    top_columns = [
+        "confidence_tier",
+        "platform",
+        "player",
+        "market_display",
+        "direction",
+        "line",
+        "projection",
+        "probability",
+        "expected_value",
+        "confidence_score",
+        "risk_score",
+        "ranking_score",
+        "historical_market_win_rate",
+        "model_score",
+    ]
+    top_columns = [column for column in top_columns if column in top_picks.columns]
+
+    top_table = top_picks[top_columns].copy().rename(
+        columns={
+            "confidence_tier": "Confidence",
+            "platform": "Platform",
+            "player": "Player",
+            "market_display": "Market",
+            "direction": "Direction",
+            "line": "Line",
+            "projection": "Projection",
+            "probability": "Win Probability",
+            "expected_value": "Expected Value",
+            "confidence_score": "Confidence Score",
+            "risk_score": "Risk Score",
+            "ranking_score": "Ranking Score",
+            "historical_market_win_rate": "Historical Market Win Rate",
+            "model_score": "Model Score",
+        }
+    )
+
+    for column in [
+        "Win Probability",
+        "Expected Value",
+        "Historical Market Win Rate",
+    ]:
+        if column in top_table.columns:
+            top_table[column] = (
+                pd.to_numeric(top_table[column], errors="coerce") * 100.0
+            ).round(2)
+
+    for column in [
+        "Line",
+        "Projection",
+        "Confidence Score",
+        "Risk Score",
+        "Ranking Score",
+        "Model Score",
+    ]:
+        if column in top_table.columns:
+            top_table[column] = pd.to_numeric(
+                top_table[column], errors="coerce"
+            ).round(2)
+
+    st.dataframe(
+        top_table,
+        use_container_width=True,
+        hide_index=True,
+    )
+
+st.divider()
+
+
+header_left, header_right = st.columns(
+    [4, 1]
+)
+
+with header_left:
+    st.header("🔥 Today’s MLB Props")
+
+with header_right:
+    if st.button(
+        "↻ Refresh Board",
+        use_container_width=True,
+    ):
+        st.cache_data.clear()
+        st.rerun()
+
+
+if props.empty:
+    st.markdown(
+        """
+        <div class="empty-board">
+            No props currently pass every probability, price,
+            freshness, calibration, and expected-value filter.<br><br>
+            This is normal when the model does not find a trustworthy edge.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+else:
+    platforms = sorted(
+        props["platform"]
+        .dropna()
+        .astype(str)
+        .unique()
+        .tolist()
+    )
+
+    markets = sorted(
+        props["market_display"]
+        .dropna()
+        .astype(str)
+        .unique()
+        .tolist()
+    )
+
+    confidence_options = [
+        tier
+        for tier in [
+            "Elite",
+            "Strong",
+            "Good",
+            "Playable",
+        ]
+        if tier in set(props["confidence_tier"])
+    ]
+
+    directions = [
+        direction
+        for direction in [
+            "Over",
+            "Under",
+        ]
+        if direction in set(props["direction"])
+    ]
+
+    filter_1, filter_2, filter_3, filter_4 = st.columns(4)
+
+    with filter_1:
+        selected_platforms = st.multiselect(
+            "Platform",
+            options=platforms,
+            default=platforms,
+        )
+
+    with filter_2:
+        selected_markets = st.multiselect(
+            "Market",
+            options=markets,
+            default=markets,
+        )
+
+    with filter_3:
+        selected_confidence = st.multiselect(
+            "Confidence",
+            options=confidence_options,
+            default=confidence_options,
+        )
+
+    with filter_4:
+        selected_directions = st.multiselect(
+            "Direction",
+            options=directions,
+            default=directions,
+        )
+
+    sort_choice = st.selectbox(
+        "Sort by",
+        [
+            "Best Overall",
+            "Highest Probability",
+            "Highest Expected Value",
+            "Largest Probability Edge",
+            "Player Name",
+            "Platform",
+        ],
+    )
+
+    filtered = props.copy()
+
+    filtered = filtered.loc[
+        filtered["platform"].isin(
+            selected_platforms
+        )
+        & filtered["market_display"].isin(
+            selected_markets
+        )
+        & filtered["confidence_tier"].isin(
+            selected_confidence
+        )
+        & filtered["direction"].isin(
+            selected_directions
+        )
+    ].copy()
+
+    if sort_choice == "Highest Probability":
+        filtered = filtered.sort_values(
+            "probability",
+            ascending=False,
+        )
+
+    elif sort_choice == "Highest Expected Value":
+        filtered = filtered.sort_values(
+            "expected_value",
+            ascending=False,
+        )
+
+    elif sort_choice == "Largest Probability Edge":
+        filtered = filtered.sort_values(
+            "probability_edge",
+            ascending=False,
+        )
+
+    elif sort_choice == "Player Name":
+        filtered = filtered.sort_values(
+            "player",
+            ascending=True,
+        )
+
+    elif sort_choice == "Platform":
+        filtered = filtered.sort_values(
+            [
+                "platform",
+                "confidence_rank",
+                "expected_value",
+            ],
+            ascending=[
+                True,
+                True,
+                False,
+            ],
+        )
+
+    else:
+        filtered = filtered.sort_values(
+            [
+                "model_score",
+                "ranking_score",
+                "expected_value",
+                "probability_edge",
+                "probability",
+            ],
+            ascending=[
+                False,
+                False,
+                False,
+                False,
+                False,
+            ],
+            na_position="last",
+        )
+
+    available_props = len(filtered)
+    slider_key = "props_slider"
+
+    if available_props == 0:
+        st.warning(
+            "No props match the selected filters."
+        )
+        st.session_state.pop(slider_key, None)
+        filtered = filtered.iloc[0:0]
+
+    else:
+        control_left, control_right = st.columns([1, 3])
+
+        with control_left:
+            show_all_props = st.checkbox(
+                "Show all matching props",
+                value=True,
+                key="show_all_props",
+            )
+
+        with control_right:
+            st.caption(
+                f"{available_props} props match the selected filters."
+            )
+
+        if not show_all_props:
+            slider_max = available_props
+            default_slider_value = min(10, slider_max)
+
+            remembered_slider_value = st.session_state.get(slider_key)
+
+            if (
+                remembered_slider_value is None
+                or remembered_slider_value < 1
+                or remembered_slider_value > slider_max
+            ):
+                st.session_state[slider_key] = default_slider_value
+
+            max_props = st.slider(
+                "Number of props to display",
+                min_value=1,
+                max_value=slider_max,
+                step=1,
+                key=slider_key,
+            )
+
+            filtered = filtered.head(max_props)
+
+    for rank, (_, row) in enumerate(
+        filtered.iterrows(),
+        start=1,
+    ):
+        confidence = (
+            clean_text(
+                row.get("confidence_tier")
+            ).title()
+            or "Playable"
+        )
+
+        css_class = confidence_css(
+            confidence
+        )
+
+        player = (
+            clean_text(row.get("player"))
+            or "Unknown Player"
+        )
+
+        platform = (
+            clean_text(row.get("platform"))
+            or "Unknown Platform"
+        )
+
+        market = clean_text(
+            row.get("market_display")
+        )
+
+        direction = normalize_direction(
+            row.get("direction")
+        )
+
+        line = safe_number(
+            row.get("line"),
+            1,
+        )
+
+        projection = safe_number(
+            row.get("projection"),
+            2,
+        )
+
+        probability = safe_percentage(
+            row.get("probability"),
+            1,
+        )
+
+        probability_edge = safe_percentage(
+            row.get("probability_edge"),
+            1,
+        )
+
+        expected_value = safe_percentage(
+            row.get("expected_value"),
+            1,
+        )
+
+        bankroll_fraction = safe_percentage(
+            row.get(
+                "recommended_bankroll_fraction"
+            ),
+            2,
+        )
+
+        odds = safe_odds(
+            row.get("sportsbook_odds")
+        )
+
+        matchup_text = build_matchup_text(
+            row
+        )
+
+        game_time = format_commence_time(
+            row.get("commence_time")
+        )
+
+        pick_class = (
+            "pick-over"
+            if direction == "Over"
+            else "pick-under"
+        )
+
+        detail_parts = [
+            platform,
+            market,
+        ]
+
+        if odds != "N/A":
+            detail_parts.append(odds)
+
+        detail_text = " · ".join(
+            escape(part)
+            for part in detail_parts
+            if part
+        )
+
+        matchup_display = escape(
+            matchup_text
+        )
+
+        if game_time:
+            matchup_display = (
+                f"{matchup_display} · "
+                f"{escape(game_time)}"
+                if matchup_display
+                else escape(game_time)
+            )
+
+        st.markdown(
+            f"""
+            <div class="prop-card {css_class}">
+                <div class="tier-label">
+                    #{rank} · {escape(confidence.upper())}
+                </div>
+                <div class="player-name">
+                    {escape(player)}
+                </div>
+                <div class="prop-detail">
+                    {detail_text}
+                </div>
+                <div class="prop-detail">
+                    {matchup_display}
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        col_1, col_2, col_3, col_4, col_5 = st.columns(5)
+
+        with col_1:
+            st.markdown(
+                f'<div class="{pick_class}">'
+                f"{escape(direction.upper())} "
+                f"{escape(line)}"
+                "</div>",
+                unsafe_allow_html=True,
+            )
+
+        with col_2:
+            st.metric(
+                "Projection",
+                projection,
+            )
+
+        with col_3:
+            st.metric(
+                "Win Probability",
+                probability,
+            )
+
+        with col_4:
+            st.metric(
+                "Probability Edge",
+                probability_edge,
+            )
+
+        with col_5:
+            st.metric(
+                "Expected Value",
+                expected_value,
+            )
+
+        with st.expander(
+            "View model and pricing details"
+        ):
+            detail_1, detail_2, detail_3, detail_4 = st.columns(4)
+
+            with detail_1:
+                st.write(
+                    f"**Platform:** {platform}"
+                )
+                st.write(
+                    f"**Odds:** {odds}"
+                )
+                st.write(
+                    f"**Fair odds:** "
+                    f"{safe_odds(row.get('fair_odds'))}"
+                )
+
+            with detail_2:
+                st.write(
+                    f"**Market:** {market}"
+                )
+                st.write(
+                    f"**Line:** {line}"
+                )
+                st.write(
+                    f"**Projection:** {projection}"
+                )
+
+            with detail_3:
+                st.write(
+                    f"**Win probability:** "
+                    f"{probability}"
+                )
+                st.write(
+                    f"**Probability edge:** "
+                    f"{probability_edge}"
+                )
+                st.write(
+                    f"**Expected value:** "
+                    f"{expected_value}"
+                )
+
+            with detail_4:
+                st.write(
+                    f"**Suggested bankroll fraction:** "
+                    f"{bankroll_fraction}"
+                )
+                st.write(
+                    f"**Calibration samples:** "
+                    f"{safe_number(row.get('calibration_sample_size'), 0)}"
+                )
+                st.write(
+                    f"**Validation MAE:** "
+                    f"{safe_number(row.get('validation_mae'), 3)}"
+                )
+
+                st.write(
+                    f"**Confidence score:** "
+                    f"{safe_number(row.get('confidence_score'), 1)}"
+                )
+                st.write(
+                    f"**Risk score:** "
+                    f"{safe_number(row.get('risk_score'), 1)}"
+                )
+                st.write(
+                    f"**Ranking score:** "
+                    f"{safe_number(row.get('ranking_score'), 1)}"
+                )
+
+                st.write(
+                    f"**Model score:** "
+                    f"{safe_number(row.get('model_score'), 1)}"
+                )
+                st.write(
+                    f"**Historical market win rate:** "
+                    f"{safe_percentage(row.get('historical_market_win_rate'), 1)}"
+                )
+
+            distribution_method = clean_text(
+                row.get("distribution_method")
+            )
+
+            if distribution_method:
+                st.write(
+                    f"**Probability method:** "
+                    f"{distribution_method}"
+                )
+
+            if matchup_text:
+                st.write(
+                    f"**Matchup:** {matchup_text}"
+                )
+
+            if game_time:
+                st.write(
+                    f"**Scheduled time:** {game_time}"
+                )
+
+
+if not props.empty:
+    st.divider()
+    st.header("📋 Full Actionable Card")
+
+    table_columns = [
+        "grade",
+        "confidence_tier",
+        "platform",
+        "player",
+        "market_display",
+        "direction",
+        "line",
+        "sportsbook_odds",
+        "projection",
+        "probability",
+        "probability_edge",
+        "expected_value",
+        "recommended_bankroll_fraction",
         "confidence_score",
         "risk_score",
         "market_quality_score",
@@ -1376,499 +1445,883 @@ def build_history_rows(selected: pd.DataFrame) -> pd.DataFrame:
         "historical_market_win_rate",
         "model_score",
         "line_type",
-        "elite_score",
-        "elite_eligible",
-        "elite_rejection_reasons",
-        "elite_history_sample",
-        "elite_history_wins",
-        "elite_history_win_rate",
-        "elite_history_lower_bound",
-        "elite_probability_threshold",
-        "elite_probability_edge_threshold",
-        "elite_expected_value_threshold",
-        "elite_absolute_projection_edge",
-        "grade",
-        "confidence_tier",
         "team",
         "opponent",
-        "home_team",
-        "away_team",
-        "commence_time",
-        "fetched_at",
-        "logged_at",
-        "stake",
-        "profit",
-        "actual_result",
-        "outcome",
-        "grading_status",
-        "grading_note",
-        "matched_game_pk",
-        "graded_at",
     ]
 
-    for column in history_columns:
-        if column not in history.columns:
-            history[column] = pd.NA
-
-    history = history.loc[
-        history["event_date"].notna()
-    ].copy()
-
-    return history[
-        history_columns
-    ].reset_index(drop=True)
-
-
-def append_card_to_history(selected: pd.DataFrame) -> int:
-    """Append only previously unseen actionable props to permanent history."""
-    new_rows = build_history_rows(selected)
-
-    if new_rows.empty:
-        print(
-            "History logger: no actionable recommendations "
-            "were available to save."
-        )
-        return 0
-
-    existing = load_existing_history()
-
-    all_columns = list(
-        dict.fromkeys(
-            list(existing.columns)
-            + list(new_rows.columns)
-        )
-    )
-
-    for column in all_columns:
-        if column not in existing.columns:
-            existing[column] = pd.NA
-
-        if column not in new_rows.columns:
-            new_rows[column] = pd.NA
-
-    existing = existing[
-        all_columns
-    ].copy()
-
-    new_rows = new_rows[
-        all_columns
-    ].copy()
-
-    dedupe_columns = [
-        "event_date",
-        "event_id",
-        "platform",
-        "player",
-        "market",
-        "direction",
-        "line",
+    table_columns = [
+        column
+        for column in table_columns
+        if column in props.columns
     ]
 
-    # Normalize dedupe fields so repeated morning/afternoon workflow runs do
-    # not save the same exact recommendation twice.
-    def build_keys(frame: pd.DataFrame) -> pd.Series:
-        key_frame = frame.copy()
-
-        for column in dedupe_columns:
-            if column not in key_frame.columns:
-                key_frame[column] = pd.NA
-
-        for column in [
-            "event_date",
-            "event_id",
-            "platform",
-            "player",
-            "market",
-            "direction",
-        ]:
-            key_frame[column] = (
-                key_frame[column]
-                .astype("string")
-                .fillna("")
-                .str.strip()
-                .str.casefold()
-            )
-
-        key_frame["line"] = pd.to_numeric(
-            key_frame["line"],
-            errors="coerce",
-        ).round(4)
-
-        return key_frame[
-            dedupe_columns
-        ].astype("string").agg(
-            "|".join,
-            axis=1,
-        )
-
-    existing_keys = set(
-        build_keys(existing).tolist()
-    ) if not existing.empty else set()
-
-    new_keys = build_keys(new_rows)
-
-    unseen_mask = ~new_keys.isin(
-        existing_keys
-    )
-
-    unseen = new_rows.loc[
-        unseen_mask
+    display_table = props[
+        table_columns
     ].copy()
 
-    if unseen.empty:
-        print(
-            "History logger: every current recommendation "
-            "was already saved."
-        )
-        return 0
-
-    combined = pd.concat(
-        [
-            existing,
-            unseen,
-        ],
-        ignore_index=True,
+    display_table = display_table.rename(
+        columns={
+            "grade": "Grade",
+            "confidence_tier": "Confidence",
+            "platform": "Platform",
+            "player": "Player",
+            "market_display": "Market",
+            "direction": "Direction",
+            "line": "Line",
+            "sportsbook_odds": "Odds",
+            "projection": "Projection",
+            "probability": "Win Probability",
+            "probability_edge": "Probability Edge",
+            "expected_value": "Expected Value",
+            "recommended_bankroll_fraction": (
+                "Suggested Bankroll Fraction"
+            ),
+            "confidence_score": "Confidence Score",
+            "risk_score": "Risk Score",
+            "market_quality_score": "Market Quality",
+            "projection_quality_score": "Projection Quality",
+            "ranking_score": "Ranking Score",
+            "historical_market_sample": "Historical Market Sample",
+            "historical_market_win_rate": "Historical Market Win Rate",
+            "model_score": "Model Score",
+            "line_type": "Line Type",
+            "team": "Team",
+            "opponent": "Opponent",
+        }
     )
-
-    HISTORY_PATH.parent.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    temporary_path = HISTORY_PATH.with_suffix(
-        ".tmp.csv"
-    )
-
-    combined.to_csv(
-        temporary_path,
-        index=False,
-    )
-
-    temporary_path.replace(
-        HISTORY_PATH
-    )
-
-    print(
-        f"History logger: saved {len(unseen):,} new recommendations "
-        f"to {HISTORY_PATH}"
-    )
-
-    return len(unseen)
-
-
-def build_daily_card() -> pd.DataFrame:
-    """Create the final production betting card."""
-    OUTPUT_PATH.parent.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    probabilities = load_probability_table()
-    projection_context = load_projection_context()
-
-    print("=" * 72)
-    print("Building production MLB daily card")
-    print(
-        f"Probability rows loaded: "
-        f"{len(probabilities):,}"
-    )
-    print("=" * 72)
-
-    if probabilities.empty:
-        empty_output = pd.DataFrame(
-            columns=OUTPUT_COLUMNS
-        )
-
-        empty_output.to_csv(
-            OUTPUT_PATH,
-            index=False,
-        )
-
-        empty_output.to_csv(
-            AUDIT_PATH,
-            index=False,
-        )
-
-        return empty_output
-
-    probabilities["player_key"] = probabilities[
-        "player"
-    ].apply(normalize_text)
-
-    probabilities["market"] = (
-        probabilities["market"]
-        .astype(str)
-        .str.strip()
-        .str.lower()
-    )
-
-    probabilities["direction"] = probabilities[
-        "direction"
-    ].apply(normalize_direction)
 
     for column in [
-        "line",
-        "sportsbook_odds",
-        "projection",
-        "probability",
-        "push_probability",
-        "opposite_probability",
-        "fair_odds",
-        "calibration_sample_size",
-        "validation_mae",
+        "Line",
+        "Projection",
+        "Confidence Score",
+        "Risk Score",
+        "Market Quality",
+        "Projection Quality",
+        "Ranking Score",
+        "Historical Market Sample",
+        "Model Score",
     ]:
-        if column in probabilities.columns:
-            probabilities[column] = pd.to_numeric(
-                probabilities[column],
+        if column in display_table.columns:
+            display_table[column] = pd.to_numeric(
+                display_table[column],
                 errors="coerce",
+            ).round(2)
+
+    for column in [
+        "Win Probability",
+        "Probability Edge",
+        "Expected Value",
+        "Suggested Bankroll Fraction",
+        "Historical Market Win Rate",
+    ]:
+        if column in display_table.columns:
+            display_table[column] = (
+                pd.to_numeric(
+                    display_table[column],
+                    errors="coerce",
+                )
+                * 100.0
+            ).round(2)
+
+    st.dataframe(
+        display_table,
+        use_container_width=True,
+        hide_index=True,
+    )
+
+    st.subheader("⚾ Quick Market Views")
+    hitter_tab, pitcher_tab = st.tabs(
+        ["Hitter Props", "Pitcher Props"]
+    )
+
+    with hitter_tab:
+        hitter_props = display_table.loc[
+            display_table["Market"].astype(str).str.startswith("Hitter")
+            | display_table["Market"].astype(str).eq("Hits + Runs + RBIs")
+        ].copy()
+        if hitter_props.empty:
+            st.info("No hitter props are available on the current card.")
+        else:
+            st.dataframe(
+                hitter_props,
+                use_container_width=True,
+                hide_index=True,
             )
 
-    probabilities = probabilities.loc[
-        probabilities["player_key"].ne("")
-        & probabilities["direction"].isin(
-            {"Over", "Under"}
-        )
-    ].copy()
+    with pitcher_tab:
+        pitcher_props = display_table.loc[
+            display_table["Market"].astype(str).str.startswith("Pitcher")
+        ].copy()
+        if pitcher_props.empty:
+            st.info("No pitcher props are available on the current card.")
+        else:
+            st.dataframe(
+                pitcher_props,
+                use_container_width=True,
+                hide_index=True,
+            )
 
-    probabilities = probabilities.merge(
-        projection_context,
-        on=[
-            "player_key",
-            "market",
-        ],
-        how="left",
+
+st.divider()
+render_performance_dashboard(history)
+
+st.divider()
+st.header("📈 Verified Model Performance")
+
+if history.empty:
+    st.info(
+        "No settled live recommendations are available yet."
     )
 
-    probabilities = calculate_no_vig_probabilities(
-        probabilities
-    )
-
-    probabilities["raw_projection_edge"] = (
-        probabilities["projection"]
-        - probabilities["line"]
-    )
-
-    probabilities["probability_edge"] = (
-        probabilities["probability"]
-        - probabilities[
-            "market_implied_probability"
+else:
+    (
+        tab_overall,
+        tab_market,
+        tab_platform,
+        tab_confidence,
+        tab_probability,
+        tab_grade,
+        tab_market_analysis,
+        tab_optimizer,
+        tab_history,
+    ) = st.tabs(
+        [
+            "Overall",
+            "By Market",
+            "By Platform",
+            "By Confidence",
+            "By Probability",
+            "📊 Grade Analysis",
+            "📈 Market Analysis",
+            "🧠 Threshold Optimizer",
+            "Pick History",
         ]
     )
 
-    probabilities["expected_value"] = (
-        probabilities.apply(
-            lambda row: expected_value_per_unit(
-                row.get("probability"),
-                row.get("sportsbook_odds"),
-            ),
-            axis=1,
+    with tab_overall:
+        overall_summary = summarize_results(history)
+        summary_1, summary_2, summary_3, summary_4 = st.columns(4)
+        summary_1.metric("Verified Picks", int(overall_summary["Picks"]))
+        summary_2.metric(
+            "Record",
+            f"{int(overall_summary['Wins'])}-{int(overall_summary['Losses'])}-{int(overall_summary['Pushes'])}",
         )
-    )
-
-    probabilities["kelly_fraction"] = (
-        probabilities.apply(
-            lambda row: full_kelly_fraction(
-                row.get("probability"),
-                row.get("sportsbook_odds"),
-            ),
-            axis=1,
+        summary_3.metric("Hit Rate", f"{float(overall_summary['Hit Rate']):.1f}%")
+        summary_4.metric("ROI", f"{float(overall_summary['ROI']):+.1f}%")
+        overall_table = pd.DataFrame([
+            {"Category": "All Verified Picks", **overall_summary.to_dict()}
+        ])
+        st.dataframe(overall_table, use_container_width=True, hide_index=True)
+        st.caption(
+            "Repeated copies of the same player, market, direction, line, "
+            "and event are counted once."
         )
-    )
 
-    probabilities[
-        "recommended_bankroll_fraction"
-    ] = probabilities.apply(
-        lambda row: recommended_bankroll_fraction(
-            row.get("probability"),
-            row.get("sportsbook_odds"),
-        ),
-        axis=1,
-    )
+    with tab_market:
+        market_rows = []
 
-    probabilities = add_dashboard_quality_scores(
-        probabilities
-    )
+        for market_name, group in history.groupby(
+            "market",
+            dropna=False,
+        ):
+            summary = summarize_results(
+                group
+            ).to_dict()
 
-    probabilities = add_weighted_model_score(
-        probabilities,
-        history_path=HISTORY_PATH,
-    )
+            summary["Market"] = format_market(
+                market_name
+            )
 
-    probabilities["line_is_fresh"] = probabilities[
-        "fetched_at"
-    ].apply(line_is_fresh)
+            market_rows.append(summary)
 
-    probabilities["game_not_started"] = probabilities[
-        "commence_time"
-    ].apply(game_has_not_started)
+        market_summary = pd.DataFrame(
+            market_rows
+        )
 
-    probabilities[
-        "minimum_market_probability"
-    ] = probabilities["market"].map(
-        MARKET_MINIMUM_PROBABILITIES
-    ).fillna(MINIMUM_WIN_PROBABILITY)
+        st.dataframe(
+            market_summary,
+            use_container_width=True,
+            hide_index=True,
+        )
 
-    probabilities = choose_consensus_market_lines(
-        probabilities
-    )
+    with tab_platform:
+        platform_rows = []
 
-    # v7: assign Elite only after strict historical and sanity validation.
-    probabilities = apply_elite_filter(
-        probabilities,
-        history_path=HISTORY_PATH,
-    )
+        for platform_name, group in history.groupby(
+            "platform",
+            dropna=False,
+        ):
+            summary = summarize_results(
+                group
+            ).to_dict()
 
-    probabilities = add_rejection_reason(
-        probabilities
-    )
+            summary["Platform"] = platform_name
 
-    probabilities.to_csv(
-        AUDIT_PATH,
-        index=False,
-    )
+            platform_rows.append(summary)
 
-    accepted = probabilities.loc[
-        probabilities["rejection_reason"]
-        .eq("accepted")
-    ].copy()
+        platform_summary = pd.DataFrame(
+            platform_rows
+        )
 
-    accepted = choose_best_platform_rows(
-        accepted
-    )
+        st.dataframe(
+            platform_summary,
+            use_container_width=True,
+            hide_index=True,
+        )
 
-    accepted = accepted.sort_values(
-        [
-            "model_score",
-            "elite_score",
-            "expected_value",
-            "probability_edge",
+    with tab_confidence:
+        confidence_rows = []
+
+        if "confidence_tier" in history.columns:
+            for confidence_name, group in history.groupby(
+                "confidence_tier",
+                dropna=False,
+            ):
+                summary = summarize_results(
+                    group
+                ).to_dict()
+
+                summary["Confidence"] = confidence_name
+
+                confidence_rows.append(summary)
+
+        confidence_summary = pd.DataFrame(
+            confidence_rows
+        )
+
+        if confidence_summary.empty:
+            st.info(
+                "No confidence-tier history is available yet."
+            )
+        else:
+            st.dataframe(
+                confidence_summary,
+                use_container_width=True,
+                hide_index=True,
+            )
+
+    with tab_probability:
+        probability_rows = []
+        if "Probability Bucket" in history.columns:
+            for bucket_name, group in history.groupby(
+                "Probability Bucket", dropna=False, observed=False
+            ):
+                if group.empty:
+                    continue
+                summary = summarize_results(group).to_dict()
+                summary["Probability Bucket"] = clean_text(bucket_name) or "Unclassified"
+                average_probability = pd.to_numeric(
+                    group.get("probability", pd.Series(dtype=float)),
+                    errors="coerce",
+                ).mean()
+                summary["Average Model Probability"] = (
+                    round(float(average_probability) * 100.0, 1)
+                    if pd.notna(average_probability) else pd.NA
+                )
+                probability_rows.append(summary)
+
+        probability_summary = pd.DataFrame(probability_rows)
+        if probability_summary.empty:
+            st.info("No probability-bucket history is available yet.")
+        else:
+            probability_order = {
+                "Below 60%": 1, "60–65%": 2, "65–70%": 3,
+                "70–75%": 4, "75–80%": 5, "80–85%": 6,
+                "85–90%": 7, "90%+": 8, "Unclassified": 9,
+            }
+            probability_summary["_sort"] = (
+                probability_summary["Probability Bucket"]
+                .map(probability_order)
+                .fillna(99)
+            )
+            probability_summary = (
+                probability_summary.sort_values("_sort").drop(columns="_sort")
+            )
+            st.dataframe(
+                probability_summary, use_container_width=True, hide_index=True
+            )
+            if {"Average Model Probability", "Hit Rate"}.issubset(
+                probability_summary.columns
+            ):
+                st.subheader("Predicted Probability vs. Actual Hit Rate")
+                st.line_chart(
+                    probability_summary[[
+                        "Probability Bucket",
+                        "Average Model Probability",
+                        "Hit Rate",
+                    ]].set_index("Probability Bucket")
+                )
+            st.caption(
+                "A well-calibrated model should have actual hit rates that "
+                "roughly follow its predicted probability buckets."
+            )
+
+    with tab_grade:
+        if "grade" not in history.columns:
+            st.info("No grade history is available yet.")
+        else:
+            grade_rows = []
+            for grade_name, group in history.groupby("grade", dropna=False):
+                if group.empty:
+                    continue
+                summary = summarize_results(group).to_dict()
+                summary["Grade"] = clean_text(grade_name) or "Unclassified"
+
+                for source, label in [
+                    ("probability", "Average Probability"),
+                    ("probability_edge", "Average Edge"),
+                    ("expected_value", "Average EV"),
+                ]:
+                    values = pd.to_numeric(
+                        group.get(source, pd.Series(dtype=float)),
+                        errors="coerce",
+                    )
+                    average = values.mean()
+                    summary[label] = (
+                        round(float(average) * 100.0, 2)
+                        if pd.notna(average)
+                        else pd.NA
+                    )
+
+                grade_rows.append(summary)
+
+            grade_summary = pd.DataFrame(grade_rows)
+            if grade_summary.empty:
+                st.info("No grade history is available yet.")
+            else:
+                grade_order = {"A+": 1, "A": 2, "B+": 3, "B": 4}
+                grade_summary["_sort"] = (
+                    grade_summary["Grade"].map(grade_order).fillna(99)
+                )
+                grade_summary = grade_summary.sort_values("_sort").drop(
+                    columns="_sort"
+                )
+                st.dataframe(
+                    grade_summary,
+                    use_container_width=True,
+                    hide_index=True,
+                )
+                st.subheader("Hit Rate by Grade")
+                st.bar_chart(grade_summary.set_index("Grade")[["Hit Rate"]])
+
+                grade_rates = grade_summary.set_index("Grade")["Hit Rate"]
+                if "A+" in grade_rates.index and "A" in grade_rates.index:
+                    a_plus = float(grade_rates.loc["A+"])
+                    a_rate = float(grade_rates.loc["A"])
+                    if a_plus < a_rate:
+                        st.warning(
+                            "A+ is currently underperforming A. "
+                            f"A+: {a_plus:.1f}% vs. A: {a_rate:.1f}%. "
+                            "Review the A+ probability, edge, and EV cutoffs."
+                        )
+
+    with tab_market_analysis:
+        if "market" not in history.columns:
+            st.info("No market history is available.")
+        else:
+            market_rows = []
+            for market_name, group in history.groupby("market", dropna=False):
+                summary = summarize_results(group).to_dict()
+                summary["Market"] = format_market(market_name)
+
+                for source, label in [
+                    ("expected_value", "Average EV"),
+                    ("probability", "Average Probability"),
+                ]:
+                    values = pd.to_numeric(
+                        group.get(source, pd.Series(dtype=float)),
+                        errors="coerce",
+                    )
+                    average = values.mean()
+                    summary[label] = (
+                        round(float(average) * 100.0, 2)
+                        if pd.notna(average)
+                        else pd.NA
+                    )
+
+                market_rows.append(summary)
+
+            market_df = pd.DataFrame(market_rows)
+            if market_df.empty:
+                st.info("No market history is available.")
+            else:
+                market_df = market_df.sort_values("Profit", ascending=False)
+                st.subheader("Market Performance")
+                st.dataframe(
+                    market_df,
+                    use_container_width=True,
+                    hide_index=True,
+                )
+                chart_df = market_df.set_index("Market")
+                st.subheader("Profit by Market")
+                st.bar_chart(chart_df[["Profit"]])
+                st.subheader("Hit Rate by Market")
+                st.bar_chart(chart_df[["Hit Rate"]])
+
+    with tab_optimizer:
+        st.subheader("Historical Threshold Optimizer")
+        st.caption(
+            "The optimizer now tunes cutoffs on older picks and checks them "
+            "on newer, unseen picks when dates are available. This reduces "
+            "the risk of choosing thresholds that only fit past noise."
+        )
+
+        required_optimizer_columns = {
             "probability",
-        ],
-        ascending=[
-            False,
-            False,
-            False,
-            False,
-            False,
-        ],
-    )
-
-    market_sections: list[pd.DataFrame] = []
-
-    for market, limit in MARKET_LIMITS.items():
-        market_rows = accepted.loc[
-            accepted["market"].eq(market)
-        ].head(limit)
-
-        print(
-            f"{market}: selected "
-            f"{len(market_rows)} of "
-            f"{int(accepted['market'].eq(market).sum())} "
-            "accepted rows"
-        )
-
-        market_sections.append(market_rows)
-
-    if market_sections:
-        selected = pd.concat(
-            market_sections,
-            ignore_index=True,
-        )
-    else:
-        selected = pd.DataFrame(
-            columns=accepted.columns
-        )
-
-    selected = selected.sort_values(
-        [
-            "model_score",
-            "elite_score",
-            "expected_value",
             "probability_edge",
-            "probability",
-        ],
-        ascending=[
-            False,
-            False,
-            False,
-            False,
-            False,
-        ],
-    ).reset_index(drop=True)
-
-    for column in OUTPUT_COLUMNS:
-        if column not in selected.columns:
-            selected[column] = pd.NA
-
-    output = selected[
-        OUTPUT_COLUMNS
-    ].copy()
-
-    for column in [
-        "line",
-        "projection",
-        "raw_projection_edge",
-        "probability",
-        "sportsbook_implied_probability",
-        "no_vig_implied_probability",
-        "probability_edge",
-        "expected_value",
-        "kelly_fraction",
-        "recommended_bankroll_fraction",
-        "validation_mae",
-        "confidence_score",
-        "risk_score",
-        "market_quality_score",
-        "projection_quality_score",
-        "ranking_score",
-        "historical_market_sample",
-        "historical_market_win_rate",
-        "model_score",
-        "elite_score",
-        "elite_history_win_rate",
-        "elite_history_lower_bound",
-        "elite_probability_threshold",
-        "elite_probability_edge_threshold",
-        "elite_expected_value_threshold",
-        "elite_absolute_projection_edge",
-    ]:
-        output[column] = pd.to_numeric(
-            output[column],
-            errors="coerce",
-        ).round(4)
-
-    output.to_csv(
-        OUTPUT_PATH,
-        index=False,
-    )
-
-    newly_logged = append_card_to_history(
-        selected
-    )
-
-    print("\n" + "=" * 72)
-    print("MLB DAILY CARD COMPLETE")
-    print(f"Accepted props: {len(output):,}")
-    print(f"Final card: {OUTPUT_PATH}")
-    print(f"Full audit: {AUDIT_PATH}")
-    print(f"New history rows logged: {newly_logged:,}")
-    print("=" * 72)
-
-    if output.empty:
-        print(
-            "No props passed every probability, price, "
-            "freshness, and calibration filter."
-        )
-    else:
-        print("\nCard by market:")
-        print(
-            output["market"]
-            .value_counts()
-            .to_string()
+            "expected_value",
+            "outcome",
+            "profit",
+            "stake",
+        }
+        missing_optimizer_columns = sorted(
+            required_optimizer_columns - set(history.columns)
         )
 
-        preview_columns = [
-            "grade",
+        if missing_optimizer_columns:
+            st.info(
+                "The optimizer needs these history columns: "
+                + ", ".join(missing_optimizer_columns)
+            )
+        else:
+            optimizer_history = history.copy()
+            for column in [
+                "probability",
+                "probability_edge",
+                "expected_value",
+                "profit",
+                "stake",
+            ]:
+                optimizer_history[column] = pd.to_numeric(
+                    optimizer_history[column], errors="coerce"
+                )
+
+            # Accept either decimal values (0.26) or percentages (26.0).
+            for column in ["probability", "probability_edge", "expected_value"]:
+                non_null = optimizer_history[column].dropna()
+                if not non_null.empty and non_null.abs().median() > 1.5:
+                    optimizer_history[column] = optimizer_history[column] / 100.0
+
+            optimizer_history = optimizer_history.dropna(
+                subset=[
+                    "probability",
+                    "probability_edge",
+                    "expected_value",
+                    "profit",
+                    "stake",
+                ]
+            ).copy()
+
+            available_markets = sorted(
+                optimizer_history.get(
+                    "market", pd.Series(dtype="string")
+                ).dropna().astype(str).unique().tolist()
+            )
+            selected_optimizer_markets = st.multiselect(
+                "Markets included in optimization",
+                options=available_markets,
+                default=available_markets,
+                format_func=format_market,
+                key="optimizer_markets",
+            )
+
+            if available_markets:
+                optimizer_history = optimizer_history.loc[
+                    optimizer_history["market"].isin(selected_optimizer_markets)
+                ].copy()
+
+            control_1, control_2, control_3, control_4 = st.columns(4)
+            with control_1:
+                minimum_sample_size = st.number_input(
+                    "Minimum training picks",
+                    min_value=10,
+                    max_value=250,
+                    value=30,
+                    step=5,
+                    key="optimizer_min_sample",
+                )
+            with control_2:
+                minimum_validation_size = st.number_input(
+                    "Minimum validation picks",
+                    min_value=5,
+                    max_value=100,
+                    value=10,
+                    step=5,
+                    key="optimizer_min_validation",
+                )
+            with control_3:
+                objective = st.selectbox(
+                    "Primary objective",
+                    ["Balanced", "Highest Hit Rate", "Highest ROI", "Highest Profit"],
+                    key="optimizer_objective",
+                )
+            with control_4:
+                show_top_n = st.slider(
+                    "Results to display",
+                    min_value=5,
+                    max_value=40,
+                    value=15,
+                    step=5,
+                    key="optimizer_top_n",
+                )
+
+            if optimizer_history.empty:
+                st.info("No settled picks remain for the selected markets.")
+            else:
+                # Use a chronological holdout split by whole event dates.
+                # Keeping each date entirely in one side prevents same-day
+                # information from leaking across training and validation.
+                has_dates = "event_date" in optimizer_history.columns
+                validation_mode = False
+                validation_history = pd.DataFrame()
+
+                if has_dates:
+                    optimizer_history["event_date"] = pd.to_datetime(
+                        optimizer_history["event_date"], errors="coerce"
+                    )
+                    dated_history = optimizer_history.dropna(
+                        subset=["event_date"]
+                    ).sort_values("event_date").reset_index(drop=True)
+
+                    unique_dates = dated_history["event_date"].dt.normalize().unique()
+                    if len(unique_dates) >= 2:
+                        cutoff_position = max(
+                            1,
+                            min(len(unique_dates) - 1, int(len(unique_dates) * 0.70)),
+                        )
+                        cutoff_date = unique_dates[cutoff_position]
+
+                        training_candidate = dated_history.loc[
+                            dated_history["event_date"].dt.normalize() < cutoff_date
+                        ].copy()
+                        validation_candidate = dated_history.loc[
+                            dated_history["event_date"].dt.normalize() >= cutoff_date
+                        ].copy()
+
+                        if (
+                            len(training_candidate) >= minimum_sample_size
+                            and len(validation_candidate) >= minimum_validation_size
+                        ):
+                            training_history = training_candidate
+                            validation_history = validation_candidate
+                            validation_mode = True
+                        else:
+                            training_history = optimizer_history.copy()
+                    else:
+                        training_history = optimizer_history.copy()
+                else:
+                    training_history = optimizer_history.copy()
+
+                range_1, range_2, range_3 = st.columns(3)
+                range_1.metric(
+                    "Observed Probability Range",
+                    f"{training_history['probability'].min() * 100:.1f}%–"
+                    f"{training_history['probability'].max() * 100:.1f}%",
+                )
+                range_2.metric(
+                    "Observed Edge Range",
+                    f"{training_history['probability_edge'].min() * 100:.1f}%–"
+                    f"{training_history['probability_edge'].max() * 100:.1f}%",
+                )
+                range_3.metric(
+                    "Observed EV Range",
+                    f"{training_history['expected_value'].min() * 100:.1f}%–"
+                    f"{training_history['expected_value'].max() * 100:.1f}%",
+                )
+
+                probability_thresholds = [value / 100.0 for value in range(50, 91, 2)]
+                edge_thresholds = [value / 100.0 for value in range(0, 41, 2)]
+                ev_thresholds = [value / 100.0 for value in range(0, 61, 5)]
+
+                optimizer_rows = []
+                for probability_cutoff in probability_thresholds:
+                    probability_frame = training_history.loc[
+                        training_history["probability"] >= probability_cutoff
+                    ]
+                    if len(probability_frame) < minimum_sample_size:
+                        continue
+
+                    for edge_cutoff in edge_thresholds:
+                        edge_frame = probability_frame.loc[
+                            probability_frame["probability_edge"] >= edge_cutoff
+                        ]
+                        if len(edge_frame) < minimum_sample_size:
+                            continue
+
+                        for ev_cutoff in ev_thresholds:
+                            filtered_training = edge_frame.loc[
+                                edge_frame["expected_value"] >= ev_cutoff
+                            ]
+                            if len(filtered_training) < minimum_sample_size:
+                                continue
+
+                            training_summary = summarize_results(
+                                filtered_training
+                            ).to_dict()
+                            settled = int(
+                                training_summary["Wins"] + training_summary["Losses"]
+                            )
+                            if settled < minimum_sample_size:
+                                continue
+
+                            row = {
+                                "Minimum Probability": probability_cutoff * 100.0,
+                                "Minimum Edge": edge_cutoff * 100.0,
+                                "Minimum EV": ev_cutoff * 100.0,
+                                "Training Picks": training_summary["Picks"],
+                                "Training Hit Rate": training_summary["Hit Rate"],
+                                "Training Profit": training_summary["Profit"],
+                                "Training ROI": training_summary["ROI"],
+                                "Training Wins": training_summary["Wins"],
+                                "Training Losses": training_summary["Losses"],
+                                "Training Pushes": training_summary["Pushes"],
+                            }
+
+                            if validation_mode:
+                                filtered_validation = validation_history.loc[
+                                    (validation_history["probability"] >= probability_cutoff)
+                                    & (validation_history["probability_edge"] >= edge_cutoff)
+                                    & (validation_history["expected_value"] >= ev_cutoff)
+                                ]
+                                validation_summary = summarize_results(
+                                    filtered_validation
+                                ).to_dict()
+                                row.update(
+                                    {
+                                        "Validation Picks": validation_summary["Picks"],
+                                        "Validation Hit Rate": validation_summary["Hit Rate"],
+                                        "Validation Profit": validation_summary["Profit"],
+                                        "Validation ROI": validation_summary["ROI"],
+                                        "Validation Wins": validation_summary["Wins"],
+                                        "Validation Losses": validation_summary["Losses"],
+                                        "Validation Pushes": validation_summary["Pushes"],
+                                    }
+                                )
+                            optimizer_rows.append(row)
+
+                optimizer_results = pd.DataFrame(optimizer_rows)
+                if optimizer_results.empty:
+                    st.info(
+                        "No threshold combination meets the selected minimum "
+                        "sample size. Lower the minimums or include more markets."
+                    )
+                else:
+                    # Remove threshold rows that produce exactly the same pick set/results.
+                    dedupe_columns = [
+                        "Training Picks",
+                        "Training Wins",
+                        "Training Losses",
+                        "Training Pushes",
+                        "Training Profit",
+                    ]
+                    if validation_mode:
+                        dedupe_columns += [
+                            "Validation Picks",
+                            "Validation Wins",
+                            "Validation Losses",
+                            "Validation Pushes",
+                            "Validation Profit",
+                        ]
+                    optimizer_results = optimizer_results.drop_duplicates(
+                        subset=dedupe_columns, keep="first"
+                    ).copy()
+
+                    # Select thresholds using TRAINING performance only.
+                    # Validation outcomes are never used to rank combinations.
+                    eligible = optimizer_results["Training Picks"] >= minimum_sample_size
+                    if validation_mode:
+                        # Validation pick count is only a sample-size constraint;
+                        # validation hit rate/ROI/profit are not used for selection.
+                        eligible &= (
+                            optimizer_results["Validation Picks"]
+                            >= minimum_validation_size
+                        )
+
+                    scored_results = optimizer_results.loc[eligible].copy()
+
+                    if scored_results.empty:
+                        st.info(
+                            "Thresholds were found in training, but none produced "
+                            "enough validation picks. Lower the validation minimum "
+                            "or collect more settled history."
+                        )
+                    else:
+                        training_hit_rate = scored_results["Training Hit Rate"]
+                        training_roi = scored_results["Training ROI"]
+                        training_profit = scored_results["Training Profit"]
+                        training_picks = scored_results["Training Picks"]
+
+                        max_profit = max(float(training_profit.max()), 1.0)
+                        max_picks = max(float(training_picks.max()), 1.0)
+                        scored_results["Balanced Score"] = (
+                            training_hit_rate
+                            + 0.25 * training_roi.clip(lower=-100, upper=100)
+                            + 10.0 * training_profit / max_profit
+                            + 5.0 * training_picks / max_picks
+                        )
+
+                        sort_map = {
+                            "Balanced": ["Balanced Score", "Training Picks"],
+                            "Highest Hit Rate": [
+                                "Training Hit Rate",
+                                "Training Picks",
+                            ],
+                            "Highest ROI": [
+                                "Training ROI",
+                                "Training Picks",
+                            ],
+                            "Highest Profit": [
+                                "Training Profit",
+                                "Training Picks",
+                            ],
+                        }
+                        scored_results = scored_results.sort_values(
+                            sort_map[objective], ascending=[False, False]
+                        ).reset_index(drop=True)
+
+                        best = scored_results.iloc[0]
+                        metric_a, metric_b, metric_c, metric_d = st.columns(4)
+                        metric_a.metric(
+                            "Recommended Probability",
+                            f"{best['Minimum Probability']:.0f}%+",
+                        )
+                        metric_b.metric(
+                            "Recommended Edge",
+                            f"{best['Minimum Edge']:.0f}%+",
+                        )
+                        metric_c.metric(
+                            "Recommended EV",
+                            f"{best['Minimum EV']:.0f}%+",
+                        )
+                        metric_d.metric(
+                            "Validation Mode",
+                            "Chronological holdout" if validation_mode else "In-sample only",
+                        )
+
+                        train_a, train_b, train_c, train_d = st.columns(4)
+                        train_a.metric(
+                            "Training Hit Rate",
+                            f"{best['Training Hit Rate']:.1f}%",
+                        )
+                        train_b.metric(
+                            "Training ROI",
+                            f"{best['Training ROI']:+.1f}%",
+                        )
+                        train_c.metric(
+                            "Training Profit",
+                            f"{best['Training Profit']:+.2f}u",
+                        )
+                        train_d.metric(
+                            "Training Record",
+                            f"{int(best['Training Wins'])}-"
+                            f"{int(best['Training Losses'])}-"
+                            f"{int(best['Training Pushes'])}",
+                        )
+
+                        if validation_mode:
+                            result_a, result_b, result_c, result_d = st.columns(4)
+                            result_a.metric(
+                                "Unseen Hit Rate",
+                                f"{best['Validation Hit Rate']:.1f}%",
+                            )
+                            result_b.metric(
+                                "Unseen ROI",
+                                f"{best['Validation ROI']:+.1f}%",
+                            )
+                            result_c.metric(
+                                "Unseen Profit",
+                                f"{best['Validation Profit']:+.2f}u",
+                            )
+                            result_d.metric(
+                                "Unseen Record",
+                                f"{int(best['Validation Wins'])}-"
+                                f"{int(best['Validation Losses'])}-"
+                                f"{int(best['Validation Pushes'])}",
+                            )
+                            st.caption(
+                                f"Thresholds were chosen only from "
+                                f"{len(training_history)} older picks, then evaluated once "
+                                f"on {len(validation_history)} newer picks. Validation "
+                                f"outcomes did not influence the recommendation."
+                            )
+                        else:
+                            st.warning(
+                                "There is not enough dated history for a true holdout. "
+                                "These results are in-sample and should not be promoted "
+                                "to production thresholds yet."
+                            )
+
+                        display_optimizer = scored_results.head(show_top_n).copy()
+                        display_optimizer = display_optimizer.drop(
+                            columns=["Balanced Score"], errors="ignore"
+                        )
+                        for column in display_optimizer.columns:
+                            if column not in {
+                                "Training Wins", "Training Losses", "Training Pushes",
+                                "Validation Wins", "Validation Losses", "Validation Pushes",
+                            }:
+                                display_optimizer[column] = pd.to_numeric(
+                                    display_optimizer[column], errors="coerce"
+                                )
+
+                        st.subheader("Top Distinct Threshold Combinations")
+                        st.dataframe(
+                            display_optimizer,
+                            use_container_width=True,
+                            hide_index=True,
+                        )
+
+                        # Market-by-market diagnostic using a conservative sample floor.
+                        if "market" in optimizer_history.columns:
+                            market_recommendations = []
+                            for market_name, market_group in optimizer_history.groupby("market"):
+                                if len(market_group) < 15:
+                                    continue
+                                market_best = None
+                                for probability_cutoff in probability_thresholds:
+                                    for edge_cutoff in edge_thresholds:
+                                        filtered = market_group.loc[
+                                            (market_group["probability"] >= probability_cutoff)
+                                            & (market_group["probability_edge"] >= edge_cutoff)
+                                        ]
+                                        if len(filtered) < 10:
+                                            continue
+                                        summary = summarize_results(filtered).to_dict()
+                                        candidate = {
+                                            "Market": format_market(market_name),
+                                            "Minimum Probability": probability_cutoff * 100.0,
+                                            "Minimum Edge": edge_cutoff * 100.0,
+                                            **summary,
+                                        }
+                                        if market_best is None or (
+                                            candidate["Hit Rate"], candidate["ROI"], candidate["Picks"]
+                                        ) > (
+                                            market_best["Hit Rate"], market_best["ROI"], market_best["Picks"]
+                                        ):
+                                            market_best = candidate
+                                if market_best is not None:
+                                    market_recommendations.append(market_best)
+
+                            if market_recommendations:
+                                st.subheader("Exploratory Market-Specific Cutoffs")
+                                st.dataframe(
+                                    pd.DataFrame(market_recommendations).sort_values(
+                                        ["Hit Rate", "ROI"], ascending=False
+                                    ),
+                                    use_container_width=True,
+                                    hide_index=True,
+                                )
+
+                        st.warning(
+                            "Do not automatically replace production thresholds from "
+                            "this screen alone. Even chronological validation can be noisy "
+                            "with small samples. Promote a cutoff only after it remains "
+                            "profitable across additional unseen picks."
+                        )
+
+    with tab_history:
+        history_columns = [
+            "event_date",
             "platform",
             "player",
             "market",
@@ -1877,35 +2330,230 @@ def build_daily_card() -> pd.DataFrame:
             "sportsbook_odds",
             "projection",
             "probability",
-            "probability_edge",
-            "expected_value",
-            "confidence_score",
-            "risk_score",
-            "ranking_score",
-            "model_score",
-            "historical_market_win_rate",
-            "elite_score",
-            "elite_eligible",
-            "elite_rejection_reasons",
-            "recommended_bankroll_fraction",
+            "actual_result",
+            "outcome",
+            "profit",
         ]
 
-        print("\nTop plays:")
-        print(
-            output[preview_columns]
-            .head(40)
-            .to_string(index=False)
+        history_columns = [
+            column
+            for column in history_columns
+            if column in history.columns
+        ]
+
+        history_table = history[
+            history_columns
+        ].copy()
+
+        if "event_date" in history_table.columns:
+            history_table["event_date"] = pd.to_datetime(
+                history_table["event_date"],
+                errors="coerce",
+            )
+
+            history_table = history_table.sort_values(
+                "event_date",
+                ascending=False,
+            )
+
+        if "market" in history_table.columns:
+            history_table["market"] = history_table[
+                "market"
+            ].apply(format_market)
+
+        st.dataframe(
+            history_table,
+            use_container_width=True,
+            hide_index=True,
         )
 
-    print("\nAudit rejection reasons:")
-    print(
-        probabilities["rejection_reason"]
-        .value_counts()
-        .to_string()
+
+st.divider()
+st.header("🧪 Backtest and Calibration Reports")
+
+backtest_market = load_csv(
+    BACKTEST_MARKET_PATH
+)
+
+backtest_platform = load_csv(
+    BACKTEST_PLATFORM_PATH
+)
+
+backtest_confidence = load_csv(
+    BACKTEST_CONFIDENCE_PATH
+)
+
+backtest_calibration = load_csv(
+    BACKTEST_CALIBRATION_PATH
+)
+
+bankroll_curve = load_csv(
+    BANKROLL_CURVE_PATH
+)
+
+report_tab_1, report_tab_2, report_tab_3, report_tab_4 = st.tabs(
+    [
+        "Backtest Summary",
+        "Calibration",
+        "Bankroll Curve",
+        "Diagnostics",
+    ]
+)
+
+with report_tab_1:
+    if backtest_summary.empty:
+        st.info(
+            "Backtest reports will appear after settled picks exist."
+        )
+    else:
+        st.dataframe(
+            backtest_summary,
+            use_container_width=True,
+            hide_index=True,
+        )
+
+        if not backtest_market.empty:
+            st.subheader(
+                "Performance by Market"
+            )
+
+            st.dataframe(
+                backtest_market,
+                use_container_width=True,
+                hide_index=True,
+            )
+
+        if not backtest_platform.empty:
+            st.subheader(
+                "Performance by Platform"
+            )
+
+            st.dataframe(
+                backtest_platform,
+                use_container_width=True,
+                hide_index=True,
+            )
+
+        if not backtest_confidence.empty:
+            st.subheader(
+                "Performance by Confidence"
+            )
+
+            st.dataframe(
+                backtest_confidence,
+                use_container_width=True,
+                hide_index=True,
+            )
+
+with report_tab_2:
+    if backtest_calibration.empty:
+        st.info(
+            "Calibration results will appear after enough settled picks."
+        )
+    else:
+        st.dataframe(
+            backtest_calibration,
+            use_container_width=True,
+            hide_index=True,
+        )
+
+        if {
+            "average_probability",
+            "hit_rate",
+        }.issubset(backtest_calibration.columns):
+            calibration_chart = (
+                backtest_calibration[
+                    [
+                        "average_probability",
+                        "hit_rate",
+                    ]
+                ]
+                .apply(
+                    pd.to_numeric,
+                    errors="coerce",
+                )
+                .dropna()
+            )
+
+            if not calibration_chart.empty:
+                st.line_chart(
+                    calibration_chart
+                )
+
+with report_tab_3:
+    if bankroll_curve.empty:
+        st.info(
+            "The bankroll curve will appear after settled picks."
+        )
+    else:
+        chart_columns = [
+            column
+            for column in [
+                "cumulative_profit",
+                "bankroll",
+            ]
+            if column in bankroll_curve.columns
+        ]
+
+        if chart_columns:
+            st.line_chart(
+                bankroll_curve[
+                    chart_columns
+                ].apply(
+                    pd.to_numeric,
+                    errors="coerce",
+                )
+            )
+
+        st.dataframe(
+            bankroll_curve.tail(100),
+            use_container_width=True,
+            hide_index=True,
+        )
+
+with report_tab_4:
+    audit = load_csv(
+        AUDIT_PATH
     )
 
-    return output
+    if audit.empty:
+        st.info(
+            "No current daily-card audit is available."
+        )
+    else:
+        if "rejection_reason" in audit.columns:
+            rejection_summary = (
+                audit["rejection_reason"]
+                .value_counts()
+                .rename_axis("Reason")
+                .reset_index(name="Rows")
+            )
+
+            st.subheader(
+                "Current Rejection Reasons"
+            )
+
+            st.dataframe(
+                rejection_summary,
+                use_container_width=True,
+                hide_index=True,
+            )
+
+        st.subheader(
+            "Full Daily-Card Audit"
+        )
+
+        st.dataframe(
+            audit,
+            use_container_width=True,
+            hide_index=True,
+        )
 
 
-if __name__ == "__main__":
-    build_daily_card()
+st.divider()
+
+st.caption(
+    "Model outputs are experimental and are not financial advice. "
+    "A high modeled probability does not guarantee a winning result. "
+    "Use verified calibration, expected value, and bankroll discipline."
+)
