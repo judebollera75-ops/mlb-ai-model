@@ -1,40 +1,40 @@
 date,game_id,team,opponent,side,player_id,player_name,batting_order,position,status,lineup_status,lineup_source,home_team,away_team,venue,game_datetime
-2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,650490,Yandy Díaz,1,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,666018,Jonathan Aranda,2,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,691406,Junior Caminero,3,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,656775,Cedric Mullins,4,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,802415,Chandler Simpson,5,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,683748,Victor Mesa Jr.,6,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,810938,Ben Williamson,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,670764,Taylor Walls,8,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,663743,Nick Fortes,9,PH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,676391,Ernie Clement,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,664770,Nathan Lukes,2,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,665489,Vladimir Guerrero Jr.,3,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,649966,Luis Urías,4,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,672960,Kazuma Okamoto,5,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,662139,Daulton Varsho,6,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,672386,Alejandro Kirk,7,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,665926,Andrés Giménez,8,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,664702,Myles Straw,9,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,606466,Ketel Marte,1,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,672695,Geraldo Perdomo,2,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,672515,Gabriel Moreno,3,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,596146,Max Kepler,4,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,571448,Nolan Arenado,5,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,678489,Jorge Barrosa,6,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,545121,Ildemaro Vargas,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,694374,Tim Tawa,8,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,814439,Ryan Waldschmidt,9,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,802139,JJ Wetherholt,1,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,671056,Iván Herrera,2,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,691023,Jordan Walker,3,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,676475,Alec Burleson,4,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,663457,Lars Nootbaar,5,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,701675,Nathan Church,6,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,691026,Masyn Winn,7,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,665877,José Fermín,8,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
-2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,691458,Blaze Jordan,9,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,650490,Yandy Díaz,1,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,666018,Jonathan Aranda,2,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,691406,Junior Caminero,3,3B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,683748,Victor Mesa Jr.,4,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,676356,Jonny DeLuca,5,CF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,802415,Chandler Simpson,6,LF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,810938,Ben Williamson,7,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,680700,Richie Palacios,8,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Tampa Bay Rays,Toronto Blue Jays,away,676439,Hunter Feduccia,9,C,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,682818,Yohendrick Piñango,1,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,665489,Vladimir Guerrero Jr.,2,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,676391,Ernie Clement,3,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,543807,George Springer,4,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,672386,Alejandro Kirk,5,C,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,672960,Kazuma Okamoto,6,3B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,676914,Davis Schneider,7,LF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,649966,Luis Urías,8,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,822785,Toronto Blue Jays,Tampa Bay Rays,home,664702,Myles Straw,9,CF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Toronto Blue Jays,Tampa Bay Rays,Rogers Centre,2026-07-23T19:07:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,606466,Ketel Marte,1,DH,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,672695,Geraldo Perdomo,2,SS,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,672515,Gabriel Moreno,3,C,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,596146,Max Kepler,4,LF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,571448,Nolan Arenado,5,3B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,678489,Jorge Barrosa,6,CF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,545121,Ildemaro Vargas,7,2B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,694374,Tim Tawa,8,1B,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,Arizona Diamondbacks,St. Louis Cardinals,away,814439,Ryan Waldschmidt,9,LF,Pre-Game,PROJECTED,RECENT_CONFIRMED_LINEUPS,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,802139,JJ Wetherholt,1,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,691023,Jordan Walker,2,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,676475,Alec Burleson,3,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,663457,Lars Nootbaar,4,LF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,691026,Masyn Winn,5,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,665877,José Fermín,6,3B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,701675,Nathan Church,7,CF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,691458,Blaze Jordan,8,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
+2026-07-23,823042,St. Louis Cardinals,Arizona Diamondbacks,home,699625,Jimmy Crooks,9,C,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,St. Louis Cardinals,Arizona Diamondbacks,Busch Stadium,2026-07-23T21:15:00Z
 2026-07-23,824247,Kansas City Royals,Detroit Tigers,away,695600,Carter Jensen,1,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Detroit Tigers,Kansas City Royals,Comerica Park,2026-07-23T22:40:00Z
 2026-07-23,824247,Kansas City Royals,Detroit Tigers,away,695506,Jac Caglianone,2,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Detroit Tigers,Kansas City Royals,Comerica Park,2026-07-23T22:40:00Z
 2026-07-23,824247,Kansas City Royals,Detroit Tigers,away,657041,Lane Thomas,3,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Detroit Tigers,Kansas City Royals,Comerica Park,2026-07-23T22:40:00Z
@@ -53,39 +53,39 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-23,824247,Detroit Tigers,Kansas City Royals,home,681481,Kerry Carpenter,7,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Detroit Tigers,Kansas City Royals,Comerica Park,2026-07-23T22:40:00Z
 2026-07-23,824247,Detroit Tigers,Kansas City Royals,home,656716,Zach McKinstry,8,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Detroit Tigers,Kansas City Royals,Comerica Park,2026-07-23T22:40:00Z
 2026-07-23,824247,Detroit Tigers,Kansas City Royals,home,681546,James Outman,9,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Detroit Tigers,Kansas City Royals,Comerica Park,2026-07-23T22:40:00Z
-2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,668885,Austin Martin,1,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,663616,Trevor Larnach,2,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,605137,Josh Bell,3,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,665019,Kody Clemens,4,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,668904,Royce Lewis,5,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,686797,Brooks Lee,6,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,702176,Alan Roden,7,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,807712,Luke Keaschall,8,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,668952,Ryan Kreidler,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,800050,Chase DeLauter,1,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,680757,Steven Kwan,2,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,677587,Brayan Rocchio,3,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,683953,Travis Bazzana,4,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,700932,Kyle Manzardo,5,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,682177,Daniel Schneemann,6,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,672356,Gabriel Arias,7,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,672275,Patrick Bailey,8,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,690984,Petey Halpin,9,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
-2026-07-23,824893,San Diego Padres,Atlanta Braves,away,665487,Fernando Tatis Jr.,1,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,San Diego Padres,Atlanta Braves,away,592518,Manny Machado,2,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,San Diego Padres,Atlanta Braves,away,701538,Jackson Merrill,3,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,San Diego Padres,Atlanta Braves,away,664034,Ty France,4,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,San Diego Padres,Atlanta Braves,away,650859,Luis Rengifo,5,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,San Diego Padres,Atlanta Braves,away,593428,Xander Bogaerts,6,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,San Diego Padres,Atlanta Braves,away,630105,Jake Cronenworth,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,San Diego Padres,Atlanta Braves,away,657757,Gavin Sheets,8,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,San Diego Padres,Atlanta Braves,away,823550,Sung-Mun Song,9,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,Atlanta Braves,San Diego Padres,home,686948,Drake Baldwin,1,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,Atlanta Braves,San Diego Padres,home,645277,Ozzie Albies,2,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,Atlanta Braves,San Diego Padres,home,621566,Matt Olson,3,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,Atlanta Braves,San Diego Padres,home,671739,Michael Harris II,4,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,Atlanta Braves,San Diego Padres,home,663586,Austin Riley,5,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,Atlanta Braves,San Diego Padres,home,643289,Mauricio Dubón,6,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,Atlanta Braves,San Diego Padres,home,663698,Joey Bart,7,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,Atlanta Braves,San Diego Padres,home,805347,Jim Jarvis,8,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
-2026-07-23,824893,Atlanta Braves,San Diego Padres,home,676551,Brewer Hicklen,9,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,686797,Brooks Lee,1,3B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,621439,Byron Buxton,2,CF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,680777,Ryan Jeffers,3,C,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,605137,Josh Bell,4,DH,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,665019,Kody Clemens,5,2B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,668904,Royce Lewis,6,1B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,668885,Austin Martin,7,LF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,807712,Luke Keaschall,8,RF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Minnesota Twins,Cleveland Guardians,away,668952,Ryan Kreidler,9,SS,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,680757,Steven Kwan,1,LF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,608070,José Ramírez,2,3B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,800050,Chase DeLauter,3,RF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,677587,Brayan Rocchio,4,SS,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,683953,Travis Bazzana,5,2B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,656555,Rhys Hoskins,6,DH,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,700932,Kyle Manzardo,7,1B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,672275,Patrick Bailey,8,C,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824406,Cleveland Guardians,Minnesota Twins,home,690984,Petey Halpin,9,CF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Cleveland Guardians,Minnesota Twins,Progressive Field,2026-07-23T17:10:00Z
+2026-07-23,824893,San Diego Padres,Atlanta Braves,away,665487,Fernando Tatis Jr.,1,RF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,San Diego Padres,Atlanta Braves,away,650859,Luis Rengifo,2,LF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,San Diego Padres,Atlanta Braves,away,592518,Manny Machado,3,3B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,San Diego Padres,Atlanta Braves,away,664034,Ty France,4,1B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,San Diego Padres,Atlanta Braves,away,593428,Xander Bogaerts,5,SS,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,San Diego Padres,Atlanta Braves,away,657757,Gavin Sheets,6,DH,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,San Diego Padres,Atlanta Braves,away,666023,Freddy Fermin,7,C,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,San Diego Padres,Atlanta Braves,away,687749,Jase Bowen,8,CF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,San Diego Padres,Atlanta Braves,away,630105,Jake Cronenworth,9,2B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,Atlanta Braves,San Diego Padres,home,686948,Drake Baldwin,1,C,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,Atlanta Braves,San Diego Padres,home,645277,Ozzie Albies,2,2B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,Atlanta Braves,San Diego Padres,home,621566,Matt Olson,3,1B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,Atlanta Braves,San Diego Padres,home,671739,Michael Harris II,4,CF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,Atlanta Braves,San Diego Padres,home,643289,Mauricio Dubón,5,LF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,Atlanta Braves,San Diego Padres,home,663586,Austin Riley,6,3B,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,Atlanta Braves,San Diego Padres,home,642086,Dominic Smith,7,DH,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,Atlanta Braves,San Diego Padres,home,573262,Mike Yastrzemski,8,RF,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z
+2026-07-23,824893,Atlanta Braves,San Diego Padres,home,805347,Jim Jarvis,9,SS,In Progress,CONFIRMED,CURRENT_BOX_SCORE,Atlanta Braves,San Diego Padres,Truist Park,2026-07-23T16:15:00Z

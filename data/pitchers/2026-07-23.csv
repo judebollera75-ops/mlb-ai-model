@@ -1,11 +1,11 @@
 date,game_id,game_status,game_status_code,venue_id,venue,team,opponent,pitcher_id,pitcher_name,opposing_pitcher_id,opposing_pitcher_name,side,is_home,home_team,away_team
-2026-07-23,822785,Scheduled,S,14,Rogers Centre,Tampa Bay Rays,Toronto Blue Jays,693855,Ian Seymour,669456,Shane Bieber,away,0,Toronto Blue Jays,Tampa Bay Rays
-2026-07-23,822785,Scheduled,S,14,Rogers Centre,Toronto Blue Jays,Tampa Bay Rays,669456,Shane Bieber,693855,Ian Seymour,home,1,Toronto Blue Jays,Tampa Bay Rays
-2026-07-23,823042,Scheduled,S,2889,Busch Stadium,Arizona Diamondbacks,St. Louis Cardinals,694297,Brandon Pfaadt,700241,Michael McGreevy,away,0,St. Louis Cardinals,Arizona Diamondbacks
-2026-07-23,823042,Scheduled,S,2889,Busch Stadium,St. Louis Cardinals,Arizona Diamondbacks,700241,Michael McGreevy,694297,Brandon Pfaadt,home,1,St. Louis Cardinals,Arizona Diamondbacks
+2026-07-23,822785,Pre-Game,P,14,Rogers Centre,Tampa Bay Rays,Toronto Blue Jays,668984,Casey Legumina,669456,Shane Bieber,away,0,Toronto Blue Jays,Tampa Bay Rays
+2026-07-23,822785,Pre-Game,P,14,Rogers Centre,Toronto Blue Jays,Tampa Bay Rays,669456,Shane Bieber,668984,Casey Legumina,home,1,Toronto Blue Jays,Tampa Bay Rays
+2026-07-23,823042,Pre-Game,P,2889,Busch Stadium,Arizona Diamondbacks,St. Louis Cardinals,694297,Brandon Pfaadt,700241,Michael McGreevy,away,0,St. Louis Cardinals,Arizona Diamondbacks
+2026-07-23,823042,Pre-Game,P,2889,Busch Stadium,St. Louis Cardinals,Arizona Diamondbacks,700241,Michael McGreevy,694297,Brandon Pfaadt,home,1,St. Louis Cardinals,Arizona Diamondbacks
 2026-07-23,824247,Scheduled,S,2394,Comerica Park,Kansas City Royals,Detroit Tigers,677976,Randy Dobnak,675512,Troy Melton,away,0,Detroit Tigers,Kansas City Royals
 2026-07-23,824247,Scheduled,S,2394,Comerica Park,Detroit Tigers,Kansas City Royals,675512,Troy Melton,677976,Randy Dobnak,home,1,Detroit Tigers,Kansas City Royals
-2026-07-23,824406,Scheduled,S,5,Progressive Field,Minnesota Twins,Cleveland Guardians,671737,Taj Bradley,668909,Gavin Williams,away,0,Cleveland Guardians,Minnesota Twins
-2026-07-23,824406,Scheduled,S,5,Progressive Field,Cleveland Guardians,Minnesota Twins,668909,Gavin Williams,671737,Taj Bradley,home,1,Cleveland Guardians,Minnesota Twins
-2026-07-23,824893,Scheduled,S,4705,Truist Park,San Diego Padres,Atlanta Braves,656288,Griffin Canning,519242,Chris Sale,away,0,Atlanta Braves,San Diego Padres
-2026-07-23,824893,Scheduled,S,4705,Truist Park,Atlanta Braves,San Diego Padres,519242,Chris Sale,656288,Griffin Canning,home,1,Atlanta Braves,San Diego Padres
+2026-07-23,824406,In Progress,I,5,Progressive Field,Minnesota Twins,Cleveland Guardians,671737,Taj Bradley,668909,Gavin Williams,away,0,Cleveland Guardians,Minnesota Twins
+2026-07-23,824406,In Progress,I,5,Progressive Field,Cleveland Guardians,Minnesota Twins,668909,Gavin Williams,671737,Taj Bradley,home,1,Cleveland Guardians,Minnesota Twins
+2026-07-23,824893,In Progress,I,4705,Truist Park,San Diego Padres,Atlanta Braves,606996,Kyle Hart,519242,Chris Sale,away,0,Atlanta Braves,San Diego Padres
+2026-07-23,824893,In Progress,I,4705,Truist Park,Atlanta Braves,San Diego Padres,519242,Chris Sale,606996,Kyle Hart,home,1,Atlanta Braves,San Diego Padres
