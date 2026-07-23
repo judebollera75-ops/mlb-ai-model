@@ -3925,6 +3925,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-10,823685,623168,Tyler Heineman,Los Angeles Angels,Minnesota Twins,4,4,2,0,0,0,2,1,0,0,0,0,0,0
 2026-07-19,824007,623168,Tyler Heineman,Los Angeles Angels,Detroit Tigers,4,3,1,0,0,0,1,0,0,1,0,1,0,0
 2026-07-20,824006,623168,Tyler Heineman,Los Angeles Angels,St. Louis Cardinals,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-22,824083,623205,Andrew Velazquez,Kansas City Royals,San Francisco Giants,3,3,1,0,0,0,1,0,0,0,0,1,0,0
 2026-03-26,824865,624413,Pete Alonso,Baltimore Orioles,Minnesota Twins,4,3,0,0,0,0,0,0,0,1,2,0,0,0
 2026-03-28,824862,624413,Pete Alonso,Baltimore Orioles,Minnesota Twins,5,5,1,0,0,0,1,0,0,0,2,0,0,0
 2026-03-29,824864,624413,Pete Alonso,Baltimore Orioles,Minnesota Twins,4,3,2,0,0,0,2,1,1,1,0,0,0,0
@@ -5997,6 +5998,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-06-13,824426,650402,Gleyber Torres,Detroit Tigers,Cleveland Guardians,5,4,2,1,0,0,3,1,0,1,0,0,0,0
 2026-06-15,824181,650402,Gleyber Torres,Detroit Tigers,Houston Astros,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-20,824654,650402,Gleyber Torres,Detroit Tigers,Chicago Cubs,5,3,2,0,0,0,2,1,0,2,1,0,0,0
+2026-07-21,824652,650402,Gleyber Torres,Detroit Tigers,Chicago Cubs,4,4,0,0,0,0,0,0,0,0,3,0,0,0
 2026-03-27,823893,650489,Willi Castro,Colorado Rockies,Miami Marlins,4,4,0,0,0,0,0,1,0,0,2,0,0,0
 2026-03-28,823892,650489,Willi Castro,Colorado Rockies,Miami Marlins,4,4,1,0,0,0,1,1,0,0,1,0,0,0
 2026-03-29,823891,650489,Willi Castro,Colorado Rockies,Miami Marlins,4,3,1,1,0,0,2,1,0,1,0,0,0,0
@@ -11954,6 +11956,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-17,824090,668942,Josh Rojas,Kansas City Royals,San Diego Padres,1,1,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-19,824086,668942,Josh Rojas,Kansas City Royals,San Diego Padres,4,4,2,0,0,0,2,0,0,0,0,0,0,0
 2026-07-20,824087,668942,Josh Rojas,Kansas City Royals,San Francisco Giants,4,4,1,0,0,0,1,1,0,0,0,0,0,0
+2026-07-22,824083,668942,Josh Rojas,Kansas City Royals,San Francisco Giants,2,2,1,0,0,0,1,0,0,0,0,0,0,0
 2026-04-11,822830,668952,Ryan Kreidler,Minnesota Twins,Toronto Blue Jays,4,4,0,0,0,0,0,0,0,0,1,0,0,0
 2026-04-13,823725,668952,Ryan Kreidler,Minnesota Twins,Boston Red Sox,4,4,1,0,0,1,4,1,1,0,0,0,0,0
 2026-04-15,823722,668952,Ryan Kreidler,Minnesota Twins,Boston Red Sox,4,3,1,0,0,1,4,1,3,1,2,0,0,0
@@ -19095,6 +19098,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-01,823530,682987,Spencer Jones,New York Yankees,Detroit Tigers,2,2,1,0,0,0,1,0,0,0,0,0,0,0
 2026-07-19,825057,682988,Tyler Locklear,Arizona Diamondbacks,St. Louis Cardinals,4,3,1,0,0,0,1,1,1,1,0,0,0,0
 2026-07-20,825058,682988,Tyler Locklear,Arizona Diamondbacks,Athletics,4,3,0,0,0,0,0,0,0,1,0,0,0,0
+2026-07-22,825055,682988,Tyler Locklear,Arizona Diamondbacks,Athletics,2,2,1,0,0,0,1,0,1,0,1,0,0,0
 2026-05-28,823378,682997,Tyler Callihan,Pittsburgh Pirates,Chicago Cubs,3,2,1,1,0,0,2,0,1,1,0,0,0,0
 2026-05-29,823377,682997,Tyler Callihan,Pittsburgh Pirates,Minnesota Twins,0,0,0,0,0,0,0,1,0,0,0,0,0,0
 2026-05-30,823375,682997,Tyler Callihan,Pittsburgh Pirates,Minnesota Twins,2,1,0,0,0,0,0,0,0,1,0,0,0,0
@@ -21699,6 +21703,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-19,824007,690993,Colt Keith,Detroit Tigers,Los Angeles Angels,2,2,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-20,824654,690993,Colt Keith,Detroit Tigers,Chicago Cubs,2,2,1,1,0,0,2,1,0,0,0,0,0,0
 2026-07-21,824652,690993,Colt Keith,Detroit Tigers,Chicago Cubs,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-22,824650,690993,Colt Keith,Detroit Tigers,Chicago Cubs,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-04-25,824613,691011,Drew Romo,Chicago White Sox,Washington Nationals,1,0,0,0,0,0,0,0,0,1,0,0,0,0
 2026-04-26,824612,691011,Drew Romo,Chicago White Sox,Washington Nationals,4,3,0,0,0,0,0,0,0,1,1,0,0,0
 2026-04-28,824610,691011,Drew Romo,Chicago White Sox,Los Angeles Angels,4,3,2,0,0,2,8,2,3,0,0,0,0,1
