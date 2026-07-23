@@ -137,7 +137,8 @@ def export_table(
         OUTPUT_DIRECTORY / filename,
         index=False,
     )
-    def overall_summary(
+
+def overall_summary(
     df: pd.DataFrame,
 ) -> pd.DataFrame:
     """
@@ -471,7 +472,8 @@ def player_summary(
         )
         .reset_index(drop=True)
     )
-    def save_tables(
+
+def save_tables(
     overall: pd.DataFrame,
     market: pd.DataFrame,
     confidence: pd.DataFrame,
