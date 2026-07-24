@@ -10780,6 +10780,80 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-17,824009,666139,Josh Lowe,Los Angeles Angels,Detroit Tigers,3,3,0,0,0,0,0,0,1,0,1,0,0,0
 2026-07-19,824007,666139,Josh Lowe,Los Angeles Angels,Detroit Tigers,3,1,0,0,0,0,0,0,0,1,1,0,0,0
 2026-07-20,824006,666139,Josh Lowe,Los Angeles Angels,St. Louis Cardinals,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-03-26,823812,666152,David Hamilton,Milwaukee Brewers,Chicago White Sox,5,2,1,0,0,0,1,2,1,2,0,1,0,0
+2026-03-28,823811,666152,David Hamilton,Milwaukee Brewers,Chicago White Sox,4,2,0,0,0,0,0,1,0,2,0,2,0,0
+2026-03-30,823809,666152,David Hamilton,Milwaukee Brewers,Tampa Bay Rays,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-01,823806,666152,David Hamilton,Milwaukee Brewers,Tampa Bay Rays,4,4,1,0,0,0,1,1,1,0,2,1,0,0
+2026-04-04,824132,666152,David Hamilton,Milwaukee Brewers,Kansas City Royals,4,2,1,0,0,0,1,0,0,2,1,0,1,0
+2026-04-04,824134,666152,David Hamilton,Milwaukee Brewers,Kansas City Royals,4,3,1,0,0,0,1,1,0,1,1,0,0,0
+2026-04-06,824783,666152,David Hamilton,Milwaukee Brewers,Boston Red Sox,5,2,1,0,0,0,1,2,0,2,0,0,0,0
+2026-04-07,824780,666152,David Hamilton,Milwaukee Brewers,Boston Red Sox,3,1,0,0,0,0,0,0,1,0,0,0,0,1
+2026-04-08,824779,666152,David Hamilton,Milwaukee Brewers,Boston Red Sox,3,3,1,0,0,0,1,0,0,0,0,0,0,0
+2026-04-10,823808,666152,David Hamilton,Milwaukee Brewers,Washington Nationals,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-12,823804,666152,David Hamilton,Milwaukee Brewers,Washington Nationals,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-04-14,823802,666152,David Hamilton,Milwaukee Brewers,Toronto Blue Jays,2,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-15,823803,666152,David Hamilton,Milwaukee Brewers,Toronto Blue Jays,3,3,1,0,0,0,1,1,0,0,0,0,0,0
+2026-04-16,823801,666152,David Hamilton,Milwaukee Brewers,Toronto Blue Jays,3,3,1,0,0,0,1,0,0,0,2,0,0,0
+2026-04-17,823883,666152,David Hamilton,Milwaukee Brewers,Miami Marlins,5,5,0,0,0,0,0,0,0,0,2,0,0,0
+2026-04-19,823881,666152,David Hamilton,Milwaukee Brewers,Miami Marlins,3,2,0,0,0,0,0,1,0,1,0,1,0,0
+2026-04-21,824290,666152,David Hamilton,Milwaukee Brewers,Detroit Tigers,5,5,4,0,0,0,4,2,0,0,0,0,1,0
+2026-04-22,824286,666152,David Hamilton,Milwaukee Brewers,Detroit Tigers,4,3,0,0,0,0,0,0,0,1,1,0,0,0
+2026-04-23,824288,666152,David Hamilton,Milwaukee Brewers,Detroit Tigers,4,4,2,0,0,0,2,0,1,0,0,0,0,0
+2026-04-24,823800,666152,David Hamilton,Milwaukee Brewers,Pittsburgh Pirates,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-25,823799,666152,David Hamilton,Milwaukee Brewers,Pittsburgh Pirates,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-26,823797,666152,David Hamilton,Milwaukee Brewers,Pittsburgh Pirates,4,3,1,1,0,0,2,1,1,0,1,0,0,0
+2026-04-28,823798,666152,David Hamilton,Milwaukee Brewers,Arizona Diamondbacks,5,5,2,1,0,0,3,1,2,0,0,0,0,0
+2026-04-29,823796,666152,David Hamilton,Milwaukee Brewers,Arizona Diamondbacks,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-04-30,823795,666152,David Hamilton,Milwaukee Brewers,Arizona Diamondbacks,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-05-01,822744,666152,David Hamilton,Milwaukee Brewers,Washington Nationals,5,4,2,0,0,0,2,1,0,1,0,2,0,0
+2026-05-02,822746,666152,David Hamilton,Milwaukee Brewers,Washington Nationals,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+2026-05-03,822742,666152,David Hamilton,Milwaukee Brewers,Washington Nationals,3,2,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-04,823064,666152,David Hamilton,Milwaukee Brewers,St. Louis Cardinals,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-06,823063,666152,David Hamilton,Milwaukee Brewers,St. Louis Cardinals,4,4,1,0,0,0,1,0,0,0,1,0,0,0
+2026-05-09,823792,666152,David Hamilton,Milwaukee Brewers,New York Yankees,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-10,823793,666152,David Hamilton,Milwaukee Brewers,New York Yankees,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-12,823790,666152,David Hamilton,Milwaukee Brewers,San Diego Padres,4,4,1,0,0,0,1,1,0,0,1,0,0,0
+2026-05-14,823789,666152,David Hamilton,Milwaukee Brewers,San Diego Padres,4,3,1,0,0,0,1,1,0,1,1,1,0,0
+2026-05-15,823707,666152,David Hamilton,Milwaukee Brewers,Minnesota Twins,3,2,0,0,0,0,0,0,0,1,0,0,1,0
+2026-05-16,823706,666152,David Hamilton,Milwaukee Brewers,Minnesota Twins,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-17,823708,666152,David Hamilton,Milwaukee Brewers,Minnesota Twins,2,1,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-19,824677,666152,David Hamilton,Milwaukee Brewers,Chicago Cubs,4,3,1,0,0,0,1,1,0,1,0,2,0,0
+2026-05-20,824678,666152,David Hamilton,Milwaukee Brewers,Chicago Cubs,4,4,3,0,1,0,5,2,1,0,0,0,0,0
+2026-05-23,823787,666152,David Hamilton,Milwaukee Brewers,Los Angeles Dodgers,4,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-24,823786,666152,David Hamilton,Milwaukee Brewers,Los Angeles Dodgers,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-05-26,823785,666152,David Hamilton,Milwaukee Brewers,St. Louis Cardinals,4,4,0,0,0,0,0,0,0,0,2,0,0,0
+2026-05-27,823783,666152,David Hamilton,Milwaukee Brewers,St. Louis Cardinals,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-29,824191,666152,David Hamilton,Milwaukee Brewers,Houston Astros,3,3,1,0,0,1,4,1,1,0,1,0,0,0
+2026-05-30,824190,666152,David Hamilton,Milwaukee Brewers,Houston Astros,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-05-31,824187,666152,David Hamilton,Milwaukee Brewers,Houston Astros,3,2,1,0,0,0,1,0,0,1,0,3,0,0
+2026-06-01,823781,666152,David Hamilton,Milwaukee Brewers,San Francisco Giants,5,5,3,1,0,0,4,3,0,0,0,0,0,0
+2026-06-02,823782,666152,David Hamilton,Milwaukee Brewers,San Francisco Giants,4,3,0,0,0,0,0,1,0,1,1,0,0,0
+2026-06-03,823780,666152,David Hamilton,Milwaukee Brewers,San Francisco Giants,2,2,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-04,823779,666152,David Hamilton,Milwaukee Brewers,San Francisco Giants,5,4,1,0,0,1,4,1,1,1,0,0,1,0
+2026-06-05,824350,666152,David Hamilton,Milwaukee Brewers,Colorado Rockies,5,4,0,0,0,0,0,0,0,1,3,1,0,0
+2026-06-06,824351,666152,David Hamilton,Milwaukee Brewers,Colorado Rockies,5,5,4,0,0,1,7,1,1,0,1,0,0,0
+2026-06-08,824998,666152,David Hamilton,Milwaukee Brewers,Athletics,2,2,0,0,0,0,0,1,0,0,2,0,0,0
+2026-06-09,824999,666152,David Hamilton,Milwaukee Brewers,Athletics,4,3,0,0,0,0,0,0,0,1,2,0,0,0
+2026-06-10,824996,666152,David Hamilton,Milwaukee Brewers,Athletics,3,3,1,1,0,0,2,0,0,0,1,0,0,0
+2026-06-12,823778,666152,David Hamilton,Milwaukee Brewers,Philadelphia Phillies,4,3,0,0,0,0,0,0,0,0,2,0,0,0
+2026-06-13,823776,666152,David Hamilton,Milwaukee Brewers,Philadelphia Phillies,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-14,823777,666152,David Hamilton,Milwaukee Brewers,Philadelphia Phillies,3,3,1,0,0,0,1,0,0,0,1,0,1,0
+2026-06-16,823775,666152,David Hamilton,Milwaukee Brewers,Cleveland Guardians,3,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-17,823774,666152,David Hamilton,Milwaukee Brewers,Cleveland Guardians,3,2,1,0,0,0,1,1,0,0,0,1,0,0
+2026-06-18,823772,666152,David Hamilton,Milwaukee Brewers,Cleveland Guardians,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-19,824910,666152,David Hamilton,Milwaukee Brewers,Atlanta Braves,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-21,824908,666152,David Hamilton,Milwaukee Brewers,Atlanta Braves,4,4,2,1,0,0,3,1,1,0,2,1,0,0
+2026-06-22,824502,666152,David Hamilton,Milwaukee Brewers,Cincinnati Reds,2,2,0,0,0,0,0,0,0,0,1,0,0,0
+2026-06-24,824500,666152,David Hamilton,Milwaukee Brewers,Cincinnati Reds,4,4,0,0,0,0,0,0,0,0,4,0,0,0
+2026-06-26,823773,666152,David Hamilton,Milwaukee Brewers,Chicago Cubs,4,4,2,0,1,0,4,0,1,0,0,1,0,0
+2026-06-27,823770,666152,David Hamilton,Milwaukee Brewers,Chicago Cubs,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+2026-06-28,823769,666152,David Hamilton,Milwaukee Brewers,Chicago Cubs,2,2,1,0,0,0,1,0,0,0,0,0,0,0
+2026-06-29,823771,666152,David Hamilton,Milwaukee Brewers,Cincinnati Reds,2,1,0,0,0,0,0,0,0,0,0,0,0,0
+2026-06-30,823768,666152,David Hamilton,Milwaukee Brewers,Cincinnati Reds,4,3,0,0,0,0,0,0,0,0,1,0,0,0
+2026-07-02,823765,666152,David Hamilton,Milwaukee Brewers,Cincinnati Reds,2,2,1,0,0,0,1,0,0,0,1,1,0,0
+2026-07-03,825062,666152,David Hamilton,Milwaukee Brewers,Arizona Diamondbacks,3,2,1,0,0,0,1,0,0,1,1,0,0,0
+2026-07-05,825061,666152,David Hamilton,Milwaukee Brewers,Arizona Diamondbacks,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-06,823036,666152,David Hamilton,Milwaukee Brewers,St. Louis Cardinals,3,3,2,1,0,0,3,0,2,0,1,0,0,0
 2026-04-03,824377,666160,Mickey Moniak,Colorado Rockies,Philadelphia Phillies,4,4,1,0,0,0,1,1,0,0,1,0,0,0
 2026-04-04,824378,666160,Mickey Moniak,Colorado Rockies,Philadelphia Phillies,1,1,0,0,0,0,0,0,0,0,0,0,0,0
 2026-04-05,824379,666160,Mickey Moniak,Colorado Rockies,Philadelphia Phillies,4,4,2,0,0,2,8,2,2,0,1,0,0,0
@@ -17071,6 +17145,7 @@ date,game_id,player_id,player_name,team,opponent,plate_appearances,at_bats,hits,
 2026-07-17,824332,678662,Ezequiel Tovar,Colorado Rockies,Cincinnati Reds,3,3,0,0,0,0,0,0,0,0,1,0,0,0
 2026-07-18,824331,678662,Ezequiel Tovar,Colorado Rockies,Cincinnati Reds,4,3,1,0,0,0,1,1,0,1,1,0,0,0
 2026-07-20,824328,678662,Ezequiel Tovar,Colorado Rockies,Washington Nationals,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+2026-07-21,824329,678662,Ezequiel Tovar,Colorado Rockies,Washington Nationals,4,4,0,0,0,0,0,0,0,0,2,0,0,0
 2026-03-26,824541,678882,Ceddanne Rafaela,Boston Red Sox,Cincinnati Reds,4,4,2,0,0,0,2,0,1,0,0,0,0,0
 2026-03-28,824540,678882,Ceddanne Rafaela,Boston Red Sox,Cincinnati Reds,5,5,1,0,0,0,1,1,0,0,1,0,0,0
 2026-03-29,824538,678882,Ceddanne Rafaela,Boston Red Sox,Cincinnati Reds,1,1,0,0,0,0,0,0,0,0,0,0,0,0

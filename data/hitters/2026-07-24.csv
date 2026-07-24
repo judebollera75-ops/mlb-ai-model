@@ -161,24 +161,24 @@ date,game_id,team,opponent,side,player_id,player_name,batting_order,position,sta
 2026-07-24,823680,Minnesota Twins,Athletics,home,702176,Alan Roden,7,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Minnesota Twins,Athletics,Target Field,2026-07-25T00:10:00Z
 2026-07-24,823680,Minnesota Twins,Athletics,home,807712,Luke Keaschall,8,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Minnesota Twins,Athletics,Target Field,2026-07-25T00:10:00Z
 2026-07-24,823680,Minnesota Twins,Athletics,home,668952,Ryan Kreidler,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Minnesota Twins,Athletics,Target Field,2026-07-25T00:10:00Z
-2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,664983,Jake McCarthy,1,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,696100,Hunter Goodman,2,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,666160,Mickey Moniak,3,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,694249,Cole Carrigg,4,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,681198,TJ Rumfield,5,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,691720,Kyle Karros,6,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,650489,Willi Castro,7,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,687859,Troy Johnston,8,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,664954,Brett Sullivan,9,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,592885,Christian Yelich,1,DH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,694192,Jackson Chourio,2,LF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,668930,Brice Turang,3,2B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,661388,William Contreras,4,C,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,669003,Garrett Mitchell,5,CF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,800325,Luis Lara,6,PH,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,641343,Jake Bauers,7,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,806198,Cooper Pratt,8,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
-2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,687401,Joey Ortiz,9,SS,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,664983,Jake McCarthy,1,LF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,691720,Kyle Karros,2,3B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,694249,Cole Carrigg,3,CF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,696100,Hunter Goodman,4,C,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,650489,Willi Castro,5,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,687859,Troy Johnston,6,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,666160,Mickey Moniak,7,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,671289,Tyler Freeman,8,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Colorado Rockies,Milwaukee Brewers,away,678662,Ezequiel Tovar,9,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,592885,Christian Yelich,1,DH,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,694192,Jackson Chourio,2,LF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,668930,Brice Turang,3,2B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,661388,William Contreras,4,C,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,669003,Garrett Mitchell,5,CF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,800325,Luis Lara,6,RF,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,641343,Jake Bauers,7,1B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,687401,Joey Ortiz,8,SS,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
+2026-07-24,823759,Milwaukee Brewers,Colorado Rockies,home,666152,David Hamilton,9,3B,Pre-Game,CONFIRMED,CURRENT_BOX_SCORE,Milwaukee Brewers,Colorado Rockies,American Family Field,2026-07-24T20:10:00Z
 2026-07-24,823843,San Diego Padres,Miami Marlins,away,665487,Fernando Tatis Jr.,1,RF,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Miami Marlins,San Diego Padres,loanDepot park,2026-07-24T23:10:00Z
 2026-07-24,823843,San Diego Padres,Miami Marlins,away,592518,Manny Machado,2,3B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Miami Marlins,San Diego Padres,loanDepot park,2026-07-24T23:10:00Z
 2026-07-24,823843,San Diego Padres,Miami Marlins,away,664034,Ty France,3,1B,Scheduled,PROJECTED,RECENT_CONFIRMED_LINEUPS,Miami Marlins,San Diego Padres,loanDepot park,2026-07-24T23:10:00Z
